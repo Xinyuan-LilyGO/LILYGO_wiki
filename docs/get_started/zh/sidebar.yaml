@@ -1,0 +1,64 @@
+items:
+-   label: LoRa or GPS
+    items:
+    -   label: T-Deck
+        items:
+        -   label: T3-S3_MVSRBoard
+            file: LoRa_GPS/T-Deck.md
+        -   label: T-Deck 基础使用
+            file: ./maixzero/sense/start.md
+    -   label: T3-S3_MVSRBoard
+        file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
+    -   label: T-Echo-Lite
+        file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
+    -   label: T-Connect Pro
+        file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
+-   label: AMOLED
+    items:
+    -   label: T-Display K230
+        file: AMOLED/T-Display-K230/T-Display-K230.md 
+    -   label: T-Pico 2350
+        file: AMOLED/T-Pico-2350/T-Pico-2350.md 
+    -   label: C
+        file: ./maixzero/m0s/m0s.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md                      
+-   label: E-Paper
+    items:   
+    -   label: T5 E-Paper S3 Pro
+        file: E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.md
+    -   label: T-Deck Pro
+        file: E-Paper/T-Deck-Pro/T-Deck-Pro.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
+-   label: LCD OLED
+    items:
+    -   label: T-Display K230
+        file: maixII/M2S/V833.md
+        items:
+        -   label: 板级资源介绍
+            file: maixII/M2S/reources.md
+    -   label: MaixII-Sense
+        file: maixII/M2A/maixsense.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md    
+-   label: Wearable Kit
+    items:
+    -   label: T-Watch S3 Plus
+        file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
+-   label: Basic Module
+    items:
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
+-   label: T-SIM/T-PCIE Series
+    items:
+    -   label: FAQ
+        file: maixcam/faq.md
+-   label: Accessories
+    items:
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
