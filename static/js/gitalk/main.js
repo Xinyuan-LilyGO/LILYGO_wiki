@@ -7,7 +7,7 @@
     return;
   }
   // render
-  var config = {"clientID": "Ov23liZnEYOHqerDfmYR", "clientSecret": "1d641e9f45f74a620a262091409b1d719b626755", "repo": "LILYGO.github.io", "owner": "puboy7", "admin": ["puboy7"], "adminAutoCreate": false};
+  var config = {"clientID": "Ov23liQXkB1pa7CIP1bd", "clientSecret": "3c55599fdff050063dddb3e4708a53cee6d4d77a", "repo": "LILYGO.github.io", "owner": "Xinyuan-LilyGO", "admin": ["puboy7"], "adminAutoCreate": false};
   var html = document.getElementsByTagName("html")[0];
   var id = html.id;
   if(id){

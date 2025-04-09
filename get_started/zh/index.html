@@ -218,69 +218,11 @@ var _hmt = _hmt || [];
                             <p>Make Development Easier</p>
 <p>官网: <a href="https://lilygo.cc/"  target="_blank">LILYGO.cc</a> 或 <a href="https://github.com/Xinyuan-LilyGO"  target="_blank">Github</a></p>
 <p>可以根据左边的标签页找到所需要产品的资料</p>
-<p>以下场景可使用<code>teedoc</code>：</p>
-<ul>
-<li>建文档网站，并且最好支持放多份文档（比如你有一本叫<code>Python学习</code>和<code>C++学习</code>两本书，它们都有单独的目录, <code>teedoc</code>则是书库）</li>
-<li>文档和网页页面共存，支持自定义<code>HTML</code>页面</li>
-<li>建<code>WiKi</code>网站</li>
-<li>建个人或者企业知识库</li>
-<li>建个人或者企业网站</li>
-<li>博客</li>
-</ul>
-<p>如果你在使用过程中遇到了问题, 可以在<a href="https://github.com/teedoc/teedoc/issues"  target="_blank">这里</a> (需要先注册并登录 github) 寻找相似问题, 或者创建 issue</p>
-<p>也可以加 <a href="https://jq.qq.com/?_wv=1027&amp;k=2FdCPllm"  target="_blank">QQ群 566531359</a> 讨论</p>
 <h2 id="%E7%89%B9%E6%80%A7">特性</h2>
-<ul>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多文档支持， 将多种文档和网页放到同一个站点</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>使用简单， 跨平台，只依赖 <code>Python3</code></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>不需要数据库，网站全静态页面</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>部署简单， 生成的网站是全静态页面，直接拷贝到服务器或者上传到三方机构即可部署</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>书写简单，使用 <a href="./syntax/syntax_markdown.html"  >Markdown 语法</a>编写</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/><a href="./syntax/syntax_jupyter.html"  >Jupyter notebook 支持</a></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>HTML 支持，可直接使用 HTML 编写页面， 并且支持 Jinja2 模板语法，自由度大</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>插件支持，默认提供了一些插件比如顶栏通知、搜索、评论、统计、google翻译页面等</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多主题支持（由插件实现）</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>通过 css 控制精确到页的样式（通过自定义每页的 id 和 class 实现）</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多级目录支持（无穷级）</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多语言支持（手动翻译）(国际化/i18n)</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多语言支持（翻译插件）</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>多版本支持（实现方法同多语言）</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>搜索支持</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>SEO 友好</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>实时预览更改</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>并行构建，更快的构建速度</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>博客支持</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>gitbook 切换过来友好, 只需要设置好 <code>route</code> 和使用命令(<code>summary2yaml</code>)转换目录文件(<code>SUMMARY.md</code>)即可</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox" disabled checked/>评论(插件), 比如 <code>gitalk</code></li>
-</ul>
 <h2 id="%E6%BC%94%E7%A4%BA">演示</h2>
-<p><a href="https://teedoc.github.io/"  target="_blank">本网站</a>即采用 <code>teedoc</code> 生成，你现在看到的就是生成后的网站的样子。</p>
-<p>另外还有其它网站使用了<code>teedoc</code>，具体请看<a href="./usage/sites.html"  >这里</a></p>
 <h2 id="%E7%B1%BB%E4%BC%BC%E7%9A%84%E5%B7%A5%E5%85%B7">类似的工具</h2>
-<p>实际上这种类型的工具已经有很多了，但是每一个又稍微不同，按照自己的需求选择一个就好了</p>
-<p>如果你有选择困难症，那么符合以下部分条件，都建议使用 teedoc：</p>
-<ul>
-<li>用来做文档网站，或者想把企业或组织官网+手里的多份文档统一放到一个网站？还各种语言的网站？ 用 <code>teedoc</code> 吧</li>
-<li>使用 <code>Jupyter notebook</code> 写文档或代码？ 果断选择 <code>teedoc</code></li>
-<li>功能符合你的需求吗？</li>
-<li>界面符合你的审美吗（可以自定义 <code>css</code>， 或者换主题插件）</li>
-<li>对 <code>Python</code> 熟悉？ 可以随时自定义插件和功能</li>
-</ul>
-<p>其它类似工具：</p>
-<ul>
-<li><code>docusaurus</code>: <code>teedoc</code> 的 <code>UI</code> 布局几乎和它类似，不过它使用 <code>ract</code> 写的， <code>teedoc</code> 是原生 <code>js</code>, 如果你精通 <code>ract</code> 可以考虑用这个，新手可能用起来比较吃力</li>
-<li><code>gitbook</code>: 曾经很好用的工具，但是官方不维护了，现在只有商业化网站了，转向商业了，不建议再使用，特别是国内可能无法访问</li>
-<li><code>docsify</code>: 只需要一个页面，<code>markdown</code> 在浏览器渲染，而不是预先渲染成 <code>HTML</code>， 好处就是轻量，但是 <code>SEO</code> 不太友好，可以用它的 <code>SSR</code> 功能， <code>nodejs</code> 编写</li>
-<li><code>readthedocs(Sphinx)</code>: 其实是用了用 <code>Sphinx</code> 做为生成工具，<code>Python</code> 官网文档就是这个工具生成的， 很多开源项目使用的工具，<code>readthedocs</code> 只是一个公开文档的网站，你不用自己搭建网站，注册登录就可以开始写文档，对 <code>RST</code> 格式支持友好，如果你的文档比较单一可以考虑使用</li>
-<li><code>mkdoc</code>: 也是一个 <code>python</code> 写的工具，简单易上手，插件也多，如果你的文档是单一语言的文档，可以使用这个工具</li>
-</ul>
 <h2 id="%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE">一些使用建议</h2>
-<ul>
-<li>在 footer 添加 <a href="https://github.com/teedoc/teedoc"  target="_blank">使用 teedoc 生成</a>， 帮助更多人发现 teedoc，促进项目的成长</li>
-<li>使用模板项目开始一个新的文档项目，可以先跑起来，然后再根据自己的需求修改，这样上手更快哦</li>
-</ul>
 <h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
-<p>查看<a href="./usage/quick_start.html"  >快速开始</a>来安装并使用吧！</p>
 
                         
                     </div>
