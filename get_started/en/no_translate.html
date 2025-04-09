@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en"  class=" md_page ">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": []}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+        
+        <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+        
+        <meta name="blog-generator" content="teedoc-plugin-blog">
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/gitalk/gitalk.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/gitalk/custom_gitalk.css" type="text/css"/>
+        
+        <script src="/LILYGO.github.io/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/LILYGO.github.io/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/LILYGO.github.io/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/search/style.css" type="text/css"/>
+        
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4d52982572d5512e9762879ebf063c86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+        
+        <link rel="stylesheet" href="/LILYGO.github.io/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>no translation - LILYGO Wiki</title>
+    
+    <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "This is a hint example(support i18n)</br><a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">Give a ☆ star </a> if you like this project 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "class": "md_page"}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/LILYGO.github.io/en/">
+                
+                    <img class="site_logo" src="/LILYGO.github.io/static/image/logo.png" alt="LILYGO logo">
+                
+                
+                    <h2>LILYGO</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/LILYGO.github.io/get_started/en/">Install</a></li>
+<li class=""><a  href="/LILYGO.github.io/develop/en/">Develop</a></li>
+<li class=""><a  href="/LILYGO.github.io/blog/">blog</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://www.youtube.com/@LILYGO"><img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
+<li class=""><a target="_blank" href="https://github.com/Xinyuan-LilyGO"><img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;English</a><ul><li class="active"><a  href="/LILYGO.github.io/get_started/en/no_translate.html">English</a></li>
+<li class=""><a  href="/LILYGO.github.io/get_started/zh/no_translate.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="google_translate_element"><img class="icon" src="/LILYGO.github.io/static/image/google_translate/translate.svg"/>Translate</a></li></ul><ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">Search</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">Keywords separated by space</span>
+                                <span id="search_loading_hint">Loading, wait please ...</span>
+                                <span id="search_download_err_hint">Download error, please check network and refresh again</span>
+                                <span id="search_other_docs_result_hint">Result from other docs</span>
+                                <span id="search_curr_doc_result_hint">Result from current doc</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="">
+<li class="not_active no_link"><a><span class="label">LoRa or GPS</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">T-Deck</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/LoRa_GPS/T-Deck.html"><span class="label">T3-S3_MVSRBoard</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/./maixzero/sense/start.html&from=/get_started/en/./maixzero/sense/start.html"><span class="label">T-Deck 基础使用</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html"><span class="label">T3-S3_MVSRBoard</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/LoRa_GPS/T-Echo-Lite/T-Echo-Lite.html"><span class="label">T-Echo-Lite</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html"><span class="label">T-Connect Pro</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">AMOLED</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/AMOLED/T-Display-K230/T-Display-K230.html"><span class="label">T-Display K230</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/AMOLED/T-Pico-2350/T-Pico-2350.html"><span class="label">T-Pico 2350</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/./maixzero/m0s/m0s.html&from=/get_started/en/./maixzero/m0s/m0s.html"><span class="label">C</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">E-Paper</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">D</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">M1 模块</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/core_module.html&from=/get_started/en/maix/core_module.html"><span class="label">M1/M1w</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/M1n.html&from=/get_started/en/maix/M1n.html"><span class="label">M1n</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">M1 开发板</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_bit.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_bit.html"><span class="label">Maix Bit</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/Maix_dock.html&from=/get_started/en/maix/maixpy_develop_kit_board/Maix_dock.html"><span class="label">Maix Dock(M1/M1W)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_duino.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_duino.html"><span class="label">Maix Duino</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_nano.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_nano.html"><span class="label">Maix Nano</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_cube.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_cube.html"><span class="label">Maix Cube</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_Amigo.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_Amigo.html"><span class="label">Maix Amigo</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_hat.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_hat.html"><span class="label">Maix HAT</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/maixpy_develop_kit_board/maix_go.html&from=/get_started/en/maix/maixpy_develop_kit_board/maix_go.html"><span class="label">Maix Go（售罄）</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Maix M1s</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/m1s/m1s_module.html&from=/get_started/en/maix/m1s/m1s_module.html"><span class="label">M1s 模块</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">M1s 开发板</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/m1s/m1s_dock.html&from=/get_started/en/maix/m1s/m1s_dock.html"><span class="label">简介</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/m1s/other/start.html&from=/get_started/en/maix/m1s/other/start.html"><span class="label">上手使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maix/m1s/other/others.html&from=/get_started/en/maix/m1s/other/others.html"><span class="label">其他事项（摄像头和外壳）</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LCD OLED</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2S/V833.html&from=/get_started/en/maixII/M2S/V833.html"><span class="label">T-Display K230</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2S/reources.html&from=/get_started/en/maixII/M2S/reources.html"><span class="label">板级资源介绍</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2A/maixsense.html&from=/get_started/en/maixII/M2A/maixsense.html"><span class="label">MaixII-Sense</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2A/flash_system.html&from=/get_started/en/maixII/M2A/flash_system.html"><span class="label">烧录系统</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2A/config_system.html&from=/get_started/en/maixII/M2A/config_system.html"><span class="label">配置系统</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixII/M2A/Usages.html&from=/get_started/en/maixII/M2A/Usages.html"><span class="label">基本使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/../../soft/maixpy3/zh/tools/maixsense.html&from=/get_started/en/../../soft/maixpy3/zh/tools/maixsense.html"><span class="label">连接MaixPy3</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Wearable Kit</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html"><span class="label">T-Watch S3 Plus</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Basic Module</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixIV/m4ndock/m4ndock.html&from=/get_started/en/maixIV/m4ndock/m4ndock.html"><span class="label">Maix M4N-DOCK</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixIV/m4ndock/quick-start.html&from=/get_started/en/maixIV/m4ndock/quick-start.html"><span class="label">产品上手指南</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixIV/m4ndock/system-update.html&from=/get_started/en/maixIV/m4ndock/system-update.html"><span class="label">系统烧录指南</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixIV/m4ndock/axmodel-deploy.html&from=/get_started/en/maixIV/m4ndock/axmodel-deploy.html"><span class="label">AI 模型部署</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixIV/m4ndock/FAQ.html&from=/get_started/en/maixIV/m4ndock/FAQ.html"><span class="label">FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">T-SIM/T-PCIE Series</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/index.html&from=/get_started/en/maixcam/index.html"><span class="label">MaixCAM 介绍和资料</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/maixcam_pro.html&from=/get_started/en/maixcam/maixcam_pro.html"><span class="label">MaixCAM-Pro 介绍和资料</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/cameras.html&from=/get_started/en/maixcam/cameras.html"><span class="label">摄像头介绍及拍摄效果</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/tof_thermal.html&from=/get_started/en/maixcam/tof_thermal.html"><span class="label">ToF/热成像模块介绍</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/microscope.html&from=/get_started/en/maixcam/microscope.html"><span class="label">数码显微镜套餐</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/assemble.html&from=/get_started/en/maixcam/assemble.html"><span class="label">外壳使用注意点</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/os.html&from=/get_started/en/maixcam/os.html"><span class="label">系统镜像烧录</span><span class=""></span></a></li>
+<li class="not_active  with_link"><a href="https://wiki.sipeed.com/maixpy/" ><span class="label">使用 MaixPy 开发</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/maixcdk.html&from=/get_started/en/maixcam/maixcdk.html"><span class="label">使用 MaixCDK 开发</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/maixcam/faq.html&from=/get_started/en/maixcam/faq.html"><span class="label">常见问题 FAQ</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Accessories</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">LicheePI 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lm4a.html&from=/get_started/en/lichee/th1520/lm4a.html"><span class="label">Lichee Module 4A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lc4a/lc4a.html&from=/get_started/en/lichee/th1520/lc4a/lc4a.html"><span class="label">Lichee Cluster 4A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lcon4a/lcon4a.html&from=/get_started/en/lichee/th1520/lcon4a/lcon4a.html"><span class="label">Lichee Console 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lcon4a/setup_guide.html&from=/get_started/en/lichee/th1520/lcon4a/setup_guide.html"><span class="label">组装指南</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lcon4a/3_images.html&from=/get_started/en/lichee/th1520/lcon4a/3_images.html"><span class="label">镜像集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lcon4a/4_burn_image.html&from=/get_started/en/lichee/th1520/lcon4a/4_burn_image.html"><span class="label">烧录镜像</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lbook4a/lbook4a.html&from=/get_started/en/lichee/th1520/lbook4a/lbook4a.html"><span class="label">Lichee Book 4A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lbook4a/4_burn_image.html&from=/get_started/en/lichee/th1520/lbook4a/4_burn_image.html"><span class="label">烧录镜像</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">Lichee PI 4A</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/1_intro.html&from=/get_started/en/lichee/th1520/lpi4a/1_intro.html"><span class="label">板卡介绍</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/2_unbox.html&from=/get_started/en/lichee/th1520/lpi4a/2_unbox.html"><span class="label">开箱体验</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/3_images.html&from=/get_started/en/lichee/th1520/lpi4a/3_images.html"><span class="label">镜像集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/4_burn_image.html&from=/get_started/en/lichee/th1520/lpi4a/4_burn_image.html"><span class="label">烧录镜像</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/5_desktop.html&from=/get_started/en/lichee/th1520/lpi4a/5_desktop.html"><span class="label">桌面系统基础使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/6_peripheral.html&from=/get_started/en/lichee/th1520/lpi4a/6_peripheral.html"><span class="label">外设使用</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">系统开发</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/7_develop_revyos.html&from=/get_started/en/lichee/th1520/lpi4a/7_develop_revyos.html"><span class="label">revyos</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/7_develop_mainline.html&from=/get_started/en/lichee/th1520/lpi4a/7_develop_mainline.html"><span class="label">Linux 主线</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/7_develop_android.html&from=/get_started/en/lichee/th1520/lpi4a/7_develop_android.html"><span class="label">Android</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/7_develop_thead.html&from=/get_started/en/lichee/th1520/lpi4a/7_develop_thead.html"><span class="label">THead Yocto</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">OpenHarmony (编写中)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/7_develop_openwrt.html&from=/get_started/en/lichee/th1520/lpi4a/7_develop_openwrt.html"><span class="label">OpenWRT</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/8_application.html&from=/get_started/en/lichee/th1520/lpi4a/8_application.html"><span class="label">典型应用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/13_XTAI.html&from=/get_started/en/lichee/th1520/lpi4a/13_XTAI.html"><span class="label">玄铁多媒体AI平台</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/9_benchmark.html&from=/get_started/en/lichee/th1520/lpi4a/9_benchmark.html"><span class="label">CPU 跑分测试</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/10_test_report.html&from=/get_started/en/lichee/th1520/lpi4a/10_test_report.html"><span class="label">硬件测试报告</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/12_faq.html&from=/get_started/en/lichee/th1520/lpi4a/12_faq.html"><span class="label">常见问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/th1520/lpi4a/11_credits.html&from=/get_started/en/lichee/th1520/lpi4a/11_credits.html"><span class="label">致谢</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheePI 3A</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lm3a.html&from=/get_started/en/lichee/K1/lm3a.html"><span class="label">Lichee Module 3A</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lc3a/lc3a.html&from=/get_started/en/lichee/K1/lc3a/lc3a.html"><span class="label">Lichee Cluster 3A</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Lichee PI 3A</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/1_intro.html&from=/get_started/en/lichee/K1/lpi3a/1_intro.html"><span class="label">板卡介绍</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/2_unbox.html&from=/get_started/en/lichee/K1/lpi3a/2_unbox.html"><span class="label">开箱体验</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/3_burn_image.html&from=/get_started/en/lichee/K1/lpi3a/3_burn_image.html"><span class="label">镜像烧录</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/4_peripheral.html&from=/get_started/en/lichee/K1/lpi3a/4_peripheral.html"><span class="label">外设使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/5_develop.html&from=/get_started/en/lichee/K1/lpi3a/5_develop.html"><span class="label">系统开发</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/6_application.html&from=/get_started/en/lichee/K1/lpi3a/6_application.html"><span class="label">典型应用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/7_faq.html&from=/get_started/en/lichee/K1/lpi3a/7_faq.html"><span class="label">常见问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/K1/lpi3a/8_credits.html&from=/get_started/en/lichee/K1/lpi3a/8_credits.html"><span class="label">致谢</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheePI RV</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">板卡介绍</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/RV.html&from=/get_started/en/lichee/RV/RV.html"><span class="label">LicheePI RV</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/86_panel.html&from=/get_started/en/lichee/RV/86_panel.html"><span class="label">LicheePI RV 86 Panel</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/Dock.html&from=/get_started/en/lichee/RV/Dock.html"><span class="label">LicheePI RV Dock</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/flash.html&from=/get_started/en/lichee/RV/flash.html"><span class="label">烧录系统</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/user.html&from=/get_started/en/lichee/RV/user.html"><span class="label">基础上手</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/problems.html&from=/get_started/en/lichee/RV/problems.html"><span class="label">常见问题</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV/ubuntu.html&from=/get_started/en/lichee/RV/ubuntu.html"><span class="label">使用 Ubuntu 镜像</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">LicheeRV Nano</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/1_intro.html&from=/get_started/en/lichee/RV_Nano/1_intro.html"><span class="label">板卡介绍</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/2_unbox.html&from=/get_started/en/lichee/RV_Nano/2_unbox.html"><span class="label">开箱体验</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/3_images.html&from=/get_started/en/lichee/RV_Nano/3_images.html"><span class="label">镜像集合</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/4_burn_image.html&from=/get_started/en/lichee/RV_Nano/4_burn_image.html"><span class="label">烧录镜像</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/5_peripheral.html&from=/get_started/en/lichee/RV_Nano/5_peripheral.html"><span class="label">外设使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/6_develop_mainline.html&from=/get_started/en/lichee/RV_Nano/6_develop_mainline.html"><span class="label">系统开发</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/7_test_report.html&from=/get_started/en/lichee/RV_Nano/7_test_report.html"><span class="label">板卡测试</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/RV_Nano/8_mmf_development_guide.html&from=/get_started/en/lichee/RV_Nano/8_mmf_development_guide.html"><span class="label">MMF开发指南</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/Zero/Zero.html&from=/get_started/en/lichee/Zero/Zero.html"><span class="label">LicheePI Zero</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/Nano/Nano.html&from=/get_started/en/lichee/Nano/Nano.html"><span class="label">LicheePI Nano</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/lichee/ZeroPlus/ZeroPlus.html&from=/get_started/en/lichee/ZeroPlus/ZeroPlus.html"><span class="label">LicheePI ZeroPlus</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/LILYGO.github.io/get_started/en/no_translate.html?ref=/get_started/zh/Q&A/Q&A.html&from=/get_started/en/Q&A/Q&A.html"><span class="label">Q&A</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>no translation</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                            <div id="source_link">
+                                <a href="https://github.com/puboy7/LILYGO.github.io/blob/main/tmp/no_translate.md" target="_blank">
+                                    Edit this page
+                                </a>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <div id="visit_from"></div>
+<div id="no_translate_hint">This page not translated yet</div>
+<div>
+    <span id="visit_hint">Please visit</span>
+    <a id="translate_src"></a>
+</div>
+<div>
+    <script>
+        function getQueryVariable(variable)
+        {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+        var ref = getQueryVariable("ref");
+        var from = getQueryVariable("from");
+        var link = document.getElementById("translate_src");
+        var fromDis = document.getElementById("visit_from");
+        link.href = ref;
+        link.text = ref;
+        fromDis.innerHTML = from;
+    </script>
+</div>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>Links</a><ul><li><a target="_blank" href="https://teedoc.neucrack.com">Site generated by teedoc</a></li>
+<li><a target="_blank" href="https://neucrack.com">Copyright © 2021 Neucrack</a></li>
+<li><a  href="/LILYGO.github.io/sitemap.xml">Sitemap</a></li>
+</ul>
+</li>
+<li><a>Source code</a><ul><li><a target="_blank" href="https://github.com/neutree/teedoc">github</a></li>
+<li><a target="_blank" href="https://github.com/teedoc/teedoc.github.io">website source files</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="_blank" href="https://beian.miit.gov.cn">渝ICP备19015320号</a></li>
+<li><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602004109">粤公网安备44030602004109号</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/LILYGO.github.io/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script type="text/javascript">
+                var transLoaded = false;
+                var loading = false;
+                var domain = "translate.google.com";
+                var domainDefault = domain;
+                var storeDomain = localStorage.getItem("googleTransDomain");
+                if(storeDomain){
+                    domain = storeDomain;
+                    console.log("load google translate domain from local storage:" + domain);
+                }
+                function getUrl(domain){
+                    if(domain == "/")
+                        return "/static/js/google_translate/element.js?cb=googleTranslateElementInit";
+                    else
+                        return "https://" + domain + "/translate_a/element.js?cb=googleTranslateElementInit";
+                }
+                var url = getUrl(domain);
+                console.log("google translate domain:" + domain + ", url: " + url);
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: "auto", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                function loadJS( url, callback ){
+                    var script = document.createElement('script');
+                    fn = callback || function(){ };
+                    script.type = 'text/javascript';
+                    if(script.readyState){
+                        script.onreadystatechange = function(){
+                            if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                                script.onreadystatechange = null;
+                                fn();
+                            }
+                        };
+                    }else{
+                        script.onload = function(){
+                            fn();
+                        };
+                    }
+                    script.src = url;
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+                function removeHint(){
+                    var hint = document.getElementById("loadingTranslate");
+                    if(hint){
+                        hint.remove();
+                    }
+                }
+                var btn = document.getElementById("google_translate_element");
+                btn.onclick = function(){
+                    if(transLoaded) return;
+                    if(loading){
+                        var flag = confirm("loading from " + domain + ", please wait, or change domain?");
+                        if(flag){
+                            newDomain = prompt("domain, default: " + domainDefault + ", now: " + domain);
+                            if(newDomain){
+                                domain = newDomain;
+                                console.log(domain);
+                                url = getUrl(domain);
+                                loadJS(url, function(){
+                                    localStorage.setItem("googleTransDomain", domain);
+                                    removeHint()
+                                    transLoaded = true;
+                                });
+                            }
+                        }
+                        return;
+                    }
+                    btn.innerHTML = '<span id="loadingTranslate"><img class="icon" src="/LILYGO.github.io/static/image/google_translate/translate.svg"/>Loading ...</span>';
+                    loading = true;
+                    loadJS(url, function(){
+                        localStorage.setItem("googleTransDomain", domain);
+                        removeHint()
+                        transLoaded = true;
+                    });
+                }
+                </script>
+            
+    
+        <script src="/LILYGO.github.io/static/js/plugin_blog/main.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/gitalk/gitalk.min.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/gitalk/main.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/theme_default/main.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/LILYGO.github.io/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/search/search_main.js"></script>
+    
+        <link rel="stylesheet" href="/LILYGO.github.io/static/js/add_hint/style.css" type="text/css"/>
+    
+        <script src="/LILYGO.github.io/static/js/add_hint/main.js"></script>
+    
+        <script src="/LILYGO.github.io/static/js/custom.js"></script>
+    
+</body>
+
+</html>
