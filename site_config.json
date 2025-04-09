@@ -89,10 +89,10 @@
             "config": {
                 "contrainer": "comments-container",
                 "env": {
-                    "clientID": "Ov23liZnEYOHqerDfmYR",
-                    "clientSecret": "1d641e9f45f74a620a262091409b1d719b626755",
+                    "clientID": "Ov23liQXkB1pa7CIP1bd",
+                    "clientSecret": "3c55599fdff050063dddb3e4708a53cee6d4d77a",
                     "repo": "LILYGO.github.io",
-                    "owner": "puboy7",
+                    "owner": "Xinyuan-LilyGO",
                     "admin": ["puboy7"],
                     "main_color": "#4caf7d",
                     "second_color": "#0a7d43",
