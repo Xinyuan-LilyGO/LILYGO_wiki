@@ -1,12 +1,6 @@
 items:
 -   label: LoRa or GPS
     items:
-    -   label: T-Deck
-        items:
-        -   label: T3-S3_MVSRBoard
-            file: LoRa_GPS/T-Deck.md
-        -   label: T-Deck 基础使用
-            file: ./maixzero/sense/start.md
     -   label: T3-S3_MVSRBoard
         file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
     -   label: T-Echo-Lite
@@ -22,7 +16,6 @@ items:
     -   label: T-Pico 2350
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
     -   label: C
-        file: ./maixzero/m0s/m0s.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md                      
 -   label: E-Paper
@@ -36,12 +29,6 @@ items:
 -   label: LCD OLED
     items:
     -   label: T-Display K230
-        file: maixII/M2S/V833.md
-        items:
-        -   label: 板级资源介绍
-            file: maixII/M2S/reources.md
-    -   label: MaixII-Sense
-        file: maixII/M2A/maixsense.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md    
 -   label: Wearable Kit
@@ -53,7 +40,6 @@ items:
 -   label: Basic Module
     items:
     -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md
 -   label: T-SIM/T-PCIE Series
     items:
     -   label: FAQ
