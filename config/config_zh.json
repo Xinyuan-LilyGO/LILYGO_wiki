@@ -46,21 +46,47 @@
     "footer":{
         "top":[
             {
-                "label": "链接",
+                "label": "相关链接",
                 "items": [
                     {
-                        "label": "网站使用 teedoc 生成",
-                        "url": "https://teedoc.neucrack.com",
+                        "label": "LILYGO官网",
+                        "url": "https://lilygo.cc",
                         "target": "_blank"
                     },
                     {
-                        "label": "Copyright © 2021 Neucrack",
-                        "url": "https://neucrack.com",
+                        "label": "LILYGO 淘宝",
+                        "url": "https://shop140839766.taobao.com/?spm=a1z10.1-c.0.0.359257605UXZ3y",
                         "target": "_blank"
+                    }
+                ]
+            },
+            {
+                "label": "关注我们",
+                "items": [
+                    {
+                        "label": "twitter",
+                        "url": "https://twitter.com/SipeedIO",
+                        "target":"_blank"
                     },
                     {
-                        "label": "网站地图",
-                        "url": "/sitemap.xml"
+                        "label": "淘宝",
+                        "url": "https://shop140839766.taobao.com/?spm=a1z10.1-c.0.0.359257605UXZ3y",
+                        "target":"_blank"
+                    },
+                    {
+                        "label": "github",
+                        "url": "https://github.com/Xinyuan-LilyGO",
+                        "target":"_blank"
+                    },
+                    {
+                        "label": "youtube",
+                        "url": "https://www.youtube.com/@LILYGO",
+                        "target":"_blank"
+                    },
+                    {
+                        "label": "facebook",
+                        "url": "https://www.facebook.com/lilygottgo",
+                        "target":"_blank"
                     }
                 ]
             },
@@ -68,18 +94,13 @@
                 "label": "源码",
                 "items": [
                     {
-                        "label": "github",
-                        "url": "https://github.com/neutree/teedoc",
+                        "label": "开源项目",
+                        "url": "https://github.com/Xinyuan-LilyGO",
                         "target": "_blank"
                     },
                     {
-                        "label": "gitee",
-                        "url": "https://gitee.com/teedoc/teedoc",
-                        "target": "_blank"
-                    },
-                    {
-                        "label": "本网站源文件",
-                        "url": "https://github.com/teedoc/teedoc.github.io",
+                        "label": "Wiki源码",
+                        "url": "https://github.com/Xinyuan-LilyGO/LILYGO.github.io",
                         "target": "_blank"
                     }
                 ]
@@ -87,13 +108,8 @@
         ],
         "bottom": [
             {
-                "label": "渝ICP备19015320号",
+                "label": "Test",
                 "url": "https://beian.miit.gov.cn",
-                "target": "_blank"
-            },
-            {
-                "label": "粤公网安备44030602004109号",
-                "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602004109",
                 "target": "_blank"
             }
         ]
