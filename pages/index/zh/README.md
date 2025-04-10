@@ -47,15 +47,13 @@ id: home_page
             </div>
             <div class="dsc_right">
                 <h2>AMOLED</h2>
-                <h2>LCD</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>多文档</h2>
-                <h2>博客</h2>
+                <h2>E-Paper</h2>
             </div>
             <div class="dsc_right">
                 <img class="logo" src="/static/image/books.svg"> 支持多文档，每篇文档有单独的目录，也可以多版本。你的大量文档再也不用散落在各个域名下了！</br>
@@ -70,15 +68,15 @@ id: home_page
                 同时支持自定义 css、js，能通过页面指定 id 精确控制任何一个页面元素的样式
             </div>
             <div class="dsc_right">
-                <h2>主题可定制</h2>
+                <h2>Wearable Kit</h2>
             </div>
         </div>
     </div>
         <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>快速构建</h2>
-                <h2>实时预览</h2>
+                <h2>Basic</h2>
+                <h2>Module</h2>
             </div>
             <div class="dsc_right">
                 <img class="logo" src="/static/image/speed.svg"> 并行构建，充分利用处理器性能，文档渲染就在一瞬间</br>
@@ -93,8 +91,17 @@ id: home_page
                 <img class="logo" src="/static/image/seo.svg"> SEO 友好，比如 页关键词自定义、sitemap自动生成等
             </div>
             <div class="dsc_right">
-                <h2>部署简单</h2>
-                <h2>SEO 友好</h2>
+                <h2>T-SIM/T-PCIE Series</h2>
+            </div>
+        </div>
+    </div>
+    <div class="section dsc_wrapper_left">
+        <div>
+            <div class="dsc_left">
+                <h2>Accessories</h2>
+            </div>
+            <div class="dsc_right">
+               <h2>Good</h2>
             </div>
         </div>
     </div>
