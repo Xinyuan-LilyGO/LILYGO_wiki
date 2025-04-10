@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html</loc>
-            <lastmod>2025-04-10</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/AMOLED/T-Pico-2350/T-Pico-2350.html</loc>
-            <lastmod>2025-04-10</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/Moudle.html</loc>
-            <lastmod>2025-04-10</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https:// /LILYGO.github.io/get_started/zh/index.html</loc>
             <lastmod>2025-04-01</lastmod>
             <changefreq>weekly</changefreq>
@@ -32,6 +14,24 @@
         </url>
         <url>
             <loc>https:// /LILYGO.github.io/get_started/zh/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
+            <lastmod>2025-04-10</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html</loc>
+            <lastmod>2025-04-10</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/zh/AMOLED/T-Pico-2350/T-Pico-2350.html</loc>
+            <lastmod>2025-04-10</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/zh/Moudle.html</loc>
             <lastmod>2025-04-10</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -91,6 +91,18 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
+            <lastmod>2025-04-10</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
+            <lastmod>2025-04-10</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https:// /LILYGO.github.io/get_started/en/AMOLED/T-Display-K230/T-Display-K230.html</loc>
             <lastmod>2025-04-10</lastmod>
             <changefreq>weekly</changefreq>
@@ -104,18 +116,6 @@
         </url>
         <url>
             <loc>https:// /LILYGO.github.io/get_started/en/Moudle.html</loc>
-            <lastmod>2025-04-10</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
-            <lastmod>2025-04-10</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
             <lastmod>2025-04-10</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
