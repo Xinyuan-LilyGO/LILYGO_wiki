@@ -11,7 +11,9 @@ show_source: false
 
 ## Introduction
 
-T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模块，集成 LoRa（SX1262 芯片）、ST7796 LCD 显示屏（分辨率及引脚 DC/CS/BL）、CAN总线、以太网接口及双串口（RS232/RS485），支持 12~24V 宽电压输入与 10A 继电器输出，适用于复杂工业自动化与物联网场景。其硬件配置涵盖 触摸功能（SDA/SCL/RST）、SPI 网口通信（MOSI/MISO/SCLK）、QWIIC 扩展接口及 DC-DC 电源管理，提供多协议通信（LoRa 远距离传输、CAN 总线控制）、实时数据显示（LCD）及设备联动控制（继电器）能力，可灵活适配智能工厂、远程传感、能源监控等领域的多样化需求，兼具高兼容性与稳定性
+The T-Connect-Pro is a multifunctional industrial-grade control and communication module based on the ESP32-S3. It integrates LoRa (SX1262 chip), an ST7796 LCD display (with resolution and pins for DC/CS/BL), CAN bus, Ethernet interface, and dual serial ports (RS232/RS485). Supporting a wide voltage input of 12–24V and a 10A relay output, it is well-suited for complex industrial automation and IoT applications.
+
+Its hardware configuration includes touch functionality (SDA/SCL/RST), SPI Ethernet communication (MOSI/MISO/SCLK), a QWIIC expansion interface, and DC-DC power management. The module offers multi-protocol communication (long-range LoRa transmission, CAN bus control), real-time data display (LCD), and device linkage control (relay). With high compatibility and stability, it is ideal for applications such as smart factories, remote sensing, and energy monitoring, meeting diverse industry needs.
 
 ## Appearance and function introduction
 ### Appearance
@@ -64,10 +66,10 @@ Github:[T-Connect-Pro](https://github.com/Xinyuan-LilyGO/T-Connect-Pro)
 [T-Connect-Pro](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)
 
 #### Dependency Libraries
-- 触摸: [Arduino_DriveBus-1.1.2](https://github.com/Xk-w/Arduino_DriveBus)
+- Touch: [Arduino_DriveBus-1.1.2](https://github.com/Xk-w/Arduino_DriveBus)
 - LoRa: [RadioLib-6.6.0](https://github.com/jgromes/RadioLib)
-- 屏幕:[Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
-- 以太网:[Ethernet_V2.0.0](http://www.arduino.cc/en/Reference/Ethernet)
+- Screen:[Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
+- Ethernet:[Ethernet_V2.0.0](http://www.arduino.cc/en/Reference/Ethernet)
 
 ## Software Design
 ### Arduino Set Parameters

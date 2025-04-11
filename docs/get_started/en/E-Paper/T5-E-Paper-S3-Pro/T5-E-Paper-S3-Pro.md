@@ -34,7 +34,7 @@ With a variety of interfaces (SPI, UART, etc.), it is compatible with sensors an
 ## Module Information and Specifications
 ### Description
 
-| component | Description |
+| Component | Description |
 | ---  | --- |
 |MCU	|ESP32-S3-WROOM-1
 |Flash 	|16M 

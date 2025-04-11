@@ -1,18 +1,14 @@
 items:
 -   label: LoRa or GPS
     items:
-    -   label: T-Deck
-        items:
-        -   label: T3-S3_MVSRBoard
-            file: LoRa_GPS/T-Deck.md
-        -   label: T-Deck 基础使用
-            file: ./maixzero/sense/start.md
     -   label: T3-S3_MVSRBoard
         file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
     -   label: T-Echo-Lite
         file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
     -   label: T-Connect Pro
         file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
 -   label: AMOLED
     items:
     -   label: T-Display K230
@@ -20,237 +16,37 @@ items:
     -   label: T-Pico 2350
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
     -   label: C
-        file: ./maixzero/m0s/m0s.md                
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md                      
 -   label: E-Paper
-    items:
-    -   label: D
-        items:
-        -   label: M1 模块
-            items:
-            -   label: M1/M1w
-                file: maix/core_module.md
-            -   label: M1n
-                file: maix/M1n.md
-        -   label: M1 开发板
-            items:
-            -   label: Maix Bit
-                file: maix/maixpy_develop_kit_board/maix_bit.md
-            -   label: Maix Dock(M1/M1W)
-                file: maix/maixpy_develop_kit_board/Maix_dock.md
-            -   label: Maix Duino
-                file: maix/maixpy_develop_kit_board/maix_duino.md
-            -   label: Maix Nano
-                file: maix/maixpy_develop_kit_board/maix_nano.md
-            -   label: Maix Cube
-                file: maix/maixpy_develop_kit_board/maix_cube.md
-            -   label: Maix Amigo
-                file: maix/maixpy_develop_kit_board/maix_Amigo.md
-            -   label: Maix HAT
-                file: maix/maixpy_develop_kit_board/maix_hat.md
-            -   label: Maix Go（售罄）
-                file: maix/maixpy_develop_kit_board/maix_go.md
-    -   label: Maix M1s
-        items:
-        -   label: M1s 模块
-            file: maix/m1s/m1s_module.md
-        -   label: M1s 开发板
-            items:
-            -   label: 简介
-                file: maix/m1s/m1s_dock.md
-            -   label: 上手使用
-                file: maix/m1s/other/start.md
-            -   label: 其他事项（摄像头和外壳）
-                file: maix/m1s/other/others.md
+    items:   
+    -   label: T5 E-Paper S3 Pro
+        file: E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.md
+    -   label: T-Deck Pro
+        file: E-Paper/T-Deck-Pro/T-Deck-Pro.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
 -   label: LCD OLED
     items:
     -   label: T-Display K230
-        file: maixII/M2S/V833.md
-        items:
-        -   label: 板级资源介绍
-            file: maixII/M2S/reources.md
-    -   label: MaixII-Sense
-        file: maixII/M2A/maixsense.md
-        items:
-        -   label: 烧录系统
-            file: maixII/M2A/flash_system.md
-        -   label: 配置系统
-            file: maixII/M2A/config_system.md
-        -   label: 基本使用
-            file: maixII/M2A/Usages.md
-        -   label: 连接MaixPy3
-            file: ../../soft/maixpy3/zh/tools/maixsense.md
-            target: _blank
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md    
 -   label: Wearable Kit
     items:
     -   label: T-Watch S3 Plus
         file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md
 -   label: Basic Module
     items:
-    # -   label: Maix M4N
-    #     file: maixIV/m4n/m4n.md
-    -   label: Maix M4N-DOCK
-        file: maixIV/m4ndock/m4ndock.md
-        items:
-        -   label: 产品上手指南
-            file: maixIV/m4ndock/quick-start.md
-        -   label: 系统烧录指南
-            file: maixIV/m4ndock/system-update.md
-        -   label: AI 模型部署
-            file: maixIV/m4ndock/axmodel-deploy.md
-        -   label: FAQ
-            file: maixIV/m4ndock/FAQ.md
+    -   label: T7 C6
+        file: Basic_Module/T7_C6/T7_C6.md
+    -   label: FAQ
 -   label: T-SIM/T-PCIE Series
     items:
-    -   label: MaixCAM 介绍和资料
-        file: maixcam/README.md
-    -   label: MaixCAM-Pro 介绍和资料
-        file: maixcam/maixcam_pro.md
-    -   label: 摄像头介绍及拍摄效果
-        file: maixcam/cameras.md
-    -   label: ToF/热成像模块介绍
-        file: maixcam/tof_thermal.md
-    -   label: 数码显微镜套餐
-        file: maixcam/microscope.md
-    -   label: 外壳使用注意点
-        file: maixcam/assemble.md
-    -   label: 系统镜像烧录
-        file: maixcam/os.md
-    -   label: 使用 MaixPy 开发
-        url: https://wiki.sipeed.com/maixpy/
-    -   label: 使用 MaixCDK 开发
-        file: maixcam/maixcdk.md
-    -   label: 常见问题 FAQ
+    -   label: FAQ
         file: maixcam/faq.md
 -   label: Accessories
     items:
-    -   label: LicheePI 4A
-        items:
-        -   label: Lichee Module 4A
-            file: lichee/th1520/lm4a.md
-        -   label: Lichee Cluster 4A
-            file: lichee/th1520/lc4a/lc4a.md
-        -   label: Lichee Console 4A
-            items:
-            -   label: 组装指南
-                file: lichee/th1520/lcon4a/setup_guide.md
-            -   label: 镜像集合
-                file: lichee/th1520/lcon4a/3_images.md
-            -   label: 烧录镜像
-                file: lichee/th1520/lcon4a/4_burn_image.md
-            file: lichee/th1520/lcon4a/lcon4a.md
-        -   label: Lichee Book 4A
-            items:
-            -   label: 烧录镜像
-                file: lichee/th1520/lbook4a/4_burn_image.md
-            file: lichee/th1520/lbook4a/lbook4a.md
-        -   label: Lichee PI 4A
-            collapsed: false
-            items:
-            -   label: 板卡介绍
-                file: lichee/th1520/lpi4a/1_intro.md
-            -   label: 开箱体验
-                file: lichee/th1520/lpi4a/2_unbox.md
-            -   label: 镜像集合
-                file: lichee/th1520/lpi4a/3_images.md
-            -   label: 烧录镜像
-                file: lichee/th1520/lpi4a/4_burn_image.md
-            -   label: 桌面系统基础使用
-                file: lichee/th1520/lpi4a/5_desktop.md
-            -   label: 外设使用
-                file: lichee/th1520/lpi4a/6_peripheral.md
-            -   label: 系统开发
-                items:
-                -   label: revyos
-                    file: lichee/th1520/lpi4a/7_develop_revyos.md
-                -   label: Linux 主线
-                    file: lichee/th1520/lpi4a/7_develop_mainline.md
-                -   label: Android
-                    file: lichee/th1520/lpi4a/7_develop_android.md
-                -   label: THead Yocto
-                    file: lichee/th1520/lpi4a/7_develop_thead.md
-                -   label: OpenHarmony (编写中)
-                    # file:
-                -   label: OpenWRT
-                    file: lichee/th1520/lpi4a/7_develop_openwrt.md
-            -   label: 典型应用
-                file: lichee/th1520/lpi4a/8_application.md
-            -   label: 玄铁多媒体AI平台
-                file: lichee/th1520/lpi4a/13_XTAI.md
-            -   label: CPU 跑分测试
-                file: lichee/th1520/lpi4a/9_benchmark.md
-            -   label: 硬件测试报告
-                file: lichee/th1520/lpi4a/10_test_report.md
-            -   label: 常见问题
-                file: lichee/th1520/lpi4a/12_faq.md
-            -   label: 致谢
-                file: lichee/th1520/lpi4a/11_credits.md
-    -   label: LicheePI 3A
-        items:
-        -   label: Lichee Module 3A
-            file: lichee/K1/lm3a.md
-        -   label: Lichee Cluster 3A
-            file: lichee/K1/lc3a/lc3a.md
-        -   label: Lichee PI 3A
-            collapsed: false
-            items:
-            -   label: 板卡介绍
-                file: lichee/K1/lpi3a/1_intro.md
-            -   label: 开箱体验
-                file: lichee/K1/lpi3a/2_unbox.md
-            -   label: 镜像烧录
-                file: lichee/K1/lpi3a/3_burn_image.md
-            -   label: 外设使用
-                file: lichee/K1/lpi3a/4_peripheral.md
-            -   label: 系统开发
-                file: lichee/K1/lpi3a/5_develop.md
-            -   label: 典型应用
-                file: lichee/K1/lpi3a/6_application.md
-            -   label: 常见问题
-                file: lichee/K1/lpi3a/7_faq.md
-            -   label: 致谢
-                file: lichee/K1/lpi3a/8_credits.md
-    -   label: LicheePI RV
-        items:
-        -   label: 板卡介绍
-            collapsed: false
-            items:
-            -   label: LicheePI RV
-                file: lichee/RV/RV.md
-            -   label: LicheePI RV 86 Panel
-                file: lichee/RV/86_panel.md
-            -   label: LicheePI RV Dock
-                file: lichee/RV/Dock.md
-        -   label: 烧录系统
-            file: lichee/RV/flash.md
-        -   label: 基础上手
-            file: lichee/RV/user.md
-        -   label: 常见问题
-            file: lichee/RV/problems.md
-        -   label: 使用 Ubuntu 镜像
-            file: lichee/RV/ubuntu.md
-    -   label: LicheeRV Nano
-        items:
-        -   label: 板卡介绍
-            file: lichee/RV_Nano/1_intro.md
-        -   label: 开箱体验
-            file: lichee/RV_Nano/2_unbox.md
-        -   label: 镜像集合
-            file: lichee/RV_Nano/3_images.md
-        -   label: 烧录镜像
-            file: lichee/RV_Nano/4_burn_image.md
-        -   label: 外设使用
-            file: lichee/RV_Nano/5_peripheral.md
-        -   label: 系统开发
-            file: lichee/RV_Nano/6_develop_mainline.md
-        -   label: 板卡测试
-            file: lichee/RV_Nano/7_test_report.md
-        -   label: MMF开发指南
-            file: lichee/RV_Nano/8_mmf_development_guide.md
-    -   label: LicheePI Zero
-        file: lichee/Zero/Zero.md
-    -   label: LicheePI Nano
-        file: lichee/Nano/Nano.md
-    -   label: LicheePI ZeroPlus
-        file: lichee/ZeroPlus/ZeroPlus.md
--   label: Q&A
-    file: Q&A/Q&A.md
+    -   label: FAQ
+        file: maixIV/m4ndock/FAQ.md

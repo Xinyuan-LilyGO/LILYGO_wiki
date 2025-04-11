@@ -33,41 +33,41 @@ This flexible configuration meets diverse needs, including industrial control, e
 ### Appearance
 <img src="./assets/T-Deck-Pro2.jpg" alt="summary" width=80%>
 
-### 引脚图 
+### Pinmap 
 
 <img src="./assets/T-Deck-Pro3.jpg" alt="summary" width=100%>
 
-## 模块资料
-### 概述
+## Module Information and Specifications
+### Description
 
-| 组件 | 描述 |
+| Component | Description |
 | --- | --- |
 | MCU | ESP32-53FN16R8 Dual-core LX7 microprocessor
 | FLASH| 16MB |
 | PSRAM | 	8MB|
 | GPS | MIA-M10Q |
 | LoRa | SX1262:433~920Mhz |
-| 存储 | TF 卡 |
-| 4G-Module | A7682E 可选 |
-| 无线 | 2.4 GHz Wi-Fi, Bluetooth 5 (LE)
-| 通讯 | SIM 卡|
+| Storage | TF card |
+| 4G-Module | A7682E (Optional) |
+| wireless | 2.4 GHz Wi-Fi, Bluetooth 5 (LE)
+| Communication | SIM 卡|
 | USB | 1 × USB Port and OTG(TYPE-C接口) |
-| 拓展接口 | 1 × QWIIC接口 |
-| 陀螺仪 | BHI260AP |
-| 电机 | IO电平控制|
-| 音频 | PCM512A 可选|
-| IO 接口 | 2.54mm间距 × 2*20（双排）拓展IO接口 |
-| 按键 | 1 x RESET 按键 + 1 x BOOT 按键 |
-| 屏幕 | GDEQ031T10 3.1 inch 墨水屏 320x240|
-| 触摸 | CST328  |
-| 电池容量 | 3.7V-1500mAh |
-| 电池芯片 | BQ25896/BQ27220  |
-| 键盘 | TCA8418 |
-| 灯光传感器 | LTR_553ALS|
-| 电源 | 5V/500mA |
-| 孔位 | **2mm定位孔 *2** |
-| 尺寸 | **120x66x13.5mm**  |
-### 相关资料链接
+| Extended Interface | 1 × QWIIC接口 |
+| Gyroscope | BHI260AP |
+| Motor Control | IO level control|
+| Audio | PCM512A (Optional)|
+| IO Interface | 2.54mm pitch × 2*20 (dual-row) expansion IO interface |
+| Buttons | 1 x RESET Buttons + 1 x BOOT Buttons |
+| Display | GDEQ031T10 3.1 inch  E-Ink screen 320x240|
+| Touch | CST328  |
+| Battery Capacity | 3.7V-1500mAh |
+| Battery Management Chip | BQ25896/BQ27220  |
+| Keyboard | TCA8418 |
+| Light Sensor | LTR_553ALS|
+| Power  | 5V/500mA |
+| Holes | **2mm定位孔 *2** |
+| Dimensions | **120x66x13.5mm**  |
+### Related Links
 
 Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 
@@ -77,11 +77,12 @@ Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 - [MP34DT05-A](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf)
 
 
-#### 原理图
+#### Schematic Diagram
 
-[T3-S3-MVSRBoard](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/project/T3-S3-MVSRBoard_V1.0.pdf)
 
-#### 依赖库
+[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro/blob/master/hardware/T-Deckpro%2024-05-16/T-DeckPro%20V1.0%2024-05-16.pdf)
+
+#### Dependency Libraries
 
 * [lvgl 8.3.9](https://github.com/lvgl/lvgl)
 * [GxEPD2](https://github.com/ZinggJM/GxEPD2)
@@ -95,8 +96,9 @@ Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 * [U8g2_for_Adafruit_GFX](https://github.com/olikraus/U8g2_for_Adafruit_GFX)
 * [ESP32-audioI2S](https://github.com/esphome/ESP32-audioI2S)
 
-## 软件开发
-### Arduino 设置参数
+## Software Design
+### Arduino Set Parameters
+
 
 | Setting                               | Value                                 |
 | ------------------------------- | ------------------------------- |
@@ -115,13 +117,11 @@ Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 | Arduino Runs On                  | Core 1                               |
 | Events Run On                     | Core 1                               |           
 
-### 开发平台
-1. [VS Code](https://code.visualstudio.com/)
+### Development Platform
+1. [C](https://github.com/Xk-w/Arduino_DriveBus)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
-3. [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf)
-4. [PlatformIO](https://platformio.org/)
+3. [Platform IO](https://github.com/Xk-w/Arduino_DriveBus)
 
-Arduino, Platform0-IDE, ESP-IDF
-## 产品技术支持 
+## Product Technical Support
 
 

@@ -69,7 +69,7 @@ Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 
 #### 原理图
 
-[T3-S3-MVSRBoard](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/project/T3-S3-MVSRBoard_V1.0.pdf)
+[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro/blob/master/hardware/T-Deckpro%2024-05-16/T-DeckPro%20V1.0%2024-05-16.pdf)
 
 #### 依赖库
 

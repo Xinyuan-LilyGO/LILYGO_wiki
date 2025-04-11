@@ -39,6 +39,8 @@ items:
         file: maixIV/m4ndock/FAQ.md
 -   label: Basic Module
     items:
+    -   label: T7 C6
+        file: Basic_Module/T7_C6/T7_C6.md
     -   label: FAQ
 -   label: T-SIM/T-PCIE Series
     items:
