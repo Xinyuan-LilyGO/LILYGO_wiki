@@ -24,20 +24,20 @@
                 "position": "left"
             },
             {
-                "label": "<img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'>",
+                "label": "<img src='/LILYGO.github.io/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'>",
                 "position": "right",
                 "url": "https://www.youtube.com/@LILYGO",
                 "target": "_blank"
             },
             {
-                "label": "<img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'>",
+                "label": "<img src='/LILYGO.github.io/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'>",
                 "position": "right",
                 "url": "https://github.com/Xinyuan-LilyGO",
                 "target": "_blank"
             },
             {
                 "id": "language",
-                "label": "<img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;",
+                "label": "<img src='/LILYGO.github.io/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;",
                 "position": "right",
                 "type": "language"
             }
@@ -108,13 +108,8 @@
         ],
         "bottom": [
             {
-                "label": "渝ICP备19015320号",
+                "label": "Test",
                 "url": "https://beian.miit.gov.cn",
-                "target": "_blank"
-            },
-            {
-                "label": "粤公网安备44030602004109号",
-                "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602004109",
                 "target": "_blank"
             }
         ]
