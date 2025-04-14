@@ -130,9 +130,9 @@ Github：[T-PICO-2350](https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/tree/mas
      
 
 ### 开发平台
-1. [C语言](https://github.com/Xk-w/Arduino_DriveBus)
+1. [C语言](https://code.visualstudio.com/)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
-3. [Platform IO](https://github.com/Xk-w/Arduino_DriveBus)
+3. [Platform IO](https://platformio.org/)
 
 ## 产品技术支持 
 
