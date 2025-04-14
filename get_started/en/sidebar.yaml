@@ -28,7 +28,8 @@ items:
         file: maixIV/m4ndock/FAQ.md
 -   label: LCD OLED
     items:
-    -   label: T-Display K230
+    -   label: T-Deck Plus
+        file: LCD_OLED/T-Deck-Plus/T-Deck-Plus.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md    
 -   label: Wearable Kit
