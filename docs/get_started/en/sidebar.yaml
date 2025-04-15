@@ -7,6 +7,8 @@ items:
         file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
     -   label: T-Connect Pro
         file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
+    -   label: T3 STM32
+        file: LoRa_GPS/T3-STM32/T3-STM32.md     
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
 -   label: AMOLED

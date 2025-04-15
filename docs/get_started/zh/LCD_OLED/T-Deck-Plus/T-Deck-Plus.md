@@ -48,10 +48,11 @@ LILYGO T-Deck Plus 是一款功能丰富的便携式嵌入式开发套件，基�
 |触摸	|GT911
 | 按键 | 1 x RST 按键 + 1 x BOOT 按键(轨迹球)  |
 |音频	|ES7210
+| USB |1 × type-C接口|
 |IO 拓展	|PCA9535PW (0x20)
 | 拓展接口 | GPS拓展接口 + 2 × Knockout(用于拓展天线的AUX连接器) |
 | 孔位 | 2×2mm 定位孔 |
-
+| 尺寸 | **115x72x20mm**  |
 ### 相关资料
 Github：[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck)
 * [T-Deck ANT 868-915MH](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf)

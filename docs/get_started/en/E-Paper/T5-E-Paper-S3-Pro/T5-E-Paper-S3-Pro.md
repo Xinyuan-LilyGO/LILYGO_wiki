@@ -99,7 +99,7 @@ Github：[T5 E-paper S3 PRO](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-
 |Upload Mode	|UART0/Hardware CDC            
 |Upload Speed	|921600                            
 |USB Mode	|CDC and JTAG      
-
+| Size | **129x69x11mm**  |
 ### Development Platform
 1. [VS Code](https://code.visualstudio.com/)
 2. [Arduino IDE](https://www.arduino.cc/en/software)

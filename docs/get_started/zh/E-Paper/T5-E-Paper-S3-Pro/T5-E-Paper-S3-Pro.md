@@ -50,7 +50,7 @@ T5-4.7-S3 Epaper PRO 是一款多功能物联网设备，基于 ESP32-S3-WROOM-1
 |IO 拓展	|PCA9535PW (0x20)
 | 拓展接口 | 2 × QWIIC接口 |
 | 孔位 | M4mm *2  |
-
+| 尺寸 | **129x69x11mm**  |
 ### 相关资料
 Github：[T5 E-paper S3 PRO](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO)
 * [ED047TC1](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/ED047TC1.pdf)

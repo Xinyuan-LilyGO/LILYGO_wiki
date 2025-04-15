@@ -51,11 +51,12 @@ The board connects various modules via SPI and I2C interfaces (such as LoRa, LCD
 |Power Switch	|Supported
 |Touch Controller	|GT911
 | Buttons | 1 x RST Buttons + 1 x BOOT Buttons(on trackball)  |
+| USB |1 × type-C Interfaces|
 |Audio Codec	|ES7210
 |IO Expansion	|PCA9535PW (0x20)
 | Expansion Interfaces | GPS expansion interface + 2 × Knockout (for AUX antenna connectors)|
 | Mounting Holes | 2 × 2mm positioning holes |
-	
+| Dimensions | **115x72x20mm**  |	
 ### Related Links
 Github：[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck)
 * [T-Deck ANT 868-915MH](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf)
