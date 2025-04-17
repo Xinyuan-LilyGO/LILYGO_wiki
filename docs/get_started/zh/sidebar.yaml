@@ -51,7 +51,7 @@ items:
     -   label: T-A7670
         items:    
         -   label: T-A7670E
-            items: docs\get_started\zh\
+            items: 
             -   label: 标准版
                 file : SIM/T-A7670/T-A7670E/T-A7670E/T-A7670E.md
             -   label: 4G版
