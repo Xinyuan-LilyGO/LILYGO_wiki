@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
+            <loc>https:// /LILYGO.github.io/get_started/zh/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
+            <lastmod>2025-04-17</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https:// /LILYGO.github.io/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
@@ -61,13 +67,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/SIM/T-A7670/T-A7670G/T-A7670G-GPS/T-A7670G.html</loc>
+            <loc>https:// /LILYGO.github.io/get_started/zh/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/SIM/T-A7670/T-A7670G/T-A7670G/T-A7670G.html</loc>
+            <loc>https:// /LILYGO.github.io/get_started/zh/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -98,12 +104,6 @@
         </url>
         <url>
             <loc>https:// /LILYGO.github.io/get_started/zh/Wearable/T-watch-k230.html</loc>
-            <lastmod>2025-04-17</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/zh/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -163,30 +163,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
-            <lastmod>2025-04-17</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
-            <lastmod>2025-04-17</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/index.html</loc>
-            <lastmod>2025-04-17</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
-            <lastmod>2025-04-17</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
@@ -206,6 +182,30 @@
         </url>
         <url>
             <loc>https:// /LILYGO.github.io/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
+            <lastmod>2025-04-17</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
+            <lastmod>2025-04-17</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-04-17</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/index.html</loc>
+            <lastmod>2025-04-17</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
             <lastmod>2025-04-17</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
