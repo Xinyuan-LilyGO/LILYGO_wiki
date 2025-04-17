@@ -71,7 +71,7 @@ Github：[T3 STM32](https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master)
 ## Flashing Tools
 1. Official ST programmer: [STM32CubeProgrammer](https://www.st.com.cn/zh/development-tools/stm32cubeprog.html)
 2. JLink software [JLink Software and Documentation Pack](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
-3. STLink driver [STLink_V3.0.1_win32.exe](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stlink-v3.html)
+3. STLink driver [STLink_V3.0.1_win32](https://www.st.com.cn/zh/development-tools/stsw-link009.html)
 
 > Note: All three flashing tools (`JLink` `STLink` `STM32CubeProgrammer`) require the appropriate drivers to function properly.
 

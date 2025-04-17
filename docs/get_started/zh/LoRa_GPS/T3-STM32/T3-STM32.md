@@ -66,7 +66,7 @@ Github：[T3 STM32](https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master)
 ## 下载工具
 1. ST 官方编程软件下载 [STM32CubeProgrammer](https://www.st.com.cn/zh/development-tools/stm32cubeprog.html)
 2. JLink 下载 [JLink Software and Documentation Pack](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
-3. STLink 驱动下载 [STLink_V3.0.1_win32.exe](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stlink-v3.html)
+3. STLink 驱动下载 [STLink_V3.0.1_win32](https://www.st.com.cn/zh/development-tools/stsw-link009.html)
 
 > `JLink` `STLink` `STM32CubeProgrammer` 三种下载器均需要使用驱动程序才能正常使用
 

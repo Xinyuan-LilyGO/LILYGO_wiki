@@ -46,7 +46,20 @@ items:
         file: Basic_Module/T7_C6/T7_C6.md
     -   label: FAQ
 -   label: T-SIM/T-PCIE Series
+    file: SIM/SIM.md
     items:
+    -   label: T-A7670
+        items:    
+        -   label: T-A7670E
+            items: 
+            -   label: Standard Version
+                file : T-A7670E/T-A7670E/T-A7670E.md
+            -   label: 4G Version
+                file : T-A7670E/T-A7670E-4G/T-A7670E-4G.md
+        -   label: T-A7670G
+            file: T-A7670G/T-A7670G/T-A7670G.md
+        -   label: T-A7670SA
+            file: T-A7670SA/T-A7670SA/T-A7670SA.md
     -   label: FAQ
         file: maixcam/faq.md
 -   label: Accessories
