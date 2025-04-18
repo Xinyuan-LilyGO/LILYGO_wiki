@@ -1,7 +1,7 @@
 {
     "site_name": "LILYGO Wiki",
     "site_slogon": "happy to write",
-    "site_root_url": "https://wiki.lilygo.cc/",
+    "site_root_url": "/",
     "site_domain": "wiki.lilygo.cc",
     "site_protocol": "https",
     "config_template_dir": "config",
