@@ -13,7 +13,8 @@
             "/more/": "docs/more"
         },
         "pages": {
-            "/": "pages/index/zh"
+            "/": "pages/index/zh",
+            "/en/": "pages/index/en"
         },
         "assets": {
             "/static/": "static",
