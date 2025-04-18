@@ -39,7 +39,7 @@ id: home_page
                 <div class="carousel-box">
                 <!-- 幻灯片列表 -->
                 <div class="slide-item active">
-                    <img class="carousel-img" src="/static/image/t-deck-plus.png alt="图片1">
+                    <img class="carousel-img" src="/static/image/t-deck-plus.png "alt="图片1">
                 </div>
                 <div class="slide-item">
                     <img class="carousel-img" src="/static/image/t-deck-plus.png" alt="图片2">
