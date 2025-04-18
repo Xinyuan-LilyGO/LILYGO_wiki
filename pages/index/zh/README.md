@@ -35,7 +35,11 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-                <img class="carousel-img" src="/static/image/t-deck-plus.png "alt="图片1">
+                <div class="imgBox">
+                    <img class="img-slide img1" src="/static/image/t-deck-plus.png" alt="1">
+                    <img class="img-slide img2" src="/static/image/t-deck-plus.png" alt="2">
+                    <img class="img-slide img3" src="/static/image/t-deck-plus.png" alt="3">
+                </div>
             </div>    
         </div>
     </div>
@@ -147,19 +151,19 @@ id: home_page
 
 <script>
 // 幻灯片切换函数
-function switchSlide(index) {
-  // 获取所有元素
-  const slides = document.querySelectorAll('.slide-item');
-  const dots = document.querySelectorAll('.dot');
-
-  // 移除所有激活状态
-  slides.forEach(slide => slide.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
-
-  // 设置新激活项
-  slides[index].classList.add('active');
-  dots[index].classList.add('active');
-}
+    var index=0;
+    //效果
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,3000);
 </script>
 
 <canvas id="backgroundCanvas"  style="top:0; bottom:0; left:0; right:0; position:fixed; z-index: -99;">
