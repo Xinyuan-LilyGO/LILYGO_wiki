@@ -83,7 +83,9 @@ var _hmt = _hmt || [];
                 <div>
     <!-- <script src="/LILYGO.github.io/static/js/scrolloverflow.min.js"></script> -->
     <script src="/LILYGO.github.io/static/js/jquery.fullpage.min.js"></script>
+    <script src="/LILYGO.github.io/static/js/lilygo.js"></script>
     <link rel="stylesheet" href="/LILYGO.github.io/static/css/jquery.fullpage.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/LILYGO.github.io/static/css/lilygo.css" type="text/css"/>
 </div>
 <div id="fullpage">
     <div class="section" style="height: 100vh;">
@@ -107,21 +109,24 @@ var _hmt = _hmt || [];
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro1.jpg"></div>
-                    <div class="mySlides fade">
-                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro2.jpg"></div>
-                    <div class="mySlides fade">
-                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro-zh.jpg"></div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <!-- 轮播容器 -->
+                <div class="carousel-box">
+                <!-- 幻灯片列表 -->
+                <div class="slide-item active">
+                    <img class="carousel-img" src="/LILYGO.github.io/static/image/t-deck-plus.png alt="图片1">
                 </div>
-            </div>
+                <div class="slide-item">
+                    <img class="carousel-img" src="/LILYGO.github.io/static/image/t-deck-plus.png" alt="图片2">
+                </div>
+                <div class="slide-item">
+                    <img class="carousel-img" src="/LILYGO.github.io/static/image/t-deck-plus.png" alt="图片3">
+                </div> 
+                    <div class="dots-box">
+                        <span class="dot active" onclick="switchSlide(0)"></span>
+                        <span class="dot" onclick="switchSlide(1)"></span>
+                        <span class="dot" onclick="switchSlide(2)"></span>
+                    </div>
+            </div>    
         </div>
     </div>
     <div class="section dsc_wrapper_right">
@@ -228,6 +233,22 @@ var _hmt = _hmt || [];
     });
 </script>
 </div>
+<script>
+// 幻灯片切换函数
+function switchSlide(index) {
+  // 获取所有元素
+  const slides = document.querySelectorAll('.slide-item');
+  const dots = document.querySelectorAll('.dot');
+
+  // 移除所有激活状态
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  // 设置新激活项
+  slides[index].classList.add('active');
+  dots[index].classList.add('active');
+}
+</script>
 <canvas id="backgroundCanvas"  style="top:0; bottom:0; left:0; right:0; position:fixed; z-index: -99;">
 </canvas>
 <script>

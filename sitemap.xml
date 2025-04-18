@@ -151,36 +151,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/SIM/SIM.html</loc>
-            <lastmod>2025-04-01</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
-            <lastmod>2025-04-18</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
-            <lastmod>2025-04-18</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
-            <lastmod>2025-04-18</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T-Deck.html</loc>
-            <lastmod>2025-04-18</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
             <lastmod>2025-04-18</lastmod>
             <changefreq>weekly</changefreq>
@@ -206,6 +176,36 @@
         </url>
         <url>
             <loc>https:// /LILYGO.github.io/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
+            <lastmod>2025-04-18</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/SIM/SIM.html</loc>
+            <lastmod>2025-04-01</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <lastmod>2025-04-18</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
+            <lastmod>2025-04-18</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
+            <lastmod>2025-04-18</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https:// /LILYGO.github.io/get_started/en/LoRa_GPS/T-Deck.html</loc>
             <lastmod>2025-04-18</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
