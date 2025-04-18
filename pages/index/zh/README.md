@@ -35,23 +35,7 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-            <!-- 轮播容器 -->
-                <div class="carousel-box">
-                <!-- 幻灯片列表 -->
-                <div class="slide-item active">
-                    <img class="carousel-img" src="/static/image/t-deck-plus.png "alt="图片1">
-                </div>
-                <div class="slide-item">
-                    <img class="carousel-img" src="/static/image/t-deck-plus.png" alt="图片2">
-                </div>
-                <div class="slide-item">
-                    <img class="carousel-img" src="/static/image/t-deck-plus.png" alt="图片3">
-                </div> 
-                    <div class="dots-box">
-                        <span class="dot active" onclick="switchSlide(0)"></span>
-                        <span class="dot" onclick="switchSlide(1)"></span>
-                        <span class="dot" onclick="switchSlide(2)"></span>
-                    </div>
+                <img class="carousel-img" src="/static/image/t-deck-plus.png "alt="图片1">
             </div>    
         </div>
     </div>
