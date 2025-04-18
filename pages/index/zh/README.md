@@ -35,10 +35,17 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-                <div class="imgBox">
-                    <img class="img-slide img1" src="/static/image/t-deck-plus.png" alt="1">
-                    <img class="img-slide img2" src="/static/image/t-deck-plus.png" alt="2">
-                    <img class="img-slide img3" src="/static/image/t-deck-plus.png" alt="3">
+                <div class="slider">
+                <div class="slide-track">
+        <!-- 这里替换为自己的图片地址 -->
+                    <div class="slide"><img src="/static/image/t-deck-plus.png" alt="Image 1"></div>
+                    <div class="slide"><img src="/static/image/t-deck-plus.png" alt="Image 2"></div>
+                    <div class="slide"><img src="/static/image/t-deck-plus.png" alt="Image 3"></div>
+                    <!-- 可以继续添加更多图片 -->
+                </div>
+                <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
+                <span class="next" onclick="moveSlide(1)">&#10095;</span>
+                <div class="indicators"></div>
                 </div>
             </div>    
         </div>
