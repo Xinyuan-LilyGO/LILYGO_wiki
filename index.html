@@ -112,9 +112,8 @@ var _hmt = _hmt || [];
                 <div class="slider">
                 <div class="slide-track">
         <!-- 这里替换为自己的图片地址 -->
-                    <div class="slide"><img src="/LILYGO.github.io/static/image/t-deck-plus.png" alt="Image 1"></div>
-                    <div class="slide"><img src="/LILYGO.github.io/static/image/t-deck-plus.png" alt="Image 2"></div>
-                    <div class="slide"><img src="/LILYGO.github.io/static/image/t-deck-plus.png" alt="Image 3"></div>
+                    <div class="slide"><img src="/LILYGO.github.io/static/image/Board_banner/t-deck-plus-zh.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="/LILYGO.github.io/static/image/Board_banner/t-deck-plus-en.jpg" alt="Image 2"></div>
                     <!-- 可以继续添加更多图片 -->
                 </div>
                 <span class="prev" onclick="moveSlide(-1)">&#10094;</span>
@@ -228,22 +227,6 @@ var _hmt = _hmt || [];
     });
 </script>
 </div>
-<script>
-// 幻灯片切换函数
-    var index=0;
-    //效果
-    function ChangeImg() {
-        index++;
-        var a=document.getElementsByClassName("img-slide");
-        if(index>=a.length) index=0;
-        for(var i=0;i<a.length;i++){
-            a[i].style.display='none';
-        }
-        a[index].style.display='block';
-    }
-    //设置定时器，每隔两秒切换一张图片
-    setInterval(ChangeImg,3000);
-</script>
 <canvas id="backgroundCanvas"  style="top:0; bottom:0; left:0; right:0; position:fixed; z-index: -99;">
 </canvas>
 <script>
