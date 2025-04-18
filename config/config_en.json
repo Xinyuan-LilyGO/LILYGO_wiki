@@ -64,27 +64,27 @@
                 "label": "Follow us",
                 "items": [
                     {
-                        "label": "twitter",
+                        "label": "Twitter",
                         "url": "https://x.com/lilygo9",
                         "target":"_blank"
                     },
                     {
-                        "label": "淘宝",
+                        "label": "TaoBao",
                         "url": "https://shop140839766.taobao.com/?spm=a1z10.1-c.0.0.359257605UXZ3y",
                         "target":"_blank"
                     },
                     {
-                        "label": "github",
+                        "label": "Github",
                         "url": "https://github.com/Xinyuan-LilyGO",
                         "target":"_blank"
                     },
                     {
-                        "label": "youtube",
+                        "label": "YouTuBe",
                         "url": "https://www.youtube.com/@LILYGO",
                         "target":"_blank"
                     },
                     {
-                        "label": "facebook",
+                        "label": "FaceBook",
                         "url": "https://www.facebook.com/lilygottgo",
                         "target":"_blank"
                     }

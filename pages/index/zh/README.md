@@ -33,8 +33,20 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-                使用 <img class="logo" src="/static/image/markdown.svg"> Markdown 或者 <img class="logo" src="/static/image/jupyter.svg">jupyter notebook 书写，</br>
-                自动生成 HTML 页面
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro1.jpg"></div>
+                    <div class="mySlides fade">
+                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro2.jpg"></div>
+                    <div class="mySlides fade">
+                <img src="../../../docs/get_started/zh/LoRa_GPS/T-Connect-Pro/assets/T-Connect-Pro-zh.jpg"></div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </div>
     </div>
