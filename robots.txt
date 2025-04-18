@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://wiki.lilygo.cc/sitemap.xml
+Sitemap: https:// /sitemap.xml

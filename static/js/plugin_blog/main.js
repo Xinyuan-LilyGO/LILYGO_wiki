@@ -88,7 +88,7 @@ $(document).ready(function(){
         });
     }
     if(isBlog){
-        downloadJson("/static/blog_index/index.json", onDownloadOk);
+        downloadJson("/LILYGO.github.io/static/blog_index/index.json", onDownloadOk);
     }
 });
 
