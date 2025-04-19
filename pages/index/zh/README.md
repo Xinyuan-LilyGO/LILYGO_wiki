@@ -30,11 +30,11 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="dsc_left">
+            <div width: 30% text-align:center color: #81839;>
                 <h2>LoRa</h2>
                 <h2>GPS</h2>
             </div>
-            <div class="dsc_right">
+            <div flex-grow: 1 text-align:center color: #818395 width="300" height="200">
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <img src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1"></div>
