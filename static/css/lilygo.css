@@ -14,13 +14,36 @@
   }
   
   .carousel-img {
-    width: 100%;
+    width: 50%;
     height: 400px;
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-  
+
+/* 左边文字 右边图片 */
+.carousel-right {
+width: 65%;
+text-align: center;
+color: #818395;
+}
+.carousel-right-left-word {
+width: 35%;
+text-align: center;
+color: #818395;
+}
+/* 左边图片 右边文字 */
+.carousel-left {
+    width: 65%;
+    text-align: center;
+    color: #818395;
+}
+.carousel-left-right-word {
+    width: 35%;
+    text-align: center;
+    color: #818395;
+    }
+    
   .dots-box {
     text-align: center;
     padding: 20px 0;
@@ -46,3 +69,4 @@
     background: rgba(0,0,0,0.6);
     transform: scale(1.2);
   }
+
