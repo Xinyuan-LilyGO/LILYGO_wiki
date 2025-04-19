@@ -35,12 +35,12 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="dsc_right">
-                <div class="carousel">
-                    <div class="slides" id="slides">
-                        <img src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1">
-                        <img src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2">
-                    </div>
-                    <div class="dots" id="dots">
+                <div class="carousel-box">
+                    <div class="slide-item active">
+                        <img src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1"></div>
+                    <div class="slide-item">
+                        <img src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
+                    <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
                         <div class="dot" data-index="2"></div>
