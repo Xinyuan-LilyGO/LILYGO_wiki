@@ -1,18 +1,47 @@
 /* 轮播图专用样式 */
 .carousel-box {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 75vw;        /* 视口宽度的75% */
+    margin: 0 auto;     /* 居中显示 */
     position: relative;
+    overflow: hidden;
+    
+    /* 根据1920x800比例计算高度 (800/1920=41.666%) */
+    padding-top: 41.666%;
+}
+.carousel-img {
+    object-fit: contain; /* 完整显示（可能有留白） */
+    /* 或 object-fit: cover; 填充容器（可能裁剪边缘） */
   }
-  
-  .slide-item {
-    display: none;
+.slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
   }
   
   .slide-item.active {
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保持比例完整显示 */
+    object-position: center;
+    opacity: 1;
+}
+/* 响应式适配 */
+@media (max-width: 1200px) {
+    .carousel-box {
+      width: 90vw;      /* 小屏幕时适当缩小 */
+    }
   }
   
+  @media (max-width: 768px) {
+    .carousel-box {
+      width: 100vw;     /* 移动端全宽显示 */
+      padding-top: 56.25%; /* 改为16:9比例适配移动端 */
+    }
+  }
   .carousel-img {
     width: 100%;
     max-width: 800px;
@@ -24,23 +53,23 @@
 
 /* 左边文字 右边图片 */
 .carousel-right {
-width: 65%;
-text-align: center;
-color: #818395;
+    width: 75%;
+    text-align: center;
+    color: #818395;
 }
 .carousel-right-left-word {
-width: 35%;
-text-align: center;
-color: #818395;
+    width: 25%;
+    text-align: center;
+    color: #818395;
 }
 /* 左边图片 右边文字 */
 .carousel-left {
-    width: 65%;
+    width: 75%;
     text-align: center;
     color: #818395;
 }
 .carousel-left-right-word {
-    width: 35%;
+    width: 25%;
     text-align: center;
     color: #818395;
     }
