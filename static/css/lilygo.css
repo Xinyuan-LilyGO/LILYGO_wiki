@@ -1,58 +1,48 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f4f4f4;
-  }
-  
-  .carousel {
+/* 轮播图专用样式 */
+.carousel-box {
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
-    width: 600px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .slides {
-    display: flex;
+  .slide-item {
+    display: none;
+  }
+  
+  .slide-item.active {
+    display: block;
+  }
+  
+  .carousel-img {
     width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
-  .slides img {
-    width: 600px;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  .dots {
+  .dots-box {
+    text-align: center;
+    padding: 20px 0;
     position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
   }
   
   .dot {
-    width: 12px;
-    height: 12px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px;
+    background: rgba(0,0,0,0.2);
     border-radius: 50%;
-    background-color: #ccc;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
   }
   
   .dot.active {
-    background-color: #333;
+    background: rgba(0,0,0,0.6);
+    transform: scale(1.2);
   }
-  
