@@ -40,6 +40,8 @@ id: home_page
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
+                    <div class="slide-item">
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -51,12 +53,12 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="dsc_left">
+            <div class="carousel-left">
                 <img class="logo" src="/static/image/windows.svg"> <img class="logo" src="/static/image/linux.svg"> <img class="logo" src="/static/image/mac.svg"><br/>
                 使用 python 编写， 跨平台， 使用 pip 即可安装，</br>
                 <img class="logo" src="/static/image/plugin.svg"> 支持插件安装及自定义插件
             </div>
-            <div class="dsc_right">
+            <div class="carousel-left-right-word">
                 <h2>AMOLED</h2>
             </div>
         </div>
@@ -85,11 +87,11 @@ id: home_page
     </div>
         <div class="section dsc_wrapper_left">
         <div>
-            <div class="dsc_left">
+            <div class="carousel-right-left-word">
                 <h2>Basic</h2>
                 <h2>Module</h2>
             </div>
-            <div class="dsc_right">
+            <div class="carousel-left">
                 <img class="logo" src="/static/image/speed.svg"> 并行构建，充分利用处理器性能，文档渲染就在一瞬间</br>
                 <img class="logo" src="/static/image/browser.svg"> 支持浏览器实时预览修改
             </div>
@@ -97,21 +99,21 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="dsc_left">
+            <div class="carousel-right">
                 <img class="logo" src="/static/image/server.svg"> 生成的都是静态页面，拷贝到服务器即可完成部署</br>
                 <img class="logo" src="/static/image/seo.svg"> SEO 友好，比如 页关键词自定义、sitemap自动生成等
             </div>
-            <div class="dsc_right">
+            <div class="carousel-right-left-word">
                 <h2>T-SIM/T-PCIE Series</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="dsc_left">
+            <div class="carousel-right-left-word">
                 <h2>Accessories</h2>
             </div>
-            <div class="dsc_right">
+            <div class="carousel-left">
                <h2>Good</h2>
             </div>
         </div>
