@@ -44,7 +44,7 @@
   }
   .carousel-img {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: 600px;
     object-fit: contain;
     border-radius: 8px;
