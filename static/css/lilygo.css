@@ -78,10 +78,12 @@
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
     background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+    z-index: 10; /* 必须高于图片层级 */
+    pointer-events: auto; /* 确保可交互 */
   }
   
   .dot {
@@ -98,5 +100,6 @@
   .dot.active {
     background: rgba(0,0,0,0.6);
     transform: scale(1.2);
+    position: relative; /* 确保z-index生效 */
   }
 
