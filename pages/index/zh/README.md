@@ -30,11 +30,11 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="carousel-min">
                 <h2>LoRa</h2>
                 <h2>GPS</h2>
             </div>
-            <div class="carousel-right">
+            <div class="carousel-max">
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
@@ -53,7 +53,7 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="carousel-left">
+            <div class="carousel-max">
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
@@ -67,17 +67,18 @@ id: home_page
                         <div class="dot" data-index="2"></div>
                     </div>
                 </div>
-            <div class="carousel-left-right-word">
+            </div>
+            <div class="carousel-min">
                 <h2>AMOLED</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="dsc_left">
+            <div class="carousel-min">
                 <h2>E-Paper</h2>
             </div>
-            <div class="dsc_right">
+            <div class="carousel-max">
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
@@ -96,8 +97,8 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="dsc_left">
-               <div class="carousel-box">
+            <div class="carousel-max">
+                <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -111,19 +112,19 @@ id: home_page
                     </div>
                 </div>
             </div>
-            <div class="dsc_right">
+            <div class="carousel-min">
                 <h2>Wearable Kit</h2>
             </div>
         </div>
     </div>
         <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="carousel-min">
                 <h2>Basic</h2>
                 <h2>Module</h2>
             </div>
-            <div class="carousel-left">
-               <div class="carousel-box">
+            <div class="carousel-max">
+                <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -141,8 +142,8 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="carousel-right">
-               <div class="carousel-box">
+            <div class="carousel-max">
+                <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -156,18 +157,18 @@ id: home_page
                     </div>
                 </div>
             </div>
-            <div class="carousel-right-left-word">
+            <div class="carousel-min">
                 <h2>T-SIM/T-PCIE Series</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="carousel-min">
                 <h2>Accessories</h2>
             </div>
-            <div class="carousel-left">
-               <div class="carousel-box">
+            <div class="carousel-max">
+                <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
