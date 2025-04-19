@@ -62,18 +62,16 @@
     text-align: center;
     color: #818395;
 }
-/* 左边图片 右边文字 */
-.carousel-left {
+.carousel-max {
     width: 75%;
     text-align: center;
     color: #818395;
 }
-.carousel-left-right-word {
+.carousel-min {
     width: 25%;
     text-align: center;
     color: #818395;
-    }
-    
+}
   .dots-box {
     text-align: center;
     padding: 20px 0;
