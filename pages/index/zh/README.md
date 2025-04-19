@@ -37,9 +37,9 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" max-width: 800px height: 400px; object-fit: contain></div>
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2" max-width: 800px height: 400px; object-fit: contain></div>
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
