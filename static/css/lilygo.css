@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     transition: transform 0.3s ease; /* 添加图片缩放效果 */
     /* pointer-events: none; 关键属性 */
