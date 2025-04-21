@@ -174,11 +174,16 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>
+                                        <!-- 导航控制 -->
+                    <div class="carousel-controls">
+                        <div class="carousel-arrow arrow-left"></div>
+                        <div class="carousel-arrow arrow-right"></div>
+                    </div>                
+                    <div class="carousel-dots">
+                        <div class="carousel-dot active"></div>
+                        <div class="carousel-dot"></div>
+                        <div class="carousel-dot"></div>
                     </div>
                 </div>
             </div>

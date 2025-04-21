@@ -1,120 +1,125 @@
-class SmartCarousel {
-  constructor(container) {
-      this.container = container;
-      this.carouselBox = container.querySelector('.carousel-box');
-      this.slides = Array.from(this.carouselBox.querySelectorAll('.slide-item'));
-      this.dots = Array.from(this.carouselBox.querySelectorAll('.dot'));
-      this.currentIndex = 0;
-      this.autoPlayInterval = null;
-      this.isVisible = false;
-      this.touchStartX = 0;
-      this.initTouchEvents();
+class AdvancedCarousel {
+    constructor(container) {
+        this.container = container;
+        this.track = container.querySelector('.carousel-track');
+        this.items = Array.from(container.querySelectorAll('.carousel-item'));
+        this.dots = Array.from(container.querySelectorAll('.carousel-dot'));
+        this.prevBtn = container.querySelector('.arrow-left');
+        this.nextBtn = container.querySelector('.arrow-right');
+        this.currentIndex = 0;
+        this.autoPlayTimer = null;
+        this.isVisible = false;
 
-      this.init();
-  }
+        this.init();
+    }
 
-  init() {
-      // 事件绑定
-      this.carouselBox.querySelector('.dots-box').addEventListener('click', (e) => {
-          if (e.target.classList.contains('dot')) {
-              const index = this.dots.indexOf(e.target);
-              this.switchTo(index);
-          }
-      });
+    init() {
+        // 初始化尺寸
+        this.containerWidth = this.container.offsetWidth;
+        this.track.style.width = `${this.items.length * 100}%`;
 
-      // 初始化状态
-      this.switchTo(0);
-  }
-  initTouchEvents() {
-    this.carouselBox.addEventListener('touchstart', (e) => {
-        this.touchStartX = e.touches[0].clientX;
-    });
+        // 事件绑定
+        this.bindEvents();
+        this.startAutoPlay();
+        this.initIntersectionObserver();
+    }
 
-    this.carouselBox.addEventListener('touchend', (e) => {
-        const touchEndX = e.changedTouches[0].clientX;
-        const diff = touchEndX - this.touchStartX;
-        
-        if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-                this.switchTo(this.currentIndex - 1);
-            } else {
-                this.switchTo(this.currentIndex + 1);
+    bindEvents() {
+        // 箭头点击
+        this.prevBtn.addEventListener('click', () => this.prevSlide());
+        this.nextBtn.addEventListener('click', () => this.nextSlide());
+
+        // 圆点点击
+        this.dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => this.goToSlide(index));
+        });
+
+        // 触摸事件
+        this.initTouchEvents();
+    }
+
+    initTouchEvents() {
+        let touchStartX = 0;
+
+        this.container.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+
+        this.container.addEventListener('touchend', e => {
+            const touchEndX = e.changedTouches[0].clientX;
+            const deltaX = touchEndX - touchStartX;
+
+            if (Math.abs(deltaX) > 50) {
+                deltaX > 0 ? this.prevSlide() : this.nextSlide();
             }
+        });
+    }
+
+    prevSlide() {
+        const newIndex = (this.currentIndex - 1 + this.items.length) % this.items.length;
+        this.goToSlide(newIndex);
+    }
+
+    nextSlide() {
+        const newIndex = (this.currentIndex + 1) % this.items.length;
+        this.goToSlide(newIndex);
+    }
+
+    goToSlide(index) {
+        if (index === this.currentIndex) return;
+
+        this.currentIndex = index;
+        this.updateTrackPosition();
+        this.updateDots();
+        this.resetAutoPlay();
+    }
+
+    updateTrackPosition() {
+        const translateX = -this.currentIndex * this.containerWidth;
+        this.track.style.transform = `translateX(${translateX}px)`;
+        
+        this.items.forEach((item, i) => {
+            item.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+
+    updateDots() {
+        this.dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+
+    startAutoPlay() {
+        if (!this.autoPlayTimer && this.isVisible) {
+            this.autoPlayTimer = setInterval(() => this.nextSlide(), 5000);
         }
-    });
-}
+    }
 
+    stopAutoPlay() {
+        clearInterval(this.autoPlayTimer);
+        this.autoPlayTimer = null;
+    }
 
-  switchTo(index) {
-      // 边界检查
-      if (index < 0 || index >= this.slides.length) return;
+    resetAutoPlay() {
+        this.stopAutoPlay();
+        this.startAutoPlay();
+    }
 
-      // 移除旧状态
-      this.slides.forEach(slide => slide.classList.remove('active'));
-      this.dots.forEach(dot => dot.classList.remove('active'));
+    initIntersectionObserver() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                this.isVisible = entry.isIntersecting;
+                entry.isIntersecting ? this.startAutoPlay() : this.stopAutoPlay();
+            });
+        }, { threshold: 0.5 });
 
-      // 设置新状态
-      this.currentIndex = index;
-      this.slides[index].classList.add('active');
-      this.dots[index].classList.add('active');
-
-      // 重置自动播放
-      this.resetAutoPlay();
-  }
-
-  startAutoPlay() {
-      if (!this.isVisible) return;
-      this.autoPlayInterval = setInterval(() => {
-          const nextIndex = (this.currentIndex + 1) % this.slides.length;
-          this.switchTo(nextIndex);
-      }, 3000);
-  }
-
-  stopAutoPlay() {
-      clearInterval(this.autoPlayInterval);
-  }
-
-  resetAutoPlay() {
-      this.stopAutoPlay();
-      this.startAutoPlay();
-  }
+        observer.observe(this.container);
+    }
 }
 
 // 初始化所有轮播图
-const carouselInstances = [];
-document.querySelectorAll('.carousel-container').forEach(container => {
-  carouselInstances.push(new SmartCarousel(container));
-});
-
-// 可视区域检测
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-      const instance = carouselInstances.find(
-          c => c.container === entry.target
-      );
-      
-      if (instance) {
-          instance.isVisible = entry.isIntersecting;
-          if (entry.isIntersecting) {
-              instance.startAutoPlay();
-          } else {
-              instance.stopAutoPlay();
-          }
-      }
-  });
-}, {
-  threshold: 0.3,
-  rootMargin: '0px'
-});
-
-// 开始观察所有轮播容器
-carouselInstances.forEach(instance => {
-  observer.observe(instance.container);
-});
-
-// 窗口resize处理
-window.addEventListener('resize', () => {
-  carouselInstances.forEach(instance => {
-      instance.resetAutoPlay();
-  });
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.carousel-container').forEach(container => {
+        new AdvancedCarousel(container);
+    });
 });
