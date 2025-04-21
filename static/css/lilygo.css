@@ -14,6 +14,10 @@
     object-fit: contain;
     object-position: center;
     transition: transform 0.3s ease; /* 添加图片缩放效果 */
+    pointer-events: none; /* 关键属性 */
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
   }
   
 .carousel-img:hover {
