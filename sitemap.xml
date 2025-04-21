@@ -19,36 +19,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/SIM.html</loc>
-            <lastmod>2025-04-01</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/Basic_Module/T7_C6/T7_C6.html</loc>
             <lastmod>2025-04-21</lastmod>
             <changefreq>weekly</changefreq>
@@ -74,6 +44,36 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/SIM.html</loc>
+            <lastmod>2025-04-01</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
             <lastmod>2025-04-21</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
