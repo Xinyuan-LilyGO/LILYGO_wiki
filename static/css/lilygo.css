@@ -18,10 +18,32 @@
     left: 0;
     width: 100%;
     height: 100%;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+               opacity 0.6s ease;
     opacity: 0;
-    transition: opacity 0.8s ease;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+.slide-item.prev {
+    transform: translateX(-100%);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.slide-item.active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 3;
   }
   
+  .slide-item.next {
+    transform: translateX(100%);
+    opacity: 0.5;
+    z-index: 2;
+  }
+  .slide-item:not(.active):not(.prev):not(.next) {
+    display: none;
+  }
   .slide-item.active {
     width: 100%;
     height: 100%;
@@ -50,7 +72,15 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-
+  .carousel-box::after {
+    content: "Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
 /* 左边文字 右边图片 */
 .carousel-right {
     width: 75%;

@@ -35,7 +35,7 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="carousel-right">
-                <div class="carousel-box">
+                <div class="carousel-box" data-carousel-id="1">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -43,9 +43,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active" ></div>
+                        <div class="dot" ></div>
+                        <div class="dot" ></div>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ id: home_page
     <div class="section dsc_wrapper_right">
         <div>
             <div class="carousel-right">
-                <div class="carousel-box">
+                <div class="carousel-box" data-carousel-id="2">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -62,9 +62,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active"></div>
+                        <div class="dot" ></div>
+                        <div class="dot" ></div>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@ id: home_page
                 <h2>E-Paper</h2>
             </div>
             <div class="carousel-right">
-                <div class="carousel-box">
+                <div class="carousel-box" data-carousel-id="3">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -87,9 +87,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active"  ></div>
+                        <div class="dot" ></div>
+                        <div class="dot" ></div>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ id: home_page
     <div class="section dsc_wrapper_right">
         <div>
             <div class="carousel-right">
-                <div class="carousel-box">
+                <div class="carousel-box" data-carousel-id="4">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -106,9 +106,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active" ></div>
+                        <div class="dot"  ></div>
+                        <div class="dot" ></div>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ id: home_page
                 <h2>Module</h2>
             </div>
             <div class="carousel-right">
-               <div class="carousel-box">
+               <div class="carousel-box" data-carousel-id="5">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -132,9 +132,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active" ></div>
+                        <div class="dot"  ></div>
+                        <div class="dot"  ></div>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@ id: home_page
     <div class="section dsc_wrapper_right">
         <div>
             <div class="carousel-right">
-                <div class="carousel-box">
+                <div class="carousel-box" data-carousel-id="6">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -151,9 +151,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active"  ></div>
+                        <div class="dot"  ></div>
+                        <div class="dot"  ></div>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@ id: home_page
                 <h2>Accessories</h2>
             </div>
             <div class="carousel-right">
-               <div class="carousel-box">
+               <div class="carousel-box" data-carousel-id="7">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -176,9 +176,9 @@ id: home_page
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
+                        <div class="dot active"  ></div>
+                        <div class="dot"  ></div>
+                        <div class="dot"  ></div>
                     </div>
                 </div>
             </div>
