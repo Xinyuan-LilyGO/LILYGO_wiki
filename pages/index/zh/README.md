@@ -55,6 +55,7 @@ id: home_page
                                     <div class="carousel-dot"></div>
                                     <div class="carousel-dot"></div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                  </div>
