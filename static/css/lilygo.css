@@ -7,13 +7,16 @@
     aspect-ratio: 16/9; /* 现代浏览器支持 */
     border-radius: 12px;
     perspective: 1000px; /* 添加3D透视 */
+    overflow: hidden; /* 隐藏溢出内容 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
 }
 .carousel-img {
     width: 100%;
     height: 100%;
-    position: relative;
+    /* position: relative; */
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
     transition: transform 0.3s ease; /* 添加图片缩放效果 */
     /* pointer-events: none; 关键属性 */
     user-select: none;
