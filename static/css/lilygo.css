@@ -4,14 +4,15 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1920/800; /* 现代浏览器支持 */
+    aspect-ratio: 16/9; /* 现代浏览器支持 */
     border-radius: 12px;
-     perspective: 1000px; /* 添加3D透视 */
+    perspective: 1000px; /* 添加3D透视 */
 }
 .carousel-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    position: relative;
+    object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease; /* 添加图片缩放效果 */
     /* pointer-events: none; 关键属性 */
