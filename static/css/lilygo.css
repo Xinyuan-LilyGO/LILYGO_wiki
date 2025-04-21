@@ -1,85 +1,4 @@
-/* 轮播图专用样式 */
-.carousel-box {
-    width: 75vw;        /* 视口宽度的75% */
-    margin: 0 auto;     /* 居中显示 */
-    position: relative;
-    overflow: hidden;
-    
-    /* 根据1920x800比例计算高度 (800/1920=41.666%) */
-    padding-top: 41.666%;
-}
-.carousel-img {
-    object-fit: contain; /* 完整显示（可能有留白） */
-    /* 或 object-fit: cover; 填充容器（可能裁剪边缘） */
-  }
-.slide-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s ease, opacity 0.6s ease;
-    opacity: 0;
-    transform: translateX(100%);
-    z-index: 1;
-  }
-.slide-item.prev {
-    transform: translateX(-100%);
-    opacity: 0.5;
-    z-index: 2;
-}
 
-.slide-item.active {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 3;
-  }
-  
-  .slide-item.next {
-    transform: translateX(100%);
-    opacity: 0.5;
-    z-index: 2;
-  }
-  .slide-item:not(.active):not(.prev):not(.next) {
-    display: none;
-  }
-  .slide-item.active {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 保持比例完整显示 */
-    object-position: center;
-    opacity: 1;
-}
-/* 响应式适配 */
-@media (max-width: 1200px) {
-    .carousel-box {
-      width: 90vw;      /* 小屏幕时适当缩小 */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-box {
-      width: 100vw;     /* 移动端全宽显示 */
-      padding-top: 56.25%; /* 改为16:9比例适配移动端 */
-    }
-  }
-  .carousel-img {
-    width: 100%;
-    max-width: 1000px;
-    height: 600px;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  .carousel-box::after {
-    content: "Loading...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 1.2rem;
-}
 /* 左边文字 右边图片 */
 .carousel-right {
     width: 75%;
@@ -91,42 +10,134 @@
     text-align: center;
     color: #818395;
 }
-.carousel-max {
-    width: 75%;
-    text-align: center;
-    color: #818395;
+
+.carousel-system {
+    --transition-duration: 600ms;
+    --active-color: #2c3e50;
+    --inactive-color: #bdc3c7;
+    --arrow-size: 40px;
 }
-.carousel-min {
-    width: 25%;
-    text-align: center;
-    color: #818395;
+
+.carousel-container {
+    width: 75vw;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
 }
-  .dots-box {
-    text-align: center;
-    padding: 20px 0;
+
+.carousel-viewport {
+    position: relative;
+    padding-top: 41.666%;
+}
+
+.carousel-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform var(--transition-duration) ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 导航控制容器 */
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* 左右箭头 */
+.carousel-arrow {
+    pointer-events: all;
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0,0,0,0.8);
+    transform: scale(1.1);
+}
+
+.carousel-arrow::before {
+    content: '';
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.arrow-left::before {
+    transform: rotate(135deg);
+    margin-left: 5px;
+}
+
+.arrow-right::before {
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
+
+/* 导航圆点 */
+.carousel-dots {
     position: absolute;
     bottom: 20px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
-    z-index: 10; /* 必须高于图片层级 */
-    pointer-events: auto; /* 确保可交互 */
-  }
-  
-  .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 6px;
-    background: rgba(0,0,0,0.2);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .dot.active {
-    background: rgba(0,0,0,0.6);
-    transform: scale(1.2);
-    position: relative; /* 确保z-index生效 */
-  }
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
 
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--inactive-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+}
+
+.carousel-dot.active {
+    background: var(--active-color);
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100vw;
+        border-radius: 0;
+    }
+    .carousel-arrow {
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
