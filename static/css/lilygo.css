@@ -1,17 +1,24 @@
 /* 轮播图专用样式 */
 .carousel-box {
-    width: 75vw;        /* 视口宽度的75% */
-    margin: 0 auto;     /* 居中显示 */
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
-    
-    /* 根据1920x800比例计算高度 (800/1920=41.666%) */
-    padding-top: 41.666%;
+    aspect-ratio: 1920/800; /* 现代浏览器支持 */
+    border-radius: 12px;
+     perspective: 1000px; /* 添加3D透视 */
 }
 .carousel-img {
-    object-fit: contain; /* 完整显示（可能有留白） */
-    /* 或 object-fit: cover; 填充容器（可能裁剪边缘） */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease; /* 添加图片缩放效果 */
   }
+  
+.carousel-img:hover {
+    transform: scale(1.02);
+}  
 .slide-item {
     position: absolute;
     top: 0;
@@ -19,29 +26,26 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.8s ease;
+    transform: translateX(0);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
   }
   
   .slide-item.active {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* 保持比例完整显示 */
-    object-position: center;
     opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
 }
-/* 响应式适配 */
-@media (max-width: 1200px) {
-    .carousel-box {
-      width: 90vw;      /* 小屏幕时适当缩小 */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .carousel-box {
-      width: 100vw;     /* 移动端全宽显示 */
-      padding-top: 56.25%; /* 改为16:9比例适配移动端 */
-    }
-  }
+.slide-next {
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.slide-prev {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
   .carousel-img {
     width: 100%;
     max-width: 1000px;
@@ -62,42 +66,52 @@
     text-align: center;
     color: #818395;
 }
-.carousel-max {
-    width: 75%;
-    text-align: center;
-    color: #818395;
-}
-.carousel-min {
-    width: 25%;
-    text-align: center;
-    color: #818395;
-}
+
   .dots-box {
-    text-align: center;
-    padding: 20px 0;
     position: absolute;
     bottom: 20px;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
-    z-index: 10; /* 必须高于图片层级 */
-    pointer-events: auto; /* 确保可交互 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
   }
   
   .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 6px;
-    background: rgba(0,0,0,0.2);
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.4);
+    border: 2px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .dot.active {
-    background: rgba(0,0,0,0.6);
+    background: #2c3e50;
+    border-color: rgba(255,255,255,0.8);
     transform: scale(1.2);
-    position: relative; /* 确保z-index生效 */
   }
 
+/* 响应式适配 */
+@media (max-width: 1200px) {
+    .carousel-right-left-word,
+    .carousel-right {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .carousel-box {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-img {
+        object-fit: cover;
+    }
+    
+    .dots-box {
+        bottom: 10px;
+    }
+}

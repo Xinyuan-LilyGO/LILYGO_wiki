@@ -181,36 +181,6 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/index.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
-            <lastmod>2025-04-21</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
             <lastmod>2025-04-21</lastmod>
             <changefreq>weekly</changefreq>
@@ -236,6 +206,36 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/index.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
+            <lastmod>2025-04-21</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
             <lastmod>2025-04-21</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
