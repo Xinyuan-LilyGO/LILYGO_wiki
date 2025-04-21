@@ -35,37 +35,26 @@ id: home_page
                 <h2>GPS</h2>
             </div>
             <div class="carousel-right">
-                 <div class="carousel-system">
-                    <div class="carousel-container">
-                        <div class="carousel-viewport">
-                            <div class="carousel-track">
-                                <div class="slide-item active">
-                                    <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                                <div class="slide-item">
-                                    <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                                <div class="slide-item">
-                                    <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                                <!-- 导航控制 -->
-                                <div class="carousel-controls">
-                                    <div class="carousel-arrow arrow-left"></div>
-                                    <div class="carousel-arrow arrow-right"></div>
-                                </div>                
-                                <div class="carousel-dots">
-                                    <div class="carousel-dot active"></div>
-                                    <div class="carousel-dot"></div>
-                                    <div class="carousel-dot"></div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="carousel-box">
+                    <div class="slide-item active">
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
+                    <div class="slide-item">
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
+                    <div class="slide-item">
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
+                    <div class="dots-box">
+                        <div class="dot active" data-index="0"></div>
+                        <div class="dot" data-index="1"></div>
+                        <div class="dot" data-index="2"></div>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_right">
         <div>
             <div class="carousel-right">
-                <div class="carousel-box" data-carousel-id="2">
+                <div class="carousel-box">
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
                     <div class="slide-item">
@@ -86,117 +75,56 @@ id: home_page
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="dsc_left">
                 <h2>E-Paper</h2>
             </div>
-            <div class="carousel-right">
-                <div class="carousel-box" data-carousel-id="3">
-                    <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                    </div>
-                </div>
+            <div class="dsc_right">
+                <img class="logo" src="/static/image/books.svg"> 支持多文档，每篇文档有单独的目录，也可以多版本。你的大量文档再也不用散落在各个域名下了！</br>
+                <img class="logo" src="/static/image/blog.svg"> 同时支持轻量博客系统
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="carousel-right">
-                <div class="carousel-box" data-carousel-id="4">
-                    <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                    </div>
-                </div>
+            <div class="dsc_left">
+                <img class="logo" src="/static/image/theme.svg"> 默认主题为高效阅读而设计，提供主题插件支持</br>
+                同时支持自定义 css、js，能通过页面指定 id 精确控制任何一个页面元素的样式
             </div>
-            <div class="carousel-right-left-word">
+            <div class="dsc_right">
                 <h2>Wearable Kit</h2>
             </div>
         </div>
     </div>
         <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="dsc_left">
                 <h2>Basic</h2>
                 <h2>Module</h2>
             </div>
-            <div class="carousel-right">
-               <div class="carousel-box" data-carousel-id="5">
-                    <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                    </div>
-                </div>
+            <div class="dsc_right">
+                <img class="logo" src="/static/image/speed.svg"> 并行构建，充分利用处理器性能，文档渲染就在一瞬间</br>
+                <img class="logo" src="/static/image/browser.svg"> 支持浏览器实时预览修改
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_right">
         <div>
-            <div class="carousel-right">
-                <div class="carousel-box" data-carousel-id="6">
-                    <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                    </div>
-                </div>
+            <div class="dsc_left">
+                <img class="logo" src="/static/image/server.svg"> 生成的都是静态页面，拷贝到服务器即可完成部署</br>
+                <img class="logo" src="/static/image/seo.svg"> SEO 友好，比如 页关键词自定义、sitemap自动生成等
             </div>
-            <div class="carousel-right-left-word">
+            <div class="dsc_right">
                 <h2>T-SIM/T-PCIE Series</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
-            <div class="carousel-right-left-word">
+            <div class="dsc_left">
                 <h2>Accessories</h2>
             </div>
-            <div class="carousel-right">
-               <div class="carousel-box" data-carousel-id="7">
-                    <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1" ></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="3"></div>
-                                        <!-- 导航控制 -->
-                    <div class="carousel-controls">
-                        <div class="carousel-arrow arrow-left"></div>
-                        <div class="carousel-arrow arrow-right"></div>
-                    </div>                
-                    <div class="carousel-dots">
-                        <div class="carousel-dot active"></div>
-                        <div class="carousel-dot"></div>
-                        <div class="carousel-dot"></div>
-                    </div>
-                </div>
+            <div class="dsc_right">
+               <h2>Good</h2>
             </div>
         </div>
     </div>
