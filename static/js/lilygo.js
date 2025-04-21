@@ -73,7 +73,7 @@ class Carousel {
             dot.classList.toggle('active', i === index);
         });
     }
-    
+
     startAutoPlay() {
         if (this.autoSlideInterval || this.isHovered) return;
         
