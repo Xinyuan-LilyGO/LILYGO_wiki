@@ -84,8 +84,8 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
+                        < <a href="/get_started/zh/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T5-E-Paper-S3-Pro_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
