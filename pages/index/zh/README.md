@@ -36,9 +36,9 @@ id: home_page
             </div>
             <div class="carousel-right">
                 <div class="carousel-box">
-                    <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1"  ></div></a>
+                        <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
+                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
                         <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus-en.jpg" alt="2"></div>
                     <div class="slide-item">
