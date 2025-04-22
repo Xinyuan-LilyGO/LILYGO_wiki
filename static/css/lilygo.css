@@ -1,24 +1,36 @@
 /* 轮播图专用样式 */
 .carousel-box {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 16/9; /* 现代浏览器支持 */
-    border-radius: 12px;
-    perspective: 1000px; /* 添加3D透视 */
-    overflow: hidden; /* 隐藏溢出内容 */
-    align-items: center; /* 垂直居中 */
-    justify-content: center; /* 水平居中 */
+   /* 新增flex布局属性 */
+   display: flex;
+   align-items: center; /* 垂直居中 */
+   justify-content: center; /* 水平居中 */
+   
+   /* 保持原有属性 */
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+   aspect-ratio: 16/9;
+   border-radius: 12px;
+   perspective: 1000px;
 }
 .carousel-img {
-  width: 100%;
-  max-width: 1000px;
-  height: 450px;
-  object-fit: contain;
-  object-position: center center; /* 强制居中定位 */
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   /* 修改尺寸策略 */
+   width: auto;
+   height: auto;
+   max-width: 80%;  /* 控制最大宽度 */
+   max-height: 80%; /* 控制最大高度 */
+   
+   /* 新增定位属性 */
+   position: relative;
+   top: 20px; /* 向下偏移量 */
+   
+   /* 保持原有属性 */
+   object-fit: contain;
+   object-position: center center;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
 }
  
 .carousel-img:hover {
@@ -92,7 +104,7 @@
   }
 
 /* 响应式适配 */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
     .carousel-right-left-word,
     .carousel-right {
         width: 100%;
@@ -105,11 +117,9 @@
 }
 
 @media (max-width: 768px) {
-    .carousel-img {
-        object-fit: cover;
-    }
-    
-    .dots-box {
-        bottom: 10px;
-    }
+  .carousel-img {
+      max-width: 90%;
+      max-height: 90%;
+      top: 30px; /* 移动端增大偏移量 */
+  }
 }
