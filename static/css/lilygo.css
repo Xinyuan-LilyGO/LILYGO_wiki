@@ -12,18 +12,15 @@
     justify-content: center; /* 水平居中 */
 }
 .carousel-img {
-    width: 100%;
-    height: 100%;
-    /* position: relative; */
-    object-fit: contain;
-    object-position: center center;
-    transition: transform 0.3s ease; /* 添加图片缩放效果 */
-    /* pointer-events: none; 关键属性 */
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-drag: none;
-  }
-  
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  object-fit: contain;
+  object-position: center center; /* 强制居中定位 */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+ 
 .carousel-img:hover {
     transform: scale(1.02);
 }  
@@ -54,14 +51,7 @@
     opacity: 0;
 }
 
-  .carousel-img {
-    width: 100%;
-    max-width: 1000px;
-    height: 450px;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
+
 
 /* 左边文字 右边图片 */
 .carousel-right {
