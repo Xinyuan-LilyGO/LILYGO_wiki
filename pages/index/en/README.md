@@ -24,7 +24,7 @@ id: home_page
                 <a href="#" id="learn_more">Learn More</a>
             </div>
             <div class="big_btn">
-                <a href="/get_started/zh/">Get started</a>
+                <a href="/get_started/en/">Get started</a>
             </div>
         </div>
     </div>
@@ -84,8 +84,8 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
+                        <a href="/get_started/zh/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T5-E-Paper-S3-Pro_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
@@ -197,10 +197,10 @@ id: home_page
     <div class="section" style="height: 100vh;">
         <div class="big_btn_wrapper">
             <div class="big_btn">
-                <a href="/get_started/zh/">More Detail</a>
+                <a href="/get_started/en/">More Detail</a>
             </div>
             <div class="big_btn">
-                <a href="/get_started/zh/usage/quick_start.html">Quick Start</a>
+                <a href="/get_started/en/usage/quick_start.html">Quick Start</a>
             </div>
         </div>
     </div>

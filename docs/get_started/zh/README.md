@@ -2,7 +2,6 @@
 title: LILYGO 资料站
 keywords: LILYGO, markdown, ESP32, Arduino, Platformio , github, lvgl, LoRa, GPS, AMOLED, E-Paper
 desc: LILYGO的官方文档（Wiki），包含了开源软件和开源硬件资料，AIOT资料等等
-date: 2025-04-01
 ---
 
 Make Development Easier
@@ -15,13 +14,9 @@ Make Development Easier
 
 ## 特性
 
-
 ## 演示
 
-
-## 类似的工具
-
-
+## 工具
 
 ## 一些使用建议
 
