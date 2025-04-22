@@ -13,26 +13,14 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/Moudle.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/Basic_Module/T7_C6/T7_C6.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-STM32/T3-STM32.html</loc>
             <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/index.html</loc>
-            <lastmod>2025-04-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -49,13 +37,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/SIM.html</loc>
-            <lastmod>2025-04-01</lastmod>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/zh/Moudle.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -67,31 +55,37 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
-            <lastmod>2025-04-22</lastmod>
+            <loc>https://wiki.lilygo.cc/get_started/zh/SIM/SIM.html</loc>
+            <lastmod>2025-04-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-STM32/T3-STM32.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/zh/Basic_Module/T7_C6/T7_C6.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Echo-Lite/T-Echo-Lite.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -111,6 +105,12 @@
         <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
             <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/index.html</loc>
+            <lastmod>2025-04-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
@@ -145,19 +145,31 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/Moudle.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/SIM/SIM.html</loc>
-            <lastmod>2025-04-01</lastmod>
+            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
+            <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/Moudle.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -169,25 +181,25 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/SIM/T-A7670/T-A7670E/T-A7670E.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/SIM/T-A7670/T-A7670SA/T-A7670SA.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T-Deck.html</loc>
-            <lastmod>2025-04-22</lastmod>
+            <loc>https://wiki.lilygo.cc/get_started/en/SIM/SIM.html</loc>
+            <lastmod>2025-04-01</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -205,37 +217,25 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T-Deck.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html</loc>
+            <lastmod>2025-04-22</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/index.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html</loc>
-            <lastmod>2025-04-22</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/E-Paper/T-Deck-Pro/T-Deck-Pro.html</loc>
             <lastmod>2025-04-22</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>

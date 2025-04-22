@@ -23,7 +23,7 @@
    
    /* 新增定位属性 */
    position: relative;
-   top: 20px; /* 向下偏移量 */
+   top: 100px; /* 向下偏移量 */
    
    /* 保持原有属性 */
    object-fit: contain;
