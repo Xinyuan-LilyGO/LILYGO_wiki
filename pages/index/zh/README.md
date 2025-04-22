@@ -38,11 +38,11 @@ id: home_page
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1"  ></a></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -58,11 +58,11 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1" ></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -85,11 +85,11 @@ id: home_page
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1"  ></a></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -105,11 +105,11 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1" ></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -133,11 +133,11 @@ id: home_page
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1"  ></a></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -153,11 +153,11 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1" ></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -180,11 +180,11 @@ id: home_page
                 <div class="carousel-box">
                     <div class="slide-item active">
                         <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="1"  ></a></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/Board_banner/t-deck-plus_zh.jpg" alt="3"></div>                        
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
