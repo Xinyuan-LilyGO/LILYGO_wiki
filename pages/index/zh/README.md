@@ -40,9 +40,11 @@ id: home_page
                         <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
+                        <a href="/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T3S3_MVSR_zh.jpg" alt="2"></a></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
+                        <a href="/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Connect Pro_zh.jpg" alt="3"></a></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -60,7 +62,8 @@ id: home_page
                     <div class="slide-item active">
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
+                        <a href="/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-K230_zh.jpg" alt="2"></a></div>
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
@@ -105,9 +108,9 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1" ></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Wacth-Plus_zh.jpg" alt="1" ></div>
                     <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Wacth-Plus_en.jpg" alt="2"></div>
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
