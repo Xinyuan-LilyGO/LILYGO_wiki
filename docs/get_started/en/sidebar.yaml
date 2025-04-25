@@ -19,6 +19,8 @@ items:
         file: AMOLED/T-Display-K230/T-Display-K230.md 
     -   label: T-Pico 2350
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
+    -   label : T-Display S3 AMOLED Plus
+        file: AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.md
     -   label: C
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md                      

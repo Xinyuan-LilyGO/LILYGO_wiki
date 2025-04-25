@@ -15,7 +15,7 @@ show_source: false
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
 
-## Overview
+## Introduction
 
 The T-Pico2350 is another version in the T-Pico series, designed and manufactured based on the Raspberry Pi RP2350 chip. It features an external expansion case design similar to the T-Display S3 Pro. This case is designed with multiple external expansion interfaces, supporting both pin header expansion and a 13-pin 0.3mm pitch FPC expansion interface. Additionally, the bottom is equipped with multiple M1.4 embedded brass nuts for secure expansion and mounting.
 
