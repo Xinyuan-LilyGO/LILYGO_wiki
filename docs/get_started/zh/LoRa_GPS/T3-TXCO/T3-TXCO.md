@@ -65,6 +65,7 @@ Github:[T3-TXCO](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series)
 ### Arduino 设置参数
 
 |设置  | 参数              |
+| --- | --- |
 |Board	|ESP32 Dev Module
 |Port	|Your port
 |CPU Frequency	|240MHZ(WiFi/BT)
