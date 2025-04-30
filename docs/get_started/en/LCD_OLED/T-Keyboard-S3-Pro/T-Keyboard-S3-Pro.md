@@ -39,9 +39,9 @@ In terms of expandability, the board offers STEMMA QT/Qwiic, JST-SH 4-PIN interf
 ## Module Information and Specifications
 ### Notes
 
->! The default firmware is configured for I2C communication expansion mode. Please note that when adding multiple slave devices, each must have a unique I2C address to avoid conflicts. Slave devices cannot operate independently and must be used within a system where one host communicates with multiple slaves.
->! Up to 6 devices can be connected. When using multiple devices, the maximum brightness of the on-board LED should be reduced to 10.
->! Due to hardware limitations from long-distance wiring, the expansion directions of the board are restricted. Only one device can be added to each side of the main board (left and right), and up to two devices can be added downward (USB ports may obstruct downward expansion).
+>! 1.The default firmware is configured for I2C communication expansion mode. Please note that when adding multiple slave devices, each must have a unique I2C address to avoid conflicts. Slave devices cannot operate independently and must be used within a system where one host communicates with multiple slaves.<br>
+> 2.Up to 6 devices can be connected. When using multiple devices, the maximum brightness of the on-board LED should be reduced to 10.<br>
+> 3.Due to hardware limitations from long-distance wiring, the expansion directions of the board are restricted. Only one device can be added to each side of the main board (left and right), and up to two devices can be added downward (USB ports may obstruct downward expansion).
 >This configuration supports a maximum 2×3 grid layout, allowing up to 6 devices in total.
 ### Description
 
