@@ -34,7 +34,7 @@ With a compact design that optimizes pin multiplexing (e.g., shared SPI bus), it
 ## Module Information and Specifications
 ### Description
 
-| 组件 | 描述 |
+| Component | Description |
 | ---  | --- |
 |MCU	|ESP32-S3 Dual-core LX7 microprocessor
 |Flash 	|16M 

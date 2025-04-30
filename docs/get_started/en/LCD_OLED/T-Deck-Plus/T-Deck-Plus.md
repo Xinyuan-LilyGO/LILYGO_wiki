@@ -42,7 +42,7 @@ The board connects various modules via SPI and I2C interfaces (such as LoRa, LCD
 |Lora|	SX1262 433Mhz~915Mhz(optional)
 |GPS	|MIA-M10Q
 |Wireless| 2.4 GHz Wi-Fi & Bluetooth 5 (LE)
-|Storage | TF 卡 |
+|Storage | TF card |
 |Display| ST7789 320 x 240 LCD
 |Battery Capacity |	2000mAh
 |Control Methods	| Trackball, Touchscreen
@@ -50,7 +50,7 @@ The board connects various modules via SPI and I2C interfaces (such as LoRa, LCD
 |Microphone|    MSM381A3729H9CP
 |Power Switch	|Supported
 |Touch Controller	|GT911
-| Buttons | 1 x RST Buttons + 1 x BOOT Buttons(on trackball)  |
+| Buttons | 1 x RST Button + 1 x BOOT Button(on trackball)  |
 | USB |1 × type-C Interfaces|
 |Audio Codec	|ES7210
 |IO Expansion	|PCA9535PW (0x20)
