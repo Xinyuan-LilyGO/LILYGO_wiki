@@ -31,7 +31,8 @@ T-BAO是一款基于ESP32-S3-WROOM-1开发板的开源AIoT终端，具备高性�
 ## 模块资料以及参数
 ### 注意事项
 
->!⚠️
+>!⚠️SD卡的注意事项:
+
 <img src="./assets/T-Bao-SD-zh.jpg" alt="summary" width=80%>
 
 
