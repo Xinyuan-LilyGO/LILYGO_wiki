@@ -41,7 +41,7 @@ Designed for applications such as industrial visual inspection, smart security, 
 
 >!⚠️
 
-<img src="./assets/T-Bao-SD-en.jpg" alt="summary" width=80%>
+<img src="./assets/T-Bao-en.jpg" alt="summary" width=80%>
 
 
 ### Development board parameters
