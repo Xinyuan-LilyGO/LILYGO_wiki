@@ -1,12 +1,12 @@
 ---
-title: LILYGO T-Embed CC1101
+title: LILYGO T-Embed SI4732
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Embed-CC1101](./assets/T-Embed-CC1101-1.jpg)
+![T-Embed SI4732](./assets/T-Embed-SI4732-1.jpg)
 
 </div>
 
@@ -15,52 +15,27 @@ show_source: false
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
 
-
->Click here to switch to [T-Embed-SI4732](https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html)
-
 ## Introduction
 
-LILYGO T-Embed is a highly integrated IoT development board based on the ESP32-S3, featuring a dual-core LX7 processor. It is specifically designed for multi-protocol communication and smart hardware development. The core advantages of this board lie in its integration of LoRa, Sub-GHz (CC1101 module), NFC (PN532), infrared remote control, and Wi-Fi 6/Bluetooth 5.0, making it ideal for complex wireless connection scenarios such as remote sensing (LoRa long-range transmission), smart home control (infrared/NFC access control), and industrial monitoring.
+LILYGO T-Embed SI4732 is an enhanced version of the base T-Embed, featuring an integrated SI4732 extension module. The SI4732 is a high-performance digital-tuning radio receiver chip, designed for AM/FM/SW/LW broadcast band reception. It incorporates Digital Signal Processing (DSP) technology, offering high sensitivity, low power consumption, and high integration, making it ideal for a variety of radio and audio applications.
 
-The development board is equipped with a 1.9-inch TFT display (320x170 resolution), supporting dynamic data display and graphical interaction, and features a rotary encoder for precise parameter adjustment. Additionally, it includes 8 programmable RGB LEDs, a microphone and speaker module (supporting voice interaction), and TF card expansion storage, further enhancing human-machine interaction and data processing capabilities.
-
-With a compact design that optimizes pin multiplexing (e.g., shared SPI bus), it strikes a balance between functional density and development flexibility. This board is perfect for smart home control centers, environmental monitoring, and educational IoT prototype development, providing developers with a ready-to-use, multi-scenario adaptable, and efficient hardware platform.
+As for the T-Embed base board itself, it features a rounded rectangular design and integrates a rotary encoder with RGB LED ring and a 1.9-inch IPS TFT display. It also includes a MEMS microphone array, built-in speaker, internal TF card slot, and power management circuitry, supporting 3.7V lithium battery power. Expansion options include both a GROVE port and a 2.54mm-pitch GPIO header, offering flexible connectivity for development and prototyping.
 
 ## Appearance and function introduction
 ### Appearance
-<img src="./assets/T-Embed-CC1101-2.jpg" alt="summary" width=80%>
+<img src="./assets/T-Embed-SI4732-2.jpg" alt="summary" width=80%>
 
 ### Pinmap 
 
-<img src="./assets/T-Embed-CC1101-en.jpg" alt="summary" width=100%>
+<img src="./assets/T-Embed-SI4732.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
 
-| Component | Description |
-| ---  | --- |
-|MCU	|ESP32-S3 Dual-core LX7 microprocessor
-|Flash 	|16M 
-|PSRAM  |8M
-|GPS	|MIA-M10Q
-|Wireless| 	Wi-Fi 802.11 b/g/n，BLE 5
-|Storage | TF card |
-|Display|  1.9 inch ST7789V IPS color TFT LCD
-|Sub-G |	CC1101
-|NFC	| PN532
-|Battery Capacity| 3.7V-1300mAh
-|Battery Chip| BQ25896, BQ27220
-|Power Switch	|Supported
-|LED driver	|WS2812
-|Buttons | 1 x RST Button + 1 x BOOT Button |
-|Encode	|Support encode
-| USB |1 × type-C Interfaces|
-|Infrared	 |Support Infrared
-|UI | LVGL
-| Expansion Interfaces | 2 × QWIIC Interfaces |
-| Dimensions | **97.5x39x31mm**  |
+<img src="./assets/T-Embed-SI4732-3.jpg" alt="summary" width=100%>
+
 ### Related Links
-Github：[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
+Github：[T-Embed-SI4732](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 
 * [PN532](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf)
 * [bq25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
@@ -69,7 +44,7 @@ Github：[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 
 #### Schematic Diagram
 
-[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf)
+[T-Embed-SI4732](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf)
 
 <!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
 
@@ -90,7 +65,7 @@ Github：[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 ## Software Design
 ### Arduino Set Parameters
 
-| Arduino IDE setting  | Value      |
+| Arduino IDE Setting  | Value      |
 | --------------- | ------------------ |
 | Board      | **ESP32S3 Dev Module**            |
 | Port           | Your port                   |

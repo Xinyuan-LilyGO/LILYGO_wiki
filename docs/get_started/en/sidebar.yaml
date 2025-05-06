@@ -36,10 +36,14 @@ items:
     items:
     -   label: T-Deck Plus
         file: LCD_OLED/T-Deck-Plus/T-Deck-Plus.md
+    -   label: T-Keyboard S3 Pro
+        file: LCD_OLED/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md        
     -   label: T-Embed CC1101
         file: LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.md
-    -   label: T-Keyboard S3 Pro
-        file: LCD_OLED/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md       
+    -   label: T-Embed SI4732
+        file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md
+    -   label: T-Bao
+        file: LCD_OLED/T-Bao/T-Bao.md                 
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md    
 -   label: Wearable Kit
