@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO T-LoraPager - LILYGO Wiki</title>
+    <title>LILYGO Meshtastic Devices - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "这是一个支持国际化的消息示例</br>喜欢项目请<a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">点下 ☆ star </a>哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
@@ -96,8 +96,8 @@ var _hmt = _hmt || [];
                 <ul id="nav_right">
 <li class=""><a target="_blank" href="https://www.youtube.com/@LILYGO"><img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
 <li class=""><a target="_blank" href="https://github.com/Xinyuan-LilyGO"><img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
-<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/LoRa_GPS/T-LoraPager/T-LoraPager.html">English</a></li>
-<li class="active"><a  href="/get_started/zh/LoRa_GPS/T-LoraPager/T-LoraPager.html">中文 简体</a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/Meshtastic/Meshtastic_lilygo.html">English</a></li>
+<li class="active"><a  href="/get_started/zh/Meshtastic/Meshtastic_lilygo.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -119,7 +119,7 @@ var _hmt = _hmt || [];
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="">
+                <ul class="show">
 <li class="not_active no_link"><a><span class="label">LoRa or GPS</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html"><span class="label">T3-S3_MVSRBoard</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/zh/LoRa_GPS/T-Echo-Lite/T-Echo-Lite.html"><span class="label">T-Echo-Lite</span><span class=""></span></a></li>
@@ -176,7 +176,7 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/zh/no_translate.html?ref=maixIV/m4ndock/FAQ.html&from=/get_started/zh/maixIV/m4ndock/FAQ.html"><span class="label">FAQ</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="not_active with_link"><a href="/get_started/zh/Meshtastic/Meshtastic_lilygo.html"><span class="label">Meshtastic</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/get_started/zh/Meshtastic/Meshtastic_lilygo.html"><span class="label">Meshtastic</span><span class=""></span></a></li>
 </ul>
 
             </div>
@@ -191,7 +191,7 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO T-LoraPager</h1>
+                            <h1>LILYGO Meshtastic Devices</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -222,231 +222,64 @@ var _hmt = _hmt || [];
                         
                             <!-- **[English](README.MD) | 中文** -->
 <div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-LoraPager-1.jpg" alt="T-LoraPager" /></p>
 </div>
 <!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>T-LoraPager 是一款LILYGO Lora+ESP32-S3的手持AIOT可编程开发设备的新型号，特点是小巧的外观+可折叠外部天线设计，即能充分发挥出无线性能的同时保持美观的设计。<br />
- T-LoraPager 有多种版本规格可选，外观结构不变，主要区别是LoRa 型号不同，对应的有LR1121版本和SX1262版本，还有一个用CC1101替代Lora功能版本，根据你的应用需求可以选购不同版本。<br />
- 内部集成了丰富的功能：</p>
-<ul>
-<li>QWERT键盘</li>
-<li>支持AI 的IMU（BHI260AP）</li>
-<li>2.33寸长条屏（分辨率为222X480）</li>
-<li>可选的LoRa（LR1121或者SX1262）</li>
-<li>U-blox GPS模组（MIA-M10Q）</li>
-<li>RFID/NFC+RTC电路</li>
-<li>TI的电源管理监控芯片组合+</li>
-<li>背部的磁吸无线充</li>
-<li>ES8311（麦克风/扬声器/耳机座）</li>
-<li>编码器带按键</li>
-<li>2X8GPIO扩展接口（位了产品顶部适配扩展NRF24L01模块）</li>
-<li>背部的1/4固定螺丝接口</li>
-<li>4XM2螺丝柱</li>
-<li>带LILYGO logo的挂绳。</li>
-</ul>
-<p>出厂固件带有LILYGO设计的UI Demo通过编码器拨动进行流畅交互。基于demo你可以学习开发不同的应用场景程序。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-LoraPager-2.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-LoraPager-3.jpg" alt="summary" width=100%>
-<img src="./assets/T-LoraPager-4.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
-<table>
-<thead>
-<tr>
-  <th>组件</th>
-  <th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>MCU</td>
-  <td>ESP32-S3FN16R8 Dual-core LX7 microprocessor</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>Lora</td>
-  <td>SX1262 433Mhz~920Mhz(可选)</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
-</tr>
-<tr>
-  <td>NFC</td>
-  <td>ST25R3916(SPI)</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF卡</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>ST7796 480 x 222 LCD</td>
-</tr>
-<tr>
-  <td>AI智能传感器</td>
-  <td>BHI260AP</td>
-</tr>
-<tr>
-  <td>GNSS</td>
-  <td>低功耗GNSS模块(可并发数:4)</td>
-</tr>
-<tr>
-  <td>输入</td>
-  <td>键盘</td>
-</tr>
-<tr>
-  <td>编码器</td>
-  <td>旋转编码器</td>
-</tr>
-<tr>
-  <td>RTC</td>
-  <td>支持电源开关</td>
-</tr>
-</tbody>
-</table>
-<p>|触摸	|GT911<br />
-| 按键 | 1 x RST 按键 + 1 x BOOT 按键  |<br />
-|音频解码器	|RC01812(24-bit , 8kHz ~ 96kHz)<br />
-| USB |1 × type-C接口|<br />
-|IO 拓展	|PCA9535PW (0x20)<br />
-| 拓展接口 | GPS拓展接口 + 2 × Knockout(用于拓展天线的AUX连接器) |<br />
-| 孔位 | 2×2mm 定位孔 |<br />
-| 电源输入 | 5V/500mA |<br />
-| 尺寸 | <strong>106x89x23mm</strong>  |</p>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Deck"  target="_blank">T-Deck Plus</a></p>
-<ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf"  target="_blank">T-Deck ANT 868-915MH</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf"  target="_blank">T-Deck ANT 433MHZ</a></li>
-</ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf"  target="_blank">T-Deck Plus</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
-<ul>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
-<li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
-<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
-<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorsLib</a></li>
-<li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></li>
-<li><a href="https://github.com/mikalhart/TinyGPSPlus"  target="_blank">TinyGPSPlus</a></li>
-<li><a href="https://github.com/mmMicky/TouchLib"  target="_blank">TouchLib</a></li>
-<li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
-</ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE 设置	</th>
-  <th>参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB(128Mb)</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash(3M APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-</ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<blockquote>
+<p>！了解更多可进入<a href="https://meshtastic.org/docs/hardware/devices/lilygo/"  target="_blank">Meshtastic</a></p>
+</blockquote>
+<h2 id="T-Beam">T-Beam</h2>
+<p>开发板配备了 GPS、18650 电池座，并且可以选配屏幕</p>
+<p>Name	|MCU	|Radio	|WiFi	|BT	|GPS<br />
+---	    |---	|---	|---	|---	|---<br />
+T-Beam v0.7	|ESP32	|SX1276	|2.4GHz b/g/n	|4.2	|YES<br />
+T-Beam v1.1	|ESP32	|SX1276	|2.4GHz b/g/n	|4.2	|YES<br />
+T-Beam with |M8N	|ESP32	SX1276<br>SX1262	|2.4GHz b/g/n	|4.2	|YES<br />
+T-Beam S3-Core	|ESP32-S3	|SX1262	|2.4GHz b/g/n	|5.0	|YES<br />
+T-BeamSUPREME	|ESP32-S3	|SX1262	|2.4GHz b/g/n	|5.0	|YES</p>
+<h2 id="T-Echo">T-Echo</h2>
+<p>一体化设备，配有 E-Ink 屏幕、GPS 和电池，封装于注塑外壳中。采用低功耗的 nRF52840 芯片，以实现长续航。<br />
+Name	|MCU	|Radio	|WiFi	|BT	|GPS<br />
+---	    |---	|---	|---	|---	|---<br />
+T-Echo	|nRF52840	|SX1262	|NO	|5.0	|YES</p>
+<h2 id="LoRa32">LoRa32</h2>
+<p>低成本的基础型 ESP32 开发板。<br />
+Name	|MCU	|Radio	|WiFi|	BT|	GPS|<br />
+---	    |---	|---	|---	|---	|---<br />
+LoRa32 V1	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 V1.3 |	ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 V2.0	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 V2.1-1.6	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 V2.1-1.8	|ESP32	|SX1280	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 V3.0|	ESP32	|SX127x + TCXO	|2.4GHz b/g/n	|4.2	|NO<br />
+LoRa32 T3-S3	|ESP32-S3|SX1262<br>SX1276<br>SX1280<br>LR1121	|	2.4GHz b/g/n	|5.0	|NO</p>
+<h2 id="T-Deck">T-Deck</h2>
+<p>带有屏幕和键盘的独立设备。</p>
+<p>Name	|MCU	|Radio	|WiFi	|BT	|GPS<br />
+---	    |---	|---	|---	|---	|---<br />
+T-Deck	|ESP32-S3FN8	|SX1262	|YES	|5.0	|NO<br />
+T-Deck Plus	|ESP32-S3FN8	|SX1262	|YES	|5.0	|YES</p>
+<h2 id="T-Watch-S3">T-Watch S3</h2>
+<p>Name	|MCU	|Radio	|WiFi	|BT	|GPS<br />
+---	    |---	|---	|---	|---	|---<br />
+T-Watch S3	|ESP32-S3	|SX1262	|YES	|5.0	|NO</p>
+<h2 id="T-Lora-C6">T-Lora C6</h2>
+<p>Name	|MCU	|Radio	|WiFi	|BT	|GPS<br />
+---	    |---	|---	|---	|---	|---<br />
+T-Lora C6	|ESP32-C6	|SX1262	|YES	|5.0	|NO</p>
 
                         
                     </div>
                 </div>
                 <div id="previous_next">
                     <div id="previous">
+                        
+                        <a href="/get_started/zh/no_translate.html?ref=maixcam/faq.html&from=/get_started/zh/maixcam/faq.html">
+                            <span class="icon"></span>
+                            <span class="label">FAQ</span>
+                        </a>
                         
                     </div>
                     <div id="next">

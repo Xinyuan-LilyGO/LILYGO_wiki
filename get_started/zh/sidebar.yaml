@@ -74,3 +74,5 @@ items:
     items:
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
+-   label: Meshtastic
+    file: Meshtastic/Meshtastic_lilygo.md        
