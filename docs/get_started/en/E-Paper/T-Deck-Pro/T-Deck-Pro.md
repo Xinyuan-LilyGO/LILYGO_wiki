@@ -51,8 +51,8 @@ This flexible configuration meets diverse needs, including industrial control, e
 | 4G-Module | A7682E (Optional) |
 | wireless | 2.4 GHz Wi-Fi, Bluetooth 5 (LE)
 | Communication | SIM 卡|
-| USB | 1 × USB Port and OTG(TYPE-C接口) |
-| Extended Interface | 1 × QWIIC接口 |
+| USB | 1 × USB Port and OTG(TYPE-C Interface) |
+| Extended Interface | 1 × QWIIC Interface |
 | Gyroscope | BHI260AP |
 | Motor Control | IO level control|
 | Audio | PCM512A (Optional)|
@@ -65,7 +65,7 @@ This flexible configuration meets diverse needs, including industrial control, e
 | Keyboard | TCA8418 |
 | Light Sensor | LTR_553ALS|
 | Power  | 5V/500mA |
-| Holes | **2mm定位孔 *2** |
+| Holes | **2mm location hole *2** |
 | Dimensions | **120x66x13.5mm**  |
 ### Related Links
 
