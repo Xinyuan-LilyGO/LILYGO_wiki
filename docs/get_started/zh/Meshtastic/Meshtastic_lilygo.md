@@ -30,41 +30,42 @@ show_source: false
 
 ## T-Echo
 一体化设备，配有 E-Ink 屏幕、GPS 和电池，封装于注塑外壳中。采用低功耗的 nRF52840 芯片，以实现长续航。
-|Name	|MCU	|Radio	|WiFi	|BT	|GPS
-|---	    |---	|---	|---	|---	|
-|T-Echo	|nRF52840	|SX1262	|NO	|5.0	|YES
+| Name            | MCU      | Radio         | WiFi         | BT  | GPS  |
+|-----------------|----------|---------------|--------------|-----|------|
+| T-Echo          | nRF52840 | SX1262        | NO           | 5.0 | YES  |
 
 ## LoRa32 
 低成本的基础型 ESP32 开发板。
-|Name	|MCU	|Radio	|WiFi|	BT|	GPS|
-|---	    |---	|---	|---	|---	|
-|LoRa32 V1	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 V1.3 |	ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 V2.0	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 V2.1-1.6	|ESP32	|SX127x	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 V2.1-1.8	|ESP32	|SX1280	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 V3.0|	ESP32	|SX127x + TCXO	|2.4GHz b/g/n	|4.2	|NO
-|LoRa32 T3-S3	|ESP32-S3|SX1262<br>SX1276<br>SX1280<br>LR1121	|	2.4GHz b/g/n	|5.0	|NO
+
+| Name            | MCU   | Radio         | WiFi         | BT  | GPS  |
+|-----------------|-------|---------------|--------------|-----|------|
+| LoRa32 V1       | ESP32 | SX127x        | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 V1.3     | ESP32 | SX127x        | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 V2.0     | ESP32 | SX127x        | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 V2.1-1.6 | ESP32 | SX127x        | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 V2.1-1.8 | ESP32 | SX1280        | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 V3.0     | ESP32 | SX127x + TCXO | 2.4GHz b/g/n | 4.2 | NO   |
+| LoRa32 T3-S3    | ESP32-S3	|SX1262<br>SX1276<br>SX1280<br>LR1121|2.4GHz b/g/n | 5.0 | NO   |   
 
 
 ## T-Deck
 
 带有屏幕和键盘的独立设备。
 
-|Name	|MCU	|Radio	|WiFi	|BT	|GPS
-|---	    |---	|---	|---	|---	|
-|T-Deck	|ESP32-S3FN8	|SX1262	|YES	|5.0	|NO
-|T-Deck Plus	|ESP32-S3FN8	|SX1262	|YES	|5.0	|YES
+| Name            | MCU         | Radio         | WiFi         | BT  | GPS  |
+|-----------------|-------------|---------------|--------------|-----|------|
+| T-Deck          | ESP32-S3FN8 | SX1262        | YES          | 5.0 | NO   |
+| T-Deck Plus     | ESP32-S3FN8 | SX1262        | YES          | 5.0 | YES  |
 
 ## T-Watch S3
 
-|Name	|MCU	|Radio	|WiFi	|BT	|GPS
-|---	    |---	|---	|---	|---	|
-|T-Watch S3	|ESP32-S3	|SX1262	|YES	|5.0	|NO
+| Name            | MCU         | Radio         | WiFi         | BT  | GPS  |
+|-----------------|-------------|---------------|--------------|-----|------|
+| T-Watch S3      | ESP32-S3    | SX1262        | YES          | 5.0 | NO   |
 
 
 ## T-Lora C6
-|Name	|MCU	|Radio	|WiFi	|BT	|GPS
-|---	    |---	|---	|---	|---	|
-|T-Lora C6	|ESP32-C6	|SX1262	|YES	|5.0	|NO
+| Name            | MCU         | Radio         | WiFi         | BT   | GPS  |
+|-----------------|-------------|---------------|--------------|------|------|
+| T-Lora C6       | ESP32-C6    | SX1262        | YES          | 5.0* | NO   |
 
