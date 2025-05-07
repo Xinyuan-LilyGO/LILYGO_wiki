@@ -70,6 +70,7 @@ show_source: false
 |-----------------|-------------|---------------|--------------|------|------|
 | T-Lora C6       | ESP32-C6    | SX1262        | YES          | 5.0* | NO   |
 
+>在Meshtastic固件中还不支持ESP32-C6模块中的蓝牙。
 ## 固件下载
 
 LILYGO 设备Meshtastic 固件下载地址 : [Meshtastic Downloads](https://meshtastic.org/downloads/)

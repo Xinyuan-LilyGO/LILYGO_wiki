@@ -16,7 +16,7 @@ show_source: false
 
 ## T-Beam
 
-开发板配备了 GPS、18650 电池座，并且可以选配屏幕
+Boards complete with GPS, 18650 battery holder, and optional screen.
 
 
 | Name            | MCU      | Radio            | WiFi         | BT  | GPS  |
@@ -29,14 +29,14 @@ show_source: false
 
 
 ## T-Echo
-一体化设备，配有 E-Ink 屏幕、GPS 和电池，封装于注塑外壳中。采用低功耗的 nRF52840 芯片，以实现长续航。
+All-in-one unit with E-Ink screen, GPS and battery in injection-molded case. Features the low-power nRF52840 for long battery life.
 
 | Name            | MCU      | Radio         | WiFi         | BT  | GPS  |
 |-----------------|----------|---------------|--------------|-----|------|
 | T-Echo          | nRF52840 | SX1262        | NO           | 5.0 | YES  |
 
 ## LoRa32 
-低成本的基础型 ESP32 开发板。
+Inexpensive basic ESP32-based boards.
 
 | Name            | MCU   | Radio         | WiFi         | BT  | GPS  |
 |-----------------|-------|---------------|--------------|-----|------|
@@ -51,7 +51,7 @@ show_source: false
 
 ## T-Deck
 
-带有屏幕和键盘的独立设备。
+Standalone device with screen and keyboard.
 
 | Name            | MCU         | Radio         | WiFi         | BT  | GPS  |
 |-----------------|-------------|---------------|--------------|-----|------|
@@ -70,7 +70,8 @@ show_source: false
 |-----------------|-------------|---------------|--------------|------|------|
 | T-Lora C6       | ESP32-C6    | SX1262        | YES          | 5.0* | NO   |
 
-## 固件下载
+>Support for Bluetooth in the ESP32-C6 modules is not yet available in the Meshtastic firmware.
+## Firmware download
 
-LILYGO 设备Meshtastic 固件下载地址 : [Meshtastic Downloads](https://meshtastic.org/downloads/)
+LILYGO device Meshtastic firmware download address: [Meshtastic Downloads](https://meshtastic.org/downloads/)
 
