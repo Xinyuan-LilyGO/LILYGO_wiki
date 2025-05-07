@@ -10,7 +10,9 @@ items:
     -   label: T3 STM32
         file: LoRa_GPS/T3-STM32/T3-STM32.md   
     -   label: T3 TXCO
-        file: LoRa_GPS/T3-TXCO/T3-TXCO.md           
+        file: LoRa_GPS/T3-TXCO/T3-TXCO.md     
+    -   label: T3-S3 LR1121
+        file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md            
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
 -   label: AMOLED
