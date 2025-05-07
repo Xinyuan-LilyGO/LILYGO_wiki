@@ -19,13 +19,18 @@ show_source: false
 开发板配备了 GPS、18650 电池座，并且可以选配屏幕
 
 |Name	|MCU	|Radio	|WiFi	|BT	|GPS
-|---	    |---	|---	|---	|---	|
+|---	    |---	|---	|---	|---|
 |T-Beam v0.7	|ESP32	|SX1276	|2.4GHz b/g/n	|4.2	|YES
 |T-Beam v1.1	|ESP32	|SX1276	|2.4GHz b/g/n	|4.2	|YES
 |T-Beam with |M8N	|ESP32	SX1276<br>SX1262	|2.4GHz b/g/n	|4.2	|YES
 |T-Beam S3-Core	|ESP32-S3	|SX1262	|2.4GHz b/g/n	|5.0	|YES
 |T-BeamSUPREME	|ESP32-S3	|SX1262	|2.4GHz b/g/n	|5.0	|YES
 
+| 组件 | 描述 |1
+| ---  | --- | --- |
+|MCU	|ESP32-S3 Dual-core LX7 microprocessor	|1  
+|Flash 	|16M 	|1
+|Flash 	|16M |1
 
 ## T-Echo
 一体化设备，配有 E-Ink 屏幕、GPS 和电池，封装于注塑外壳中。采用低功耗的 nRF52840 芯片，以实现长续航。
