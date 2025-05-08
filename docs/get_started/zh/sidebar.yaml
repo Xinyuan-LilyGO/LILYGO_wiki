@@ -45,7 +45,11 @@ items:
     -   label: T-Embed SI4732
         file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md
     -   label: T-Bao
-        file: LCD_OLED/T-Bao/T-Bao.md              
+        file: LCD_OLED/T-Bao/T-Bao.md
+    -   label: T-Circle
+        file: LCD_OLED/T-Circle/T-Circle.md
+    -   label: T-Circle S3
+        file: LCD_OLED/T-Circle-S3/T-Circle-S3.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md    
 -   label: Wearable Kit
