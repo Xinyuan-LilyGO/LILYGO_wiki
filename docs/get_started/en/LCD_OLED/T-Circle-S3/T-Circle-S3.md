@@ -40,7 +40,7 @@ With precise pin mapping (e.g., LCD_MOSI, TP_SDA), it combines graphical display
 
 T-Circle-S3 is a development board based on the ESP32-S3, featuring a compact 0.75-inch round display. It comes equipped with a speaker, microphone, and a tri-color LED. On the back, it provides six programmable I/O ports, allowing for the expansion of various peripherals.
 
-<img src="./assets/T-Circle-S3-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Circle-S3-en.jpg" alt="summary" width=100%>
 
 | Component | Description |
 | --- | --- |
