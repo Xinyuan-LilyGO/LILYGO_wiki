@@ -62,6 +62,8 @@ items:
     items:
     -   label: T7 C6
         file: Basic_Module/T7_C6/T7_C6.md
+    -   label: T-Connect
+        file: Basic_Module/T-Connect/T-Connect.md
     -   label: FAQ
 -   label: T-SIM/T-PCIE Series
     file: SIM/SIM.md
