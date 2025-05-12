@@ -15,7 +15,7 @@ show_source: false
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
 
-## 概述
+## 简介
 
  T-Echo Lite是T-Echo的Lite版本，Lora+NRF52840+e-paper组合是目前验证过最低功耗的组合方案，可以作为Lora节点适配Meshtastic固件使用。
  T-Echo Lite分为T-Echo Lite Core和T-Echo Lite Base三个版本，T-Echo Lite主机是集成了T-Echo Lite Base的基础上设计了对应的外壳和集成1.2寸e-paper屏幕为一体的版本，支持选配GPS功能扩展模块。

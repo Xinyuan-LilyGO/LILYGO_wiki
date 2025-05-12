@@ -66,7 +66,7 @@ Expandability: Compatible with Raspberry Pi ecosystem via a 40-pin GPIO interfac
 
 Application Scenarios: Complex system integration such as smart home hubs, industrial automation control, and multi-protocol gateway solutions.
 
-<img src="./assets/T-ETH-ELite-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-ETH-ELite-en.jpg" alt="summary" width=100%>
 
 | Component | Description |
 | --- | --- |
