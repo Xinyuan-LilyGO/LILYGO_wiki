@@ -59,7 +59,7 @@ The board is also equipped with 4 functional buttons (PTT, Boot, PWR, Reset), TF
 | Extended Interface | 2 × 1mm 4-pin STEMMA QT/QWIIC interface + 1 × antenna interface |
 | Button | 1x RESET key + 1x BOOT key + 1x PWR key + 1x PTT key |
 | Power Supply | 5V/500mA |
-| Hole position | **2 × M1.6* *2** |
+| Hole position | **2 × 2mm locatioin hole** |
 | Size | Product :** 126* 39 * 29mm ** <br> Antenna :**200mm** |
 
 ### Related Links
