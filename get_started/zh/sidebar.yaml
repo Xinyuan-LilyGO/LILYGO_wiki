@@ -9,6 +9,8 @@ items:
         file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
     -   label: T-TWR
         file: LoRa_GPS/T-TWR/T-TWR.md
+    -   label: T-LoRa-C6
+        file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
     -   label: T3 STM32
         file: LoRa_GPS/T3-STM32/T3-STM32.md 
     -   label: T3 TXCO
