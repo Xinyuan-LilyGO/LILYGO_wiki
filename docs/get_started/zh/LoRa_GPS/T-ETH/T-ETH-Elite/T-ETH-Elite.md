@@ -162,7 +162,7 @@ Github:[T-ETH-Series](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/tree
 
 YouTuBe参考视频：[TTN&LilyGO LoRa Gateway](https://www.youtube.com/watch?v=NyL87WWntP4)
 
-###
+
 ## 软件开发
 ### Arduino 设置参数
 

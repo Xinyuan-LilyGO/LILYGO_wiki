@@ -69,7 +69,6 @@ Github:[T-ETH-Series](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/tree
 - [U8g2](https://github.com/olikraus/u8g2)
 - [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 
-## 软件开发
 
 ### 开发平台
 
