@@ -16,15 +16,15 @@ items:
     -   label: T3-S3 LR1121
         file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md     
     -   label: T-ETH
-        items: 
+        items:
         -   label: T-ETH-Elite
-            file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-ELite.md
+            file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-Elite.md
         -   label: T-ETH-GateWay
-            file: LoRa_GPS/T-ETH/T-ETH-Gateway\T-ETH-Gateway.md 
+            file: LoRa_GPS/T-ETH/T-ETH-Gateway/T-ETH-Gateway.md 
         -   label: T-ETH-LoRa
-            file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield\T-ETH-LoRa-shield.md
+            file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
         -   label: T-SX1302
-            file: LoRa_GPS/T-ETH/T-ETH-1302\T-ETH-1302.md                                
+            file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md                                
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
 -   label: AMOLED
