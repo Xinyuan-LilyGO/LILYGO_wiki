@@ -65,7 +65,6 @@ T-LoraPager 是一款LILYGO Lora+ESP32-S3的手持AIOT可编程开发设备的�
 |输入|  键盘
 |编码器|   旋转编码器
 |RTC	|支持电源开关
-
 |触摸	|GT911
 | 按键 | 1 x RST 按键 + 1 x BOOT 按键  |
 |音频解码器	|RC01812(24-bit , 8kHz ~ 96kHz)

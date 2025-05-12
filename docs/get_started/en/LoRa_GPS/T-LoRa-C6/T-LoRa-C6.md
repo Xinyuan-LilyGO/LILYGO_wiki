@@ -6,7 +6,7 @@ show_source: false
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Display K230](./assets/T-Connect-Pro1.jpg)
+![T-LoRa C6](./assets/T-LoRa-C6-1.jpg)
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-lora-c6">Go Buying</a>
