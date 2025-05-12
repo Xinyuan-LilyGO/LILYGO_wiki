@@ -20,7 +20,7 @@ items:
         -   label: T-ETH-Elite
             file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-Elite.md
         -   label: T-ETH-GateWay
-            file: LoRa_GPS\T-ETH\T-ETH-Gateway\T-ETH-Gateway.md
+            file: LoRa_GPS/T-ETH/T-ETH-Gateway/T-ETH-Gateway.md
         -   label: T-ETH-LoRa
             file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
         -   label: T-SX1302
