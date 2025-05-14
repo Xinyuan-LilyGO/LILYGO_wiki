@@ -51,7 +51,6 @@ LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能�
 更多项目信息可参考
 Github：[T3 STM32](https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master)
 * [SSD1315](https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf)
-
 #### 原理图
 
 [T3 STM32](https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/T3_STM32%20V1.0%2024-07-30.pdf)
@@ -62,6 +61,14 @@ Github：[T3 STM32](https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master)
 
 * [STM32 hal](https://github.com/bxparks/AceButton)
 * [STM32CubeMX](https://github.com/moononournation/Arduino_GFX)
+#### 注意事项
+
+> 使用者如有需要调节外接天线电阻请参考
+
+
+<img src="./assets/T3-STM32-4.png" alt="summary" width=80%>
+
+>!调整电阻方向实现调节外接天线的电阻。
 
 ## 下载工具
 1. ST 官方编程软件下载 [STM32CubeProgrammer](https://www.st.com.cn/zh/development-tools/stm32cubeprog.html)

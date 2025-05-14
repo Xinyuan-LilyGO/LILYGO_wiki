@@ -34,13 +34,32 @@ As for the T-Embed base board itself, it features a rounded rectangular design a
 
 <img src="./assets/T-Embed-SI4732-3.jpg" alt="summary" width=100%>
 
+| Component | Description |
+| ---  | --- |
+|MCU	|ESP32-S3 Dual-core LX7 microprocessor
+|Flash 	|16M
+|PSRAM  |8M
+|GPS	|MIA-M10Q
+| Wireless | Wi-Fi 802.11b /g/n, BLE 5
+| Storage | TF Card |
+| Screen | 1.9-inch ST7789V IPS color TFT LCD
+| radio | Si4732-A10(CMOS AM/FM/SW/LW/RDS radio receiverIC)
+| Battery | 702550, 900MAH
+| Encoder | Encoder knob
+| Keys | 1 x RST key + 1 x BOOT key |
+| Microphone | 1 x ES7210 microphone
+| USB |1 × type-C interface |
+| RGB | APA102
+| Hole position | 2×2mm positioning hole |
+| Dimensions | **98x39x39mm** |
+
 ### Related Links
-Github：[T-Embed-SI4732](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
+Github：[T-Embed-SI4732](https://github.com/Xinyuan-LilyGO/T-Embed)
 
 * [PN532](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf)
 * [bq25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
 * [bq27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
-* [cc1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf)
+
 
 #### Schematic Diagram
 
@@ -59,8 +78,7 @@ Github：[T-Embed-SI4732](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 * [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266)
 * [ESP32-audioI2S](https://github.com/schreibfaul1/ESP32-audioI2S)
 * [LVGL](https://github.com/lvgl/lvgl/tree/v8.4.0)
-
-
+* [PU2CLR SI4735](https://github.com/pu2clr/SI4735)
 
 ## Software Design
 ### Arduino Set Parameters

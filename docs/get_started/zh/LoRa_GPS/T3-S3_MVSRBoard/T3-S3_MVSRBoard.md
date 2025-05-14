@@ -72,6 +72,16 @@ Github:[T3-S3-MBSRBoard](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard)
 - [Speak](https://github.com/Xk-w/Arduino_DriveBus)
 - [Microphone](https://github.com/Xk-w/Arduino_DriveBus)
 - [RTC](https://github.com/Xk-w/Arduino_DriveBus)
+
+#### 注意事项
+
+> 使用者如有需要调节外接天线电阻请参考
+
+
+<img src="./assets/T3-S3_MVSRBoard04.jpg" alt="summary" width=80%>
+
+>!箭头处指向处可更换电阻实现调整外接天线的电阻
+
 ## 软件开发
 ### Arduino 设置参数
 
@@ -91,6 +101,8 @@ Github:[T3-S3-MBSRBoard](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard)
 | PSRAM                                | OPI PSRAM                         |
 | Arduino Runs On                  | Core 1                               |
 | Events Run On                     | Core 1                               |           
+
+
 
 ### 开发平台
 1. [VS Code](https://code.visualstudio.com/)

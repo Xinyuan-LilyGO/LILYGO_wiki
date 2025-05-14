@@ -54,6 +54,7 @@ LILYGO T-Embed 是一款基于 ESP32-S3 并且搭载LX7双核处理器的高集�
 | 拓展接口 | 2 × QWIIC接口 |
 | 孔位 | 2×2mm 定位孔 |
 | 尺寸 | **97.5x39x31mm**  |
+
 ### 相关资料
 Github：[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 
@@ -66,7 +67,6 @@ Github：[T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 
 [T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf)
 
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
 
 #### 依赖库
 
