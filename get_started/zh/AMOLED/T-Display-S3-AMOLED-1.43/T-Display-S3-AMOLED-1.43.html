@@ -62,10 +62,10 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO Wiki</title>
+    <title>LILYGO T-Display S3 AMOLED 1.43 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "这是一个支持国际化的消息示例</br>喜欢项目请<a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">点下 ☆ star </a>哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": null, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -96,8 +96,8 @@ var _hmt = _hmt || [];
                 <ul id="nav_right">
 <li class=""><a target="_blank" href="https://www.youtube.com/@LILYGO"><img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
 <li class=""><a target="_blank" href="https://github.com/Xinyuan-LilyGO"><img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
-<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/Wearable/T-watch-k230.html">English</a></li>
-<li class="active"><a  href="/get_started/zh/Wearable/T-watch-k230.html">中文 简体</a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/AMOLED/T-Display-S3-AMOLED-1.43/T-Display-S3-AMOLED-1.43.html">English</a></li>
+<li class="active"><a  href="/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.43/T-Display-S3-AMOLED-1.43.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -204,7 +204,7 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1></h1>
+                            <h1>LILYGO T-Display S3 AMOLED 1.43</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -218,18 +218,8 @@ var _hmt = _hmt || [];
                                 
                             </span>
                             
-                                <span class="article_date" title="最后修改日期： 2025-05-14">
-                                    2025-05-14
-                                </span>
-                            
                         </div>
                         <div id="article_info_right">
-                            
-                            <div id="source_link">
-                                <a href="https://github.com/puboy7/LILYGO.github.io/blob/main/docs/get_started/zh/Wearable/T-watch-k230.md" target="_blank">
-                                    编辑本页
-                                </a>
-                            </div>
                             
                         </div>
                         </div>
@@ -243,145 +233,199 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <h1 align = "center">🌟LilyGO T-Watch K230🌟</h1>
-<p><a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/actions/workflows/platformio.yml"  target="_blank"><img src="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/actions/workflows/platformio.yml/badge.svg" alt="PlatformIO CI" /></a><a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/actions/workflows/arduino_ci.yml"  target="_blank"><img src="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/actions/workflows/arduino_ci.yml/badge.svg?branch=t-watch-s3" alt="Arduino_CI" /></a></p>
-<!-- **[English](README.MD) | 中文** -->
-<h2 id="News%3A">News:</h2>
-<p>T-Display K230是继K210之后的另一款基于嘉楠科技的新芯片K230而设计的。<br />
-我们在保留K230的基本外设功能外，增加了LILYGO产品特色的lora功能，同时外观设计基于手持设备的尺寸设计，可以选配高显示质量的4.05寸AMOLED屏幕，基于AMOLED屏幕我们工程写了对应的应用Demo供开发参考。<br />
-LORA+ISP摄像头的组合特点，让我们尝试开发基于lora的不同的应用吧</p>
-<h2 id="1%EF%B8%8F%E2%83%A3-PlatformIO-Quick-Start-%26lt%3B%E6%8E%A8%E8%8D%90%26gt%3B">1️⃣ PlatformIO Quick Start &lt;推荐&gt;</h2>
-<ol>
-<li>安装<a href="https://code.visualstudio.com/"  target="_blank">VisualStudioCode</a> 和 <a href="https://www.python.org/"  target="_blank">Python</a></li>
-<li>在<code>VisualStudioCode</code>扩展中搜索<code>PlatformIO</code>插件并安装.</li>
-<li>安装完成后需要将<code>VisualStudioCode</code>重新启动</li>
-<li>重新开启<code>VisualStudioCode</code>后,选择 <code>VisualStudioCode</code> 左上角的 <code>文件</code> -&gt; <code>打开文件夹</code> -&gt;选择 <code>TTGO_TWatch_Library</code> 目录</li>
-<li>等待安装第三方依赖库安装完成</li>
-<li>点击 <code>platformio.ini</code> 文件,在<code>platformio</code> 栏目中取消需要使用的示例行,请确保仅仅一行有效</li>
-<li>点击左下角的（✔）符号编译</li>
-<li>将板子与电脑USB进行连接</li>
-<li>点击（→）上传固件</li>
-<li>点击 (插头符号) 监视串行输出</li>
-</ol>
-<h2 id="2%EF%B8%8F%E2%83%A3-Arduino-IDE-Quick-Start">2️⃣ Arduino IDE Quick Start</h2>
-<ol>
-<li>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">ArduinoIDE</a></li>
-<li>安装 <code>Arduino ESP32 2.0.9</code><br />
-<img src="./images/InstallArduino.jpg" alt="InstallArduino" /><ul>
-<li><strong>请使用 2.0.9 ，新版本变更过大，目前还没有做适配</strong></li>
-</ul>
-</li>
-<li>安装 <a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library"  target="_blank">TTGO_TWatch_Library</a></li>
-<li>安装 <a href="https://github.com/Xinyuan-LilyGO/T-Watch-Deps"  target="_blank">T-Watch-Deps</a><ul>
-<li>将<a href="https://github.com/Xinyuan-LilyGO/T-Watch-Deps"  target="_blank">T-Watch-Deps</a>里的所有目录拷贝到 <code>&lt;C:\Users\UserName\Documents\Arduino\libraries&gt;</code>,如果没有<code>libraries</code>目录,请新建.</li>
-<li>请注意,不是拷贝<code>T-Watch-Deps</code>目录,而是拷贝<code>T-Watch-Deps</code>目录里面的文件夹到<libraries></li>
-<li>请注意,当前第三方库仅仅只有&lt;TFT_eSPI&gt;进行了<a href="https://github.com/Xinyuan-LilyGO/T-Watch-Deps/blob/be311130018708903d5ed1e524b73d670a2e18f1/TFT_eSPI/User_Setup_Select.h#L143"  target="_blank">预配置</a>,当升级了&lt;TFT_eSPI&gt;之后你需要重新将&lt;extras/Setup212_LilyGo_T_Watch_S3.h&gt;移动到&lt;TFT_eSPI/User_Setups&gt;目录内,并且在<a href="https://github.com/Xinyuan-LilyGO/T-Watch-Deps/blob/be311130018708903d5ed1e524b73d670a2e18f1/TFT_eSPI/User_Setup_Select.h#L143"  target="_blank">TFT_eSPI/User_Setup_Select.h</a>中添加<code>#include &lt;User_Setups/Setup212_LilyGo_T_Watch_S3.h&gt;</code></li>
-</ul>
-</li>
-<li>打开ArduinoIDE -&gt; Tools<ul>
-<li>Board -&gt; ESP32S3 Dev Module</li>
-<li>USB CDC On Boot -&gt; Enable   # 注意，在不连接USB的时候你需要将Enable改为Disable，这样USB CDC 不会阻止板子的启动</li>
-<li>CPU Frequency -&gt; 240MHz</li>
-<li>USB DFU On Boot -&gt; Disable</li>
-<li>Flash Mode -&gt; QIO 80MHz</li>
-<li>Flash Size -&gt; 16MB(128Mb)</li>
-<li>USB Firmware MSC On Boot -&gt; Disable</li>
-<li>PSRAM -&gt; OPI PSRAM</li>
-<li>Partition Scheme -&gt; 16M Flash(3MB APP/9.9MB FATFS)</li>
-<li>USB Mode -&gt; Hardware CDC and JIAG</li>
-<li>Upload Mode -&gt; UART0/Hardware CDC</li>
-<li>Upload Speed -&gt; 921600</li>
-</ul>
-</li>
-<li>插入USB到PC,点击上传&lt;如果无法顺利上传,请查看下方FAQ&gt;</li>
-</ol>
-<h2 align = "left">4️⃣ Example Source </h2>
-<ul>
-<li><strong>display 目录</strong>  示例来源于  <a href="https://github.com/Bodmer/TFT_eSPI/tree/master/examples"  target="_blank">TFT_eSPI</a></li>
-<li><strong>lvgl 目录</strong> 示例来源于  <a href="https://github.com/lvgl/lvgl/tree/master/examples"  target="_blank">lvgl</a></li>
-<li><strong>radio 目录</strong> 示例来源于  <a href="https://github.com/jgromes/RadioLib/tree/master/examples/SX126x"  target="_blank">RadioLib</a></li>
-<li><strong>peripheral 目录</strong> 示例来源于 <a href="https://github.com/lewisxhe/XPowersLib/tree/master/examples"  target="_blank">XPowersLib</a> &amp; <a href="https://github.com/lewisxhe/SensorsLib/tree/master/examples"  target="_blank">SensorsLib</a></li>
-</ul>
-<h2 align = "left">5️⃣ ESP32 basic examples </h2>
-<ul>
-<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/BLE"  target="_blank">BLE Examples</a></li>
-<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi"  target="_blank">WiFi Examples</a></li>
-<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS"  target="_blank">SPIFFS Examples</a></li>
-<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/ArduinoOTA"  target="_blank">OTA Examples</a></li>
-<li><a href="https://github.com/espressif/arduino-esp32/tree/master/libraries/FFat"  target="_blank">FFat Examples</a></li>
-<li>更多esp32示例,请在这里查看 <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries"  target="_blank">arduino-esp32-libraries</a></li>
-</ul>
-<h2 align = "left">6️⃣ FAQ </h2>
-<ol>
-<li><p>无法上传示例</p>
-<ol>
-<li>确保T-Watch已经开机,可以按照下面方法进行查看,打开电脑设备管理器,查看端口，插入USB端口到电脑，显示了新的COM设备，则已经开机，如果没有显示，则按压表冠上的按键一秒，然后会弹出设备端口,此时点击上传</li>
-</ol>
-</li>
-<li><p>USB端口在电脑中不断闪现</p>
-</li>
-</ol>
-<ul>
-<li>这是程序运行异常,或者是选择了错误的配置,esp32不断重启导致的现象,这时只能将手表手动进入下载模式才能解决不能上传的问题</li>
-</ul>
-<p>请遵顼下面的步骤操作</p>
-<ol>
-<li>拆开后盖</li>
-<li>插入Micro-USB</li>
-<li>打开Windows设备管理器</li>
-<li>长按手表表冠,直到 Windows COM 端口中不出现 USB 的设备</li>
-<li>按压下图按键保持按压</li>
-</ol>
-<p><img src="./images/BUTTON.jpg" alt="" /><br />
-  6. 按压表冠按钮一秒<br />
-  7. 此时COM端口则固定<br />
-  8. ArduinoIDE 中选择Port<br />
-  9.  点击上传</p>
-<ol start="3">
-<li>在哪里查询引脚定义?<ol>
-<li>看<a href="./src/utilities.h"  >这里</a></li>
-</ol>
-</li>
-<li>上传草图之后屏幕没有显示?<ol>
-<li>请查看<a href=""  >Arduino IDE Quick Start</a>第四行</li>
-</ol>
-</li>
-<li>电源域<br />
-| Power Domain | Role                          |<br />
-| ------------ | ----------------------------- |<br />
-| ALDO1        | RTC backup battery (3.1-3.3v) |<br />
-| ALDO2        | Backlight                     |<br />
-| ALDO3        | 3V3 for FT6336 and st7889     |<br />
-| ALDO4        | SX1262                        |<br />
-| BLDO2        | DRV2605 Enable pin            |<br />
-| DC1          | ESP32 3V3                     |<br />
-| VRTC         | Nothing                       |</li>
-</ol>
-<h2 id="3%EF%B8%8F%E2%83%A3%E7%94%A8%E6%88%B7%E5%8F%82%E8%80%83">3️⃣用户参考</h2>
+                            <!-- **[English](README.MD) | 中文** -->
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Display-S3-AMOLED-1.43-1.jpg" alt="T-Display-S3-AMOLED-1.43" /></p>
+</div>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44507650556085">官网购买</a>
+    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+</div>
+<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
+<p>T-Display-S3-AMOLED-1.43 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双模芯片的智能显示开发板，专为物联网与交互应用设计。其核心搭载 1.43 英寸 AMOLED 显示屏，提供 466×466 像素高分辨率，支持触控操作并内置 PCF8563 实时时钟（RTC），可精准管理时间任务。硬件配置包括 16MB FLASH 存储、8MB Octal SPI PSRAM 内存，支持 Micro SD 卡扩展存储，同时集成电池电量检测（ADC）功能与 Type-C 供电接口，方便移动场景使用。开发板提供丰富的扩展接口（如 SPI、I2C、GPIO 等），兼容触摸屏交互与 SD 卡数据读写，适用于智能穿戴、工业控制、嵌入式 GUI 开发等场景，兼具高性能与低功耗特性。</p>
+<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
+<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
+<img src="./assets/T-Display-S3-AMOLED-1.43-2.jpg" alt="summary" width=80%>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Display-S3-AMOLED-1.43-zh.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<img src="./assets/T-Display-S3-AMOLED-1.43-info-zh.jpg" alt="summary" width=80%>
 <table>
 <thead>
 <tr>
-  <th style="text-align:center">Product</th>
-  <th style="text-align:center">Youtube  link</th>
-  <th style="text-align:center">explanation</th>
-  <th style="text-align:center">Status</th>
+  <th>组件</th>
+  <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:center">T -WATCH-S3</td>
-  <td style="text-align:center"><a href="https://www.youtube.com/watch?v=RCYUN5yAnUk"  target="_blank">Youtube link</a></td>
-  <td style="text-align:center">How to get started with LILYGO T-Watch-S3 easily</td>
-  <td style="text-align:center">✅</td>
+  <td>MCU</td>
+  <td>ESP32-S3R8 Dual-core LX7 microprocessor</td>
 </tr>
 <tr>
-  <td style="text-align:center">LilyGo device</td>
-  <td style="text-align:center"><a href="https://www.youtube.com/watch?v=f3BybP3L7ls"  target="_blank">Youtube link</a></td>
-  <td style="text-align:center">How to enter boot mode to download the firmware</td>
-  <td style="text-align:center">✅</td>
+  <td>FLASH</td>
+  <td>16MB</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>8MB</td>
+</tr>
+<tr>
+  <td>屏幕</td>
+  <td>1.43 英寸 SH8601 AMOLED</td>
+</tr>
+<tr>
+  <td>触摸</td>
+  <td>FT3168 触摸电容屏</td>
+</tr>
+<tr>
+  <td>总线</td>
+  <td>QSPI</td>
+</tr>
+<tr>
+  <td>LoRa</td>
+  <td>1276:868,915Mhz</td>
+</tr>
+<tr>
+  <td>存储</td>
+  <td>TF 卡</td>
+</tr>
+<tr>
+  <td>充电芯片</td>
+  <td>SY6970</td>
+</tr>
+<tr>
+  <td>RTC</td>
+  <td>PCF8563</td>
+</tr>
+<tr>
+  <td>无线</td>
+  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td>USB</td>
+  <td>1 × USB Port and OTG(TYPE-C接口)</td>
+</tr>
+<tr>
+  <td>IO 接口</td>
+  <td>2 x 2.54mm间距 2*7 拓展IO接口</td>
+</tr>
+<tr>
+  <td>拓展接口</td>
+  <td>1 × QWIIC接口 + JST-GH 1.25MM 接口 +1 x 电池座子</td>
+</tr>
+<tr>
+  <td>按键</td>
+  <td>1 x RESET 按键 + 1 x BOOT 按键</td>
+</tr>
+<tr>
+  <td>尺寸</td>
+  <td><strong>45x45x11mm</strong></td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>该芯片在未接电池5V供电时输出波形将非常不稳定，需要连接电池使用或者软件关闭电池通道，这样的话情况将会得到缓解</p>
+</blockquote>
+<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
+<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main"  target="_blank">T-Display-S3-AMOLED-1.43</a></p>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/PCF8563.pdf"  target="_blank">PCF8563</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/SH8601Z.pdf"  target="_blank">SH8601</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/SPEC-DO0143FAT01-20230830.pdf"  target="_blank">DO0143FAT01</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/AN_SY6970.pdf"  target="_blank">AN_SY6970</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/EVB_SY6970.pdf"  target="_blank">EVB_SY6970</a></li>
+</ul>
+<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/project/T-Display-S3-AMOLED-1.43-1.75_V1.0.pdf"  target="_blank">T-Display-S3-AMOLED-1.43-1.75_V1.0</a></li>
+</ul>
+<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
+<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<ul>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
+<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus-1.1.12</a></li>
+<li><a href="https://github.com/bitbank2/JPEGDEC"  target="_blank">JPEGDEC-1.2.8</a></li>
+<li><a href="https://lvgl.io"  target="_blank">lvgl-8.3.5</a></li>
+<li><a href="https://github.com/moononournation/MiniTV"  target="_blank">MiniTV</a></li>
+<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib</a></li>
+</ul>
+<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
+<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
+<table>
+<thead>
+<tr>
+  <th>Setting</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Board</td>
+  <td>ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td>Upload Speed</td>
+  <td>921600</td>
+</tr>
+<tr>
+  <td>USB Mode</td>
+  <td>Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td>USB CDC On Boot</td>
+  <td>Enabled</td>
+</tr>
+<tr>
+  <td>USB Firmware MSC On Boot</td>
+  <td>Disabled</td>
+</tr>
+<tr>
+  <td>USB DFU On Boot</td>
+  <td>Disabled</td>
+</tr>
+<tr>
+  <td>CPU Frequency</td>
+  <td>240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td>Flash Mode</td>
+  <td>QIO 80MHz</td>
+</tr>
+<tr>
+  <td>Flash Size</td>
+  <td>16MB (128Mb)</td>
+</tr>
+<tr>
+  <td>Core Debug Level</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>Partition Scheme</td>
+  <td>16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>OPI PSRAM</td>
+</tr>
+<tr>
+  <td>Arduino Runs On</td>
+  <td>Core 1</td>
+</tr>
+<tr>
+  <td>Events Run On</td>
+  <td>Core 1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
 
                         
                     </div>
