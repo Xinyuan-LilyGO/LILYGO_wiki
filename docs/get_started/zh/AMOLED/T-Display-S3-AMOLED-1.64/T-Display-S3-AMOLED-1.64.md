@@ -17,7 +17,7 @@ show_source: false
 
 ## 简介
 
-T-Display-S3-AMOLED-1.64 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双模芯片的智能显示开发板，专为物联网与交互应用设计。其核心搭载 1.43 英寸 AMOLED 显示屏，提供 466×466 像素高分辨率，支持触控操作并内置 PCF8563 实时时钟（RTC），可精准管理时间任务。硬件配置包括 16MB FLASH 存储、8MB Octal SPI PSRAM 内存，支持 Micro SD 卡扩展存储，同时集成电池电量检测（ADC）功能与 Type-C 供电接口，方便移动场景使用。开发板提供丰富的扩展接口（如 SPI、I2C、GPIO 等），兼容触摸屏交互与 SD 卡数据读写，适用于智能穿戴、工业控制、嵌入式 GUI 开发等场景，兼具高性能与低功耗特性。
+T-Display-S3 AMOLED 1.64 是一款基于 ESP32-S3R8 双核 LX7 微处理器的高性能物联网开发板，集成 2.4 GHz Wi-Fi 和蓝牙 5（LE）无线通信功能，支持多平台开发（Arduino、PlatformIO-IDE、ESP-IDF）。其核心亮点为 1.64 英寸 ICMA3311 AMOLED 显示屏，分辨率达 280×456 像素，采用 QSPI 总线接口并兼容 Arduino_GFX 图形库，可快速实现丰富的图形界面开发。板载 16MB Flash 和 8MB PSRAM，提供充足存储与内存资源，同时支持电池电压检测（ADC 脚位 I004）及 5V/500mA USB 充电，兼顾低功耗与移动场景需求。其他功能包括电容触摸交互、外显式流量控制、STEMMA OT/Qwilc 扩展接口及 RF SH 1.0mm + 4W 射频设计，适用于智能穿戴、嵌入式 GUI、工业控制等场景，以紧凑尺寸（28×42mm）实现高性能与多功能的平衡。
 
 ## 外观及功能介绍
 ### 外观
@@ -79,6 +79,14 @@ Github：[T-Display-S3-AMOLED-1.64](https://github.com/Xinyuan-LilyGO/T-Display-
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [Arduino_DriveBus-1.1.8](https://github.com/Xk-w/Arduino_DriveBus)
 
+#### 注意事项
+
+> 使用者如有需要调节外接天线电阻请参考
+
+<img src="./assets/T-Display-S3-AMOLED-1.64-3.jpg" alt="summary" width=80%>
+
+>!图中硬件遮蔽了电阻跳线部分，可以参考T3-S3 LR1121文档中的方式调整电阻方向实现调节外接天线的电阻。
+
 ## 软件开发
 ### Arduino 设置参数
 
@@ -100,6 +108,7 @@ Github：[T-Display-S3-AMOLED-1.64](https://github.com/Xinyuan-LilyGO/T-Display-
 | Events Run On            | Core 1                           |
 
 ### 开发平台
+
 1. [Micropython](https://micropython.org/)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
 3. [Platform IO](https://platformio.org/)
