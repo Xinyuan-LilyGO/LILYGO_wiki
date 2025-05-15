@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.43/T-Display-S3-AMOLED-1.43.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-STM32/T3-STM32.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-TWR/T-TWR.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Echo-Lite/T-Echo-Lite.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/zh/E-Paper/T3-S3-E-paper/T3-S3-E-paper.html</loc>
             <lastmod>2025-05-15</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -92,6 +50,60 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-Pro-LR1121/T-Display-S3-Pro-LR1121.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.43/T-Display-S3-AMOLED-1.43.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T3-STM32/T3-STM32.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-TWR/T-TWR.html</loc>
+            <lastmod>2025-05-15</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-Echo-Lite/T-Echo-Lite.html</loc>
             <lastmod>2025-05-15</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -164,12 +176,6 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Pico-2350/T-Pico-2350.html</loc>
-            <lastmod>2025-05-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/zh/AMOLED/T-Display-S3-Pro-LR1121/T-Display-S3-Pro-LR1121.html</loc>
             <lastmod>2025-05-15</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
