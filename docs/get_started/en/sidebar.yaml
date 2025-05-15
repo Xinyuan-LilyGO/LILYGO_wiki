@@ -37,7 +37,12 @@ items:
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
     -   label : T-Display S3 AMOLED Plus
         file: AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.md
-    -   label: C
+    -   label: T-Display S3 AMOLED 1.43
+        file: AMOLED/T-Display-S3-AMOLED-1.43/T-Display-S3-AMOLED-1.43.md
+    -   label: T-Display S3 AMOLED 1.64
+        file: AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.md
+    -   label: T-Display S3 AMOLED 1.75
+        file: AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md                      
 -   label: E-Paper

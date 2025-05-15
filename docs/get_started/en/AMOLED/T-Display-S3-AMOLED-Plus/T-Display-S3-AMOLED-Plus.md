@@ -17,7 +17,11 @@ show_source: false
 
 ## Introduction
 
-T-Display AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开发板，主打多功能与高性能。其核心搭载 16MB Flash 和 8MB PSRAM，支持复杂应用运行。配备 1.25 英寸 AMOLED 显示屏，并支持触摸功能。内置 PMU（电源管理单元）和 RTC（实时时钟），结合 VBUS 电源管理，优化了低功耗设计。扩展方面，提供 STEMMA QT/Qwlic 双接口，兼容快速传感器连接；支持 SD 卡存储，并预留丰富 GPIO、ADC 通道及 UART 通信接口，便于外设扩展。此外，板载 BOOT 模式切换和复位电路，简化开发调试。该产品适用于智能穿戴、物联网终端等需要显示交互与多传感器集成的场景。
+T-Display AMOLED Plus is a high-integration development board based on the ESP32-S3 microcontroller, designed for versatility and high performance. It features 16MB of Flash and 8MB of PSRAM, enabling support for complex applications. The board comes with a 1.25-inch AMOLED display with touch functionality, offering vibrant visuals and interactive control.
+
+It includes an onboard PMU (Power Management Unit) and RTC (Real-Time Clock), with VBUS power management to optimize low-power design. For expansion, the board provides dual STEMMA QT/Qwiic connectors for rapid sensor integration, supports SD card storage, and offers a wide range of GPIOs, ADC channels, and UART interfaces for peripheral connections.
+
+Additionally, it integrates BOOT mode switching and a reset circuit, simplifying development and debugging. This board is ideal for scenarios requiring interactive displays and multi-sensor integration, such as smart wearables and IoT terminals.
 
 ## Appearance and function introduction
 ### Appearance
