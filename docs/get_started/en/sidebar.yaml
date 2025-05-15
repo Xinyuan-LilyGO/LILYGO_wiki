@@ -51,6 +51,8 @@ items:
         file: E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.md
     -   label: T-Deck Pro
         file: E-Paper/T-Deck-Pro/T-Deck-Pro.md
+    -   label: T3-S3 E-paper
+        file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
 -   label: LCD OLED
