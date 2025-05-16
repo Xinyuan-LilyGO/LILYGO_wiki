@@ -32,10 +32,12 @@ Additional features include Reset/Boot buttons, multi-band antennas (onboard + e
 
 ### Pinmap 
 
-<img src="./assets/T3-S3-E-paper-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T3-S3-E-paper-en.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
+
+<img src="./assets/T3-S3-E-paper-info-en.jpg" alt="summary" width=100%>
 
 | Component | Description |
 | --- | --- |
@@ -50,7 +52,6 @@ Additional features include Reset/Boot buttons, multi-band antennas (onboard + e
 | IO interface | 2.54mm pitch 2*13 (dual rows) Extended IO interface |
 | Extended Interfaces | 1 × FPC antenna extended interface +1 × TF card interface +1 × STEMMA QT/QWIIC interface (JST-SH 1.0MM 4Pin) + JST-GH 2MM interface |
 | Keys | 1 x RESET key + 1 x BOOT key |
-| Power Supply | AXPM65611 power chip management,BQ25896 charging management chip |
 | Hole positions | **2mm positioning holes ** 4**
 | Dimensions | 67x29x15mm |
 

@@ -29,8 +29,9 @@ T3-S3 E-Paper 是一款基于 ESP32S3FH4R2 微控制器的低功耗物联网开�
 <img src="./assets/T3-S3-E-paper-zh.jpg" alt="summary" width=100%>
 
 ## 模块资料以及参数
-
 ### 概述
+
+<img src="./assets/T3-S3-E-paper-info-zh.jpg" alt="summary" width=100%>
 
 | 组件 | 描述 |
 | --- | --- |
@@ -45,7 +46,6 @@ T3-S3 E-Paper 是一款基于 ESP32S3FH4R2 微控制器的低功耗物联网开�
 | IO 接口 | 2.54mm间距 2*13（双排）拓展IO接口 |
 | 拓展接口| 1 × FPC 天线拓展接口 +1 × TF card接口  + 1 × STEMMA QT/QWIIC接口(JST-SH 1.0MM 4Pin)  + JST-GH 2MM 接口|
 | 按键 | 1 x RESET 按键 + 1 x BOOT 按键|
-| 电源 | AXPM65611电源芯片管理,BQ25896充电管理芯片|
 | 孔位 | **2mm定位孔 * 4** |
 | 尺寸 | **67x29x15mm**  |
 
