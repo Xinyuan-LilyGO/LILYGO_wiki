@@ -28,7 +28,7 @@ items:
         -   label: T-Echo-Lite
             file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
         -   label: T-Embed CC1101
-            file: LoRa_GPS/T-Embed-CC1101/T-Embed-CC1101.md
+            file: LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.md
         -   label: T-Embed SI4732
             file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md  
 -   label: Wireless Kit
