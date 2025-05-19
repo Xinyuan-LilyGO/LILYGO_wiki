@@ -32,6 +32,7 @@ items:
         -   label: T-Embed SI4732
             file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md  
 -   label: Wireless Kit
+    items:
     -   label: LoRa/GPS
         items:
         -   label: T-LoRa-C6
