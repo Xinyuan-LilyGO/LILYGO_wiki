@@ -37,16 +37,41 @@ items:
         items:
         -   label: T-LoRa-C6
             file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
+        -   label: T3-S3 LR1121
+            file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md
+        -   label: T3 STM32
+            file: LoRa_GPS/T3-STM32/T3-STM32.md 
+        -   label: T3 TXCO
+            file: LoRa_GPS/T3-TXCO/T3-TXCO.md  
+        -   label: T3-S3 E-paper
+            file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md            
+        -   label: T3-S3_MVSRBoard
+            file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
+    -   label: HSC Tech
+        items:
         -   label: T-TWR
             file: LoRa_GPS/T-TWR/T-TWR.md
--   label: Wearable Kit
-    items:
-    -   label: T-Watch S3 Plus
-        file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
-    -   label: T-Bao
-        file: LCD_OLED/T-Bao/T-Bao.md            
-    -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md
+        -   label: T-Connect Pro
+            file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
+        -   label: T-A7670
+            file: SIM/SIM.md
+            items:
+            -   label: T-A7670E
+                file : SIM/T-A7670/T-A7670E/T-A7670E.md
+            -   label: T-A7670G
+                file: SIM/T-A7670/T-A7670G/T-A7670G.md
+            -   label: T-A7670SA
+                file: SIM/T-A7670/T-A7670SA/T-A7670SA.md 
+        -   label: T-ETH
+            items:
+            -   label: T-ETH-Elite
+                file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-Elite.md
+            -   label: T-ETH-Gateway
+                file: LoRa_GPS/T-ETH/T-ETH-Gateway/T-ETH-Gateway.md
+            -   label: T-ETH-LoRa-shield
+                file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
+            -   label: T-ETH-1302
+                file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md          
 -   label: Basic Module
     items:
     -   label: T7 C6
