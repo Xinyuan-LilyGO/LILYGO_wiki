@@ -1,5 +1,5 @@
 ---
-title: LILYGO T-ETH ELITE-LoRa Shield
+title: LILYGO T-ETH LoRa Shield
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
