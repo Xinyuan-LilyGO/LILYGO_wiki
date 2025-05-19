@@ -47,6 +47,8 @@ items:
             file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md            
         -   label: T3-S3_MVSRBoard
             file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
+        -   label: T-LoraPager
+            file: LoRa_GPS/T-LoraPager/T-LoraPager.md
     -   label: HSC Tech
         items:
         -   label: T-TWR
