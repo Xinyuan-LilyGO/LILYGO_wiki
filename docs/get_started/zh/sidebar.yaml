@@ -61,7 +61,7 @@ items:
             -   label: T-A7670G
                 file: SIM/T-A7670/T-A7670G/T-A7670G.md
             -   label: T-A7670SA
-                file: SIM/T-A7670/T-A7670SA.md
+                file: SIM/T-A7670/T-A7670SA/T-A7670SA.md
         -   label: T-ETH
             items:
             -   label: T-ETH-Elite
