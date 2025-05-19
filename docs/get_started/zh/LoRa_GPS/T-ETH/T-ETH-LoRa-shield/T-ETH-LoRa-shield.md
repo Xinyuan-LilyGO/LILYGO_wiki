@@ -19,7 +19,7 @@ show_source: false
 
 ## 简介
 
-LILYGO T-ETH ELITE-LoRa Shield 是一款专为 T-ETH-Elite 主板设计的扩展模块，集成 多频段 LoRa 通信（支持 T-LR1121、SX1262/SX1276/SX1280 等模块，覆盖 2.4GHz 及 830-945MHz 频段）与 L76K 高精度 GPS 定位，适用于远距离物联网通信与位置追踪。模块提供 40-PIN GPIO（兼容树莓派布局）、SPI 接口（MISO/MOSI/SCLK/CS）及控制引脚（RST/IRQ/BUSY），支持快速部署 LoRa 节点或外接传感器，并通过 4 个 M2.5 安装孔实现稳固扩展。结合主板的以太网（W5500）、Wi-Fi/蓝牙及 PoE 供电，可构建混合通信网关，广泛应用于智慧农业、物流追踪、环境监测等场景，开发友好，适配 Arduino、ESP-IDF 等平台。
+LILYGO T-ETH LoRa Shield 是一款专为 T-ETH-Elite 主板设计的扩展模块，集成 多频段 LoRa 通信（支持 T-LR1121、SX1262/SX1276/SX1280 等模块，覆盖 2.4GHz 及 830-945MHz 频段）与 L76K 高精度 GPS 定位，适用于远距离物联网通信与位置追踪。模块提供 40-PIN GPIO（兼容树莓派布局）、SPI 接口（MISO/MOSI/SCLK/CS）及控制引脚（RST/IRQ/BUSY），支持快速部署 LoRa 节点或外接传感器，并通过 4 个 M2.5 安装孔实现稳固扩展。结合主板的以太网（W5500）、Wi-Fi/蓝牙及 PoE 供电，可构建混合通信网关，广泛应用于智慧农业、物流追踪、环境监测等场景，开发友好，适配 Arduino、ESP-IDF 等平台。
 
 ## 外观及功能介绍
 ### 外观

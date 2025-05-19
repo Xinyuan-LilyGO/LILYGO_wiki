@@ -1,48 +1,12 @@
 items:
--   label: Sub -G
+-   label: DISPLAY
     items:
-    -   label: T3-S3_MVSRBoard
-        file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
-    -   label: T-Echo-Lite
-        file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
-    -   label: T-Connect Pro
-        file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
-    -   label: T-TWR
-        file: LoRa_GPS/T-TWR/T-TWR.md
-    -   label: T-LoRa-C6
-        file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
-    -   label: T3 STM32
-        file: LoRa_GPS/T3-STM32/T3-STM32.md 
-    -   label: T3 TXCO
-        file: LoRa_GPS/T3-TXCO/T3-TXCO.md  
-    -   label: T3-S3 LR1121
-        file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md
-    -   label: T-Deck Plus
-        file: LCD_OLED/T-Deck-Plus/T-Deck-Plus.md
-    -   label: T-Keyboard S3 Pro
-        file: LCD_OLED/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md        
-    -   label: T-Embed CC1101
-        file: LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.md   
-    -   label: T-Embed SI4732
-        file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md             
-    -   label: T-ETH
-        items:
-        -   label: T-ETH-Elite
-            file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-Elite.md
-        -   label: T-ETH-GateWay
-            file: LoRa_GPS/T-ETH/T-ETH-Gateway/T-ETH-Gateway.md
-        -   label: T-ETH-LoRa
-            file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
-        -   label: T-SX1302
-            file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md                                
-    -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md
--   label: AMOLED
-    items:
+    -   label: T-Circle
+        file: LCD_OLED/T-Circle/T-Circle.md
+    -   label: T-Circle S3
+        file: LCD_OLED/T-Circle-S3/T-Circle-S3.md      
     -   label: T-Display K230
         file: AMOLED/T-Display-K230/T-Display-K230.md 
-    -   label: T-Pico 2350
-        file: AMOLED/T-Pico-2350/T-Pico-2350.md 
     -   label : T-Display S3 AMOLED Plus
         file: AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.md        
     -   label: T-Display S3 AMOLED 1.43
@@ -51,51 +15,80 @@ items:
         file: AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.md
     -   label: T-Display S3 AMOLED 1.75
         file: AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.md
-    -   label: T-Circle
-        file: LCD_OLED/T-Circle/T-Circle.md
-    -   label: T-Circle S3
-        file: LCD_OLED/T-Circle-S3/T-Circle-S3.md    
-    -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md                      
--   label: E-Paper
-    items:   
+    -   label: T-Pico 2350
+        file: AMOLED/T-Pico-2350/T-Pico-2350.md 
+-   label: Wearable and Handheld Kit
+    items:
+    -   label: T-Watch S3 Plus
+        file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
     -   label: T5 E-Paper S3 Pro
         file: E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.md
     -   label: T-Deck Pro
         file: E-Paper/T-Deck-Pro/T-Deck-Pro.md
-    -   label: T3-S3 E-paper
-        file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md
-    -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md   
--   label: Wearable Kit
+    -   label: T-Echo-Lite
+        file: LoRa_GPS/T-Echo-Lite/T-Echo-Lite.md
+    -   label: T-Embed CC1101
+        file: LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.md
+    -   label: T-Embed SI4732
+        file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md                      
+-   label: Wireless Kit
+    items:   
+    -   label: LoRa/GPS
+        items:
+        -   label: T-LoRa-C6
+            file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
+        -   label: T3-S3 LR1121
+            file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md
+        -   label: T3 STM32
+            file: LoRa_GPS/T3-STM32/T3-STM32.md 
+        -   label: T3 TXCO
+            file: LoRa_GPS/T3-TXCO/T3-TXCO.md  
+        -   label: T3-S3 E-paper
+            file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md            
+        -   label: T3-S3_MVSRBoard
+            file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
+    -   label: HSC Tech
+        items:
+        -   label: T-TWR
+            file: LoRa_GPS/T-TWR/T-TWR.md
+        -   label: T-Connect Pro
+            file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
+        -   label: T-A7670
+            file: SIM/SIM.md
+            items:
+            -   label: T-A7670E
+                file : SIM/T-A7670/T-A7670E/T-A7670E.md
+            -   label: T-A7670G
+                file: SIM/T-A7670/T-A7670G/T-A7670G.md
+            -   label: T-A7670SA
+                file: SIM/T-A7670/T-A7670SA/T-A7670SA.md 
+        -   label: T-ETH
+            items:
+            -   label: T-ETH-Elite
+                file: LoRa_GPS/T-ETH/T-ETH-Elite/T-ETH-Elite.md
+            -   label: T-ETH-Gateway
+                file: LoRa_GPS/T-ETH/T-ETH-Gateway/T-ETH-Gateway.md
+            -   label: T-ETH-LoRa-shield
+                file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
+            -   label: T-ETH-1302
+                file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md          
+-   label: AI Kit
     items:
-    -   label: T-Watch S3 Plus
-        file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
-    -   label: T-Bao
-        file: LCD_OLED/T-Bao/T-Bao.md            
-    -   label: FAQ
-        file: maixIV/m4ndock/FAQ.md
+    -   label: T-Display K230
+        file: AMOLED/T-Display-K230/T-Display-K230.md 
+    -   label : T-Bao
+        file: LCD_OLED/T-Bao/T-Bao.md      
+    -   label: T-Circle S3
+        file: LCD_OLED/T-Circle-S3/T-Circle-S3.md
 -   label: Basic Module
     items:
     -   label: T7 C6
         file: Basic_Module/T7_C6/T7_C6.md
-    -   label: T-Connect
-        file: Basic_Module/T-Connect/T-Connect.md
-    -   label: FAQ
--   label: T-SIM/T-PCIE Series
-    file: SIM/SIM.md
+-   label: Expansion Kit
     items:
-    -   label: T-A7670
-        items:    
-        -   label: T-A7670E
-            file : SIM/T-A7670/T-A7670E/T-A7670E.md
-        -   label: T-A7670G
-            file: SIM/T-A7670/T-A7670G/T-A7670G.md
-        -   label: T-A7670SA
-            file: SIM/T-A7670/T-A7670SA/T-A7670SA.md    
-    -   label: FAQ
-        file: maixcam/faq.md
--   label: Accessories
+    -   label: T7 C6
+        file: Basic_Module/T7_C6/T7_C6.md
+-   label: FAQ
     items:
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
