@@ -88,6 +88,8 @@ items:
     items:
     -   label: T7 C6
         file: Basic_Module/T7_C6/T7_C6.md
+    -   label: T-Knob
+        file: Basic_Module/T-Knob/T-Knob.md
 -   label: 拓展设备
     items:
     -   label: T7 C6
