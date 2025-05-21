@@ -51,6 +51,8 @@ items:
         items:
         -   label: T-TWR
             file: LoRa_GPS/T-TWR/T-TWR.md
+        -   label: T-Connect
+            file: Basic_Module/T-Connect/T-Connect.md            
         -   label: T-Connect Pro
             file: LoRa_GPS/T-Connect-Pro/T-Connect-Pro.md
         -   label: T-A7670
