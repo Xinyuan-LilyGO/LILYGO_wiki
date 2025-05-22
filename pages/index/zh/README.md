@@ -36,14 +36,14 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
+                        <a href="/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-K230_zh.jpg" alt="1"></a></div>
                     <div class="slide-item" >
-                        <a href="/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T3S3_MVSR_zh.jpg" alt="2"></a></div>
+                        <a href="/get_started/zh/AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-S3-AMOLED-Plus-zh.jpg" alt="2"></a></div>
                     <div class="slide-item">
-                        <a href="/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Connect Pro_zh.jpg" alt="3"></a></div>                        
+                        <a href="/get_started/zh/AMOLED/T-Pico-2350/T-Pico-2350.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Pico-2350-zh.jpg" alt="3"></a></div>                        
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -59,13 +59,14 @@ id: home_page
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-S3-AMOLED-Pro-zh.jpg" alt="1" ></div>
+                        <a href="/get_started/zh/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Wacth-Plus_zh.jpg" alt="1" ></a></div>
                     <div class="slide-item">
-                        <a href="/get_started/zh/AMOLED/T-Display-K230/T-Display-K230.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-K230_zh.jpg" alt="2"></a></div>
+                        <a href="/get_started/zh/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T5-E-Paper-S3-Pro_zh.jpg" alt="2"></a></div>
                     <div class="slide-item">
-                        <a href="/get_started/zh/AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Display-S3-AMOLED-Plus-zh.jpg" alt="3"></a></div>  
+                        <a href="/get_started/zh/E-Paper/T-Deck-Pro/T-Deck-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Pro-zh.jpg" alt="3"></a></div>  
                     <div class="dots-box">
                         <div class="dot active" data-index="0"></div>
                         <div class="dot" data-index="1"></div>
@@ -74,7 +75,8 @@ id: home_page
                 </div>
             </div>
             <div class="carousel-right-left-word">
-                <h2>穿戴手持设备</h2>
+                <h2>穿戴手持</h2>
+                <h2>设备</h2>
             </div>
         </div>
     </div>
@@ -82,16 +84,17 @@ id: home_page
     <div class="section dsc_wrapper_left">
         <div>
             <div class="carousel-right-left-word">
-                <h2>无线通信设备</h2>
+                <h2>无线通信</h2>
+                <h2>设备</h2>
             </div>
             <div class="carousel-right">
                 <div class="carousel-box">
                     <div class="slide-item active">
-                        <a href="/get_started/zh/E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T5-E-Paper-S3-Pro_zh.jpg" alt="1"  ></a></div>
+                        <a href="/get_started/zh/LoRa_GPS/T-Connect-Pro/T-Connect-Pro.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T-Connect Pro_zh.jpg" alt="1"  ></a></div>
                     <div class="slide-item" >
-                        <a href="/get_started/zh/E-Paper/T-Deck-Pro/T-Deck-Pro.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Pro-zh.jpg" alt="2"></a></div>
+                        <a href="/get_started/zh/LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.html">
+                        <img class="carousel-img" src="/static/image/index_carousel/T3S3_MVSR_zh.jpg" alt="2"></a></div>
                     <div class="slide-item">
                         <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
                     <div class="dots-box">
