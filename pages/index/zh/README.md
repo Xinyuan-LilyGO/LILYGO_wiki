@@ -31,8 +31,7 @@ id: home_page
     <div class="section dsc_wrapper_left">
         <div>
             <div class="carousel-right-left-word">
-                <h2>LoRa</h2>
-                <h2>GPS</h2>
+                <h2>Display</h2>
             </div>
             <div class="carousel-right">
                 <div class="carousel-box">
@@ -75,7 +74,7 @@ id: home_page
                 </div>
             </div>
             <div class="carousel-right-left-word">
-                <h2>AMOLED</h2>
+                <h2>穿戴手持设备</h2>
             </div>
         </div>
     </div>
@@ -83,7 +82,7 @@ id: home_page
     <div class="section dsc_wrapper_left">
         <div>
             <div class="carousel-right-left-word">
-                <h2>E-Paper</h2>
+                <h2>无线通信设备</h2>
             </div>
             <div class="carousel-right">
                 <div class="carousel-box">
@@ -124,7 +123,8 @@ id: home_page
                 </div>
             </div>
             <div class="carousel-right-left-word">
-                <h2>Wearable Kit</h2>
+                <h2>人工智能</h2>
+                <h2>设备</h2>
             </div>
         </div>
     </div>
@@ -132,8 +132,8 @@ id: home_page
         <div class="section dsc_wrapper_left">
         <div>
             <div class="carousel-right-left-word">
-                <h2>Basic</h2>
-                <h2>Module</h2>
+                <h2>基础</h2>
+                <h2>设备</h2>
             </div>
             <div class="carousel-right">
                 <div class="carousel-box">
@@ -172,46 +172,11 @@ id: home_page
                 </div>
             </div>
             <div class="carousel-right-left-word">
-                <h2>T-SIM/T-PCIE Series</h2>
+                <h2>拓展</h2>
+                <h2>模块</h2>
             </div>
         </div>
-    </div>
-<!-- Accessories----------------------------------------------- -->    
-        <div class="section dsc_wrapper_left">
-        <div>
-            <div class="carousel-right-left-word">
-                <h2>Accessories</h2>
-            </div>
-            <div class="carousel-right">
-                <div class="carousel-box">
-                    <div class="slide-item active">
-                        <a href="/get_started/zh/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="1"  ></a></div>
-                    <div class="slide-item" >
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_en.jpg" alt="2"></div>
-                    <div class="slide-item">
-                        <img class="carousel-img" src="/static/image/index_carousel/T-Deck-Plus_zh.jpg" alt="3"></div>                        
-                    <div class="dots-box">
-                        <div class="dot active" data-index="0"></div>
-                        <div class="dot" data-index="1"></div>
-                        <div class="dot" data-index="2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" style="height: 100vh;">
-        <div class="big_btn_wrapper">
-            <div class="big_btn">
-                <a href="/get_started/zh/">查看详细介绍</a>
-            </div>
-            <div class="big_btn">
-                <a href="/get_started/zh/usage/quick_start.html">快速上手</a>
-            </div>
-        </div>
-    </div>
-</div>
-
+    </div> 
 <div>
 <script type='text/javascript'>
     $(document).ready(function () {
