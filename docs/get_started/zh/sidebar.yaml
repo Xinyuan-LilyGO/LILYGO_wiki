@@ -17,6 +17,8 @@ items:
         file: AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.md
     -   label: T-Pico 2350
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
+    -   label: T-QT C6
+        file: AMOLED/T-QT-C6/T-QT-C6.md
 -   label: 可穿戴以及可手持设备
     items:
     -   label: T-Watch S3 Plus
