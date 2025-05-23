@@ -307,6 +307,12 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T-Knob/T-Knob.html</loc>
+            <lastmod>2025-05-23</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/Basic_Module/T7_C6/T7_C6.html</loc>
             <lastmod>2025-05-23</lastmod>
             <changefreq>weekly</changefreq>
@@ -355,7 +361,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Circle-S3/T-Circle-S3.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-QT-C6/T-QT-C6.html</loc>
+            <lastmod>2025-05-23</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.html</loc>
             <lastmod>2025-05-23</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
@@ -487,6 +499,12 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Circle-S3/T-Circle-S3.html</loc>
+            <lastmod>2025-05-23</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html</loc>
             <lastmod>2025-05-23</lastmod>
             <changefreq>weekly</changefreq>
@@ -535,13 +553,13 @@
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-K230/T-Display-K230.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Encoder-Pro/T-Encoder-Pro.html</loc>
             <lastmod>2025-05-23</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-Plus/T-Display-S3-AMOLED-Plus.html</loc>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-K230/T-Display-K230.html</loc>
             <lastmod>2025-05-23</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
