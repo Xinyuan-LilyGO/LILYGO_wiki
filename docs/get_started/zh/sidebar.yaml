@@ -19,6 +19,8 @@ items:
         file: AMOLED/T-Pico-2350/T-Pico-2350.md 
     -   label: T-QT C6
         file: AMOLED/T-QT-C6/T-QT-C6.md
+    -   label: T-Encoder Pro
+        file: AMOLED/T-Encoder-Pro/T-Encoder-Pro.md
 -   label: 可穿戴以及可手持设备
     items:
     -   label: T-Watch S3 Plus
