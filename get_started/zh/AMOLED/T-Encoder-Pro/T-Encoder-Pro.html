@@ -240,22 +240,23 @@ var _hmt = _hmt || [];
                         
                             <!-- **[English](README.MD) | 中文** -->
 <div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-QT-C6-1.jpg" alt="T-QT C6" /></p>
+<p><img src="./assets/T-Encoder-Pro-1.jpg" alt="T-QT C6" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-qt-c6">官网购买</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-encoder-plus">官网购买</a>
     <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
 </div>
 <h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>该产品是一款基于ESP32-C6-MINI-1U微控制器的智能可穿戴开发套件，集成了0.85英寸128*128分辨率的TFT LCD显示屏、6轴传感器（LSM6DSL，支持加速度计和陀螺仪功能）以及SGM41562电源管理单元（PMU）。其核心特性包括：内置电池供电、触摸交互、呼吸灯状态指示、4MB Flash存储，并通过QWIIC 4-PIN接口及I2C/SPI引脚支持硬件扩展。支持Wi-Fi/蓝牙无线通信，适用于运动监测、嵌入式开发或便携式交互设备场景。产品设计上可能采用戒指式扩展坞形态（T-QT-C6 Extended Finger Ring Dock），兼顾低功耗与高集成度，适合开发者在物联网、穿戴设备等领域进行原型设计与功能验证。</p>
+<p>LILYGO T-Encoder-Pro Pinnap 开发板，核心基于 ESP32-S3 R8 高性能 Wi-Fi/蓝牙双模芯片，集成 1.2 英寸 SH8601A 触摸 AMOLED 显示屏（分辨率 390×390），支持电容触控交互。硬件功能丰富，包含 旋转编码器（DATA_A/B 引脚及按压按键）、蜂鸣器、8MB PSRAM 和 16MB Flash 存储，并配备双 Qwiic 4-Pin 接口（SDA/SCL/RST/INT）以快速扩展传感器或模块。其显示屏驱动引脚配置完整（如 LCD_CS、LCD_RST、SPI 通信接口），适配复杂图形渲染场景。设计上注重高集成度与交互性，适用于嵌入式 UI 开发、智能家居控制面板、便携式设备原型或物联网终端，兼顾低功耗与高性能需求。</p>
 <h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
 <h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-QT-C6-2.jpg" alt="summary" width=80%>
+<img src="./assets/T-Encoder-Pro-2.jpg" alt="summary" width=80%>
 <h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-QT-C6-pin-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Encoder-Pro-pin-zh.jpg" alt="summary" width=100%>
 <h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
 <h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
-<img src="./assets/T-QT-C6-info-zh.jpg" alt="summary" width=80%>
+<p>T-Encoder-Pro是一款配备AMOLED触摸屏的智能控制旋钮，基于ESP32S3R8芯片。旋钮旋转，点击（推），并包含一个寻呼机和振动电机。</p>
+<img src="./assets/T-Encoder-Pro-info-zh.jpg" alt="summary" width=80%>
 <table>
 <thead>
 <tr>
@@ -270,31 +271,27 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>PSRAM</td>
-  <td>4M</td>
+  <td>8M</td>
+</tr>
+<tr>
+  <td>FLASH</td>
+  <td>16M</td>
 </tr>
 <tr>
   <td>屏幕</td>
-  <td>0.85 英寸 GC9107 TFT</td>
+  <td>2.04 英寸 SH8601A-W14-T06 AMOLED</td>
 </tr>
 <tr>
   <td>触摸</td>
-  <td>CST816T 触摸电容屏</td>
+  <td>CHSC5816 触摸电容屏</td>
 </tr>
 <tr>
-  <td>总线</td>
-  <td>QSPI</td>
+  <td>编码器</td>
+  <td>支持左右旋转</td>
 </tr>
 <tr>
-  <td>LoRa</td>
-  <td>1276:868,915Mhz</td>
-</tr>
-<tr>
-  <td>电池背板惯性传感器</td>
-  <td>LSM6DSLTR</td>
-</tr>
-<tr>
-  <td>电源管理</td>
-  <td>SGM41562</td>
+  <td>蜂鸣器</td>
+  <td>支持蜂鸣器</td>
 </tr>
 <tr>
   <td>无线</td>
@@ -310,7 +307,7 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>拓展接口</td>
-  <td>1 × QWIIC 4 pin接口 +1 x 2 x 4pin拓展电池接口 + 电源接口</td>
+  <td>2 × QWIIC 4 pin接口 +1 x 2 x 4pin拓展电池接口 + 电源接口</td>
 </tr>
 <tr>
   <td>按键</td>
@@ -318,70 +315,94 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>尺寸</td>
-  <td><strong>33x24x44.5mm</strong></td>
+  <td><strong>43.5 x 43.5 x 27.5mm</strong></td>
 </tr>
 </tbody>
 </table>
 <h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/arduino-esp32-libs_V3.0.2"  target="_blank">T-QT-C6</a></p>
+<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro"  target="_blank">T-Encoder-Pro</a></p>
 <ul>
 <li><a href="https://www.espressif.com/en/support/documents/technical-documents"  target="_blank">Espressif</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/ETA4662_V1.8.pdf"  target="_blank">ETA4662_V1.8</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/AN-CST816T-v1.pdf"  target="_blank">AN-CST816T-v1</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/WS2812B-2020.pdf"  target="_blank">WS2812B-2020</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/WS2812C-2020.pdf"  target="_blank">WS2812C-2020</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/SGMICRO-SGM41562XGTR.pdf"  target="_blank">SGMICRO-SGM41562XGTR</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/lsm6dsl.pdf"  target="_blank">lsm6dsl</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/information/lsm6dsl-stmicroelectronics_en.pdf"  target="_blank">lsm6dsl-stmicroelectronics_en</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DXQ120MYB2416A.pdf"  target="_blank">DXQ120MYB2416A</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DS_CHSC5816_V1.1.5.pdf"  target="_blank">DS_CHSC5816_V1.1.5</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/CHSC5816-ApplicationDoc_US_V04.pdf"  target="_blank">CHSC5816-ApplicationDoc_US_V04</a></li>
 </ul>
 <h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_MCU_V1.2.pdf"  target="_blank">T-QT-C6_V1.2</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/project/%5BSCH%5D%5BT-Encoder-Pro_V1.0%5D.pdf"  target="_blank">T-Encoder-Pro</a></li>
 </ul>
 <!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
 <h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
 <ul>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus-1.1.10</a></li>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
 <li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a></li>
+<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib-0.1.4</a></li>
 </ul>
 <h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
 <h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
 <table>
 <thead>
 <tr>
-  <th style="text-align:center">Setting</th>
-  <th style="text-align:center">Value</th>
+  <th>Setting</th>
+  <th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:center">Board</td>
-  <td style="text-align:center">ESP32C6 Dev Module</td>
+  <td>Board</td>
+  <td>ESP32S3 Dev Module</td>
 </tr>
 <tr>
-  <td style="text-align:center">Upload Speed</td>
-  <td style="text-align:center">921600</td>
+  <td>Upload Speed</td>
+  <td>921600</td>
 </tr>
 <tr>
-  <td style="text-align:center">CPU Frequency</td>
-  <td style="text-align:center">160MHz</td>
+  <td>USB Mode</td>
+  <td>Hardware CDC and JTAG</td>
 </tr>
 <tr>
-  <td style="text-align:center">Flash Mode</td>
-  <td style="text-align:center">QIO</td>
+  <td>USB CDC On Boot</td>
+  <td>Enabled</td>
 </tr>
 <tr>
-  <td style="text-align:center">Flash Size</td>
-  <td style="text-align:center">4MB (32Mb)</td>
+  <td>USB Firmware MSC On Boot</td>
+  <td>Disabled</td>
 </tr>
 <tr>
-  <td style="text-align:center">Core Debug Level</td>
-  <td style="text-align:center">None</td>
+  <td>USB DFU On Boot</td>
+  <td>Disabled</td>
 </tr>
 <tr>
-  <td style="text-align:center">Partition Scheme</td>
-  <td style="text-align:center">Huge APP (3MB No OTA/1MB SPIFFS)</td>
+  <td>CPU Frequency</td>
+  <td>240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td>Flash Mode</td>
+  <td>QIO 80MHz</td>
+</tr>
+<tr>
+  <td>Flash Size</td>
+  <td>16MB (128Mb)</td>
+</tr>
+<tr>
+  <td>Core Debug Level</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>Partition Scheme</td>
+  <td>16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>OPI PSRAM</td>
+</tr>
+<tr>
+  <td>Arduino Runs On</td>
+  <td>Core 1</td>
+</tr>
+<tr>
+  <td>Events Run On</td>
+  <td>Core 1</td>
 </tr>
 </tbody>
 </table>
