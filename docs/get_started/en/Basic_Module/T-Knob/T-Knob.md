@@ -30,12 +30,12 @@ Its hardware design includes multiple GPIO pins (such as UH_PIN, VL_PIN, etc.) a
 
 ### Pinmap 
 
-<img src="./assets/T-Knob-pin-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Knob-pin-en.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
 
-<img src="./assets/T-Knob-info-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Knob-info-en.jpg" alt="summary" width=100%>
 
 | Component | Description |
 | ---  | --- |

@@ -47,14 +47,14 @@ Designed with a focus on high integration and interactivity, T-Encoder-Pro Pinna
 
 ### Pinmap 
 
-<img src="./assets/T-Encoder-Pro-pin-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Encoder-Pro-pin-en.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
 
 T-Encoder-Pro is a smart control knob equipped with a AMOLED touch screen, based on the ESP32S3R8 chip. The knob rotates, clicks (pushes in), and contains a beeper and vibration motor.
 
-<img src="./assets/T-Encoder-Pro-info-zh.jpg" alt="summary" width=80%>
+<img src="./assets/T-Encoder-Pro-info-en.jpg" alt="summary" width=80%>
 
 | Component | Description |
 | --- | --- |

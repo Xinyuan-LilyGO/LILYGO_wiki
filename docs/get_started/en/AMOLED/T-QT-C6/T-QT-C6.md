@@ -41,11 +41,11 @@ The product may adopt a ring-style extension dock design (T-QT-C6 Extended Finge
 
 ### Pinmap 
 
-<img src="./assets/T-QT-C6-pin-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-QT-C6-pin-en.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
-<img src="./assets/T-QT-C6-info-zh.jpg" alt="summary" width=80%>
+<img src="./assets/T-QT-C6-info-en.jpg" alt="summary" width=80%>
 
 | Component | Description |
 | --- | --- |
