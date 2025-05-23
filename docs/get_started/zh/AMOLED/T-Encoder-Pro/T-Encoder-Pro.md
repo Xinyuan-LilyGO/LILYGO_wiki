@@ -1,5 +1,5 @@
 ---
-title: LILYGO T-QT C6
+title: LILYGO T-Encoder Pro
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
@@ -17,7 +17,7 @@ show_source: false
 
 ## 简介
 
-LILYGO T-QT-C6 是基于ESP32-C6-MINI-1U微控制器的智能可穿戴开发套件，集成了0.85英寸128*128分辨率的TFT LCD显示屏、6轴传感器（LSM6DSL，支持加速度计和陀螺仪功能）以及SGM41562电源管理单元（PMU）。其核心特性包括：内置电池供电、触摸交互、呼吸灯状态指示、4MB Flash存储，并通过QWIIC 4-PIN接口及I2C/SPI引脚支持硬件扩展。支持Wi-Fi/蓝牙无线通信，适用于运动监测、嵌入式开发或便携式交互设备场景。产品设计上可能采用戒指式扩展坞形态（T-QT-C6 Extended Finger Ring Dock），兼顾低功耗与高集成度，适合开发者在物联网、穿戴设备等领域进行原型设计与功能验证。
+该产品是一款基于ESP32-C6-MINI-1U微控制器的智能可穿戴开发套件，集成了0.85英寸128*128分辨率的TFT LCD显示屏、6轴传感器（LSM6DSL，支持加速度计和陀螺仪功能）以及SGM41562电源管理单元（PMU）。其核心特性包括：内置电池供电、触摸交互、呼吸灯状态指示、4MB Flash存储，并通过QWIIC 4-PIN接口及I2C/SPI引脚支持硬件扩展。支持Wi-Fi/蓝牙无线通信，适用于运动监测、嵌入式开发或便携式交互设备场景。产品设计上可能采用戒指式扩展坞形态（T-QT-C6 Extended Finger Ring Dock），兼顾低功耗与高集成度，适合开发者在物联网、穿戴设备等领域进行原型设计与功能验证。
 
 ## 外观及功能介绍
 ### 外观
