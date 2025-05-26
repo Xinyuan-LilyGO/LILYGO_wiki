@@ -373,6 +373,66 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Circle/T-Circle.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Glass/T-Glass.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Encoder-Pro/T-Encoder-Pro.html</loc>
+            <lastmod>2025-05-26</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html</loc>
             <lastmod>2025-05-26</lastmod>
             <changefreq>weekly</changefreq>
@@ -440,66 +500,6 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/en/SIM/T-A7670/T-A7670G/T-A7670G.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Deck-Plus/T-Deck-Plus.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Circle/T-Circle.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Glass/T-Glass.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-1.75/T-Display-S3-AMOLED-1.75.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Display-S3-AMOLED-1.64/T-Display-S3-AMOLED-1.64.html</loc>
-            <lastmod>2025-05-26</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/AMOLED/T-Encoder-Pro/T-Encoder-Pro.html</loc>
             <lastmod>2025-05-26</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
