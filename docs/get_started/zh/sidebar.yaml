@@ -34,7 +34,9 @@ items:
     -   label: T-Embed CC1101
         file: LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.md
     -   label: T-Embed SI4732
-        file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md                      
+        file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md   
+    -   label: T-Glass  
+        file: LCD_OLED/T-Glass/T-Glass.md                            
 -   label: 无线通讯设备
     items:   
     -   label: LoRa/GPS
