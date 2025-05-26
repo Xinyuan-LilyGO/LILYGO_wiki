@@ -30,10 +30,10 @@ LILYGO T-Glass 是一款基于ESP32-S3主控芯片的智能可穿戴设备，集
 ## 模块资料以及参数
 ### 概述
 
-T-Glass有两个版本，最初的预览版和T-GlassV2版本（改进的棱镜反射法）。两者的区别只是显示方式不同，硬件是一样的
-T-Wristband和T-Glass拥有相同的硬件，但由于外壳的不同，观看区域有所不同。
-LilyGO T-Wristband和T-Glass依赖于lvgl v8.4.x版本。目前lvgl已经发布了lvgl v9.0版本。当编译错误时，请检查lvgl是否属于v8.4.x
-T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例子都是基于lvgl图形框架。其他映像框架（如TFT_eSPI）在这里不可用。
+>!T-Glass有两个版本，最初的预览版和T-GlassV2版本（改进的棱镜反射法）。两者的区别只是显示方式不同，硬件是一样的
+>T-Wristband和T-Glass拥有相同的硬件，但由于外壳的不同，观看区域有所不同。
+>LilyGO T-Wristband和T-Glass依赖于lvgl v8.4.x版本。目前lvgl已经发布了lvgl v9.0版本。当编译错误时，请检查lvgl是否属于v8.4.x
+>T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例子都是基于lvgl图形框架。其他映像框架（如TFT_eSPI）在这里不可用。
 
 <img src="./assets/T-Glass-point-zh.jpg" alt="summary" width=100%>
 

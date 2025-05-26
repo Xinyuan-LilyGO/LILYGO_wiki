@@ -34,13 +34,13 @@ With the LILYGOT-Glass PINMAP interface layout, the board integrates communicati
 ## Module Information and Specifications
 ### Description
 
-There are two versions of T-Glass: the initial preview version and the updated T-Glass V2 (which uses an improved prism reflection method). The only difference between them lies in the display method—the hardware remains identical.
+>!There are two versions of T-Glass: the initial preview version and the updated T-Glass V2 (which uses an improved prism reflection method). The only difference between them lies in the display method—the hardware remains identical.
 
-T-Wristband and T-Glass share the same hardware, but due to differences in the enclosure design, the viewing area differs.
+>T-Wristband and T-Glass share the same hardware, but due to differences in the enclosure design, the viewing area differs.
 
-LilyGO T-Wristband and T-Glass rely on LVGL v8.4.x. Currently, LVGL v9.0 has been released. If you encounter compilation errors, please ensure that your LVGL version is v8.4.x.
+>LilyGO T-Wristband and T-Glass rely on LVGL v8.4.x. Currently, LVGL v9.0 has been released. If you encounter compilation errors, please ensure that your LVGL version is v8.4.x.
 
-The visual display size of T-Wristband and T-Glass differs from the actual screen size. All examples are built upon the LVGL graphics framework. Other graphics libraries such as TFT_eSPI are not supported for these devices.
+>The visual display size of T-Wristband and T-Glass differs from the actual screen size. All examples are built upon the LVGL graphics framework. Other graphics libraries such as TFT_eSPI are not supported for these devices.
 
 <img src="./assets/T-Glass-point-en.jpg" alt="summary" width=100%>
 
