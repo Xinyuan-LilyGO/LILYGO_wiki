@@ -66,7 +66,7 @@ Github：[T-Knob](https://github.com/Xinyuan-LilyGO/T-Knob)
 ## Software Design
 ### Arduino Set Parameters
 
-|Arduino IDE 设置	|参数   
+|Arduino IDE 	|  Value
 | ----------- | -----------|                         
 |Board     |	ESP32C6 Dev Module
 |Port      |    Your port                        

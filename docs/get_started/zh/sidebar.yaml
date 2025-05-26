@@ -21,6 +21,8 @@ items:
         file: AMOLED/T-QT-C6/T-QT-C6.md
     -   label: T-Encoder Pro
         file: AMOLED/T-Encoder-Pro/T-Encoder-Pro.md
+    -   label: T-Camera Plus S3
+        file: AMOLED/T-Camera-Plus-S3/T-Camera-Plus-S3.md
 -   label: 可穿戴以及可手持设备
     items:
     -   label: T-Watch S3 Plus
