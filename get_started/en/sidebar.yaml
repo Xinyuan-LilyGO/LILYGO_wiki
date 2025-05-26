@@ -36,7 +36,7 @@ items:
     -   label: T-Embed SI4732
         file: LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.md   
     -   label: T-Glass  
-        file: LCD_OLED/T-Glass/T-Glass.md                   
+        file: Wearable/T-Glass/T-Glass.md                   
 -   label: Wireless Kit
     items:   
     -   label: LoRa/GPS
