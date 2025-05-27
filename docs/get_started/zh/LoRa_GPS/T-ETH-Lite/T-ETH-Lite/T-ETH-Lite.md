@@ -30,7 +30,7 @@ T-ETH-Lite 是一款多功能嵌入式开发板，搭载 ESP32 主控芯片，�
 ## 模块资料
 ### 概述
 
-> 注意：T-ETH-Lite 为 ESP32 版本 ,点这里切换到ESP32-S3版本[T-ETH-Lite S3](https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-ETH-Lite-S3/T-ETH-Lite-S3.html)版本
+> 注意：T-ETH-Lite 为 ESP32 版本 ,点这里切换到ESP32-S3版本[T-ETH-Lite S3](https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-ETH-Lite/T-ETH-Lite-S3/T-ETH-Lite-S3.html)版本
 
 <img src="./assets/T-ETH-Lite-info-zh.jpg" alt="summary" width=100%>
 

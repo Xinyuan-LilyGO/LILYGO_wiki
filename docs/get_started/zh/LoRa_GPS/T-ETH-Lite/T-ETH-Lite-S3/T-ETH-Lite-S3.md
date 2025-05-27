@@ -30,7 +30,7 @@ T-ETH-Lite ESP32-S3 是一款基于 ESP32-S3 芯片的嵌入式开发模块，�
 ## 模块资料
 ### 概述
 
-> 注意：T-ETH-Lite S3 为 ESP32-S3 版本 ,点这里切换到ESP32版本[T-ETH-Lite](https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-ETH-Lite/T-ETH-Lite.html)版本
+> 注意：T-ETH-Lite S3 为 ESP32-S3 版本 ,点这里切换到ESP32版本[T-ETH-Lite](https://wiki.lilygo.cc/get_started/zh/LoRa_GPS/T-ETH-Lite/T-ETH-Lite/T-ETH-Lite.html)版本
 
 <img src="./assets/T-ETH-Lite-S3-info-zh.jpg" alt="summary" width=100%>
 
