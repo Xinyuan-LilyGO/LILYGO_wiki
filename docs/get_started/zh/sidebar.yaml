@@ -83,7 +83,13 @@ items:
             -   label: T-ETH-LoRa-shield
                 file: LoRa_GPS/T-ETH/T-ETH-LoRa-shield/T-ETH-LoRa-shield.md
             -   label: T-ETH-1302
-                file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md          
+                file: LoRa_GPS/T-ETH/T-ETH-1302/T-ETH-1302.md
+        -   label: T-ETH-Lite
+            items:
+            -   label: T-ETH-Lite
+                file: LoRa_GPS/T-ETH-Lite/T-ETH-Lite/T-ETH-Lite.md
+            -   label: T-ETH-Lite-S3
+                file: LoRa_GPS/T-ETH-Lite/T-ETH-Lite-S3/T-ETH-Lite-S3.md        
 -   label: 人工智能设备
     items:
     -   label: T-Display K230
