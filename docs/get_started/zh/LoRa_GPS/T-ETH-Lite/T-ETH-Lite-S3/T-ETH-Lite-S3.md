@@ -1,5 +1,5 @@
 ---
-title: LILYGO LILYGO T-ETH-Lite S3
+title: LILYGO T-ETH-Lite S3
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
