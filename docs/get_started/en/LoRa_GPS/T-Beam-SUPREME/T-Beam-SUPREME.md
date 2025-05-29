@@ -144,8 +144,8 @@ Github:[T-Beam-SUPREME](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series)
 | Programmer                           | Esptool                        |        
 
 
-
 ### Development Platform
+
 1. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
 3. [VS Code](https://code.visualstudio.com/)

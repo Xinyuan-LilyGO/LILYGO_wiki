@@ -95,6 +95,7 @@ Github:[T-Connect-Pro](https://github.com/Xinyuan-LilyGO/T-Connect-Pro)
 |PSRAM	|OPI PSRAM
 |Arduino Runs On	|Core 1
 |Events Run On	|Core 1
+
 ### Development Platform
 
 1. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)

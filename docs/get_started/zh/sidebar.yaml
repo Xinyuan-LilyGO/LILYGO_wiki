@@ -57,6 +57,14 @@ items:
             file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
         -   label: T-LoraPager
             file: LoRa_GPS/T-LoraPager/T-LoraPager.md
+        -   label: T-Beam Supreme
+            file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md
+        -   label: T-ETH-Lite
+            items:
+            -   label: T-ETH-Lite
+                file: LoRa_GPS/T-ETH/T-ETH-Lite/T-ETH-Lite.md
+            -   label: T-ETH-Lite S3
+                file: LoRa_GPS/T-ETH/T-ETH-Lite-S3/T-ETH-Lite-S3.md
     -   label: 高速通讯设备
         items:
         -   label: T-TWR
