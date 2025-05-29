@@ -9,6 +9,11 @@ show_source: false
 ![T-Display K230](./assets/T-Connect-Pro1.jpg)
 </div>
 
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-connect-pro">Go Buying</a>
+    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+</div> 
+
 ## Introduction
 
 The T-Connect-Pro is a multifunctional industrial-grade control and communication module based on the ESP32-S3. It integrates LoRa (SX1262 chip), an ST7796 LCD display (with resolution and pins for DC/CS/BL), CAN bus, Ethernet interface, and dual serial ports (RS232/RS485). Supporting a wide voltage input of 12–24V and a 10A relay output, it is well-suited for complex industrial automation and IoT applications.
@@ -91,8 +96,11 @@ Github:[T-Connect-Pro](https://github.com/Xinyuan-LilyGO/T-Connect-Pro)
 |Arduino Runs On	|Core 1
 |Events Run On	|Core 1
 ### Development Platform
-1. [VS Code](https://code.visualstudio.com/)
+
+1. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
+3. [VS Code](https://code.visualstudio.com/)
+4. [Micropython](https://micropython.org/)
 
 ## Product Technical Support 
 
