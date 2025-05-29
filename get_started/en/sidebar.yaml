@@ -55,7 +55,7 @@ items:
             file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md            
         -   label: T3-S3_MVSRBoard
             file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
-        -   label: T-Beam Supreme
+        -   label: T-Beam SUPREME
             file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md
     -   label: HSC Tech
         items:
