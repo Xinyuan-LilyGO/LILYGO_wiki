@@ -30,7 +30,7 @@ Users can optionally choose between Ublox MAX-M10S or L76K GPS modules for accur
 
 ### Pinmap 
 
-<img src="./assets/T-Beam-SUPREME-pin-en.jpg" alt="summary" width=100%>
+<img src="./assets/T-Beam-Supreme-pin-en.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
