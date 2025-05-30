@@ -27,6 +27,8 @@ items:
     items:
     -   label: T-Watch S3 Plus
         file: Wearable/T-Watch-S3-PLUS/T-Watch-S3-PLUS.md
+    -   label: T5 E-Paper
+        file: E-Paper/T5-E-Paper/T5-E-Paper.md
     -   label: T5 E-Paper S3 Pro
         file: E-Paper/T5-E-Paper-S3-Pro/T5-E-Paper-S3-Pro.md
     -   label: T-Deck Pro
