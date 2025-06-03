@@ -53,14 +53,14 @@ items:
         items:
         -   label: T-LoRa-C6
             file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
-        -   label: T3-S3 LR1121
-            file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md
         -   label: T3 STM32
             file: LoRa_GPS/T3-STM32/T3-STM32.md 
         -   label: T3 TXCO
-            file: LoRa_GPS/T3-TXCO/T3-TXCO.md  
+            file: LoRa_GPS/T3-TXCO/T3-TXCO.md 
+        -   label: T3-S3 LR1121
+            file: LoRa_GPS/T3-S3-LR1121/T3-S3-LR1121.md             
         -   label: T3-S3 E-paper
-            file: E-Paper/T3-S3-E-paper/T3-S3-E-paper.md            
+            file: LoRa_GPS/T3-S3-E-paper/T3-S3-E-paper.md            
         -   label: T3-S3_MVSRBoard
             file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
         -   label: T-LoraPager
@@ -103,11 +103,11 @@ items:
 -   label: 人工智能设备
     items:
     -   label: T-Display K230
-        file: AMOLED/T-Display-K230/T-Display-K230.md 
+        file: AI/T-Display-K230/T-Display-K230.md 
     -   label : T-Bao
-        file: LCD_OLED/T-Bao/T-Bao.md      
+        file: AI/T-Bao/T-Bao.md      
     -   label: T-Circle S3
-        file: LCD_OLED/T-Circle-S3/T-Circle-S3.md
+        file: AI/T-Circle-S3/T-Circle-S3.md
 -   label: 基础设备
     items:
     -   label: T7 C6
@@ -117,7 +117,7 @@ items:
 -   label: 拓展设备
     items:
     -   label: T-BHI260AP
-        file: Basic_Module/T-BHI260AP/T-BHI260AP.md
+        file: Expand_Module/T-BHI260AP/T-BHI260AP.md
 -   label: FAQ
     items:
     -   label: FAQ
