@@ -25,6 +25,8 @@ items:
         file: Display/T-Encoder-Pro/T-Encoder-Pro.md
     -   label: T-Camera Plus S3
         file: Display/T-Camera-Plus-S3/T-Camera-Plus-S3.md
+    -   label: T-Keyboard-S3 Pro
+        file: Display/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md
 -   label: 可穿戴以及可手持设备
     items:
     -   label: T-Watch S3 Plus
