@@ -1,66 +1,70 @@
 ---
-title: LILYGO T-Deck Plus
+title: LILYGO T-Deck 
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-PICO-2350-03](./assets/T-Deck-Plus1.jpg)
+![T-Deck](./assets/T-Deck-1.jpg)
 
 </div>
 
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/https://lilygo.cc/products/t-deck">官网购买</a>
+    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+</div> 
 
 ## 简介
 
-LILYGO T-Deck Plus 是一款功能丰富的便携式嵌入式开发套件，基于高性能的 ESP32-S3 芯片，集成了 320x240 分辨率的 ST7789 LCD 显示屏、SX1262 LoRa 远程通信模块、ES7210 音频编解码器、麦克风、喇叭及 TF 卡存储扩展功能。其硬件配置包括可选的轨迹球、机械键盘（颜色可选黑白）、1/4 英寸螺母固定接口，并支持 GPS 定位与 2000mAh 电池供电，配备电压检测以优化功耗管理。通过 SPI、I2C 等接口连接多模块（如 LoRa、LCD、触摸控制），同时提供 AUX 天线扩展接口，适用于物联网终端、远程控制、音频交互及户外移动场景的开发与应用。
+LILYGO T-Deck 是一款高度集成的多功能嵌入式开发平台，基于 ESP32-53 主控芯片设计，融合了 2.4 英寸 320x240 分辨率 ST7789 显示屏、轨迹球导航模块（含方向键与 BOOT 按键）、物理键盘接口（通过 I²C 通信）、TF 卡存储扩展、LoRa 无线通信模块（支持 SCK/MISO/MOSI 及控制引脚），以及 ES7210 麦克风阵列（用于音频输入）。其引脚布局兼顾了显示驱动（DC/BL/SPI）、触摸控制、传感器交互（SDA/SCL/INT）、电源管理（BAT ADC）及模块化扩展（SPI/I²C/UART），可快速实现物联网终端、便携式交互设备或低功耗无线通信项目的开发。
 
 ## 外观及功能介绍
 ### 外观
-<img src="./assets/T-Deck-Plus2.jpg" alt="summary" width=80%>
+<img src="./assets/T-Deck-2.jpg" alt="summary" width=80%>
 
 ### 引脚图 
 
-<img src="./assets/T-Deck-Plus-zh.jpg" alt="summary" width=100%>
+<img src="./assets/T-Deck-pin-zh.jpg" alt="summary" width=100%>
 
 ## 模块资料以及参数
 ### 开发板参数
 
+<img src="./assets/T-Deck-info-zh.jpg" alt="summary" width=100%>
+
+> T-Deck版本没有触摸屏，使用轨迹球导航模块代替。
+
 | 组件 | 描述 |
 | ---  | --- |
-|MCU	|	ESP32-S3FN16R8 Dual-core LX7 microprocessor
+|MCU	|ESP32-S3FN16R8 Dual-core LX7 microprocessor
 |Flash 	|16M 
 |PSRAM  |8M
 |Lora|	SX1262 433Mhz~915Mhz(可选)
 |GPS	|MIA-M10Q
 |无线| 2.4 GHz Wi-Fi & Bluetooth 5 (LE)
 |存储 | TF 卡 |
-|屏幕| ST7789 320 x 240 LCD
+|屏幕| 2.8英寸 ST7789 320 x 240 LCD屏幕
 |电池容量 |	2000mAh
 |控制方式	| 轨迹球 触摸屏 
-|输入|键盘
+|输入| 键盘
 |麦克风|    MSM381A3729H9CP
 |开关	|支持电源开关
-|触摸	|GT911
 | 按键 | 1 x RST 按键 + 1 x BOOT 按键(轨迹球)  |
 |音频	|ES7210
 | USB |1 × type-C接口|
-|IO 拓展	|PCA9535PW (0x20)
-| 拓展接口 | GPS拓展接口 + 2 × Knockout(用于拓展天线的AUX连接器) |
-| 孔位 | 2×2mm 定位孔 |
-| 尺寸 | **115x72x20mm**  |
+|IO 拓展	| 2mm间隔 6pin拓展接口
+| 拓展接口 | GPS拓展接口 + 2 × JST GH 1.25mm  + 1 x 4pin拓展接口 |
+| 孔位 | 2mm 定位孔 |
+| 尺寸 | **10x6.8x1.1 cm**  |
+
 ### 相关资料
-Github：[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck)
+Github：[T-Deck](https://github.com/Xinyuan-LilyGO/T-Deck)
 * [T-Deck ANT 868-915MH](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf)
 * [T-Deck ANT 433MHZ](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf)
 
 #### 原理图
 
-[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf)
+[T-Deck](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf)
 
 <!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
 

@@ -106,14 +106,6 @@ Github:[T-Beam-SUPREME](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series)
 - [TinyGSM](https://github.com/vshymanskyy/TinyGSM)
 - [U8g2](https://github.com/olikraus/u8g2)
 
-#### 注意事项
-
-> 使用者如有需要调节外接天线电阻请参考
-
-
-<img src="./assets/T3-S3_MVSRBoard04.jpg" alt="summary" width=80%>
-
->!箭头处指向处可更换电阻实现调整外接天线的电阻
 
 ## 软件开发
 ### Arduino 设置参数
