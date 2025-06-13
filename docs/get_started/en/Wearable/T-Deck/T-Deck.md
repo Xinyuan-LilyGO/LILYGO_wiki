@@ -1,73 +1,77 @@
 ---
-title: LILYGO T-Deck Plus
+title: LILYGO T-Deck 
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-PICO-2350-03](./assets/T-Deck-Plus1.jpg)
+![T-Deck](./assets/T-Deck-1.jpg)
 
 </div>
 
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-deck-plus-1">Go Buying</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/https://lilygo.cc/products/t-deck">Go Buying</a>
     <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
 </div> 
 
 ## Introduction
 
-The LILYGO T-Deck Plus is a feature-rich, portable embedded development kit powered by the high-performance ESP32-S3 chip. It integrates a 320x240 resolution ST7789 LCD display, an SX1262 LoRa long-range communication module, an ES7210 audio codec, a microphone, a speaker, and TF card storage expansion.
+The LILYGO T-Deck is a highly integrated, multifunctional embedded development platform based on the ESP32-53 main controller. It features a 2.4-inch ST7789 display with a 320x240 resolution, a trackball navigation module (including directional keys and a BOOT button), a physical keyboard interface via I²C communication, TF card storage expansion, a LoRa wireless communication module (supporting SCK/MISO/MOSI and control pins), and an ES7210 microphone array for audio input.
 
-Its hardware configuration includes optional components such as a trackball, a mechanical keyboard (available in black or white), a 1/4-inch nut mounting interface, and support for GPS positioning and 2000mAh battery power. It also features voltage detection for optimized power management.
-
-The board connects various modules via SPI and I2C interfaces (such as LoRa, LCD, and touch control), and provides an AUX antenna extension interface. It is well-suited for IoT terminals, remote control systems, audio interaction, and outdoor mobile development scenarios.
+The pin layout is designed to support display control (DC/BL/SPI), touch input, sensor interaction (SDA/SCL/INT), power management (BAT ADC), and modular expansion (SPI/I²C/UART). This makes it ideal for rapid development of IoT terminals, portable interactive devices, or low-power wireless communication projects.
 
 ## Appearance and function introduction
 ### Appearance
-<img src="./assets/T-Deck-Plus2.jpg" alt="summary" width=80%>
+<img src="./assets/T-Deck-2.jpg" alt="summary" width=80%>
 
 ### Pinmap 
 
-<img src="./assets/T-Deck-Plus-en.jpg" alt="summary" width=100%>
+<img src="./assets/T-Deck-pin-zh.jpg" alt="summary" width=100%>
 
 ## Module Information and Specifications
 ### Description
 
+<img src="./assets/T-Deck-info-zh.jpg" alt="summary" width=100%>
+
+> The T-Deck version has no touchscreen and uses a trackball navigation module instead.
+
 | Component | Description |
 | ---  | --- |
-|MCU	|	ESP32-S3FN16R8 Dual-core LX7 microprocessor
-|Flash 	|16M 
+|MCU	|ESP32-S3FN16R8 Dual-core LX7 microprocessor
+|Flash 	|16M
 |PSRAM  |8M
-|Lora|	SX1262 433Mhz~915Mhz(optional)
+|Lora| SX1262 433Mhz - 915Mhz(Optional)
 |GPS	|MIA-M10Q
-|Wireless| 2.4 GHz Wi-Fi & Bluetooth 5 (LE)
-|Storage | TF card |
-|Display| ST7789 320 x 240 LCD
-|Battery Capacity |	2000mAh
-|Control Methods	| Trackball, Touchscreen
-|Input|Keyboard
-|Microphone|    MSM381A3729H9CP
-|Power Switch	|Supported
-|Touch Controller	|GT911
-| Buttons | 1 x RST Button + 1 x BOOT Button(on trackball)  |
-| USB |1 × type-C Interfaces|
-|Audio Codec	|ES7210
-|IO Expansion	|PCA9535PW (0x20)
-| Expansion Interfaces | GPS expansion interface + 2 × Knockout (for AUX antenna connectors)|
-| Mounting Holes | 2 × 2mm positioning holes |
-| Dimensions | **115x72x20mm**  |	
+| Wireless | 2.4GHz Wi-Fi & Bluetooth 5 (LE)
+| Storage | TF Card |
+| Screen | 2.8-inch ST7789 320 x 240 LCD screen
+| Battery capacity | 2000mAh
+| Control Mode | Trackball touch screen
+| Input | Keyboard
+Microphone | MSM381A3729H9CP
+| Switch | Supports power switch
+| Keys | 1 x RST key + 1 x BOOT key (trackball) |
+| Audio |ES7210
+| USB |1 × type-C interface |
+|IO extension | 2mm interval 6-pin extension interface
+| Extended Interface | GPS extended interface + 2 × JST GH 1.25mm + 1 x 4pin extended interface |
+| Hole position | 2mm positioning hole |
+| Size | **10x6.8x1.1 cm** |
+
 
 ### Related Links
-Github：[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck)
+Github：[T-Deck](https://github.com/Xinyuan-LilyGO/T-Deck)
 * [T-Deck ANT 868-915MH](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf)
 * [T-Deck ANT 433MHZ](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf)
 
+
 #### Schematic Diagram
 
-[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf)
+[T-Deck](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf)
 
 <!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
+
 
 #### Dependency Libraries
 
@@ -112,5 +116,6 @@ Github：[T-Deck Plus](https://github.com/Xinyuan-LilyGO/T-Deck)
 
 
 ## Product Technical Support 
+
 
 

@@ -40,7 +40,7 @@ LILYGO T5-4.7-S3 电容触摸屏开发板是一款基于 ESP32-S3-WROOM-1-N16R8 
 |屏幕 |  EDO47TC1 4.7英寸低功耗墨水屏(540 x 960)
 |触摸	|GT911 
 |时钟	|PCF8563 
-|按键 | 1 x RST 按键 + 1 x BOOT 按键 + 1 x IO48 按键 + 1 × PWR 按键|
+|按键 | 1 x RST 按键 + 1 x SIR_io0 按键 + 1 x io21 按键 |
 |IO 拓展	| 2 x 20pin拓展接口(与树莓派兼容) 
 |拓展接口 | 1 x JST-PH 2.0mm 电池接口 + 2 x 4pin Molex连接器  |
 |孔位 | 6 x 3.8mm 定位孔  |

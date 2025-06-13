@@ -44,7 +44,7 @@ It offers a 40-PIN GPIO expansion interface compatible with Raspberry Pi, includ
 | Screen | EDO47TC1 4.7-inch low-power E-ink screen (540 x 960)
 | Touch |GT911
 | Clock |PCF8563
-| Keys | 1 x RST key + 1 x BOOT key + 1 x IO48 key + 1 × PWR key |
+| Keys | 1 x RST key + 1 x SIR_io0 key + 1 × io21 key |
 |IO Extension | 2 x 20-pin extension interface (Compatible with Raspberry PI)
 | Expansion Interface | 1 x JST-PH 2.0mm battery interface + 2 x 4pin Molex connectors |
 | Hole position | 6 x 3.8mm positioning hole |
