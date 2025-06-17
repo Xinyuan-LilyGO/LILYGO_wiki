@@ -33,6 +33,8 @@ show_source: false
 确认好固件的版本点击进入详情往下滑找到Assets下载固件
 
 
+<img src="./assets/Mesh_assets.jpg" alt="summary" width=100%>
+
 这里根据芯片的型号下载对应的固件
 
 ### 工具获取
