@@ -125,4 +125,8 @@ items:
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
 -   label: Meshtastic 设备
-    file: Meshtastic/Meshtastic_lilygo.md        
+    items:
+    -   label: Meshtastic 设备
+        file: Meshtastic/Meshtastic_lilygo.md
+    -   label: Meshtastic 下载
+        file: Meshtastic/Meshtastic_use.md 
