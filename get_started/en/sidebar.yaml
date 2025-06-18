@@ -69,6 +69,8 @@ items:
             file: LoRa_GPS/T-LoraPager/T-LoraPager.md
         -   label: T-Beam SUPREME
             file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md
+        -   label: T3 S3
+            file: LoRa_GPS/T3S3/T3S3.md            
     -   label: HSC Tech
         items:
         -   label: T-TWR
