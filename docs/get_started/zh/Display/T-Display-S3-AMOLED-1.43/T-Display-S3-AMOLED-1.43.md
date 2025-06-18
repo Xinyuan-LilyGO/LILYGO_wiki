@@ -2,6 +2,7 @@
 title: LILYGO T-Display S3 AMOLED 1.43
 show_source: false
 tags: AMOLED, Display
+cover: ./assets/T-Display-S3-AMOLED-1.43-1.jpg
 ---
 <!-- **[English](README.MD) | 中文** -->
 
