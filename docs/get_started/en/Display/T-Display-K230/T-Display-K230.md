@@ -85,7 +85,7 @@ The combination of LoRa communication and ISP camera capabilities gives the T-Di
 | Codec | H.264/H.265 encoder/decoder, max resolution 4096×4096<br>Encoder performance: 3840×2160@20fps<br>Decoder performance: 3840×2160@40fps<br>JPEG codec: Supports up to 8K (8192×8192) resolution|
 | Power | 5V/500mA input|
 | Mounting Holes |4 × 2mm positioning holes|
-| Dimensions |Main body (without case): 100×48×1.6mm |
+| Dimensions |Main body (without case): 104x51x15.5mm |
 
 
 ## Related Links

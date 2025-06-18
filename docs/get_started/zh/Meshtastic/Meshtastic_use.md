@@ -41,7 +41,7 @@ show_source: false
 
 下载好固件后需要烧录到开发板上，这里推荐使用Flash_Download_Tool工具进行烧录
 
-点击[下载Flash_Download_Tool](https://docs.espressif.com/projects/esp-test-tools/zh_CN/latest/esp32/production_stage/tools/flash_download_tool.html)
+点击[下载Flash_Download_Tool](https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html)
 
 
 <img src="./assets/Flash_download.jpg" alt="summary" width=100%>
