@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO Meshtastic 使用指南 - LILYGO Wiki</title>
+    <title>LILYGO T3S3 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "这是一个支持国际化的消息示例</br>喜欢项目请<a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">点下 ☆ star </a>哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
@@ -96,8 +96,8 @@ var _hmt = _hmt || [];
                 <ul id="nav_right">
 <li class=""><a target="_blank" href="https://www.youtube.com/@LILYGO"><img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
 <li class=""><a target="_blank" href="https://github.com/Xinyuan-LilyGO"><img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
-<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/Meshtastic/Meshtastic_use.html">English</a></li>
-<li class="active"><a  href="/get_started/zh/Meshtastic/Meshtastic_use.html">中文 简体</a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/LoRa_GPS/T3S3/T3S3.html">English</a></li>
+<li class="active"><a  href="/get_started/zh/LoRa_GPS/T3S3/T3S3.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -119,7 +119,7 @@ var _hmt = _hmt || [];
                 <div id="sidebar_title">
                     
                 </div>
-                <ul class="show">
+                <ul class="">
 <li class="not_active no_link"><a><span class="label">显示设备</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/get_started/zh/Display/T-Circle/T-Circle.html"><span class="label">T-Circle</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/zh/Display/T-Circle-S3/T-Circle-S3.html"><span class="label">T-Circle S3</span><span class=""></span></a></li>
@@ -206,9 +206,9 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/zh/no_translate.html?ref=maixIV/m4ndock/FAQ.html&from=/get_started/zh/maixIV/m4ndock/FAQ.html"><span class="label">FAQ</span><span class=""></span></a></li>
 </ul>
 </li>
-<li class="active_parent no_link"><a><span class="label">Meshtastic 设备</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active no_link"><a><span class="label">Meshtastic 设备</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
 <li class="not_active with_link"><a href="/get_started/zh/Meshtastic/Meshtastic_lilygo.html"><span class="label">Meshtastic 设备</span><span class=""></span></a></li>
-<li class="active with_link"><a href="/get_started/zh/Meshtastic/Meshtastic_use.html"><span class="label">Meshtastic 下载</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/zh/Meshtastic/Meshtastic_use.html"><span class="label">Meshtastic 下载</span><span class=""></span></a></li>
 </ul>
 </li>
 </ul>
@@ -225,7 +225,7 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO Meshtastic 使用指南</h1>
+                            <h1>LILYGO T3S3</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -256,43 +256,209 @@ var _hmt = _hmt || [];
                         
                             <!-- **[English](README.MD) | 中文** -->
 <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3S3-1.jpg" alt="T3S3" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<blockquote class="spoiler warning">
-<p>了解更多可进入<a href="https://meshtastic.org/docs/hardware/devices/lilygo/"  target="_blank">Meshtastic</a></p>
-</blockquote>
-<h2 id="%E6%9B%B4%E6%96%B0%E5%9B%BA%E4%BB%B6">更新固件</h2>
-<h3 id="%E5%9B%BA%E4%BB%B6%E8%8E%B7%E5%8F%96">固件获取</h3>
-<p>点击右上角Download按钮</p>
-<img src="./assets/Mesh_web.jpg" alt="summary" width=100%>
-<p>找到Firmware这一栏,点击Download Stable跳转到github的release页面下载固件</p>
-<img src="./assets/Mesh_firmware.jpg" alt="summary" width=100%>
-<p>点击releases可以查看到最新的固件版本</p>
-<img src="./assets/Mesh_release.jpg" alt="summary" width=100%>
-<p>确认好固件的版本点击进入详情往下滑找到Assets下载固件</p>
-<img src="./assets/Mesh_assets.jpg" alt="summary" width=100%>
-<p>这里根据芯片的型号下载对应的固件</p>
-<h3 id="%E5%B7%A5%E5%85%B7%E8%8E%B7%E5%8F%96">工具获取</h3>
-<p>下载好固件后需要烧录到开发板上，这里推荐使用Flash_Download_Tool工具进行烧录</p>
-<p>点击<a href="https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html"  target="_blank">下载Flash_Download_Tool</a></p>
-<img src="./assets/Flash_download.jpg" alt="summary" width=100%>
-<h3 id="%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6">烧录固件</h3>
-<p>选择好对应的芯片型号和对应的固件文件，点击Start进行烧录</p>
-<img src="./assets/Flash_setting.jpg" alt="summary" width=100%>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&_psq=T3&_ss=e&_v=1.0">官网购买</a>
+    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+</div>
+<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
+<p>T3S3(LILYGO T3-S3 V1.2 )是一款集成 ESP32-S3 主控与多频段 LoRa 通信能力的开发板，T3S3 可选配 SX1262/76（868/915MHz）或 SX1280（2.4GHz） LoRa 模块，支持远距离低功耗通信；板载 128x64 OLED 显示屏（SSD1306） 及 MicroSD（TF）卡槽，提供数据可视化与存储功能；通过 Type-C USB 实现供电与烧录，并扩展 ADC（GPIO15/16）、UART（U0RTS/U0CTS）、PSP 总线（GPIO33-37） 等丰富接口，同时保留 BOOT/RST 按键与标注清晰的 GPIO 引脚（如 GPIO12/48/47），适用于物联网传感网络、环境监测等低功耗场景开发。</p>
+<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
+<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
+<img src="./assets/T3S3-2.jpg" alt="summary" width=80%>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T3S3-pin.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99">模块资料</h2>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<img src="./assets/T3S3-info.jpg" alt="summary" width=100%>
+<h4 id="%E6%8B%93%E5%B1%95%E6%9D%BF">拓展板</h4>
+<table>
+<thead>
+<tr>
+  <th>组件</th>
+  <th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>MCU</td>
+  <td>ESP32-S3FH4R2</td>
+</tr>
+<tr>
+  <td>FLASH</td>
+  <td>4MB(Quad-SPI)</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>2MB(Quad-SPI)</td>
+</tr>
+<tr>
+  <td>LoRa</td>
+  <td>SX1262:433/868/915Mhz<br>SX1276:868/915MhzSX1280:2.4Ghz</td>
+</tr>
+<tr>
+  <td>屏幕</td>
+  <td>0.96英寸 SSD1306 OLED 屏幕</td>
+</tr>
+<tr>
+  <td>存储</td>
+  <td>TF 卡</td>
+</tr>
+<tr>
+  <td>无线</td>
+  <td>2.4Ghz Wi-Fi + Bluetooth 5.0</td>
+</tr>
+<tr>
+  <td>USB</td>
+  <td>1 × USB Port and OTG(TYPE-C接口)</td>
+</tr>
+<tr>
+  <td>IO 接口</td>
+  <td>2.54mm间距 × 2*13拓展IO接口</td>
+</tr>
+<tr>
+  <td>按键</td>
+  <td>1 x RESET 按键 + 1 x BOOT 按键</td>
+</tr>
+<tr>
+  <td>拓展接口</td>
+  <td>1 x LoRa天线接口 + 1 x 电池接口 + 2 x Qwiic接口</td>
+</tr>
+<tr>
+  <td>电源</td>
+  <td>5V/500mA</td>
+</tr>
+<tr>
+  <td>孔位</td>
+  <td><strong>2mm定位孔 *2</strong></td>
+</tr>
+<tr>
+  <td>尺寸</td>
+  <td><strong>66x36x14mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99%E9%93%BE%E6%8E%A5">相关资料链接</h3>
+<p>Github:<a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"  target="_blank">T3S3</a></p>
+<ul>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262"  target="_blank">SX1262 datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/lib/SensorsLib/datasheet/QMI8658A%20Datasheet%20Rev1.0.pdf"  target="_blank">QMI8658 datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/lib/SensorsLib/datasheet/QMC6310%20Datasheet%20Rev.C.pdf"  target="_blank">QMC6310 datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/docs/datasheet/CASIC_ProtocolSpecification.pdf"  target="_blank">CASIC_ProtocolSpecification</a></li>
+</ul>
+<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
+<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_S3_V1.3.pdf"  target="_blank">T3S3</a></p>
+<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<ul>
+<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
+<li><a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a></li>
+<li><a href="https://github.com/adafruit/Adafruit_Sensor"  target="_blank">Adafruit_Sensor</a></li>
+<li><a href="https://github.com/ThingPulse/esp8266-oled-ssd1306"  target="_blank">ESP8266_SSD1306</a></li>
+<li><a href="https://github.com/ZinggJM/GxEPD"  target="_blank">GxEPD</a></li>
+<li><a href="https://github.com/sandeepmistry/arduino-LoRa"  target="_blank">LoRa</a></li>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
+<li><a href="https://github.com/olikraus/u8g2"  target="_blank">U8g2</a></li>
+</ul>
+<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
+<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
+<table>
+<thead>
+<tr>
+  <th>T3S3</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Board</td>
+  <td>ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td>Port</td>
+  <td>Your port</td>
+</tr>
+<tr>
+  <td>USB CDC On Boot</td>
+  <td>Enable</td>
+</tr>
+<tr>
+  <td>CPU Frequency</td>
+  <td>240MHZ(WiFi)</td>
+</tr>
+<tr>
+  <td>Core Debug Level</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>USB DFU On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Erase All Flash Before Sketch Upload</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Events Run On</td>
+  <td>Core1</td>
+</tr>
+<tr>
+  <td>Flash Mode</td>
+  <td>QIO 80MHZ</td>
+</tr>
+<tr>
+  <td>Flash Size</td>
+  <td>4MB(32Mb)</td>
+</tr>
+<tr>
+  <td>Arduino Runs On</td>
+  <td>Core1</td>
+</tr>
+<tr>
+  <td>USB Firmware MSC On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Partition Scheme</td>
+  <td>Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>QSPI PSRAM</td>
+</tr>
+<tr>
+  <td>Upload Mode</td>
+  <td>UART0/Hardware CDC</td>
+</tr>
+<tr>
+  <td>Upload Speed</td>
+  <td>921600</td>
+</tr>
+<tr>
+  <td>USB Mode</td>
+  <td>CDC and JTAG</td>
+</tr>
+<tr>
+  <td>Programmer</td>
+  <td>Esptool</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
+<ol>
+<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+</ol>
+<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
 
                         
                     </div>
                 </div>
                 <div id="previous_next">
                     <div id="previous">
-                        
-                        <a href="/get_started/zh/Meshtastic/Meshtastic_lilygo.html">
-                            <span class="icon"></span>
-                            <span class="label">Meshtastic 设备</span>
-                        </a>
                         
                     </div>
                     <div id="next">
