@@ -3,7 +3,6 @@ items:
     items:
     -   label: T-Circle
         file: Display/T-Circle/T-Circle.md
-        tooltip: Circularxx
     -   label: T-Circle S3
         file: Display/T-Circle-S3/T-Circle-S3.md      
     -   label: T-Display K230
