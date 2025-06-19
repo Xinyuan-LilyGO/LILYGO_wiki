@@ -1,165 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    padding: 20px;
-}
-
-.container {
-    text-align: center;
-    max-width: 800px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    color: white;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
-
-.subtitle {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 40px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 30px;
-    margin: 40px 0;
-}
-
-.icon-item {
+.custom-tooltip {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px 15px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.icon-item:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-}
-
-.icon-item i {
-    font-size: 2.8rem;
-    color: white;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.icon-item:hover i {
-    transform: scale(1.2);
-}
-
-.icon-name {
-    color: white;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-/* 右侧提示框样式 */
-.icon-item::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    left: calc(100% + 15px);
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(25, 25, 35, 0.95);
-    color: white;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 400;
-    white-space: nowrap;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 100;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* 提示框箭头 */
-.icon-item::before {
-    content: '';
-    position: absolute;
-    border: 8px solid transparent;
-    border-right-color: rgba(25, 25, 35, 0.95);
-    left: calc(100% - 1px);
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.3s ease;
-    z-index: 100;
-}
-
-/* 悬停时显示提示 */
-.icon-item:hover::after,
-.icon-item:hover::before {
-    opacity: 1;
-}
-
-.instructions {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    border-radius: 15px;
-    margin-top: 40px;
-    text-align: left;
-}
-
-.instructions h2 {
-    color: white;
+    display: inline-block;
+    border-bottom: 1px dotted #666; /* 悬停提示标识 */
+    cursor: help;
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.code-block {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    font-family: monospace;
-    color: #a3f7bf;
-    margin-top: 15px;
-    overflow-x: auto;
-    font-size: 0.95rem;
-}
-
-@media (max-width: 600px) {
-    .icon-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-    
-    .container {
-        padding: 25px 20px;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-}
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
