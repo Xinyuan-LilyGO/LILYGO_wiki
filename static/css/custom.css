@@ -123,48 +123,31 @@
 }
 /* 悬停------------------------- */
 /* static/css/custom.css */
-
-/* 侧边栏菜单项样式 */
-#sidebar_wrapper .sidebar-item {
-    position: relative;
-    display: block;
-    padding: 8px 15px;
-    margin: 2px 0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    color: #333;
-    text-decoration: none;
-}
-
-#sidebar_wrapper .sidebar-item:hover {
-    background-color: rgba(76, 175, 125, 0.1);
-    color: #0a7d43;
-}
-
-/* 侧边栏 Tooltip 样式 */
+/* 侧边栏 Tooltip 样式修复 */
 #sidebar_wrapper .sidebar-tooltip {
     position: absolute;
     left: calc(100% + 15px);
     top: 50%;
     transform: translateY(-50%);
-    background: #4caf7d;
-    color: white;
+    
+    /* 优化背景色和字体颜色 */
+    background: #1a1a1a; /* 深色背景 */
+    color: #f0f0f0; /* 浅色文字 */
+    
     padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 10000;
     pointer-events: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     white-space: nowrap;
-}
-
-/* 修复：确保在悬停时显示 Tooltip */
-#sidebar_wrapper .sidebar-item:hover .sidebar-tooltip {
-    opacity: 1;
-    visibility: visible;
+    min-width: 180px;
+    max-width: 300px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 /* 箭头样式 */
@@ -174,43 +157,58 @@
     right: 100%;
     top: 50%;
     transform: translateY(-50%);
-    border-width: 6px;
+    border-width: 8px;
     border-style: solid;
-    border-color: transparent #202122 transparent transparent;
+    border-color: transparent #1a1a1a transparent transparent; /* 与背景色一致 */
 }
 
-/* 适配暗色模式 */
-.dark #sidebar_wrapper .sidebar-item {
-    color: #eee;
+/* 悬停时显示 Tooltip */
+#sidebar_wrapper .sidebar-item:hover .sidebar-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(5px);
 }
 
-.dark #sidebar_wrapper .sidebar-item:hover {
-    background-color: rgba(76, 175, 125, 0.2);
-    color: #fff;
+/* 亮色模式下的 Tooltip */
+#sidebar_wrapper .sidebar-tooltip.light {
+    background: #ffffff;
+    color: #333333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
 }
 
-.dark #sidebar_wrapper .sidebar-tooltip {
-    background: #333;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+#sidebar_wrapper .sidebar-tooltip.light::before {
+    border-color: transparent #ffffff transparent transparent;
 }
 
-.dark #sidebar_wrapper .sidebar-tooltip::before {
-    border-color: transparent #333 transparent transparent;
+/* 主题色 Tooltip */
+#sidebar_wrapper .sidebar-tooltip.theme {
+    background: #4caf7d; /* 使用网站主题色 */
+    color: white;
 }
 
-/* 侧边栏分类标题样式 */
-#sidebar_wrapper .sidebar-category {
-    font-weight: bold;
-    padding: 10px 15px;
-    margin-top: 15px;
-    color: #4caf7d;
-    border-bottom: 1px solid #eaeaea;
-    cursor: default;
+#sidebar_wrapper .sidebar-tooltip.theme::before {
+    border-color: transparent #4caf7d transparent transparent;
 }
 
-.dark #sidebar_wrapper .sidebar-category {
-    color: #4caf7d;
-    border-bottom-color: #444;
+/* 紫色 Tooltip */
+#sidebar_wrapper .sidebar-tooltip.purple {
+    background: #6a0dad;
+    color: white;
+}
+
+#sidebar_wrapper .sidebar-tooltip.purple::before {
+    border-color: transparent #6a0dad transparent transparent;
+}
+
+/* 蓝色 Tooltip */
+#sidebar_wrapper .sidebar-tooltip.blue {
+    background: #1e88e5;
+    color: white;
+}
+
+#sidebar_wrapper .sidebar-tooltip.blue::before {
+    border-color: transparent #1e88e5 transparent transparent;
 }
 
 /* 确保侧边栏有足够空间显示 Tooltip */
@@ -227,4 +225,14 @@
 #sidebar_wrapper .teedoc-plugin-sidebar-item {
     position: relative;
     overflow: visible !important;
+}
+
+/* 菜单项悬停效果 */
+#sidebar_wrapper .sidebar-item {
+    transition: all 0.2s ease;
+}
+
+#sidebar_wrapper .sidebar-item:hover {
+    background-color: rgba(76, 175, 125, 0.1);
+    transform: translateX(3px);
 }
