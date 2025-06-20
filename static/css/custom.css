@@ -126,19 +126,14 @@
 
 /* 侧边栏菜单项样式 */
 #sidebar_wrapper .sidebar-item {
+    transition: all 0.2s ease;
     position: relative;
-    display: block;
-    padding: 8px 15px;
-    margin: 2px 0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    color: #333;
-    text-decoration: none;
+    z-index: 1;
 }
 
 #sidebar_wrapper .sidebar-item:hover {
-    background-color: rgba(76, 175, 125, 0.1);
-    color: #0a7d43;
+    background-color: rgba(76, 175, 125, 0.15);
+    transform: translateX(3px);
 }
 
 /* 侧边栏 Tooltip 样式 */
@@ -149,11 +144,11 @@
     transform: translateY(-50%);
     
     /* 优化背景色和字体颜色 */
-    background: #1a1a1a; /* 深色背景 */
-    color: #f0f0f0; /* 浅色文字 */
+    background: #2c3e50; /* 深色背景 */
+    color: #ecf0f1; /* 浅色文字 */
     
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 10px 15px;
+    border-radius: 8px;
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
@@ -183,7 +178,7 @@
     transform: translateY(-50%);
     border-width: 8px;
     border-style: solid;
-    border-color: transparent #1a1a1a transparent transparent; /* 与背景色一致 */
+    border-color: transparent #2c3e50  transparent transparent; /* 与背景色一致 */
 }
 #sidebar_wrapper .sidebar-item:hover .sidebar-tooltip {
     opacity: 1;
@@ -238,4 +233,5 @@
 #sidebar_wrapper .teedoc-plugin-sidebar-item {
     position: relative;
     overflow: visible !important;
+    z-index: auto;
 }
