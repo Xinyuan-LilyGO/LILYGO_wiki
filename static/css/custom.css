@@ -123,24 +123,6 @@
 }
 /* 悬停------------------------- */
 /* static/css/custom.css */
-/* 侧边栏菜单项样式 */
-.sidebar-item {
-    position: relative;
-    display: block;
-    padding: 8px 15px;
-    margin: 2px 0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    color: #333;
-    text-decoration: none;
-}
-
-.sidebar-item:hover {
-    background-color: rgba(76, 175, 125, 0.1);
-    color: #0a7d43;
-}
-
-/* 侧边栏 Tooltip 样式 */
 /* static/css/custom.css */
 
 /* 侧边栏菜单项样式 */
@@ -174,7 +156,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 10000; /* 提高 z-index */
     pointer-events: none;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     white-space: nowrap;
@@ -235,6 +217,7 @@
 /* 修复：确保侧边栏有足够空间显示 Tooltip */
 .teedoc-plugin-sidebar {
     overflow: visible !important;
+    z-index: 9999; /* 确保侧边栏在合适层级 */
 }
 
 .teedoc-plugin-sidebar-content {
