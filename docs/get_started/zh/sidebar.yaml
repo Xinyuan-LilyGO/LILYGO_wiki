@@ -1,7 +1,7 @@
 items:
--   label: 显示设备
+-   tip: 显示设备
     items:
-    -   label: T-Circle
+    -   tip: T-Circle
         file: Display/T-Circle/T-Circle.md
     -   label: T-Circle S3
         file: Display/T-Circle-S3/T-Circle-S3.md      
