@@ -1,9 +1,11 @@
 ---
 title: LILYGO T-Circle
-show_source: false
-tags: 1111, 222, 333
-date: 2023-06-10
-keywords: Sebsor, 曝光控制, 修改曝光
+keywords: T-Circle
+desc: T-Circle
+author: Puboy7
+date: 2021-03-14
+tags: hello, blog, teedoc
+
 ---
 <!-- **[English](README.MD) | 中文** -->
 

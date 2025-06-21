@@ -2,7 +2,7 @@
 title: 第一篇博客
 keywords: 第一篇博客
 desc: teedoc 生成静态博客页面, 第一篇博客
-author: neucrack
+author: Puboy7
 date: 2021-03-14
 tags: hello, blog, teedoc
 ---
