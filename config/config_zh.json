@@ -19,6 +19,11 @@
                 "position": "left"
             },
             {
+                "url": "/blog/",
+                "label": "动态",
+                "position": "left"
+            },
+            {
                 "label": "<img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'>",
                 "position": "right",
                 "url": "https://www.youtube.com/@LILYGO",
