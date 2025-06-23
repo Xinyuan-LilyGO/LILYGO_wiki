@@ -118,7 +118,7 @@
         "teedoc-plugin-ad-hint": {
             "config": {
                 "label": "☆",
-                "content": "这是一个支持国际化的消息示例</br>喜欢项目请<a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">点下 ☆ star </a>哦~🦀🦀"
+                "content": "这是一个支持国际化的消息示例</br>对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀"
             }
         }
     },

@@ -2,11 +2,10 @@
 title: LILYGO T-Circle
 keywords: T-Circle
 desc: T-Circle
-author: Puboy7
 date: 2021-03-14
 tags: hello, blog, teedoc
-
 ---
+
 <!-- **[English](README.MD) | 中文** -->
 
 <div style="width:100%; display:flex;justify-content: center;">
