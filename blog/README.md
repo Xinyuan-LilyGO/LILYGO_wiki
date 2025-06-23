@@ -1,8 +1,8 @@
 ---
 
-title: 博客
-keywords: my_site 博客
-desc: my_site 博客， 使用 teedoc 生成
+title: 动态
+keywords: News 动态
+desc: 最新资讯
 show_source: false
 date: false
 

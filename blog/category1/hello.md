@@ -1,10 +1,10 @@
 ---
-title: 第一篇博客
-keywords: 第一篇博客
-desc: teedoc 生成静态博客页面, 第一篇博客
-author: Puboy7
-date: 2021-03-14
+title: Test
+keywords: 第一篇
+desc: 第一篇
+date: 2025-06-20
 tags: hello, blog, teedoc
+cover: ./assets/github.jpg
 ---
 
 
