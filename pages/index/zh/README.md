@@ -180,6 +180,8 @@ id: home_page
             </div>
         </div>
     </div> 
+<canvas id="backgroundCanvas"  style="top:0; bottom:0; left:0; right:0; position:fixed; z-index: -99;">
+</canvas>
 <div>
 <script type='text/javascript'>
     $(document).ready(function () {
@@ -207,8 +209,6 @@ id: home_page
 </script>
 </div>
 
-<canvas id="backgroundCanvas"  style="top:0; bottom:0; left:0; right:0; position:fixed; z-index: -99;">
-</canvas>
 <script>
     var isDark = false;
     function createCanvas(dark = null){
