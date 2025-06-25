@@ -92,7 +92,7 @@
                 "env": {
                     "clientID": "Ov23liQXkB1pa7CIP1bd",
                     "clientSecret": "3c55599fdff050063dddb3e4708a53cee6d4d77a",
-                    "repo": "LILYGO.github.io",
+                    "repo": "LILYGO_wiki",
                     "owner": "Xinyuan-LilyGO",
                     "admin": ["puboy7"],
                     "main_color": "#4caf7d",
