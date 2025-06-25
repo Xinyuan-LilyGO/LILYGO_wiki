@@ -14,14 +14,15 @@
                 "position": "left"
             },
             {
-                "url": "https://lilygo.cc/",
-                "label": "商店",
-                "position": "left"
-            },
-            {
                 "url": "/blog/",
                 "label": "动态",
                 "position": "left"
+            },
+            {
+                "label": "<img src='/static/image/shop.svg' style='height: 1.5em;vertical-align: middle;'>",
+                "position": "right",
+                "url": "https://lilygo.cc/",
+                "target": "_blank"
             },
             {
                 "label": "<img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'>",
@@ -118,7 +119,7 @@
         "teedoc-plugin-ad-hint": {
             "config": {
                 "label": "☆",
-                "content": "这是一个支持国际化的消息示例</br>对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀"
+                "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀"
             }
         }
     },
