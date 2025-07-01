@@ -80,7 +80,7 @@ class Carousel {
         this.autoSlideInterval = setInterval(() => {
             const nextIndex = (this.currentIndex + 1) % this.slides.length;
             this.switchTo(nextIndex);
-        }, 5000);
+        }, 3000);
     }
 
     stopAutoPlay() {
