@@ -5,7 +5,7 @@
     "site_domain": "wiki.lilygo.cc",
     "site_protocol": "https",
     "config_template_dir": "config",
-    "source": "https://github.com/puboy7/LILYGO.github.io/blob/main",
+    "source": "https://github.com/puboy7/LILYGO_wiki/blob/main",
     "route": {
         "docs": {
             "/get_started/zh/": "docs/get_started/zh",
