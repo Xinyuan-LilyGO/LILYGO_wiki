@@ -132,7 +132,7 @@
             "config": {
                 "type": "hint",
                 "label": "☆",
-                "content": "If you are interested in our products, you can follow our official website store and Taobao shop. If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀",
+                "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀",
                 "show_after_s": 432000,
                 "date": "2021-11-16 14:40"
             }
