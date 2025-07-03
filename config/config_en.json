@@ -14,9 +14,15 @@
                 "position": "left"
             },
             {
-                "url": "https://lilygo.cc/",
-                "label": "Store",
+                "url": "/blog/",
+                "label": "News",
                 "position": "left"
+            },
+            {
+                "label": "<img src='/static/image/shop.svg' style='height: 1.5em;vertical-align: middle;'>",
+                "position": "right",
+                "url": "https://lilygo.cc/",
+                "target": "_blank"
             },
             {
                 "label": "<img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'>",
