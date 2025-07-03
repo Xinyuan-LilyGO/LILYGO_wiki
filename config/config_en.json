@@ -108,5 +108,13 @@
                 "target": "_blank"
             }
         ]
-    }
+    },
+    "plugins": {
+        "teedoc-plugin-ad-hint": {
+            "config": {
+                "label": "☆",
+                "content": "If you are interested in our products, you can follow our official website store and Taobao shop. If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀"
+            }
+        }
+    },
 }
