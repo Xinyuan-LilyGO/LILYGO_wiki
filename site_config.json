@@ -21,7 +21,7 @@
             "/get_started/assets/": "docs/get_started/assets"
         },
         "blog": {
-            "/blog/": "blog"
+            "/news/": "news"
         }
     },
     "translate": {
