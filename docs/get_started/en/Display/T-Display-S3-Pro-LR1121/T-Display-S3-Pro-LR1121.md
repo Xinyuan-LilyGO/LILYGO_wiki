@@ -52,7 +52,7 @@ This board is ideal for applications like wearable devices and IoT terminals req
 | RTC | PCF85063ATL/1 |
 | Wireless | 2.4 GHz Wi-Fi & Bluetooth5 (LE)
 | USB | 1 × USB Port and OTG(TYPE-C interface) |
-IO interface | 2.54mm spacing 2*13 (double row) to expand IO interface |
+| IO interface | 2.54mm spacing 2*13 (double row) to expand IO interface |
 | Extension interface | 1 × FPC antenna extension interface +1 × TF card interface +1 × STEMMA QT/QWIIC interface (JST-SH 1.0MM 4Pin) + JST-GH 1.25MM interface |
 | Key | 1 x RESET key + 1 x BOOT key |
 | Power supply | AXPM65611 power chip management,BQ25896 charge management chip |
