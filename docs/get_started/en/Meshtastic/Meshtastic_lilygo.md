@@ -12,7 +12,7 @@ show_source: false
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
->!For more information, please visit[Meshtastic](https://meshtastic.org/docs/hardware/devices/lilygo/)
+>!Learn more here[Meshtastic](https://meshtastic.org/docs/hardware/devices/lilygo/)
 
 ## T-Beam
 
@@ -73,5 +73,5 @@ Standalone device with screen and keyboard.
 >Support for Bluetooth in the ESP32-C6 modules is not yet available in the Meshtastic firmware.
 ## Firmware download
 
-LILYGO device Meshtastic firmware download address: [Meshtastic Downloads](https://meshtastic.org/downloads/)
+LILYGO equipment Meshtastic firmware download address:[Meshtastic Downloads](https://meshtastic.org/downloads/)
 
