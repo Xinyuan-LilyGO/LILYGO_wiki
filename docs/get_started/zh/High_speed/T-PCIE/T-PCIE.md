@@ -29,10 +29,10 @@ title: LILYGO T-PCIE
 #### 引脚定义 
 
 <img src="./assets/SIM7600E-1.jpg" alt="summary" width=20%>
-<img src="./assets/SIM7600E-3.jpg" alt="summary" width=20% style="float: right;>  
+<img src="./assets/SIM7600E-3.jpg" style="float: right; alt="summary" width=20% >  
 
 <img src="./assets/SIM7600E-2.jpg" alt="summary" width=20%>
-<img src="./assets/SIM7600E-4.jpg" alt="summary" width=20% style="float: right;>
+<img src="./assets/SIM7600E-4.jpg" style="float: right;alt="summary" width=20% >
 
 ### 引脚图 
 
