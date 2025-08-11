@@ -82,6 +82,7 @@ T-LoraPager 是一款LILYGO Lora+ESP32-S3的手持AIOT可编程开发设备的�
 Github：[T-LoraPager](https://github.com/Xinyuan-LilyGO/LilyGoLib?tab=readme-ov-file)
 软件说明: [T-LoraPager](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/lilygo-t-lora-pager.md)
 硬件说明: [T-LoraPager](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-lora-pager.md)
+规格书: [T-LoraPager](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/(N314)T-Lora_Pager_LR1121_Module_V1.0_20250805.pdf)
 
 #### 原理图
 
