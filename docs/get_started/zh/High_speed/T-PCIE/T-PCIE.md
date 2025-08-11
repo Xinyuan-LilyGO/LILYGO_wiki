@@ -28,15 +28,15 @@ title: LILYGO T-PCIE
 
 #### 引脚定义 
 
-<div style="overflow: hidden;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <!-- 左侧两张图片 -->
-  <div style="float: left;">
+  <div>
     <img src="./assets/SIM7600E-1.jpg" alt="summary" width="20%">
     <img src="./assets/SIM7600E-3.jpg" alt="summary" width="20%">
   </div>
   
   <!-- 右侧两张图片 -->
-  <div style="float: right;">
+  <div style="text-align: right;">
     <img src="./assets/SIM7600E-2.jpg" alt="summary" width="20%">
     <img src="./assets/SIM7600E-4.jpg" alt="summary" width="20%">
   </div>
