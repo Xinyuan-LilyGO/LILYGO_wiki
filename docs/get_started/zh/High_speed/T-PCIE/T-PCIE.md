@@ -43,8 +43,8 @@ T-SIM7600E-PCIE 采用 mini PCIe 外形规格，由一个 SIM7600 系列模块�
 <div style="display: flex; justify-content: space-between;">
   <!-- 左侧两张图片 -->
    <div style="display: flex; flex-direction: column;">
-    <img src="./assets/SIM7600E-1.jpg" alt="summary" width="40%">
-    <img src="./assets/SIM7600E-2.jpg" alt="summary" width="40%">
+    <img src="./assets/SIM7600E-1.jpg" alt="summary" width="60%">
+    <img src="./assets/SIM7600E-2.jpg" alt="summary" width="60%">
   </div>
   
   <!-- 右侧两张图片 -->
