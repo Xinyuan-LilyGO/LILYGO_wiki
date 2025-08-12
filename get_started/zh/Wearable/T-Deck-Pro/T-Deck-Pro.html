@@ -409,6 +409,37 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/olikraus/U8g2_for_Adafruit_GFX"  target="_blank">U8g2_for_Adafruit_GFX</a></li>
 <li><a href="https://github.com/esphome/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
 </ul>
+<h3 id="%E5%B1%8F%E5%B9%95%E5%88%B7%E6%96%B0%E6%96%B9%E5%BC%8F">屏幕刷新方式</h3>
+<p>刷新过程解释：（刷新时间：从屏幕有动作开始到画面稳定的整个过程）</p>
+<table>
+<thead>
+<tr>
+  <th>刷新类型</th>
+  <th>视觉表现</th>
+  <th>使用建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>全屏刷新</strong></td>
+  <td>伴随多次闪烁</td>
+  <td>基础刷新模式</td>
+</tr>
+<tr>
+  <td><strong>快速刷新</strong></td>
+  <td>闪烁一次</td>
+  <td>连续操作≤5次后需全屏刷新</td>
+</tr>
+<tr>
+  <td><strong>局部刷新</strong></td>
+  <td>无闪烁</td>
+  <td>连续操作≤5次后需全屏刷新</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>注意</strong>：快速刷新和局部刷新连续操作<strong>5次后</strong>，必须执行一次全屏刷新，以消除残影堆积现象。</p>
+</blockquote>
 <h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
 <h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
 <table>
@@ -544,7 +575,7 @@ var _hmt = _hmt || [];
             </div>
             <div id="footer_bottom">
                 <ul>
-<li><a target="_blank" href="https://lilygo.cc/">深圳市芯元电子有限公司</a></li>
+<li><a target="_blank" href="https://lilygo.cc/">深圳市芯元电子科技有限公司</a></li>
 </ul>
 
             </div>

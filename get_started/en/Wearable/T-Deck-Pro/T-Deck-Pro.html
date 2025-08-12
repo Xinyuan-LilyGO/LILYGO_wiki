@@ -407,6 +407,37 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/olikraus/U8g2_for_Adafruit_GFX"  target="_blank">U8g2_for_Adafruit_GFX</a></li>
 <li><a href="https://github.com/esphome/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
 </ul>
+<h3 id="Display-Refresh-Methods">Display Refresh Methods</h3>
+<p>Refresh process explanation: (Refresh time: from screen movement start to stable image)</p>
+<table>
+<thead>
+<tr>
+  <th>Refresh Type</th>
+  <th>Visual Effect</th>
+  <th>Usage Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Full Refresh</strong></td>
+  <td>Multiple flashes</td>
+  <td>Basic refresh mode</td>
+</tr>
+<tr>
+  <td><strong>Fast Refresh</strong></td>
+  <td>Single flash</td>
+  <td>Requires full refresh after ≤5 consecutive operations</td>
+</tr>
+<tr>
+  <td><strong>Partial Refresh</strong></td>
+  <td>No flashing</td>
+  <td>Requires full refresh after ≤5 consecutive operations</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note</strong>: After <strong>5 consecutive operations</strong> using fast or partial refresh, always perform a full refresh to eliminate ghosting artifacts.</p>
+</blockquote>
 <h2 id="Software-Design">Software Design</h2>
 <h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
 <table>
