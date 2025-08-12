@@ -5,7 +5,7 @@ title: LILYGO T-PCIE
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-<!-- ![T-A7670E](./assets/T-A7670E-1.jpg) -->
+<!-- ![T-A7670E](./assets/SIM7600E/T-A7670E-1.jpg) -->
 
 </div>
 
@@ -34,23 +34,23 @@ T-SIM7600E-PCIE 采用 mini PCIe 外形规格，由一个 SIM7600 系列模块�
 
 #### 外观
 
-<img src="./assets/SIM7600E.jpg" alt="summary" width=80%>
+<img src="./assets/SIM7600E/SIM7600E.jpg" alt="summary" width=80%>
 
-<img src="./assets/SIM7600E-R.jpg" alt="summary" width=80%>
+<img src="./assets/SIM7600E/SIM7600E-R.jpg" alt="summary" width=80%>
 
 #### 引脚定义 
 
 <div style="display: flex; justify-content: space-between;">
   <!-- 左侧两张图片 -->
    <div style="display: flex; flex-direction: column;">
-    <img src="./assets/SIM7600E-1.jpg" alt="summary" width="60%">
-    <img src="./assets/SIM7600E-2.jpg" alt="summary" width="60%">
+    <img src="./assets/SIM7600E/SIM7600E-1.jpg" alt="summary" width="60%">
+    <img src="./assets/SIM7600E/SIM7600E-2.jpg" alt="summary" width="60%">
   </div>
   
   <!-- 右侧两张图片 -->
    <div style="display: flex; flex-direction: column;">
-    <img src="./assets/SIM7600E-3.jpg" alt="summary" width="40%">
-    <img src="./assets/SIM7600E-4.jpg" alt="summary" width="40%">
+    <img src="./assets/SIM7600E/SIM7600E-3.jpg" alt="summary" width="40%">
+    <img src="./assets/SIM7600E/SIM7600E-4.jpg" alt="summary" width="40%">
   </div>
 </div>
 
@@ -59,99 +59,6 @@ T-SIM7600E-PCIE 采用 mini PCIe 外形规格，由一个 SIM7600 系列模块�
 
 ## 模块资料
 ### 概述
-
-| 组件 | 描述 |
-| --- | --- |
-| MCU | ESP32-WROVER-B/E(B and E are shipped randomly) |
-| FLASH| 4MB/16M(可选) |
-| PSRAM | 8MB|
-| 时钟频率 | 240MHz |
-| 无线 | Wi-Fi: 802.11 b/g/n; BLE V5.0 |
-| IO 拓展	|2.54mm间距 × 2*16拓展IO接口 + 1 × 4.4V~6.0V 输入接口|
-| 电池 | 18650 电池
-| 存储 | TF 卡 |
-| 语音通话 | 支持语音功能
-| 按键 | 1 x RST 按键 + 1 x BOOT 按键 + 1 × IO0 按键 |
-| USB | 1 × USB Port and OTG(Type-C) |
-| SIM | 支持2G 3G 4G (Nano Sim)
-| 电源 | 5V/500mA 输入|
-| 工作电压 | 2.7V~3.6V |
-| 睡眠电流 | 700uA(±10%) |
-| 尺寸 | **75x33x10.5mm**  |
-| 孔位 | 4×2mm 定位孔 |
- 
- 
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">无线通讯模块</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>MCU</td>
-    <td>A7670E</td>
-  </tr>
-  <tr>
-    <td>支持地区</td>
-    <td>欧洲 中东 韩国 泰国</td>
-  </tr>
-  <tr>
-    <td>尺寸规格</td>
-    <td>LCC+LGA,124Pin</td>
-  </tr>
-  </tr>
-    <tr>
-    <td>大小</td>
-    <td>24*24*2.3mm</td>
-  </tr>
-    </tr>
-    <tr>
-    <td>频率波特率</td>
-    <td>LTE-FDD :B1/B3/B5/B8/B20<br>
-        LTE-TDD :N/A<br>
-        GSM:900/1800MHz,
-        </td>
-  </tr>
-  </tr>
-    </tr>
-    <tr>
-    <td>功耗</td>
-    <td>LTE(Mbps) :10(DL)/5(UL)<br>
-        GPRS/EDGE(Kbps) :236.8(DL) / 236.8(UL)<br>
-        </td>
-  </tr>
-    <tr>
-    <td>数据传输</td>
-    <td>LTE :3.8mA<br>
-        GSM :3.5mA<br>
-        </td>
-  </tr>
-    <tr>
-    <td>协议支持</td>
-    <td>TCP/IP/IPV4/IPV6/DNS/Multi-PDP/FTP/FTPS/HTTP/HTTPS</td>
-  </tr>
-  </tr>
-    <tr>
-    <td>Android RIL</td>
-    <td>Android 5.0及以上版本</td>
-  </tr>
-    </tr>
-    <tr>
-    <td>USB 驱动</td>
-    <td>windows/linux/Android</td>
-  </tr>
-    </tr>
-    <tr>
-    <td>可选拓展</td>
-    <td>GNSS<br>蓝牙</td>
-  </tr>
-    </tr>
-    <tr>
-    <td>认证</td>
-    <td>RoHS/CE(RED)/REACH</td>
-
-</table>
-
 
 > ⚠️⚠️⚠️ 4G版本不支持语音以及SIM功能 4G版本只支持数据传输
 
@@ -181,27 +88,9 @@ Github:[T-A7670E](https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX)
 * [StreamDebugger](https://github.com/vshymanskyy/StreamDebugger)      
 * [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus)       
 * [TinyGSM-fork](https://github.com/lewisxhe/TinyGSM-fork)   
- 
 
 ## 软件开发
 ### Arduino 设置参数
-
-| Setting                               | Value                                 |
-| :-------------------------------: | :-------------------------------: |
-| Board                                 | ESP32 Dev Module           |
-| CPU Frequency                   | 240MHz (WiFi/BT)     
-| Core Debug Level                | None  
-| Erase All Flash Before Sketch Upload | Disabled                             |
-| Events Run On                   | Core 1                               |
-| Flash Frequency                  | 80MHz
-| Flash Mode                         | QIO                      |
-| Flash Size                           | 4MB (32Mb)                    |
-| JATG  Adapter                      | Disabled                             |
-| Arduino Runs On                  | Core 1                               |
-| Partition Scheme                | default 4MB with spiffs (1.2MB APP/1.5MB spiffs) |
-| PSRAM                              | ENabled                             |
-| Upload Speed                      | 921600                             |
-
 
 ### 开发平台
 

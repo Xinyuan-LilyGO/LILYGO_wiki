@@ -96,6 +96,18 @@ Github:[T-Deck Pro](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
 * [U8g2_for_Adafruit_GFX](https://github.com/olikraus/U8g2_for_Adafruit_GFX)
 * [ESP32-audioI2S](https://github.com/esphome/ESP32-audioI2S)
 
+### Display Refresh Methods
+Refresh process explanation: (Refresh time: from screen movement start to stable image)
+
+| Refresh Type | Visual Effect | Usage Recommendation |
+|--------------|---------------|----------------------|
+| **Full Refresh** | Multiple flashes | Basic refresh mode |
+| **Fast Refresh** | Single flash | Requires full refresh after ≤5 consecutive operations |
+| **Partial Refresh** | No flashing | Requires full refresh after ≤5 consecutive operations |
+
+> **Note**: After **5 consecutive operations** using fast or partial refresh, always perform a full refresh to eliminate ghosting artifacts.
+
+
 ## Software Design
 ### Arduino Set Parameters
 
