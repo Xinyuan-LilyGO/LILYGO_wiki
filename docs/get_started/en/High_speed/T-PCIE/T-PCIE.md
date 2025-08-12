@@ -15,30 +15,31 @@ title: LILYGO T-PCIE
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
 
-## 简介
+## Introduction
 
-
-## 芯片型号
+## Chip Model
 ### SIM7600E
 
-SIM7600E-PCIE 是一款 LTE Cat 1 模块，支持 LTE-TDD/LTE-FDD/HSPA+/GSM/GPRS/EDGE 等多种无线通信模式。其最大下行速率可达 10Mbps，最大上行速率可达 5Mbps。
 
-T-SIM7600E-PCIE 采用 mini PCIe 外形规格，由一个 SIM7600 系列模块和一个 mini PCIe 适配板组成，便于客户集成。
+The **SIM7600E-PCIE** is an LTE Cat 1 module that supports multiple wireless communication modes, including LTE-TDD / LTE-FDD / HSPA+ / GSM / GPRS / EDGE.  
+It offers a maximum downlink rate of 10 Mbps and a maximum uplink rate of 5 Mbps.
 
-该模块集成了多种卫星高精度定位 (GNSS) 系统，内置多种网络协议，支持主流操作系统（如 Windows、Linux 和 Android 等的 USB 驱动程序）及软件功能。其 AT 命令与 SIM7500/SIM7600-H 系列模块兼容。
+The **T-SIM7600E-PCIE** adopts the mini PCIe form factor and consists of a SIM7600 series module and a mini PCIe adapter board for easy customer integration.
 
-同时，SIM7600-PCIE 系列集成了主要的工业标准接口，具备强大的扩展能力，提供包括 UART、USB、GPIO 等在内的丰富接口，适用于车联网 (telematics)、监控设备、客户终端设备 (CPE)、工业路由器、远程诊断等主要的物联网 (IoT) 应用场景。
+This module integrates multiple high-precision satellite positioning (GNSS) systems, has built-in network protocols, and supports mainstream operating systems such as Windows, Linux, and Android with available USB drivers. Its AT command set is compatible with the SIM7500/SIM7600-H series modules.
 
+In addition, the SIM7600-PCIE series integrates major industrial standard interfaces and provides strong scalability. Rich interfaces are available, including UART, USB, and GPIO.  
+It is suitable for IoT applications such as telematics, surveillance equipment, customer premises equipment (CPE), industrial routers, and remote diagnostics.
 
-规格书: [SIM7600E](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/T-SIM7600E-PCIE.pdf)
+**Datasheet**: [SIM7600E](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/T-SIM7600E-PCIE.pdf)
 
-#### 外观
+#### Appearance
 
 <img src="./assets/SIM7600E/SIM7600E.jpg" alt="summary" width=80%>
 
 <img src="./assets/SIM7600E/SIM7600E-R.jpg" alt="summary" width=80%>
 
-#### 引脚定义 
+#### Pin Definition 
 
 <div style="display: flex; justify-content: space-between;">
   <!-- 左侧两张图片 -->
@@ -54,34 +55,39 @@ T-SIM7600E-PCIE 采用 mini PCIe 外形规格，由一个 SIM7600 系列模块�
   </div>
 </div>
 
-### 引脚图 
+### Pinout Diagram
 
 
-## 模块资料
-### 概述
 
-### 相关资料链接
+## Module Information
+### Overview
+
+
+
+### Related Resources
 
 Github:[T-PCIE](https://github.com/Xinyuan-LilyGO/LilyGo-T-PCIE)
 
 
-#### 原理图
+#### Schematics
 
 [T-PCIE](https://github.com/Xinyuan-LilyGO/LilyGo-T-PCIE/blob/master/schematic/T-PCIE-V1.2.pdf)
 
-#### 依赖库
+#### Dependencies
 
 
-## 软件开发
-### Arduino 设置参数
 
-### 开发平台
+## Software Development
+### Arduino Settings
+
+
+### Development Platforms
 
 1. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)
 2. [Arduino IDE](https://www.arduino.cc/en/software)
 3. [VS Code](https://code.visualstudio.com/)
 4. [Platform IO](https://platformio.org/)
 
-## 产品技术支持 
+## Product Technical Support
 
 

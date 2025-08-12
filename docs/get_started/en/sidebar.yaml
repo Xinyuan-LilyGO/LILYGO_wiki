@@ -26,7 +26,9 @@ items:
     -   label: T-Camera Plus S3
         file: Display/T-Camera-Plus-S3/T-Camera-Plus-S3.md
     -   label: T-Keyboard-S3 Pro
-        file: Display/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md        
+        file: Display/T-Keyboard-S3-Pro/T-Keyboard-S3-Pro.md
+    -   label: T-Display Bar
+        file: Display/T-Display-Bar/T-Display-Bar.md
 -   label: Wearable and Handheld Kit
     items:
     -   label: T-Watch S3 Plus
@@ -103,7 +105,11 @@ items:
             -   label: T-ETH-Lite
                 file: High_speed/T-ETH-Lite/T-ETH-Lite/T-ETH-Lite.md
             -   label: T-ETH-Lite-S3
-                file: High_speed/T-ETH-Lite/T-ETH-Lite-S3/T-ETH-Lite-S3.md      
+                file: High_speed/T-ETH-Lite/T-ETH-Lite-S3/T-ETH-Lite-S3.md        
+        -   label: T-2Can
+            file: High_speed/T-2Can/T-2Can.md
+        -   label: T-PCIE
+            file: High_speed/T-PCIE/T-PCIE.md
 -   label: AI Kit
     items:
     -   label: T-Display K230
@@ -126,5 +132,9 @@ items:
     items:
     -   label: FAQ
         file: maixIV/m4ndock/FAQ.md
--   label: Meshtastic
-    file: Meshtastic/Meshtastic_lilygo.md        
+-   label: Meshtastic 
+    items:
+    -   label: Meshtastic device
+        file: Meshtastic/Meshtastic_lilygo.md
+    -   label: Meshtastic download
+        file: Meshtastic/Meshtastic_use.md 
