@@ -138,3 +138,5 @@ items:
         file: Meshtastic/Meshtastic_lilygo.md
     -   label: Meshtastic 下载
         file: Meshtastic/Meshtastic_use.md 
+    -   label: Meshtastic FAQ
+        file: Meshtastic/Meshtastic_FAQ/Mesthtastic_FAQ.md
