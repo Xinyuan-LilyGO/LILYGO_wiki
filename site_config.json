@@ -14,8 +14,7 @@
         },
         "pages": {
             "/": "pages/index/zh",
-            "/en/": "pages/index/en",
-            "/jp/": "pages/index/jp"
+            "/en/": "pages/index/en"
         },
         "assets": {
             "/static/": "static",
