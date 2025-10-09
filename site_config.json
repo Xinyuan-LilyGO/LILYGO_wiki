@@ -44,13 +44,12 @@
         ]
         },
         "pages": {
-            "/": [{
-                "url": "/en/",
-                "src": "pages/index/en"
-            }, {
-                "url": "/jp/",
-                "src": "pages/index/jp"
-            }]
+            "/": [
+                {
+                    "url": "/en/",
+                    "src": "pages/index/en"
+                }
+            ]
         }
     },
     "executable": {
