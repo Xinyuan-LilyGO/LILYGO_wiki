@@ -8,12 +8,12 @@
                 "items": [
                     {
                         "id": "zh",
-                        "url": "/maixpy3/zh/",
+                        "url": "/pages/index/zh/",
                         "label": "中文"
                     },
                     {
                         "id": "en",
-                        "url": "/maixpy3/en/",
+                        "url": "/pages/index/en/",
                         "label": "English"
                     }
                 ]
