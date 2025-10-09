@@ -1,23 +1,4 @@
 {
     "import": "config_en",
-    "name": "Development doc",
-     "navbar": {
-        "items": [
-            {
-                "id": "language",
-                "items": [
-                    {
-                        "id": "zh",
-                        "url": "/pages/index/zh/",
-                        "label": "中文1"
-                    },
-                    {
-                        "id": "en",
-                        "url": "/pages/index/en/",
-                        "label": "English"
-                    }
-                ]
-            }
-        ]
-    }
+    "name": "Development doc"
 }
