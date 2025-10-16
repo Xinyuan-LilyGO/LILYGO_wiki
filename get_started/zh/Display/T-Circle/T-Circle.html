@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Circle - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": ["LCD", "Display", "ESP32"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "./assets/T-Circle-1.jpg", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["T-Circle", "LCD", "ESP32"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -236,9 +236,9 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
-                                <li>LCD</li>
+                                <li>T-Circle</li>
                             
-                                <li>Display</li>
+                                <li>LCD</li>
                             
                                 <li>ESP32</li>
                             
@@ -272,8 +272,46 @@ var _hmt = _hmt || [];
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-circle-s3?variant=44912874062005">官网购买</a>
 </div>
 <blockquote>
-<p>注意：T-Circle 为 ESP32 版本，点这里切换到ESP32-S3版本<a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle-S3/T-Circle-S3.html"  target="_blank">T-Circle S3</a>版本</p>
+<p><strong>注意</strong>：T-Circle 为 ESP32 版本，点这里切换到 ESP32-S3 版本 <a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle-S3/T-Circle-S3.html"  target="_blank">T-Circle S3</a> 版本。</p>
 </blockquote>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Circle_V1.0</td>
+  <td style="text-align:center">2021-03-14</td>
+  <td style="text-align:left">初始版本</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Circle</td>
+  <td style="text-align:center">ESP32</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-circle-s3?variant=44912874062005"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
 <li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
@@ -288,21 +326,21 @@ var _hmt = _hmt || [];
 <li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
 <h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
-<p>LILYGO T-Circle是一款基于ESP32芯片的圆形屏幕开发板，专为便携式智能设备与嵌入式交互场景设计。核心搭载0.75英寸TFT LCD圆形显示屏，支持160×160像素分辨率与262K色彩显示，配备CST816D电容式触摸芯片实现精准触控交互。硬件配置包括16MB FLASH存储、8MB Octal SPI PSRAM内存，集成2.4GHz Wi-Fi与Bluetooth 5 (LE)无线通信功能。开发板提供12引脚扩展接口（包含SPI、I2C等通信总线），兼容Arduino等主流开发框架，适用于智能手表、物联网终端、微型交互设备等场景开发，兼具紧凑设计与多功能特性。</p>
+<p>LILYGO T-Circle是ESP32版本的圆形屏幕开发板，核心搭载0.75英寸TFT LCD圆形显示屏，支持160x160分辨率与262K色彩显示，配备CST816D电容式触摸芯片实现精准触控交互。硬件采用GCPD01N驱动芯片，通过12引脚（包括3V3供电、SPI接口的MOSI/SCK/CS、I2C通信的SDA/SCL、BLE使能引脚BLEEN等）与外部设备连接，兼容Arduino等开发框架。其紧凑设计集成了高精度显示、触控及低功耗通信功能，适用于智能手表、物联网设备界面或微型嵌入式系统的原型开发。</p>
 <h2 id="%E9%A2%84%E8%A7%88">预览</h2>
 <h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
 <div style="width:100%; display:flex;justify-content: center;">
-<img src="./assets/T-Circle-2.jpg" alt="T-Circle实物图" width=80%>
+<p><img src="./assets/T-Circle-2.jpg" alt="T-Circle" /></p>
 </div>
 <h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Circle-zh.jpg" alt="T-Circle引脚图" width=100%>
+<img src="./assets/T-Circle-zh.jpg" alt="summary" width=100%>
 <h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
 <h3 id="1.-MCU">1. MCU</h3>
 <ul>
-<li>芯片：ESP32-S3R8</li>
+<li>芯片：ESP32</li>
 <li>PSRAM：8M (Octal SPI)</li>
 <li>FLASH：16M</li>
-<li>其他说明：更多资料请访问<a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">乐鑫官方ESP32-S3数据手册</a></li>
+<li>其他说明：更多资料请访问<a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"  target="_blank">乐鑫官方ESP32数据手册</a></li>
 </ul>
 <h3 id="2.-%E5%B1%8F%E5%B9%95">2. 屏幕</h3>
 <ul>
@@ -310,20 +348,16 @@ var _hmt = _hmt || [];
 <li>分辨率：160x160px</li>
 <li>屏幕类型：TFT LCD</li>
 <li>驱动芯片：GC9D01N</li>
-<li>兼容库：TFT_eSPI、Arduino_GFX</li>
+<li>兼容库：TFT_eSPI, Arduino_GFX</li>
 <li>总线通信协议：SPI</li>
 </ul>
 <h3 id="3.-%E8%A7%A6%E6%91%B8">3. 触摸</h3>
 <ul>
 <li>芯片：CST816D</li>
-<li>总线通信协议：I2C</li>
-</ul>
-<h3 id="4.-%E9%9F%B3%E9%A2%91%E7%9B%B8%E5%85%B3">4. 音频相关</h3>
-<ul>
-<li>功放芯片：MAX98357A</li>
-<li>麦克风：MSM261S4030H0R、MP34DT05-A</li>
+<li>总线通信协议：IIC</li>
 </ul>
 <h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<img src="./assets/T-Circle-zh.jpg" alt="summary" width=80%>
 <table>
 <thead>
 <tr>
@@ -334,7 +368,7 @@ var _hmt = _hmt || [];
 <tbody>
 <tr>
   <td style="text-align:center">MCU</td>
-  <td style="text-align:center">ESP32-S3R8 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">ESP32</td>
 </tr>
 <tr>
   <td style="text-align:center">FLASH</td>
@@ -342,19 +376,23 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td style="text-align:center">PSRAM</td>
-  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center">8MB (Octal SPI)</td>
 </tr>
 <tr>
   <td style="text-align:center">屏幕</td>
-  <td style="text-align:center">0.75英寸 GC9D01N LCD 圆屏幕(160x160px)</td>
+  <td style="text-align:center">0.75英寸 GC9D01N LCD (160x160)</td>
 </tr>
 <tr>
   <td style="text-align:center">触摸</td>
-  <td style="text-align:center">CST816D 电容式触摸芯片</td>
+  <td style="text-align:center">CST816D 电容触摸屏</td>
+</tr>
+<tr>
+  <td style="text-align:center">总线</td>
+  <td style="text-align:center">SPI</td>
 </tr>
 <tr>
   <td style="text-align:center">无线</td>
-  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth</td>
 </tr>
 <tr>
   <td style="text-align:center">拓展接口</td>
@@ -385,65 +423,48 @@ var _hmt = _hmt || [];
 <tr>
   <th style="text-align:left">Example</th>
   <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
   <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Circle"  target="_blank">Basic Display</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
   <td style="text-align:left">基础显示示例</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:left">屏幕显示测试</td>
 </tr>
 <tr>
-  <td style="text-align:left">触摸功能测试</td>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Circle"  target="_blank">Touch Test</a></td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:left">CST816D触摸交互示例</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">触摸测试示例</td>
 </tr>
 <tr>
-  <td style="text-align:left">音频播放示例</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:left">MAX98357A功放测试</td>
-</tr>
-<tr>
-  <td style="text-align:left">麦克风采集示例</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:left">声音传感器数据采集</td>
-</tr>
-<tr>
-  <td style="text-align:left">Wi-Fi连接示例</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:left">无线网络连接测试</td>
-</tr>
-<tr>
-  <td style="text-align:left">蓝牙通信示例</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:left">BLE低功耗蓝牙示例</td>
+  <td style="text-align:left"><em>（更多示例请参考GitHub仓库）</em></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="firmware%E7%83%A7%E5%BD%95">firmware烧录</h3>
-<ol>
-<li>打开项目文件&quot;tools&quot;找到ESP32烧录工具并打开。</li>
-<li>选择正确的烧录芯片及烧录方式，点击&quot;OK&quot;，按步骤1-&gt;2-&gt;3-&gt;4-&gt;5完成烧录。若烧录失败，请按住&quot;BOOT-0&quot;键再尝试下载。</li>
-<li>烧录文件位于项目根目录&quot;<a href="https://github.com/Xinyuan-LilyGO/T-Circle/tree/main/firmware/"  target="_blank">firmware</a>&quot;文件夹下，选择对应版本下载即可。</li>
-</ol>
 <h3 id="PlatformIO">PlatformIO</h3>
 <ol>
-<li>安装<a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>，根据系统类型选择安装。</li>
-<li>打开VS Code侧边栏&quot;扩展&quot;（或按<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>），搜索&quot;PlatformIO IDE&quot;扩展并下载。</li>
-<li>安装扩展期间，前往GitHub下载程序：点击绿色&quot;&lt;&gt; Code&quot;下载主分支，或通过侧边栏下载&quot;Releases&quot;版本。</li>
-<li>扩展安装完成后，打开侧边栏&quot;资源管理器&quot;（或按<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>），点击&quot;打开文件夹&quot;，选择下载的项目代码文件夹并添加到工作区。</li>
-<li>打开项目中的&quot;platformio.ini&quot;文件，在&quot;[platformio]&quot;目录下取消注释需要烧录的示例程序（以&quot;default_envs = xxx&quot;为标头），点击左下角&quot;<kbd>√</kbd>&quot;编译，无误后连接设备点击&quot;<kbd>→</kbd>&quot;烧录。</li>
+<li>安装<a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>，根据你的系统类型选择安装。</li>
+<li>打开VisualStudioCode软件侧边栏的&quot;扩展&quot;（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索&quot;PlatformIO IDE&quot;扩展并下载。</li>
+<li>在安装扩展的期间，你可以前往GitHub下载程序，你可以通过点击带绿色字样的&quot;&lt;&gt; Code&quot;下载主分支程序，也通过侧边栏下载&quot;Releases&quot;版本程序。</li>
+<li>扩展安装完成后，打开侧边栏的资源管理器（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>打开），点击&quot;打开文件夹&quot;，找到刚刚你下载的项目代码（整个文件夹），点击&quot;添加&quot;，此时项目文件就添加到你的工作区了。</li>
+<li>打开项目文件中的&quot;platformio.ini&quot;（添加文件夹成功后PlatformIO会自动打开对应文件夹的&quot;platformio.ini&quot;）,在&quot;[platformio]&quot;目录下取消注释选择你需要烧录的示例程序（以&quot;default_envs = xxx&quot;为标头），然后点击左下角的&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击左下角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
 </ol>
 <h3 id="Arduino">Arduino</h3>
 <ol>
-<li>安装<a href="https://www.arduino.cc/en/software"  target="_blank">Arduino</a>，根据系统类型选择安装。</li>
-<li>打开项目文件夹的&quot;example&quot;目录，选择示例项目文件夹，打开&quot;.ino&quot;文件进入Arduino IDE工作区。</li>
-<li>打开&quot;工具&quot;-&gt;&quot;开发板&quot;-&gt;&quot;开发板管理器&quot;，搜索&quot;esp32&quot;，下载&quot;Espressif Systems&quot;提供的开发板文件。返回&quot;开发板&quot;菜单，选择&quot;ESP32 Arduino&quot;下的对应型号（以&quot;platformio.ini&quot;中&quot;board = xxx&quot;为准，若无对应型号需手动添加项目&quot;board&quot;目录下的开发板文件）。</li>
-<li>打开&quot;文件&quot;-&gt;&quot;首选项&quot;，找到&quot;项目文件夹位置&quot;，将项目&quot;libraries&quot;文件夹中的所有库文件复制到该目录下的&quot;libraries&quot;中。</li>
-<li>在&quot;工具&quot;菜单中选择正确设置，如下表：</li>
+<li>安装<a href="https://www.arduino.cc/en/software"  target="_blank">Arduino</a>，根据你的系统类型选择安装。</li>
+<li>打开项目文件夹的&quot;example&quot;目录，选择示例项目文件夹，打开以&quot;.ino&quot;结尾的文件即可打开Arduino IDE项目工作区。</li>
+<li>打开右上角&quot;工具&quot;菜单栏-&gt;选择&quot;开发板&quot;-&gt;&quot;开发板管理器&quot;，找到或者搜索&quot;esp32&quot;，下载作者名为&quot;Espressif Systems&quot;的开发板文件。接着返回&quot;开发板&quot;菜单栏，选择&quot;ESP32 Arduino&quot;开发板下的开发板类型，选择的开发板类型由&quot;platformio.ini&quot;文件中以[env]目录下的&quot;board = xxx&quot;标头为准，如果没有对应的开发板，则需要自己手动添加项目文件夹下&quot;board&quot;目录下的开发板。</li>
+<li>打开菜单栏&quot;文件&quot;-&gt;&quot;首选项&quot;，找到&quot;项目文件夹位置&quot;这一栏，将项目目录下的&quot;libraries&quot;文件夹里的所有库文件连带文件夹复制粘贴到这个目录下的&quot;libraries&quot;里边。</li>
+<li>在&quot;工具&quot;菜单中选择正确的设置，如下表所示。</li>
 </ol>
-<h4 id="ESP32-S3%E8%AE%BE%E7%BD%AE">ESP32-S3设置</h4>
+<h4 id="ESP32">ESP32</h4>
 <table>
 <thead>
 <tr>
@@ -454,27 +475,11 @@ var _hmt = _hmt || [];
 <tbody>
 <tr>
   <td style="text-align:center">Board</td>
-  <td style="text-align:center">ESP32S3 Dev Module</td>
+  <td style="text-align:center">ESP32 Dev Module</td>
 </tr>
 <tr>
   <td style="text-align:center">Upload Speed</td>
   <td style="text-align:center">921600</td>
-</tr>
-<tr>
-  <td style="text-align:center">USB Mode</td>
-  <td style="text-align:center">Hardware CDC and JTAG</td>
-</tr>
-<tr>
-  <td style="text-align:center">USB CDC On Boot</td>
-  <td style="text-align:center">Enabled</td>
-</tr>
-<tr>
-  <td style="text-align:center">USB Firmware MSC On Boot</td>
-  <td style="text-align:center">Disabled</td>
-</tr>
-<tr>
-  <td style="text-align:center">USB DFU On Boot</td>
-  <td style="text-align:center">Disabled</td>
 </tr>
 <tr>
   <td style="text-align:center">CPU Frequency</td>
@@ -494,52 +499,41 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td style="text-align:center">Partition Scheme</td>
-  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+  <td style="text-align:center">默认配置</td>
 </tr>
 <tr>
   <td style="text-align:center">PSRAM</td>
-  <td style="text-align:center">OPI PSRAM</td>
-</tr>
-<tr>
-  <td style="text-align:center">Arduino Runs On</td>
-  <td style="text-align:center">Core 1</td>
-</tr>
-<tr>
-  <td style="text-align:center">Events Run On</td>
-  <td style="text-align:center">Core 1</td>
+  <td style="text-align:center">Enabled</td>
 </tr>
 </tbody>
 </table>
 <ol start="6">
 <li>选择正确的端口。</li>
-<li>点击右上角&quot;<kbd>√</kbd>&quot;编译，无误后连接设备点击&quot;<kbd>→</kbd>&quot;烧录。</li>
+<li>点击右上角&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击右上角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
 </ol>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
 </ol>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<p><em>（功耗及其他测试数据待补充）</em></p>
 <h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
 <ul>
-<li><p><strong>Q. 不会搭建编程环境怎么办？</strong><br />
-A. 参考<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a>文档说明搭建。</p>
+<li><p><strong>Q. 看了以上教程我还是不会搭建编程环境怎么办？</strong><br />
+A. 如果看了以上教程还不懂如何搭建环境的可以参考<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a>文档说明来搭建。</p>
 </li>
-<li><p><strong>Q. Arduino IDE提示是否升级库文件？</strong><br />
-A. 选择不升级，不同版本库可能不兼容。</p>
+<li><p><strong>Q. 为什么我的板子一直烧录失败呢？</strong><br />
+A. 请按住&quot;BOOT&quot;按键，再按一下&quot;RST&quot;按键，然后点击烧录，进入下载模式。</p>
 </li>
-<li><p><strong>Q. &quot;Uart&quot;接口无串口数据输出？</strong><br />
-A. 项目默认将USB作为Uart0调试输出，需配置后使用外部&quot;Uart&quot;：<br />
-PlatformIO用户：修改&quot;platformio.ini&quot;中&quot;build_flags&quot;下的&quot;-DARDUINO_USB_CDC_ON_BOOT=true&quot;为&quot;-DARDUINO_USB_CDC_ON_BOOT=false&quot;。<br />
-Arduino用户：在&quot;工具&quot;中设置USB CDC On Boot为&quot;Disabled&quot;。</p>
-</li>
-<li><p><strong>Q. 烧录失败？</strong><br />
-A. 按住&quot;BOOT-0&quot;按键重新下载程序。</p>
+<li><p><strong>Q. T-Circle 和 T-Circle S3 有什么区别？</strong><br />
+A. T-Circle 核心主控为 ESP32，而 T-Circle S3 核心主控为性能更强的 ESP32-S3。请根据您的项目需求选择相应的版本。</p>
 </li>
 </ul>
 <h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/project/T-Circle-S3_V1.0.pdf"  target="_blank">T-Circle原理图</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/project/T-Circle-S3_V1.0.pdf"  target="_blank">T-Circle-S3</a> <em>(请注意，此原理图为S3版本，ESP32版本原理图请参考GitHub仓库)</em></li>
 </ul>
 <h2 id="%E8%B5%84%E6%96%99">资料</h2>
 <ul>
@@ -550,9 +544,9 @@ A. 按住&quot;BOOT-0&quot;按键重新下载程序。</p>
 </ul>
 <h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
 <ul>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus-1.1.16</a></li>
 <li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI-2.5.43</a></li>
+<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus-1.1.16</a></li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S-3.0.6</a></li>
 <li><a href="https://github.com/DFRobot/DFrobot_MSM261"  target="_blank">DFRobot_MSM261</a></li>
 <li><a href="https://github.com/FastLED/FastLED"  target="_blank">FastLED-3.6.0</a></li>
