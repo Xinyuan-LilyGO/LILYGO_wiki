@@ -142,11 +142,6 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 | [touch](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/touch) | | ✓ | 触摸功能测试 |
 | [screen_touch_lvgl_9](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/screen_touch_lvgl_9) | | ✓ | 屏幕触摸与LVGL结合示例 |
 
-### firmware烧录
-1. 打开项目文件"tools"找到ESP32烧录工具，打开。
-2. 选择正确的烧录芯片以及烧录方式点击"OK"，如图所示根据步骤1->2->3->4->5即可烧录程序，如果烧录不成功，请按住"BOOT-0"键再下载烧录。
-3. 烧录文件在项目文件根目录"[firmware](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/firmware/)"文件下，里面有对firmware文件版本的说明，选择合适的版本下载即可。
-
 ### PlatformIO
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
 2. 打开VisualStudioCode软件侧边栏的"扩展"（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索"PlatformIO IDE"扩展并下载。
@@ -181,24 +176,6 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 
 6. 选择正确的端口。
 7. 点击右上角"<kbd>√</kbd>"进行编译，如果编译无误，将单片机连接电脑，点击右上角"<kbd>→</kbd>"即可进行烧录。
-
-### ESP-IDF Visual Studio Code
-1. 安装 [Visual Studio Code](https://code.visualstudio.com/Download) ，根据你的系统类型选择安装。
-2. 打开 VisualStudioCode 软件侧边栏的"扩展"（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索"ESP-IDF"扩展并下载。
-3. 在安装扩展的期间，使用git命令克隆仓库
-
-        git clone --recursive https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75.git
-
-    克隆时候需要同时加上"--recursive"，如果克隆时候未加上那么之后使用的时候需要初始化一下子模块
-
-        git submodule update --init --recursive
-
-4. 下载安装 [ESP-IDF v5.4.1](https://dl.espressif.cn/dl/esp-idf/?idf=4.4)，记录一下安装路径，打开之前安装好的"ESP-IDF"扩展打开"配置 ESP-IDF 扩展"，选择"USE EXISTING SETUP"菜单，选择"Search ESP-IDF in system"栏，正确配置之前记录的安装路径：
-   - **ESP-IDF directory (IDF_PATH):** `你的安装路径xxx\Espressif\frameworks\esp-idf-v5.4`  
-   - **ESP-IDF Tools directory (IDF_TOOLS_PATH):** `你的安装路径xxx\Espressif`  
-    点击右下角的"install"进行框架安装。
-5. 点击 Visual Studio Code 底部菜单栏的 ESP-IDF 扩展菜单"SDK 配置编辑器"，在搜索栏里搜索"Select the example to build"字段，选择你所需要编译的项目，再在搜索栏里搜索"Select the camera type"字段，选择你的板子板载的摄像头类型，点击保存。
-6. 点击 Visual Studio Code 底部菜单栏的"设置乐鑫设备目标"，选择**ESP32P4**，点击底部菜单栏的"构建项目"，等待构建完成后点击底部菜单栏的"选择要使用的端口"，之后点击底部菜单栏的"烧录项目"进行烧录程序。
 
 ### 开发平台
 1. [Micropython](https://micropython.org/)
@@ -243,10 +220,10 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 ## 相关测试
 
 ### 功耗
-| Firmware | Program | Description | Picture |
-| :------: | :-----: | :---------- | :-----: |
-| `[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | 功耗: 1282.8uA | <img src="image/13.jpg" alt="example" width="50%"> |
-| `[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | 功耗: 174.2uA | <img src="image/12.jpg" alt="example" width="50%"> |
+| Firmware | Program | Description | 
+| :------: | :-----: | :---------- | 
+| `[T-Display-S3-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Light Sleep Wake Up` | 功耗: 1282.8uA |
+| `[T-Display-S3-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin` | `Deep Sleep Wake Up` | 功耗: 174.2uA | 
 
 ## 常见问题
 
