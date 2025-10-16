@@ -2,7 +2,6 @@
 title: LILYGO T-Display S3 AMOLED 1.43
 show_source: false
 tags: AMOLED, Display
-cover: ./assets/T-Display-S3-AMOLED-1.43-1.jpg
 ---
 
 <div style="width:100%; display:flex;justify-content: center;">
@@ -283,4 +282,3 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 * [MiniTV](https://github.com/moononournation/MiniTV)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)
 
-## 产品技术支持
