@@ -238,18 +238,18 @@ LILYGO T-Circle S3 是一款基于ESP32-S3无线微控制器的多功能开发�
 | SDA         | IO11       |
 | SCL         | IO14       |
 
-> #### T-Circle-S3_V1.0 version
-> | Microphone pins  | ESP32S3 pins|
-> | :------------------: | :------------------:|
-> | BCLK         | IO7       |
-> | WS         | IO9       |
-> | DATA         | IO8       |
+ #### T-Circle-S3_V1.0 version
+ | Microphone pins  | ESP32S3 pins|
+ | :------------------: | :------------------:|
+ | BCLK         | IO7       |
+ | WS         | IO9       |
+ | DATA         | IO8       |
 
-> #### T-Circle-S3_V1.1 version
-> | Microphone pins  | ESP32S3 pins|
-> | :------------------: | :------------------:|
-> | LRCLK         | IO9       |
-> | DATA         | IO8       |
+ #### T-Circle-S3_V1.1 version
+ | Microphone pins  | ESP32S3 pins|
+ | :------------------: | :------------------:|
+ | LRCLK         | IO9       |
+ | DATA         | IO8       |
 
 | Speaker pins  | ESP32S3 pins|
 | :------------------: | :------------------:|
