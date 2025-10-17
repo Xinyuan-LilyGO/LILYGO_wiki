@@ -151,37 +151,37 @@ LILYGO T-Circle S3 是一款基于ESP32-S3无线微控制器的多功能开发�
 
 ### 示例支持
 
-| Example | `[Platformio IDE][espressif32-v6.5.0]`<br />`[Arduino IDE][esp32_v2.0.14]` | `[ESP-IDF][esp-idf-V4.4.8]`| `[ESP-IDF][esp-idf-V5.3.2]`| Description | Picture |
-| ------  | ------  | ------ | ------ | ------ | ------ | 
-| [Animated_Eyes_1](./examples/Animated_Eyes_1) |  <p align="center">![alt text][supported] | || |  |
-| [APA102_Blink](./examples/APA102_Blink) | <p align="center">![alt text][supported] | | ||  |
-| [CST816D](./examples/CST816D) | <p align="center">![alt text][supported] |  |  |
-| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  |
-| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  |
-| [GFX](./examples/GFX) | <p align="center">![alt text][supported] |  |  |
-| [GFX_CST816D_Image](./examples/GFX_CST816D_Image) | <p align="center">![alt text][supported] | | ||  |
-| [GFX_Wifi_AP_Contract](./examples/GFX_Wifi_AP_Contract) | <p align="center">![alt text][supported] | || |  |
-| [GFX_Wifi_STA_Contract](./examples/GFX_Wifi_STA_Contract) | <p align="center">![alt text][supported] | || |  |
-| [IIC_Scan_2](./examples/IIC_Scan_2) | <p align="center">![alt text][supported] | | ||  |
-| [Original_Test](./examples/Original_Test) | <p align="center">![alt text][supported] ||| 出厂初始测试文件 |  |
-| [TFT](./examples/TFT) | <p align="center">![alt text][supported] | || |  |
-| [Voice_Speaker](./examples/Voice_Speaker) | <p align="center">![alt text][supported] |  ||  |  |
-| [Voice_Speaker_APA102](./examples/Voice_Speaker_APA102) | <p align="center">![alt text][supported] | ||  |  |
-| [Wifi_Music](./examples/Wifi_Music) | <p align="center">![alt text][supported] | ||  |  |
-| [lilygo_s3_apps](https://github.com/Xinyuan-LilyGO/T-Circle-S3/tree/esp-idf-V4.4.8/examples/lilygo_s3_apps) | | <p align="center">![alt text][supported] || 该示例为语音控制示例，由Grovety提供，以下是原始链接: <br /> [Grovety lilygo_s3_apps](https://github.com/Grovety/lilygo_s3_apps)| <p align="center"> <img src="image/1.jpg" alt="example" width="100%"> </p> |
-| [XiaoZhi_AI_Chatbot](https://github.com/78/xiaozhi-esp32?tab=readme-ov-file) | || <p align="center">![alt text][supported] | 该示例为小智AI示例，由Xiaoxia提供| <p align="center"> <img src="image/15.jpg" alt="example" width="100%"> </p> |
+| Example | `[Platformio IDE][espressif32-v6.5.0]`<br />`[Arduino IDE][esp32_v2.0.14]` | `[ESP-IDF][esp-idf-V4.4.8]`| `[ESP-IDF][esp-idf-V5.3.2]`| Description |
+| ------  | ------  | ------ | ------ | ------ | 
+| [Animated_Eyes_1](./examples/Animated_Eyes_1) |  <p align="center">![alt text][supported] | || |  
+| [APA102_Blink](./examples/APA102_Blink) | <p align="center">![alt text][supported] | | ||  
+| [CST816D](./examples/CST816D) | <p align="center">![alt text][supported] |  |  
+| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
+| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
+| [GFX](./examples/GFX) | <p align="center">![alt text][supported] |  |  
+| [GFX_CST816D_Image](./examples/GFX_CST816D_Image) | <p align="center">![alt text][supported] | | ||  
+| [GFX_Wifi_AP_Contract](./examples/GFX_Wifi_AP_Contract) | <p align="center">![alt text][supported] | || |  
+| [GFX_Wifi_STA_Contract](./examples/GFX_Wifi_STA_Contract) | <p align="center">![alt text][supported] | || |  
+| [IIC_Scan_2](./examples/IIC_Scan_2) | <p align="center">![alt text][supported] | | ||  
+| [Original_Test](./examples/Original_Test) | <p align="center">![alt text][supported] ||| 出厂初始测试文件 |  
+| [TFT](./examples/TFT) | <p align="center">![alt text][supported] | || |  
+| [Voice_Speaker](./examples/Voice_Speaker) | <p align="center">![alt text][supported] |  ||  |  
+| [Voice_Speaker_APA102](./examples/Voice_Speaker_APA102) | <p align="center">![alt text][supported] | ||  |  
+| [Wifi_Music](./examples/Wifi_Music) | <p align="center">![alt text][supported] | ||  |  
+| [lilygo_s3_apps](https://github.com/Xinyuan-LilyGO/T-Circle-S3/tree/esp-idf-V4.4.8/examples/lilygo_s3_apps) | | <p align="center">![alt text][supported] || 该示例为语音控制示例，由Grovety提供，以下是原始链接: <br /> [Grovety lilygo_s3_apps](https://github.com/Grovety/lilygo_s3_apps)|
+| [XiaoZhi_AI_Chatbot](https://github.com/78/xiaozhi-esp32?tab=readme-ov-file) | || <p align="center">![alt text][supported] | 该示例为小智AI示例，由Xiaoxia提供|
 
 [supported]: https://img.shields.io/badge/-supported-green "example"
 
 
 | Firmware | Description | Picture |
 | ------  | ------  | ------ |
-| [Original_Test(T-Circle-S3_V1.0)](./firmware/[T-Circle-S3_V1.0][Original_Test]_firmware_V1.0.1.bin) | 出厂程序 |  |
-| [Original_Test(T-Circle-S3_V1.1)](./firmware/（V1.1版本修改麦克风型号）[T-Circle-S3_V1.1][Original_Test]_firmware_202502141426.bin) | 出厂程序 |  |
-| [GFX_Wifi_AP_Contract](./firmware/[T-Circle-S3_V1.0] [GFX_Wifi_AP_Contract]_firmware_V1.0.0) | 初始版本 |  |
-| [GFX_Wifi_STA_Contract](./firmware/[T-Circle-S3_V1.0][GFX_Wifi_STA_Contract]_firmware_V1.0.0) | 初始版本 |  |
-| [lilygo_s3_apps](./firmware/[T-Circle-S3_V1.0]_[lilygo_s3_apps]_firmware_V1.0.0.bin) | 初始版本 |  |
-| [xiaozhi_esp32](./firmware/[T-Circle-S3_V1.0][xiaozhi-esp32_V1.0.1]_firmware_202501240943.bin) | |  |
+| [Original_Test(T-Circle-S3_V1.0)](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BOriginal_Test%5D_firmware_V1.0.1.bin) | 出厂程序 |  |
+| [Original_Test(T-Circle-S3_V1.1)](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%EF%BC%88V1.1%E7%89%88%E6%9C%AC%E4%BF%AE%E6%94%B9%E9%BA%A6%E5%85%8B%E9%A3%8E%E5%9E%8B%E5%8F%B7%EF%BC%89%5BT-Circle-S3_V1.1%5D%5BOriginal_Test%5D_firmware_202502141426.bin) | 出厂程序 |  |
+| [GFX_Wifi_AP_Contract](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BGFX_Wifi_AP_Contract%5D_firmware_V1.0.0.bin) | 初始版本 |  |
+| [GFX_Wifi_STA_Contract](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BGFX_Wifi_STA_Contract%5D_firmware_V1.0.0.bin) | 初始版本 |  |
+| [lilygo_s3_apps](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D_%5Blilygo_s3_apps%5D_firmware_V1.0.0.bin) | 初始版本 |  |
+| [xiaozhi_esp32](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5Bxiaozhi-esp32_V1.0.1%5D_firmware_202501240943.bin) | |  |
 ### PlatformIO
 1.  安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
 2.  打开VisualStudioCode软件侧边栏的"扩展"（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索"PlatformIO IDE"扩展并下载。
