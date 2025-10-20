@@ -121,7 +121,6 @@ T-Display K230 是继 K210 之后，基于嘉楠科技最新芯片 K230 设计�
 
 -[K230 SDK视频教程](https://www.youtube.com/watch?v=lxcQWDoruOI)
 
-<iframe style src="https://www.youtube.com/watch?v=lxcQWDoruOI" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ### K230 SDK结构简介
 
