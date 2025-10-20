@@ -285,7 +285,7 @@ The T-Watch S3 Plus is an enhanced version based on the T-Watch S3, adding GPS f
         * macOS: `/Users/{username}/Documents/Arduino`
         * Linux: `/home/{username}/Arduino`
   
-> \[!IMPORTANT]
+
 > Please note that the libraries in LilyGoLib-ThirdParty are not necessarily the latest versions. Please do not upgrade the versions of the dependent libraries before confirming that the hardware is running normally.
 ArduinoIDE will prompt that there is a new version of the library to upgrade every time it is opened.
 Please confirm that it is running normally before trying to update to the latest version. If you encounter problems, please roll back to the version of the dependent library that runs normally. The current list of dependent library versions can be viewed [here](./third_party.md#t-watch-s3-third-party)
@@ -324,7 +324,6 @@ Please confirm that it is running normally before trying to update to the latest
 10. Click `upload` , Wait for compilation and writing to complete
 11. If you cannot upload sketch or the USB device keeps popping up on the computer, please manually put the device into download mode. How to enter download mode, please see the [here](#t-watch-s3-plus-enter-download-mode)
 
-> \[!TIP]
 >
 > * If there is no message output from the serial port, please check whether USB CDC ON Boot is set to Enabled.
 > * Board Revision changes according to the actual RF module model. The current default version is SX1262
@@ -332,8 +331,7 @@ Please confirm that it is running normally before trying to update to the latest
 
 ### T-Watch-S3-Plus Enter Download Mode
 
-> \[!IMPORTANT]
->
+
 > Download mode is only required when the program is not allowed to upload the sketch. This step is not required under normal circumstances.
 >
 > 🤖 T-Watch-S3-Plus the BOOT button and RST button have been reserved on the edge of the shell. Please follow the steps below to put the device into download mode.
