@@ -57,14 +57,14 @@ T-Display S3 AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开
 
 ## 模块
 
-### 1. MCU
+### MCU
 
 *   芯片：ESP32-S3-R8
 *   PSRAM：8M (Octal SPI)
 *   FLASH：16M
 *   其他说明：更多资料请访问[乐鑫官方ESP32-S3数据手册](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
 
-### 2. 屏幕
+### 屏幕
 
 *   尺寸：1.91英寸AMOLED
 *   分辨率：待补充
@@ -73,21 +73,21 @@ T-Display S3 AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开
 *   兼容库：TFT_eSPI, Arduino_GFX
 *   总线通信协议：SPI/QSPI
 
-### 3. 触摸
+### 触摸
 
 *   类型：电容触摸屏
 *   总线通信协议：I2C
 
-### 4. LoRa
+### LoRa
 
 *   支持频段：1276/868/915MHz
 
-### 5. 电源管理
+### 电源管理
 
 *   PMU芯片：AXPM65611
 *   充电管理：BQ25896
 
-### 6. RTC
+### RTC
 
 *   芯片：PCF85063ATL/1
 
