@@ -292,24 +292,26 @@ T-Watch S3 Plus 是基于 T-Watch S3 的增强版本，增加了GPS功能，是�
 6. `文件` -> `示例` -> `LilyGOLib` -> `helloworld`
 7. `工具` -> `开发板` -> `esp32`，请从下表中选择
 
-   | Arduino IDE 设置 | 值 |
-   | ------------------------------------ | --------------------------------- |
-   | 开发板 | **LilyGo T-Watch-S3** |
-   | 端口 | 你的端口 |
-   | USB CDC On Boot | 启用 |
-   | CPU 频率 | 240MHZ(WiFi) |
-   | 核心调试级别 | 无 |
-   | USB DFU On Boot | 禁用 |
-   | 上传前擦除所有闪存 | 禁用 |
-   | 事件运行于 | 核心 1 |
-   | JTAG 适配器 | 禁用 |
-   | Arduino 运行于 | 核心 1 |
-   | USB Firmware MSC On Boot | 禁用 |
-   | 分区方案 | **16M Flash(3M APP/9.9MB FATFS)** |
-   | 开发板版本 | **Radio-SX1262** |
-   | 上传模式 | **UART0/Hardware CDC** |
-   | 上传速度 | 921600 |
-   | USB 模式 | **CDC and JTAG** |
+| Arduino IDE Setting                  | Value                          |
+|--------------------------------------|--------------------------------|
+| Board                                | LilyGo T-Watch-S3              |
+| Port                                 | Your port                      |
+| USB CDC On Boot                      | Enabled                        |
+| CPU Frequency                        | 240MHZ(WiFi)                   |
+| Core Debug Level                     | None                           |
+| USB DFU On Boot                      | Disable                        |
+| Erase All Flash Before Sketch Upload | Disable                        |
+| Events Run On                        | Core 1                         |
+| JTAG Adapter                         | Disable                        |
+| Arduino Runs On                      | Core 1                         |
+| USB Firmware MSC On Boot             | Disable                        |
+| Partition Scheme                     | 16M Flash(3M APP/9.9MB FATFS)  |
+| Board Revision                       | Radio-SX1262                   |
+| Upload Mode                          | UART0/Hardware CDC             |
+| Upload Speed                         | 921600                         |
+| USB Mode                             | CDC and JTAG                   |
+| USB Mode                             | CDC and JTAG                   |
+
 
 8. **开发板版本选项**，请根据实际购买的RF类型选择。当前选项有：
    * Radio-SX1262(Sub 1G LoRa)
