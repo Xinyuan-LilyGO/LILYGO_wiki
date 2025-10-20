@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-PICO-2350 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["RP2350", "ESP32-C6", "Raspberry Pi", "Dual-Core"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -236,6 +236,14 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>RP2350</li>
+                            
+                                <li>ESP32-C6</li>
+                            
+                                <li>Raspberry Pi</li>
+                            
+                                <li>Dual-Core</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -259,115 +267,874 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-PICO-2350-03.jpg" alt="T-PICO-2350-03" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-PICO-2350-03.jpg" alt="T-PICO-2350" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-pico?variant=45197490585781">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
 </div>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>T-Pico2350 是延续T-Pico系列的另外一款基于树莓派芯片RP2350设计制造的版本，采用T-Displya S3 Pro 外部扩展版本的外壳设计，这个外壳设计的特点是预留了多种外部功能扩展设计的接口，支持排母的扩展模式和13pin 0.3间距的FPC扩展接口模式，同时底部预留了多个M1.4的内嵌铜螺母用于底部扩展固定使用，集成了RP2350+ESP32-C6+2.33寸电容触摸屏+TF卡+HDMI接口+2个QWIIC接口+PMU，支持电池供电和USB供电，USB接口延续了T-Pico系列的设计，通过正反插可以对两个芯片进行编程。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-PICO-2350-04.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-PICO-2350-01.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">树莓派模块</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>CPU</td>
-    <td>RP2350</td>
-  </tr>
-  <tr>
-    <td>Flash</td>
-    <td>16MB</td>
-  </tr>
-  <tr>
-    <td>SRAM</td>
-    <td>520kB</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">ESP32模块</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>主控</td>
-    <td>ESP32-C6-MINI-1U-N4</td>
-  </tr>
-  <tr>
-    <td>Flash</td>
-    <td>4MB</td>
-  </tr>
-  <tr>
-    <td>无线协议</td>
-    <td>2.4G WiFi 6 + 蓝牙(BLE)</td>
-  </tr>
-    <tr>
-    <td>无线标准</td>
-    <td>802.11b/g/n</td>
-  </tr>
-</table>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>2.33英寸IPS LCD</td>
-</tr>
-<tr>
-  <td>触摸</td>
-  <td>XL9535 IIC协议</td>
-</tr>
-<tr>
-  <td>HDMI</td>
-  <td>19pin HDMI 接口</td>
-</tr>
-<tr>
-  <td>IO 接口</td>
-  <td>2.54mm间距 × 2*13拓展IO接口</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>2 × QWIIC接口</td>
-</tr>
-<tr>
-  <td>孔位</td>
-  <td>M1.4mm *4</td>
+  <td style="text-align:center">T-PICO-2350_V1.2</td>
+  <td style="text-align:center">2024-01-01</td>
+  <td style="text-align:left">初始版本</td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/tree/master"  target="_blank">T-PICO-2350</a></p>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">Main SOC</th>
+  <th style="text-align:center">Wireless SOC</th>
+  <th style="text-align:center">Flash</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-PICO-2350</td>
+  <td style="text-align:center">RP2350</td>
+  <td style="text-align:center">ESP32-C6</td>
+  <td style="text-align:center">16MB + 4MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-pico?variant=45197490585781"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://github.com/lewisxhe/SensorLib/blob/master/datasheet/LTR-553ALS-01.pdf"  target="_blank">Light Sensor datasheet</a></li>
-<li><a href="https://www.raspberrypi.com/documentation/microcontrollers/silicon.html#rp2350"  target="_blank">RP2350</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
+</ul>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>T-PICO-2350 是延续T-Pico系列的另外一款基于树莓派芯片RP2350设计制造的版本，采用T-Display S3 Pro外部扩展版本的外壳设计，这个外壳设计的特点是预留了多种外部功能扩展设计的接口，支持排母的扩展模式和13pin 0.3间距的FPC扩展接口模式，同时底部预留了多个M1.4的内嵌铜螺母用于底部扩展固定使用。集成了RP2350+ESP32-C6+2.33寸电容触摸屏+TF卡+HDMI接口+2个QWIIC接口+PMU，支持电池供电和USB供电，USB接口延续了T-Pico系列的设计，通过正反插可以对两个芯片进行编程。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-PICO-2350-04.jpg" alt="T-PICO-2350" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-PICO-2350-01.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="1.-%E4%B8%BB%E5%A4%84%E7%90%86%E5%99%A8-%28RP2350%29">1. 主处理器 (RP2350)</h3>
+<ul>
+<li>芯片：树莓派 RP2350</li>
+<li>Flash：16MB</li>
+<li>SRAM：520kB</li>
+<li>其他说明：更多资料请访问<a href="https://www.raspberrypi.com/documentation/microcontrollers/silicon.html#rp2350"  target="_blank">树莓派RP2350文档</a></li>
+</ul>
+<h3 id="2.-%E6%97%A0%E7%BA%BF%E5%8D%8F%E5%A4%84%E7%90%86%E5%99%A8-%28ESP32-C6%29">2. 无线协处理器 (ESP32-C6)</h3>
+<ul>
+<li>芯片：ESP32-C6-MINI-1U-N4</li>
+<li>Flash：4MB</li>
+<li>无线协议：2.4G WiFi 6 + 蓝牙(BLE)</li>
+<li>无线标准：802.11b/g/n</li>
+</ul>
+<h3 id="3.-%E5%B1%8F%E5%B9%95">3. 屏幕</h3>
+<ul>
+<li>尺寸：2.33英寸IPS LCD</li>
+<li>驱动芯片：ST7796S</li>
+<li>总线通信协议：SPI</li>
+</ul>
+<h3 id="4.-%E8%A7%A6%E6%91%B8">4. 触摸</h3>
+<ul>
+<li>芯片：XL9535</li>
+<li>总线通信协议：I2C</li>
+</ul>
+<h3 id="5.-%E6%89%A9%E5%B1%95%E6%8E%A5%E5%8F%A3">5. 扩展接口</h3>
+<ul>
+<li>HDMI：19pin HDMI接口</li>
+<li>QWIIC：2 × QWIIC接口</li>
+<li>IO接口：2×13 扩展IO接口</li>
+<li>FPC接口：13pin 0.3mm间距FPC扩展接口</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">主处理器</td>
+  <td style="text-align:center">RP2350</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线协处理器</td>
+  <td style="text-align:center">ESP32-C6-MINI-1U-N4</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash</td>
+  <td style="text-align:center">16MB (RP2350) + 4MB (ESP32-C6)</td>
+</tr>
+<tr>
+  <td style="text-align:center">SRAM</td>
+  <td style="text-align:center">520kB (RP2350)</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">2.33英寸 IPS LCD</td>
+</tr>
+<tr>
+  <td style="text-align:center">触摸</td>
+  <td style="text-align:center">XL9535 I2C电容触摸</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF卡</td>
+</tr>
+<tr>
+  <td style="text-align:center">视频输出</td>
+  <td style="text-align:center">HDMI接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">WiFi 6 + BLE (ESP32-C6)</td>
+</tr>
+<tr>
+  <td style="text-align:center">扩展接口</td>
+  <td style="text-align:center">2×13 IO + 2×QWIIC + FPC</td>
+</tr>
+<tr>
+  <td style="text-align:center">电源管理</td>
+  <td style="text-align:center">集成PMU</td>
+</tr>
+<tr>
+  <td style="text-align:center">供电方式</td>
+  <td style="text-align:center">电池供电 + USB供电</td>
+</tr>
+<tr>
+  <td style="text-align:center">固定孔位</td>
+  <td style="text-align:center">4 × M1.4mm</td>
+</tr>
+<tr>
+  <td style="text-align:center">编程接口</td>
+  <td style="text-align:center">正反插USB可分别编程两个芯片</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">C/C++</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/tree/master/examples/Factory"  target="_blank">Factory</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:left">出厂示例</td>
+</tr>
+<tr>
+  <td style="text-align:left"><em>（更多示例请参考GitHub仓库）</em></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>更多 <strong>RP2040 或 RP2350</strong> 芯片功能示例，请参考 <a href="https://github.com/earlephilhower/arduino-pico/tree/master/libraries"  target="_blank">arduino-pico-libraries</a></li>
+<li>更多 <strong>ESP32-C6</strong> 芯片功能示例，请参考 <a href="https://github.com/espressif/arduino-esp32/tree/master/libraries"  target="_blank">arduino-esp32-libraries</a></li>
+<li><strong>ESP32-C6</strong> <a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32c6/Get_Started/index.html"  target="_blank">AT命令集</a></li>
+</ul>
+<h3 id="%E6%96%B0%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97">新用户指南</h3>
+<ul>
+<li>首次使用时，需要使用 <a href="https://zadig.akeo.ie/"  target="_blank">Zadig</a> 替换驱动以正确识别端口。</li>
+<li><code>T-PicoPro</code> 采用可逆Type-C设计，分别对应 <strong>RP2350</strong> 的端口和 <strong>ESP32-C6</strong> 的USB端口。</li>
+<li>如何识别 RP2350 的端口？<ul>
+<li>按住 <code>T-PicoPro</code> 侧面的 <strong>BOOT</strong> 按钮，然后插入 <strong>USB-C</strong>。如果电脑将其识别为磁盘，那么这就是 <strong>RP2350</strong> 的端口。</li>
+</ul>
+</li>
+<li>除了作为UART外，T-PicoPro 的 <code>QWIIC</code> UART端口也可以用作普通IO。</li>
+<li><code>QWIIC</code> I2C端口不能用于其他用途，只能配置为I2C接口，因为它连接到屏幕触摸和PMU。</li>
+<li><strong>ESP32C6</strong> 使用了修改过的AT固件，<code>交换了TX和RX</code>。您可以在此处找到AT固件的自定义编译方法 <a href="https://docs.espressif.com/projects/esp-at/en/latest/esp32c6/AT_Command_Set/index.html"  target="_blank">这里</a>。</li>
+<li><strong>ESP32-C6</strong> 默认AT固件编译于 <code>V3.3.0-dev</code>。该固件已简单修改（添加了GPIO控制功能），源代码可以在 <a href="https://github.com/lewisxhe/esp-at"  target="_blank">这里</a> 找到，具体更改请参见 <a href="https://github.com/lewisxhe/esp-at/commit/66f9f164584fbf6e01158b5fb5578f0fd495b498"  target="_blank">commit</a>。</li>
+<li><strong>T-PicoPro</strong> 充电指示灯可以通过软件关闭。如果未连接电池，指示灯会闪烁。</li>
+</ul>
+<h3 id="PlatformIO-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89">PlatformIO 快速开始（推荐）</h3>
+<ol>
+<li>安装 <a href="https://code.visualstudio.com/"  target="_blank">Visual Studio Code</a> 和 <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>在 <code>VisualStudioCode</code> 扩展中搜索 <code>PlatformIO</code> 插件并安装</li>
+<li>安装完成后，需要重启 <code>VisualStudioCode</code></li>
+<li>重启 <code>VisualStudioCode</code> 后，选择左上角 <code>文件</code> -&gt; <code>打开文件夹</code> -&gt; 选择 <code>T-PicoPro</code> 目录</li>
+<li>等待第三方依赖库安装完成</li>
+<li>点击 <code>platformio.ini</code> 文件，在 <code>platformio</code> 列中</li>
+<li>取消注释其中一行 <code>src_dir = xxxx</code>，确保只有一行生效</li>
+<li>点击左下角的 (✔) 符号进行编译</li>
+<li>将开发板连接到电脑USB</li>
+<li>点击 (→) 上传固件</li>
+<li>点击 (插头符号) 监控串口输出</li>
+<li>如果无法写入，或USB设备不断闪烁，请查看下面的 <strong>常见问题</strong></li>
+</ol>
+<h3 id="Arduino-IDE-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">Arduino IDE 快速开始</h3>
+<ul>
+<li>推荐使用 platformio，无需繁琐步骤</li>
+</ul>
+<ol>
+<li>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>安装 <a href="https://arduino-pico.readthedocs.io/en/latest/install.html"  target="_blank">Arduino Pico</a></li>
+<li>下载或克隆 <code>T-PicoPro</code> 到任意位置</li>
+<li>将 <a href="./lib/"  >lib文件夹</a> 中的所有文件夹复制到Arduino库文件夹（例如 C:\Users\你的用户名\Documents\Arduino\libraries）</li>
+<li>打开 ArduinoIDE，<code>工具</code>，看图选择<br />
+<img src="image/ArduinoIDE.png" alt="设置" /></li>
+<li><code>T-PicoPro</code> 文件夹 -&gt; <code>examples</code> -&gt; <code>任意示例</code></li>
+<li>选择 <code>端口</code></li>
+<li>点击 <code>上传</code>，等待编译和写入完成</li>
+<li>如果无法写入，或USB设备不断闪烁，请查看下面的 <a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a>)</li>
+</ol>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+<p><code>XL9535</code> 是  <code>RP2350A</code> 的外部扩展 IO 端口。</p>
+<table>
+<thead>
+<tr>
+  <th>RP2350A</th>
+  <th>XL9535</th>
+  <th></th>
+  <th>ESP32-C6</th>
+  <th>TFT</th>
+  <th>SD</th>
+  <th>BUTTON</th>
+  <th>HDMI</th>
+  <th>QWIIC</th>
+  <th>UART1</th>
+  <th>FLASH</th>
+  <th>DRAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>IO0(SDA)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN47(TP_SDA)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO1(SLC)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN48(TP_SCL)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO2</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SDA1</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO3</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SCL1</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO2</td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN50(TP_RST)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO4</td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN49(TP_INT)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO0</td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN35(TF_RST)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO1</td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN35(TF_BL)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO4(MISO)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN11</td>
+  <td>SD_MISO</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO6(SCK)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN8</td>
+  <td>SD_SCK</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO7(MOSI)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN10</td>
+  <td>SD_MOSI</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO8(TFT_CS)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN6</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO9(TFT_DC)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td>PIN7</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO5(SD_CS )</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td>SD_CS</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO12</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>CK_N</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO13</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>CK_P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO14</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D0_N</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO15</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D0_P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO16</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D1_N</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO17</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D1_P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO18</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D2_N</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO19</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>D2_P</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO6</td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>HOTPLUGDET</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO20(TX)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RX</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO21(RX)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>TX</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO23</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>BTN1</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO22(RESERVE)</td>
+  <td></td>
+  <td>↔</td>
+  <td>IO10(RESERVE)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td>IO3</td>
+  <td>↔</td>
+  <td>IO8(EN)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO26(CTS)</td>
+  <td></td>
+  <td>↔</td>
+  <td>IO5(CTS)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO27(RTS)</td>
+  <td></td>
+  <td>↔</td>
+  <td>IO4(RTS)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO28(TX)</td>
+  <td></td>
+  <td>↔</td>
+  <td>IO6(RX)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO29(RX)</td>
+  <td></td>
+  <td>↔</td>
+  <td>IO7(TX)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>PIN55(SD3)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>IO3</td>
+  <td>SIO3</td>
+</tr>
+<tr>
+  <td>PIN58(SD2)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>IO2</td>
+  <td>SIO2</td>
+</tr>
+<tr>
+  <td>PIN59(SD1)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>IO1</td>
+  <td>SIO1</td>
+</tr>
+<tr>
+  <td>PIN57(SD0)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>IO0</td>
+  <td>SIO0</td>
+</tr>
+<tr>
+  <td>PIN56(SCLK)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>SCLK</td>
+  <td>SCLK</td>
+</tr>
+<tr>
+  <td>PIN60(FLASH_CS)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>IO3</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO25(RAM_CS)</td>
+  <td></td>
+  <td>↔</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>CS</td>
+</tr>
+<tr>
+  <td><em>（详细引脚定义请参考原理图）</em></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<p><em>（双核通信、功耗、显示性能测试数据待补充）</em></p>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ol>
+<li><p>如果写入失败但显示成功：</p>
+<ol>
+<li>通过USB线连接开发板</li>
+<li>按住（侧面）BOOT键的同时按下（同侧）RST键</li>
+<li>释放（侧面）RST键</li>
+<li>释放（侧面）BOOT键</li>
+<li>上传程序</li>
+</ol>
+</li>
+<li><p>如何写入 ESP32-C6？</p>
+<ol>
+<li>由于 <code>ESP32-C6</code> 复位引脚由 <code>RP2350</code> 控制，当需要更新 <code>ESP32-C6</code> 固件时，请勿在 <code>RP2350</code> 的程序中包含控制 <code>ESP32-C6</code> 复位引脚的操作。</li>
+<li>按住 ESP32-C6 模块侧面的 esp32 BOOT 按钮并插入 USB-C。确保插入的是 &quot;ESP32-C6&quot; 的USB端口侧。电脑应该能够正常写入 &quot;ESP32-C6&quot;。</li>
+</ol>
+</li>
+<li><p>如何检查硬件是否正常？</p>
+<ol>
+<li>请按照 <strong>常见问题</strong> 的第一步操作，将 firmware 目录中的 <code>firmware.uf2</code> 拖入磁盘。程序包含硬件自检，可以判断硬件是否正常。</li>
+</ol>
+</li>
+<li><p>为什么串口没有输出？</p>
+<ol>
+<li>在 arduino IDE 中，选择工具栏中的 <code>调试端口：&quot;串口&quot;</code>。</li>
+<li>请打开串口助手工具的 <code>DTR</code> 选项。</li>
+</ol>
+</li>
+</ol>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/blob/master/hardware/T_Pico2350_V1.2.pdf"  target="_blank">T-PICO-2350_V1.2</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/lewisxhe/SensorLib/blob/master/datasheet/LTR-553ALS-01.pdf"  target="_blank">光线传感器数据手册</a></li>
+<li><a href="https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html"  target="_blank">RP2040</a></li>
 <li><a href="http://www.lcdwiki.com/res/MSP4021/ST7796S-Sitronix.pdf"  target="_blank">ST7796S</a></li>
 <li><a href="https://github.com/lewisxhe/SensorLib/blob/master/datasheet/%E6%B5%B7%E6%A0%8E%E5%88%9B%E8%A7%A6%E6%91%B8%E8%8A%AF%E7%89%87%E7%A7%BB%E6%A4%8D%E6%89%8B%E5%86%8C-v3.5-20220701(1).pdf"  target="_blank">CST226SE</a></li>
+<li><a href="./datasheet/AN_SY6970.pdf"  >SY6970</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/blob/master/hardware/T_Pico2350_V1.2.pdf"  target="_blank">T-Pico-2350</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
 <ul>
 <li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl 8.3.9</a></li>
 <li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
@@ -380,77 +1147,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/adafruit/Adafruit_BME280_Library"  target="_blank">Adafruit_BME280_Library</a></li>
 <li><a href="https://github.com/mikalhart/TinyGPSPlus"  target="_blank">TinyGPSPlus</a></li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:center">Setting</th>
-  <th style="text-align:center">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:center">Board</td>
-  <td style="text-align:center">Generic RP2350</td>
-</tr>
-<tr>
-  <td style="text-align:center">Debug Level</td>
-  <td style="text-align:center">None</td>
-</tr>
-<tr>
-  <td style="text-align:center">Debug Port</td>
-  <td style="text-align:center">Serial</td>
-</tr>
-<tr>
-  <td style="text-align:center">C++ Exceptions</td>
-  <td style="text-align:center">Disabled</td>
-</tr>
-<tr>
-  <td style="text-align:center">Flash size</td>
-  <td style="text-align:center">16MB (no FS)</td>
-</tr>
-<tr>
-  <td style="text-align:center">CPU Speed</td>
-  <td style="text-align:center">150 MHz</td>
-</tr>
-<tr>
-  <td style="text-align:center">IP/Bluetooth stack</td>
-  <td style="text-align:center">lPv4 Only</td>
-</tr>
-<tr>
-  <td style="text-align:center">Optimize:</td>
-  <td style="text-align:center">Small (-Os) (standard)</td>
-</tr>
-<tr>
-  <td style="text-align:center">PSRAM Size</td>
-  <td style="text-align:center">OMByte PSRAM</td>
-</tr>
-<tr>
-  <td style="text-align:center">RTTI</td>
-  <td style="text-align:center">Disabled</td>
-</tr>
-<tr>
-  <td style="text-align:center">Stack Protector</td>
-  <td style="text-align:center">Disabled</td>
-</tr>
-<tr>
-  <td style="text-align:center">Upload Method</td>
-  <td style="text-align:center">Default (UF2)</td>
-</tr>
-<tr>
-  <td style="text-align:center">USB Stack</td>
-  <td style="text-align:center">Pico SDK</td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">C语言</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
 
                         
                     </div>

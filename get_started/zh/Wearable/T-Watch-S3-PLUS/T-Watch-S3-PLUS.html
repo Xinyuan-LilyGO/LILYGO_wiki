@@ -957,30 +957,89 @@ ArduinoIDE 每次打开都会提示有新的库版本可以升级。<br />
 请确认运行正常后再尝试更新到最新版本。如果遇到问题，请回退到运行正常的依赖库版本。当前的依赖库版本列表可以查看<a href="./third_party.md#t-watch-s3-third-party"  >这里</a></p>
 </blockquote>
 <ol start="6">
-<li><p><code>文件</code> -&gt; <code>示例</code> -&gt; <code>LilyGOLib</code> -&gt; <code>helloworld</code></p>
-</li>
-<li><p><code>工具</code> -&gt; <code>开发板</code> -&gt; <code>esp32</code>，请从下表中选择</p>
-<p>| Arduino IDE 设置 | 值 |<br />
-| ------------------------------------ | --------------------------------- |<br />
-| 开发板 | <strong>LilyGo T-Watch-S3</strong> |<br />
-| 端口 | 你的端口 |<br />
-| USB CDC On Boot | 启用 |<br />
-| CPU 频率 | 240MHZ(WiFi) |<br />
-| 核心调试级别 | 无 |<br />
-| USB DFU On Boot | 禁用 |<br />
-| 上传前擦除所有闪存 | 禁用 |<br />
-| 事件运行于 | 核心 1 |<br />
-| JTAG 适配器 | 禁用 |<br />
-| Arduino 运行于 | 核心 1 |<br />
-| USB Firmware MSC On Boot | 禁用 |<br />
-| 分区方案 | <strong>16M Flash(3M APP/9.9MB FATFS)</strong> |<br />
-| 开发板版本 | <strong>Radio-SX1262</strong> |<br />
-| 上传模式 | <strong>UART0/Hardware CDC</strong> |<br />
-| 上传速度 | 921600 |<br />
-| USB 模式 | <strong>CDC and JTAG</strong> |</p>
-</li>
-<li><p><strong>开发板版本选项</strong>，请根据实际购买的RF类型选择。当前选项有：</p>
-<ul>
+<li><code>文件</code> -&gt; <code>示例</code> -&gt; <code>LilyGOLib</code> -&gt; <code>helloworld</code></li>
+<li><code>工具</code> -&gt; <code>开发板</code> -&gt; <code>esp32</code>，请从下表中选择</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th>Arduino IDE Setting</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Board</td>
+  <td>LilyGo T-Watch-S3</td>
+</tr>
+<tr>
+  <td>Port</td>
+  <td>Your port</td>
+</tr>
+<tr>
+  <td>USB CDC On Boot</td>
+  <td>Enabled</td>
+</tr>
+<tr>
+  <td>CPU Frequency</td>
+  <td>240MHZ(WiFi)</td>
+</tr>
+<tr>
+  <td>Core Debug Level</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>USB DFU On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Erase All Flash Before Sketch Upload</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Events Run On</td>
+  <td>Core 1</td>
+</tr>
+<tr>
+  <td>JTAG Adapter</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Arduino Runs On</td>
+  <td>Core 1</td>
+</tr>
+<tr>
+  <td>USB Firmware MSC On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Partition Scheme</td>
+  <td>16M Flash(3M APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td>Board Revision</td>
+  <td>Radio-SX1262</td>
+</tr>
+<tr>
+  <td>Upload Mode</td>
+  <td>UART0/Hardware CDC</td>
+</tr>
+<tr>
+  <td>Upload Speed</td>
+  <td>921600</td>
+</tr>
+<tr>
+  <td>USB Mode</td>
+  <td>CDC and JTAG</td>
+</tr>
+<tr>
+  <td>USB Mode</td>
+  <td>CDC and JTAG</td>
+</tr>
+</tbody>
+</table>
+<ol start="8">
+<li><strong>开发板版本选项</strong>，请根据实际购买的RF类型选择。当前选项有：<ul>
 <li>Radio-SX1262(Sub 1G LoRa)</li>
 <li>Radio-SX1280(2.4G LoRa)</li>
 <li>Radio-CC1101(Sub 1G (G)MSK, 2(G)FSK, 4(G)FSK, ASK, OOK)</li>
@@ -988,12 +1047,9 @@ ArduinoIDE 每次打开都会提示有新的库版本可以升级。<br />
 <li>Radio-SI4432(Sub 1G ISM)</li>
 </ul>
 </li>
-<li><p>选择 <code>端口</code></p>
-</li>
-<li><p>点击 <code>上传</code>，等待编译和写入完成</p>
-</li>
-<li><p>如果无法上传程序或USB设备在电脑上不断弹出，请手动将设备置于下载模式。如何进入下载模式，请参见<a href="#t-watch-s3-plus-%E8%BF%9B%E5%85%A5%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%BC%8F"  >此处</a></p>
-</li>
+<li>选择 <code>端口</code></li>
+<li>点击 <code>上传</code>，等待编译和写入完成</li>
+<li>如果无法上传程序或USB设备在电脑上不断弹出，请手动将设备置于下载模式。如何进入下载模式，请参见<a href="#t-watch-s3-plus-%E8%BF%9B%E5%85%A5%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%BC%8F"  >此处</a></li>
 </ol>
 <blockquote>
 <ul>
