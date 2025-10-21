@@ -1,9 +1,10 @@
 ---
 title: Download
-keywords: 第一篇
-desc: 第一篇
+keywords: Download
+desc: Download
 tags: START, Test, LILYGO
 order: 2
+date: How to download the firmware 
 ---
 
 
