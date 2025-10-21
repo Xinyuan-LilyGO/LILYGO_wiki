@@ -532,28 +532,84 @@ var _hmt = _hmt || [];
 <li>在&quot;工具&quot;菜单中选择正确的设置，如下表所示。</li>
 </ol>
 <h4 id="ESP32-S3">ESP32-S3</h4>
-
-<pre class="language-none"><code class="language-none">| Arduino IDE Setting                  | Value                                   |
-| ------------------------------------ | --------------------------------------- |
-| Board                                | **ESP32S3 Dev Module**                  |
-| Port                                 | Your port                               |
-| USB CDC On Boot                      | Enable                                  |
-| CPU Frequency                        | 240MHZ(WiFi)                            |
-| Core Debug Level                     | None                                    |
-| USB DFU On Boot                      | Disable                                 |
-| Erase All Flash Before Sketch Upload | Disable                                 |
-| Events Run On                        | Core1                                   |
-| Flash Mode                           | QIO 80MHZ                               |
-| Flash Size                           | **16MB(128Mb)**                         |
-| Arduino Runs On                      | Core1                                   |
-| USB Firmware MSC On Boot             | Disable                                 |
-| Partition Scheme                     | **8M with spiffs(3M APP/1.5MB SPIFFS)** |
-| PSRAM                                | **OPI PSRAM**                           |
-| Upload Mode                          | **UART0/Hardware CDC**                  |
-| Upload Speed                         | 921600                                  |
-| USB Mode                             | **CDC and JTAG**                        |
-
-</code></pre>
+<table>
+<thead>
+<tr>
+  <th>Arduino IDE Setting</th>
+  <th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Board</td>
+  <td><strong>ESP32S3 Dev Module</strong></td>
+</tr>
+<tr>
+  <td>Port</td>
+  <td>Your port</td>
+</tr>
+<tr>
+  <td>USB CDC On Boot</td>
+  <td>Enable</td>
+</tr>
+<tr>
+  <td>CPU Frequency</td>
+  <td>240MHZ(WiFi)</td>
+</tr>
+<tr>
+  <td>Core Debug Level</td>
+  <td>None</td>
+</tr>
+<tr>
+  <td>USB DFU On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Erase All Flash Before Sketch Upload</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Events Run On</td>
+  <td>Core1</td>
+</tr>
+<tr>
+  <td>Flash Mode</td>
+  <td>QIO 80MHZ</td>
+</tr>
+<tr>
+  <td>Flash Size</td>
+  <td><strong>16MB(128Mb)</strong></td>
+</tr>
+<tr>
+  <td>Arduino Runs On</td>
+  <td>Core1</td>
+</tr>
+<tr>
+  <td>USB Firmware MSC On Boot</td>
+  <td>Disable</td>
+</tr>
+<tr>
+  <td>Partition Scheme</td>
+  <td><strong>8M with spiffs(3M APP/1.5MB SPIFFS)</strong></td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td><strong>OPI PSRAM</strong></td>
+</tr>
+<tr>
+  <td>Upload Mode</td>
+  <td><strong>UART0/Hardware CDC</strong></td>
+</tr>
+<tr>
+  <td>Upload Speed</td>
+  <td>921600</td>
+</tr>
+<tr>
+  <td>USB Mode</td>
+  <td><strong>CDC and JTAG</strong></td>
+</tr>
+</tbody>
+</table>
 <ol start="6">
 <li>选择正确的端口。</li>
 <li>点击右上角&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击右上角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
