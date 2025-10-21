@@ -10,7 +10,7 @@ cover: ./assets/github.jpg
 
 | Device        | Firmware                |  Description |  Picture |
 |--------------------------------------|--------------------------------|---|---|
-| test                                | <a href="xz/51zxw.png" download="./bin/maixpy_speech.bin">下载</a>            |   |   |
+| test                                | <a href="./bin/maixpy_speech.bin" download="./bin/maixpy_speech.bin">下载</a>            |   |   |
 | Port                                 | Your port                      |   |   |
 | USB CDC On Boot                      | Enabled                        |   |   |
 | CPU Frequency                        | 240MHZ(WiFi)                   |   |   |
