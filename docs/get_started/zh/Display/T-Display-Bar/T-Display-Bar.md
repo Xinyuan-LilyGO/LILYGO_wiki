@@ -159,25 +159,25 @@ LILYGO T-Display Bar 是一款高度集成化的嵌入式智能显示模组，�
 
 #### ESP32-S3
 
-    | Arduino IDE Setting                  | Value                                   |
-    | ------------------------------------ | --------------------------------------- |
-    | Board                                | **ESP32S3 Dev Module**                  |
-    | Port                                 | Your port                               |
-    | USB CDC On Boot                      | Enable                                  |
-    | CPU Frequency                        | 240MHZ(WiFi)                            |
-    | Core Debug Level                     | None                                    |
-    | USB DFU On Boot                      | Disable                                 |
-    | Erase All Flash Before Sketch Upload | Disable                                 |
-    | Events Run On                        | Core1                                   |
-    | Flash Mode                           | QIO 80MHZ                               |
-    | Flash Size                           | **16MB(128Mb)**                         |
-    | Arduino Runs On                      | Core1                                   |
-    | USB Firmware MSC On Boot             | Disable                                 |
-    | Partition Scheme                     | **8M with spiffs(3M APP/1.5MB SPIFFS)** |
-    | PSRAM                                | **OPI PSRAM**                           |
-    | Upload Mode                          | **UART0/Hardware CDC**                  |
-    | Upload Speed                         | 921600                                  |
-    | USB Mode                             | **CDC and JTAG**                        |
+| Arduino IDE Setting                  | Value                                   |
+| ------------------------------------ | -------------------------------------- |
+| Board                                | **ESP32S3 Dev Module**                  |
+| Port                                 | Your port                               |
+| USB CDC On Boot                      | Enable                                  |
+| CPU Frequency                        | 240MHZ(WiFi)                            |
+| Core Debug Level                     | None                                    |
+| USB DFU On Boot                      | Disable                                 |
+| Erase All Flash Before Sketch Upload | Disable                                 |
+| Events Run On                        | Core1                                   |
+| Flash Mode                           | QIO 80MHZ                               |
+| Flash Size                           | **16MB(128Mb)**                         |
+| Arduino Runs On                      | Core1                                   |
+| USB Firmware MSC On Boot             | Disable                                 |
+| Partition Scheme                     | **8M with spiffs(3M APP/1.5MB SPIFFS)** |
+| PSRAM                                | **OPI PSRAM**                           |
+| Upload Mode                          | **UART0/Hardware CDC**                  |
+| Upload Speed                         | 921600                                  |
+| USB Mode                             | **CDC and JTAG**                        |
 
 6. 选择正确的端口。
 7. 点击右上角"<kbd>√</kbd>"进行编译，如果编译无误，将单片机连接电脑，点击右上角"<kbd>→</kbd>"即可进行烧录。
