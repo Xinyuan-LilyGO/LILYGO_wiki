@@ -57,32 +57,32 @@ T-PICO-2350 是延续T-Pico系列的另外一款基于树莓派芯片RP2350设�
 
 ## 模块
 
-### 1. 主处理器 (RP2350)
+### 主处理器 (RP2350)
 
 *   芯片：树莓派 RP2350
 *   Flash：16MB
 *   SRAM：520kB
 *   其他说明：更多资料请访问[树莓派RP2350文档](https://www.raspberrypi.com/documentation/microcontrollers/silicon.html#rp2350)
 
-### 2. 无线协处理器 (ESP32-C6)
+###  无线协处理器 (ESP32-C6)
 
 *   芯片：ESP32-C6-MINI-1U-N4
 *   Flash：4MB
 *   无线协议：2.4G WiFi 6 + 蓝牙(BLE)
 *   无线标准：802.11b/g/n
 
-### 3. 屏幕
+### 屏幕
 
 *   尺寸：2.33英寸IPS LCD
 *   驱动芯片：ST7796S
 *   总线通信协议：SPI
 
-### 4. 触摸
+### 触摸
 
 *   芯片：XL9535
 *   总线通信协议：I2C
 
-### 5. 扩展接口
+### 扩展接口
 
 *   HDMI：19pin HDMI接口
 *   QWIIC：2 × QWIIC接口
