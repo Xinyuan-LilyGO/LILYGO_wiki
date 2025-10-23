@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Glass - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "AMOLED", "Wearable", "BHI260AP", "Smart Glasses"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -148,6 +148,8 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/zh/Wearable/T-Embed-CC1101/T-Embed-CC1101.html"><span class="label">T-Embed CC1101</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/zh/Wearable/T-Embed-SI4732/T-Embed-SI4732.html"><span class="label">T-Embed SI4732</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/get_started/zh/Wearable/T-Glass/T-Glass.html"><span class="label">T-Glass</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/zh/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html"><span class="label">T-Mini E-paper-S3</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active no_link"><a><span class="label">无线通讯设备</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -236,6 +238,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>Wearable</li>
+                            
+                                <li>BHI260AP</li>
+                            
+                                <li>Smart Glasses</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -259,117 +271,295 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Glass-1.jpg" alt="T-QT C6" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Glass-1.jpg" alt="T-Glass" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-glass">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
 </div>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>LILYGO T-Glass 是一款基于ESP32-S3主控芯片的智能可穿戴设备，集成BHI260AP运动传感器和JD96013A型号的AMOLED显示屏，具备126×126像素的可见显示区域，支持触控交互与高对比度视觉效果。内置4MB Flash和2MB OSPI PSRAM，确保流畅运行与数据存储能力。功能模块丰富，包含实时时钟（RTC）、麦克风（支持MIC_CLOCK/MIC_DATA音频输入）、振动反馈（Vibration_Pin）、电池电量监测（BAT_ADC）以及触摸按键（Touch_Button），适用于运动追踪、智能提醒等场景。通过LILYGOT-GlassPINMAP接口方案，整合了SPI、I²C等通信协议，优化了硬件布局，适合轻量化设计需求，如智能眼镜或便携式穿戴设备，兼具低功耗与高性能特性。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Glass-2.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Glass-pin-zh.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
-<blockquote class="spoiler warning">
-<p>T-Glass有两个版本，最初的预览版和T-GlassV2版本（改进的棱镜反射法）。两者的区别只是显示方式不同，硬件是一样的<br />
-T-Wristband和T-Glass拥有相同的硬件，但由于外壳的不同，观看区域有所不同。<br />
-LilyGO T-Wristband和T-Glass依赖于lvgl v8.4.x版本。目前lvgl已经发布了lvgl v9.0版本。当编译错误时，请检查lvgl是否属于v8.4.x<br />
-T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例子都是基于lvgl图形框架。其他映像框架（如TFT_eSPI）在这里不可用。</p>
-</blockquote>
-<img src="./assets/T-Glass-point-zh.jpg" alt="summary" width=100%>
-<img src="./assets/T-Glass-time-zh.jpg" alt="summary" width=100%>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3">版本迭代</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th>Product(PinMap)</th>
+  <th>SOC</th>
+  <th>Flash</th>
+  <th>PSRAM</th>
+  <th>Resolution</th>
+  <th>Visible Area</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
+  <td><a href="https://www.lilygo.cc/products/t-glass"  target="_blank">T-Glass/V2</a></td>
   <td>ESP32-S3 FN4R2</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>2MB</td>
-</tr>
-<tr>
-  <td>FLASH</td>
   <td>4MB</td>
+  <td>2MB(QSPI)</td>
+  <td>294x126</td>
+  <td>126x126</td>
 </tr>
 <tr>
-  <td>屏幕</td>
-  <td>1.1英寸 全彩色 LTPS AMOLED JD9613 (294*126)</td>
-</tr>
-<tr>
-  <td>触摸</td>
-  <td>侧面触摸按钮</td>
-</tr>
-<tr>
-  <td>AI智能传感器</td>
-  <td>BHI260AP</td>
-</tr>
-<tr>
-  <td>开关</td>
-  <td>侧面电源开关</td>
-</tr>
-<tr>
-  <td>电池</td>
-  <td>锂电池</td>
-</tr>
-<tr>
-  <td>麦克风</td>
-  <td>支持MIC_CLOCK/MIC_DATA音频输入</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C接口)</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>2 × QWIIC 4 pin接口</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RESET 按键 + 1 x BOOT 按键</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>140 x 67 x 111mm</strong></td>
+  <td><a href="https://www.lilygo.cc/products/t-wristband-s3"  target="_blank">T-Wristband</a></td>
+  <td>ESP32-S3 FN4R2</td>
+  <td>4MB</td>
+  <td>2MB(QSPI)</td>
+  <td>294x126</td>
+  <td>126x250</td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass"  target="_blank">T-Glass</a></p>
+<table>
+<thead>
+<tr>
+  <th>Current consumption</th>
+  <th>Working current</th>
+  <th>sleep current</th>
+  <th>sleep mode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://www.lilygo.cc/products/t-glass"  target="_blank">T-Glass/V2</a></td>
+  <td>(240MHz) WiFi On 90~230+ mA</td>
+  <td>about 300uA</td>
+  <td>touch button wakeup</td>
+</tr>
+<tr>
+  <td><a href="https://www.lilygo.cc/products/t-wristband-s3"  target="_blank">T-Wristband</a></td>
+  <td>(240MHz) WiFi On 90~230+ mA</td>
+  <td>about 300uA</td>
+  <td>touch button wakeup</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Glass</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">2MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-glass"  target="_blank">LILYGO Store</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">T-Wristband</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">2MB</td>
+  <td style="text-align:center"><a href="https://www.lilygo.cc/products/t-wristband-s3"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/datasheet/JD9613_DS_Preliminary_V0.02_20210325.pdf"  target="_blank">JD9613 Driver</a></li>
-<li><a href="https://www.espressif.com.cn/en/support/documents/technical-documents?keys=&amp;field_type_tid%5B%5D=842"  target="_blank">ESP32S3-FN4R2</a></li>
-<li><a href="https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/"  target="_blank">BHI260AP</a></li>
-<li><a href="https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A"  target="_blank">PCF85063A</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>LILYGO T-Glass 是一款基于ESP32-S3主控芯片的智能可穿戴设备，集成BHI260AP运动传感器和JD96013A型号的AMOLED显示屏，具备126×126像素的可见显示区域，支持触控交互与高对比度视觉效果。内置4MB Flash和2MB OSPI PSRAM，确保流畅运行与数据存储能力。功能模块丰富，包含实时时钟（RTC）、麦克风（支持MIC_CLOCK/MIC_DATA音频输入）、振动反馈（Vibration_Pin）、电池电量监测（BAT_ADC）以及触摸按键（Touch_Button），适用于运动追踪、智能提醒等场景。通过LILYGOT-GlassPINMAP接口方案，整合了SPI、I²C等通信协议，优化了硬件布局，适合轻量化设计需求，如智能眼镜或便携式穿戴设备，兼具低功耗与高性能特性。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Glass-2.jpg" alt="T-Glass" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Glass-pin-zh.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/schematic/LilyGO-T-Wristband-and-T-Glass.pdf"  target="_blank">T-Glass</a></li>
+<li>芯片：ESP32-S3 FN4R2</li>
+<li>PSRAM：2MB (QSPI PSRAM)</li>
+<li>FLASH：4MB</li>
+<li>无线：2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</li>
 </ul>
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
 <ul>
-<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib 0.1.8</a></li>
-<li><a href="https://github.com/lvgl/lvgl/tree/release/v8.4"  target="_blank">lvgl 8.4.0</a></li>
-<li><a href="https://github.com/arduino-libraries/MadgwickAHRS"  target="_blank">MadgwickAHRS</a></li>
+<li>尺寸：1.1英寸LTPS AMOLED屏幕</li>
+<li>分辨率：294×126px</li>
+<li>屏幕类型：LTPS AMOLED</li>
+<li>驱动芯片：JD9613</li>
+<li>兼容库：LVGL</li>
+<li>总线通信协议：SPI</li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
+<h3 id="%E8%BF%90%E5%8A%A8%E4%BC%A0%E6%84%9F%E5%99%A8">运动传感器</h3>
+<ul>
+<li>芯片：BHI260AP</li>
+<li>功能：AI智能运动传感</li>
+</ul>
+<h3 id="%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F">音频系统</h3>
+<ul>
+<li>功能：麦克风输入</li>
+<li>接口：MIC_CLOCK/MIC_DATA</li>
+</ul>
+<h3 id="%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86">电源管理</h3>
+<ul>
+<li>电池：锂聚合物电池</li>
+<li>监测：电池电量监测(ADC)</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<img src="./assets/T-Glass-point-zh.jpg" alt="summary" width=80%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3 FN4R2</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">2MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">1.1英寸 JD9613 LTPS AMOLED</td>
+</tr>
+<tr>
+  <td style="text-align:center">运动传感器</td>
+  <td style="text-align:center">BHI260AP AI智能传感器</td>
+</tr>
+<tr>
+  <td style="text-align:center">触摸</td>
+  <td style="text-align:center">侧面触摸按钮</td>
+</tr>
+<tr>
+  <td style="text-align:center">RTC</td>
+  <td style="text-align:center">PCF85063A 实时时钟</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">麦克风输入</td>
+</tr>
+<tr>
+  <td style="text-align:center">振动</td>
+  <td style="text-align:center">振动反馈电机</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C接口)</td>
+</tr>
+<tr>
+  <td style="text-align:center">扩展接口</td>
+  <td style="text-align:center">2 × QWIIC 4 pin接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">1 x RESET 按键 + 1 x BOOT 按键</td>
+</tr>
+<tr>
+  <td style="text-align:center">开关</td>
+  <td style="text-align:center">侧面电源开关</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center">140 × 67 × 111 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+
+<pre class="language-txt"><code class="language-txt">./examples/
+├── Glass                  # Initial version
+│   ├── Glass6DoF 
+│   ├── GlassBatteryVoltage
+│   ├── GlassDeepSleep
+│   ├── GlassDisplayRotation
+│   ├── GlassFactory
+│   │   └── src
+│   ├── GlassHelloWorld
+│   ├── GlassRtcAlarm
+│   ├── GlassRtcDateTime
+│   ├── GlassTouchButton
+│   ├── GlassTouchButtonEvent
+│   └── GlassVoiceActivityDetection
+├── GlassV2                # Modify the reflective prism version         
+│   ├── Glass6DoF
+│   ├── GlassBatteryVoltage
+│   ├── GlassDeepSleep
+│   ├── GlassFactory
+│   │   └── src
+│   ├── GlassHelloWorld
+│   ├── GlassRtcAlarm
+│   ├── GlassRtcDateTime
+│   ├── GlassTouchButton
+│   ├── GlassTouchButtonEvent
+│   └── GlassVoiceActivityDetection
+└── Wristband
+    ├── Wristband6DoF
+    ├── WristbandBatteryVoltage
+    ├── WristbandDeepSleep
+    ├── WristbandDisplayRotation
+    ├── WristbandDisplayVisualWindow1
+    ├── WristbandFactory
+    │   └── src
+    ├── WristbandHelloWorld
+    ├── WristbandLightSleep
+    ├── WristbandRtcAlarm
+    ├── WristbandRtcDateTime
+    ├── WristbandTouchButton
+    └── WristbandTouchButtonEvent
+</code></pre>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>安装 <a href="https://code.visualstudio.com/"  target="_blank">Visual Studio Code</a> 和 <a href="https://www.python.org/"  target="_blank">Python</a>（推荐Python 3.8+版本）</li>
+<li>在 Visual Studio Code 的扩展商店中搜索 <code>PlatformIO</code> 插件并安装</li>
+<li>安装完成后，需重启 Visual Studio Code</li>
+<li>重启 Visual Studio Code 后，点击软件左上角的 <code>文件（File）</code> → <code>打开文件夹（Open Folder）</code> → 选择 <code>LilyGO T-Wristband and T-Glass</code> 项目目录</li>
+<li>等待第三方依赖库自动安装完成（首次打开可能需要几分钟）</li>
+<li>点击打开项目中的 <code>platformio.ini</code> 配置文件，找到 <code>platformio</code> 配置段</li>
+<li>解除其中一行 <code>src_dir = xxxx</code> 的注释（删除行首的 <code>;</code>），确保仅保留一条生效配置（根据目标开发板选择对应目录）</li>
+<li>点击软件左下角的（✔）图标开始编译项目</li>
+<li>将开发板通过USB线连接至电脑</li>
+<li>点击（→）图标上传固件至开发板</li>
+<li>点击（插头图标）打开串口监视器，查看设备输出日志</li>
+<li>若出现无法写入固件或USB设备持续闪烁的情况，请查看下方的 <strong>常见问题解答（FAQ）</strong></li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<p>以下是纯中文版本（可直接复制），适配技术文档的准确性和操作指引清晰度：</p>
+<ol>
+<li>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>安装 <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html"  target="_blank">Arduino ESP32 2.0.5 版本及以上、3.0 版本以下</a>（基于稳定版库），请确保开发板管理器中的链接为：
+<pre class="language-none"><code class="language-none">https://espressif.github.io/arduino-esp32/package_esp32_index.json
+</code></pre>
+</li>
+<li>点击 <code>项目（Sketch）</code> → <code>包含库（Include Library）</code> → <code>管理库（Manage Libraries）</code></li>
+<li>在库搜索框中输入 <code>LilyGO T-Wristband and T-Glass</code> → 点击 <code>安装（Install）</code> → 选择 <code>安装全部（Install ALL）</code></li>
+<li>在库搜索框中输入 <code>lvgl</code> → 选择 <code>v8.4.0</code> 版本 → 点击 <code>安装（Install）</code></li>
+<li>在库搜索框中输入 <code>SensorLib</code> → 选择 <code>v0.1.8</code> 版本 → 点击 <code>安装（Install）</code></li>
+<li>点击 <code>文件（File）</code> → <code>示例（Examples）</code> → <code>LilyGO T-Wristband and T-Glass</code> → <code>选择对应的示例程序</code></li>
+<li>点击 <code>工具（Tools）</code>，根据下表进行配置选择：</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -380,7 +570,7 @@ T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例�
 <tbody>
 <tr>
   <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
+  <td><strong>ESP32S3 Dev Module</strong></td>
 </tr>
 <tr>
   <td>Port</td>
@@ -416,7 +606,7 @@ T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例�
 </tr>
 <tr>
   <td>Flash Size</td>
-  <td>4MB(32Mb)</td>
+  <td><strong>4MB(32Mb)</strong></td>
 </tr>
 <tr>
   <td>Arduino Runs On</td>
@@ -428,15 +618,15 @@ T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例�
 </tr>
 <tr>
   <td>Partition Scheme</td>
-  <td>Default 4M with spiffs(1.2M APP/1.5MB SPIFFS)</td>
+  <td><strong>Default 4M with spiffs(1.2M APP/1.5MB SPIFFS)</strong></td>
 </tr>
 <tr>
   <td>PSRAM</td>
-  <td>QSPI PSRAM</td>
+  <td><strong>QSPI PSRAM</strong></td>
 </tr>
 <tr>
   <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
+  <td><strong>UART0/Hardware CDC</strong></td>
 </tr>
 <tr>
   <td>Upload Speed</td>
@@ -444,17 +634,173 @@ T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例�
 </tr>
 <tr>
   <td>USB Mode</td>
-  <td>CDC and JTAG</td>
+  <td><strong>CDC and JTAG</strong></td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>加粗项为必填配置，其他项根据实际情况选择。</li>
+</ul>
+<ol start="9">
+<li>选择对应的 <code>端口（Port）</code>（需先连接开发板）</li>
+<li>点击 <code>上传（upload）</code>，等待编译和写入完成</li>
+<li>若出现无法写入固件或USB设备持续闪烁的情况，请查看下方的 <strong>常见问题解答（FAQ）</strong></li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">4MB (32Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">Default 4M with spiffs(1.2M APP/1.5MB SPIFFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">QSPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>选择正确的端口。</li>
+<li>点击右上角&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击右上角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
+</ol>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
 <li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
 </ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ol>
+<li><p>该开发板使用USB作为<strong>JTAG</strong>上传端口。若需通过USB打印串口信息，需开启<strong>USB_CDC_ON_BOOT</strong>配置。<br />
+若上传程序时找不到端口，或USB被用于其他功能导致端口不显示，请手动进入上传模式：</p>
+<ol>
+<li>通过USB线连接开发板</li>
+<li>长按<strong>BOOT按键</strong>，保持长按的同时按下<strong>RST按键</strong></li>
+<li>先松开<strong>RST按键</strong></li>
+<li>再松开<strong>BOOT按键</strong></li>
+<li>上传程序</li>
+</ol>
+</li>
+<li><p>若上述方法无效，请烧录<a href="./firmware/README.MD"  >二进制文件</a>以检查硬件是否正常</p>
+</li>
+<li><p>若使用外部电源而非USB-C供电，请关闭<strong>USB_CDC_ON_BOOT</strong>选项。这是因为开发板启动时会等待USB接入。</p>
+<ul>
+<li><p>对于Arduino IDE用户，可在选项中关闭该功能。请注意，关闭<strong>USB_CDC_ON_BOOT</strong>会关闭USB-C的串口重定向，此时通过USB-C打开端口将无法看到任何串口信息，信息会从GPIO43和GPIO44输出：</p>
+
+<pre class="language-c"><code class="language-c">工具（Tools）-&gt; USB CDC On Boot -&gt; 禁用（Disable）
+</code></pre>
+</li>
+<li><p>对于Platformio用户，可在ini文件中添加以下编译标志：</p>
+
+<pre class="language-c"><code class="language-c">build_flags =
+    ; 启用-DARDUINO_USB_CDC_ON_BOOT会在启动时开始打印并等待终端接入
+    ; -DARDUINO_USB_CDC_ON_BOOT=1
+
+    ; 启用-UARDUINO_USB_CDC_ON_BOOT会关闭打印，使用电池供电时不会阻塞
+    -UARDUINO_USB_CDC_ON_BOOT
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>JD9613显示屏的RAM仅为屏幕尺寸的1/2，不支持旋转。方向0和1可调整垂直方向，水平方向1和3为同一方向：</p>
+
+<pre class="language-c"><code class="language-c">// 设置屏幕为竖屏，0和2是两个相反的垂直方向
+ amoled.setRotation(0);
+ amoled.setRotation(2);
+
+// 设置屏幕为横屏，1和3方向相同且无法改变
+ amoled.setRotation(1);
+ amoled.setRotation(3);
+</code></pre>
+</li>
+</ol>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<table>
+<thead>
+<tr>
+  <th>Product(PinMap)</th>
+  <th>schematic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://www.lilygo.cc/products/t-glass"  target="_blank">T-Glass</a></td>
+  <td><a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/schematic/LilyGO-T-Wristband-and-T-Glass.pdf"  target="_blank">schematic</a></td>
+</tr>
+<tr>
+  <td><a href="https://www.lilygo.cc/products/t-wristband-s3"  target="_blank">T-Wristband</a></td>
+  <td><a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/schematic/LilyGO-T-Wristband-and-T-Glass.pdf"  target="_blank">schematic</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/datasheet/JD9613_DS_Preliminary_V0.02_20210325.pdf"  target="_blank">JD9613 Datasheet</a></li>
+<li><a href="https://www.espressif.com.cn/en/support/documents/technical-documents?keys=&amp;field_type_tid%5B%5D=842"  target="_blank">ESP32-S3-FN4R2</a></li>
+<li><a href="https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/"  target="_blank">BHI260AP</a></li>
+<li><a href="https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A"  target="_blank">PCF85063A</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
+<ul>
+<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib 0.1.8</a></li>
+<li><a href="https://github.com/lvgl/lvgl/tree/release/v8.4"  target="_blank">lvgl 8.4.0</a></li>
+<li><a href="https://github.com/arduino-libraries/MadgwickAHRS"  target="_blank">MadgwickAHRS</a></li>
+</ul>
 
                         
                     </div>
@@ -470,8 +816,8 @@ T-Wristband和T-Glass的视觉尺寸与实际屏幕尺寸不同。所有的例�
                     </div>
                     <div id="next">
                         
-                        <a href="/get_started/zh/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html">
-                            <span class="label">T-LoRa-C6</span>
+                        <a href="/get_started/zh/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html">
+                            <span class="label">T-Mini E-paper-S3</span>
                             <span class="icon"></span>
                         </a>
                         
