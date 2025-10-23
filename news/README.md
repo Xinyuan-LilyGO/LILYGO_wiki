@@ -1,7 +1,7 @@
 ---
 
-title: 动态
-keywords: News 动态
+title: Quick Start
+keywords: Start guide
 desc: 最新资讯
 show_source: false
 date: false
