@@ -62,10 +62,10 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO T-Deck Plus - LILYGO Wiki</title>
+    <title>LILYGO T-Deck - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "LoRa", "GPS", "Trackball", "Keyboard"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -230,11 +230,21 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO T-Deck Plus</h1>
+                            <h1>LILYGO T-Deck</h1>
                             
                         </div>
                         <div id="article_tags">
                             <ul>
+                            
+                                <li>ESP32-S3</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>GPS</li>
+                            
+                                <li>Trackball</li>
+                            
+                                <li>Keyboard</li>
                             
                             </ul>
                         </div>
@@ -259,127 +269,369 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Deck-Plus1.jpg" alt="T-PICO-2350-03" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Deck-1.jpg" alt="T-Deck" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-deck-plus-1">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-deck">官网购买</a>
 </div>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>LILYGO T-Deck Plus 是一款功能丰富的便携式嵌入式开发套件，基于高性能的 ESP32-S3 芯片，集成了 320x240 分辨率的 ST7789 LCD 显示屏、SX1262 LoRa 远程通信模块、ES7210 音频编解码器、麦克风、喇叭及 TF 卡存储扩展功能。其硬件配置包括可选的轨迹球、机械键盘（颜色可选黑白）、1/4 英寸螺母固定接口，并支持 GPS 定位与 2000mAh 电池供电，配备电压检测以优化功耗管理。通过 SPI、I2C 等接口连接多模块（如 LoRa、LCD、触摸控制），同时提供 AUX 天线扩展接口，适用于物联网终端、远程控制、音频交互及户外移动场景的开发与应用。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Deck-Plus2.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Deck-Plus-zh.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3FN16R8 Dual-core LX7 microprocessor</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>Lora</td>
-  <td>SX1262 433Mhz~915Mhz(可选)</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>ST7789 320 x 240 LCD</td>
-</tr>
-<tr>
-  <td>电池容量</td>
-  <td>2000mAh</td>
-</tr>
-<tr>
-  <td>控制方式</td>
-  <td>轨迹球 触摸屏</td>
-</tr>
-<tr>
-  <td>输入</td>
-  <td>键盘</td>
-</tr>
-<tr>
-  <td>麦克风</td>
-  <td>MSM381A3729H9CP</td>
-</tr>
-<tr>
-  <td>开关</td>
-  <td>支持电源开关</td>
-</tr>
-<tr>
-  <td>触摸</td>
-  <td>GT911</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RST 按键 + 1 x BOOT 按键(轨迹球)</td>
-</tr>
-<tr>
-  <td>音频</td>
-  <td>ES7210</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C接口</td>
-</tr>
-<tr>
-  <td>IO 拓展</td>
-  <td>PCA9535PW (0x20)</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>GPS拓展接口 + 2 × Knockout(用于拓展天线的AUX连接器)</td>
-</tr>
-<tr>
-  <td>孔位</td>
-  <td>2×2mm 定位孔</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>115x72x20mm</strong></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Deck"  target="_blank">T-Deck Plus</a></p>
+<ol>
+<li>T-Deck-Plus 已经将 <strong>Grove</strong> 接口上的Pin分配为GPS模块使用，所以T-Deck-Plus的 <strong>Grove</strong> 接口无法使用</li>
+<li>T-Deck 于 20240726 日更新 <a href="https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb"  target="_blank">TFT_eSPI ST7789 初始化序列</a>, 目前变更没有推送TFT_eSPI上游分支,使用时候如果发现屏幕显示不正确，请检查此处是否和仓库内的初始化序列一致</li>
+</ol>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Deck</td>
+  <td style="text-align:center">ESP32-S3FN16R8</td>
+  <td style="text-align:center">16MB</td>
+  <td style="text-align:center">8MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-deck"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf"  target="_blank">T-Deck ANT 868-915MH</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf"  target="_blank">T-Deck ANT 433MHZ</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf"  target="_blank">T-Deck Plus</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>LILYGO T-Deck 是一款高度集成的多功能嵌入式开发平台，基于 ESP32-S3 主控芯片设计，融合了 2.8 英寸 320x240 分辨率 ST7789 显示屏、轨迹球导航模块（含方向键与 BOOT 按键）、物理键盘接口（通过 I²C 通信）、TF 卡存储扩展、LoRa 无线通信模块（支持 SCK/MISO/MOSI 及控制引脚），以及 ES7210 麦克风阵列（用于音频输入）。其引脚布局兼顾了显示驱动（DC/BL/SPI）、触摸控制、传感器交互（SDA/SCL/INT）、电源管理（BAT ADC）及模块化扩展（SPI/I²C/UART），可快速实现物联网终端、便携式交互设备或低功耗无线通信项目的开发。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Deck-2.jpg" alt="T-Deck" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Deck-pin-zh.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>芯片：ESP32-S3FN16R8 Dual-core LX7 microprocessor</li>
+<li>PSRAM：8MB</li>
+<li>FLASH：16MB</li>
+<li>无线：Wi-Fi 802.11 b/g/n; Bluetooth 5.0 (LE)</li>
+<li>其他说明：更多资料请访问<a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">乐鑫官方ESP32-S3数据手册</a></li>
+</ul>
+<h3 id="%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9D%97">通信模块</h3>
+<ul>
+<li>LoRa：SX1262芯片，支持433MHz~915MHz频段（可选）</li>
+<li>GPS：MIA-M10Q GNSS模块</li>
+<li>无线：2.4GHz Wi-Fi &amp; Bluetooth 5.0 (LE)</li>
+</ul>
+<h3 id="%E6%98%BE%E7%A4%BA%E4%B8%8E%E8%BE%93%E5%85%A5">显示与输入</h3>
+<ul>
+<li>屏幕：2.8英寸 ST7789 LCD</li>
+<li>分辨率：320×240像素</li>
+<li>控制方式：轨迹球导航模块（替代触摸屏）</li>
+<li>键盘：物理键盘接口（I²C通信）</li>
+</ul>
+<h3 id="%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F">音频系统</h3>
+<ul>
+<li>麦克风：MSM381A3729H9CP麦克风阵列</li>
+<li>音频芯片：ES7210音频编解码器</li>
+</ul>
+<h3 id="%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86">电源管理</h3>
+<ul>
+<li>电池：2000mAh锂聚合物电池</li>
+<li>开关：支持电源开关</li>
+<li>USB供电：Type-C接口</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<img src="./assets/T-Deck-info-zh.jpg" alt="summary" width=100%>
+<blockquote>
+<p>T-Deck版本没有触摸屏，使用轨迹球导航模块代替。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FN16R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433MHz~915MHz可选)</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPS</td>
+  <td style="text-align:center">MIA-M10Q GNSS模块</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">2.8英寸 ST7789 LCD (320×240)</td>
+</tr>
+<tr>
+  <td style="text-align:center">控制方式</td>
+  <td style="text-align:center">轨迹球导航模块</td>
+</tr>
+<tr>
+  <td style="text-align:center">输入</td>
+  <td style="text-align:center">物理键盘（I²C接口）</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">ES7210音频编解码器</td>
+</tr>
+<tr>
+  <td style="text-align:center">麦克风</td>
+  <td style="text-align:center">MSM381A3729H9CP麦克风阵列</td>
+</tr>
+<tr>
+  <td style="text-align:center">电池</td>
+  <td style="text-align:center">2000mAh锂聚合物电池</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF卡扩展</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × Type-C接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO扩展</td>
+  <td style="text-align:center">2mm间距 6pin扩展接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">扩展接口</td>
+  <td style="text-align:center">GPS扩展接口 + 2 × JST GH 1.25mm + 1 × 4pin扩展接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">1 x RST按键 + 1 x BOOT按键(轨迹球)</td>
+</tr>
+<tr>
+  <td style="text-align:center">开关</td>
+  <td style="text-align:center">电源开关</td>
+</tr>
+<tr>
+  <td style="text-align:center">定位孔</td>
+  <td style="text-align:center">2mm定位孔</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center"><strong>10×6.8×1.1 cm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+
+<pre class="language-none"><code class="language-none">
+examples 
+├─Keyboard_ESP32C3       # ESP32C3 keyboard I2C slave
+├─Keyboard_T_Deck_Master # T-Deck read from keyboard
+├─Microphone             # Noise detection  
+├─Touchpad               # Read touch coordinates 
+├─GPSShield              # GPS Shield example
+└─UnitTest               # Factory hardware unit testing           
+
+</code></pre>
+<ol>
+<li>如果启用麦克风,那么板子中间的按钮,GPIO0则不可用.</li>
+<li>如果遇到不能上传草图,那么你需要将轨迹球中间按压下去，然后插入USB，这是芯片处于下载模式,此时再点击上传草图.</li>
+<li>ESP32C3的编程烧录接口在RST按键一侧的6Pin排针那里,顺序从RST按键上方开始数，分别为3V3,GND,RST,BOOT,RX,TX</li>
+</ol>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>安装<a href="https://code.visualstudio.com/"  target="_blank">VisualStudioCode</a> 和 <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>在<code>VisualStudioCode</code>扩展中搜索<code>PlatformIO</code>插件并安装.</li>
+<li>安装完成后需要将<code>VisualStudioCode</code>重新启动</li>
+<li>重新开启<code>VisualStudioCode</code>后,选择 <code>VisualStudioCode</code> 左上角的 <code>文件</code> -&gt; <code>打开文件夹</code> -&gt;选择 <code>T-Deck</code> 目录</li>
+<li>点击 <code>platformio.ini</code> 文件,在<code>platformio</code> 栏目中取消需要使用的示例行,请确保仅仅一行有效</li>
+<li>点击左下角的（✔）符号编译</li>
+<li>将板子与电脑USB进行连接</li>
+<li>点击（→）上传固件</li>
+<li>点击 (插头符号) 监视串行输出</li>
+</ol>
+<h3 id="ArduinoIDE">ArduinoIDE</h3>
+<ol>
+<li>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">ArduinoIDE</a></li>
+<li>将 <code>T-Deck/lib</code> 目录内的所有文件夹拷贝到<code>&lt;C:\Users\UserName\Documents\Arduino\libraries&gt;</code>,如果没有<code>libraries</code>目录,请新建,请注意,不是拷贝<code>lib</code>目录,而是拷贝lib目录里面的文件夹</li>
+<li>打开ArduinoIDE -&gt; Tools<ul>
+<li>Board -&gt; ESP32S3 Dev Module</li>
+<li>USB CDC On Boot -&gt; Enable   # 注意，在不连接USB的时候你需要将Enable改为Disable，这样USB CDC 不会阻止板子的启动</li>
+<li>CPU Frequency -&gt; 240MHz</li>
+<li>USB DFU On Boot -&gt; Disable</li>
+<li>Flash Mode -&gt; QIO 80MHz</li>
+<li>Flash Size -&gt; 16MB(128Mb)</li>
+<li>USB Firmware MSC On Boot -&gt; Disable</li>
+<li>PSRAM -&gt; OPI PSRAM</li>
+<li>Partition Scheme -&gt; 16M Flash(3MB APP/9.9MB FATFS)</li>
+<li>USB Mode -&gt; Hardware CDC and JIAG</li>
+<li>Upload Mode -&gt; UART0/Hardware CDC</li>
+<li>Upload Speed -&gt; 921600</li>
+</ul>
+</li>
+<li>插入USB到PC,点击上传&lt;如果无法顺利上传,请保持按压BOOT按键,然后单击RST,然后再点击上传,上传完成时需要点击RST退出下载模式&gt;</li>
+<li>. 在&quot;工具&quot;菜单中选择正确的设置，如下表所示。</li>
+</ol>
+<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
+<ol>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+</ol>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+
+<pre class="language-c"><code class="language-c">
+    //! The board peripheral power control pin needs to be set to HIGH when using the peripheral
+    #define BOARD_POWERON       10
+
+    #define BOARD_I2S_WS        5
+    #define BOARD_I2S_BCK       7
+    #define BOARD_I2S_DOUT      6
+
+    #define BOARD_I2C_SDA       18
+    #define BOARD_I2C_SCL       8
+
+    #define BOARD_BAT_ADC       4
+
+    #define BOARD_TOUCH_INT     16
+    #define BOARD_KEYBOARD_INT  46
+
+    #define BOARD_SDCARD_CS     39
+    #define BOARD_TFT_CS        12
+    #define RADIO_CS_PIN        9
+
+    #define BOARD_TFT_DC        11
+    #define BOARD_TFT_BACKLIGHT 42
+
+    #define BOARD_SPI_MOSI      41
+    #define BOARD_SPI_MISO      38
+    #define BOARD_SPI_SCK       40
+
+    #define BOARD_TBOX_G02      2
+    #define BOARD_TBOX_G01      3
+    #define BOARD_TBOX_G04      1
+    #define BOARD_TBOX_G03      15
+
+    #define BOARD_ES7210_MCLK   48
+    #define BOARD_ES7210_LRCK   21
+    #define BOARD_ES7210_SCK    47
+    #define BOARD_ES7210_DIN    14
+
+    #define RADIO_BUSY_PIN      13
+    #define RADIO_RST_PIN       17
+    #define RADIO_DIO1_PIN      45
+
+    #define BOARD_BOOT_PIN      0
+
+    #define BOARD_BL_PIN        42
+
+
+    #define BOARD_GPS_TX_PIN                 43
+    #define BOARD_GPS_RX_PIN                 44
+
+
+    #ifndef RADIO_FREQ
+    #ifdef  JAPAN_MIC
+    #define RADIO_FREQ           920.0
+    #else
+    #define RADIO_FREQ           868.0
+    #endif
+    #endif
+
+    #ifndef RADIO_BANDWIDTH
+    #define RADIO_BANDWIDTH      125.0
+    #endif
+
+    #ifndef RADIO_SF
+    #define RADIO_SF             10
+    #endif
+
+    #ifndef RADIO_CR
+    #define RADIO_CR             6
+    #endif
+
+    #ifndef RADIO_TX_POWER
+    #define RADIO_TX_POWER       22
+    #endif
+
+    #define DEFAULT_OPA          100
+
+</code></pre>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li><p><strong>Q. 看了以上教程我还是不会搭建编程环境怎么办？</strong><br />
+A. 如果看了以上教程还不懂如何搭建环境的可以参考<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a>文档说明来搭建。</p>
+</li>
+<li><p><strong>Q. 为什么打开Arduino IDE时他会提醒我是否要升级库文件？我应该升级还是不升级？</strong><br />
+A. 选择不升级库文件，不同版本的库文件可能不会相互兼容所以不建议升级库文件。</p>
+</li>
+<li><p><strong>Q. T-Deck是否有触摸屏功能？</strong><br />
+A. T-Deck版本没有触摸屏，使用轨迹球导航模块代替触摸操作。</p>
+</li>
+<li><p><strong>Q. 为什么我的板子一直烧录失败呢？</strong><br />
+A. 请按住&quot;BOOT&quot;按键重新下载程序。</p>
+</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/schematic/schematic.pdf"  target="_blank">T-Deck Schematic</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf"  target="_blank">T-Deck ANT 868-915MHz</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf"  target="_blank">T-Deck ANT 433MHz</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
 <ul>
 <li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
@@ -391,94 +643,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/mmMicky/TouchLib"  target="_blank">TouchLib</a></li>
 <li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE 设置	</th>
-  <th>参数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB(128Mb)</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash(3M APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-</ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
 
                         
                     </div>

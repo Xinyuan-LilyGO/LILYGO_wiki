@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Embed CC1101 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "CC1101", "LoRa", "NFC", "TFT", "Sub-GHz"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -236,6 +236,18 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>CC1101</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>NFC</li>
+                            
+                                <li>TFT</li>
+                            
+                                <li>Sub-GHz</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -259,131 +271,436 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Embed-CC1101-1.jpg" alt="T-Embed-CC1101" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝购买</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通购买</a>
+</div>
 <blockquote>
-<p>点这里切换到<a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html"  target="_blank">T-Embed-SI4732</a>版本</p>
+<p>点这里切换到 <a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html"  target="_blank">T-Embed-SI4732</a> 版本</p>
 </blockquote>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>LILYGO T-Embed 是一款基于 ESP32-S3 并且搭载LX7双核处理器的高集成物联网开发板，专为多协议通信与智能硬件开发设计。其核心优势在于融合 LoRa、Sub-GHz（CC1101 模块）、NFC（PN532）、红外遥控 及 Wi-Fi 6/蓝牙 5.0，支持复杂场景下的无线连接需求，如远程传感（LoRa 超远传输）、智能家居控制（红外/NFC 门禁）及工业监控。开发板配备 1.9 英寸 TFT 屏幕（320x170 分辨率），支持动态数据显示与图形交互，搭配 旋转编码器 实现精准参数调节。此外，8 个可编程 RGB LED、麦克风与扬声器模块（支持语音交互）及 TF 卡扩展存储 进一步丰富了人机交互与数据处理能力。紧凑设计中优化引脚复用（如 SPI 总线共享），兼顾功能密度与开发灵活性，适用于智能家居中控、环境监测及教育级物联网原型开发，为开发者提供 开箱即用、多场景适配的高效硬件平台。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Embed-CC1101-2.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Embed-CC1101-zh.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3">版本迭代</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">T-Embed-CC1101_V1.0</td>
+  <td style="text-align:center">2024-07-29</td>
+  <td style="text-align:left">Hardware</td>
 </tr>
 <tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>Wi-Fi 802.11 b/g/n，BLE 5</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>1.9 inch ST7789V IPS color TFT LCD</td>
-</tr>
-<tr>
-  <td>Sub-G</td>
-  <td>CC1101</td>
-</tr>
-<tr>
-  <td>NFC</td>
-  <td>PN532</td>
-</tr>
-<tr>
-  <td>电池容量</td>
-  <td>3.7V-1300mAh</td>
-</tr>
-<tr>
-  <td>电池芯片</td>
-  <td>BQ25896, BQ27220</td>
-</tr>
-<tr>
-  <td>开关</td>
-  <td>支持电源开关</td>
-</tr>
-<tr>
-  <td>LED 驱动</td>
-  <td>WS2812</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RST 按键 + 1 x BOOT 按键</td>
-</tr>
-<tr>
-  <td>音频</td>
-  <td>ES7210</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C接口</td>
-</tr>
-<tr>
-  <td>红外</td>
-  <td>支持红外</td>
-</tr>
-<tr>
-  <td>UI</td>
-  <td>LVGL</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>2 × QWIIC接口</td>
-</tr>
-<tr>
-  <td>孔位</td>
-  <td>2×2mm 定位孔</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>97.5x39x31mm</strong></td>
+  <td style="text-align:center">T-Embed-CC1101_V1.1</td>
+  <td style="text-align:center">2025-01-09</td>
+  <td style="text-align:left">Software</td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101"  target="_blank">T-Embed-CC1101</a></p>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Embed CC1101</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16MB</td>
+  <td style="text-align:center">8MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-embed"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">bq25896</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">bq27220</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf"  target="_blank">cc1101</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-CC1101</a></p>
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成物联网开发板，专为多协议通信与智能硬件开发设计。板载 CC1101 Sub-GHz 模块、LoRa、PN532 NFC、红外遥控、Wi-Fi 6 与蓝牙 5.0，支持远程传感、智能家居控制与工业监控等复杂场景。配备 1.9 英寸 TFT 屏幕、旋转编码器、8 个可编程 RGB LED、麦克风与扬声器模块，并支持 TF 卡扩展存储，为开发者提供开箱即用、多场景适配的高效硬件平台。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Embed-CC1101-2.jpg" alt="T-Embed-CC1101" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Embed-CC1101-zh.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>芯片：ESP32-S3FN16R8</li>
+<li>PSRAM：8MB (Octal SPI)</li>
+<li>FLASH：16MB</li>
+<li>无线：2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</li>
+</ul>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
+<ul>
+<li>尺寸：1.9英寸IPS TFT屏幕</li>
+<li>分辨率：320×170px</li>
+<li>屏幕类型：IPS</li>
+<li>驱动芯片：ST7789V</li>
+<li>兼容库：TFT_eSPI, LVGL</li>
+<li>总线通信协议：SPI</li>
+</ul>
+<h3 id="%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9D%97">通信模块</h3>
+<ul>
+<li>Sub-GHz：CC1101</li>
+<li>NFC：PN532</li>
+<li>GPS：MIA-M10Q（可选）</li>
+</ul>
+<h3 id="%E9%9F%B3%E9%A2%91%E7%B3%BB%E7%BB%9F">音频系统</h3>
+<ul>
+<li>音频芯片：ES7210</li>
+<li>功能：麦克风输入与扬声器输出</li>
+</ul>
+<h3 id="%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86">电源管理</h3>
+<ul>
+<li>充电芯片：BQ25896</li>
+<li>电量监测：BQ27220</li>
+<li>电池：3.7V 1300mAh 锂聚合物电池</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FN16R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">1.9英寸 ST7789V IPS TFT</td>
+</tr>
+<tr>
+  <td style="text-align:center">Sub-GHz</td>
+  <td style="text-align:center">CC1101</td>
+</tr>
+<tr>
+  <td style="text-align:center">NFC</td>
+  <td style="text-align:center">PN532</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">ES7210 麦克风与扬声器</td>
+</tr>
+<tr>
+  <td style="text-align:center">充电芯片</td>
+  <td style="text-align:center">BQ25896</td>
+</tr>
+<tr>
+  <td style="text-align:center">电量监测</td>
+  <td style="text-align:center">BQ27220</td>
+</tr>
+<tr>
+  <td style="text-align:center">RGB LED</td>
+  <td style="text-align:center">8 × WS2812 可编程LED</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF 卡</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C接口)</td>
+</tr>
+<tr>
+  <td style="text-align:center">控制</td>
+  <td style="text-align:center">旋转编码器</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">1 x RESET 按键 + 1 x BOOT 按键</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center">97.5 × 39 × 31 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+
+<pre class="language-none"><code class="language-none">- ✅ bq25896_test : 电池管理测试，在串口中打印电池状态。
+- ✅ cc1101_recv_irq ：无线接收测试，在串口中显示接收到的消息。
+- ✅ cc1101_send_irq ：无线发送测试，在串口中显示发送的消息。
+- ✅ display_test ：屏幕显示测试；
+- ✅ encode_test ：编码器测试。
+- ✅ infrared_recv_test: 红外接收
+- ✅ infrared_send_test: 红外发送
+- ✅ lvgl_test ：lvgl benchmark 和压力测试；
+- ✅ pn532_test ：NFC测试，在串口中显示 IC 卡的信息。
+- ✅ tf_card_test ：SD 卡测试，在串口中显示读取到的的文件名。
+- ✅ record_test : 录制 15 秒钟的音频，并保存到 SD 卡中。
+- ✅ voice_test : 扬声器测试，从SD卡读取音频。
+- ✅ ws2812_test ：LED 灯测试；
+</code></pre>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>安装<a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>，根据你的系统类型选择安装。</li>
+<li>打开VisualStudioCode软件侧边栏的&quot;扩展&quot;（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索&quot;PlatformIO IDE&quot;扩展并下载。</li>
+<li>在安装扩展的期间，你可以前往GitHub下载程序，你可以通过点击带绿色字样的&quot;&lt;&gt; Code&quot;下载主分支程序，也通过侧边栏下载&quot;Releases&quot;版本程序。</li>
+<li>扩展安装完成后，打开侧边栏的资源管理器（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>打开），点击&quot;打开文件夹&quot;，找到刚刚你下载的项目代码（整个文件夹），点击&quot;添加&quot;，此时项目文件就添加到你的工作区了。</li>
+<li>打开项目文件中的&quot;platformio.ini&quot;（添加文件夹成功后PlatformIO会自动打开对应文件夹的&quot;platformio.ini&quot;）,在&quot;[platformio]&quot;目录下取消注释选择你需要烧录的示例程序（以&quot;default_envs = xxx&quot;为标头），然后点击左下角的&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击左下角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>安装<a href="https://www.arduino.cc/en/software"  target="_blank">Arduino</a>，根据你的系统类型选择安装。</li>
+<li>打开项目文件夹的&quot;example&quot;目录，选择示例项目文件夹，打开以&quot;.ino&quot;结尾的文件即可打开Arduino IDE项目工作区。</li>
+<li>打开右上角&quot;工具&quot;菜单栏-&gt;选择&quot;开发板&quot;-&gt;&quot;开发板管理器&quot;，找到或者搜索&quot;esp32&quot;，下载作者名为&quot;Espressif Systems&quot;的开发板文件。接着返回&quot;开发板&quot;菜单栏，选择&quot;ESP32 Arduino&quot;开发板下的开发板类型，选择的开发板类型由&quot;platformio.ini&quot;文件中以[env]目录下的&quot;board = xxx&quot;标头为准，如果没有对应的开发板，则需要自己手动添加项目文件夹下&quot;board&quot;目录下的开发板。</li>
+<li>打开菜单栏&quot;文件&quot;-&gt;&quot;首选项&quot;，找到&quot;项目文件夹位置&quot;这一栏，将项目目录下的&quot;libraries&quot;文件夹里的所有库文件连带文件夹复制粘贴到这个目录下的&quot;libraries&quot;里边。</li>
+<li>在&quot;工具&quot;菜单中选择正确的设置，如下表所示。</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>选择正确的端口。</li>
+<li>点击右上角&quot;<kbd>√</kbd>&quot;进行编译，如果编译无误，将单片机连接电脑，点击右上角&quot;<kbd>→</kbd>&quot;即可进行烧录。</li>
+</ol>
+<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+
+<pre class="language-c"><code class="language-c">#define BOARD_USER_KEY 6
+#define BOARD_PWR_EN   15
+
+// WS2812
+#define WS2812_NUM_LEDS 8
+#define WS2812_DATA_PIN 14
+
+// IR
+#define BOARD_IR_EN 2
+#define BOARD_IR_RX 1
+
+// MIC
+#define BOARD_MIC_DATA 42
+#define BOARD_MIC_CLK  39
+
+// VOICE
+#define BOARD_VOICE_BCLK  46
+#define BOARD_VOICE_LRCLK 40
+#define BOARD_VOICE_DIN   7
+
+// --------- DISPLAY ---------
+// About LCD definition in the file: lib/TFT_eSPI/User_Setups/Setup214_LilyGo_T_Embed_PN532.h
+#define DISPLAY_WIDTH  170
+#define DISPLAY_HEIGHT 320
+
+#define DISPLAY_BL   21 
+#define DISPLAY_CS   41
+#define DISPLAY_MISO -1
+#define DISPLAY_MOSI  9
+#define DISPLAY_SCLK 11
+#define DISPLAY_DC   16
+#define DISPLAY_RST  40
+
+// --------- ENCODER ---------
+#define ENCODER_INA 4
+#define ENCODER_INB 5
+#define ENCODER_KEY 0
+
+// --------- IIC ---------
+#define BOARD_I2C_SDA  8
+#define BOARD_I2C_SCL  18
+
+// IIC addr
+#define BOARD_I2C_ADDR_1 0x24  // PN532
+#define BOARD_I2C_ADDR_2 0x55  // BQ27220
+#define BOARD_I2C_ADDR_3 0x6b  // BQ25896
+
+// NFC
+#define BOARD_PN532_SCL     BOARD_I2C_SCL
+#define BOARD_PN532_SDA     BOARD_I2C_SDA
+#define BOARD_PN532_RF_REST 45
+#define BOARD_PN532_IRQ     17
+
+// --------- SPI ---------
+#define BOARD_SPI_SCK  11
+#define BOARD_SPI_MOSI 9
+#define BOARD_SPI_MISO 10
+
+// TF card
+#define BOARD_SD_CS   13
+#define BOARD_SD_SCK  BOARD_SPI_SCK
+#define BOARD_SD_MOSI BOARD_SPI_MOSI
+#define BOARD_SD_MISO BOARD_SPI_MISO
+
+// LORA
+#define BOARD_LORA_CS   12
+#define BOARD_LORA_SCK  BOARD_SPI_SCK
+#define BOARD_LORA_MOSI BOARD_SPI_MOSI
+#define BOARD_LORA_MISO BOARD_SPI_MISO
+#define BOARD_LORA_IO2  38
+#define BOARD_LORA_IO0  3
+#define BOARD_LORA_SW1  47
+#define BOARD_LORA_SW0  48
+</code></pre>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li><p><strong>Q. 看了以上教程我还是不会搭建编程环境怎么办？</strong><br />
+A. 如果看了以上教程还不懂如何搭建环境的可以参考<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a>文档说明来搭建。</p>
+</li>
+<li><p><strong>Q. 不能检测到SD卡？</strong><br />
+A. 我们用SanDisk成功测试了不超过32GB的SD；但其他一些卡片没有，原因尚不清楚，因此，在未检测到SD卡的情况下，建议更换不大于32G的 SanDisk 卡；<br />
+  <img src="./docs/image-sd.png" alt="alt text" /></p>
+</li>
+<li><p><strong>Q. 为什么我的板子一直烧录失败呢？</strong><br />
+A. 请按住&quot;BOOT&quot;按键同时按&quot;RST&quot;按键，然后释放&quot;RST&quot;按键，进入下载模式后重新下载程序。</p>
+</li>
+<li><p><strong>Q. CC1101模块的通信距离是多少？</strong><br />
+A. CC1101的通信距离受多种因素影响，包括天线设计、环境干扰、数据速率等，在理想条件下可达数百米。</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Problem</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">How do I enter download mode?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/download_mode.md"  target="_blank">docs</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How to download the program?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md"  target="_blank">dosc</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How do I turn on the device after I shut it down?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/5"  target="_blank">Issues #5</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How do I configure Wifi with EspTouch?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/4"  target="_blank">Issues #4</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">Why won't the battery charge？</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/9"  target="_blank">Issues #9</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-CC1101_V1.0</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf"  target="_blank">CC1101</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">BQ25896</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">BQ27220</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/ST7789V.pdf"  target="_blank">ST7789V</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
 <ul>
 <li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
 <li><a href="https://github.com/Seeed-Studio/PN532.git"  target="_blank">PN532</a></li>
@@ -395,92 +712,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
 <li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE 设置</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td><strong>ESP32S3 Dev Module</strong></td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td><strong>16MB(128Mb)</strong></td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td><strong>16M Flash(3M APP/9.9MB FATFS)</strong></td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td><strong>OPI PSRAM</strong></td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td><strong>UART0/Hardware CDC</strong></td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td><strong>CDC and JTAG</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
-<ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-</ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
 
                         
                     </div>
