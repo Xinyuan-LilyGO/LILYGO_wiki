@@ -50,7 +50,11 @@ items:
     -   label: T-Embed SI4732
         file: Wearable/T-Embed-SI4732/T-Embed-SI4732.md   
     -   label: T-Glass  
-        file: Wearable/T-Glass/T-Glass.md                            
+        file: Wearable/T-Glass/T-Glass.md 
+    -   label: T-Mini E-paper-S3
+        file: Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.md
+    -   label: T-Watch Ultra
+        file: Wearable/T-Watch-Ultra/T-Watch-Ultra.md
 -   label: 无线通讯设备
     items:   
     -   label: LoRa/GPS
