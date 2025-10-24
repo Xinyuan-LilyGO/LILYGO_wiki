@@ -59,14 +59,14 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 
 ## 模块
 
-### 1. MCU
+###  MCU
 
 * 芯片：ESP32-S3-R8
 * PSRAM：8M (Octal SPI) 
 * FLASH：16M
 * 其他说明：更多资料请访问[乐鑫官方ESP32-S3数据手册](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
 
-### 2. 屏幕
+### 屏幕
 
 * 尺寸：1.43英寸AMOLED圆屏幕
 * 分辨率：466x466px
@@ -75,18 +75,18 @@ T-Display-S3-AMOLED-1.43-1.75 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双
 * 兼容库：Arduino_GFX
 * 总线通信协议：QSPI
 
-### 3. 触摸
+###  触摸
 
 * 芯片：FT3268
 * 总线通信协议：IIC
 
-### 4. 充电芯片
+###  充电芯片
 
 * 芯片：SY6970
 * 总线通信协议：IIC
 * 其他：该芯片在未接电池5V供电时输出波形将非常不稳定，需要连接电池使用或者软件关闭电池通道，这样的话情况将会得到缓解
 
-### 5. RTC
+###  RTC
 
 * 芯片：PCF8563
 * 总线通信协议：IIC
