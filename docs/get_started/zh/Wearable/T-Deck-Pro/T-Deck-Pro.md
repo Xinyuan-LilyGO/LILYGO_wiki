@@ -164,7 +164,13 @@ SSL
 |  |  |  |  |
 
 ### PlatformIO
-1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)，然后克隆或下载该项目；2. 在 `VisualStudioCode` 扩展中搜索 `PlatformIO` 插件并进行安装；3. 安装完成后，您需要重启“Visual Studio Code”。4. 打开此项目后，PlatformIO 将自动下载所需的三方库和依赖项，首次下载过程相对较长，请耐心等待；5. 安装完所有依赖项后，您可以打开 `platformio.ini` 配置文件，在 `example` 中取消注释以选择一个例程，然后按 `ctrl+s` 保存 `.ini` 配置文件；6. 在 VScode 中点击 ：ballot_box_with_check： 来编译项目，然后插入 USB 并在 VScode 中选择 COM。7. 最后，点击 ：arrow_right： 按钮将程序下载到 Flash 中；
+1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)，然后克隆或下载该项目；
+2. 在 `VisualStudioCode` 扩展中搜索 `PlatformIO` 插件并进行安装；
+3. 安装完成后，您需要重启“Visual Studio Code”。
+4. 打开此项目后，PlatformIO 将自动下载所需的三方库和依赖项，首次下载过程相对较长，请耐心等待；
+5. 安装完所有依赖项后，您可以打开 `platformio.ini` 配置文件，在 `example` 中取消注释以选择一个例程，然后按 `ctrl+s` 保存 `.ini` 配置文件；
+6. 在 VScode 中点击 ：ballot_box_with_check： 来编译项目，然后插入 USB 并在 VScode 中选择 COM。
+7. 最后，点击arrow_right： 按钮将程序下载到 Flash 中；
 
 ### Arduino
 1. 安装[Arduino](https://www.arduino.cc/en/software)，根据你的系统类型选择安装。
