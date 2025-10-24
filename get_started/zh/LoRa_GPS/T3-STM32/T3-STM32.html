@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T3-STM32 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["STM32WL55", "LoRa", "OLED", "Low Power", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -238,6 +238,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>STM32WL55</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>OLED</li>
+                            
+                                <li>Low Power</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -261,126 +271,218 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T3-STM32-1.jpg" alt="T-PICO-2350-03" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-STM32-1.jpg" alt="T3-STM32" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能物联网开发板，集成 LoRa 远程通信模块，支持 433/868/915MHz 多频段，适配全球物联网应用场景。其硬件配置包括 256KB 闪存与 64KB SRAM，搭载 SSD1315 驱动的 OLED 显示屏（通过 I2C 接口控制）、TF 卡存储扩展（SPI 协议）以及太阳能输入接口（4.4~6V），支持户外能源采集与低功耗运行。板载丰富的 GPIO 引脚，兼容 SPI、I2C、定时器等多种外设接口，并预留 QWIIC 生态连接器，便于传感器扩展。适用于远程监测、环境传感、LoRa 网关及太阳能供电设备等物联网终端的快速开发。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T3-STM32-2.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T3-STM32-3.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3-stm32">官网购买</a>
+</div>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">SRAM</th>
+  <th style="text-align:center">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>STM32WL 55CCU6</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>256kb</td>
-</tr>
-<tr>
-  <td>SRAM</td>
-  <td>64kb</td>
-</tr>
-<tr>
-  <td>Dual Core</td>
-  <td>32-bit Arm® Cortex®-M4 + Cortex®-M0+ CPU</td>
-</tr>
-<tr>
-  <td>内置无线电调制</td>
-  <td>LoRa®, (G)FSK, (G)MSK ,BPSK</td>
-</tr>
-<tr>
-  <td>Lora</td>
-  <td>SX1262 433Mhz~915Mhz(可选)</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>0.96 inch SSD1315 Driver I2C OLED</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C接口</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RST 按键 + 1 x BOOT 按键</td>
-</tr>
-<tr>
-  <td>IO 拓展</td>
-  <td>2.54mm间距 × 2*13拓展IO接口</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>2 × QWIIC 拓展接口 <br>1 × battery Switch <br>1 × 2.54mm间距 四针拓展SWD接口 <br>1 ×太阳能输入接口(4.4~6V) <br> 1 × LoRa 天线接口 <br> 1 ×五针天线座子接口</td>
-</tr>
-<tr>
-  <td>孔位</td>
-  <td>2×2mm 定位孔</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>66x27x13mm</strong></td>
+  <td style="text-align:center">T3-STM32</td>
+  <td style="text-align:center">STM32WL55CCU6</td>
+  <td style="text-align:center">256KB</td>
+  <td style="text-align:center">64KB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t3-stm32"  target="_blank">LILYGO Store</a></td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>更多项目信息可参考<br />
-Github：<a href="https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master"  target="_blank">T3 STM32</a></p>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf"  target="_blank">SSD1315</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/T3_STM32%20V1.0%2024-07-30.pdf"  target="_blank">T3 STM32</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能物联网开发板，集成 LoRa 远程通信模块，支持 433/868/915MHz 多频段，适配全球物联网应用场景。其硬件配置包括 256KB 闪存与 64KB SRAM，搭载 SSD1315 驱动的 OLED 显示屏（通过 I2C 接口控制）、TF 卡存储扩展（SPI 协议）以及太阳能输入接口（4.4~6V），支持户外能源采集与低功耗运行。板载丰富的 GPIO 引脚，兼容 SPI、I2C、定时器等多种外设接口，并预留 QWIIC 生态连接器，便于传感器扩展。适用于远程监测、环境传感、LoRa 网关及太阳能供电设备等物联网终端的快速开发。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-STM32-2.jpg" alt="T3-STM32" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T3-STM32-3.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">STM32 hal</a></li>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">STM32CubeMX</a></li>
+<li>芯片：STM32WL55CCU6</li>
+<li>架构：32-bit Arm® Cortex®-M4 + Cortex®-M0+ 双核</li>
+<li>FLASH：256KB</li>
+<li>SRAM：64KB</li>
+<li>内置无线电：LoRa®, (G)FSK, (G)MSK, BPSK</li>
 </ul>
-<h4 id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</h4>
-<blockquote>
-<p>使用者如有需要调节外接天线电阻请参考</p>
-</blockquote>
-<img src="./assets/T3-STM32-4.png" alt="summary" width=80%>
-<blockquote class="spoiler warning">
-<p>调整电阻方向实现调节外接天线的电阻。</p>
-</blockquote>
-<h2 id="%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7">下载工具</h2>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
+<ul>
+<li>尺寸：0.96英寸OLED屏幕</li>
+<li>分辨率：128×64px</li>
+<li>驱动芯片：SSD1315</li>
+<li>接口：I2C</li>
+</ul>
+<h3 id="%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1">无线通信</h3>
+<ul>
+<li>LoRa：SX1262</li>
+<li>频段：433MHz/868MHz/915MHz（可选）</li>
+<li>天线接口：标准SMA接口</li>
+</ul>
+<h3 id="%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86">电源管理</h3>
+<ul>
+<li>供电：USB Type-C</li>
+<li>太阳能输入：4.4~6V</li>
+<li>电池开关：支持电池供电切换</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">STM32WL55CCU6 Dual-core Cortex-M4+M0+</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">256KB</td>
+</tr>
+<tr>
+  <td style="text-align:center">SRAM</td>
+  <td style="text-align:center">64KB</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">0.96英寸 SSD1315 OLED (128×64)</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433/868/915MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">内置无线电</td>
+  <td style="text-align:center">LoRa®, (G)FSK, (G)MSK, BPSK</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF 卡扩展 (SPI)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C接口)</td>
+</tr>
+<tr>
+  <td style="text-align:center">扩展接口</td>
+  <td style="text-align:center">2 × QWIIC 接口 + 2.54mm间距 2×13 GPIO</td>
+</tr>
+<tr>
+  <td style="text-align:center">调试接口</td>
+  <td style="text-align:center">2.54mm间距 4针SWD接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">电源接口</td>
+  <td style="text-align:center">太阳能输入接口 (4.4~6V)</td>
+</tr>
+<tr>
+  <td style="text-align:center">天线接口</td>
+  <td style="text-align:center">LoRa天线接口 + 五针天线座子</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">1 x RESET 按键 + 1 x BOOT 按键</td>
+</tr>
+<tr>
+  <td style="text-align:center">安装孔</td>
+  <td style="text-align:center">2 × 2mm 定位孔</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center">66 × 27 × 13 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%87%86%E5%A4%87">开发工具准备</h3>
+<h4 id="%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7">下载工具</h4>
 <ol>
-<li>ST 官方编程软件下载 <a href="https://www.st.com.cn/zh/development-tools/stm32cubeprog.html"  target="_blank">STM32CubeProgrammer</a></li>
-<li>JLink 下载 <a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack"  target="_blank">JLink Software and Documentation Pack</a></li>
-<li>STLink 驱动下载 <a href="https://www.st.com.cn/zh/development-tools/stsw-link009.html"  target="_blank">STLink_V3.0.1_win32</a></li>
+<li><strong>STM32CubeProgrammer</strong> - <a href="https://www.st.com.cn/zh/development-tools/stm32cubeprog.html"  target="_blank">ST官方下载</a></li>
+<li><strong>J-Link</strong> - <a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack"  target="_blank">SEGGER下载</a></li>
+<li><strong>ST-Link</strong> - <a href="https://www.st.com.cn/zh/development-tools/stsw-link009.html"  target="_blank">ST官方驱动</a></li>
 </ol>
 <blockquote>
-<p><code>JLink</code> <code>STLink</code> <code>STM32CubeProgrammer</code> 三种下载器均需要使用驱动程序才能正常使用</p>
+<p><strong>注意</strong>: JLink、STLink、STM32CubeProgrammer 三种下载器均需要使用驱动程序才能正常使用</p>
 </blockquote>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
+<li><a href="https://www.st.com.cn/zh/development-tools/stm32cubeide.html#get-software"  target="_blank">STM32CubeIDE</a></li>
 <li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.st.com.cn/zh/development-tools/stm32cubeide.html#get-software"  target="_blank">STM32Cube</a></li>
+<li><a href="https://platformio.org/"  target="_blank">PlatformIO</a></li>
 </ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+
+<pre class="language-none"><code class="language-none">├─1_led : Create simple projects
+├─2_jlink_rtt_print : Used only to test jlink printing
+├─3_sdcard : Test TF card screen
+├─4_oled : Test oled screen
+├─5_RF_test : This example is AT Slave and is only used for RF testing
+├─6_SubGHz_TXRX : Transceiver test using Lora modulation
+├─DeepSleep : Test board sleep power consumption
+├─PingPong : Port CubeMX package SubGHz_Phy_PingPong program
+</code></pre>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li><p><strong>Q. 如何调节外接天线电阻？</strong><br />
+A. 参考下图调整电阻方向实现调节外接天线的电阻：</p>
+<img src="./assets/T3-STM32-4.png" alt="天线电阻调节" width=60%>
+</li>
+<li><p><strong>Q. STM32WL55的双核架构有什么优势？</strong><br />
+A. Cortex-M4处理应用逻辑，Cortex-M0+处理无线电协议，实现高效的任务分离和功耗优化。</p>
+</li>
+<li><p><strong>Q. 支持哪些调试器？</strong><br />
+A. 支持ST-Link、J-Link等多种调试器，通过4针SWD接口连接。</p>
+</li>
+<li><p><strong>Q. 太阳能输入有什么要求？</strong><br />
+A. 支持4.4~6V太阳能输入，适合户外能源采集应用。</p>
+</li>
+<li><p><strong>Q. LoRa频段如何选择？</strong><br />
+A. 提供433MHz、868MHz、915MHz三种频段版本，请根据所在地区的法规要求选择。</p>
+</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/T3_STM32%20V1.0%2024-07-30.pdf"  target="_blank">T3-STM32_V1.0</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf"  target="_blank">SSD1315 Datasheet</a></li>
+<li><a href="https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf"  target="_blank">STM32WL55 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-core/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
+<ul>
+<li><a href="https://www.st.com/en/embedded-software/stm32cubewl.html"  target="_blank">STM32 HAL Library</a></li>
+<li><a href="https://www.st.com/en/development-tools/stm32cubemx.html"  target="_blank">STM32CubeMX</a></li>
+<li><a href="https://github.com/stm32-hotspot/STM32WL_LoRa_Radio_Driver"  target="_blank">LoRa Radio Driver</a></li>
+</ul>
 
                         
                     </div>
