@@ -85,15 +85,6 @@ items:
             file: High_speed/T-Connect/T-Connect.md            
         -   label: T-Connect Pro
             file: High_speed/T-Connect-Pro/T-Connect-Pro.md
-        -   label: T-A7670
-            file: High_speed/SIM.md
-            items:
-            -   label: T-A7670E
-                file : High_speed/T-A7670/T-A7670E/T-A7670E.md
-            -   label: T-A7670G
-                file: High_speed/T-A7670/T-A7670G/T-A7670G.md
-            -   label: T-A7670SA
-                file: High_speed/T-A7670/T-A7670SA/T-A7670SA.md 
         -   label: T-ETH
             items:
             -   label: T-ETH-Elite
@@ -113,7 +104,20 @@ items:
         -   label: T-2Can
             file: High_speed/T-2Can/T-2Can.md
         -   label: T-PCIE
-            file: High_speed/T-PCIE/T-PCIE.md
+            items:
+            -   label: SIM7600E
+                file: High_speed/T-PCIE/SIM7600E/SIM7600E.md
+            -   label: T-PCIE-S3
+                file: High_speed/T-PCIE/T-PCIE-S3.md  
+            -   label: T-A7670
+                file: High_speed/T-PCIE/SIM.md
+                items:
+                -   label: T-A7670E
+                    file : High_speed/T-PCIE/T-A7670/T-A7670E/T-A7670E.md.md
+                -   label: T-A7670G
+                    file:  High_speed/T-PCIE/T-A7670/T-A7670G/T-A7670G.md
+                -   label: T-A7670SA
+                    file:  High_speed/T-PCIE/T-A7670/T-A7670SA/T-A7670SA.md            
 -   label: AI Kit
     items:
     -   label: T-Display K230
