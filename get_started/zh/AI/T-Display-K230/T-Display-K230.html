@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Display K230 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["K230", "AI", "LoRa", "AMOLED", "RISC-V", "NPU"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,18 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>K230</li>
+                            
+                                <li>AI</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>RISC-V</li>
+                            
+                                <li>NPU</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -264,166 +276,460 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/K256outlook1.jpg" alt="T-Display K230" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="%E6%A6%82%E8%BF%B0">概述</h2>
-<p>T-Display K230 是继 K210 之后，基于嘉楠科技最新芯片 K230 设计的一款全新产品。它继承了 K230 高达 1.6GHz 主频的强大算力，并融合了 LILYGO 特色的 LoRa 通讯功能和Display，同时集成了HDMI接口和以太网接口，为开发者提供更广泛的应用可能。</p>
-<p>在外观设计上，T-Display K230采用了符合手持设备尺寸的设计，配备4.1英寸优质AMOLED屏幕，支持电容触摸，提供更加流畅的视觉体验和交互体验。同时，我们提供了屏幕UI Demo应用演示，方便开发者快速上手。</p>
-<p>K230作为一款AIoT领域的高性能芯片，具备丰富的计算能力和扩展接口：</p>
-<p>双核RISC-V处理器主频高达1.6GHz，提供强大算力</p>
-<p>集成NPU（神经网络处理单元），算力接近1.6TOPS，支持AI推理加速</p>
-<p>内置ISP（图像信号处理器）优化摄像头图像处理效果，优化摄像头图像处理效果</p>
-<p>支持H.264编码可​，可用于视频流处理和边缘计算</p>
-<p>另外，LoRa通讯+ISP摄像头的组合，让T-Display K230在远程、无线数据传输、AI识别、物联网监控交互等领域都具备强大优势。欢迎加入我们，共同探索更多LoRa与AIoT的无限可能！</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/K256outlook3.jpg" alt="summary" width=100%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Display-K230-cn.jpg" alt="summary" width=100%>
-<!-- | <p style="white-space:nowrap">Arduino IDE Setting  </p> | <p style="white-space:nowrap">Value</p> |
-|   :----------------------------------------------- | :------------------------------------------------ |
-| Board                                    | **ESP32S3 Dev Module**
-| Port                                     |Your port         
-| USB CDC On Boot                          |Enable 
-| CPU Frequency                            |240MHZ(WiFi)    
-| Core Debug Level                         |None       
-| USB DFU On Boot                          |disable            
-| Erase All Flash Before Sketch Upload     |disable   
-| Events Run On                            |Your port         
-| Flash Mode                               |Enable 
-| Flash Size                               |240MHZ(WiFi)    
-| Arduino Runs On                          |None 
-| USB Firmware MSC On Boot                 |disable            
-| Partition Scheme                         |disable   
-| PSRAM                                    |240MHZ(WiFi)    
-| Upload Mode                              |None 
-| Upload Speed                             |disable            
-| USB Mode                                 |CDC and JTAG    -->
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">ESP32模块</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>芯片</td>
-    <td>ESP32-S3-R8</td>
-  </tr>
-  <tr>
-    <td>PSRAM</td>
-    <td>8M</td>
-  </tr>
-  <tr>
-    <td>FLASH</td>
-    <td>16M</td>
-  </tr>
-</table>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-display-k230?_pos=2&_psq=k230&_ss=e&_v=1.0&variant=45197449953461">官网购买</a>
+</div>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:center">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Display-K230_canmv_rt_V1.0</td>
+  <td style="text-align:center">2025-02-20</td>
+  <td style="text-align:center">原始版本</td>
+</tr>
+<tr>
+  <td style="text-align:center">T-Display-K230_canmv_rt_V1.1</td>
+  <td style="text-align:center">2025-03-25</td>
+  <td style="text-align:center">更新LoRa模块（sx1262）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">LPDDR</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Display-K230_canmv_rt</td>
+  <td style="text-align:center">k230</td>
+  <td style="text-align:center">SD Card</td>
+  <td style="text-align:center">1GiB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-display-k230?_pos=2&amp;_psq=k230&amp;_ss=e&amp;_v=1.0&amp;variant=45197449953461"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
+<ul>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
+</ul>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>T-Display K230 是 LILYGO 基于嘉楠科技最新 K230 芯片设计的高性能 AIoT 开发板。作为 K210 的升级产品，K230 集成了双核 RISC-V 处理器，主频高达 1.6GHz，并配备算力接近 1.6TOPS 的 NPU（神经网络处理单元），为 AI 推理提供强大的加速能力。</p>
+<p>开发板采用符合手持设备尺寸的设计，配备 4.1 英寸优质 AMOLED 屏幕（568×1232 分辨率），支持电容触摸，提供流畅的视觉和交互体验。同时集成了 LoRa 通信模块（SX1262/SX1280）、HDMI 输出接口、以太网接口、摄像头接口等丰富功能，适用于 AI 视觉识别、边缘计算、物联网监控等高端应用场景。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/K256outlook3.jpg" alt="T-Display K230" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Display-K230-cn.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="%E4%B8%BB%E5%A4%84%E7%90%86%E5%99%A8">主处理器</h3>
+<ul>
+<li>芯片：K230 双核 RISC-V</li>
+<li>大核：1.6GHz，32KB I-cache，32KB D-cache，256KB L2 Cache，128bit RVV 1.0扩展</li>
+<li>小核：0.8GHz，32KB I-cache，32KB D-cache，128KB L2 Cache</li>
+<li>NPU：1.6TOPS，支持 INT8/INT16，Resnet50 ≥ 85fps @INT8</li>
+</ul>
+<h3 id="%E5%8D%8F%E5%A4%84%E7%90%86%E5%99%A8">协处理器</h3>
+<ul>
+<li>芯片：ESP32-S3-R8</li>
+<li>PSRAM：8MB</li>
+<li>FLASH：16MB</li>
+<li>功能：Wi-Fi/蓝牙连接，系统辅助控制</li>
+</ul>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
+<ul>
+<li>尺寸：4.1英寸 AMOLED</li>
+<li>分辨率：568x1232px</li>
+<li>屏幕类型：AMOLED</li>
+<li>接口：MIPI DSI (2 lane)</li>
+<li>触摸：电容触摸屏</li>
+<li>驱动芯片: RM69A10</li>
+</ul>
+<h3 id="LoRa">LoRa</h3>
+<ul>
+<li>芯片：SX1262 / SX1280（可选）</li>
+<li>频率：433-923MHz (SX1262) / 2.4GHz (SX1280)</li>
+</ul>
+<h3 id="%E8%A7%A6%E6%91%B8">触摸</h3>
+<ul>
+<li>芯片: GT9895</li>
+<li>总线通信协议: IIC</li>
+</ul>
+<h3 id="%E5%85%85%E7%94%B5%E6%94%AF%E6%8C%81">充电支持</h3>
+<ul>
+<li>芯片: SY6970</li>
+<li>总线通信协议: IIC</li>
+<li>如果仅使用 5V 电源供电而未连接电池，该芯片的输出波形将会非常不稳定。为使情况稳定下来，需要要么连接电池，要么使用软件来禁用电池通道。通过这样做，不稳定的情况将会得到缓解。</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">主CPU</td>
+  <td style="text-align:center">K230 双核 RISC-V (1.6GHz + 0.8GHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">NPU</td>
+  <td style="text-align:center">1.6TOPS，支持INT8/INT16</td>
+</tr>
+<tr>
+  <td style="text-align:center">内存</td>
+  <td style="text-align:center">8Gb LPDDR4</td>
+</tr>
+<tr>
+  <td style="text-align:center">协处理器</td>
+  <td style="text-align:center">ESP32-S3-R8 (Wi-Fi/蓝牙)</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">4.1英寸 AMOLED (568×1232)</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433-923MHz) / SX1280 (2.4GHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">摄像头</td>
+  <td style="text-align:center">3路 MIPI CSI-2 接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">视频输出</td>
+  <td style="text-align:center">HDMI (1080P@30fps)</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">3.5mm音频口 + 麦克风</td>
+</tr>
+<tr>
+  <td style="text-align:center">网络</td>
+  <td style="text-align:center">Wi-Fi 802.11b/g/n + 以太网</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF卡</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × POWER + 1 × USB 2.0 OTG (TYPE-C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO 接口</td>
+  <td style="text-align:center">2.54mm间距 2×20 拓展IO接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">RST + BOOT + INT0</td>
+</tr>
+<tr>
+  <td style="text-align:center">指示灯</td>
+  <td style="text-align:center">电源指示灯 + RGB灯</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center"><strong>100×48×1.6mm</strong> (无外壳)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="APP-%E7%BC%96%E8%AF%91">APP 编译</h3>
+<p>1.切换至当前目录：canmv_k230</p>
+
+<pre class="language-text"><code class="language-text">      cd canmv_k230/src/rtsmart/mpp
+      source build_env.sh
+      cd userapps/sample/sample_display
+      make
+</code></pre>
+<p>在<code>sample/elf</code>目录下生成<code>sample_display.elf</code>文件。<br />
+默认应用程序：示例显示程序</p>
+<p>将<code>sample_display.elf</code>文件重命名为<code>app.elf</code>，然后将其复制到 SD 卡中。再次开机并默认启动运行即可。</p>
+<h3 id="%E5%AE%9A%E5%88%B6-Firmware">定制 Firmware</h3>
+<blockquote>
+<p>本章介绍了如何在 K230 CanMV 上进行开发。如果您没有特殊需求，可以跳过此章节。</p>
+</blockquote>
+<blockquote>
+<p>K230 CanMV 是基于 K230 SDK 开发的。</p>
+</blockquote>
+<h4 id="%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">搭建开发环境</h4>
+<table>
+<thead>
+<tr>
+  <th>主机环境</th>
   <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>CPU 大核</td>
-  <td>1.6GHz RISC-V 32KB I-cache, 32KB D-cache, 256KB L2 Cache，128bit RVV 1.0扩展</td>
-</tr>
-<tr>
-  <td>CPU 小核</td>
-  <td>0.8GHz RISC-V 32KB I-cache, 32KB D-cache, 128KB L2 Cache</td>
-</tr>
-<tr>
-  <td>KPU</td>
-  <td>支持 INT8 和 INT16 <br>典型网络性能：Resnet 50 ≥ 85fps @INT8 ；Mobilenet_v2 ≥ 670fps @INT8；YoloV5S ≥ 38fps @INT8</td>
-</tr>
-<tr>
-  <td>内存</td>
-  <td>8Gb LPDDR4</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>摄像头</td>
-  <td>3路 MIPI CSI-2 输入，支持1/2/4lane 模式(默认配置一路，其他两路需选配)<br>最高可配置为3路2lane信号输入或1路4lane、1路2lane信号输入<br>最高速率可达1.5Gbps<br></td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>显示：30pin FPC接口：4.1英寸568×1232，彩色AMOLED屏幕(2 lane MIPI DSI 输出)<br>触摸：<strong>6pin 电容触摸屏</strong></td>
-</tr>
-<tr>
-  <td>HDMI</td>
-  <td>19pin HDMI接口: 支持1080P 30FPS</td>
-</tr>
-<tr>
-  <td>音频输出</td>
-  <td>3.5mm音频口</td>
-</tr>
-<tr>
-  <td>音频输入</td>
-  <td>麦克风咪头(mic)</td>
-</tr>
-<tr>
-  <td>网络</td>
-  <td>802.11b/g/n 无线局域网 ; IEEE 802.3u兼容 Ethernet</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>SX1262，SX1280 支持频段：433~923HMZ(可选)</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × POWER + 1 × USB 2.0 OTG(均为TYPE-C接口)</td>
-</tr>
-<tr>
-  <td>IO 接口</td>
-  <td>2.54mm间距 × 2*20（双排）拓展IO接口</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RST 按键 + 1 x BOOT 按键 + 1 x INT0 按键</td>
-</tr>
-<tr>
-  <td>LED</td>
-  <td>电源指示灯 + RGB灯</td>
-</tr>
-<tr>
-  <td>编解码</td>
-  <td>H.264 和 H.265 编码器和解码器最大分辨率支持4096×4096<br>编码器性能：3840×2160@20fps<br>解码器性能：3840×2160@40fps<br>JPEG 编解码器：支持最大 8K（8192×8192）分辨率</td>
-</tr>
-<tr>
-  <td>外设</td>
-  <td>I2C/SPI/UART/ADC/PWM/WDT 等常见外设</td>
-</tr>
-<tr>
-  <td>电源</td>
-  <td>5V/500mA 输入</td>
-</tr>
-<tr>
-  <td>孔位</td>
-  <td><strong>2mm定位孔 *4 </strong></td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>无外壳主体 100x48x1.6mm</strong></td>
+  <td>Ubuntu 20.04.4 LTS (x86_64)</td>
+  <td>K230 CanMV 组合环境适用于 Ubuntu 20.04 及更高版本系统。</td>
 </tr>
 </tbody>
 </table>
-<!-- | IMU | **板载六轴 IMU 传感器（三轴加速度+三轴角速度）** | -->
-<!-- | RTC | **板载 BM8653 RTC 芯片+纽扣电池，断电时间仍然正确** | -->
-<h2 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99%E9%93%BE%E6%8E%A5">相关资料链接</h2>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<blockquote>
+<p>目前，K230 CanMV 仅在 Linux 环境中得到了编译验证。其他 Linux 版本尚未进行测试，因此无法保证其与其他系统的兼容性。</p>
+</blockquote>
+<h5 id="%E6%9C%AC%E5%9C%B0%E7%BC%96%E8%AF%91">本地编译</h5>
+<ul>
+<li>更新 APT 源（可选）</li>
+</ul>
+
+<pre class="language-sh"><code class="language-sh">sudo bash -c 'cp /etc/apt/sources.list /etc/apt/sources_bak.list &amp;&amp; \
+  sed -i &quot;s/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g&quot; /etc/apt/sources.list &amp;&amp; \
+  sed -i &quot;s/security.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g&quot; /etc/apt/sources.list'
+</code></pre>
+<ul>
+<li>安装必要的依赖项</li>
+</ul>
+
+<pre class="language-sh"><code class="language-sh"># Add support for i386 architecture
+sudo bash -c 'dpkg --add-architecture i386 &amp;&amp; \
+  apt-get clean all &amp;&amp; \
+  apt-get update &amp;&amp; \
+  apt-get install -y --fix-broken --fix-missing --no-install-recommends \
+    sudo vim wget curl git git-lfs openssh-client net-tools sed tzdata expect mtd-utils inetutils-ping locales \
+    sed make cmake binutils build-essential diffutils gcc g++ bash patch gzip bzip2 perl tar cpio unzip rsync \
+    file bc findutils dosfstools mtools bison flex autoconf automake python3 python3-pip python3-dev python-is-python3 \
+    lib32z1 scons libncurses5-dev kmod fakeroot pigz tree doxygen gawk pkg-config libyaml-dev libconfuse2 libconfuse-dev \
+    libssl-dev libc6-dev-i386 libncurses5:i386'
+</code></pre>
+<ul>
+<li>更新 PIP 源（可选）</li>
+</ul>
+
+<pre class="language-sh"><code class="language-sh">pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple &amp;&amp; \
+pip3 config set global.extra-index-url &quot;https://mirrors.aliyun.com/pypi/simple https://mirrors.cloud.tencent.com/pypi/simple&quot;
+</code></pre>
+<ul>
+<li>安装 Python 依赖项</li>
+</ul>
+
+<pre class="language-sh"><code class="language-sh">pip3 install -U pyyaml pycryptodome gmssl jsonschema jinja2
+</code></pre>
+<ul>
+<li>安装仓库工具</li>
+</ul>
+
+<pre class="language-sh"><code class="language-sh">mkdir -p ~/.bin
+curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/.bin/repo
+chmod a+rx ~/.bin/repo
+echo 'export PATH=&quot;${HOME}/.bin:${PATH}&quot;' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre>
+<h4 id="%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B">编译过程</h4>
+<h5 id="%E6%BA%90%E4%BB%A3%E7%A0%81%E4%B8%8B%E8%BD%BD">源代码下载</h5>
+<p>CanMV-K230 的源代码存放在 Github 上。用户可以使用“仓库”工具来下载该源代码。</p>
+
+<pre class="language-sh"><code class="language-sh"># 建议在用户主目录下先创建一个文件夹，然后再下载代码。
+mkdir -p ~/canmv_k230_pro &amp;&amp; cd ~/canmv_k230_pro
+# 下载 RT-Smart + CanMV 项目
+git clone https://github.com/Xinyuan-LilyGO/T-Display-K230_canmv_rt.git
+</code></pre>
+<h5 id="%E4%BB%A3%E7%A0%81%E5%87%86%E5%A4%87">代码准备</h5>
+<p>首次编译时，您需要下载工具链。以下命令只需执行一次即可</p>
+
+<pre class="language-sh"><code class="language-sh">cd canmv_k230
+# 首次运行时请下载工具链。
+make dl_toolchain
+</code></pre>
+<h5 id="%E7%BC%96%E8%AF%91">编译</h5>
+<p>根据实际需求选择相应的板卡配置文件，然后开始编译</p>
+
+<pre class="language-sh"><code class="language-sh"># 列出可用配置选项
+make list_def 
+# 选择相应的板卡配置文件
+make k230_canmv_defconfig  # 替换为适合您的板卡的配置文件
+# 开始编译
+time make log
+</code></pre>
+<p>编译完成后，在<code>canmv_k230/build/bin</code>目录下生成<code>app.bin</code>文件，烧写到K230的SPI Flash中。</p>
+<h3 id="Firmware-%E4%B8%8B%E8%BD%BD">Firmware 下载</h3>
+<h4 id="%E5%9C%A8windows%E5%B9%B3%E5%8F%B0%E7%83%A7%E5%86%99%E5%9B%BA%E4%BB%B6">在windows平台烧写固件</h4>
+<p>在 Windows 系统中，您可以使用 Rufus 工具将固件写入 TF 卡。Rufus 的下载地址为： <a href="http://rufus.ie/downloads/"  target="_blank">Rufus Official Website</a>.</p>
+<ol>
+<li>将 TF 卡插入您的电脑，并启动 Rufus 工具。在界面中点击“选择”按钮，然后选择要刷入的固件文件。<img src="https://www.kendryte.com/k230_canmv/en/main/_images/rufus_select.png" alt="rufus-flash-from-file" /></li>
+<li>点击“开始”按钮，Rufus 工具将自动识别设备，并开始烧写固件。<img src="https://www.kendryte.com/k230_canmv/en/main/_images/rufus_start.png" alt="rufus-flash" /> <img src="https://www.kendryte.com/k230_canmv/en/main/_images/rufus_sure.png" alt="rufus-sure" /> <img src="https://www.kendryte.com/k230_canmv/en/main/_images/rufus_warning.png" alt="rufus-warning" /> <img src="https://www.kendryte.com/k230_canmv/en/main/_images/rufus_finish.png" alt="rufus-finish" /></li>
+</ol>
+<h4 id="%E5%9C%A8Linux%E5%B9%B3%E5%8F%B0%E7%83%A7%E5%86%99%E5%9B%BA%E4%BB%B6">在Linux平台烧写固件</h4>
+<p>在插入 TF 卡之前，首先运行以下命令来检查当前的存储设备：</p>
+
+<pre class="language-sh"><code class="language-sh">ls -l /dev/sd\*
+</code></pre>
+<p>接下来，将 TF 卡插入主机，并再次运行相同的命令以识别新添加的设备节点，该设备节点即为 TF 卡的设备节点。<br />
+假设 TF 卡的设备节点为 <code>/dev/sdc</code>，您可以使用以下命令将固件写入该 TF 卡：</p>
+
+<pre class="language-sh"><code class="language-sh">sudo dd if=sysimage-sdcard.img of=/dev/sdc bs=1M oflag=sync
+</code></pre>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">AMOLED Screen Pin</th>
+  <th style="text-align:center">k230 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">LCD_RST</td>
+  <td style="text-align:center">GPIO22</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Touch Chip Pin</th>
+  <th style="text-align:center">k230 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">TP_RST</td>
+  <td style="text-align:center">GPIO24</td>
+</tr>
+<tr>
+  <td style="text-align:center">TP_SCL</td>
+  <td style="text-align:center">GPIO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">TP_SDA</td>
+  <td style="text-align:center">GPIO37</td>
+</tr>
+<tr>
+  <td style="text-align:center">TP_INT</td>
+  <td style="text-align:center">GPIO23</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">HDMI Pin</th>
+  <th style="text-align:center">k230 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">HDMI_RSTN</td>
+  <td style="text-align:center">GPIO24</td>
+</tr>
+<tr>
+  <td style="text-align:center">HDMI_INT</td>
+  <td style="text-align:center">GPIO22</td>
+</tr>
+<tr>
+  <td style="text-align:center">HDMI_CSCL</td>
+  <td style="text-align:center">GPIO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">HDMI_CSDA</td>
+  <td style="text-align:center">GPIO37</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SD Card Pin</th>
+  <th style="text-align:center">k230 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">TFCARD_CMD</td>
+  <td style="text-align:center">GPIO54</td>
+</tr>
+<tr>
+  <td style="text-align:center">TFCARD_CLK</td>
+  <td style="text-align:center">GPIO55</td>
+</tr>
+<tr>
+  <td style="text-align:center">TFCARD_D0</td>
+  <td style="text-align:center">GPIO56</td>
+</tr>
+<tr>
+  <td style="text-align:center">TFCARD_D1</td>
+  <td style="text-align:center">GPIO57</td>
+</tr>
+<tr>
+  <td style="text-align:center">TFCARD_D2</td>
+  <td style="text-align:center">GPIO58</td>
+</tr>
+<tr>
+  <td style="text-align:center">TFCARD_D3</td>
+  <td style="text-align:center">GPIO59</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Program</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><code>[T-Display-k230-AMOLED-1.43_V1.0][Light_Sleep_Wake_Up]_firmware_V1.0.0.bin</code></td>
+  <td><code>Light Sleep Wake Up</code></td>
+  <td>Power dissipation: 1282.8uA</td>
+</tr>
+<tr>
+  <td><code>[T-Display-k230-AMOLED-1.43_V1.0][Deep_Sleep_Wake_Up]_firmware_V1.0.0.bin</code></td>
+  <td><code>Deep Sleep Wake Up</code></td>
+  <td>Power dissipation: 174.2uA</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>图片可进入GITHUB查看</p>
+</blockquote>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li>问：阅读了上述教程后，我还是不清楚如何搭建编程环境。我该怎么办？</li>
+<li>答：如果您在阅读了上述教程后仍不明白如何搭建环境，您可以参考 <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> 文档中的说明来进行搭建。</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-K230_canmv_rt"  target="_blank">T-Display K230</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Display-K230_canmv_rt/blob/main/datasheet/K230_datasheet.pdf"  target="_blank">K230 芯片数据手册</a></li>
+</ul>
 
                         
                     </div>
