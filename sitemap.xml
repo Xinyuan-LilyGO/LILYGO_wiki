@@ -547,6 +547,12 @@
             <priority>1.0</priority>
         </url>
         <url>
+            <loc>https://wiki.lilygo.cc/get_started/en/High_speed/T-Connect/T-Connect.html</loc>
+            <lastmod>2025-11-05</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
             <loc>https://wiki.lilygo.cc/get_started/en/Expand_Module/T-BHI260AP/T-BHI260AP.html</loc>
             <lastmod>2025-11-05</lastmod>
             <changefreq>weekly</changefreq>
@@ -752,12 +758,6 @@
         </url>
         <url>
             <loc>https://wiki.lilygo.cc/get_started/en/LoRa_GPS/T3S3/T3S3.html</loc>
-            <lastmod>2025-11-05</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://wiki.lilygo.cc/get_started/en/High_speed/T-Connect/T-Connect.html</loc>
             <lastmod>2025-11-05</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>

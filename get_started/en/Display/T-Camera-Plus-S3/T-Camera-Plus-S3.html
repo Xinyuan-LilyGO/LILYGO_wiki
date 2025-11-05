@@ -819,140 +819,437 @@ var _hmt = _hmt || [];
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
 </ol>
 <h2 id="Pin-Overview">Pin Overview</h2>
-<blockquote>
-<h4 id="T-CameraPlus-S3_V1.0-V1.1-Version">T-CameraPlus-S3_V1.0-V1.1 Version</h4>
-<blockquote>
-<p>| LCD Pin | ESP32S3 Pin |<br />
-| :-----: | :---------: |<br />
-| MOSI | IO35 |<br />
-| SCLK | IO36 |<br />
-| RST | IO33 |<br />
-| BL | IO46 |<br />
-| CS | IO34 |<br />
-| DC | IO45 |</p>
-</blockquote>
-<blockquote>
-<p>| I2S Microphone MSM261S4030H0R Pin | ESP32S3 Pin |<br />
-| :-------------------------------: | :---------: |<br />
-| BCLK | IO18 |<br />
-| WS | IO39 |<br />
-| DATA | IO40 |</p>
-</blockquote>
-<blockquote>
-<p>| Amplifier MAX98357A Pin | ESP32S3 Pin |<br />
-| :------------------------: | :---------: |<br />
-| BCLK | IO41 |<br />
-| LRCLK | IO42 |<br />
-| DATA | IO38 |</p>
-</blockquote>
-<blockquote>
-<p>| SD Card Pin | ESP32S3 Pin |<br />
-| :---------: | :---------: |<br />
-| CS | IO21 |<br />
-| SCLK | IO36 |<br />
-| MOSI | IO35 |<br />
-| MISO | IO37 |</p>
-</blockquote>
-<blockquote>
-<p>| Power Chip SY6970 Pin | ESP32S3 Pin |<br />
-| :-------------------: | :---------: |<br />
-| SDA | IO1 |<br />
-| SCL | IO2 |<br />
-| INT | IO47 |</p>
-</blockquote>
-<blockquote>
-<p>| Camera OV2640 Pin | ESP32S3 Pin |<br />
-| :---------------: | :---------: |<br />
-| RESET | IO3 |<br />
-| XCLK | IO7 |<br />
-| SIDO | IO1 |<br />
-| SIOC | IO2 |<br />
-| D7 | IO6 |<br />
-| D6 | IO8 |<br />
-| D5 | IO9 |<br />
-| D4 | IO11 |<br />
-| D3 | IO13 |<br />
-| D2 | IO15 |<br />
-| D1 | IO14 |<br />
-| D0 | IO12 |<br />
-| VSYNC | IO4 |<br />
-| HREF | IO5 |<br />
-| PCLK | IO10 |</p>
-</blockquote>
-<blockquote>
-<p>| Touch Chip Pin | ESP32S3 Pin |<br />
-| :------------: | :---------: |<br />
-| SDA | IO1 |<br />
-| SCL | IO2 |<br />
-| RST | IO48 |<br />
-| INT | IO47 |</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h4 id="T-CameraPlus-S3_V1.2-Version">T-CameraPlus-S3_V1.2 Version</h4>
-<blockquote>
-<p>| LCD Pin | ESP32S3 Pin |<br />
-| :-----: | :---------: |<br />
-| MOSI | IO34 |<br />
-| SCLK | IO35 |<br />
-| BL | IO46 |<br />
-| CS | IO36 |<br />
-| DC | IO45 |</p>
-</blockquote>
-<blockquote>
-<p>| PDM Microphone MP34DT05TR Pin | ESP32S3 Pin |<br />
-| :---------------------------: | :---------: |<br />
-| LRCLK | IO40 |<br />
-| DATA | IO38 |</p>
-</blockquote>
-<blockquote>
-<p>| Amplifier MAX98357A Pin | ESP32S3 Pin |<br />
-| :------------------------: | :---------: |<br />
-| BCLK | IO41 |<br />
-| LRCLK | IO42 |<br />
-| DATA | IO39 |</p>
-</blockquote>
-<blockquote>
-<p>| SD Card Pin | ESP32S3 Pin |<br />
-| :---------: | :---------: |<br />
-| CS | IO21 |<br />
-| SCLK | IO35 |<br />
-| MOSI | IO34 |<br />
-| MISO | IO48 |</p>
-</blockquote>
-<blockquote>
-<p>| Power Chip SY6970 Pin | ESP32S3 Pin |<br />
-| :-------------------: | :---------: |<br />
-| SDA | IO33 |<br />
-| SCL | IO37 |</p>
-</blockquote>
-<blockquote>
-<p>| Camera OV2640 Pin | ESP32S3 Pin |<br />
-| :---------------: | :---------: |<br />
-| XCLK | IO7 |<br />
-| SIDO | IO1 |<br />
-| SIOC | IO2 |<br />
-| D7 | IO6 |<br />
-| D6 | IO8 |<br />
-| D5 | IO9 |<br />
-| D4 | IO11 |<br />
-| D3 | IO13 |<br />
-| D2 | IO15 |<br />
-| D1 | IO14 |<br />
-| D0 | IO12 |<br />
-| VSYNC | IO3 |<br />
-| HREF | IO5 |<br />
-| PCLK | IO10 |<br />
-| PWDN | IO4 |</p>
-</blockquote>
-<blockquote>
-<p>| Touch Chip Pin | ESP32S3 Pin |<br />
-| :------------: | :---------: |<br />
-| SDA | IO33 |<br />
-| SCL | IO37 |<br />
-| INT | IO47 |</p>
-</blockquote>
-</blockquote>
+<h3 id="T-CameraPlus-S3_V1.0-V1.1-Version">T-CameraPlus-S3_V1.0-V1.1 Version</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LCD Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO33</td>
+</tr>
+<tr>
+  <td style="text-align:center">BL</td>
+  <td style="text-align:center">IO46</td>
+</tr>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO34</td>
+</tr>
+<tr>
+  <td style="text-align:center">DC</td>
+  <td style="text-align:center">IO45</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">I2S Microphone MSM261S4030H0R Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO18</td>
+</tr>
+<tr>
+  <td style="text-align:center">WS</td>
+  <td style="text-align:center">IO39</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO40</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Amplifier MAX98357A Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO41</td>
+</tr>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO42</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO38</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SD Card Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO21</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+<tr>
+  <td style="text-align:center">MISO</td>
+  <td style="text-align:center">IO37</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Power Chip SY6970 Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO47</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Camera OV2640 Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">RESET</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">XCLK</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">SIDO</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+<tr>
+  <td style="text-align:center">SIOC</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+<tr>
+  <td style="text-align:center">D7</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">D6</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">D5</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">D4</td>
+  <td style="text-align:center">IO11</td>
+</tr>
+<tr>
+  <td style="text-align:center">D3</td>
+  <td style="text-align:center">IO13</td>
+</tr>
+<tr>
+  <td style="text-align:center">D2</td>
+  <td style="text-align:center">IO15</td>
+</tr>
+<tr>
+  <td style="text-align:center">D1</td>
+  <td style="text-align:center">IO14</td>
+</tr>
+<tr>
+  <td style="text-align:center">D0</td>
+  <td style="text-align:center">IO12</td>
+</tr>
+<tr>
+  <td style="text-align:center">VSYNC</td>
+  <td style="text-align:center">IO4</td>
+</tr>
+<tr>
+  <td style="text-align:center">HREF</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">PCLK</td>
+  <td style="text-align:center">IO10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Touch Chip Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO48</td>
+</tr>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO47</td>
+</tr>
+</tbody>
+</table>
+<h3 id="T-CameraPlus-S3_V1.2-Version">T-CameraPlus-S3_V1.2 Version</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LCD Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO34</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+<tr>
+  <td style="text-align:center">BL</td>
+  <td style="text-align:center">IO46</td>
+</tr>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">DC</td>
+  <td style="text-align:center">IO45</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">PDM Microphone MP34DT05TR Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO40</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO38</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Amplifier MAX98357A Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO41</td>
+</tr>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO42</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO39</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SD Card Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO21</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO34</td>
+</tr>
+<tr>
+  <td style="text-align:center">MISO</td>
+  <td style="text-align:center">IO48</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Power Chip SY6970 Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO33</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO37</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Camera OV2640 Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">XCLK</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">SIDO</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+<tr>
+  <td style="text-align:center">SIOC</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+<tr>
+  <td style="text-align:center">D7</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">D6</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">D5</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">D4</td>
+  <td style="text-align:center">IO11</td>
+</tr>
+<tr>
+  <td style="text-align:center">D3</td>
+  <td style="text-align:center">IO13</td>
+</tr>
+<tr>
+  <td style="text-align:center">D2</td>
+  <td style="text-align:center">IO15</td>
+</tr>
+<tr>
+  <td style="text-align:center">D1</td>
+  <td style="text-align:center">IO14</td>
+</tr>
+<tr>
+  <td style="text-align:center">D0</td>
+  <td style="text-align:center">IO12</td>
+</tr>
+<tr>
+  <td style="text-align:center">VSYNC</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">HREF</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">PCLK</td>
+  <td style="text-align:center">IO10</td>
+</tr>
+<tr>
+  <td style="text-align:center">PWDN</td>
+  <td style="text-align:center">IO4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Touch Chip Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO33</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO37</td>
+</tr>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO47</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <table>
 <thead>
 <tr>
