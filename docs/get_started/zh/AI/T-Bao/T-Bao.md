@@ -1,8 +1,8 @@
 ---
 title: LILYGO T-Bao
 show_source: false
+tags: K210, ESP32, AI, Camera, Touch Screen, IoT
 ---
-<!-- **[English](README.MD) | 中文** -->
 
 <div style="width:100%; display:flex;justify-content: center;">
 
@@ -12,192 +12,225 @@ show_source: false
 
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-bao">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
 </div>
 
-## 简介
+## 版本迭代:
+| Version | Update date | Update description |
+| :-----: | :---------: | :---------------- |
+| T-Bao_V1.0 | 最新版本 | 基于K210+ESP32的双核AIoT终端初始版本 |
 
-T-BAO是一款基于ESP32-S3-WROOM-1开发板的开源AIoT终端，具备高性能、低功耗、低成本、可拓展、可编程的特点。同时兼容Arduino、高性能嵌入式人工智能开发平台，深度融合K210 RISC-V架构AI芯片与ESP32双核Wi-Fi/BLE通信模组，搭载专业级OV2640 200万像素摄像头（支持180°旋转调节）及ST7789V 1.54英寸IPS触控屏（90°自适应旋转显示），实现毫秒级人脸识别与动态图像处理。内置MAX98357A I2S数字功放、MSM261S高灵敏度麦克风阵列及硬件编解码单元，支持语音交互与高清音频输出。采用AXP202智能电源管理系统，支持3.7V锂电池供电与超低功耗运行，集成MPU6050六轴传感器、TF卡存储扩展及丰富接口资源（UART/SPI/I2C/Touch），全面兼容Arduino/MicroPython生态。适用于工业视觉检测、智能安防、AIoT终端及教育机器人等场景，提供开源SDK与完整开发文档，助力快速商业落地。
+## 购买链接
 
-## 外观及功能介绍
-### 外观
-<img src="./assets/T-Bao-2.jpg" alt="summary" width=80%>
-<img src="./assets/T-Bao-3.jpg" alt="summary" width=80%>
+| Product | AI Chip | Main MCU | Screen | Camera | Link |
+| :-----: | :--: | :---: | :---: | :--: | :--: |
+| T-Bao | K210 | ESP32-S3 | 1.54" IPS Touch | OV2640 | [LILYGO Mall](https://lilygo.cc/products/t-bao) |
 
-### 引脚图 
+## 目录
+- [描述](#描述)
+- [预览](#预览)
+- [模块](#模块)
+- [快速开始](#快速开始)
+- [引脚总览](#引脚总览)
+- [相关测试](#相关测试)
+- [常见问题](#常见问题)
+- [项目](#项目)
+- [资料](#资料)
+- [依赖库](#依赖库)
+
+## 描述
+
+T-Bao 是一款基于 ESP32-S3-WROOM-1 和 K210 RISC-V AI 芯片的开源 AIoT 终端，具备高性能、低功耗、可拓展、可编程的特点。深度融合 K210 RISC-V 架构 AI 芯片与 ESP32 双核 Wi-Fi/BLE 通信模组，搭载专业级 OV2640 200 万像素摄像头（支持 180° 旋转调节）及 ST7789V 1.54 英寸 IPS 触控屏（90° 自适应旋转显示），实现毫秒级人脸识别与动态图像处理。
+
+内置 MAX98357A I2S 数字功放、MSM261S 高灵敏度麦克风阵列及硬件编解码单元，支持语音交互与高清音频输出。采用 AXP202 智能电源管理系统，支持 3.7V 锂电池供电与超低功耗运行，集成 MPU6050 六轴传感器、TF 卡存储扩展及丰富接口资源（UART/SPI/I2C/Touch），全面兼容 Arduino/MicroPython 生态。适用于工业视觉检测、智能安防、AIoT 终端及教育机器人等场景。
+
+## 预览
+
+### 实物图
+
+<div style="width:100%; display:flex;justify-content: center;">
+
+![T-Bao](./assets/T-Bao-2.jpg)
+
+</div>
+
+<div style="width:100%; display:flex;justify-content: center;">
+
+![T-Bao](./assets/T-Bao-3.jpg)
+
+</div>
+
+### 引脚图
 
 <img src="./assets/T-Bao.jpg" alt="summary" width=100%>
 
-## 模块资料以及参数
 ### 注意事项
 
->!⚠️SD卡的注意事项:
+> ⚠️ **SD卡使用注意事项**
 
 <img src="./assets/T-Bao-zh.jpg" alt="summary" width=80%>
 
-### 开发板参数
+## 模块
+
+### AI处理器 (K210)
+
+* 芯片：Kendryte K210
+* 架构：RISC-V Dual Core 64bit with FPU
+* 主频：400MHz（可超频至600MHz）
+* 内存：8MB SRAM
+* NPU：KPU神经网络处理器
+* 特性：支持YOLOv3、Mobilenetv2、TinyYOLOv2、人脸识别等模型
+
+### 主控制器
+
+* 芯片：ESP32-D0WDQ6-V3
+* 核心：Xtensa LX6 Dual Core
+* FLASH：16MB
+* PSRAM：8MB
+* 时钟：240MHz
+* 无线：Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE
+
+### 屏幕
+
+* 尺寸：1.54英寸 IPS
+* 分辨率：240x240px
+* 屏幕类型：IPS LCD
+* 驱动芯片：ST7789V
+* 触摸：电容触摸屏
+* UI框架：LVGL
+
+### 摄像头
+
+* 传感器：OV2640
+* 像素：200万像素
+* 特性：支持180°旋转调节
+
+### 音频
+
+* 功放：MAX98357A I2S
+* 麦克风：MSM261S 高灵敏度麦克风阵列
+
+### 传感器
+
+* 运动传感器：MPU6050（六轴陀螺仪+加速度计）
+* 电源管理：AXP202 PMU
+
+### 电机驱动
+
+* 芯片：DRV8833
+
+### 概述
 
 | 组件 | 描述 |
-| ---  | --- |
-|MCU	|ESP32-D0WDQ6-V3 Xtensa LX6 Dual Core
-|Flash 	|16M 
-|PSRAM  |8M
-|时钟|	240Mhz
-|GPS	|MIA-M10Q
-|无线| 	Wi-Fi: 802.11 b/g/n, Bluetooth: V4.2 + BLE
-|存储 | TF 卡 |
-|电机 |drv8833|
-|电源管理|AXP202 PMU|
-|陀螺仪|MPU6050|
-|摄像头|OV2640 (两百万像素)|
-|屏幕| ST7789 1.54-inch IPS Capacitive Touch LCD (240x240)
-|按键 | 1 x RST 按键 <br> 1 x BOOT 按键以及旋钮 <br> 4 × 屏幕按键 |
-| USB |1 × type-C接口|
-|UI | LVGL
-| 拓展接口 | 2 × QWIIC接口 + 4 × 磁吸接口|
-| 尺寸 | **164x46x42mm**  |
-|USB 电源| 5V/500mA|
+| :--: | :--: |
+| AI芯片 | K210 RISC-V Dual Core |
+| 主MCU | ESP32-D0WDQ6-V3 |
+| FLASH | 16MB |
+| PSRAM | 8MB |
+| 屏幕 | 1.54英寸 ST7789 IPS Touch (240×240) |
+| 摄像头 | OV2640 (200万像素) |
+| 音频 | MAX98357A + MSM261S麦克风阵列 |
+| 传感器 | MPU6050六轴传感器 |
+| 电源管理 | AXP202 PMU |
+| 电机驱动 | DRV8833 |
+| 存储 | TF卡 |
+| 无线 | Wi-Fi 802.11b/g/n + Bluetooth 4.2 BLE |
+| USB | 1 × TYPE-C接口 |
+| 按键 | RST + BOOT + 旋钮 + 4×屏幕按键 |
+| 拓展接口 | 2 × QWIIC + 4 × 磁吸接口 |
+| 尺寸 | **164×46×42mm** |
 
+## 快速开始
 
+### 示例应用
 
-<table role="table" class="center_table">
-    <thead>
-        <tr>
-            <th colspan = "2">K210 芯片基本参数</th>   
-        </tr>
-    </thead>
-    <tbody>
-    <tr>    
-        <td>内核</td>
-        <td>RISC-V Dual Core 64bit, with FPU</td>
-    </tr>
-    <tr>
-        <td>主频</td>
-        <td>400MHz （可超频至600MHz）</td>
-    </tr>
-    <tr>
-        <td>SRAM</td>
-        <td>内置8M Byte</td>
-    </tr>
-    <tr>
-        <td>图像识别</td>
-        <td>QVGA@60fps/VGA@30fps</td>
-    </tr>
-    <tr>
-        <td>语音识别</td>
-        <td>麦克风阵列(8mics)</td>
-    </tr>
-    <tr>
-        <td>网络模型</td>
-        <td><li>支持YOLOv3<li>Mobilenetv2<li>TinyYOLOv2<li>人脸识别等</td>
-    </tr>
-    <tr>
-        <td>深度学习框架</td>
-        <td>支持TensorFlow \ Keras \ Darknet \ Caffe 等主流框架</td>
-    </tr>
-    <tr>
-        <td>外设</td>
-        <td>FPIOA、 UART、 GPIO、 SPI、 I2C、I2S、 TIMER</td>
-    </tr>
-    <tr>
-        <td>视频处理</td>
-        <td><li>神经网络处理器(KPU)<li>FPU满足IEEE754-2008标准<li>音频处理器(APU)<li>快速傅里叶变换加速器(FFT)</td>
-    </tr>
-  </tbody>
-</table>
+| 应用类型 | K210固件 | ESP32固件 | 模型文件 |
+| :------ | :------: | :-------: | :------- |
+| 方向识别 | maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin | ESP32_AT_Firmware_UART1_SGPIO.bin | Identify_Direction_model.kmodel |
+| 人脸识别 | maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin | ESP32_AT_Firmware_UART1_SGPIO.bin | face_model_at_0x300000.kfpkg |
+| 语音识别 | maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin | ESP32_AT_Firmware_UART1_SGPIO.bin | maix_asr_2900k_0x500000.kmodel |
 
-### 相关资料
-Github：[T-Bao](https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script)
+### K210 固件烧录
 
-> [MicroPython](https://docs.micropython.org/en/latest/) 是基于 Python3 的语法做的一款解析器，包含了 Python3 的大多数基础语法， 主要运行在性能和内存有限的嵌入式芯片上。（注意 Micropython 不包含 Python3 的所有语法）
+1. 下载最新固件：[MaixPy 固件](https://cn.dl.sipeed.com/MAIX/MaixPy/release/master)
+2. 下载烧录工具：[kflash_gui](https://cn.dl.sipeed.com/shareURL/MAIX/tools)
+3. 选择对应固件和模型文件进行烧录
 
-* [MicroPython](https://docs.micropython.org/en/latest/library/index.html)
-* [ESP32](https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/get-started/index.html)
-#### 原理图
+> **注意**：语音识别应用需要先将模型文件 `maix_asr_2900k_0x500000.kmodel` 写入地址 0x500000，再烧录固件。
 
-[T-Bao](https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf)
+### ESP32 开发环境
 
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
+1. 安装 [Arduino IDE](https://www.arduino.cc/en/software)
+2. 添加 ESP32 开发板支持
+3. 配置开发板参数：
 
-#### 使用说明
-
-
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>Identify_Direction_model.kmodel</td>
-  </tr>
-</table>
-
-
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>face_model_at_0x300000.kfpkg</td>
-  </tr>
-</table>
-
-
-
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">speech_recognizer</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>maix_asr_2900k_0x500000.kmodel</td>
-  </tr>
-</table>
-
->!这里需要注意使用kflash_gui工具把maix_asr_2900k_0x500000.kmodel写入地址0x500000，并先烧录maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin
-
-## 软件开发
-### 固件烧录
-
-最新的固件可以在[这里](https://cn.dl.sipeed.com/MAIX/MaixPy/release/master)下载，根据自己的需求选择固件，然后烧录到开发板上。
-
-固件下载工具可以从这里下载：[kflash_gui](https://cn.dl.sipeed.com/shareURL/MAIX/tools)
+#### ESP32 (T-Bao)
+| Setting | Value |
+| :-----: | :---: |
+| Board | ESP32S3 Dev Module |
+| Upload Speed | 921600 |
+| USB CDC On Boot | Enabled |
+| CPU Frequency | 240MHz (WiFi) |
+| Flash Size | 16MB (128Mb) |
+| PSRAM | Enabled |
+| Partition Scheme | 16M Flash (3MB APP/9.9MB FATFS) |
 
 ### 开发平台
-1. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)
-2. [Arduino IDE](https://www.arduino.cc/en/software)
+1. [Arduino IDE](https://www.arduino.cc/en/software) - ESP32开发
+2. [MaixPy IDE](https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide) - K210开发
+3. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf) - ESP32高级开发
+4. [MicroPython](https://docs.micropython.org/en/latest/) - 脚本开发
 
-## 产品技术支持 
+## 引脚总览
 
+| 功能模块 | 主要引脚 | 通信协议 |
+| :------: | :-------: | :------: |
+| 屏幕 | SPI接口 | SPI |
+| 触摸 | I2C接口 | I2C |
+| 摄像头 | DVP接口 | 并行数据 |
+| 音频 | I2S接口 | I2S |
+| 传感器 | I2C接口 | I2C |
+| 电机驱动 | PWM引脚 | PWM |
+| 扩展接口 | GPIO | 多种协议 |
 
+## 相关测试
+
+*测试数据待补充*
+
+## 常见问题
+
+* **Q. K210 和 ESP32 如何通信？**  
+  A. 通过 UART 串口进行通信，K210 作为 AI 处理器，ESP32 作为主控制器和通信模块。
+
+* **Q. 摄像头无法正常工作？**  
+  A. 检查摄像头排线连接，确认摄像头模块已正确插入，检查电源供应。
+
+* **Q. 语音识别不准确？**  
+  A. 确保在安静环境下使用，检查麦克风是否被遮挡，尝试重新训练模型。
+
+* **Q. 如何延长电池续航？**  
+  A. 使用 AXP202 的电源管理功能，在不需要时关闭摄像头和屏幕，启用低功耗模式。
+
+* **Q. SD 卡无法识别？**  
+  A. 参考注意事项中的SD卡安装图，确保卡片正确插入且格式为FAT32。
+
+## 项目
+
+* [T-Bao 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf)
+* [示例代码](https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script)
+
+## 资料
+
+* [原理图](https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf)
+* [K210 数据手册](https://canaan.io/product/kendryteai)
+* [ESP32-S3 数据手册](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [OV2640 数据手册](https://www.ovt.com/sensors/OV2640)
+* [ST7789 数据手册](https://www.newhavendisplay.com/app_notes/ST7789V.pdf)
+* [MicroPython 文档](https://docs.micropython.org/en/latest/)
+
+## 依赖库
+
+* [MaixPy](https://github.com/sipeed/MaixPy) - K210 开发框架
+* [LVGL](https://lvgl.io/) - 嵌入式图形库
+* [Arduino_GFX](https://github.com/moononournation/Arduino_GFX) - 图形显示库
+* [ESP32 Arduino Core](https://github.com/espressif/arduino-esp32) - ESP32 Arduino支持
+* [Adafruit_Sensor](https://github.com/adafruit/Adafruit_Sensor) - 传感器库

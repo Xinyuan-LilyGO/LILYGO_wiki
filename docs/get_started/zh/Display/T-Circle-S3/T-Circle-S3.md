@@ -153,22 +153,22 @@ LILYGO T-Circle S3 是一款基于ESP32-S3无线微控制器的多功能开发�
 
 | Example | `[Platformio IDE][espressif32-v6.5.0]`<br />`[Arduino IDE][esp32_v2.0.14]` | `[ESP-IDF][esp-idf-V4.4.8]`| `[ESP-IDF][esp-idf-V5.3.2]`| Description |
 | ------  | ------  | ------ | ------ | ------ | 
-| [Animated_Eyes_1](./examples/Animated_Eyes_1) |  <p align="center">![alt text][supported] | || |  
-| [APA102_Blink](./examples/APA102_Blink) | <p align="center">![alt text][supported] | | ||  
-| [CST816D](./examples/CST816D) | <p align="center">![alt text][supported] |  |  
-| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
-| [DMIC_ReadData](./examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
-| [GFX](./examples/GFX) | <p align="center">![alt text][supported] |  |  
-| [GFX_CST816D_Image](./examples/GFX_CST816D_Image) | <p align="center">![alt text][supported] | | ||  
-| [GFX_Wifi_AP_Contract](./examples/GFX_Wifi_AP_Contract) | <p align="center">![alt text][supported] | || |  
-| [GFX_Wifi_STA_Contract](./examples/GFX_Wifi_STA_Contract) | <p align="center">![alt text][supported] | || |  
-| [IIC_Scan_2](./examples/IIC_Scan_2) | <p align="center">![alt text][supported] | | ||  
-| [Original_Test](./examples/Original_Test) | <p align="center">![alt text][supported] ||| 出厂初始测试文件 |  
-| [TFT](./examples/TFT) | <p align="center">![alt text][supported] | || |  
-| [Voice_Speaker](./examples/Voice_Speaker) | <p align="center">![alt text][supported] |  ||  |  
-| [Voice_Speaker_APA102](./examples/Voice_Speaker_APA102) | <p align="center">![alt text][supported] | ||  |  
-| [Wifi_Music](./examples/Wifi_Music) | <p align="center">![alt text][supported] | ||  |  
-| [lilygo_s3_apps](https://github.com/Xinyuan-LilyGO/T-Circle-S3/tree/esp-idf-V4.4.8/examples/lilygo_s3_apps) | | <p align="center">![alt text][supported] || 该示例为语音控制示例，由Grovety提供，以下是原始链接: <br /> [Grovety lilygo_s3_apps](https://github.com/Grovety/lilygo_s3_apps)|
+| [Animated_Eyes_1](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Animated_Eyes_1) |  <p align="center">![alt text][supported] | || |  
+| [APA102_Blink](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/APA102_Blink) | <p align="center">![alt text][supported] | | ||  
+| [CST816D](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/CST816D) | <p align="center">![alt text][supported] |  |  
+| [DMIC_ReadData](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
+| [DMIC_ReadData](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/DMIC_ReadData) | <p align="center">![alt text][supported] | || |  
+| [GFX](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX) | <p align="center">![alt text][supported] |  |  
+| [GFX_CST816D_Image](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_CST816D_Image) | <p align="center">![alt text][supported] | | ||  
+| [GFX_Wifi_AP_Contract](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_Wifi_AP_Contract) | <p align="center">![alt text][supported] | || |  
+| [GFX_Wifi_STA_Contract](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_Wifi_STA_Contract) | <p align="center">![alt text][supported] | || |  
+| [IIC_Scan_2](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/IIC_Scan_2) | <p align="center">![alt text][supported] | | ||  
+| [Original_Test](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Original_Test) | <p align="center">![alt text][supported] ||| 出厂初始测试文件 |  
+| [TFT](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/TFT) | <p align="center">![alt text][supported] | || |  
+| [Voice_Speaker](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Voice_Speaker) | <p align="center">![alt text][supported] |  ||  |  
+| [Voice_Speaker_APA102](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Voice_Speaker_APA102) | <p align="center">![alt text][supported] | ||  |  
+| [Wifi_Music](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Wifi_Music) | <p align="center">![alt text][supported] | ||  |  
+| [lilygo_s3_apps](https://githubhttps://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14com/Xinyuan-LilyGO/T-Circle-S3/tree/esp-idf-V4.4.8/examples/lilygo_s3_apps) | | <p align="center">![alt text][supported] || 该示例为语音控制示例，由Grovety提供，以下是原始链接: <br /> [Grovety lilygo_s3_apps](https://github.com/Grovety/lilygo_s3_apps)|
 | [XiaoZhi_AI_Chatbot](https://github.com/78/xiaozhi-esp32?tab=readme-ov-file) | || <p align="center">![alt text][supported] | 该示例为小智AI示例，由Xiaoxia提供|
 
 [supported]: https://img.shields.io/badge/-supported-green "example"
