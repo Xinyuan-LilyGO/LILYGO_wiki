@@ -212,7 +212,7 @@ LILYGO T-MINI E-Paper S3 Kit 是一款紧凑型（102x24.5x53mm）多功能开�
     4. 松开 BOOT 键
     5. 上传程序
 
-3. 若上述方法无效，请烧录[固件文件](./firmware/README.MD) 以检测硬件是否正常
+3. 若上述方法无效，请烧录[固件文件](https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/firmware/README.MD) 以检测硬件是否正常
 
 ## 项目
 * [T-Mini-E-paper-S3_V1.2](https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/schematic/Mini-Epaper-S3-V1.2.pdf)

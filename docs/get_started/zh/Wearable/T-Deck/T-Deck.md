@@ -125,9 +125,8 @@ LILYGO T-Deck 是一款高度集成的多功能嵌入式开发平台，基于 ES
 
 ### 示例支持
 
-````
-
-examples 
+```c
+ 
 ├─Keyboard_ESP32C3       # ESP32C3 keyboard I2C slave
 ├─Keyboard_T_Deck_Master # T-Deck read from keyboard
 ├─Microphone             # Noise detection  
@@ -135,7 +134,7 @@ examples
 ├─GPSShield              # GPS Shield example
 └─UnitTest               # Factory hardware unit testing           
 
-````
+```
 
 1. 如果启用麦克风,那么板子中间的按钮,GPIO0则不可用.
 2. 如果遇到不能上传草图,那么你需要将轨迹球中间按压下去，然后插入USB，这是芯片处于下载模式,此时再点击上传草图.
@@ -153,10 +152,7 @@ examples
 8. 点击（→）上传固件
 9. 点击 (插头符号) 监视串行输出
 
-
-
 ### ArduinoIDE
-
 
 1. 安装 [ArduinoIDE](https://www.arduino.cc/en/software)
 2. 将 `T-Deck/lib` 目录内的所有文件夹拷贝到`<C:\Users\UserName\Documents\Arduino\libraries>`,如果没有`libraries`目录,请新建,请注意,不是拷贝`lib`目录,而是拷贝lib目录里面的文件夹

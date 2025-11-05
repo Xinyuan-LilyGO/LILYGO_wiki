@@ -159,9 +159,15 @@ SSL
 
 ### 示例支持
 
-| Example | PlatformIO/Arduino | ESP-IDF | Description |
-| :------ | :----------------: | :-----: | :---------- |
-|  |  |  |  |
+```c
+├─boards  : Some information about the board for the platformio.ini configuration project;
+├─docs    : Place some documents;
+├─data    : Picture resources used by the program;
+├─example : Some examples;
+├─firmare : `factory` compiled firmware;
+├─hardware: Schematic diagram of the board, chip data;
+└─lib     : Libraries used in the project;
+```
 
 ### PlatformIO
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)，然后克隆或下载该项目；

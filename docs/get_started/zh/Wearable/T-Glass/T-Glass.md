@@ -212,26 +212,6 @@ LILYGO T-Glass 是一款基于ESP32-S3主控芯片的智能可穿戴设备，集
 10. 点击 `上传（upload）`，等待编译和写入完成
 11. 若出现无法写入固件或USB设备持续闪烁的情况，请查看下方的 **常见问题解答（FAQ）**
 
-#### ESP32-S3
-| Setting | Value |
-| :-----: | :---: |
-| Board | ESP32S3 Dev Module |
-| Upload Speed | 921600 |
-| USB Mode | Hardware CDC and JTAG |
-| USB CDC On Boot | Enabled |
-| USB Firmware MSC On Boot | Disabled |
-| USB DFU On Boot | Disabled |
-| CPU Frequency | 240MHz (WiFi) |
-| Flash Mode | QIO 80MHz |
-| Flash Size | 4MB (32Mb) |
-| Core Debug Level | None |
-| Partition Scheme | Default 4M with spiffs(1.2M APP/1.5MB SPIFFS) |
-| PSRAM | QSPI PSRAM |
-| Arduino Runs On | Core 1 |
-| Events Run On | Core 1 |
-
-6. 选择正确的端口。
-7. 点击右上角"<kbd>√</kbd>"进行编译，如果编译无误，将单片机连接电脑，点击右上角"<kbd>→</kbd>"即可进行烧录。
 
 ### 开发平台
 1. [Micropython](https://micropython.org/)
@@ -281,6 +261,7 @@ LILYGO T-Glass 是一款基于ESP32-S3主控芯片的智能可穿戴设备，集
    ```
 
 ## 项目
+
 | Product(PinMap)  | schematic                                                   |
 | ---------------- | ----------------------------------------------------------- |
 | [T-Glass][1]     | [schematic](https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/schematic/LilyGO-T-Wristband-and-T-Glass.pdf) |

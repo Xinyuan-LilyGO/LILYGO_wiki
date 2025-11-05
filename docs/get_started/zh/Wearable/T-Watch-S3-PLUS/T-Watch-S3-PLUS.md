@@ -249,8 +249,8 @@ T-Watch S3 Plus 是基于 T-Watch S3 的增强版本，增加了GPS功能，是�
 
 ### 资源
 
-* [主板原理图](../../schematic/T_WATCH-S3%2025-03-24.pdf)
-* [GPS原理图](../../schematic/T-Watch-S3-Plus-GPS%20V1.0%202025-04-29.pdf)
+* [主板原理图](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/schematic/T_WATCH-S3%2025-03-24.pdf)
+* [GPS原理图](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/schematic/T-Watch-S3-Plus-GPS%20V1.0%202025-04-29.pdf)
 
 ## 快速开始
 
@@ -329,7 +329,6 @@ T-Watch S3 Plus 是基于 T-Watch S3 的增强版本，增加了GPS功能，是�
 > * 此库依赖于最新的 [arduino-esp32](https://github.com/espressif/arduino-esp32/releases/tag/3.3.0-alpha1) 版本。如果低于 **V3.3.0-alpha1**，将会报错。
 
 ### T-Watch-S3-Plus 进入下载模式
-
 
 >
 > 下载模式仅在程序不允许上传代码时才需要。正常情况下不需要此步骤。
