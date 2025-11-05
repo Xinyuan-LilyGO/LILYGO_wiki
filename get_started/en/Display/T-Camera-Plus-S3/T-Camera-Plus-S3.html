@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Camera Plus S3 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "Camera", "TFT", "Audio", "Vision"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -240,6 +240,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>Camera</li>
+                            
+                                <li>TFT</li>
+                            
+                                <li>Audio</li>
+                            
+                                <li>Vision</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,123 +273,765 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-CameraPlus-S3-1.jpg" alt="T-CameraPlus-S3" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-camera-plus-s3">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-camera-plus-s3">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>T-CameraPlus-S3 is a multifunctional smart hardware development board based on the ESP32-S3 main control chip. It integrates a high-performance camera module (supporting OV2640/OV5640 options), an LCD display (with touch functionality), and a MAX98357A audio chip. With 16MB Flash and 8MB PSRAM, it efficiently handles image, video, and audio data.</p>
-<p>The board supports dual-mode audio input/output (microphone and digital audio interface), and includes TF card expansion, a QWIIC interface (compatible with I²C device extensions), and a battery management module (BAT ADC). It is suitable for applications such as IoT visual interaction, smart surveillance, and multimedia terminals.</p>
-<p>The hardware design is compatible with various sensors and peripherals, with SPI, I²C, and other protocols enabling coordinated operation between the camera, display, and audio modules. This offers developers flexible support for AIoT, edge computing, and related use cases.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-CameraPlus-S3-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-CameraPlus-S3-pin-en.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<p>T-CameraPlus-S3 is a smart camera module developed based on the ESP32-S3 chip. It features an onboard 240×240 TFT display, digital microphone, speaker, a dedicated button, power management chip, and an SD card module.</p>
-<p>The device comes preloaded with a basic UI developed using LVGL, offering functions such as file management, music playback, audio recording, and camera projection. (If the module does not come pre-programmed, you will need to manually flash the example program named “Lvgl_UI”.)</p>
-<img src="./assets/T-CameraPlus-S3-info-en.jpg" alt="summary" width=100%>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:center">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3R8 Dual-core Xtensa LX7 CPU</td>
+  <td style="text-align:center">T-CameraPlus-S3_V1.0-V1.1</td>
+  <td style="text-align:center">2023-10-23</td>
+  <td style="text-align:center">Initial Version</td>
 </tr>
 <tr>
-  <td>FLASH</td>
-  <td>16MB</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8MB</td>
-</tr>
-<tr>
-  <td>Screen</td>
-  <td>1.3-inch ST7789V SPI TFT LCD</td>
-</tr>
-<tr>
-  <td>Touch</td>
-  <td>CST816S touch capacitive screen</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF Card</td>
-</tr>
-<tr>
-  <td>Camera</td>
-  <td>OV2640/OV5640</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>2.4GHz Wi-Fi &amp; Bluetooth5 (LE)</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
-</tr>
-<tr>
-  <td>IO interface</td>
-  <td>2.54mm pitch 2*13 (dual rows) Extended IO interface</td>
-</tr>
-<tr>
-  <td>Battery chip</td>
-  <td>SY6970</td>
-</tr>
-<tr>
-  <td>Speaker</td>
-  <td>MAX98357A</td>
-</tr>
-<tr>
-  <td>Microphone</td>
-  <td>MP34DT05-A</td>
-</tr>
-<tr>
-  <td>Extended Interfaces</td>
-  <td>1 × TF card interface + 2 × STEMMA QT/QWIIC interface (JST-SH 1.0MM 4Pin) + 1 x JST-GH 1.25MM interface + 1 x Battery interface socket</td>
-</tr>
-<tr>
-  <td>Keys</td>
-  <td>1 x RESET key + 1 x BOOT key + 1 x IO17 key</td>
-</tr>
-<tr>
-  <td>Hole Position</td>
-  <td><strong>2mm positioning holes </strong>2 **</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>68x32x31mm</td>
+  <td style="text-align:center">T-CameraPlus-S3_V1.2</td>
+  <td style="text-align:center">2025-04-17</td>
+  <td style="text-align:center">Improved WiFi performance, updated microphone model, modified pin numbers, optimized PCB routing</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series"  target="_blank">T-Camera Plus S3</a></p>
+<h2 id="Purchase-Link">Purchase Link</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-CameraPlus-S3_V1.2</td>
+  <td style="text-align:center">ESP32S3</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M</td>
+  <td style="text-align:center"><a href="https://www.lilygo.cc/products/t-camera-plus-s3?_pos=2&amp;_sid=aa4cbdb34&amp;_ss=r"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://www.espressif.com/en/support/documents/technical-documents"  target="_blank">Espressif</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A</a></li>
-<li><a href="information/MSM261S4030H0R.pdf"  >MSM261S4030H0R</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A</a></li>
-<li><a href="information/EVB_SY6970.pdf"  >EVB_SY6970</a></li>
-<li><a href="information/AN_SY6970.pdf"  >AN_SY6970 </a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
 </ul>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/schematic/T-Display-S3-AMOLED-Plus.pdf"  target="_blank">T-Camera Plus S3</a></p>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
+<h2 id="Description">Description</h2>
+<p>The T-CameraPlus-S3 is a versatile smart hardware development board based on the ESP32-S3 main control chip. It integrates a high-performance camera module (OV2640/OV5640 optional), an LCD display (with touch), and a MAX98357A audio chip. Equipped with 16MB Flash and 8MB PSRAM, it can efficiently process image, video, and audio data. It supports dual-mode audio input and output (microphone and digital audio interface), features TF card expansion storage, QWIIC interface (compatible with I²C device expansion), and a battery management module. The hardware design is compatible with various sensors and peripherals, enabling collaborative work between the camera, display, and audio modules through protocols like SPI and I²C, meeting developers' flexible needs in AIoT, edge computing, and other fields. It comes pre-installed with an LVGL-based UI system supporting file management, music playback, recording, camera projection, and other functions.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Images">Physical Images</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-CameraPlus-S3-2.jpg" alt="T-CameraPlus-S3" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-CameraPlus-S3-pin-en.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
+<li>Chip: ESP32-S3</li>
+<li>PSRAM: 8M</li>
+<li>FLASH: 16M</li>
+<li>Related Information:<blockquote>
+<a href="https://www.espressif.com/en/support/documents/technical-documents"  target="_blank">Espressif</a></blockquote>
+</li>
+</ul>
+<h3 id="Screen">Screen</h3>
+<ul>
+<li>Model: fp-133h01d</li>
+<li>Size: 1.3-inch</li>
+<li>Resolution: 240x240px</li>
+<li>Type: TFT</li>
+<li>Driver IC: ST7789V</li>
+<li>Bus Protocol: Standard SPI</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a> <br /><br />
+<a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a> <br /><br />
+<a href="https://github.com/bitbank2/JPEGDEC"  target="_blank">JPEGDEC-1.2.8</a> <br /><br />
+<a href="https://github.com/moononournation/MiniTV"  target="_blank">MiniTV</a> <br /><br />
+<a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></blockquote>
+</li>
+</ul>
+<h3 id="Touch">Touch</h3>
+<ul>
+<li>Chip: CST816S</li>
+<li>Bus Protocol: I2C</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/koendv/cst816t"  target="_blank">cst816t-1.5.0</a> <br /><br />
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="Speaker">Speaker</h3>
+<ul>
+<li>Chip: MAX98357A</li>
+<li>Bus Protocol: I2S</li>
+<li>Other Notes: Default configuration is Left/2 + Right/2 channels, 9dB gain. To change configuration, modify resistors according to instructions on the T-CameraPlus-S3 schematic. Recommended speaker specs: max rated power 3.2W, impedance around 4 ohms, below 8 ohms.</li>
+<li>Related Information:<blockquote>
+<a href="./information/MAX98357AETE+T.pdf"  >MAX98357A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/pschatzmann/arduino-libhelix"  target="_blank">arduino-libhelix-0.8.1</a> <br /><br />
+<a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S-3.0.6</a></blockquote>
+</li>
+</ul>
+<h3 id="Microphone">Microphone</h3>
+<blockquote>
+<h4 id="T-CameraPlus-S3_V1.0-V1.1-Version">T-CameraPlus-S3_V1.0-V1.1 Version</h4>
+<ul>
+<li>Chip: MSM261S4030H0R</li>
+<li>Bus Protocol: I2S</li>
+<li>Other Notes: Default configuration is right channel. To change configuration, modify resistors according to instructions on the T-CameraPlus-S3 schematic.</li>
+<li>Related Information:<blockquote>
+<a href="information/MSM261S4030H0R.pdf"  >MSM261S4030H0R</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/DFRobot/DFrobot_MSM261"  target="_blank">DFRobot_MSM261</a> <br /><br />
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="T-CameraPlus-S3_V1.2-Version">T-CameraPlus-S3_V1.2 Version</h4>
+<ul>
+<li>Chip: MP34DT05-A</li>
+<li>Bus Protocol: PDM</li>
+<li>Other Notes: Default configuration is right channel. To change configuration, modify resistors according to instructions on the T-CameraPlus-S3 schematic.</li>
+<li>Related Information:<blockquote>
+<a href="./information/mp34dt05-a.pdf"  >MP34DT05-A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="Camera">Camera</h3>
+<ul>
+<li>Camera Model: OV2640</li>
+<li>IR Filter Driver: AP1511B</li>
+<li>Related Information:<blockquote>
+<a href="information/OV2640_Hardware_Application_V1.04.pdf"  >OV2640_Hardware_Application_V1.04</a> <br /><br />
+<a href="information/OV2640_Software_Application_V1.03.pdf"  >OV2640_Software_Application_V1.03</a></blockquote>
+</li>
+</ul>
+<h3 id="Power-Management-IC">Power Management IC</h3>
+<ul>
+<li>Chip: SY6970</li>
+<li>Related Information:<blockquote>
+<a href="information/AN_SY6970.pdf"  >AN_SY6970 </a> <br /><br />
+<a href="information/EVB_SY6970.pdf"  >EVB_SY6970</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/lewisxhe/XPowersLib"  target="_blank">XPowersLib-0.2.1</a> <br /><br />
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-CameraPlus-S3-info-en.jpg" alt="summary" width=100%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3R8 Dual-core Xtensa LX7 CPU</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Screen</td>
+  <td style="text-align:center">1.3-inch ST7789V TFT LCD (240×240)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">CST816S Capacitive Touch Screen</td>
+</tr>
+<tr>
+  <td style="text-align:center">Camera</td>
+  <td style="text-align:center">OV2640/OV5640 (Optional)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio Output</td>
+  <td style="text-align:center">MAX98357A Speaker</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio Input</td>
+  <td style="text-align:center">MP34DT05-A Microphone</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Management</td>
+  <td style="text-align:center">AXPM65611 + BQ25896 + SY6970</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C Interface)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2×13 Dual-row Expansion Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">TF Card + 2×STEMMA QT/QWIIC + JST-GH 1.25MM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">RESET + BOOT + IO17 Function Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">4 × 2mm Positioning Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>60×32×12mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Example</th>
+  <th style="text-align:center"><code>[Platformio IDE][espressif32-v6.5.0]</code><br /><code>[Arduino IDE][esp32_v2.0.14]</code></th>
+  <th style="text-align:center"><code>[vscode][esp-idf-v5.4.0]</code></th>
+  <th style="text-align:center">Description</th>
+  <th style="text-align:center">Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="./examples/Wifi_Scan"  >Wifi_Scan</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Lvgl_UI"  >Lvgl_UI</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">Factory Firmware</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Wifi_Music"  >Wifi_Music</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/SD_Music"  >SD_Music</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/DMIC_ReadData"  >DMIC_ReadData</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/SD_DMIC"  >SD_DMIC</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/TFT"  >TFT</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/IIC_Scan_2"  >IIC_Scan_2</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Camera_WebServer"  >Camera_WebServer</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/CST816D"  >CST816D</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/GFX_Test"  >GFX_Test</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/SY6970"  >SY6970</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/SD_MJPEG"  >SD_MJPEG</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Camera_Screen"  >Camera_Screen</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Camera_Screen_OV5640_Auto_Focus"  >Camera_Screen_OV5640_Auto_Focus</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Camera_WebServer_OV5640_Auto_Focus"  >Camera_WebServer_OV5640_Auto_Focus</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./examples/Voice_Speaker"  >Voice_Speaker</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./main/examples/iic_scan"  >iic_scan</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./main/examples/afe"  >afe</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Firmware</th>
+  <th style="text-align:center">Description</th>
+  <th style="text-align:center">Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="./firmware/%5BT-CameraPlus-S3_V1.0-V1.1%5D%5BLvgl_UI%5D_firmware_202406142310.bin"  >Lvgl_UI(V1.0-V1.1)</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="./firmware/%5BT-CameraPlus-S3_V1.2%5D%5BLvgl_UI%5D_firmware_202504081446.bin"  >Lvgl_UI(V1.2)</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a> according to your system.</li>
+<li>Open the &quot;Extensions&quot; sidebar in Visual Studio Code (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, download the project from GitHub. You can click the green &quot;&lt;&gt; Code&quot; button to download the main branch, or download a &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the Explorer sidebar (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO should automatically open it after adding the folder). Under the &quot;[platformio]&quot; section, uncomment the line selecting the example program you want to upload (starting with &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> according to your system.</p>
+</li>
+<li><p>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</p>
+</li>
+<li><p>Open the &quot;Tools&quot; menu -&gt; &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to choose is determined by the &quot;board = xxx&quot; header in the &quot;[env]&quot; section of the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</p>
+</li>
+<li><p>Open the &quot;[File]&quot; -&gt; &quot;[Preferences]&quot; menu, find the &quot;[Sketchbook location]&quot; field. Copy and paste all library files and folders from the &quot;libraries&quot; directory in the project folder into the &quot;libraries&quot; folder at this location.</p>
+</li>
+<li><p>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">QSPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li><p>Select the correct port.</p>
+</li>
+<li><p>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; to upload.</p>
+</li>
+</ol>
+<h3 id="ESP-IDF-Visual-Studio-Code">ESP-IDF Visual Studio Code</h3>
+<ol>
+<li><p>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a> according to your system.</p>
+</li>
+<li><p>Open the &quot;Extensions&quot; sidebar in Visual Studio Code (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;ESP-IDF&quot; extension and install it.</p>
+</li>
+<li><p>While the extension is installing, clone the repository using the git command:</p>
+
+<pre class="language-none"><code class="language-none">git clone --recursive https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3.git
+
+</code></pre>
+<p>Use &quot;--recursive&quot; during cloning. If you forgot to add it, you need to initialize the submodules later:</p>
+
+<pre class="language-none"><code class="language-none">git submodule update --init --recursive
+
+</code></pre>
+</li>
+<li><p>Download and install <a href="https://dl.espressif.cn/dl/esp-idf/?idf=4.4"  target="_blank">ESP-IDF v5.4.1</a>, note the installation path. Open the previously installed &quot;ESP-IDF&quot; extension and open &quot;Configure ESP-IDF extension&quot;, select the &quot;USE EXISTING SETUP&quot; menu, choose the &quot;Search ESP-IDF in system&quot; option, and correctly configure the previously noted installation paths:</p>
+<ul>
+<li><strong>ESP-IDF directory (IDF_PATH):</strong> <code>Your installation path\Espressif\frameworks\esp-idf-v5.4</code></li>
+<li><strong>ESP-IDF Tools directory (IDF_TOOLS_PATH):</strong> <code>Your installation path\Espressif</code></li>
+</ul>
+<p>Click &quot;Install&quot; at the bottom right to install the framework.</p>
+</li>
+<li><p>Click the ESP-IDF extension menu &quot;SDK Configuration Editor&quot; in the Visual Studio Code bottom menu bar. Search for the &quot;Select the example to build&quot; field and select the project you want to compile. Then search for the &quot;Select the camera type&quot; field and select the camera type on your board. Click Save.</p>
+</li>
+<li><p>Click &quot;Set Espressif device target&quot; in the Visual Studio Code bottom menu bar and select <strong>ESP32S3</strong>. Click &quot;Build Project&quot; in the bottom menu bar and wait for the build to complete. Then click &quot;Select port to use&quot; in the bottom menu bar, followed by &quot;Flash Project&quot; in the bottom menu bar to upload the program.</p>
+</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<blockquote>
+<h4 id="T-CameraPlus-S3_V1.0-V1.1-Version">T-CameraPlus-S3_V1.0-V1.1 Version</h4>
+<blockquote>
+<p>| LCD Pin | ESP32S3 Pin |<br />
+| :-----: | :---------: |<br />
+| MOSI | IO35 |<br />
+| SCLK | IO36 |<br />
+| RST | IO33 |<br />
+| BL | IO46 |<br />
+| CS | IO34 |<br />
+| DC | IO45 |</p>
+</blockquote>
+<blockquote>
+<p>| I2S Microphone MSM261S4030H0R Pin | ESP32S3 Pin |<br />
+| :-------------------------------: | :---------: |<br />
+| BCLK | IO18 |<br />
+| WS | IO39 |<br />
+| DATA | IO40 |</p>
+</blockquote>
+<blockquote>
+<p>| Amplifier MAX98357A Pin | ESP32S3 Pin |<br />
+| :------------------------: | :---------: |<br />
+| BCLK | IO41 |<br />
+| LRCLK | IO42 |<br />
+| DATA | IO38 |</p>
+</blockquote>
+<blockquote>
+<p>| SD Card Pin | ESP32S3 Pin |<br />
+| :---------: | :---------: |<br />
+| CS | IO21 |<br />
+| SCLK | IO36 |<br />
+| MOSI | IO35 |<br />
+| MISO | IO37 |</p>
+</blockquote>
+<blockquote>
+<p>| Power Chip SY6970 Pin | ESP32S3 Pin |<br />
+| :-------------------: | :---------: |<br />
+| SDA | IO1 |<br />
+| SCL | IO2 |<br />
+| INT | IO47 |</p>
+</blockquote>
+<blockquote>
+<p>| Camera OV2640 Pin | ESP32S3 Pin |<br />
+| :---------------: | :---------: |<br />
+| RESET | IO3 |<br />
+| XCLK | IO7 |<br />
+| SIDO | IO1 |<br />
+| SIOC | IO2 |<br />
+| D7 | IO6 |<br />
+| D6 | IO8 |<br />
+| D5 | IO9 |<br />
+| D4 | IO11 |<br />
+| D3 | IO13 |<br />
+| D2 | IO15 |<br />
+| D1 | IO14 |<br />
+| D0 | IO12 |<br />
+| VSYNC | IO4 |<br />
+| HREF | IO5 |<br />
+| PCLK | IO10 |</p>
+</blockquote>
+<blockquote>
+<p>| Touch Chip Pin | ESP32S3 Pin |<br />
+| :------------: | :---------: |<br />
+| SDA | IO1 |<br />
+| SCL | IO2 |<br />
+| RST | IO48 |<br />
+| INT | IO47 |</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4 id="T-CameraPlus-S3_V1.2-Version">T-CameraPlus-S3_V1.2 Version</h4>
+<blockquote>
+<p>| LCD Pin | ESP32S3 Pin |<br />
+| :-----: | :---------: |<br />
+| MOSI | IO34 |<br />
+| SCLK | IO35 |<br />
+| BL | IO46 |<br />
+| CS | IO36 |<br />
+| DC | IO45 |</p>
+</blockquote>
+<blockquote>
+<p>| PDM Microphone MP34DT05TR Pin | ESP32S3 Pin |<br />
+| :---------------------------: | :---------: |<br />
+| LRCLK | IO40 |<br />
+| DATA | IO38 |</p>
+</blockquote>
+<blockquote>
+<p>| Amplifier MAX98357A Pin | ESP32S3 Pin |<br />
+| :------------------------: | :---------: |<br />
+| BCLK | IO41 |<br />
+| LRCLK | IO42 |<br />
+| DATA | IO39 |</p>
+</blockquote>
+<blockquote>
+<p>| SD Card Pin | ESP32S3 Pin |<br />
+| :---------: | :---------: |<br />
+| CS | IO21 |<br />
+| SCLK | IO35 |<br />
+| MOSI | IO34 |<br />
+| MISO | IO48 |</p>
+</blockquote>
+<blockquote>
+<p>| Power Chip SY6970 Pin | ESP32S3 Pin |<br />
+| :-------------------: | :---------: |<br />
+| SDA | IO33 |<br />
+| SCL | IO37 |</p>
+</blockquote>
+<blockquote>
+<p>| Camera OV2640 Pin | ESP32S3 Pin |<br />
+| :---------------: | :---------: |<br />
+| XCLK | IO7 |<br />
+| SIDO | IO1 |<br />
+| SIOC | IO2 |<br />
+| D7 | IO6 |<br />
+| D6 | IO8 |<br />
+| D5 | IO9 |<br />
+| D4 | IO11 |<br />
+| D3 | IO13 |<br />
+| D2 | IO15 |<br />
+| D1 | IO14 |<br />
+| D0 | IO12 |<br />
+| VSYNC | IO3 |<br />
+| HREF | IO5 |<br />
+| PCLK | IO10 |<br />
+| PWDN | IO4 |</p>
+</blockquote>
+<blockquote>
+<p>| Touch Chip Pin | ESP32S3 Pin |<br />
+| :------------: | :---------: |<br />
+| SDA | IO33 |<br />
+| SCL | IO37 |<br />
+| INT | IO47 |</p>
+</blockquote>
+</blockquote>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">OV2640 IR Filter Control Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">AP1511B_FBC</td>
+  <td style="text-align:center">IO16</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">KEY1 Button Pin</th>
+  <th style="text-align:center">ESP32S3 Pin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">KEY1</td>
+  <td style="text-align:center">IO17</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Firmware</th>
+  <th style="text-align:center">Program</th>
+  <th style="text-align:center">Description</th>
+  <th style="text-align:center">Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href=""  >Deep_Sleep_Wake_Up</a></td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/examples/Deep_Sleep_Wake_Up/"  target="_blank">Deep_Sleep_Wake_Up</a></td>
+  <td style="text-align:center">Average Current Consumption: 1.7mA. For more information, see <a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/relevant_test/PowerConsumptionTestLog_%5BT-CameraPlus-S3_V1.2%5D_20250408.pdf"  target="_blank">Power Consumption Test Log</a></td>
+  <td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. What are the main application scenarios for the T-Camera Plus S3?</strong><br />
+A. Suitable for smart surveillance, video doorbells, IoT visual interaction, multimedia terminals, AI image recognition, and other scenarios requiring camera and display functions.</p>
+</li>
+<li><p><strong>Q. Does it come pre-installed with a program?</strong><br />
+A. It comes pre-installed with an LVGL-based UI program supporting file management, music playback, recording, camera projection, etc. If not pre-installed, you need to manually flash the &quot;Lvgl_UI&quot; example program.</p>
+</li>
+<li><p><strong>Q. Which camera modules are supported?</strong><br />
+A. Supports OV2640 and OV5640 camera modules. Users can choose different resolution cameras according to their needs.</p>
+</li>
+<li><p><strong>Q. How is the audio functionality?</strong><br />
+A. Integrates a MAX98357A audio amplifier to drive the speaker, and an MP34DT05-A digital microphone, supporting high-quality audio playback and recording.</p>
+</li>
+<li><p><strong>Q. How to expand external devices?</strong><br />
+A. You can quickly connect compatible sensors via the 2 STEMMA QT/QWIIC interfaces, or connect other peripherals via the 2×13 dual-row expansion interface.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="project/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf"  >T-CameraPlus-S3_V1.0-V1.1</a></li>
 <li><a href="project/T-CameraPlus-S3_V1.2_20240417.pdf"  >T-CameraPlus-S3_V1.2</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A Datasheet</a></li>
+<li><a href="information/EVB_SY6970.pdf"  >SY6970 Datasheet</a></li>
+<li><a href="information/AN_SY6970.pdf"  >SY6970 Application Note</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
 <li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a></li>
@@ -393,81 +1045,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S-3.0.6</a></li>
 <li><a href="https://github.com/DFRobot/DFrobot_MSM261"  target="_blank">DFRobot_MSM261</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>Hardware CDC and JTAG</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enabled</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHz (WiFi)</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHz</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB (128Mb)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash (3MB APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>QSPI PSRAM</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>

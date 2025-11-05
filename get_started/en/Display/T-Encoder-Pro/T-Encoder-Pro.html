@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Encoder Pro - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "Encoder", "AMOLED", "Rotary", "HMI"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -240,6 +240,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>Encoder</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>Rotary</li>
+                            
+                                <li>HMI</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,204 +273,474 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Encoder-Pro-1.jpg" alt="T-QT C6" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Encoder-Pro-1.jpg" alt="T-Encoder Pro" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-encoder-plus">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-encoder-plus">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO T-Encoder-Pro Pinnap is a development board powered by the high-performance ESP32-S3 R8 dual-core chip, featuring Wi-Fi and Bluetooth (LE) connectivity. It integrates a 1.2-inch SH8601A touch AMOLED display with a resolution of 390×390, supporting capacitive touch interaction.</p>
-<p>The board comes with a rich set of hardware features, including:</p>
+<h2 id="Version-History%3A">Version History:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Encoder-Pro_V1.0</td>
+  <td style="text-align:center">2024-02-02</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Encoder-Pro_V1.0</td>
+  <td style="text-align:center">ESP32S3R8</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center"><a href="https://www.lilygo.cc/products/t-encoder-plus"  target="_blank">LILYGO Mall</a> <br /> <a href="https://m.banggood.in/LILYGO-T-Encoder-Pro-ESP32-S3-Rotary-Encoder-CHSC5816-ESP32-S3FN4R2-Circuit-Board-1_2-inch-AMOLED-Touch-Display-Wireless-Module-p-2018774.html"  target="_blank">Banggood Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><p>A rotary encoder (with DATA_A/B pins and a built-in push button),</p>
-</li>
-<li><p>A buzzer,</p>
-</li>
-<li><p>8MB PSRAM and 16MB Flash for memory and storage,</p>
-</li>
-<li><p>Dual Qwiic 4-pin connectors (SDA/SCL/RST/INT) for quick sensor/module expansion.</p>
-</li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
-<p>Its display is fully configured for advanced rendering tasks, with dedicated pins such as LCD_CS, LCD_RST, and SPI communication interfaces.</p>
-<p>Designed with a focus on high integration and interactivity, T-Encoder-Pro Pinnap is ideal for:</p>
-<ul>
-<li><p>Embedded UI development,</p>
-</li>
-<li><p>Smart home control panels,</p>
-</li>
-<li><p>Portable device prototyping,</p>
-</li>
-<li><p>IoT terminals that demand both low power consumption and high performance.</p>
-</li>
-</ul>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Encoder-Pro-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
+<h2 id="Description">Description</h2>
+<p>The LILYGO T-Encoder-Pro is a smart control knob development board equipped with an AMOLED touchscreen. Its core is based on the high-performance ESP32-S3 R8 Wi-Fi/Bluetooth dual-mode chip, integrated with a 2.04-inch SH8601A touch AMOLED display (resolution 390×390) supporting capacitive touch interaction. It features rich hardware functionality including a rotary encoder (supporting left/right rotation and press operation), buzzer, vibration motor, 8MB PSRAM, and 16MB Flash storage, and comes with dual Qwiic 4-Pin interfaces for quick expansion of sensors or modules. Designed with a focus on high integration and interactivity, it is suitable for embedded UI development, smart home control panels, audio mixers, portable device prototypes, or IoT endpoints, balancing low power consumption with high performance requirements.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Encoder-Pro-2.jpg" alt="T-Encoder-Pro" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
 <img src="./assets/T-Encoder-Pro-pin-en.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<p>T-Encoder-Pro is a smart control knob equipped with a AMOLED touch screen, based on the ESP32S3R8 chip. The knob rotates, clicks (pushes in), and contains a beeper and vibration motor.</p>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M (Octal SPI)</li>
+<li>FLASH: 16M</li>
+<li>Other Notes: For more information, please visit the <a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 2.04-inch AMOLED</li>
+<li>Resolution: 390×390px</li>
+<li>Display Type: AMOLED</li>
+<li>Driver IC: SH8601A-W14-T06</li>
+<li>Compatible Library: Arduino_GFX</li>
+<li>Bus Communication Protocol: SPI/QSPI</li>
+</ul>
+<h3 id="Touch">Touch</h3>
+<ul>
+<li>Chip: CHSC5816</li>
+<li>Bus Communication Protocol: I2C</li>
+</ul>
+<h3 id="Encoder">Encoder</h3>
+<ul>
+<li>Type: Rotary Encoder</li>
+<li>Function: Supports left/right rotation and press operation</li>
+</ul>
+<h3 id="Feedback-Devices">Feedback Devices</h3>
+<ul>
+<li>Buzzer: Audio feedback</li>
+<li>Vibration Motor: Haptic feedback</li>
+</ul>
+<h3 id="Overview">Overview</h3>
 <img src="./assets/T-Encoder-Pro-info-en.jpg" alt="summary" width=80%>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3R8</td>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3R8 Dual-core LX7 microprocessor</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>8M</td>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
 </tr>
 <tr>
-  <td>FLASH</td>
-  <td>16M</td>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
 </tr>
 <tr>
-  <td>Screen</td>
-  <td>2.04-inch SH8601A-W14-T06 AMOLED</td>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">2.04-inch SH8601A AMOLED (390×390)</td>
 </tr>
 <tr>
-  <td>Touch</td>
-  <td>CHSC5816 touch capacitive screen</td>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">CHSC5816 Capacitive Touch Screen</td>
 </tr>
 <tr>
-  <td>Encoder</td>
-  <td>Supports left and right rotation</td>
+  <td style="text-align:center">Encoder</td>
+  <td style="text-align:center">Rotary Encoder (with press)</td>
 </tr>
 <tr>
-  <td>Buzzer</td>
-  <td>Support buzzer</td>
+  <td style="text-align:center">Buzzer</td>
+  <td style="text-align:center">Audio Feedback</td>
 </tr>
 <tr>
-  <td>Wireless</td>
-  <td>2.4GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+  <td style="text-align:center">Vibration Motor</td>
+  <td style="text-align:center">Haptic Feedback</td>
 </tr>
 <tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
 </tr>
 <tr>
-  <td>Extended Interface</td>
-  <td>2 × QWIIC 4-pin interface</td>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C Interface)</td>
 </tr>
 <tr>
-  <td>Keys</td>
-  <td>1 x RESET key + 1 x BOOT key</td>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">2 × QWIIC 4-pin Interface</td>
 </tr>
 <tr>
-  <td>Hole Position</td>
-  <td><strong>M2 screw hole * 3</strong></td>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
 </tr>
 <tr>
-  <td>Dimensions</td>
-  <td>43.5 x 43.5 x 27.5mm</td>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">3 × M2 Screw Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>43.5×43.5×27.5mm</strong></td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro"  target="_blank">T-Encoder-Pro</a></p>
-<ul>
-<li><a href="https://www.espressif.com/en/support/documents/technical-documents"  target="_blank">Espressif</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DXQ120MYB2416A.pdf"  target="_blank">DXQ120MYB2416A</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DS_CHSC5816_V1.1.5.pdf"  target="_blank">DS_CHSC5816_V1.1.5</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/CHSC5816-ApplicationDoc_US_V04.pdf"  target="_blank">CHSC5816-ApplicationDoc_US_V04</a></li>
-</ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/project/%5BSCH%5D%5BT-Encoder-Pro_V1.0%5D.pdf"  target="_blank">T-Encoder-Pro</a></li>
-</ul>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
-<ul>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
-<li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a></li>
-<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib-0.1.4</a></li>
-</ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
 <table>
 <thead>
 <tr>
-  <th>Setting</th>
-  <th>Value</th>
+  <th>Example</th>
+  <th>Support IDE And Version</th>
+  <th>Description</th>
+  <th>Picture</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
+  <td><a href="./examples/GFX"  >GFX</a></td>
+  <td><code>[Arduino IDE][esp32_v3.0.7]</code></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
+  <td><a href="./examples/Lvgl_CIT"  >Lvgl_CIT</a></td>
+  <td><code>[Arduino IDE][esp32_v3.0.7]</code></td>
+  <td>Product factory original testing</td>
+  <td></td>
 </tr>
 <tr>
-  <td>USB Mode</td>
-  <td>Hardware CDC and JTAG</td>
+  <td><a href="./examples/CHSC5816"  >CHSC5816</a></td>
+  <td><code>[Arduino IDE][esp32_v3.0.7]</code></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-  <td>USB CDC On Boot</td>
-  <td>Enabled</td>
+  <td><a href="./examples/Rotary_Encoder"  >Rotary_Encoder</a></td>
+  <td><code>[Arduino IDE][esp32_v3.0.7]</code></td>
+  <td></td>
+  <td></td>
 </tr>
 <tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHz (WiFi)</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHz</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB (128Mb)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash (3MB APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
+  <td><em>(More examples please refer to the GitHub repository)</em></td>
+  <td></td>
+  <td></td>
+  <td></td>
 </tr>
 </tbody>
 </table>
-<h3 id="Development-Platform">Development Platform</h3>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="./firmware/%5BT-Encoder-Pro_V1.0%5D%5BLvgl_CIT%5D_firmware_V1.0.0.bin"  >Lvgl_CIT</a></td>
+  <td>Original</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>, choose the version for your system.</li>
+<li>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, you can go to GitHub to download the program. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; of the corresponding folder after adding it). Under the &quot;[platformio]&quot; section, uncomment to select the example program you want to upload (marked by &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a>, choose the version for your system.</p>
+</li>
+<li><p>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</p>
+</li>
+<li><p>Open the &quot;Tools&quot; menu in the top bar -&gt; Select &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to select is determined by the &quot;board = xxx&quot; header under the [env] section in the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</p>
+</li>
+<li><p>Open the menu bar &quot;<a href="image/6.png"  >File</a>&quot; -&gt; &quot;<a href="image/6.png"  >Preferences</a>&quot;, find the &quot;<a href="image/7.png"  >Sketchbook location</a>&quot; field, and copy all the library files along with their folders from the &quot;libraries&quot; folder in the project directory to the &quot;libraries&quot; folder in this location.</p>
+</li>
+<li><p>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li><p>Select the correct port.</p>
+</li>
+<li><p>Click the &quot;<kbd>[√]</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>[→]</kbd>&quot; in the top right corner to upload.</p>
+</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
 <ol>
 <li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
 </ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Display Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDIO0</td>
+  <td style="text-align:center">IO11</td>
+</tr>
+<tr>
+  <td style="text-align:center">SDIO1</td>
+  <td style="text-align:center">IO13</td>
+</tr>
+<tr>
+  <td style="text-align:center">SDIO2</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">SDIO3</td>
+  <td style="text-align:center">IO14</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO12</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO4</td>
+</tr>
+<tr>
+  <td style="text-align:center">VCI EN</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Touch Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Rotary Encoder Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">KNOB DATA A</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+<tr>
+  <td style="text-align:center">KNOB DATA B</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+<tr>
+  <td style="text-align:center">KNOB KEY</td>
+  <td style="text-align:center">IO0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Buzzer Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BUZZER DATA</td>
+  <td style="text-align:center">IO17</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>For detailed pin definitions, please refer to the schematic diagram.</em></p>
+</blockquote>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>(Encoder accuracy, touch response, power consumption test data to be added)</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. What are the main application scenarios for the T-Encoder Pro?</strong><br />
+A. The T-Encoder Pro is suitable for smart home control panels, audio equipment mixers, industrial HMI interfaces, multimedia controllers, and other scenarios requiring precise knob control and graphical display.</p>
+</li>
+<li><p><strong>Q. What operations does the encoder support?</strong><br />
+A. The encoder supports left/right rotation (for value adjustment, menu selection, etc.) and press operation (for confirmation, selection, etc.).</p>
+</li>
+<li><p><strong>Q. How to connect external sensors?</strong><br />
+A. You can quickly connect compatible sensor modules via the two onboard QWIIC 4-pin interfaces, supporting plug-and-play.</p>
+</li>
+<li><p><strong>Q. How is haptic feedback achieved?</strong><br />
+A. Haptic feedback is provided by the vibration motor, which can offer physical feedback during rotary encoder operation or specific events, enhancing the user experience.</p>
+</li>
+<li><p><strong>Q. What is the display quality like?</strong><br />
+A. It uses a 2.04-inch AMOLED screen with a resolution of 390×390, providing clear and vibrant display effects and supporting touch operation.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/project/%5BSCH%5D%5BT-Encoder-Pro_V1.0%5D.pdf"  target="_blank">SCH_T-Encoder-Pro_V1.0</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/project/%5BSCH%5D%5BT-Encoder-Pro_V1.0%5D%5BTFT_FPC%5D.pdf"  target="_blank">SCH_T-Encoder-Pro_V1.0_TFT_FPC</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DS_CHSC5816_V1.1.5.pdf"  target="_blank">CHSC5816 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/CHSC5816-ApplicationDoc_US_V04.pdf"  target="_blank">CHSC5816 Application Note</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DXQ120MYB2416A.pdf"  target="_blank">DXQ120MYB2416A Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
+<li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a></li>
+<li><a href="https://github.com/lewisxhe/SensorsLib"  target="_blank">SensorLib-0.1.4</a></li>
+</ul>
 
                         
                     </div>

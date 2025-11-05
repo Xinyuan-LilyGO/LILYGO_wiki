@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Display S3 AMOLED Plus - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "AMOLED", "LoRa", "Power Management"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -240,6 +240,14 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>Power Management</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,105 +271,331 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Display-S3-AMOLED-Plus-1.jpg" alt="T-Display S3 AMOLED Plus" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44507650556085">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-display-s3-amoled-plus">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>T-Display AMOLED Plus is a high-integration development board based on the ESP32-S3 microcontroller, designed for versatility and high performance. It features 16MB of Flash and 8MB of PSRAM, enabling support for complex applications. The board comes with a 1.25-inch AMOLED display with touch functionality, offering vibrant visuals and interactive control.</p>
-<p>It includes an onboard PMU (Power Management Unit) and RTC (Real-Time Clock), with VBUS power management to optimize low-power design. For expansion, the board provides dual STEMMA QT/Qwiic connectors for rapid sensor integration, supports SD card storage, and offers a wide range of GPIOs, ADC channels, and UART interfaces for peripheral connections.</p>
-<p>Additionally, it integrates BOOT mode switching and a reset circuit, simplifying development and debugging. This board is ideal for scenarios requiring interactive displays and multi-sensor integration, such as smart wearables and IoT terminals.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Display-S3-AMOLED-Plus-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Display-S3-AMOLED-Plus-3.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3R8 Dual-core LX7 microprocessor</td>
-</tr>
-<tr>
-  <td>FLASH</td>
-  <td>16MB</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8MB</td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>1.91 inch RM67162 IPS AMOLED</td>
-</tr>
-<tr>
-  <td>Touch</td>
-  <td>Touch capacitive screen</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>1276:868,915Mhz</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF card</td>
-</tr>
-<tr>
-  <td>RTC</td>
-  <td>PCF85063ATL/1</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth5 (LE)</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
-</tr>
-<tr>
-  <td>IO interface</td>
-  <td>2.54mm spacing 2*13 (double row) extension IO interface</td>
-</tr>
-<tr>
-  <td>Extension interface</td>
-  <td>1 × FPC antenna extension interface + 1 × TF card interface + 1 × STEMMA QT/QWIIC interface (JST-SH 1.0MM 4Pin) + JST-GH 1.25MM interface</td>
-</tr>
-<tr>
-  <td>Buttons</td>
-  <td>1 x RESET Button + 1 x BOOT Button</td>
-</tr>
-<tr>
-  <td>Power supply</td>
-  <td>1 x USB / 3.7V Li-ion Battery, 1 x Battery Switch, 1 x Solar Input Interface</td>
-</tr>
-<tr>
-  <td>Mounting holes</td>
-  <td>2 x 2mm Positioning Holes</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>60x32x12mm</td>
+  <td style="text-align:center">T-Display-S3-AMOLED-Plus_V1.0</td>
+  <td style="text-align:center">2024-01-01</td>
+  <td style="text-align:left">Initial Version</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series"  target="_blank">T-Display S3 AMOLED Plus</a></p>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/schematic/T-Display-S3-AMOLED-Plus.pdf"  target="_blank">T-Display S3 AMOLED Plus</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Purchase-Link">Purchase Link</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Display S3 AMOLED Plus</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-display-s3-amoled-plus"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>T-Display S3 AMOLED Plus is a highly integrated development board based on the ESP32-S3 microcontroller, focusing on multi-functionality and high performance. Its core features 16MB Flash and 8MB PSRAM, supporting complex application operations. Equipped with a 1.91-inch AMOLED display with touch support. Built-in PMU (Power Management Unit) and RTC (Real-Time Clock), combined with VBUS power management, optimize low-power design. For expansion, it provides dual STEMMA QT/Qwlic interfaces, compatible with quick sensor connections; supports SD card storage, and reserves rich GPIO, ADC channels, and UART communication interfaces for peripheral expansion. Additionally, onboard LoRa module supports multi-band communication. This product is suitable for smart wearables, IoT terminals, and other scenarios requiring display interaction and multi-sensor integration.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Images">Physical Images</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Display-S3-AMOLED-Plus-2.jpg" alt="T-Display-S3-AMOLED-Plus" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Display-S3-AMOLED-Plus-3.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M (Octal SPI)</li>
+<li>FLASH: 16M</li>
+<li>Other Notes: For more information, please visit <a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+</ul>
+<h3 id="Screen">Screen</h3>
+<ul>
+<li>Size: 1.91-inch AMOLED</li>
+<li>Resolution: To be added</li>
+<li>Type: IPS AMOLED</li>
+<li>Driver IC: RM67162</li>
+<li>Compatible Libraries: TFT_eSPI, Arduino_GFX</li>
+<li>Bus Protocol: SPI/QSPI</li>
+</ul>
+<h3 id="Touch">Touch</h3>
+<ul>
+<li>Type: Capacitive Touch Screen</li>
+<li>Bus Protocol: I2C</li>
+</ul>
+<h3 id="LoRa">LoRa</h3>
+<ul>
+<li>Supported Bands: 1276/868/915MHz</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>PMU Chip: AXPM65611</li>
+<li>Charging Management: BQ25896</li>
+</ul>
+<h3 id="RTC">RTC</h3>
+<ul>
+<li>Chip: PCF85063ATL/1</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Screen</td>
+  <td style="text-align:center">1.91-inch RM67162 IPS AMOLED</td>
+</tr>
+<tr>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">Capacitive Touch Screen</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">1276/868/915MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">RTC</td>
+  <td style="text-align:center">PCF85063ATL/1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Management</td>
+  <td style="text-align:center">AXPM65611 + BQ25896</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C Interface)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2×13 dual-row expansion interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">FPC antenna + TF Card + STEMMA QT/QWIIC + JST-GH 1.25MM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET button + 1 x BOOT button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">4 × 2mm positioning holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>60×32×12mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/examples/Factory/Factory.ino"  target="_blank">Factory</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Factory Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><em>(More examples available in GitHub repository)</em></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a> according to your system.</li>
+<li>Open the &quot;Extensions&quot; sidebar in Visual Studio Code (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, download the project from GitHub. You can click the green &quot;&lt;&gt; Code&quot; button to download the main branch, or download a &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the Explorer sidebar (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO should automatically open it after adding the folder). Under the &quot;[platformio]&quot; section, uncomment the line selecting the example program you want to upload (starting with &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> according to your system.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu -&gt; &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to choose is determined by the &quot;board = xxx&quot; header in the &quot;[env]&quot; section of the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</li>
+<li>Open the &quot;[File]&quot; -&gt; &quot;[Preferences]&quot; menu, find the &quot;[Sketchbook location]&quot; field. Copy and paste all library files and folders from the &quot;libraries&quot; directory in the project folder into the &quot;libraries&quot; folder at this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; to upload.</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>(Power consumption and other test data to be added)</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
+A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
+</li>
+<li><p><strong>Q. Why does my board keep failing to upload programs?</strong><br />
+A. Please hold down the &quot;BOOT&quot; button, then press the &quot;RST&quot; button once, and then click upload to enter download mode.</p>
+</li>
+<li><p><strong>Q. Which frequency bands does the LoRa module support?</strong><br />
+A. Supports multiple frequency bands including 1276MHz, 868MHz, and 915MHz. Please select the appropriate frequency band according to regulations in your region.</p>
+</li>
+<li><p><strong>Q. How to fully utilize the power management functions?</strong><br />
+A. Through the XPowersLib library, you can conveniently control the AXPM65611 power management chip and BQ25896 charging management chip to achieve low-power operation and battery management.</p>
+</li>
+<li><p><strong>Q. How to connect external sensors?</strong><br />
+A. You can quickly connect compatible sensor modules through the onboard STEMMA QT/QWIIC interfaces, or connect other peripherals through the 2×13 dual-row expansion interface.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/schematic/T-Display-S3-AMOLED-Plus.pdf"  target="_blank">T-Display S3 AMOLED Plus</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><em>(More resources available in GitHub repository)</em></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
 <li><a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl 8.3.9</a></li>
 <li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
@@ -374,93 +608,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/PaulStoffregen/OneWire"  target="_blank">OneWire</a></li>
 <li><a href="https://github.com/sparkfun/SparkFun_MAX3010x_Pulse_and_Proximity_Sensor_Library"  target="_blank">SparkFun MAX3010x Pulse and Proximity Sensor Library</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB(128Mb)</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash(3M APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>

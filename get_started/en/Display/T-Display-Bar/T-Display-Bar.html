@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Display Bar - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": ["AMOLED", "Display"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "./assets/T-Display-Bar-1.jpg", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["AMOLED", "Display"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -267,131 +267,879 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Display-Bar-1.jpg" alt="T-Display-Bar" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-display-bar">Official Store</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">AliExpress</a> -->
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>The LILYGO T-Display Bar is a highly integrated embedded smart display module, powered by the high-performance ESP32-S3 chip, combining multifunction sensors with high-precision display technology.<br />
-Its core configuration is as follows:</p>
+<h2 id="Version-History%3A">Version History:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Purchase-Link">Purchase Link</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Display Bar</td>
+  <td style="text-align:center">ESP32-S3R8</td>
+  <td style="text-align:center">16MB</td>
+  <td style="text-align:center">8MB (OPI PSRAM)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-display-bar"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>LILYGO T-Display Bar is a highly integrated embedded smart display module, featuring the ESP32-S3 high-performance chip at its core, combining multi-functional sensors with high-precision display technology. Its core configuration is as follows:</p>
 <p><strong>Display System</strong></p>
 <ul>
-<li><p>Equipped with a 2.25-inch full-color IPS LCD screen, driven by the ST7789 IC, with a resolution of 76×284 pixels (RGB arrangement).</p>
-</li>
-<li><p>Supports capacitive touch (independent Touch_IRQ/Touch_RST control) for smooth human–machine interaction.</p>
-</li>
-<li><p>Connected via SPI bus (CS/DC/RST/BL/MOSI/SCLK pins) to optimize display control efficiency.</p>
-</li>
+<li>Equipped with a 2.25-inch IPS full-color LCD screen, using ST7789 driver IC, with a resolution of 76×284 pixels (RGB arrangement).</li>
+<li>Supports capacitive touch (independent Touch_IRQ/Touch_RST control), providing a smooth human-machine interaction experience.</li>
+<li>Connected via SPI bus (CS/DC/RST/BL/MOSI/SCLK pins), optimizing display control efficiency.</li>
 </ul>
-<p><strong>Smart Sensing Capability</strong></p>
+<p><strong>Intelligent Sensing Capability</strong></p>
 <ul>
-<li><p>Integrated BH1260AP AI sensor with six-axis IMU (accelerometer + gyroscope) and personalized motion tracking.</p>
-</li>
-<li><p>Features an I²C interface (SDA/SCL) and dedicated control pins (EN/RST/IRQ) for low-power environmental sensing and real-time data interaction.</p>
-</li>
+<li>Integrated BH1260AP AI sensor, supporting six-axis IMU (accelerometer + gyroscope) and personalized motion tracking.</li>
+<li>Equipped with I²C interface (SDA/SCL) and dedicated control pins (EN/RST/IRQ), enabling low-power environmental sensing and real-time data interaction.</li>
 </ul>
 <p><strong>Expandability and Interfaces</strong></p>
 <ul>
-<li><p>Provides QWIIC ecosystem interface (compatible with I²C devices) for rapid sensor module expansion.</p>
-</li>
-<li><p>Built-in TF card storage (SPI interface: MOSI/MISO/SCK/CS) and buzzer driver (BUZZer_IO).</p>
-</li>
-<li><p>Uses USB Type-C interface supporting 5V/500mA power supply and integrated programming.</p>
-</li>
+<li>Provides QWIIC ecosystem interface (compatible with I²C devices), supporting rapid expansion of sensor modules.</li>
+<li>Integrated TF card storage (SPI interface: MOSI/MISO/SCK/CS) and buzzer driver (BUZZer_IO).</li>
+<li>Uses USB Type-C interface, supporting 5V/500mA power supply and integrated program burning design.</li>
 </ul>
 <p><strong>Physical Characteristics</strong></p>
 <ul>
-<li><p>Compact structural design (69×23×15 mm) suitable for both industrial deployment and portable devices.</p>
-</li>
-<li><p>Highly optimized pin layout (e.g., TFT CS/DC multiplexed with ESP32 GPIO) to simplify secondary development.</p>
-</li>
+<li>Compact structural design (69×23×15mm), suitable for both industrial deployment and portable device requirements.</li>
+<li>Highly optimized pin layout (such as TFT CS/DC multiplexed with ESP32-GPIO), simplifying secondary development processes.</li>
 </ul>
-<h2 id="Appearance-and-Functions">Appearance and Functions</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Display-Bar-2.jpg" alt="summary" width=80%>
-<h3 id="Pin-Diagram">Pin Diagram</h3>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Images">Physical Images</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Display-Bar-2.jpg" alt="T-Display-Bar" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
 <img src="./assets/T-Display-Bar-pin.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M (OPI PSRAM)</li>
+<li>FLASH: 16M</li>
+<li>Other Notes: For more information, please visit <a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+</ul>
+<h3 id="Screen">Screen</h3>
+<ul>
+<li>Size: 2.25-inch IPS LCD</li>
+<li>Resolution: 76x284px</li>
+<li>Type: IPS LCD</li>
+<li>Driver IC: ST7789</li>
+<li>Compatible Libraries: TFT_eSPI</li>
+<li>Bus Protocol: SPI</li>
+</ul>
+<h3 id="Touch">Touch</h3>
+<ul>
+<li>Chip: CST816</li>
+<li>Bus Protocol: I2C</li>
+</ul>
+<h3 id="Sensor">Sensor</h3>
+<ul>
+<li>Chip: BHI260AP</li>
+<li>Functions: Supports six-axis IMU (accelerometer + gyroscope), AI sensor</li>
+<li>Bus Protocol: I2C</li>
+</ul>
 <h3 id="Overview">Overview</h3>
 <img src="./assets/T-Display-Bar-info.jpg" alt="summary" width=80%>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3R8 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3R8 Dual-core LX7 microprocessor</td>
 </tr>
 <tr>
-  <td>FLASH</td>
-  <td>16MB</td>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>8MB</td>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
 </tr>
 <tr>
-  <td>Screen</td>
-  <td>2.25-inch ST7789 IPS LCD (76×284 px)</td>
+  <td style="text-align:center">Screen</td>
+  <td style="text-align:center">2.25 inch ST7789 IPS LCD (76*284px)</td>
 </tr>
 <tr>
-  <td>Touch</td>
-  <td>CST816 capacitive touchscreen</td>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">CST816 Capacitive Touch Screen</td>
 </tr>
 <tr>
-  <td>Sensor</td>
-  <td>BHI260AP AI sensor with six-axis IMU <br>Buzzer</td>
+  <td style="text-align:center">Sensor</td>
+  <td style="text-align:center">BHI260AP AI sensor, supports six-axis IMU</td>
 </tr>
 <tr>
-  <td>LoRa</td>
-  <td>1276: 868, 915 MHz</td>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
 </tr>
 <tr>
-  <td>Storage</td>
-  <td>TF card</td>
+  <td style="text-align:center">Buzzer</td>
+  <td style="text-align:center">Active buzzer</td>
 </tr>
 <tr>
-  <td>Wireless</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
 </tr>
 <tr>
-  <td>USB</td>
-  <td>1 × USB Port with OTG (Type-C)</td>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C Interface)</td>
 </tr>
 <tr>
-  <td>IO Interface</td>
-  <td>13-pin 2.54 mm pitch interface</td>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2.54mm pitch 13pin interface</td>
 </tr>
 <tr>
-  <td>Expansion Interface</td>
-  <td>2 × QWIIC + 1 × Battery connector</td>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">2 × QWIIC interfaces + 1 x battery connector</td>
 </tr>
 <tr>
-  <td>Buttons</td>
-  <td>1 × RESET + 1 × BOOT + 1 × IO38 + 1 × Sleep button</td>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET button + 1 x BOOT button + 1 x IO38 button + 1 x Sleep button</td>
 </tr>
 <tr>
-  <td>Dimensions</td>
-  <td><strong>69×23×15 mm</strong></td>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>69x23x15mm</strong></td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Resources">Related Resources</h3>
-<p>GitHub: <a href="https://github.com/Xinyuan-LilyGO/T-Display-Bar"  target="_blank">T-Display-Bar</a></p>
-<h4 id="Schematics">Schematics</h4>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Factory</td>
+  <td style="text-align:left">Factory test example, includes desktop weather and Bluetooth mouse</td>
+</tr>
+<tr>
+  <td style="text-align:left">TFT_ESPI_Example</td>
+  <td style="text-align:left">TFT_espi library adaptation</td>
+</tr>
+<tr>
+  <td style="text-align:left">LVGL_Example</td>
+  <td style="text-align:left">lvgl library adaptation</td>
+</tr>
+<tr>
+  <td style="text-align:left">WIFI_Config</td>
+  <td style="text-align:left">WiFi configuration example</td>
+</tr>
+<tr>
+  <td style="text-align:left">BHI260AP</td>
+  <td style="text-align:left">6-axis IMU sensor example</td>
+</tr>
+<tr>
+  <td style="text-align:left">BHI260AP_StepCounter</td>
+  <td style="text-align:left">Walking step counter example</td>
+</tr>
+<tr>
+  <td style="text-align:left">BQ27220</td>
+  <td style="text-align:left">Battery level monitor meter</td>
+</tr>
+<tr>
+  <td style="text-align:left">BQ25896</td>
+  <td style="text-align:left">Power control chip routines</td>
+</tr>
+<tr>
+  <td style="text-align:left">RTC</td>
+  <td style="text-align:left">PCF8563 Real-Time Clock example</td>
+</tr>
+<tr>
+  <td style="text-align:left">SD Card</td>
+  <td style="text-align:left">SD card example</td>
+</tr>
+<tr>
+  <td style="text-align:left">Colour_Test</td>
+  <td style="text-align:left">TFT display color test</td>
+</tr>
+<tr>
+  <td style="text-align:left">Colour_Test2</td>
+  <td style="text-align:left">TFT display color test</td>
+</tr>
+<tr>
+  <td style="text-align:left">TouchDrv_CSTxxx_GetPoint</td>
+  <td style="text-align:left">Display touch example</td>
+</tr>
+<tr>
+  <td style="text-align:left">Sleep_Mode</td>
+  <td style="text-align:left">ESP32S3 sleep mode example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a> according to your system.</li>
+<li>Open the &quot;Extensions&quot; sidebar in Visual Studio Code (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, download the project from GitHub. You can click the green &quot;&lt;&gt; Code&quot; button to download the main branch, or download a &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the Explorer sidebar (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO should automatically open it after adding the folder). Under the &quot;[platformio]&quot; section, uncomment the line selecting the example program you want to upload (starting with &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> according to your system.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu -&gt; &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to choose is determined by the &quot;board = xxx&quot; header in the &quot;[env]&quot; section of the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</li>
+<li>Open the &quot;[File]&quot; -&gt; &quot;[Preferences]&quot; menu, find the &quot;[Sketchbook location]&quot; field. Copy and paste all library files and folders from the &quot;libraries&quot; directory in the project folder into the &quot;libraries&quot; folder at this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Arduino IDE Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center"><strong>ESP32S3 Dev Module</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center">Port</td>
+  <td style="text-align:center">Your port</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enable</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHZ(WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:center">Erase All Flash Before Sketch Upload</td>
+  <td style="text-align:center">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHZ</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center"><strong>16MB(128Mb)</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core1</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center"><strong>8M with spiffs(3M APP/1.5MB SPIFFS)</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center"><strong>OPI PSRAM</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Mode</td>
+  <td style="text-align:center"><strong>UART0/Hardware CDC</strong></td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center"><strong>CDC and JTAG</strong></td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; to upload.</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">GPIO</th>
+  <th style="text-align:center">SPI</th>
+  <th style="text-align:center">I2C</th>
+  <th style="text-align:center">TFT(SPI)</th>
+  <th style="text-align:center">TOUCH(I2C)</th>
+  <th style="text-align:center">BUZZER</th>
+  <th style="text-align:center">BHI260AP(I2C)</th>
+  <th style="text-align:center">BUTTON</th>
+  <th style="text-align:center">SD(SPI)</th>
+  <th style="text-align:center">USB</th>
+  <th style="text-align:center">BQ27220</th>
+  <th style="text-align:center">FLASH128M</th>
+  <th style="text-align:center">UART</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">IO2</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">I2C_SDA</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO3</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">I2C_SDA</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO12</td>
+  <td style="text-align:center">SPI_MOSI</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO13</td>
+  <td style="text-align:center">SPI_MISO</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO14</td>
+  <td style="text-align:center">SPI_SCK</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO6</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_MOSI</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO7</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_SCLK</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO8</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_CS</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO5</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_DC</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO40</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_RST</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO15</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TFT_BL</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO18</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">BHI260AP_IRQ</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO17</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">BHI260AP_RST</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO16</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">BHI260AP_EN</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO11</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SD_CS</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO9</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">BUZZER_PIN</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO21</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TOUCH_IRQ</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO1</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">TOUCH_RST</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO38</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">Button1</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO0</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">Button2</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO19</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">USB_N</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO20</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">USB_P</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO10</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">GPOUT</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO27</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPIHD</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO28</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPIWP</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO29</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPICS0</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO30</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPICLK</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO31</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPIQ</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO32</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">SPID</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center">IO44</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">U0RXD</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO43</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center">U0TXD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>(Test data to be added)</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
+A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
+</li>
+<li><p><strong>Q. Why does Arduino IDE prompt me to upgrade library files when I open it? Should I upgrade or not?</strong><br />
+A. Choose not to upgrade library files. Different versions of library files may not be compatible with each other, so upgrading is not recommended.</p>
+</li>
+<li><p><strong>Q. Why is there no serial data output from the &quot;Uart&quot; interface on my board? Is it broken?</strong><br />
+A. Because the project file is configured by default to use the USB interface as Uart0 serial output for debugging, and the &quot;Uart&quot; interface is connected to Uart0, it won't output any data without configuration.<br />
+PlatformIO users: Open the project file &quot;platformio.ini&quot;, change the option &quot;-DARDUINO_USB_CDC_ON_BOOT=true&quot; under &quot;build_flags = xxx&quot; to &quot;-DARDUINO_USB_CDC_ON_BOOT=false&quot; to use the external &quot;Uart&quot; interface normally.<br />
+Arduino users: Open the &quot;Tools&quot; menu, select USB CDC On Boot: &quot;Disabled&quot; to use the external &quot;Uart&quot; interface normally.</p>
+</li>
+<li><p><strong>Q. Why does my board keep failing to upload programs?</strong><br />
+A. Please hold down the &quot;BOOT&quot; button and try uploading again.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
 <ul>
 <li><a href="https://github.com/Xinyuan-LilyGO/T-Display-Bar/blob/master/hardware/H764%20T-Display%20Bar_V1.1.pdf"  target="_blank">T-Display-Bar</a></li>
 </ul>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependencies">Dependencies</h4>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href=""  >BHI260AP Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
 <li><a href="https://github.com/T-vK/ESP32-BLE-Mouse"  target="_blank">ESP32-BLE-Mouse</a></li>
 <li><a href="https://github.com/bblanchon/ArduinoJson"  target="_blank">ArduinoJson</a></li>
@@ -401,94 +1149,6 @@ Its core configuration is as follows:</p>
 <li><a href="https://github.com/lewisxhe/XPowersLib"  target="_blank">XPowersLib</a></li>
 <li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></li>
 </ul>
-<h2 id="Software-Development">Software Development</h2>
-<h3 id="Arduino-IDE-Settings">Arduino IDE Settings</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240 MHz (Wi-Fi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80 MHz</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB (128Mb)</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>8M with SPIFFS (3M APP / 1.5MB SPIFFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0 / Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platforms">Development Platforms</h3>
-<ol>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
-<p>(<em>Contact details here</em>)</p>
 
                         
                     </div>

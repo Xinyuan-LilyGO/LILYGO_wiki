@@ -564,10 +564,8 @@ make prepare_sourcecode
 
 <pre class="language-shell"><code class="language-shell">docker run -u root -it -v $(pwd):$(pwd) -v $(pwd)/toolchain:/opt/toolchain -w $(pwd) ghcr.io/kendryte/k230_sdk /bin/bash
 </code></pre>
-<ol>
-<li>根据不同开发板或软件功能，选择不同的配置config进行编译，编译命令格式：<code>make CONF=xxx</code>，如：</li>
-</ol>
 <blockquote>
+<p>根据不同开发板或软件功能，选择不同的配置config进行编译，编译命令格式：<code>make CONF=xxx</code>，如：</p>
 <ul>
 <li>编译K230-USIP-LP3-EVB板子镜像，执行<code>make CONF=k230_evb_defconfig</code>  命令开始编译</li>
 <li>编译CanMV-K230板子的镜像，执行 <code>make CONF=k230_canmv_defconfig</code>  命令开始编译</li>
@@ -635,30 +633,32 @@ make prepare_sourcecode
 <p>系统上电后，默认会有<strong>两个串口设备</strong>，可分别用于访问小核Linux和大核RTSmart</p>
 <p>小核Linux默认用户名root，密码为空。大核RTSmart系统中开机会自动启动一个应用程序，可按<code>q</code>键退出至命令提示符终端。</p>
 <p>base platform:<br />
-      ubuntu20.04</p>
-<p>参考BUILD，可使用Dokcer或本地环境编译，编译速度更快</p>
-<p>或者参考K230 CanMV 自定义固件</p>
-<p>烧录<br />
-linux下直接使用dd命令进行烧录，windows下使用烧录工具进行烧录，可参考K230 CanMV 如何烧录固件<br />
+     <code>ubuntu20.04</code></p>
+<p>参考BUILD，可使用Dokcer或本地环境编译，编译速度更快或者参考K230 CanMV 自定义固件</p>
+<ul>
+<li>烧录</li>
+</ul>
+<p>linux下直接使用dd命令进行烧录，windows下使用烧录工具进行烧录，可参考K230 CanMV 如何烧录固件<br />
 Operator:</p>
-<p>编译固件：</p>
+<ul>
+<li>编译固件：</li>
+</ul>
 
-<pre class="language-none"><code class="language-none">  cd canmv_k230
-  time make log
-
+<pre class="language-shell"><code class="language-shell">      cd canmv_k230
+      time make log
 </code></pre>
-<p>canmv_k230/output/k230_canmv_v3p0    生成CanMV-K230-V3P0_rtsmart_localnncase_v2.9.0.img   可烧录至sd卡</p>
-<p>compile app:<br />
+<p><code>canmv_k230/output/k230_canmv_v3p0</code>    生成<code>CanMV-K230-V3P0_rtsmart_localnncase_v2.9.0.img</code>   可烧录至sd卡</p>
+<p>编译 app:<br />
 change to current dir canmv_k230</p>
 
-<pre class="language-none"><code class="language-none">  cd canmv_k230/src/rtsmart/mpp
-  source build_env.sh
-  cd userapps/sample/sample_display
-  make
+<pre class="language-shell"><code class="language-shell">      cd canmv_k230/src/rtsmart/mpp
+      source build_env.sh
+      cd userapps/sample/sample_display
+      make
 </code></pre>
 <p>in the dir sample/elf     generate sample_display.elf</p>
 <p>default app: sample_display</p>
-<p>将sample_display.elf 改名为app.elf   拷到sd卡 sdcard盘中重新上电，默认启动运行</p>
+<p>将sample_display.elf 改名为<code>app.elf</code>   拷到sd卡 sdcard盘中重新上电，默认启动运行</p>
 
                         
                     </div>

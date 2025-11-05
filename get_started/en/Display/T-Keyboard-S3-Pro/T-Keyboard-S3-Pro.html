@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Keyboard S3 Pro - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "Keyboard", "Mechanical", "RGB", "Multi-screen"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -240,6 +240,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>Keyboard</li>
+                            
+                                <li>Mechanical</li>
+                            
+                                <li>RGB</li>
+                            
+                                <li>Multi-screen</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,221 +273,798 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Keyboard-S3-Pro-1.jpg" alt="T-Keyboard-S3-Pro" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-keyboard-s3-pro">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-keyboard-s3-pro">Official Store</a>
 </div>
-<blockquote class="spoiler warning">
-<p> A host device is required for operation. The module connects to the host via a magnetic interface.</p>
+<blockquote>
+<p><strong>Important Note</strong>: A host device is required for use. Slave devices connect to the host via magnetic interfaces.</p>
 </blockquote>
-<h2 id="Introduction">Introduction</h2>
-<p>T-Keyboard-S3 Pro is a high-end programmable keyboard based on a dual-MCU architecture (ESP32-S3 + STM32G030F6P6), designed for developers and professional users.</p>
-<p>Key highlights include:</p>
-<p>Four 0.85-inch RGB LCD screens (128x128 resolution), capable of independently displaying shortcut commands, system status, or dynamic interactive interfaces. Driven via SPI interface (MOSI/SCLK), these screens enable efficient visual interaction.</p>
-<p>Four hot-swappable mechanical keys, compatible with custom switches, combined with RGB WS2812 lighting effects and a rotary encoder (Data-A/B pins), supporting programmable backlight modes and precise parameter adjustments (e.g., volume, scrolling control).</p>
-<p>On the hardware side:</p>
-<p>The ESP32-S3 main controller features 8MB Flash and 16MB PSRAM, supporting Wi-Fi/Bluetooth communication and complex logic processing.</p>
-<p>An external STM32 chip assists in real-time input handling via the I2C bus (SDA: IO06/IO42, SCL: IO07/IO02), ensuring low-latency response.</p>
-<p>For expansion, the board offers STEMMA QT/Qwiic, JST-SH 4-PIN interface, and support for up to 5 I2C slave devices, allowing connection to sensors, touchpads, and other peripherals to build a multifunctional control terminal.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Keyboard-S3-Pro-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Keyboard-S3-Pro-zh.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<blockquote class="spoiler warning">
-<p>1.The default firmware is configured for I2C communication expansion mode. Please note that to expand the number of slave devices, each device must have a unique I2C address to avoid address conflicts. Slave devices cannot operate independently; they must be used in a system where one master communicates with multiple slaves.<br><br />
-2.Up to six devices can be connected. When using multiple devices, the maximum brightness of the onboard LED should be reduced to 10。<br><br />
-3.Due to limitations in hardware long-trace routing, there are certain constraints on expansion directions. Only one device can be expanded on each side (left and right) of the main board, and a maximum of two devices can be added below (as the USB port blocks further expansion).<br />
-Therefore, a 2x3 grid layout is the maximum supported configuration, allowing a total of six devices.</p>
-</blockquote>
-<h3 id="Development-Board-Specifications">Development Board Specifications</h3>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:center">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3R8 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">T-Keyboard-S3-Pro_MCU_V1.1</td>
+  <td style="text-align:center">2024-09-05</td>
+  <td style="text-align:center">Original version</td>
 </tr>
 <tr>
-  <td>Flash</td>
-  <td>16M</td>
+  <td style="text-align:center">T-Keyboard-S3-Pro_Keyboard_V1.1</td>
+  <td style="text-align:center">2024-09-05</td>
+  <td style="text-align:center">Original version</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>8M</td>
+  <td style="text-align:center">T-Keyboard-S3-Pro_Magnet_Female_V1.0</td>
+  <td style="text-align:center">2024-09-05</td>
+  <td style="text-align:center">Original version</td>
 </tr>
 <tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
+  <td style="text-align:center">T-Keyboard-S3-Pro_Magnet_Male_V1.0</td>
+  <td style="text-align:center">2024-09-05</td>
+  <td style="text-align:center">Original version</td>
 </tr>
 <tr>
-  <td>Wireless</td>
-  <td>Wi-Fi 802.11b /g/n, BLE 5</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF card</td>
-</tr>
-<tr>
-  <td>Screen</td>
-  <td>0.85 inch All ViewTFT LCD<br> The host has four on-screen keys and the slave has five</td>
-</tr>
-<tr>
-  <td>Key</td>
-  <td>1 x RST key <br> 1 x BOOT key as well as knob <br> 4 × screen key</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C interface</td>
-</tr>
-<tr>
-  <td>UI</td>
-  <td>LVGL</td>
-</tr>
-<tr>
-  <td>Expansion interface</td>
-  <td>2 × QWIIC interface + 4 × magnetic suction interface</td>
-</tr>
-<tr>
-  <td>Size</td>
-  <td><strong>164x46x42mm</strong></td>
+  <td style="text-align:center">T-Keyboard-S3-Pro_Keyboard_LCD_FPC_V1.0</td>
+  <td style="text-align:center">2024-09-05</td>
+  <td style="text-align:center">Original version</td>
 </tr>
 </tbody>
 </table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">STM32 Module</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>MCU</td>
-    <td>STM32G030F6P6</td>
-  </tr>
-  <tr>
-    <td>Flash</td>
-    <td>64kb</td>
-  </tr>
-  <tr>
-    <td>PSRAM</td>
-    <td>8kb</td>
-  </tr>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">Main SOC</th>
+  <th style="text-align:center">Co-processor</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Keyboard S3 Pro</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">STM32G030</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-keyboard-s3-pro"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro"  target="_blank">T-Keyboard S3 Pro</a></p>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"  target="_blank">ESP32­-S3-WROOM­-1</a></li>
-<li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32g030f6.html#documentation"  target="_blank">STM32G030F6P6</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/GC9107_DataSheet_V1.2.pdf"  target="_blank">GC9107</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/WS2812C-2020.pdf"  target="_blank">WS2812C</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_Keyboard_V1.1.pdf"  target="_blank">T-Keyboard S3 Pro</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Description">Description</h2>
+<p>The T-Keyboard-S3 Pro is a high-end programmable keyboard based on a dual-MCU architecture (ESP32-S3 + STM32G030F6P6), designed specifically for developers and professional users. Its core features include 4 independent 0.85-inch RGB LCD screens (resolution 128x128), supporting multi-screen independent display of shortcuts, system status, or dynamic interactive interfaces; 4 hot-swappable mechanical keys compatible with custom switches, paired with RGB WS2812 lighting effects and a rotary encoder for programmable backlight modes and precise parameter adjustment (such as volume, scroll control). Hardware-wise, the main ESP32-S3 controller is equipped with 16MB Flash + 8MB PSRAM, supporting Wi-Fi/Bluetooth communication and complex logic operations, while the external STM32 chip assists in processing real-time input tasks to ensure low-latency response. In terms of expandability, it provides STEMMA QT/Qwlic interfaces and magnetic expansion capabilities, allowing connection of multiple slave devices to create a multi-functional control terminal.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Keyboard-S3-Pro-2.jpg" alt="T-Keyboard-S3-Pro" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Keyboard-S3-Pro-en.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="Main-MCU">Main MCU</h3>
 <ul>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">RadioLib</a></li>
+<li>Module: ESP32-S3-WROOM-1</li>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M (Octal SPI)</li>
+<li>FLASH: 16M</li>
+<li>Related Resources:<blockquote>
+<a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"  target="_blank">ESP32-S3-WROOM-1_datasheet</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="Secondary-MCU">Secondary MCU</h3>
+<ul>
+<li>Chip: STM32G030F6P6</li>
+<li>SRAM: 8 Kbytes</li>
+<li>FLASH: 64 Kbytes</li>
+<li>Related Resources:<blockquote>
+<a href="https://www.st.com/en/microcontrollers-microprocessors/stm32g030f6.html#documentation"  target="_blank">STM32G030F6_datasheet</a></blockquote>
+</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Screen Model: N085-1212TBWIG06-C08</li>
+<li>Size: 0.85-inch</li>
+<li>Resolution: 128x128px</li>
+<li>Display Type: TFT</li>
+<li>Driver IC: GC9107</li>
+<li>Bus Communication Protocol: Standard SPI</li>
+<li>Other Notes: All screens share RST, DC, MOSI, SCLK, and BL pins on a common bus. All screens reset together during initialization reset. Control different screen data refresh by selecting different CS lines.</li>
+<li>Related Resources:<blockquote>
+<a href="./information/GC9107_DataSheet_V1.2.pdf"  >GC9107_DataSheet_V1.2</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI-2.5.0</a><br /><br />
+<a href="https://github.com/lvgl/lvgl"  target="_blank">lvgl-8.3.5</a> <br /><br />
+<a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a><br /></blockquote>
+</li>
+</ul>
+<h3 id="Hot-swappable-Keys">Hot-swappable Keys</h3>
+<ul>
+<li>Specification: Uses Kailh hot-swap connectors with 6.35mm pin spacing. Compatible with any hot-swap key switches with 6.35mm pin spacing.</li>
+<li>PCB Connection: Pull-down enabled with low level as detection signal. Host KEY5 is multiplexed as BOOT-0 for system power-on mode selection, with a default 10K pull-up resistor. Also uses low level as detection signal. The pin must be configured with internal pull-up in software for stable use.</li>
+<li>Other Notes: Due to screen connections, be sure to select hot-swap keys with center openings. The spacing should be greater than 7mm to accommodate the ribbon cable width.</li>
+</ul>
+<h3 id="Onboard-LEDs">Onboard LEDs</h3>
+<ul>
+<li>Chip: WS2812C</li>
+<li>Related Resources:<blockquote>
+<a href="./information/WS2812C-2020.pdf"  >WS2812C-2020</a></blockquote>
+</li>
+</ul>
+<h3 id="Rotary-Encoder">Rotary Encoder</h3>
+<ul>
+<li>Description: Four-pin copper thimble knob</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Main Processor</td>
+  <td style="text-align:center">ESP32-S3R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">Co-processor</td>
+  <td style="text-align:center">STM32G030F6P6</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash</td>
+  <td style="text-align:center">16MB (ESP32-S3) + 64KB (STM32)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB (ESP32-S3) + 8KB (STM32)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">4×0.85-inch GC9107 TFT LCD (128×128)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Keys</td>
+  <td style="text-align:center">4×Hot-swappable mechanical keys + Rotary encoder</td>
+</tr>
+<tr>
+  <td style="text-align:center">RGB Lighting</td>
+  <td style="text-align:center">WS2812C</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPS</td>
+  <td style="text-align:center">MIA-M10Q</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF card</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">Wi-Fi 802.11 b/g/n + BLE 5</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × Type-C Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">2×QWIIC + 4×Magnetic Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">RST + BOOT + 4×Screen buttons</td>
+</tr>
+<tr>
+  <td style="text-align:center">UI Framework</td>
+  <td style="text-align:center">LVGL</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>164×46×42mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Usage-Notes">Usage Notes</h3>
+<ol>
+<li><strong>I2C Communication Expansion</strong>: Default firmware is configured for I2C communication expansion mode. When expanding slave devices, ensure each device has a unique I2C address to avoid address conflicts.</li>
+<li><strong>Device Quantity Limit</strong>: Maximum of 6 devices can be connected. When connecting multiple devices, reduce the maximum brightness of onboard LEDs to 10.</li>
+<li><strong>Expansion Direction Limit</strong>: Only one device can be expanded on each left and right side of the main board. Maximum of two devices can be expanded downward (USB interface may obstruct expansion). Maximum configuration is a 2×3 grid layout.</li>
+</ol>
+<blockquote>
+<p>Select the corresponding example program based on the version.</p>
+</blockquote>
+<h3 id="ESP32S3-Host-Device-Software-Guide">ESP32S3 Host Device Software Guide</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Branch</th>
+  <th style="text-align:center"><code>[PlatformIO (arduino-espressif32_v6.5.0)]</code><br /><code>[Arduino IDE (arduino-esp32-lib_v2.0.14)]</code> <br /> Support</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/tree/arduino-esp32-libs_V2.0.14"  target="_blank">arduino-esp32-libs_v2.0.14</a></td>
+  <td style="text-align:center"><p align="center"> <img src="https://img.shields.io/badge/-supported-green" alt="example" width="25%"> </p></td>
+  <td style="text-align:center">ESP32S3 example programs written based on Arduino library version v2.0.14</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Examples">Examples</h4>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="./examples/GFX"  >GFX</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/IIC_Scan_2"  >IIC_Scan_2</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Keyboard"  >Keyboard</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Original_Test"  >Original_Test</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Original_Test_2"  >Original_Test_2</a></td>
+  <td>Factory original test file</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Rotary_Encoder"  >Rotary_Encoder</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/T-Keyboard-S3-Pro_IIC_Command"  >T-Keyboard-S3-Pro_IIC_Command</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/T-Keyboard-S3-Pro_IIC_Scan"  >T-Keyboard-S3-Pro_IIC_Scan</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Shortcut-Keys"  >Shortcut-Keys</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/Lvgl_UI"  >Lvgl_UI</a></td>
+  <td>Factory original test file</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="./firmware/%5BESP32S3%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test_2%5D_firmware_V1.0.0.bin"  >Original_Test_2</a></td>
+  <td>Host device factory original test file</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./firmware/%5BESP32S3%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BLvgl_UI%5D_firmware_V1.0.0.bin"  >Lvgl_UI</a></td>
+  <td>Host device factory original test file</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="PlatformIO">PlatformIO</h4>
+<ol>
+<li><p>Install <a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>, choose the version for your system.</p>
+</li>
+<li><p>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</p>
+</li>
+<li><p>While the extension is installing, you can go to GitHub to download the program. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</p>
+</li>
+<li><p>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</p>
+</li>
+<li><p>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; of the corresponding folder after adding it). Under the &quot;[platformio]&quot; section, uncomment to select the example program you want to upload (marked by &quot;default_envs = xxx&quot;). Then click the &quot;<kbd><a href="image/4.png"  >√</a></kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd><a href="image/5.png"  >→</a></kbd>&quot; at the bottom left to upload.</p>
+</li>
+</ol>
+<h4 id="Arduino">Arduino</h4>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a>, choose the version for your system.</p>
+</li>
+<li><p>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</p>
+</li>
+<li><p>Open the top menu bar -&gt; Select &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to select is determined by the &quot;board = xxx&quot; header under the [env] section in the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</p>
+</li>
+<li><p>Open the menu bar &quot;[File]&quot; -&gt; &quot;[Preferences]&quot;, find the &quot;[Sketchbook location]&quot; field, and copy all the library files along with their folders from the &quot;libraries&quot; folder in the project directory to the &quot;libraries&quot; folder in this location.</p>
+</li>
+<li><p>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</p>
+</li>
+</ol>
+<h5 id="ESP32-S3">ESP32-S3</h5>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">Default (6.25MB APP/3.43MB SPIFFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li><p>Select the correct port.</p>
+</li>
+<li><p>Click the &quot;<kbd>[√]</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>[→]</kbd>&quot; in the top right corner to upload.</p>
+</li>
+</ol>
+<h4 id="Pin-Overview">Pin Overview</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">IIC_1 Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO42</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">IIC_2 Pins (External)</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LCD Screen Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO40</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO41</td>
+</tr>
+<tr>
+  <td style="text-align:center">DC</td>
+  <td style="text-align:center">IO39</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO38</td>
+</tr>
+<tr>
+  <td style="text-align:center">BL</td>
+  <td style="text-align:center">IO1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Rotary Encoder Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">KNOB_DATA_A</td>
+  <td style="text-align:center">IO4</td>
+</tr>
+<tr>
+  <td style="text-align:center">KNOB_DATA_B</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">KNOB_DATA_KEY</td>
+  <td style="text-align:center">IO0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="STM32-Slave-Device-Software-Guide">STM32 Slave Device Software Guide</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Branch</th>
+  <th style="text-align:center"><code>[STM32CubeMX (stm32cubeg0-firmware-package_v1.6.2)]</code><br /><code>[ARM Keil μVision5 (Keil.STM32G0xx_DFP.1.4.0.pack)]</code> <br /> Support</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/tree/stm32cubeg0-firmware-package_V1.6.2"  target="_blank">stm32cubeg0-firmware-package_v1.6.2</a></td>
+  <td style="text-align:center"><p align="center"> <img src="https://img.shields.io/badge/-supported-green" alt="example" width="20%"> </p></td>
+  <td style="text-align:center">STM32 example programs written based on stm32cubeg library version v1.6.2 and chip library version v1.4.0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Example-Support">Example Support</h4>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/examples/KEY"  target="_blank">KEY</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/examples/Original_Test"  target="_blank">Original_Test</a></td>
+  <td>Factory original test file</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/examples/T-Keyboard-S3-Pro_IIC_Command"  target="_blank">T-Keyboard-S3-Pro_IIC_Command</a></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/examples/WS2812B"  target="_blank">WS2812B</a></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x01%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x01_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x01</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x02%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x02_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x02</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x03%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x03_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x03</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x04%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x04_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x04</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x05%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x05_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x05</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/edit/stm32cubeg0-firmware-package_V1.6.2/firmware/%EF%BC%88%E4%BF%AE%E5%A4%8DLED%E7%9A%84HUE%E5%80%BC%E8%AE%BE%E7%BD%AE%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%EF%BC%89%5BSTM32G030F6P6_Drive_0x06%5D%5BT-Keyboard-S3-Pro_V1.0%5D%5BOriginal_Test%5D_firmware_V2_202501231722.hex"  target="_blank">Slave_0x06_Original_Test_V1.0.0</a></td>
+  <td>Factory original test file for slave device 0x06</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="STM32CubeMX">STM32CubeMX</h4>
+<ol>
+<li><p>Install <a href="https://www.java.com/en/download/"  target="_blank">JAVA</a>, required before installing STM32CubeMX.</p>
+</li>
+<li><p>Install <a href="https://www.st.com/en/development-tools/stm32cubemx.html"  target="_blank">STM32CubeMX</a>, choose the version for your system.</p>
+</li>
+<li><p>Open STM32CubeMX, find &quot;Help-&gt;Manage embedded software packages&quot; in the menu bar to open the software package manager. Select the &quot;STM32G0&quot; software package and download/install the corresponding version.</p>
+</li>
+</ol>
+<p><img src="assets/1.jpg" alt="1" /></p>
+<ol start="4">
+<li>After completing the above preparations, you can use STM32CubeMX to configure your project. The example code includes pre-configured STM32CubeMX project files. Open the file with the &quot;.ioc&quot; extension in the example folder.</li>
+</ol>
+<h4 id="ARM-Keil-%CE%BCVision5">ARM Keil μVision5</h4>
+<ol>
+<li><p>Install <a href="https://www.keil.arm.com/mdk-community/"  target="_blank">ARM Keil μVision5</a>, choose the version for your system.</p>
+</li>
+<li><p>Open Keil, find the &quot;Pack Installer&quot; in the menu bar</p>
+</li>
+</ol>
+<p><img src="assets/2.jpg" alt="alt text" /><br />
+to open the software package manager. In the package manager page, search for &quot;STM32G0&quot; and install the 1.4.0 version of the software library.<br />
+<img src="assets/3.jpg" alt="alt text" /></p>
+<ol start="3">
+<li>Install the appropriate debugger driver. Supported debugger types can be found in the &quot;Debug&quot; tab of &quot;Options for Target&quot; in the Keil menu bar. Additionally, set up the &quot;programming algorithm&quot; as shown below.</li>
+</ol>
+<p><img src="assets/5.jpg" alt="alt text" /></p>
+<p align="center" width="100%">
+    <img src="./assets/6.jpg" alt="programming algorithm">
+</p>
+<p>The debug port for the STM32G0 on the board is located on the back of the &quot;T-Keyboard-S3-Pro_Keyboard&quot; board as shown below:</p>
+<p align="center" width="100%">
+    <img src="./assets/7.jpg" alt="T-Keyboard-S3-Pro_Keyboard rear debugging port">
+</p>
+<ol start="4">
+<li>Open any example with the &quot;.uvprojx&quot; extension in the example directory, click &quot;Rebuild&quot; in the menu bar to build, connect the debugger to the device, and click &quot;Download&quot; to program.</li>
+</ol>
+<p><img src="assets/4.jpg" alt="alt text" /></p>
+<h4 id="STM32CubeProgrammer">STM32CubeProgrammer</h4>
+<ol>
+<li><p>Install <a href="https://www.st.com/en/development-tools/stm32cubeprog.html"  target="_blank">STM32CubeProgrammer</a>, choose the version for your system.</p>
+</li>
+<li><p>Open STM32CubeProgrammer, select the correct debugger. Using STLINK as an example, configure as shown in the red box below, select the firmware file to download, and click &quot;Start Programming&quot; to begin downloading. UART download follows the same principle.</p>
+</li>
+</ol>
+<p align="center" width="100%">
+    <img src="./assets/8.jpg" alt="STLINK download firmware">
+</p>
+<p>The UART debug port on the board is located on the back of the &quot;T-Keyboard-S3-Pro_Keyboard&quot; board as shown below:</p>
+<p align="center" width="100%">
+    <img src="./assets/9.jpg" alt="T-Keyboard-S3-Pro_Keyboard rear debugging port">
+</p>
+<h4 id="Pin-Overview">Pin Overview</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">IIC Pins</th>
+  <th style="text-align:center">STM32G0 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">PC14/PB9</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">PB7/PB8</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">KEY Pins</th>
+  <th style="text-align:center">STM32G0 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">KEY1</td>
+  <td style="text-align:center">PA1</td>
+</tr>
+<tr>
+  <td style="text-align:center">KEY2</td>
+  <td style="text-align:center">PA0</td>
+</tr>
+<tr>
+  <td style="text-align:center">KEY3</td>
+  <td style="text-align:center">PC15</td>
+</tr>
+<tr>
+  <td style="text-align:center">KEY4</td>
+  <td style="text-align:center">PB3/PB4/PB5/PB6</td>
+</tr>
+<tr>
+  <td style="text-align:center">KEY5</td>
+  <td style="text-align:center">PA12[PA10]</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LCD Screen Pins</th>
+  <th style="text-align:center">STM32G0 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">LCD_CS1</td>
+  <td style="text-align:center">PA4</td>
+</tr>
+<tr>
+  <td style="text-align:center">LCD_CS2</td>
+  <td style="text-align:center">PA11[PA9]</td>
+</tr>
+<tr>
+  <td style="text-align:center">LCD_CS3</td>
+  <td style="text-align:center">PB0/PB1/PB2/PA8</td>
+</tr>
+<tr>
+  <td style="text-align:center">LCD_CS4</td>
+  <td style="text-align:center">PA6</td>
+</tr>
+<tr>
+  <td style="text-align:center">LCD_CS5</td>
+  <td style="text-align:center">PA5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LED Pins</th>
+  <th style="text-align:center">STM32G0 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">WS2812B_DATA</td>
+  <td style="text-align:center">PA7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. What are the main features of the T-Keyboard S3 Pro?</strong><br />
+A. This is a high-end programmable keyboard with 4 independent LCD screens, hot-swappable mechanical keys, RGB lighting, rotary encoder, and a powerful dual-MCU architecture, supporting multi-device magnetic expansion.</p>
+</li>
+<li><p><strong>Q. How to expand slave devices?</strong><br />
+A. Connect slave devices via magnetic interfaces, supporting up to 6 devices in a 2×3 grid layout. Note that each slave must have a unique I2C address.</p>
+</li>
+<li><p><strong>Q. Which switch types are supported by the hot-swappable mechanical keys?</strong><br />
+A. Supports standard hot-swappable mechanical switches, compatible with most MX-structure mechanical switches.</p>
+</li>
+<li><p><strong>Q. How does the multi-screen display work?</strong><br />
+A. The 4 screens can independently display different content, such as system status, shortcuts, media controls, etc., driven via SPI interface.</p>
+</li>
+<li><p><strong>Q. What are the advantages of the dual-MCU architecture?</strong><br />
+A. ESP32-S3 handles complex graphical interfaces and wireless communication, while STM32 is responsible for real-time input processing, ensuring low-latency key response.</p>
+</li>
+<li><p><strong>Q. What should be noted when expanding multiple devices?</strong><br />
+A. When connecting multiple devices, reduce LED brightness to 10 and pay attention to expansion direction limitations (1 on each side, maximum 2 downward).</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_MCU_V1.1.pdf"  target="_blank">SCH_T-Keyboard-S3-Pro_MCU_V1.1</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_Keyboard_V1.1.pdf"  target="_blank">SCH_T-Keyboard-S3-Pro_Keyboard_V1.1</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_Magnet_Female_V1.0.pdf"  target="_blank">SCH_T-Keyboard-S3-Pro_Magnet_Female_V1.0</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_Magnet_Male_V1.0.pdf"  target="_blank">SCH_T-Keyboard-S3-Pro_Magnet_Male_V1.0</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/project/SCH_T-Keyboard-S3-Pro_Keyboard_LCD_FPC_V1.0.pdf"  target="_blank">SCH_T-Keyboard-S3-Pro_Keyboard_LCD_FPC_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"  target="_blank">ESP32-S3-WROOM-1 Datasheet</a></li>
+<li><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32g030f6.html#documentation"  target="_blank">STM32G030F6P6 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/GC9107_DataSheet_V1.2.pdf"  target="_blank">GC9107 Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/WS2812C-2020.pdf"  target="_blank">WS2812C Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
 <li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></li>
 <li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td><strong>ESP32S3 Dev Module</strong></td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td><strong>16MB(128Mb)</strong></td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td><strong>16M Flash(3M APP/9.9MB FATFS)</strong></td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td><strong>OPI PSRAM</strong></td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td><strong>UART0/Hardware CDC</strong></td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td><strong>CDC and JTAG</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>
