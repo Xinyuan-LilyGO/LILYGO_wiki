@@ -157,22 +157,6 @@ T-Bao 是一款基于 ESP32-S3-WROOM-1 和 K210 RISC-V AI 芯片的开源 AIoT �
 
 > **注意**：语音识别应用需要先将模型文件 `maix_asr_2900k_0x500000.kmodel` 写入地址 0x500000，再烧录固件。
 
-### ESP32 开发环境
-
-1. 安装 [Arduino IDE](https://www.arduino.cc/en/software)
-2. 添加 ESP32 开发板支持
-3. 配置开发板参数：
-
-#### ESP32 (T-Bao)
-| Setting | Value |
-| :-----: | :---: |
-| Board | ESP32S3 Dev Module |
-| Upload Speed | 921600 |
-| USB CDC On Boot | Enabled |
-| CPU Frequency | 240MHz (WiFi) |
-| Flash Size | 16MB (128Mb) |
-| PSRAM | Enabled |
-| Partition Scheme | 16M Flash (3MB APP/9.9MB FATFS) |
 
 ### 开发平台
 1. [Arduino IDE](https://www.arduino.cc/en/software) - ESP32开发
