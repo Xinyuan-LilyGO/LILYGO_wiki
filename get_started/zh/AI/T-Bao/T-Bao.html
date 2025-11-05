@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Bao - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["K210", "ESP32", "AI", "Camera", "Touch Screen", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,18 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>K210</li>
+                            
+                                <li>ESP32</li>
+                            
+                                <li>AI</li>
+                            
+                                <li>Camera</li>
+                            
+                                <li>Touch Screen</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -264,239 +276,388 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Bao-1.jpg" alt="T-Bao" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-bao">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
 </div>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>T-BAO是一款基于ESP32-S3-WROOM-1开发板的开源AIoT终端，具备高性能、低功耗、低成本、可拓展、可编程的特点。同时兼容Arduino、高性能嵌入式人工智能开发平台，深度融合K210 RISC-V架构AI芯片与ESP32双核Wi-Fi/BLE通信模组，搭载专业级OV2640 200万像素摄像头（支持180°旋转调节）及ST7789V 1.54英寸IPS触控屏（90°自适应旋转显示），实现毫秒级人脸识别与动态图像处理。内置MAX98357A I2S数字功放、MSM261S高灵敏度麦克风阵列及硬件编解码单元，支持语音交互与高清音频输出。采用AXP202智能电源管理系统，支持3.7V锂电池供电与超低功耗运行，集成MPU6050六轴传感器、TF卡存储扩展及丰富接口资源（UART/SPI/I2C/Touch），全面兼容Arduino/MicroPython生态。适用于工业视觉检测、智能安防、AIoT终端及教育机器人等场景，提供开源SDK与完整开发文档，助力快速商业落地。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Bao-2.jpg" alt="summary" width=80%>
-<img src="./assets/T-Bao-3.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Bao.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99%E4%BB%A5%E5%8F%8A%E5%8F%82%E6%95%B0">模块资料以及参数</h2>
-<h3 id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</h3>
-<blockquote class="spoiler warning">
-<p>⚠️SD卡的注意事项:</p>
-</blockquote>
-<img src="./assets/T-Bao-zh.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%80%E5%8F%91%E6%9D%BF%E5%8F%82%E6%95%B0">开发板参数</h3>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
 <table>
 <thead>
 <tr>
-  <th>组件</th>
-  <th>描述</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-D0WDQ6-V3 Xtensa LX6 Dual Core</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>时钟</td>
-  <td>240Mhz</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>Wi-Fi: 802.11 b/g/n, Bluetooth: V4.2 + BLE</td>
-</tr>
-<tr>
-  <td>存储</td>
-  <td>TF 卡</td>
-</tr>
-<tr>
-  <td>电机</td>
-  <td>drv8833</td>
-</tr>
-<tr>
-  <td>电源管理</td>
-  <td>AXP202 PMU</td>
-</tr>
-<tr>
-  <td>陀螺仪</td>
-  <td>MPU6050</td>
-</tr>
-<tr>
-  <td>摄像头</td>
-  <td>OV2640 (两百万像素)</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>ST7789 1.54-inch IPS Capacitive Touch LCD (240x240)</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x RST 按键 <br> 1 x BOOT 按键以及旋钮 <br> 4 × 屏幕按键</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C接口</td>
-</tr>
-<tr>
-  <td>UI</td>
-  <td>LVGL</td>
-</tr>
-<tr>
-  <td>拓展接口</td>
-  <td>2 × QWIIC接口 + 4 × 磁吸接口</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>164x46x42mm</strong></td>
-</tr>
-<tr>
-  <td>USB 电源</td>
-  <td>5V/500mA</td>
+  <td style="text-align:center">T-Bao_V1.0</td>
+  <td style="text-align:center">最新版本</td>
+  <td style="text-align:left">基于K210+ESP32的双核AIoT终端初始版本</td>
 </tr>
 </tbody>
 </table>
-<table role="table" class="center_table">
-    <thead>
-        <tr>
-            <th colspan = "2">K210 芯片基本参数</th>   
-        </tr>
-    </thead>
-    <tbody>
-    <tr>    
-        <td>内核</td>
-        <td>RISC-V Dual Core 64bit, with FPU</td>
-    </tr>
-    <tr>
-        <td>主频</td>
-        <td>400MHz （可超频至600MHz）</td>
-    </tr>
-    <tr>
-        <td>SRAM</td>
-        <td>内置8M Byte</td>
-    </tr>
-    <tr>
-        <td>图像识别</td>
-        <td>QVGA@60fps/VGA@30fps</td>
-    </tr>
-    <tr>
-        <td>语音识别</td>
-        <td>麦克风阵列(8mics)</td>
-    </tr>
-    <tr>
-        <td>网络模型</td>
-        <td><li>支持YOLOv3<li>Mobilenetv2<li>TinyYOLOv2<li>人脸识别等</td>
-    </tr>
-    <tr>
-        <td>深度学习框架</td>
-        <td>支持TensorFlow \ Keras \ Darknet \ Caffe 等主流框架</td>
-    </tr>
-    <tr>
-        <td>外设</td>
-        <td>FPIOA、 UART、 GPIO、 SPI、 I2C、I2S、 TIMER</td>
-    </tr>
-    <tr>
-        <td>视频处理</td>
-        <td><li>神经网络处理器(KPU)<li>FPU满足IEEE754-2008标准<li>音频处理器(APU)<li>快速傅里叶变换加速器(FFT)</td>
-    </tr>
-  </tbody>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">AI Chip</th>
+  <th style="text-align:center">Main MCU</th>
+  <th style="text-align:center">Screen</th>
+  <th style="text-align:center">Camera</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Bao</td>
+  <td style="text-align:center">K210</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">1.54&quot; IPS Touch</td>
+  <td style="text-align:center">OV2640</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-bao"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
 </table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">相关资料</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script"  target="_blank">T-Bao</a></p>
-<blockquote>
-<p><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython</a> 是基于 Python3 的语法做的一款解析器，包含了 Python3 的大多数基础语法， 主要运行在性能和内存有限的嵌入式芯片上。（注意 Micropython 不包含 Python3 的所有语法）</p>
-</blockquote>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://docs.micropython.org/en/latest/library/index.html"  target="_blank">MicroPython</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/get-started/index.html"  target="_blank">ESP32</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">T-Bao</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">使用说明</h4>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>Identify_Direction_model.kmodel</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>face_model_at_0x300000.kfpkg</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">speech_recognizer</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>maix_asr_2900k_0x500000.kmodel</td>
-  </tr>
-</table>
-<blockquote class="spoiler warning">
-<p>这里需要注意使用kflash_gui工具把maix_asr_2900k_0x500000.kmodel写入地址0x500000，并先烧录maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</p>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>T-Bao 是一款基于 ESP32-S3-WROOM-1 和 K210 RISC-V AI 芯片的开源 AIoT 终端，具备高性能、低功耗、可拓展、可编程的特点。深度融合 K210 RISC-V 架构 AI 芯片与 ESP32 双核 Wi-Fi/BLE 通信模组，搭载专业级 OV2640 200 万像素摄像头（支持 180° 旋转调节）及 ST7789V 1.54 英寸 IPS 触控屏（90° 自适应旋转显示），实现毫秒级人脸识别与动态图像处理。</p>
+<p>内置 MAX98357A I2S 数字功放、MSM261S 高灵敏度麦克风阵列及硬件编解码单元，支持语音交互与高清音频输出。采用 AXP202 智能电源管理系统，支持 3.7V 锂电池供电与超低功耗运行，集成 MPU6050 六轴传感器、TF 卡存储扩展及丰富接口资源（UART/SPI/I2C/Touch），全面兼容 Arduino/MicroPython 生态。适用于工业视觉检测、智能安防、AIoT 终端及教育机器人等场景。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Bao-2.jpg" alt="T-Bao" /></p>
+</div>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Bao-3.jpg" alt="T-Bao" /></p>
+</div>
+<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
+<img src="./assets/T-Bao.jpg" alt="summary" width=100%>
+<h3 id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项</h3>
+<blockquote>
+<p>⚠️ <strong>SD卡使用注意事项</strong></p>
 </blockquote>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95">固件烧录</h3>
-<p>最新的固件可以在<a href="https://cn.dl.sipeed.com/MAIX/MaixPy/release/master"  target="_blank">这里</a>下载，根据自己的需求选择固件，然后烧录到开发板上。</p>
-<p>固件下载工具可以从这里下载：<a href="https://cn.dl.sipeed.com/shareURL/MAIX/tools"  target="_blank">kflash_gui</a></p>
+<img src="./assets/T-Bao-zh.jpg" alt="summary" width=80%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="AI%E5%A4%84%E7%90%86%E5%99%A8-%28K210%29">AI处理器 (K210)</h3>
+<ul>
+<li>芯片：Kendryte K210</li>
+<li>架构：RISC-V Dual Core 64bit with FPU</li>
+<li>主频：400MHz（可超频至600MHz）</li>
+<li>内存：8MB SRAM</li>
+<li>NPU：KPU神经网络处理器</li>
+<li>特性：支持YOLOv3、Mobilenetv2、TinyYOLOv2、人脸识别等模型</li>
+</ul>
+<h3 id="%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%99%A8">主控制器</h3>
+<ul>
+<li>芯片：ESP32-D0WDQ6-V3</li>
+<li>核心：Xtensa LX6 Dual Core</li>
+<li>FLASH：16MB</li>
+<li>PSRAM：8MB</li>
+<li>时钟：240MHz</li>
+<li>无线：Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE</li>
+</ul>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
+<ul>
+<li>尺寸：1.54英寸 IPS</li>
+<li>分辨率：240x240px</li>
+<li>屏幕类型：IPS LCD</li>
+<li>驱动芯片：ST7789V</li>
+<li>触摸：电容触摸屏</li>
+<li>UI框架：LVGL</li>
+</ul>
+<h3 id="%E6%91%84%E5%83%8F%E5%A4%B4">摄像头</h3>
+<ul>
+<li>传感器：OV2640</li>
+<li>像素：200万像素</li>
+<li>特性：支持180°旋转调节</li>
+</ul>
+<h3 id="%E9%9F%B3%E9%A2%91">音频</h3>
+<ul>
+<li>功放：MAX98357A I2S</li>
+<li>麦克风：MSM261S 高灵敏度麦克风阵列</li>
+</ul>
+<h3 id="%E4%BC%A0%E6%84%9F%E5%99%A8">传感器</h3>
+<ul>
+<li>运动传感器：MPU6050（六轴陀螺仪+加速度计）</li>
+<li>电源管理：AXP202 PMU</li>
+</ul>
+<h3 id="%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8">电机驱动</h3>
+<ul>
+<li>芯片：DRV8833</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">AI芯片</td>
+  <td style="text-align:center">K210 RISC-V Dual Core</td>
+</tr>
+<tr>
+  <td style="text-align:center">主MCU</td>
+  <td style="text-align:center">ESP32-D0WDQ6-V3</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">1.54英寸 ST7789 IPS Touch (240×240)</td>
+</tr>
+<tr>
+  <td style="text-align:center">摄像头</td>
+  <td style="text-align:center">OV2640 (200万像素)</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">MAX98357A + MSM261S麦克风阵列</td>
+</tr>
+<tr>
+  <td style="text-align:center">传感器</td>
+  <td style="text-align:center">MPU6050六轴传感器</td>
+</tr>
+<tr>
+  <td style="text-align:center">电源管理</td>
+  <td style="text-align:center">AXP202 PMU</td>
+</tr>
+<tr>
+  <td style="text-align:center">电机驱动</td>
+  <td style="text-align:center">DRV8833</td>
+</tr>
+<tr>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">TF卡</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">Wi-Fi 802.11b/g/n + Bluetooth 4.2 BLE</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × TYPE-C接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">RST + BOOT + 旋钮 + 4×屏幕按键</td>
+</tr>
+<tr>
+  <td style="text-align:center">拓展接口</td>
+  <td style="text-align:center">2 × QWIIC + 4 × 磁吸接口</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center"><strong>164×46×42mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E5%BA%94%E7%94%A8">示例应用</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">应用类型</th>
+  <th style="text-align:center">K210固件</th>
+  <th style="text-align:center">ESP32固件</th>
+  <th style="text-align:left">模型文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">方向识别</td>
+  <td style="text-align:center">maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">Identify_Direction_model.kmodel</td>
+</tr>
+<tr>
+  <td style="text-align:left">人脸识别</td>
+  <td style="text-align:center">maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">face_model_at_0x300000.kfpkg</td>
+</tr>
+<tr>
+  <td style="text-align:left">语音识别</td>
+  <td style="text-align:center">maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">maix_asr_2900k_0x500000.kmodel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="K210-%E5%9B%BA%E4%BB%B6%E7%83%A7%E5%BD%95">K210 固件烧录</h3>
+<ol>
+<li>下载最新固件：<a href="https://cn.dl.sipeed.com/MAIX/MaixPy/release/master"  target="_blank">MaixPy 固件</a></li>
+<li>下载烧录工具：<a href="https://cn.dl.sipeed.com/shareURL/MAIX/tools"  target="_blank">kflash_gui</a></li>
+<li>选择对应固件和模型文件进行烧录</li>
+</ol>
+<blockquote>
+<p><strong>注意</strong>：语音识别应用需要先将模型文件 <code>maix_asr_2900k_0x500000.kmodel</code> 写入地址 0x500000，再烧录固件。</p>
+</blockquote>
+<h3 id="ESP32-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">ESP32 开发环境</h3>
+<ol>
+<li>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>添加 ESP32 开发板支持</li>
+<li>配置开发板参数：</li>
+</ol>
+<h4 id="ESP32-%28T-Bao%29">ESP32 (T-Bao)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+</tbody>
+</table>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> - ESP32开发</li>
+<li><a href="https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide"  target="_blank">MaixPy IDE</a> - K210开发</li>
+<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a> - ESP32高级开发</li>
+<li><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython</a> - 脚本开发</li>
 </ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">功能模块</th>
+  <th style="text-align:center">主要引脚</th>
+  <th style="text-align:center">通信协议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">SPI接口</td>
+  <td style="text-align:center">SPI</td>
+</tr>
+<tr>
+  <td style="text-align:center">触摸</td>
+  <td style="text-align:center">I2C接口</td>
+  <td style="text-align:center">I2C</td>
+</tr>
+<tr>
+  <td style="text-align:center">摄像头</td>
+  <td style="text-align:center">DVP接口</td>
+  <td style="text-align:center">并行数据</td>
+</tr>
+<tr>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">I2S接口</td>
+  <td style="text-align:center">I2S</td>
+</tr>
+<tr>
+  <td style="text-align:center">传感器</td>
+  <td style="text-align:center">I2C接口</td>
+  <td style="text-align:center">I2C</td>
+</tr>
+<tr>
+  <td style="text-align:center">电机驱动</td>
+  <td style="text-align:center">PWM引脚</td>
+  <td style="text-align:center">PWM</td>
+</tr>
+<tr>
+  <td style="text-align:center">扩展接口</td>
+  <td style="text-align:center">GPIO</td>
+  <td style="text-align:center">多种协议</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<p><em>测试数据待补充</em></p>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li><p><strong>Q. K210 和 ESP32 如何通信？</strong><br />
+A. 通过 UART 串口进行通信，K210 作为 AI 处理器，ESP32 作为主控制器和通信模块。</p>
+</li>
+<li><p><strong>Q. 摄像头无法正常工作？</strong><br />
+A. 检查摄像头排线连接，确认摄像头模块已正确插入，检查电源供应。</p>
+</li>
+<li><p><strong>Q. 语音识别不准确？</strong><br />
+A. 确保在安静环境下使用，检查麦克风是否被遮挡，尝试重新训练模型。</p>
+</li>
+<li><p><strong>Q. 如何延长电池续航？</strong><br />
+A. 使用 AXP202 的电源管理功能，在不需要时关闭摄像头和屏幕，启用低功耗模式。</p>
+</li>
+<li><p><strong>Q. SD 卡无法识别？</strong><br />
+A. 参考注意事项中的SD卡安装图，确保卡片正确插入且格式为FAT32。</p>
+</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">T-Bao 原理图</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script"  target="_blank">示例代码</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">原理图</a></li>
+<li><a href="https://canaan.io/product/kendryteai"  target="_blank">K210 数据手册</a></li>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 数据手册</a></li>
+<li><a href="https://www.ovt.com/sensors/OV2640"  target="_blank">OV2640 数据手册</a></li>
+<li><a href="https://www.newhavendisplay.com/app_notes/ST7789V.pdf"  target="_blank">ST7789 数据手册</a></li>
+<li><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython 文档</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
+<ul>
+<li><a href="https://github.com/sipeed/MaixPy"  target="_blank">MaixPy</a> - K210 开发框架</li>
+<li><a href="https://lvgl.io/"  target="_blank">LVGL</a> - 嵌入式图形库</li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a> - 图形显示库</li>
+<li><a href="https://github.com/espressif/arduino-esp32"  target="_blank">ESP32 Arduino Core</a> - ESP32 Arduino支持</li>
+<li><a href="https://github.com/adafruit/Adafruit_Sensor"  target="_blank">Adafruit_Sensor</a> - 传感器库</li>
+</ul>
 
                         
                     </div>
