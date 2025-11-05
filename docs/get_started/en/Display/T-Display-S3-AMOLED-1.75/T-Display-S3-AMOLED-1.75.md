@@ -65,7 +65,6 @@ T-Display AMOLED Plus is a highly integrated development board based on the ESP3
 * Bus Protocol: QSPI
 
 ### Overview
-<img src="./assets/T-Display-S3-AMOLED-1.75-info-en.jpg" alt="summary" width=80%>
 
 | Component | Description |
 | :--- | :--- |

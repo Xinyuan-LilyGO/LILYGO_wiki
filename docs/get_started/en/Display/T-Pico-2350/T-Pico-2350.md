@@ -157,7 +157,7 @@ The T-PICO-2350 is another version in the T-Pico series based on the Raspberry P
 3. Download or clone `T-PicoPro` to any location
 4. Copy all folders from the [lib folder](./lib/) to the Arduino library folder (e.g., C:\Users\YourUsername\Documents\Arduino\libraries)
 5. Open ArduinoIDE, `Tools`, select as shown in the image
-   ![Settings](image/ArduinoIDE.png)
+   ![Settings](assets/image.png)
 6. `T-PicoPro` folder -> `examples` -> `Any example`
 7. Select `Port`
 8. Click `Upload`, wait for compilation and writing to complete

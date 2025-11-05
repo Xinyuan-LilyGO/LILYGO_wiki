@@ -157,7 +157,7 @@ T-PICO-2350 是延续T-Pico系列的另外一款基于树莓派芯片RP2350设�
 3. 下载或克隆 `T-PicoPro` 到任意位置
 4. 将 [lib文件夹](./lib/) 中的所有文件夹复制到Arduino库文件夹（例如 C:\Users\你的用户名\Documents\Arduino\libraries）
 5. 打开 ArduinoIDE，`工具`，看图选择
-   ![设置](image/ArduinoIDE.png)
+    ![Settings](assets/image.png)
 6. `T-PicoPro` 文件夹 -> `examples` -> `任意示例`
 7. 选择 `端口`
 8. 点击 `上传`，等待编译和写入完成

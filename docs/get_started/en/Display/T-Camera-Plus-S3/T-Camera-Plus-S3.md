@@ -257,123 +257,125 @@ The T-CameraPlus-S3 is a versatile smart hardware development board based on the
 
 ## Pin Overview
 
-> #### T-CameraPlus-S3_V1.0-V1.1 Version
->> | LCD Pin | ESP32S3 Pin |
->> | :-----: | :---------: |
->> | MOSI | IO35 |
->> | SCLK | IO36 |
->> | RST | IO33 |
->> | BL | IO46 |
->> | CS | IO34 |
->> | DC | IO45 |
->
->> | I2S Microphone MSM261S4030H0R Pin | ESP32S3 Pin |
->> | :-------------------------------: | :---------: |
->> | BCLK | IO18 |
->> | WS | IO39 |
->> | DATA | IO40 |
->
->> | Amplifier MAX98357A Pin | ESP32S3 Pin |
->> | :------------------------: | :---------: |
->> | BCLK | IO41 |
->> | LRCLK | IO42 |
->> | DATA | IO38 |
->
->> | SD Card Pin | ESP32S3 Pin |
->> | :---------: | :---------: |
->> | CS | IO21 |
->> | SCLK | IO36 |
->> | MOSI | IO35 |
->> | MISO | IO37 |
->
->> | Power Chip SY6970 Pin | ESP32S3 Pin |
->> | :-------------------: | :---------: |
->> | SDA | IO1 |
->> | SCL | IO2 |
->> | INT | IO47 |
->
->> | Camera OV2640 Pin | ESP32S3 Pin |
->> | :---------------: | :---------: |
->> | RESET | IO3 |
->> | XCLK | IO7 |
->> | SIDO | IO1 |
->> | SIOC | IO2 |
->> | D7 | IO6 |
->> | D6 | IO8 |
->> | D5 | IO9 |
->> | D4 | IO11 |
->> | D3 | IO13 |
->> | D2 | IO15 |
->> | D1 | IO14 |
->> | D0 | IO12 |
->> | VSYNC | IO4 |
->> | HREF | IO5 |
->> | PCLK | IO10 |
->
->> | Touch Chip Pin | ESP32S3 Pin |
->> | :------------: | :---------: |
->> | SDA | IO1 |
->> | SCL | IO2 |
->> | RST | IO48 |
->> | INT | IO47 |
+### T-CameraPlus-S3_V1.0-V1.1 Version
+  | LCD Pin | ESP32S3 Pin |
+  | :----: | :---------: |
+  | MOSI | IO35 |
+  | SCLK | IO36 |
+  | RST | IO33 |
+  | BL | IO46 |
+  | CS | IO34 |
+  | DC | IO45 |
+
+   | I2S Microphone MSM261S4030H0R Pin | ESP32S3 Pin |
+   | :-------------------------------: | :---------: |
+   | BCLK | IO18 |
+   | WS | IO39 |
+   | DATA | IO40 |
+ 
+   | Amplifier MAX98357A Pin | ESP32S3 Pin |
+   | :------------------------: | :---------: |
+   | BCLK | IO41 |
+   | LRCLK | IO42 |
+   | DATA | IO38 |
+ 
+   | SD Card Pin | ESP32S3 Pin |
+   | :---------: | :---------: |
+   | CS | IO21 |
+   | SCLK | IO36 |
+   | MOSI | IO35 |
+   | MISO | IO37 |
+ 
+   | Power Chip SY6970 Pin | ESP32S3 Pin |
+   | :-------------------: | :---------: |
+   | SDA | IO1 |
+   | SCL | IO2 |
+   | INT | IO47 |
+ 
+   | Camera OV2640 Pin | ESP32S3 Pin |
+   | :---------------: | :---------: |
+   | RESET | IO3 |
+   | XCLK | IO7 |
+   | SIDO | IO1 |
+   | SIOC | IO2 |
+   | D7 | IO6 |
+   | D6 | IO8 |
+   | D5 | IO9 |
+   | D4 | IO11 |
+   | D3 | IO13 |
+   | D2 | IO15 |
+   | D1 | IO14 |
+   | D0 | IO12 |
+   | VSYNC | IO4 |
+   | HREF | IO5 |
+   | PCLK | IO10 |
+ 
+   | Touch Chip Pin | ESP32S3 Pin |
+   | :------------: | :---------: |
+   | SDA | IO1 |
+   | SCL | IO2 |
+   | RST | IO48 |
+   | INT | IO47 |
 
 
-> #### T-CameraPlus-S3_V1.2 Version
->> | LCD Pin | ESP32S3 Pin |
->> | :-----: | :---------: |
->> | MOSI | IO34 |
->> | SCLK | IO35 |
->> | BL | IO46 |
->> | CS | IO36 |
->> | DC | IO45 |
->
->> | PDM Microphone MP34DT05TR Pin | ESP32S3 Pin |
->> | :---------------------------: | :---------: |
->> | LRCLK | IO40 |
->> | DATA | IO38 |
->
->> | Amplifier MAX98357A Pin | ESP32S3 Pin |
->> | :------------------------: | :---------: |
->> | BCLK | IO41 |
->> | LRCLK | IO42 |
->> | DATA | IO39 |
->
->> | SD Card Pin | ESP32S3 Pin |
->> | :---------: | :---------: |
->> | CS | IO21 |
->> | SCLK | IO35 |
->> | MOSI | IO34 |
->> | MISO | IO48 |
->
->> | Power Chip SY6970 Pin | ESP32S3 Pin |
->> | :-------------------: | :---------: |
->> | SDA | IO33 |
->> | SCL | IO37 |
->
->> | Camera OV2640 Pin | ESP32S3 Pin |
->> | :---------------: | :---------: |
->> | XCLK | IO7 |
->> | SIDO | IO1 |
->> | SIOC | IO2 |
->> | D7 | IO6 |
->> | D6 | IO8 |
->> | D5 | IO9 |
->> | D4 | IO11 |
->> | D3 | IO13 |
->> | D2 | IO15 |
->> | D1 | IO14 |
->> | D0 | IO12 |
->> | VSYNC | IO3 |
->> | HREF | IO5 |
->> | PCLK | IO10 |
->> | PWDN | IO4 |
->
->> | Touch Chip Pin | ESP32S3 Pin |
->> | :------------: | :---------: |
->> | SDA | IO33 |
->> | SCL | IO37 |
->> | INT | IO47 |
+### T-CameraPlus-S3_V1.2 Version
+   | LCD Pin | ESP32S3 Pin |
+   | :-----: | :---------: |
+   | MOSI | IO34 |
+   | SCLK | IO35 |
+   | BL | IO46 |
+   | CS | IO36 |
+   | DC | IO45 |
+ 
+   | PDM Microphone MP34DT05TR Pin | ESP32S3 Pin |
+   | :---------------------------: | :---------: |
+   | LRCLK | IO40 |
+   | DATA | IO38 |
+ 
+   | Amplifier MAX98357A Pin | ESP32S3 Pin |
+   | :------------------------: | :---------: |
+   | BCLK | IO41 |
+   | LRCLK | IO42 |
+   | DATA | IO39 |
+ 
+   | SD Card Pin | ESP32S3 Pin |
+   | :---------: | :---------: |
+   | CS | IO21 |
+   | SCLK | IO35 |
+   | MOSI | IO34 |
+   | MISO | IO48 |
+ 
+   | Power Chip SY6970 Pin | ESP32S3 Pin |
+   | :-------------------: | :---------: |
+   | SDA | IO33 |
+   | SCL | IO37 |
+ 
+   | Camera OV2640 Pin | ESP32S3 Pin |
+   | :---------------: | :---------: |
+   | XCLK | IO7 |
+   | SIDO | IO1 |
+   | SIOC | IO2 |
+   | D7 | IO6 |
+   | D6 | IO8 |
+   | D5 | IO9 |
+   | D4 | IO11 |
+   | D3 | IO13 |
+   | D2 | IO15 |
+   | D1 | IO14 |
+   | D0 | IO12 |
+   | VSYNC | IO3 |
+   | HREF | IO5 |
+   | PCLK | IO10 |
+   | PWDN | IO4 |
+ 
+   | Touch Chip Pin | ESP32S3 Pin |
+   | :------------: | :---------: |
+   | SDA | IO33 |
+   | SCL | IO37 |
+  | INT | IO47 |
 
+ ---------------
+ 
 | OV2640 IR Filter Control Pin | ESP32S3 Pin |
 | :--------------------------: | :---------: |
 | AP1511B_FBC | IO16 |

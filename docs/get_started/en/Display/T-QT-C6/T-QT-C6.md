@@ -228,19 +228,19 @@ The LILYGO T-QT-C6 is an intelligent wearable development kit based on the ESP32
 | SDA | IO21 |
 | SCL | IO22 |
 
-> #### T-QT-C6_V1.1-V1.2
-> | Inertial Sensor Pins | ESP32C6 Pins |
-> | :------------------: | :------------------:|
-> | SDA | IO21 |
-> | SCL | IO22 |
-> | LSM6DSL_IIC_ADDRESS_MODE | IO3 |
-> | INT1 | IO0 |
-> | INT2 | IO1 |
+#### T-QT-C6_V1.1-V1.2
+  | Inertial Sensor Pins | ESP32C6 Pins |
+  | :------------------: | :------------------:|
+  | SDA | IO21 |
+  | SCL | IO22 |
+  | LSM6DSL_IIC_ADDRESS_MODE | IO3 |
+  | INT1 | IO0 |
+  | INT2 | IO1 |
 
-> #### T-QT-C6_V1.2
-> | Power Management Chip Pins | ESP32C6 Pins |
-> | :------------------: | :------------------:|
-> | INT | IO4 |
+#### T-QT-C6_V1.2
+  | Power Management Chip Pins | ESP32C6 Pins |
+  | :------------------: | :------------------:|
+  | INT | IO4 |
 
 >*(For detailed pin definitions, please refer to the schematic diagram)*
 
