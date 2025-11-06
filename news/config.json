@@ -1,5 +1,6 @@
 {
     "import": "config_zh",
-    "class": "language_zh",
-    "name": "博客"
+    "class": "language_en",
+    "name": "News",
+    "locale": "en"
 }
