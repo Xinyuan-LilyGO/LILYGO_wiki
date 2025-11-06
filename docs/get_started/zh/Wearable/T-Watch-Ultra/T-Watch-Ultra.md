@@ -160,7 +160,8 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 | [NFC Reader](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | NFC 功能演示 |
 
 ### Arduino
-1. 安装[Arduino集成开发环境](https://www.arduino.cc/en/software2. 安装 [Arduino ESP32 版本 3.3.0-alpha1 或更高版本（最新版本）](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+1. 安装[Arduino集成开发环境](https://www.arduino.cc/en/software)
+2. 安装 [Arduino ESP32 版本 3.3.0-alpha1 或更高版本（最新版本）](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
 * 提示：Arduino 管理器网址：https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json
 
 3. [下载LilyGoLib库](https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip)
