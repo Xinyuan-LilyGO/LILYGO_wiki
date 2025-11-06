@@ -59,6 +59,8 @@ items:
     items:   
     -   label: LoRa/GPS
         items:
+        -   label: T-LoRa32
+            file: LoRa_GPS/LoRa32/LoRa32.md
         -   label: T-LoRa-C6
             file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
         -   label: T3 STM32

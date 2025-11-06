@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-LoraPager - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["LoRa", "GPS", "AI Sensor", "Keyboard", "ESP32-S3"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -240,6 +241,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>LoRa</li>
+                            
+                                <li>GPS</li>
+                            
+                                <li>AI Sensor</li>
+                            
+                                <li>Keyboard</li>
+                            
+                                <li>ESP32-S3</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,186 +274,920 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-LoraPager-1.jpg" alt="T-LoraPager" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-lora-pager">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-lora-pager">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>T-LoraPager is a new model of LILYGO's handheld AIoT programmable development device combining LoRa + ESP32-S3. It features a compact design with a foldable external antenna, balancing excellent wireless performance with an aesthetically pleasing form.</p>
-<p>T-LoraPager comes in multiple versions with identical exterior structures; the main difference lies in the LoRa module used. Available options include:</p>
-<ul>
-<li><p>LR1121 version</p>
-</li>
-<li><p>SX1262 version</p>
-</li>
-<li><p>CC1101 version (replacing LoRa functionality)</p>
-</li>
-</ul>
-<p>You can choose the most suitable version based on your application needs.</p>
-<p>The device integrates a wide array of features:</p>
-<ul>
-<li><p>QWERTY keyboard</p>
-</li>
-<li><p>AI-enabled IMU (BHI260AP)</p>
-</li>
-<li><p>2.33&quot; bar-type screen (resolution: 222 × 480)</p>
-</li>
-<li><p>Optional LoRa module (LR1121 or SX1262)</p>
-</li>
-<li><p>u-blox GPS module (MIA-M10Q)</p>
-</li>
-<li><p>RFID/NFC + RTC circuit</p>
-</li>
-<li><p>TI power management and monitoring chipset</p>
-</li>
-<li><p>ES8311 (microphone/speaker/headphone jack)</p>
-</li>
-<li><p>Rotary encoder with button</p>
-</li>
-<li><p>2 × 8 GPIO expansion header (designed for top-mounted NRF24L01 module)</p>
-</li>
-<li><p>¼-inch screw mount on the back</p>
-</li>
-<li><p>4 × M2 standoff mounts</p>
-</li>
-<li><p>Lanyard with LILYGO logo</p>
-</li>
-</ul>
-<p>The device comes preloaded with a UI demo firmware designed by LILYGO, enabling smooth interaction via the rotary encoder. This demo serves as a learning reference for developing customized applications across various usage scenarios.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-LoraPager-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-LoraPager-3.jpg" alt="summary" width=100%>
-<h3 id="three-views">three views</h3>
-<img src="./assets/T-LoraPager-three-views-zh.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<img src="./assets/T-LoraPager-info-zh.jpg" alt="summary" width=100%>
-| Component | Description |
-| ---  | --- |
-|MCU	|ESP32-S3
-|Flash 	|16M
-|PSRAM  |8M
-|Lora| SX1262 433Mhz - 920Mhz(Optional)
-|GPS	|MIA-M10Q
-| Wireless | 2.4GHz Wi-Fi & Bluetooth 5 (LE)
-|NFC | ST25R3916(SPI) |
-| Storage | TF card
-| Screen | ST7796 480 x 222 LCD
-|AI Intelligent Sensor | BHI260AP
-|GNSS | Low-power GNSS module (Concurrent capacity :4)
-| Input | Keyboard
-| Encoder | Rotary Encoder
-|RTC | Supports power switch
-| Touch |GT911
-| Keys | 1 x RST key + 1 x BOOT key |
-| Audio decoder |RC01812(24-bit, 8kHz to 96kHz)
-| USB |1 × type-C interface |
-|IO Extension |PCA9535PW (0x20)
-| Extended Interface | GPS extended interface +2 × Knockout(AUX connector for extended antenna) +2.54mm 2*8 extended IO interface (for NRF24L01 module) |
-| Hole position | 1/4-inch fixed screw interface + 4 x M2*2.5 back hole |
-| Power input | 5V/500mA |
-| Dimensions | 106x89x23mm |
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGoLib?tab=readme-ov-file"  target="_blank">T-LoraPager</a><br />
-Software Description: <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/lilygo-t-lora-pager.md"  target="_blank">T-LoraPager</a><br />
-Hardware Description: <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-lora-pager.md"  target="_blank">T-LoraPager</a></p>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/schematic.pdf"  target="_blank">T-LoraPager</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
-<ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">LilyGoLib</a></li>
-</ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
+<h2 id="Version-Iteration%3A">Version Iteration:</h2>
 <table>
 <thead>
 <tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Board</td>
-  <td>LilyGo-T-LoRa-Pager</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enabled</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>JTAG Adapter</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash(3M APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>Board Revision</td>
-  <td>Radio-SX1262</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
+  <td style="text-align:center">T-LoraPager_V1.0</td>
+  <td style="text-align:center">2024-08-05</td>
+  <td style="text-align:left">Initial Version</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Development-Platform">Development Platform</h3>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">LoRa</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-LoraPager</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M</td>
+  <td style="text-align:center">SX1262 (433-920MHz)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-lora-pager"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>T-LoraPager is a handheld AIOT programmable development device launched by LILYGO, integrating ESP32-S3 high-performance Wi-Fi/Bluetooth dual-mode chip with multiple wireless communication modules. The device features a compact appearance and foldable external antenna design, ensuring wireless performance while maintaining aesthetics. Multiple version options are provided, mainly differing in LoRa modules (LR1121, SX1262 or CC1101), allowing users to choose according to application requirements.</p>
+<p>The development board is feature-rich, integrating QWERT keyboard, AI-enabled IMU (BHI260AP), 2.33-inch strip screen (480×222 resolution), U-blox GPS module (MIA-M10Q), RFID/NFC, RTC circuit, TI power management chip, ES8311 audio codec (supporting microphone, speaker, headphone), rotary encoder, GPIO expansion interface, etc. The back design includes 1/4 fixed screw interface and M2 screw pillars, with a lanyard included for easy carrying and fixing. The factory firmware includes UI Demo designed by LILYGO, enabling smooth interaction through the encoder, suitable for smart wearables, IoT positioning, data collection and other scenario development.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-LoraPager-2.jpg" alt="T-LoraPager" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-LoraPager-3.jpg" alt="summary" width=100%>
+<h3 id="Three-Views">Three Views</h3>
+<img src="./assets/T-LoraPager-three-views-en.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<table>
+<thead>
+<tr>
+  <th>Features</th>
+  <th>Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>SOC</td>
+  <td><a href="https://www.espressif.com/en/products/socs/esp32-s3" title="ESP32-S3" target="_blank">Espressif ESP32-S3</a></td>
+</tr>
+<tr>
+  <td>Flash</td>
+  <td>16MB(QSPI)</td>
+</tr>
+<tr>
+  <td>PSRAM</td>
+  <td>8MB (QSPI)</td>
+</tr>
+<tr>
+  <td>GNSS</td>
+  <td><a href="https://www.u-blox.com/en/product/mia-m10-series" title="UBlox MIA-M10Q" target="_blank">UBlox MIA-M10Q</a></td>
+</tr>
+<tr>
+  <td>LoRa</td>
+  <td><a href="https://www.semtech.com/products/wireless-rf/lora-connect/sx1262" title="Semtech SX1262" target="_blank">Semtech SX1262</a></td>
+</tr>
+<tr>
+  <td>NFC</td>
+  <td><a href="https://www.st.com/en/nfc/st25r3916.html" title="ST25R3916" target="_blank">ST25R3916</a></td>
+</tr>
+<tr>
+  <td>Smart sensor</td>
+  <td><a href="https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ab" title="BHI260AP" target="_blank">Bosch BHI260AP</a></td>
+</tr>
+<tr>
+  <td>Real-Time Clock</td>
+  <td><a href="https://www.nxp.com/products/PCF85063A" title="PCF85063A" target="_blank">NXP PCF85063A</a></td>
+</tr>
+<tr>
+  <td>Battery Charger</td>
+  <td><a href="https://www.ti.com/product/BQ25896" title="BQ25896" target="_blank">Ti BQ25896</a></td>
+</tr>
+<tr>
+  <td>Battery Gauge</td>
+  <td><a href="https://www.ti.com/product/BQ27220" title="BQ27220" target="_blank">Ti BQ27220</a></td>
+</tr>
+<tr>
+  <td>Haptic driver</td>
+  <td><a href="https://www.ti.com/product/DRV2605" title="DRV2605" target="_blank">Ti DRV2605</a></td>
+</tr>
+<tr>
+  <td>Audio Codec</td>
+  <td><a href="http://www.everest-semi.com/pdf/ES8311%20PB.pdf" title="ES8311" target="_blank">Everest-semi ES8311</a></td>
+</tr>
+<tr>
+  <td>GPIO Expand</td>
+  <td><a href="https://www.xinluda.com/en/I2C-to-GPIO-extension/" title="XL9555" target="_blank">XINLUDA XL9555</a></td>
+</tr>
+<tr>
+  <td>I2C Keyboard</td>
+  <td><a href="https://www.ti.com/product/TCA8418" title="TCA8418" target="_blank">Ti TCA8418</a></td>
+</tr>
+<tr>
+  <td>Audio Power Amplifier</td>
+  <td><a href="http://www.nsiway.com.cn/product/58.html" title="NS4150B" target="_blank">Nsiway NS4150B(3W Class D)</a></td>
+</tr>
+<tr>
+  <td>Display Backlight Driver</td>
+  <td><a href="https://item.szlcsc.com/datasheet/AW9364DNR/385721.html" title="AW9364" target="_blank">AW9364 16-Level Led Driver</a></td>
+</tr>
+<tr>
+  <td>SD Card Socket</td>
+  <td>✅️ Maximum 32GB (FAT32 format)</td>
+</tr>
+<tr>
+  <td>External low speed clock crystal</td>
+  <td>✅️</td>
+</tr>
+</tbody>
+</table>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3</li>
+<li>PSRAM: 8M</li>
+<li>FLASH: 16M</li>
+<li>Other Notes: For more information, please visit <a href="https://www.espressif.com/en/products/socs/esp32-s3"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 2.33-inch LCD</li>
+<li>Resolution: 480x222px</li>
+<li>Display Type: LCD</li>
+<li>Driver Chip: ST7796</li>
+<li>Bus Communication Protocol: SPI</li>
+</ul>
+<table>
+<thead>
+<tr>
+  <th>Features</th>
+  <th>Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Resolution</td>
+  <td>480 x 222</td>
+</tr>
+<tr>
+  <td>Display Size</td>
+  <td>2.33 Inch</td>
+</tr>
+<tr>
+  <td>Luminance on surface</td>
+  <td>450 cd/m²</td>
+</tr>
+<tr>
+  <td>Driver IC</td>
+  <td>ST7796U (SPI)</td>
+</tr>
+<tr>
+  <td>Contrast ratio</td>
+  <td>1000:1</td>
+</tr>
+<tr>
+  <td>Color gamut</td>
+  <td>70%</td>
+</tr>
+<tr>
+  <td>PPI</td>
+  <td>221</td>
+</tr>
+<tr>
+  <td>Display Colors</td>
+  <td>262K</td>
+</tr>
+<tr>
+  <td>View Direction</td>
+  <td>All  (IPS)</td>
+</tr>
+<tr>
+  <td>Operating Temperature</td>
+  <td>-20～70°C</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Touch">Touch</h3>
+<ul>
+<li>Chip: GT911</li>
+<li>Bus Communication Protocol: IIC</li>
+</ul>
+<h3 id="LoRa">LoRa</h3>
+<ul>
+<li>Chip: SX1262 (Optional LR1121 / CC1101)</li>
+<li>Frequency: 433MHz ~ 920MHz</li>
+</ul>
+<h3 id="GPS">GPS</h3>
+<ul>
+<li>Chip: MIA-M10Q</li>
+<li>Features: Low-power GNSS, supports 4-star concurrency</li>
+</ul>
+<h3 id="AI-Sensor">AI Sensor</h3>
+<ul>
+<li>Chip: BHI260AP</li>
+<li>Features: AI-enabled IMU</li>
+</ul>
+<h3 id="Audio">Audio</h3>
+<ul>
+<li>Chip: ES8311</li>
+<li>Features: 24-bit, 8kHz ~ 96kHz</li>
+</ul>
+<h3 id="RTC">RTC</h3>
+<ul>
+<li>Chip: Built-in</li>
+<li>Features: Supports power switching</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-LoraPager-info-en.jpg" alt="summary" width=100%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">2.33-inch ST7796 LCD</td>
+</tr>
+<tr>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">GT911 Capacitive Touchscreen</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433-920MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPS</td>
+  <td style="text-align:center">MIA-M10Q</td>
+</tr>
+<tr>
+  <td style="text-align:center">NFC</td>
+  <td style="text-align:center">ST25R3916 (SPI)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">AI Sensor</td>
+  <td style="text-align:center">BHI260AP</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio Codec</td>
+  <td style="text-align:center">ES8311</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Connector)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO Expansion</td>
+  <td style="text-align:center">PCA9535PW (I2C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Input</td>
+  <td style="text-align:center">QWERT Keyboard + Rotary Encoder</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">GPS Interface + 2 x Knockout + 2.54mm 2*8 GPIO</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">1/4 inch Fixed Screw Interface + 4 x M2 Back Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>106x89x23mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">UI Demo</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Factory UI Demo Program</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">LoRa Example</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">LoRa Communication Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">GPS Example</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">GPS Positioning Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">Keyboard Example</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Keyboard Input Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">Audio Example</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Audio Playback Example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
 <ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>.</li>
+<li>Search for and install &quot;PlatformIO IDE&quot; in extensions.</li>
+<li>Download <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">T-LoraPager project code</a> from GitHub.</li>
+<li>Open the project folder in VS Code, edit the <code>platformio.ini</code> file to select the desired environment.</li>
+<li>Connect the device, compile and flash the program.</li>
 </ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html"  target="_blank">Arduino ESP32 <strong>V3.3.0-alpha1</strong> or higher or latest version</a></li>
+</ol>
+<ul>
+<li>Tip: Arduino Manager URL: <a href="https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json"  target="_blank">https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json</a></li>
+</ul>
+<ol start="3">
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip"  target="_blank">Download LilyGoLib library</a></li>
+<li>Open <code>Arduino IDE</code> -&gt; <code>Sketch</code> -&gt; <code>Include Library</code> -&gt; <code>Add .ZIP Library</code> -&gt; <code>Select the library zip file downloaded in step 3</code></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">Install LilyGoLib-ThirdParty</a><ul>
+<li>Copy all directories from <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">LilyGoLib-ThirdParty</a> to the ArduinoIDE libraries directory. If there is no <code>libraries</code> directory, please create it manually.</li>
+<li>Please note: do not copy the <code>LilyGoLib-ThirdParty</code> directory itself, but copy all folders under that directory to the libraries directory</li>
+<li>How to find library file location on your computer, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">please refer here</a><ul>
+<li>Windows: <code>C:\Users\{Username}\Documents\Arduino</code></li>
+<li>macOS: <code>/Users/{Username}/Documents/Arduino</code></li>
+<li>Linux: <code>/home/{Username}/Arduino</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Please note that the libraries in LilyGoLib-ThirdParty are not necessarily the latest versions. Before confirming the hardware is working properly, please do not upgrade the dependent library versions.<br />
+ArduinoIDE will prompt that new library versions are available for upgrade every time it opens.<br />
+Please confirm normal operation before attempting to update to the latest versions. If you encounter issues, please revert to the dependent library versions that worked properly.</p>
+</blockquote>
+<ol start="6">
+<li><p><code>File</code> -&gt; <code>Examples</code> -&gt; <code>LilyGOLib</code> -&gt; <code>helloworld</code></p>
+</li>
+<li><p><code>Tools</code> -&gt; <code>Board</code> -&gt; <code>esp32</code>, please select the corresponding configuration from the table below</p>
+<p>| Arduino IDE Setting                  | Value                             |<br />
+| ------------------------------------ | --------------------------------- |<br />
+| Board                                | <strong>LilyGo-T-LoRa-Pager</strong>           |<br />
+| Port                                 | Your port                         |<br />
+| USB CDC On Boot                      | Enabled                           |<br />
+| CPU Frequency                        | 240MHZ(WiFi)                      |<br />
+| Core Debug Level                     | None                              |<br />
+| USB DFU On Boot                      | Disable                           |<br />
+| Erase All Flash Before Sketch Upload | Disable                           |<br />
+| Events Run On                        | Core 1                            |<br />
+| JTAG Adapter                         | Disable                           |<br />
+| Arduino Runs On                      | Core 1                            |<br />
+| USB Firmware MSC On Boot             | Disable                           |<br />
+| Partition Scheme                     | <strong>16M Flash(3M APP/9.9MB FATFS)</strong> |<br />
+| Board Revision                       | <strong>Radio-SX1262</strong>                  |<br />
+| Upload Mode                          | <strong>UART0/Hardware CDC</strong>            |<br />
+| Upload Speed                         | 921600                            |<br />
+| USB Mode                             | <strong>CDC and JTAG</strong>                  |</p>
+</li>
+<li><p><strong>Board Revision Option</strong>, please select according to the actual purchased RF type. Current options include:</p>
+<ul>
+<li>Radio-SX1262(Sub 1G LoRa)</li>
+<li>Radio-SX1280(2.4G LoRa)</li>
+<li>Radio-CC1101(Sub 1G (G)MSK, 2(G)FSK, 4(G)FSK, ASK, OOK)</li>
+<li>Radio-LR1121(Sub 1G + 2.4G LoRa)</li>
+<li>Radio-SI4432(Sub 1G ISM)</li>
+</ul>
+</li>
+<li><p>Select <code>Port</code></p>
+</li>
+<li><p>Click <code>Upload</code>, wait for compilation and writing to complete</p>
+</li>
+<li><p>If unable to upload the program or the USB device keeps popping up on the computer, please manually put the device into download mode. How to enter download mode, please refer to <a href="#t-lora-pager-enter-download-mode"  >here</a></p>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li>If there is no serial message output, please check if USB CDC ON Boot is set to Enabled.</li>
+<li>The board revision varies according to the actual RF module model. The current default version is SX1262.</li>
+<li>This library depends on the latest <a href="https://github.com/espressif/arduino-esp32/releases/tag/3.3.0-alpha1"  target="_blank">arduino-esp32</a> version. If it is lower than <strong>V3.3.0-alpha1</strong>, it will report an error.</li>
+</ul>
+</blockquote>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Custom Pin</td>
+  <td>GPIO9 (External 12-Pin socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>Uart1 TX</td>
+  <td>43(External 12-Pin socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>Uart1 RX</td>
+  <td>44(External 12-Pin socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>SDA</td>
+  <td>3</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SCL</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI MOSI</td>
+  <td>34</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI MISO</td>
+  <td>33</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI SCK</td>
+  <td>35</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Keyboard(<strong>TCA8418</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Keyboard(<strong>TCA8418</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Keyboard(<strong>TCA8418</strong>) Interrupt</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Keyboard Backlight</td>
+  <td>46</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Rotary Encoder A</td>
+  <td>40</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Rotary Encoder B</td>
+  <td>41</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Rotary Encoder Center</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) Interrupt</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) CS</td>
+  <td>39</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) Interrupt</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) Interrupt</td>
+  <td>8</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) WS</td>
+  <td>18</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) SCK</td>
+  <td>11</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) MCLK</td>
+  <td>10</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) data out</td>
+  <td>45</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) data in</td>
+  <td>17</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Audio Codec(<strong>ES8311</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) TX</td>
+  <td>12</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) RX</td>
+  <td>4</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) PPS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) RESET</td>
+  <td>47</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) BUSY</td>
+  <td>48</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) CS</td>
+  <td>36</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) Interrupt</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display CS</td>
+  <td>38</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display DC</td>
+  <td>37</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display RESET</td>
+  <td>Not Connected</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display Backlight(16 Level)</td>
+  <td>42</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Gauge(<strong>BQ27220</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Gauge(<strong>BQ27220</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Charger(<strong>BQ25896</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Charger(<strong>BQ25896</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Haptic Driver(<strong>DRV2605</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Haptic Driver(<strong>DRV2605</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO0</td>
+  <td>Haptic Driver Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO1</td>
+  <td>Audio Power Amplifier Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO2</td>
+  <td>Keyboard RESET</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO3</td>
+  <td>LoRa Power supply Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO4</td>
+  <td>GNSS Power supply Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO5</td>
+  <td>NFC Power supply Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO6</td>
+  <td><del>Display RESET</del> (No connect)</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO7</td>
+  <td>GNSS RESET</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO10</td>
+  <td>Keyboard Power supply Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO11</td>
+  <td>External 12-Pin socket</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO12</td>
+  <td>SD Insert Detect</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO14</td>
+  <td>SD Power supply Enable</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<!-- | Expand(**XL9555**) GPIO13            | SD PullUp Enable               | ❌    | -->
+<h2 id="Related-Tests">Related Tests</h2>
+<h3 id="Power-Consumption-Tests">Power Consumption Tests</h3>
+<table>
+<thead>
+<tr>
+  <th>Mode</th>
+  <th>Wake-Up Mode</th>
+  <th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>DeepSleep</td>
+  <td>BootButton</td>
+  <td>530uA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>Timer</td>
+  <td>530uA</td>
+</tr>
+<tr>
+  <td>LightSleep</td>
+  <td>BootButton</td>
+  <td>~2.26mA</td>
+</tr>
+<tr>
+  <td>Power OFF</td>
+  <td>PowerButton</td>
+  <td>26uA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. How to choose between different versions of T-LoraPager?</strong><br />
+A. Choose LoRa module according to application requirements: SX1262 for long-distance communication, LR1121 for multi-band support, CC1101 for low-cost Sub-1GHz applications.</p>
+</li>
+<li><p><strong>Q. What to do if the device cannot flash the program?</strong><br />
+A. Ensure USB CDC On Boot is enabled, and hold the BOOT button while clicking RESET to enter download mode.</p>
+</li>
+<li><p><strong>Q. GPS positioning is slow or no signal?</strong><br />
+A. Ensure use in outdoor open areas, and check if the antenna connection is good.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/(N314)T-Lora_Pager_LR1121_Module_V1.0_20250805.pdf"  target="_blank">T-LoraPager_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/schematic.pdf"  target="_blank">Schematic</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-core/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+<li><a href="https://www.u-blox.com/en/product/mia-m10-series"  target="_blank">MIA-M10Q Datasheet</a></li>
+<li><a href="https://www.bosch-sensortec.com/products/motion-sensors/imu/bhi260ap/"  target="_blank">BHI260AP Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">LilyGoLib</a></li>
+</ul>
 
                         
                     </div>

@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-LoRa C6 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-C6", "LoRa", "Wi-Fi 6", "Bluetooth 5", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -240,6 +241,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-C6</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>Wi-Fi 6</li>
+                            
+                                <li>Bluetooth 5</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,169 +274,359 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-LoRa-C6-1.jpg" alt="T-LoRa C6" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-LoRa-C6-1.jpg" alt="T-LoRa-C6" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-lora-c6">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-lora-c6">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO <strong>T-LoRa C6</strong> is a compact IoT development board based on the ESP32-C6-MINI-1 module, integrating 2.4GHz Wi-Fi 6, Bluetooth 5 (LE), and LoRa® long-range communication (SX1262 module, supporting 868/915MHz frequency bands), offering both high performance and low power consumption. The board features 4MB Flash, supports C/C++, MicroPython, and Lua programming languages, and is compatible with popular development platforms such as Arduino-IDE, VS Code, and ESP-IDF. It includes a BOOT/reset button, customizable LED, and a Type-C power input interface for easy debugging and deployment. Its small size (33x29mm) and multi-protocol integration (Wi-Fi/Bluetooth/LoRa) make it suitable for applications such as smart home control, industrial sensor networks, and remote environmental monitoring. The 5V 500mA power supply design further simplifies mobile device integration, making it an ideal choice for low-power wide-area IoT applications.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-LoRa-C6-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-LoRa-C6-3.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<img src="./assets/T-LoRa-C6-en.jpg" alt="summary" width=100%>
+<h2 id="Version-Iteration">Version Iteration</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-C6-MINI-1</td>
+  <td style="text-align:center">T-LoRa-C6_V1.0</td>
+  <td style="text-align:center">2024-03-15</td>
+  <td style="text-align:left">Initial hardware version</td>
 </tr>
 <tr>
-  <td>FLASH</td>
-  <td>4MB(Quad-SPI)</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>SX1262: 868, 915Mhz</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>2.4g Wi-Fi 6, Bluetooth 5 (LE), 802.15.4</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
-</tr>
-<tr>
-  <td>Extended Interface</td>
-  <td>2 × 10-PIN GPIO interface</td>
-</tr>
-<tr>
-  <td>Keys</td>
-  <td>1 x RESET key + 1 x BOOT key</td>
-</tr>
-<tr>
-  <td>Power input</td>
-  <td>5V/500mA</td>
-</tr>
-<tr>
-  <td>Hole Position</td>
-  <td><strong>4 × M1.2 positioning hole </strong></td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>33 X 29 X 6 mm</td>
+  <td style="text-align:center">T-LoRa-C6_V1.1</td>
+  <td style="text-align:center">2024-06-20</td>
+  <td style="text-align:left">Software optimization update</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"  target="_blank">T-LoRa-C6</a></p>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3-C6_V1.0.pdf"  target="_blank">T-LoRa-C6</a></p>
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-LoRa C6</td>
+  <td style="text-align:center">ESP32-C6</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-lora-c6"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://github.com/lewisxhe/AXP202X_Library"  target="_blank">AXP202</a></li>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>LILYGO T-LoRaC6 is a compact IoT development board based on the ESP32-C6-MINI-1 module, integrating 2.4GHz Wi-Fi 6, Bluetooth 5 (LE) and LoRa® long-range communication (SX1262 module, supporting 868/915MHz frequency bands), combining high performance with low power characteristics. The board features 4MB Flash, supports C/C++, MicroPython, Lua multi-language development, and is compatible with mainstream platforms such as Arduino-IDE, VS Code and ESP-IDF. It provides BOOT/reset buttons, custom LED and Type-C power interface for quick debugging and deployment. Its compact size (33x29mm) and multi-protocol integration capability (Wi-Fi/Bluetooth/LoRa) make it suitable for smart home control, industrial sensor networks, remote environmental monitoring and other scenarios. The 5V 500mA power supply design further simplifies mobile device integration, making it an ideal choice for low-power wide-area IoT applications.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-LoRa-C6-2.jpg" alt="T-LoRa-C6" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-LoRa-C6-3.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-C6-MINI-1</li>
+<li>FLASH: 4MB (Quad-SPI)</li>
+<li>Wireless: 2.4GHz Wi-Fi 6, Bluetooth 5 (LE), 802.15.4</li>
+<li>CPU Frequency: 160MHz (WiFi)</li>
+</ul>
+<h3 id="Wireless-Communication">Wireless Communication</h3>
+<ul>
+<li>LoRa: SX1262</li>
+<li>Frequency Bands: 868MHz/915MHz</li>
+<li>Protocol: LoRa® Long-Range Communication</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>Power Supply: 5V/500mA</li>
+<li>Interface: Type-C USB</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-LoRa-C6-en.jpg" alt="summary" width=80%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-C6-MINI-1</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB (Quad-SPI)</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (868/915MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4GHz Wi-Fi 6, Bluetooth 5 (LE), 802.15.4</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Connector)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">2 × 10-PIN GPIO Interfaces</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Input</td>
+  <td style="text-align:center">5V/500mA</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">4 × M1.2 Positioning Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">33 × 29 × 6 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/LoRa_Communication"  target="_blank">LoRa_Communication</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">LoRa Communication Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/WiFi6_Connection"  target="_blank">WiFi6_Connection</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Wi-Fi 6 Connection Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Bluetooth_LE"  target="_blank">Bluetooth_LE</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Bluetooth Low Energy Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Multi_Protocol"  target="_blank">Multi_Protocol</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Multi-Protocol Communication Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Sensor_Node"  target="_blank">Sensor_Node</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Sensor Node Example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/"  target="_blank">Visual Studio Code</a> and <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>Search for and install the <code>PlatformIO</code> extension in <code>Visual Studio Code</code></li>
+<li>After installation, restart <code>Visual Studio Code</code></li>
+<li>After restarting, select <code>File</code> -&gt; <code>Open Folder</code> -&gt; Choose the <code>LilyGo-LoRa-Series</code> directory</li>
+<li>Wait for third-party dependency libraries to finish installing</li>
+<li>Click to open the <code>platformio.ini</code> file, under the <code>platformio</code> section</li>
+<li>Under <code>default_envs</code>, select the name of the board you want to use and uncomment it</li>
+<li>Uncomment one line <code>src_dir = xxxx</code>, ensuring only one line is active. Please note the example comments, which explain which features are available and which are not.</li>
+<li>Click the (✔) symbol at the bottom left to compile</li>
+<li>Connect the board to your computer using a USB-C cable (Micro-USB interface is for module firmware upgrade)</li>
+<li>Click (→) to upload the firmware</li>
+<li>Click (plug symbol) to monitor the serial output</li>
+<li>If unable to upload or the USB device keeps blinking, please check the <strong>FAQ</strong> below</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></p>
+</li>
+<li><p>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/"  target="_blank">Arduino ESP32</a></p>
+</li>
+<li><p>Copy all folders from the <code>lib</code> directory to the <code>Sketchbook location</code> directory. How to find the library file location, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">please refer here</a></p>
+<ul>
+<li>Windows: <code>C:\Users\{Username}\Documents\Arduino</code></li>
+<li>macOS: <code>/Users\{Username}/Documents/Arduino</code></li>
+<li>Linux: <code>/home/{Username}/Arduino</code></li>
+</ul>
+</li>
+<li><p>Open the corresponding example</p>
+<ul>
+<li>Open the downloaded <code>LilyGo-LoRa-Series</code> folder</li>
+<li>Open the <code>examples</code> folder</li>
+<li>Select the example file and open the file with <code>ino</code> extension</li>
+</ul>
+</li>
+<li><p>Select the corresponding board model in the Arduino IDE Tools menu, click the corresponding option in the list below to select</p>
+<p>| T3-C6                                | Value                                                   |<br />
+ | ------------------------------------ | ------------------------------------------------------- |<br />
+ | Board                                | <strong>ESP32C6 Dev Module</strong>                                  |<br />
+ | Port                                 | Your port                                               |<br />
+ | USB CDC On Boot                      | Enable                                                  |<br />
+ | CPU Frequency                        | 160MHZ(WiFi)                                            |<br />
+ | Core Debug Level                     | None                                                    |<br />
+ | USB DFU On Boot                      | Disable                                                 |<br />
+ | Erase All Flash Before Sketch Upload | Disable                                                 |<br />
+ | Flash Mode                           | DIO                                                     |<br />
+ | Flash Size                           | <strong>4MB(32Mb)</strong>                                           |<br />
+ | Arduino Runs On                      | Core1                                                   |<br />
+ | USB Firmware MSC On Boot             | Disable                                                 |<br />
+ | Partition Scheme                     | <strong>Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)</strong> |<br />
+ | Upload Speed                         | 921600                                                  |<br />
+ | Programmer                           | <strong>Esptool</strong>                                             |</p>
+</li>
+<li><p>Please uncomment the corresponding model in the <code>utilities.h</code> file according to your board model, for example <code>T3_C6</code>, otherwise compilation will report an error</p>
+</li>
+<li><p>Upload the program</p>
+</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+<li><a href="https://github.com/espressif/esp-idf"  target="_blank">ESP-IDF</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) SCK</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MISO</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MOSI</td>
+  <td>0</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) RESET</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO0</td>
+  <td>23</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) BUSY</td>
+  <td>22</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) CS</td>
+  <td>18</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>Test data to be supplemented</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. What are the advantages of ESP32-C6 compared to ESP32-S3?</strong><br />
+A. ESP32-C6 supports Wi-Fi 6, has better energy efficiency and network performance, while maintaining low cost.</p>
+</li>
+<li><p><strong>Q. What is the communication distance of the LoRa module?</strong><br />
+A. Under ideal conditions, the SX1262 LoRa module can achieve communication distances of several kilometers, depending on environmental factors and antenna configuration.</p>
+</li>
+<li><p><strong>Q. Why does my board fail to flash?</strong><br />
+A. Please hold the &quot;BOOT&quot; button while pressing the &quot;RST&quot; button, then release the &quot;RST&quot; button, and re-download the program after entering download mode.</p>
+</li>
+<li><p><strong>Q. Does it support battery power?</strong><br />
+A. External batteries can be connected through the expansion interface, but additional power management circuitry is required.</p>
+</li>
+<li><p><strong>Q. Can Wi-Fi 6 and Bluetooth work simultaneously?</strong><br />
+A. Yes, ESP32-C6 supports Wi-Fi and Bluetooth coexistence mode.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3-C6_V1.0.pdf"  target="_blank">T-LoRa-C6_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf"  target="_blank">ESP32-C6 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-core/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf"  target="_blank">ESP32-C6 Technical Reference</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
+<li><a href="https://github.com/sandeepmistry/arduino-LoRa"  target="_blank">LoRa</a></li>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
+<li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></li>
+<li><a href="https://github.com/olikraus/u8g2"  target="_blank">U8g2</a></li>
+<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
 <li><a href="https://github.com/adafruit/Adafruit_BME280_Library"  target="_blank">Adafruit_BME280_Library</a></li>
 <li><a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a></li>
 <li><a href="https://github.com/adafruit/Adafruit_Sensor"  target="_blank">Adafruit_Sensor</a></li>
 <li><a href="https://github.com/ThingPulse/esp8266-oled-ssd1306"  target="_blank">ESP8266_SSD1306</a></li>
 <li><a href="https://github.com/ZinggJM/GxEPD"  target="_blank">GxEPD</a></li>
 <li><a href="https://github.com/matthijskooijman/LMIC-node"  target="_blank">LMIC-Arduino</a></li>
-<li><a href="https://github.com/sandeepmistry/arduino-LoRa"  target="_blank">LoRa</a></li>
-<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
-<li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI</a></li>
 <li><a href="https://github.com/mikalhart/TinyGPSPlus"  target="_blank">TinyGPSPlus</a></li>
 <li><a href="https://github.com/vshymanskyy/TinyGSM"  target="_blank">TinyGSM</a></li>
-<li><a href="https://github.com/olikraus/u8g2"  target="_blank">U8g2</a></li>
+<li><a href="https://github.com/lewisxhe/AXP202X_Library"  target="_blank">AXP202</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Board</th>
-  <th>ESP32C6 Dev Module</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>160MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>DIO</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>4MB(32Mb)</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>Programmer</td>
-  <td>Esptool</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://micropython.org/"  target="_blank">MicroPython</a></li>
-<li><a href="https://github.com/espressif/esp-idf"  target="_blank">ESP-IDF</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>
@@ -433,9 +634,9 @@ var _hmt = _hmt || [];
                 <div id="previous_next">
                     <div id="previous">
                         
-                        <a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html">
+                        <a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html">
                             <span class="icon"></span>
-                            <span class="label">T-Watch Ultra</span>
+                            <span class="label">T-LoRa32</span>
                         </a>
                         
                     </div>

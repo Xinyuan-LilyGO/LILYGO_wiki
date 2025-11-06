@@ -62,10 +62,10 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO T3-S3_MVSRBoard - LILYGO Wiki</title>
+    <title>LILYGO T3-S3 MVSR Board - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "LoRa", "Audio", "Voice", "Vibration", "RTC"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -234,11 +235,23 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO T3-S3_MVSRBoard</h1>
+                            <h1>LILYGO T3-S3 MVSR Board</h1>
                             
                         </div>
                         <div id="article_tags">
                             <ul>
+                            
+                                <li>ESP32-S3</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>Audio</li>
+                            
+                                <li>Voice</li>
+                            
+                                <li>Vibration</li>
+                            
+                                <li>RTC</li>
                             
                             </ul>
                         </div>
@@ -263,94 +276,400 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T3-S3_MVSRBoard01.jpg" alt="T-Display K230" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-S3_MVSRBoard01.jpg" alt="T3-S3_MVSRBoard" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="Introduction">Introduction</h2>
-<p>The T3-S3 MVSR version is an extended version of the T3-S3 mainboard, featuring a vibration motor, microphone, speaker, and RTC module. Its primary application is for LoRa voice transmission and reception.</p>
-<p>This expansion version currently supports two T3-S3 mainboard models: SX1262 and SX1280.</p>
-<p>The SX1262 version uses the FSK modulation scheme.</p>
-<p>The SX1280 version uses the LoRa modulation scheme.</p>
-<p>A corresponding test demo is available on GitHub for development reference. Additionally, this expansion version can be used for AI voice interaction, MP3 playback, and other applications.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T3-S3_MVSRBoard02.jpg" alt="summary" width=80%>
-<img src="./assets/T3-S3_MVSRBoard03.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3-s3-mvsr-board">Official Store</a>
+</div>
+<h2 id="Version-Iteration">Version Iteration</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T3-S3-MVSRBoard_V1.0</td>
+  <td style="text-align:center">2024-11-06</td>
+  <td style="text-align:left">Initial Version</td>
+</tr>
+<tr>
+  <td style="text-align:center">T3-S3-MVSRBoard_V1.1</td>
+  <td style="text-align:center">2025-03-18</td>
+  <td style="text-align:left">Changed Microphone Model</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T3-S3 MVSR Board</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">2MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t3-s3-mvsr-board"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>The T3-S3 MVSR version is based on the T3-S3 main board with an extended module featuring vibration motor, microphone, speaker, and RTC functions. The main application of this version is for LoRa voice transmission and reception. This extended version currently supports both SX1262 and SX1280 models of the T3S3 motherboard. The SX1262 version uses FSK modulation, while the SX1280 version uses LoRa modulation. Corresponding test demos are available on GitHub for your development reference. Of course, this extended version can also be used for AI voice interaction functions, MP3 playback, and more.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-S3_MVSRBoard02.jpg" alt="T3-S3_MVSRBoard" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
 <img src="./assets/T3-S3_MVSRBoard.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<p>The T3-S3-MVSRBoard is a backplane design for the T3-S3_V1.2 motherboard, with onboard speaker and microphone expansion functions, and very low static current. In addition, it includes vibration and RTC (Real-time clock) functions</p>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Speak</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>Chip</td>
-    <td>MAX98357A</td>
-  </tr>
-  <tr>
-    <td>Communication Protocol</td>
-    <td>IIS</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Microphone</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>Chip</td>
-    <td>MSM261S4030H0R</td>
-  </tr>
-  <tr>
-    <td>Communication Protocol</td>
-    <td>PDM</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">RTC</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>Chip</td>
-    <td>PCF85063ATL</td>
-  </tr>
-  <tr>
-    <td>Communication Protocol</td>
-    <td>IIC</td>
-  </tr>
-</table>
-<!-- | IMU | **板载六轴 IMU 传感器（三轴加速度+三轴角速度）** | -->
-<!-- | RTC | **板载 BM8653 RTC Chip+纽扣电池，断电时间仍然正确** | -->
-<h3 id="Related-Links">Related Links</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard"  target="_blank">T3-S3-MBSRBoard</a></p>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf"  target="_blank">MSM261S4030H0R</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf"  target="_blank">PCF85063ATL</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A</a></li>
+<li>Chip: ESP32-S3FH4R2</li>
+<li>PSRAM: 2MB (OPI PSRAM)</li>
+<li>FLASH: 4MB</li>
+<li>Wireless: 2.4GHz Wi-Fi + Bluetooth 5.0</li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/project/T3-S3-MVSRBoard_V1.0.pdf"  target="_blank">T3-S3-MVSRBoard</a></p>
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h3 id="Speaker">Speaker</h3>
 <ul>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Speak</a></li>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Microphone</a></li>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">RTC</a></li>
+<li>Chip: MAX98357A</li>
+<li>Bus Communication Protocol: IIS</li>
+<li>Other: Default uses 9dB gain</li>
+<li>Related Resources:<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
+<h3 id="Microphone">Microphone</h3>
+<h4 id="T3-S3-MVSRBoard_V1.0-Version">T3-S3-MVSRBoard_V1.0 Version</h4>
+<ul>
+<li>Chip: MSM261S4030H0R</li>
+<li>Bus Communication Protocol: IIS</li>
+<li>Related Resources:<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf"  target="_blank">MSM261S4030H0R</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h4 id="T3-S3-MVSRBoard_V1.1-Version">T3-S3-MVSRBoard_V1.1 Version</h4>
+<ul>
+<li>Chip: MP34DT05-A</li>
+<li>Bus Communication Protocol: PDM</li>
+<li>Related Resources:<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="RTC">RTC</h3>
+<ul>
+<li>Chip: PCF85063ATL</li>
+<li>Bus Communication Protocol: IIC</li>
+<li>Related Resources:<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf"  target="_blank">PCF85063ATL</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="Wireless-Communication">Wireless Communication</h3>
+<ul>
+<li>LoRa Module: SX1262 / SX1280</li>
+<li>Frequency Bands: 868/915MHz (SX1262) / 2.4GHz (SX1280)</li>
+<li>Modulation: FSK (SX1262) / LoRa (SX1280)</li>
+</ul>
+<h3 id="Function-Expansion">Function Expansion</h3>
+<ul>
+<li>Vibration Motor: Haptic feedback</li>
+<li>Storage: TF Card Expansion</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<p>The T3-S3-MVSRBoard is a backplane design for the T3-S3_V1.2 main board, featuring onboard speaker and microphone expansion functions with extremely low static current. Additionally, it includes vibration and RTC (Real-Time Clock) functions.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FH4R2 Dual-core LX7</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">2MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio Input</td>
+  <td style="text-align:center">MP34DT05-A PDM Microphone</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio Output</td>
+  <td style="text-align:center">MAX98357A I2S Speaker</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (868/915MHz) / SX1280 (2.4GHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">RTC</td>
+  <td style="text-align:center">PCF85063ATL Real-Time Clock (I2C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Vibration</td>
+  <td style="text-align:center">Haptic Vibration Motor</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card Expansion</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4GHz Wi-Fi + Bluetooth 5.0</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Connector)</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPIO Interface</td>
+  <td style="text-align:center">2.54mm pitch 2×20 Expansion IO Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">I2C OLED (Optional)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Input</td>
+  <td style="text-align:center">5V/500mA</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">2 × 2mm Positioning Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">66 × 27 × 15 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th><code>[Platformio IDE][espressif32-v6.5.0]</code><br /><code>[Arduino IDE][esp32_v2.0.14]</code></th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/DMIC_ReadData"  target="_blank">DMIC_ReadData</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/DMIC_SD"  target="_blank">DMIC_SD</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/GFX"  target="_blank">GFX</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/IIC_Scan_2"  target="_blank">IIC_Scan_2</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Original_Test"  target="_blank">Original_Test</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td>Factory Program</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/PCF85063"  target="_blank">PCF85063</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/PCF85063_Scheduled_INT"  target="_blank">PCF85063_Scheduled_INT</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/PCF85063_Timer_INT"  target="_blank">PCF85063_Timer_INT</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SD"  target="_blank">SD</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SD_Music"  target="_blank">SD_Music</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Sleep_Wake_Up"  target="_blank">Sleep_Wake_Up</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX126x_PingPong"  target="_blank">SX126x_PingPong</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX126x_PingPong_2"  target="_blank">SX126x_PingPong</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX126x_Walkie_Talkie"  target="_blank">SX126x_Walkie_Talkie</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX127x_PingPong"  target="_blank">SX127x_PingPong</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX127x_PingPong_2"  target="_blank">SX127x_PingPong_2</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/SX128x_PingPong_2"  target="_blank">SX128x_PingPong_2</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Vibration_Motor"  target="_blank">Vibration_Motor</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Voice_Codec2_Speaker"  target="_blank">Voice_Codec2_Speaker</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Voice_Speaker"  target="_blank">Voice_Speaker</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Wifi_Music"  target="_blank">Wifi_Music</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/firmware/T3-S3-MVSRBoard_V1.0/"  target="_blank">Original_Test(V1.0)</a></td>
+  <td>Factory Program</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/firmware/T3-S3-MVSRBoard_V1.1/"  target="_blank">Original_Test(V1.1)</a></td>
+  <td>Factory Program</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>, choose the installation according to your system type.</li>
+<li>Open the &quot;Extensions&quot; in the Visual Studio Code sidebar (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open extensions), search for the &quot;PlatformIO IDE&quot; extension and download it.</li>
+<li>During the extension installation, you can go to GitHub to download the code. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to open it), click &quot;Open Folder&quot;, find the recently downloaded project code folder (the entire folder), and click &quot;Add&quot;. Now the project files are added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; for the corresponding folder), under the &quot;[platformio]&quot; section, uncomment to select the example program you want to flash (headed by &quot;default_envs = xxx&quot;), then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer, and click the &quot;<kbd>→</kbd>&quot; at the bottom left to flash.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a>, choose the installation according to your system type.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu in the top right corner -&gt; Select &quot;Board&quot; -&gt; &quot;Board Manager&quot;, find or search for &quot;esp32&quot;, and download the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the &quot;ESP32S3 Dev Module&quot; board.</li>
+<li>Open the menu &quot;File&quot; -&gt; &quot;Preferences&quot;, find the &quot;Sketchbook location&quot; field, and copy all library files along with their folders from the &quot;libraries&quot; folder in the project directory to the &quot;libraries&quot; folder in this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
 <table>
 <thead>
 <tr>
@@ -417,13 +736,348 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">C</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Platform IO</a></li>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the microcontroller to your computer, and click the &quot;<kbd>→</kbd>&quot; in the top right corner to flash.</li>
 </ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Speaker Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO40</td>
+</tr>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO41</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO39</td>
+</tr>
+<tr>
+  <td style="text-align:center">SD_MODE</td>
+  <td style="text-align:center">IO38</td>
+</tr>
+</tbody>
+</table>
+<h4 id="T3-S3-MVSRBoard_V1.0-Version">T3-S3-MVSRBoard_V1.0 Version</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Microphone Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO47</td>
+</tr>
+<tr>
+  <td style="text-align:center">WS</td>
+  <td style="text-align:center">IO15</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO48</td>
+</tr>
+<tr>
+  <td style="text-align:center">EN</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+</tbody>
+</table>
+<h4 id="T3-S3-MVSRBoard_V1.1-Version">T3-S3-MVSRBoard_V1.1 Version</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Microphone Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO15</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO48</td>
+</tr>
+<tr>
+  <td style="text-align:center">EN</td>
+  <td style="text-align:center">IO35</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Vibration Motor Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO46</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">RTC Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO42</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO45</td>
+</tr>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO16</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SX126x Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">MISO</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO1</td>
+  <td style="text-align:center">IO33</td>
+</tr>
+<tr>
+  <td style="text-align:center">BUSY</td>
+  <td style="text-align:center">IO34</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SX127x Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">MISO</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO0</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO1</td>
+  <td style="text-align:center">IO33</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO2</td>
+  <td style="text-align:center">IO34</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO3</td>
+  <td style="text-align:center">IO21</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO4</td>
+  <td style="text-align:center">IO10</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO5</td>
+  <td style="text-align:center">IO36</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">SX128x Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">RST</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+<tr>
+  <td style="text-align:center">MISO</td>
+  <td style="text-align:center">IO3</td>
+</tr>
+<tr>
+  <td style="text-align:center">DIO1</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">BUSY</td>
+  <td style="text-align:center">IO36</td>
+</tr>
+<tr>
+  <td style="text-align:center">TX</td>
+  <td style="text-align:center">IO10</td>
+</tr>
+<tr>
+  <td style="text-align:center">RX</td>
+  <td style="text-align:center">IO21</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<h3 id="Power-Consumption">Power Consumption</h3>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Program</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/firmware/%5BT3-S3-MVSRBoard_V1.0%5D%5BSleep_Wake_Up%5D%5BSX1262%5D_firmware_V1.0.0_202411041104.bin"  target="_blank">Sleep_Wake_Up</a></td>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/examples/Sleep_Wake_Up"  target="_blank">Sleep_Wake_Up</a></td>
+  <td>Static Current: 2.77 µA For more information, please check <a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/relevant_test/PowerConsumptionTestLog_%5BT3-S3-MVSRBoard_V1.0%5D_20241104.pdf"  target="_blank">Power Consumption Test Log</a></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Audio-Performance">Audio Performance</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Parameter</th>
+  <th style="text-align:center">Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Sample Rate</td>
+  <td style="text-align:center">8-48 kHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Bit Depth</td>
+  <td style="text-align:center">16-bit</td>
+</tr>
+<tr>
+  <td style="text-align:center">Signal-to-Noise Ratio</td>
+  <td style="text-align:center">&gt;90 dB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. How to adjust external antenna resistance?</strong><br />
+A. Refer to the arrow in the image below to replace the resistor to adjust the external antenna resistance:</p>
+<img src="./assets/T3-S3_MVSRBoard04.jpg" alt="Antenna Resistance Adjustment" width=60%>
+</li>
+<li><p><strong>Q. What's the difference between SX1262 and SX1280 versions?</strong><br />
+A. SX1262 supports 868/915MHz frequency bands and uses FSK modulation; SX1280 supports 2.4GHz frequency band and uses LoRa modulation.</p>
+</li>
+<li><p><strong>Q. Which audio formats are supported?</strong><br />
+A. Supports common audio formats like WAV, MP3, etc., and can be extended with software decoding libraries.</p>
+</li>
+<li><p><strong>Q. What is the LoRa voice communication range?</strong><br />
+A. Under ideal conditions, voice communication range can reach several kilometers, depending on environmental factors and antenna configuration.</p>
+</li>
+<li><p><strong>Q. Does it support real-time voice transmission?</strong><br />
+A. Supports real-time voice acquisition, compression, and LoRa transmission, enabling voice intercom functionality.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/project/T3-S3-MVSRBoard_V1.0.pdf"  target="_blank">T3-S3-MVSRBoard_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf"  target="_blank">PCF85063ATL Datasheet</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf"  target="_blank">MSM261S4030H0R Datasheet</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus</a></li>
+<li><a href="https://github.com/earlephilhower/ESP8266Audio"  target="_blank">Audio Libraries</a></li>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">LoRa Radio Libraries</a></li>
+</ul>
 
                         
                     </div>

@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T3S3 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["LoRa", "ESP32-S3", "OLED", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -240,6 +241,14 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>LoRa</li>
+                            
+                                <li>ESP32-S3</li>
+                            
+                                <li>OLED</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,204 +272,862 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T3S3-1.jpg" alt="T3S3" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&_psq=T3&_ss=e&_v=1.0">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&_psq=T3&_ss=e&_v=1.0">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>The T3S3 (LILYGO T3-S3 V1.2) is a development board based on the ESP32-S3, featuring multi-band LoRa communication via optional SX1262/76 (868/915 MHz) or SX1280 (2.4 GHz) modules. It includes a 128×64 OLED display (SSD1306) and a MicroSD card slot for data visualization and storage. The board supports power and firmware flashing via USB Type-C, and offers rich interfaces such as ADC (GPIO15/16), UART (U0RTS/U0CTS), and a PSP bus (GPIO33–37), along with BOOT/RST buttons and clearly labeled GPIO pins like GPIO12, 48, and 47. It is well-suited for low-power IoT applications such as sensor networks and environmental monitoring.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T3S3-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
+<h2 id="Version-History%3A">Version History:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T3S3_V1.2</td>
+  <td style="text-align:center">Latest Version</td>
+  <td style="text-align:left">Development board integrating ESP32-S3 with multi-band LoRa</td>
+</tr>
+<tr>
+  <td style="text-align:center">T3S3_V1.3</td>
+  <td style="text-align:center">Latest Version</td>
+  <td style="text-align:left">Hardware optimization update</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">LoRa</th>
+  <th style="text-align:center">Screen</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T3S3</td>
+  <td style="text-align:center">ESP32-S3FH4R2</td>
+  <td style="text-align:center">4M</td>
+  <td style="text-align:center">2M</td>
+  <td style="text-align:center">SX1262/SX1276/SX1280</td>
+  <td style="text-align:center">0.96&quot; OLED</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&amp;_psq=T3&amp;_ss=e&amp;_v=1.0"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>T3S3 (LILYGO T3-S3 V1.2) is a compact development board integrating ESP32-S3 main control with multi-band LoRa communication capability. This development board can be optionally configured with SX1262/1276 (433/868/915MHz) or SX1280 (2.4GHz) LoRa modules, supporting long-distance low-power communication. It features an onboard 0.96-inch 128x64 OLED display (SSD1306) and MicroSD (TF) card slot, providing data visualization and storage functions.</p>
+<p>Power supply and program uploading are achieved through Type-C USB, with expanded rich interface resources including ADC (GPIO15/16), UART (U0RTS/U0CTS), PSP bus (GPIO33-37), etc. It also retains BOOT/RST buttons and clearly labeled GPIO pins, suitable for IoT sensor networks, environmental monitoring, and other low-power scenario development.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3S3-2.jpg" alt="T3S3" /></p>
+</div>
+<h3 id="Pin-Diagram">Pin Diagram</h3>
 <img src="./assets/T3S3-pin.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3FH4R2</li>
+<li>PSRAM: 2MB (Quad-SPI)</li>
+<li>FLASH: 4MB (Quad-SPI)</li>
+<li>Additional Information: More information available at <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 0.96-inch OLED</li>
+<li>Resolution: 128x64px</li>
+<li>Display Type: OLED</li>
+<li>Driver Chip: SSD1306</li>
+<li>Bus Communication Protocol: I2C</li>
+</ul>
+<h3 id="LoRa">LoRa</h3>
+<ul>
+<li>Chip: SX1262 / SX1276 / SX1280 (optional)</li>
+<li>Frequency: SX1262/SX1276: 433/868/915MHz, SX1280: 2.4GHz</li>
+</ul>
+<h3 id="Storage">Storage</h3>
+<ul>
+<li>Type: MicroSD (TF) Card</li>
+<li>Interface: SPI</li>
+</ul>
+<h3 id="Overview">Overview</h3>
 <img src="./assets/T3S3-info.jpg" alt="summary" width=100%>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3FH4R2</td>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FH4R2</td>
 </tr>
 <tr>
-  <td>FLASH</td>
-  <td>4MB(Quad-SPI)</td>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB (Quad-SPI)</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>2MB(Quad-SPI)</td>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">2MB (Quad-SPI)</td>
 </tr>
 <tr>
-  <td>LoRa</td>
-  <td>SX1262:433/868/915 MHZ &lt; br &gt; SX1276:868/915 mhzsx1280:2.4 Ghz</td>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">0.96-inch SSD1306 OLED</td>
 </tr>
 <tr>
-  <td>Screen</td>
-  <td>0.96-inch SSD1306 OLED screen</td>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433/868/915MHz) / SX1276 / SX1280 (2.4GHz)</td>
 </tr>
 <tr>
-  <td>Storage</td>
-  <td>TF Card</td>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
 </tr>
 <tr>
-  <td>Wireless</td>
-  <td>2.4Ghz Wi-Fi + Bluetooth 5.0</td>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4GHz Wi-Fi + Bluetooth 5.0</td>
 </tr>
 <tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C)</td>
 </tr>
 <tr>
-  <td>IO interface</td>
-  <td>2.54mm pitch × 2*13 extended IO interface</td>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2.54mm Pitch 2*13 Expansion IO Interface</td>
 </tr>
 <tr>
-  <td>Keys</td>
-  <td>1 x RESET key + 1 x BOOT key</td>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">LoRa Antenna Interface + Battery Interface + 2 x Qwiic Interface</td>
 </tr>
 <tr>
-  <td>Extended Interfaces</td>
-  <td>1 x LoRa antenna interface + 1 x Battery interface + 2 x Qwiic interface</td>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
 </tr>
 <tr>
-  <td>Power Supply</td>
-  <td>5V/500mA</td>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">2mm Positioning Holes x 2</td>
 </tr>
 <tr>
-  <td>Hole Position</td>
-  <td><strong>2mm positioning holes </strong>2 **</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>66x36x14mm</td>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>66x36x14mm</strong></td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"  target="_blank">T3S3</a></p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+
+<pre class="language-bash"><code class="language-bash">./examples/
+├── ArduinoLoRa                              # Only support SX1276/SX1278 radio module
+│   ├── LoRaReceiver
+│   └── LoRaSender
+├── Display                                  # Only supports TBeam TFT Shield
+│   ├── Free_Font_Demo
+│   ├── TBeam_TFT_Shield
+│   ├── TFT_Char_times
+│   └── UTFT_demo
+├── GPS                                      # T-Beam GPS demo examples
+│   ├── TinyGPS_Example
+│   ├── TinyGPS_FullExample
+│   ├── TinyGPS_KitchenSink
+│   ├── UBlox_BasicNMEARead                  # Only support Ublox GNSS Module           
+│   ├── UBlox_NMEAParsing                    # Only support Ublox GNSS Module           
+│   ├── UBlox_OutputRate                     # Only support Ublox GNSS Module      
+│   └── UBlox_Recovery                       # Only support Ublox GNSS Module      
+├── LoRaWAN                                  # LoRaWAN examples
+│   ├── LMIC_Library_OTTA
+│   └── RadioLib_OTAA
+├── OLED
+│   ├── SH1106FontUsage
+│   ├── SH1106GraphicsTest
+│   ├── SH1106IconMenu
+│   ├── SH1106PrintUTF8
+│   ├── SSD1306SimpleDemo
+│   └── SSD1306UiDemo
+├── PMU                                      # T-Beam &amp; T-Beam S3 PMU demo examples
+├── RadioLibExamples                         # RadioLib examples,Support SX1276/78/62/80...
+│   ├── Receive_Interrupt
+│   └── Transmit_Interrupt
+├── Sensor                                   # Sensor examples,only support t-beams3-supreme
+│   ├── BME280_AdvancedsettingsExample
+│   ├── BME280_TestExample
+│   ├── BME280_UnifiedExample
+│   ├── PCF8563_AlarmByUnits
+│   ├── PCF8563_SimpleTime
+│   ├── PCF8563_TimeLib
+│   ├── PCF8563_TimeSynchronization
+│   ├── QMC6310_CalibrateExample
+│   ├── QMC6310_CompassExample
+│   ├── QMC6310_GetDataExample
+│   ├── QMC6310_GetPolarExample
+│   ├── QMI8658_BlockExample
+│   ├── QMI8658_GetDataExample
+│   ├── QMI8658_InterruptBlockExample
+│   ├── QMI8658_InterruptExample
+│   ├── QMI8658_LockingMechanismExample
+│   ├── QMI8658_MadgwickAHRS
+│   ├── QMI8658_PedometerExample
+│   ├── QMI8658_ReadFromFifoExample
+│   └── QMI8658_WakeOnMotion
+|── T3S3Factory                              # T3 S3 factory test examples
+└── Factory                                  # T-Beam &amp; T-Beam S3 and BPF factory test examples
+</code></pre>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>.</li>
+<li>Search for and install &quot;PlatformIO IDE&quot; in extensions.</li>
+<li>Download <a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"  target="_blank">T3S3 project code</a> from GitHub.</li>
+<li>Open the project folder in VS Code, edit the <code>platformio.ini</code> file to select the desired environment.</li>
+<li>Connect the device, compile and upload the program.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></p>
+</li>
+<li><p>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/"  target="_blank">Arduino ESP32</a></p>
+</li>
+<li><p>Copy all folders in the <code>lib</code> directory to the <code>Sketchbook location</code> directory. To find the library location, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">refer here</a></p>
 <ul>
-<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262"  target="_blank">SX1262 datasheet</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/lib/SensorsLib/datasheet/QMI8658A%20Datasheet%20Rev1.0.pdf"  target="_blank">QMI8658 datasheet</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/lib/SensorsLib/datasheet/QMC6310%20Datasheet%20Rev.C.pdf"  target="_blank">QMC6310 datasheet</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/docs/datasheet/CASIC_ProtocolSpecification.pdf"  target="_blank">CASIC_ProtocolSpecification</a></li>
+<li>Windows: <code>C:\Users\{username}\Documents\Arduino</code></li>
+<li>macOS: <code>/Users/{username}/Documents/Arduino</code></li>
+<li>Linux: <code>/home/{username}/Arduino</code></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_S3_V1.3.pdf"  target="_blank">T3S3</a></p>
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+</li>
+<li><p>Open the corresponding example</p>
 <ul>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a></li>
-<li><a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a></li>
-<li><a href="https://github.com/adafruit/Adafruit_Sensor"  target="_blank">Adafruit_Sensor</a></li>
-<li><a href="https://github.com/ThingPulse/esp8266-oled-ssd1306"  target="_blank">ESP8266_SSD1306</a></li>
-<li><a href="https://github.com/ZinggJM/GxEPD"  target="_blank">GxEPD</a></li>
-<li><a href="https://github.com/sandeepmistry/arduino-LoRa"  target="_blank">LoRa</a></li>
-<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
-<li><a href="https://github.com/olikraus/u8g2"  target="_blank">U8g2</a></li>
+<li>Open the downloaded <code>LilyGo-LoRa-Series</code> folder</li>
+<li>Open the <code>examples</code> folder</li>
+<li>Select the example file and open the file with the <code>ino</code> extension</li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
+</li>
+<li><p>Select the corresponding development board model in the Arduino IDE Tools menu, click the corresponding option in the list below to select</p>
+<p>| Name                                 | Value                                                |<br />
+| ------------------------------------ | ---------------------------------------------------- |<br />
+| Board                                | <strong>LilyGo T3-S3</strong>                                     |<br />
+| Port                                 | Your port                                            |<br />
+| USB CDC On Boot                      | Enable                                               |<br />
+| CPU Frequency                        | 240MHZ(WiFi)                                         |<br />
+| Core Debug Level                     | None                                                 |<br />
+| USB DFU On Boot                      | Disable                                              |<br />
+| Erase All Flash Before Sketch Upload | Disable                                              |<br />
+| Events Run On                        | Core1                                                |<br />
+| Arduino Runs On                      | Core1                                                |<br />
+| USB Firmware MSC On Boot             | Disable                                              |<br />
+| Partition Scheme                     | <strong>Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)</strong> |<br />
+| PSRAM                                | <strong>QSPI PSRAM</strong>                                       |<br />
+| <strong>Board Revision</strong>*                  | <strong>XXXXXX</strong>                                     |<br />
+| Upload Mode                          | <strong>UART0/Hardware CDC</strong>                               |<br />
+| Upload Speed                         | 921600                                               |<br />
+| USB Mode                             | <strong>CDC and JTAG</strong>                                     |<br />
+| Programmer                           | <strong>Esptool</strong>                                          |</p>
+<ul>
+<li><strong>Board revision Select according to actual model</strong></li>
+</ul>
+</li>
+<li><p>Upload the program</p>
+</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://www.espressif.com/en/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<h3 id="SX1262">SX1262</h3>
 <table>
 <thead>
 <tr>
-  <th>T3S3</th>
-  <th>Value</th>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
+  <td>(QWIIC) Uart1 TX</td>
+  <td>43(External QWIIC Socket)</td>
+  <td>✅️</td>
 </tr>
 <tr>
-  <td>Port</td>
-  <td>Your port</td>
+  <td>(QWIIC) Uart1 RX</td>
+  <td>44(External QWIIC Socket)</td>
+  <td>✅️</td>
 </tr>
 <tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
+  <td>QWIIC Socket IO10*</td>
+  <td>10(External QWIIC Socket)</td>
+  <td>✅️</td>
 </tr>
 <tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
+  <td>QWIIC Socket IO21*</td>
+  <td>21(External QWIIC Socket)</td>
+  <td>✅️</td>
 </tr>
 <tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
+  <td>SDA</td>
+  <td>18</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
+  <td>SCL</td>
+  <td>17</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
+  <td>OLED(<strong>SSD1306</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
+  <td>OLED(<strong>SSD1306</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
+  <td>SD CS</td>
+  <td>13</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Flash Size</td>
-  <td>4MB(32Mb)</td>
+  <td>SD MOSI</td>
+  <td>11</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
+  <td>SD MISO</td>
+  <td>2</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
+  <td>SD SCK</td>
+  <td>14</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Partition Scheme</td>
-  <td>Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)</td>
+  <td>LoRa(<strong>SX1262</strong>) SCK</td>
+  <td>5</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>QSPI PSRAM</td>
+  <td>LoRa(<strong>SX1262</strong>) MISO</td>
+  <td>3</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Upload Mode</td>
-  <td>UART0/Hardware CDC</td>
+  <td>LoRa(<strong>SX1262</strong>) MOSI</td>
+  <td>6</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
+  <td>LoRa(<strong>SX1262</strong>) RESET</td>
+  <td>8</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
+  <td>LoRa(<strong>SX1262</strong>) DIO1</td>
+  <td>33</td>
+  <td>❌</td>
 </tr>
 <tr>
-  <td>Programmer</td>
-  <td>Esptool</td>
+  <td>LoRa(<strong>SX1262</strong>) BUSY</td>
+  <td>34</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262</strong>) CS</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Button1 (BOOT)</td>
+  <td>0</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Battery ADC</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>37</td>
+  <td>❌</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<h3 id="1276">1276</h3>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>(QWIIC) Uart1 TX</td>
+  <td>43(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>(QWIIC) Uart1 RX</td>
+  <td>44(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO10*</td>
+  <td>10(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO21*</td>
+  <td>21(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>SDA</td>
+  <td>18</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SCL</td>
+  <td>17</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>11</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) SCK</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MISO</td>
+  <td>3</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MOSI</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) RESET</td>
+  <td>8</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO0</td>
+  <td>9</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO1</td>
+  <td>33</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO2</td>
+  <td>34</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO3</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO4</td>
+  <td>10</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO5</td>
+  <td>36</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) CS</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Button1 (BOOT)</td>
+  <td>0</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Battery ADC</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>37</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>You can use GPIO10 and GPIO21 by removing the two resistors shown in the figure. Otherwise, this GPIO will default to connecting to the radio's DIO3 and DIO4.</p>
+</blockquote>
+<h3 id="1278">1278</h3>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>(QWIIC) Uart1 TX</td>
+  <td>43(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>(QWIIC) Uart1 RX</td>
+  <td>44(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO10*</td>
+  <td>10(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO21*</td>
+  <td>21(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>SDA</td>
+  <td>18</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SCL</td>
+  <td>17</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>11</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) SCK</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) MISO</td>
+  <td>3</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) MOSI</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) RESET</td>
+  <td>8</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO0</td>
+  <td>9</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO1</td>
+  <td>33</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO2</td>
+  <td>34</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO3</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO4</td>
+  <td>10</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) DIO5</td>
+  <td>36</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1278</strong>) CS</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Button1 (BOOT)</td>
+  <td>0</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Battery ADC</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>37</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>You can use GPIO10 and GPIO21 by removing the two resistors shown in the figure below. Otherwise, this GPIO will default to connecting to the radio's DIO3 and DIO4 ports.</p>
+</blockquote>
+<h3 id="1280">1280</h3>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Uart1 TX</td>
+  <td>43(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>Uart1 RX</td>
+  <td>44(External QWIIC Socket)</td>
+  <td>✅️</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO10</td>
+  <td>10(External QWIIC Socket)</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>QWIIC Socket IO21</td>
+  <td>21(External QWIIC Socket)</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SDA</td>
+  <td>18</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SCL</td>
+  <td>17</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>11</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) SCK</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) MISO</td>
+  <td>3</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) MOSI</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) RESET</td>
+  <td>8</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) DIO1</td>
+  <td>9</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) BUSY</td>
+  <td>36</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1280</strong>) CS</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Button1 (BOOT)</td>
+  <td>0</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Battery ADC</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>37</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>Test data to be completed</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. How to choose LoRa module version?</strong><br />
+A. SX1262/SX1276 are suitable for Sub-1GHz bands, with longer communication distance; SX1280 is suitable for 2.4GHz band, with higher data rate.</p>
+</li>
+<li><p><strong>Q. OLED screen not displaying?</strong><br />
+A. Check screen ribbon cable connection, confirm I2C address configuration is correct (SSD1306 is usually 0x3C).</p>
+</li>
+<li><p><strong>Q. SD card not recognized?</strong><br />
+A. Ensure SD card is correctly formatted (FAT32), check if the card is properly inserted, try different SD cards.</p>
+</li>
+<li><p><strong>Q. Program upload failed?</strong><br />
+A. Hold BOOT button and then press RESET to enter download mode, ensure drivers are correctly installed.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_S3_V1.3.pdf"  target="_blank">T3S3 Schematic</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_S3_V1.3.pdf"  target="_blank">Schematic</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+<li><a href="https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf"  target="_blank">SSD1306 Datasheet</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a> - LoRa Communication Library</li>
+<li><a href="https://github.com/olikraus/u8g2"  target="_blank">U8g2</a> - OLED Display Library</li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a> - Graphics Display Library</li>
+<li><a href="https://github.com/esp8266/Arduino/tree/master/libraries/SD"  target="_blank">SD</a> - SD Card Library</li>
+</ul>
 
                         
                     </div>

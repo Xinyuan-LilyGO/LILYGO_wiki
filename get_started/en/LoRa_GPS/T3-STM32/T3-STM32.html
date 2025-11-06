@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T3-STM32 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["STM32WL55", "LoRa", "OLED", "Low Power", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -240,6 +241,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>STM32WL55</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>OLED</li>
+                            
+                                <li>Low Power</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,120 +274,211 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T3-STM32-1.jpg" alt="T-PICO-2350-03" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-STM32-1.jpg" alt="T3-STM32" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="Introduction">Introduction</h2>
-<p>The LILYGO T3 STM32 is a multifunctional IoT development board based on the low-power STM32WL55CCU6 microcontroller. It integrates a LoRa long-range communication module, supporting 433/868/915MHz multi-band frequencies, making it suitable for global IoT applications.</p>
-<p>The hardware configuration includes 256KB Flash and 64KB SRAM, an OLED display driven by the SSD1315 (controlled via I2C), TF card storage expansion (via SPI), and a solar power input interface (4.4–6V), enabling outdoor energy harvesting and low-power operation.</p>
-<p>The board features a wide range of GPIO pins compatible with SPI, I2C, timers, and other peripheral interfaces. It also provides a reserved QWIIC connector, allowing easy expansion with various sensors. This board is ideal for rapid development of IoT terminals such as remote monitoring systems, environmental sensing devices, LoRa gateways, and solar-powered equipment.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T3-STM32-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T3-STM32-3.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3-stm32">Official Store</a>
+</div>
+<h2 id="Purchase-Links">Purchase Links</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">SRAM</th>
+  <th style="text-align:center">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>STM32WL 55CCU6</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>256kb</td>
-</tr>
-<tr>
-  <td>SRAM</td>
-  <td>64kb</td>
-</tr>
-<tr>
-  <td>Dual Core</td>
-  <td>32-bit Arm® Cortex®-M4 + Cortex®-M0+ CPU</td>
-</tr>
-<tr>
-  <td>Built-in RF Modulation</td>
-  <td>LoRa®, (G)FSK, (G)MSK ,BPSK</td>
-</tr>
-<tr>
-  <td>Lora</td>
-  <td>SX1262 433Mhz~915Mhz(optional)</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF card</td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>0.96 inch SSD1315 Driver I2C OLED</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C Interfaces</td>
-</tr>
-<tr>
-  <td>Buttons</td>
-  <td>1 x RST Buttons + 1 x BOOT Buttons</td>
-</tr>
-<tr>
-  <td>IO Expansion</td>
-  <td>2.54mm pitch × 2*13 IO expansion pins</td>
-</tr>
-<tr>
-  <td>Expansion Interfaces</td>
-  <td>2 × QWIIC  expansion interfaces <br>1 × battery Switch <br>1 × 4-pin SWD debug interface (2.54mm pitch) <br>1 × Solar input port (4.4~6V) <br> 1 × LoRa antenna connector <br> 1 × 5-pin antenna socket</td>
-</tr>
-<tr>
-  <td>Mounting Holes</td>
-  <td>2×2mm positioning holes</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td><strong>66x27x13mm</strong></td>
+  <td style="text-align:center">T3-STM32</td>
+  <td style="text-align:center">STM32WL55CCU6</td>
+  <td style="text-align:center">256KB</td>
+  <td style="text-align:center">64KB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t3-stm32"  target="_blank">LILYGO Store</a></td>
 </tr>
 </tbody>
 </table>
-<h3 id="%23%23%23-Related-Links">### Related Links</h3>
-<p>For more project information, please refer to:<br />
-Github：<a href="https://github.com/Xinyuan-LilyGO/T3-STM32/tree/master"  target="_blank">T3 STM32</a></p>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf"  target="_blank">SSD1315</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
-<h4 id="Schematic">Schematic</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/T3_STM32%20V1.0%2024-07-30.pdf"  target="_blank">T3 STM32</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Required-Libraries">Required Libraries</h4>
+<h2 id="Description">Description</h2>
+<p>LILYGO T3 STM32 is a versatile IoT development board based on the STM32WL55CCU6 low-power microcontroller, integrating LoRa long-range communication module that supports 433/868/915MHz multi-band, adapting to global IoT application scenarios. Its hardware configuration includes 256KB flash and 64KB SRAM, equipped with an SSD1315-driven OLED display (controlled via I2C interface), TF card storage expansion (SPI protocol), and solar input interface (4.4~6V), supporting outdoor energy harvesting and low-power operation. The onboard rich GPIO pins are compatible with various peripheral interfaces such as SPI, I2C, timers, and reserved QWIIC ecosystem connectors for easy sensor expansion. Suitable for rapid development of IoT terminals such as remote monitoring, environmental sensing, LoRa gateways, and solar-powered devices.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-STM32-2.jpg" alt="T3-STM32" /></p>
+</div>
+<h3 id="Pin-Diagram">Pin Diagram</h3>
+<img src="./assets/T3-STM32-3.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">STM32 hal</a></li>
-<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">STM32CubeMX</a></li>
+<li>Chip: STM32WL55CCU6</li>
+<li>Architecture: 32-bit Arm® Cortex®-M4 + Cortex®-M0+ Dual-core</li>
+<li>FLASH: 256KB</li>
+<li>SRAM: 64KB</li>
+<li>Built-in Radio: LoRa®, (G)FSK, (G)MSK, BPSK</li>
 </ul>
-<h2 id="Flashing-Tools">Flashing Tools</h2>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 0.96-inch OLED display</li>
+<li>Resolution: 128×64px</li>
+<li>Driver Chip: SSD1315</li>
+<li>Interface: I2C</li>
+</ul>
+<h3 id="Wireless-Communication">Wireless Communication</h3>
+<ul>
+<li>LoRa: SX1262</li>
+<li>Frequency Band: 433MHz/868MHz/915MHz (selectable)</li>
+<li>Antenna Interface: Standard SMA interface</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>Power Supply: USB Type-C</li>
+<li>Solar Input: 4.4~6V</li>
+<li>Battery Switch: Supports battery power switching</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">STM32WL55CCU6 Dual-core Cortex-M4+M0+</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">256KB</td>
+</tr>
+<tr>
+  <td style="text-align:center">SRAM</td>
+  <td style="text-align:center">64KB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">0.96-inch SSD1315 OLED (128×64)</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433/868/915MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Built-in Radio</td>
+  <td style="text-align:center">LoRa®, (G)FSK, (G)MSK, BPSK</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card Expansion (SPI)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">2 × QWIIC Interface + 2.54mm Pitch 2×13 GPIO</td>
+</tr>
+<tr>
+  <td style="text-align:center">Debug Interface</td>
+  <td style="text-align:center">2.54mm Pitch 4-pin SWD Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Interface</td>
+  <td style="text-align:center">Solar Input Interface (4.4~6V)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Antenna Interface</td>
+  <td style="text-align:center">LoRa Antenna Interface + 5-pin Antenna Socket</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">2 × 2mm Positioning Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">66 × 27 × 13 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Development-Tools-Preparation">Development Tools Preparation</h3>
+<h4 id="Download-Tools">Download Tools</h4>
 <ol>
-<li>Official ST programmer: <a href="https://www.st.com.cn/zh/development-tools/stm32cubeprog.html"  target="_blank">STM32CubeProgrammer</a></li>
-<li>JLink software <a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack"  target="_blank">JLink Software and Documentation Pack</a></li>
-<li>STLink driver <a href="https://www.st.com.cn/zh/development-tools/stsw-link009.html"  target="_blank">STLink_V3.0.1_win32</a></li>
+<li><strong>STM32CubeProgrammer</strong> - <a href="https://www.st.com/en/development-tools/stm32cubeprog.html"  target="_blank">ST Official Download</a></li>
+<li><strong>J-Link</strong> - <a href="https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack"  target="_blank">SEGGER Download</a></li>
+<li><strong>ST-Link</strong> - <a href="https://www.st.com/en/development-tools/stsw-link009.html"  target="_blank">ST Official Driver</a></li>
 </ol>
 <blockquote>
-<p>Note: All three flashing tools (<code>JLink</code> <code>STLink</code> <code>STM32CubeProgrammer</code>) require the appropriate drivers to function properly.</p>
+<p><strong>Note</strong>: JLink, STLink, and STM32CubeProgrammer all require drivers to function properly</p>
 </blockquote>
 <h3 id="Development-Platforms">Development Platforms</h3>
 <ol>
+<li><a href="https://www.st.com/en/development-tools/stm32cubeide.html#get-software"  target="_blank">STM32CubeIDE</a></li>
 <li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.st.com.cn/zh/development-tools/stm32cubeide.html#get-software"  target="_blank">STM32Cube</a></li>
+<li><a href="https://platformio.org/"  target="_blank">PlatformIO</a></li>
 </ol>
-<h2 id="Technical-Support">Technical Support</h2>
+<h3 id="Example-Support">Example Support</h3>
+
+<pre class="language-none"><code class="language-none">├─1_led : Create simple projects
+├─2_jlink_rtt_print : Used only to test jlink printing
+├─3_sdcard : Test TF card screen
+├─4_oled : Test oled screen
+├─5_RF_test : This example is AT Slave and is only used for RF testing
+├─6_SubGHz_TXRX : Transceiver test using Lora modulation
+├─DeepSleep : Test board sleep power consumption
+├─PingPong : Port CubeMX package SubGHz_Phy_PingPong program
+</code></pre>
+<h2 id="Related-Tests">Related Tests</h2>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. Which debuggers are supported?</strong><br />
+A. Supports various debuggers like ST-Link, J-Link, connected via 4-pin SWD interface.</p>
+</li>
+<li><p><strong>Q. What are the requirements for solar input?</strong><br />
+A. Supports 4.4~6V solar input, suitable for outdoor energy harvesting applications.</p>
+</li>
+<li><p><strong>Q. How to select LoRa frequency band?</strong><br />
+A. Provides three frequency band versions: 433MHz, 868MHz, 915MHz. Please select according to regional regulatory requirements.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/T3_STM32%20V1.0%2024-07-30.pdf"  target="_blank">T3-STM32_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf"  target="_blank">SSD1315 Datasheet</a></li>
+<li><a href="https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf"  target="_blank">STM32WL55 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-core/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://www.st.com/en/embedded-software/stm32cubewl.html"  target="_blank">STM32 HAL Library</a></li>
+<li><a href="https://www.st.com/en/development-tools/stm32cubemx.html"  target="_blank">STM32CubeMX</a></li>
+<li><a href="https://github.com/stm32-hotspot/STM32WL_LoRa_Radio_Driver"  target="_blank">LoRa Radio Driver</a></li>
+</ul>
 
                         
                     </div>

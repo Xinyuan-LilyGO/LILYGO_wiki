@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T3-TXCO - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-Pico-D4", "LoRa", "TCXO", "OLED", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -154,6 +154,7 @@ var _hmt = _hmt || [];
 </li>
 <li class="active_parent no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator"></span></a><ul class="show">
 <li class="active_parent no_link"><a><span class="label">LoRa/GPS</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/LoRa_GPS/LoRa32/LoRa32.html&from=/get_started/en/LoRa_GPS/LoRa32/LoRa32.html"><span class="label">T-LoRa32</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T-LoRa-C6/T-LoRa-C6.html"><span class="label">T-LoRa-C6</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/LoRa_GPS/T3-STM32/T3-STM32.html"><span class="label">T3 STM32</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/get_started/en/LoRa_GPS/T3-TXCO/T3-TXCO.html"><span class="label">T3 TXCO</span><span class=""></span></a></li>
@@ -240,6 +241,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-Pico-D4</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>TCXO</li>
+                            
+                                <li>OLED</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,167 +274,468 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T3-TXCO-1.jpg" alt="T3-TXCO" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO LORA32 TCXO is a wireless communication module based on LoRa technology, supporting dual-band frequencies (868/915MHz) to accommodate IoT applications across various global regions. The module is equipped with a temperature-compensated crystal oscillator (TCXO), which significantly improves frequency stability—ideal for high-precision communication in environments with large temperature fluctuations.</p>
-<p>Its design integrates LoRa modulation technology with a 32-bit microcontroller, enabling long-range, low-power data transmission along with local processing capabilities. This makes it well-suited for applications such as smart agriculture, remote sensing, and industrial monitoring.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T3-TXCO-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T3-TXCO-3.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t3-txco">Official Store</a>
+</div>
+<h2 id="Version-History">Version History</h2>
+<h2 id="Purchase-Links">Purchase Links</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-Pico-D4</td>
-</tr>
-<tr>
-  <td>FLASH</td>
-  <td>4MB</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>2MB</td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>1306 IIC-driver OLED</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>SX1276: 868, 915 MHz</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF Card</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>Wi-Fi + Bluetooth V4.2 + BLE</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG (Type-C interface)</td>
-</tr>
-<tr>
-  <td>IO Interface</td>
-  <td>2×13 dual-row expansion IO interface, 2.54mm pitch</td>
-</tr>
-<tr>
-  <td>Expansion Interfaces</td>
-  <td>1 × Antenna Socket, 1 × Antenna Connector, 2 × QWIIC Interfaces</td>
+  <td style="text-align:center">T3-TXCO</td>
+  <td style="text-align:center">ESP32-Pico-D4</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">2MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t3-txco"  target="_blank">LILYGO Store</a></td>
 </tr>
 </tbody>
 </table>
-<p>Buttons | 1 × RESET Button + 1 × BOOT Button<br />
-|Power Supply | USB / 3.7V Li-ion Battery, Battery Switch, Solar Input Interface<br />
-|Mounting Holes | 2 × 2mm Positioning Holes<br />
-|Dimensions | 66 × 27 × 13 mm</p>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"  target="_blank">T3-TXCO</a></p>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_V3.0.pdf"  target="_blank">T3-TXCO</a></p>
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>LILYGO LORA32 TCXO is a wireless communication module based on LoRa technology, supporting 868/915MHz dual-band, suitable for IoT applications in different regions worldwide. The module is equipped with a Temperature Compensated Crystal Oscillator (TCXO), significantly improving frequency stability, making it suitable for high-precision communication in environments with large temperature variations. Its design integrates LoRa modulation technology with a 32-bit microcontroller, combining long-distance, low-power data transmission with local processing capabilities. It can be widely used in smart agriculture, remote sensors, industrial monitoring, and other scenarios.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T3-TXCO-2.jpg" alt="T3-TXCO" /></p>
+</div>
+<h3 id="Pin-Diagram">Pin Diagram</h3>
+<img src="./assets/T3-TXCO-3.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-Pico-D4</li>
+<li>PSRAM: 2MB</li>
+<li>FLASH: 4MB</li>
+<li>Wireless: Wi-Fi + Bluetooth 4.2 + BLE</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Type: SSD1306 I2C OLED</li>
+<li>Interface: I2C</li>
+<li>Driver Chip: SSD1306</li>
+</ul>
+<h3 id="Wireless-Communication">Wireless Communication</h3>
+<ul>
+<li>LoRa: SX1276</li>
+<li>Frequency Band: 868MHz/915MHz</li>
+<li>Feature: Temperature Compensated Crystal Oscillator (TCXO)</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>Power Supply: USB Type-C / 3.7V Lithium Battery</li>
+<li>Solar Input: Supported</li>
+<li>Battery Switch: Supports power switching</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-Pico-D4</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">2MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">SSD1306 I2C OLED</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1276 (868/915MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">TCXO</td>
+  <td style="text-align:center">Temperature Compensated Crystal Oscillator</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card Expansion</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">Wi-Fi + Bluetooth 4.2 + BLE</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">2 × QWIIC Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPIO Interface</td>
+  <td style="text-align:center">2.54mm Pitch 2×13 Expansion IO Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Antenna Interface</td>
+  <td style="text-align:center">Antenna Socket Interface + SMA Antenna Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Options</td>
+  <td style="text-align:center">USB/3.7V Lithium Battery/Solar Input</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">2 × 2mm Positioning Holes</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">66 × 27 × 13 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/LoRa_Communication"  target="_blank">LoRa_Communication</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">LoRa Communication Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/OLED_Display"  target="_blank">OLED_Display</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">OLED Display Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/TCXO_Stability"  target="_blank">TCXO_Stability</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">TCXO Stability Test Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Battery_Power"  target="_blank">Battery_Power</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Battery Power Example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Solar_Power"  target="_blank">Solar_Power</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Solar Power Example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>, choose the installation according to your system type.</li>
+<li>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open extensions), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, you can go to GitHub to download the program. You can download the main branch program by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to open it), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; of the corresponding folder after successfully adding the folder). Under the &quot;[platformio]&quot; section, uncomment and select the example program you want to upload (marked with &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to the computer and click the &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li><p>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></p>
+</li>
+<li><p>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/"  target="_blank">Arduino ESP32</a></p>
+</li>
+<li><p>Copy all folders in the <code>lib</code> directory to the <code>Sketchbook location</code> directory. To find the library location, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">refer here</a></p>
+<ul>
+<li>Windows: <code>C:\Users\{username}\Documents\Arduino</code></li>
+<li>macOS: <code>/Users/{username}/Documents/Arduino</code></li>
+<li>Linux: <code>/home/{username}/Arduino</code></li>
+</ul>
+</li>
+<li><p>Open the corresponding example</p>
+<ul>
+<li>Open the downloaded <code>LilyGo-LoRa-Series</code> folder</li>
+<li>Open the <code>examples</code> folder</li>
+<li>Select the example file and open the file with the <code>ino</code> extension</li>
+</ul>
+</li>
+<li><p>Select the corresponding development board model in the Arduino IDE Tools menu, click the corresponding option in the list below to select</p>
+<p>| Name                                 | Value                                |<br />
+| ------------------------------------ | ------------------------------------ |<br />
+| Board                                | <strong>ESP32 Dev Module</strong>                 |<br />
+| Port                                 | Your port                            |<br />
+| CPU Frequency                        | 240MHZ(WiFi/BT)                      |<br />
+| Core Debug Level                     | None                                 |<br />
+| Erase All Flash Before Sketch Upload | Disable                              |<br />
+| Events Run On                        | Core1                                |<br />
+| Flash Frequency                      | 80MHZ                                |<br />
+| Flash Mode                           | QIO                                  |<br />
+| Flash Size                           | <strong>4MB(32Mb)</strong>                        |<br />
+| JTAG Adapter                         | Disabled                             |<br />
+| Arduino Runs On                      | Core1                                |<br />
+| Partition Scheme                     | <strong>Huge APP (3MB No OTA/1MB SPIFFS)</strong> |<br />
+| PSRAM                                | <strong>Enable</strong>                           |<br />
+| Upload Speed                         | 921600                               |<br />
+| Programmer                           | <strong>Esptool</strong>                          |</p>
+</li>
+<li><p>Please uncomment the corresponding model in the <code>utilities.h</code> file according to your development board model, for example <code>T3_V3_0_SX1276_TCXO</code>, otherwise compilation will report an error</p>
+</li>
+<li><p>Upload the program</p>
+</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SDA</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>OLED(<strong>SSD1306</strong>) SCL</td>
+  <td>22</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>15</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) SCK</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MISO</td>
+  <td>19</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) MOSI</td>
+  <td>27</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) RESET</td>
+  <td>23</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO0</td>
+  <td>26</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) DIO1</td>
+  <td>32</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) CS</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1276</strong>) TCXO EN</td>
+  <td>12</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Battery ADC</td>
+  <td>35</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>On Board LED</td>
+  <td>25</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<h3 id="Power-Consumption">Power Consumption</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Firmware</th>
+  <th style="text-align:center">Program</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><code>[T3-TXCO_V3.0][LoRa_Transmit]_firmware_V1.0.0.bin</code></td>
+  <td style="text-align:center"><code>LoRa Transmission</code></td>
+  <td style="text-align:left">Power Consumption: To be completed</td>
+</tr>
+<tr>
+  <td style="text-align:center"><code>[T3-TXCO_V3.0][WiFi_Active]_firmware_V1.0.0.bin</code></td>
+  <td style="text-align:center"><code>WiFi Active</code></td>
+  <td style="text-align:left">Power Consumption: To be completed</td>
+</tr>
+<tr>
+  <td style="text-align:center"><code>[T3-TXCO_V3.0][Deep_Sleep]_firmware_V1.0.0.bin</code></td>
+  <td style="text-align:center"><code>Deep Sleep</code></td>
+  <td style="text-align:left">Power Consumption: To be completed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="TCXO-Performance">TCXO Performance</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Temperature Range</th>
+  <th style="text-align:center">Frequency Stability</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">-40°C ~ +85°C</td>
+  <td style="text-align:center">±0.5ppm</td>
+  <td style="text-align:center">TCXO Temperature Compensation Performance</td>
+</tr>
+<tr>
+  <td style="text-align:center">25°C</td>
+  <td style="text-align:center">±0.2ppm</td>
+  <td style="text-align:center">Frequency Accuracy at Room Temperature</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Features</th>
+  <th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>RF  Module</td>
+  <td>SX1276</td>
+</tr>
+<tr>
+  <td>Frequency range</td>
+  <td>840～945MHz</td>
+</tr>
+<tr>
+  <td>Transfer rate(LoRa)</td>
+  <td>0.018K～37.5Kbps</td>
+</tr>
+<tr>
+  <td>Transfer rate(FSK)</td>
+  <td>1.2K～300Kbps</td>
+</tr>
+<tr>
+  <td>Modulation</td>
+  <td>FSK, GFSK, MSK, GMSK, LoRa，OOK</td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. How to adjust the external antenna resistor?</strong><br />
+A. Refer to the image below to adjust the resistor direction for the external antenna:</p>
+<img src="./assets/T3-TXCO-4.jpg" alt="Antenna Resistor Adjustment" width=60%>
+</li>
+<li><p><strong>Q. What advantages does TCXO have over ordinary crystal oscillators?</strong><br />
+A. TCXO (Temperature Compensated Crystal Oscillator) can maintain higher frequency stability when temperature changes, suitable for applications with large environmental temperature variations.</p>
+</li>
+<li><p><strong>Q. What power supply methods are supported?</strong><br />
+A. Supports USB Type-C power supply, 3.7V lithium battery power supply, and solar input, switchable via battery switch.</p>
+</li>
+<li><p><strong>Q. What is the LoRa communication distance?</strong><br />
+A. Under ideal conditions, the communication distance can reach several kilometers, depending on environmental factors and antenna configuration.</p>
+</li>
+<li><p><strong>Q. Why does my board fail to upload programs?</strong><br />
+A. Please hold down the &quot;BOOT&quot; button and press the &quot;RST&quot; button simultaneously, then release the &quot;RST&quot; button to enter download mode, and try uploading the program again.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T3_V3.0.pdf"  target="_blank">T3-TXCO_V3.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf"  target="_blank">ESP32-Pico-D4 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276"  target="_blank">SX1276 Datasheet</a></li>
+<li><a href="https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf"  target="_blank">SSD1306 Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
 <li><a href="https://github.com/olikraus/u8g2"  target="_blank">u8g2</a></li>
 <li><a href="https://github.com/lewisxhe/XPowersLib"  target="_blank">XPowersLib</a></li>
 <li><a href="https://github.com/sandeepmistry/arduino-LoRa"  target="_blank">LoRa</a></li>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32 Dev Module</td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi/BT)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Frequency</td>
-  <td>80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>4MB(32Mb)</td>
-</tr>
-<tr>
-  <td>JTAG Adapter</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>Programmer</td>
-  <td>Esptool</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>
