@@ -18,7 +18,7 @@ date: LILYGO Device Firmware
 
 | Device        | Firmware                |  Description |   
 |--------------------------------------|--------------------------------|---|
-| test                                | <a href="./bin/maixpy_speech.bin" download="maixpy_speech.bin">下载</a>            |   |   |
+| test                                | [download](./bin/maixpy_speech.bin)               |   |   |
 
 # Device 2
 
