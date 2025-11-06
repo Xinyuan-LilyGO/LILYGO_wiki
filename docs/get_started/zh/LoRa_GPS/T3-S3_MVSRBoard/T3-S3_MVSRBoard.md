@@ -69,34 +69,34 @@ T3-S3 MVSR版本是基于T3-S3主板设计了带有震动马达，麦克风，�
 * 总线通信协议：IIS
 * 其他：默认使用9dB增益
 * 相关资料：
-    >[MAX98357A](./information/MAX98357AETE+T.pdf)
+    >[MAX98357A](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf)
 * 依赖库：
     >[Arduino_DriveBus-1.1.16]()
 
 ###  麦克风
 
-> #### T3-S3-MVSRBoard_V1.0 版本
-> * 芯片：MSM261S4030H0R
-> * 总线通信协议：IIS
-> * 相关资料：
->    >[MSM261S4030H0R](./information/MEMSensing-MSM261S4030H0R.pdf)
-> * 依赖库：
->     >[Arduino_DriveBus-1.1.16]()
+ #### T3-S3-MVSRBoard_V1.0 版本
+ * 芯片：MSM261S4030H0R
+ * 总线通信协议：IIS
+ * 相关资料：
+    >[MSM261S4030H0R](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf)
+ * 依赖库：
+     >[Arduino_DriveBus-1.1.16]()
 
-> #### T3-S3-MVSRBoard_V1.1 版本
-> * 芯片：MP34DT05-A
-> * 总线通信协议：PDM
-> * 相关资料：
->    >[MP34DT05-A](./information/mp34dt05-a.pdf)
-> * 依赖库：
->    >[Arduino_DriveBus-1.1.16]()
+ #### T3-S3-MVSRBoard_V1.1 版本
+ * 芯片：MP34DT05-A
+ * 总线通信协议：PDM
+ * 相关资料：
+    >[MP34DT05-A](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf)
+ * 依赖库：
+    >[Arduino_DriveBus-1.1.16]()
 
 ###  RTC
 
 * 芯片：PCF85063ATL
 * 总线通信协议：IIC
 * 相关资料：
-    >[PCF85063ATL](./information/PCF85063ATL-1,118.pdf)
+    >[PCF85063ATL](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf)
 * 依赖库：
     >[Arduino_DriveBus-1.1.16]()
 
