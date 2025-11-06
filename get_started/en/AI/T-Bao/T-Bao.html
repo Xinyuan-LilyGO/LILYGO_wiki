@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Bao - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["K210", "ESP32", "AI", "Camera", "Touch Screen", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,18 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>K210</li>
+                            
+                                <li>ESP32</li>
+                            
+                                <li>AI</li>
+                            
+                                <li>Camera</li>
+                            
+                                <li>Touch Screen</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -264,243 +276,296 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Bao-1.jpg" alt="T-Bao" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-bao">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-bao">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>T-BAO is an open-source AIoT terminal based on the ESP32-S3-WROOM-1 development board. It features high performance, low power consumption, cost-effectiveness, expandability, and programmability. The platform is fully compatible with Arduino and high-performance embedded AI frameworks, integrating the K210 RISC-V AI processor with an ESP32 dual-core Wi-Fi/BLE module.</p>
-<p>It comes equipped with a professional-grade OV2640 2MP camera (with 180° adjustable rotation) and a 1.54-inch ST7789V IPS touch screen (with 90° adaptive rotation), enabling millisecond-level face recognition and real-time dynamic image processing.</p>
-<p>Audio capabilities include a MAX98357A I2S digital amplifier, a high-sensitivity MSM261S microphone array, and a hardware codec module for voice interaction and high-definition audio output.</p>
-<p>T-BAO adopts the AXP202 intelligent power management system, supporting 3.7V lithium battery power supply and ultra-low-power operation. It integrates an MPU6050 six-axis sensor, TF card storage expansion, and rich interface options (UART/SPI/I2C/Touch), and is fully compatible with both Arduino and MicroPython ecosystems.</p>
-<p>Designed for applications such as industrial visual inspection, smart security, AIoT terminals, and educational robotics, T-BAO provides an open-source SDK and complete development documentation, accelerating rapid deployment in commercial use cases.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Bao-2.jpg" alt="summary" width=80%>
-<img src="./assets/T-Bao-3.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Bao.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Attention">Attention</h3>
-<blockquote class="spoiler warning">
-<p>⚠️Precautions for SD cards:</p>
-</blockquote>
-<img src="./assets/T-Bao-en.jpg" alt="summary" width=80%>
-<h3 id="Development-board-parameters">Development board parameters</h3>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-D0WDQ6-V3 Xtensa LX6 Dual Core</td>
-</tr>
-<tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>Clock</td>
-  <td>240Mhz</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>Wi-Fi: 802.11b /g/n, Bluetooth: V4.2 + BLE</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF Card</td>
-</tr>
-<tr>
-  <td>Motor</td>
-  <td>drv8833</td>
-</tr>
-<tr>
-  <td>Power Management</td>
-  <td>AXP202 PMU</td>
-</tr>
-<tr>
-  <td>Gyroscope</td>
-  <td>MPU6050</td>
-</tr>
-<tr>
-  <td>Camera</td>
-  <td>OV2640 (2 million pixels)</td>
-</tr>
-<tr>
-  <td>Screen</td>
-  <td>ST7789 1.54-inch IPS Capacitive Touch LCD (240x240)</td>
-</tr>
-<tr>
-  <td>Keys</td>
-  <td>1 x RST key <br> 1 x BOOT key and knob <br> 4 × Screen keys</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C interface</td>
-</tr>
-<tr>
-  <td>UI</td>
-  <td>LVGL</td>
-</tr>
-<tr>
-  <td>Extended interfaces</td>
-  <td>2 × QWIIC interfaces + 4 × Magnetic interfaces</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>164x46x42mm</td>
-</tr>
-<tr>
-  <td>USB power supply</td>
-  <td>5V/500mA</td>
+  <td style="text-align:center">T-Bao_V1.0</td>
+  <td style="text-align:center">Latest Version</td>
+  <td style="text-align:left">Initial version of dual-core AIoT terminal based on K210+ESP32</td>
 </tr>
 </tbody>
 </table>
-<table role="table" class="center_table">
-    <thead>
-        <tr>
-            <th colspan = "2">K210 Basic parameters of the chip</th>   
-        </tr>
-    </thead>
-    <tbody>
-    <tr>    
-        <td>core</td>
-        <td>RISC-V Dual Core 64bit, with FPU</td>
-    </tr>
-    <tr>
-        <td>basic frequency</td>
-        <td>400MHz (Can be overclocked to 600MHz)</td>
-    </tr>
-    <tr>
-        <td>SRAM</td>
-        <td>Built-in 8M Byte</td>
-    </tr>
-    <tr>
-        <td>image identification</td>
-        <td>QVGA@60fps/VGA@30fps</td>
-    </tr>
-    <tr>
-        <td>Speech Recognition</td>
-        <td>Microphone Array (8mics)</td>
-    </tr>
-    <tr>
-        <td>Network Model</td>
-        <td><li>Supports YOLOv3<li>Mobilenetv2<li>TinyYOLOv2<li> Face recognition</td>
-    </tr>
-    <tr>
-        <td>Deep Learning Framework</td>
-        <td>Supports TensorFlow \ Keras \ Darknet \ Caffe etc. Mainstream frameworks</td>
-    </tr>
-    <tr>
-        <td>Peripherals</td>
-        <td>FPIOA、 UART、 GPIO、 SPI、 I2C、I2S、 TIMER</td>
-    </tr>
-    <tr>
-        <td>Video Processing</td>
-        <td><li>Neural Network Processor (KPU)<li>FPU complies with IEEE754-2008 standard<li>Audio Processor (APU)<li>Fast Fourier Transform Accelerator(FFT)</td>
-    </tr>
-  </tbody>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">AI Chip</th>
+  <th style="text-align:center">Main MCU</th>
+  <th style="text-align:center">Screen</th>
+  <th style="text-align:center">Camera</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Bao</td>
+  <td style="text-align:center">K210</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">1.54&quot; IPS Touch</td>
+  <td style="text-align:center">OV2640</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-bao"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script"  target="_blank">T-Bao</a></p>
-<blockquote>
-<p><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython</a> is a parser based on the grammar of Python3. It contains most of the basic grammar of Python3. It mainly runs on embedded chips with limited performance and memory. (Note that Micropython does not include all the syntax of Python3)</p>
-</blockquote>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://docs.micropython.org/en/latest/library/index.html"  target="_blank">MicroPython</a></li>
-<li><a href="https://docs.espressif.com/projects/esp-idf/en/v5.4.1/esp32/get-started/index.html"  target="_blank">ESP32</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">T-Bao</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="instructions">instructions</h4>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>Identify_Direction_model.kmodel</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Direction Tracking</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>face_model_at_0x300000.kfpkg</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">speech_recognizer</th>
-    </tr>
-  </thead>
-    <tr>
-    <td>ESP32 Firmware</td>
-    <td>ESP32_AT_Firmware_UART1_SGPIO.bin</td>
-  </tr>:
-  <tr>
-    <td>K210 Firmware</td>
-    <td>maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</td>
-  </tr>
-  <tr>
-    <td>Direction model</td>
-    <td>maix_asr_2900k_0x500000.kmodel</td>
-  </tr>
-</table>
-<blockquote class="spoiler warning">
-<p> It should be noted here that the kflash_gui tool should be used to write maix_asR_2900K_0x50000.kmodel to the address 0x500000. And first burn maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</p>
+<h2 id="Description">Description</h2>
+<p>T-Bao is an open-source AIoT terminal based on ESP32-S3-WROOM-1 and K210 RISC-V AI chip, featuring high performance, low power consumption, expandability, and programmability. It deeply integrates K210 RISC-V architecture AI chip with ESP32 dual-core Wi-Fi/BLE communication module, equipped with professional-grade OV2640 2-megapixel camera (supporting 180° rotation adjustment) and ST7789V 1.54-inch IPS touch screen (90° adaptive rotation display), achieving millisecond-level face recognition and dynamic image processing.</p>
+<p>Built-in MAX98357A I2S digital power amplifier, MSM261S high-sensitivity microphone array and hardware codec unit, supporting voice interaction and high-definition audio output. Uses AXP202 intelligent power management system, supports 3.7V lithium battery power supply and ultra-low power operation, integrates MPU6050 six-axis sensor, TF card storage expansion and rich interface resources (UART/SPI/I2C/Touch), fully compatible with Arduino/MicroPython ecosystem. Suitable for industrial vision detection, smart security, AIoT terminals and educational robots.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Bao-2.jpg" alt="T-Bao" /></p>
+</div>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Bao-3.jpg" alt="T-Bao" /></p>
+</div>
+<h3 id="Pin-Diagram">Pin Diagram</h3>
+<img src="./assets/T-Bao.jpg" alt="summary" width=100%>
+<h3 id="Important-Notes">Important Notes</h3>
+<blockquote>
+<p>⚠️ <strong>SD Card Usage Notes</strong></p>
 </blockquote>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<p>The latest firmware can be downloaded in <a href="https://cn.dl.sipeed.com/MAIX/MaixPy/release/master"  target="_blank">here</a>, according to their own needs to choose the firmware, then onto/on to a development board.</p>
-<p>The firmware download tools can be downloaded from here: <a href="https://cn.dl.sipeed.com/shareURL/MAIX/tools"  target="_blank">kflash_gui</a></p>
-<h3 id="Development-Platform">Development Platform</h3>
+<img src="./assets/T-Bao-en.jpg" alt="summary" width=80%>
+<h2 id="Modules">Modules</h2>
+<h3 id="AI-Processor-%28K210%29">AI Processor (K210)</h3>
+<ul>
+<li>Chip: Kendryte K210</li>
+<li>Architecture: RISC-V Dual Core 64bit with FPU</li>
+<li>Frequency: 400MHz (can be overclocked to 600MHz)</li>
+<li>Memory: 8MB SRAM</li>
+<li>NPU: KPU Neural Network Processor</li>
+<li>Features: Supports YOLOv3, Mobilenetv2, TinyYOLOv2, face recognition and other models</li>
+</ul>
+<h3 id="Main-Controller">Main Controller</h3>
+<ul>
+<li>Chip: ESP32-D0WDQ6-V3</li>
+<li>Core: Xtensa LX6 Dual Core</li>
+<li>FLASH: 16MB</li>
+<li>PSRAM: 8MB</li>
+<li>Clock: 240MHz</li>
+<li>Wireless: Wi-Fi 802.11 b/g/n, Bluetooth 4.2 + BLE</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 1.54-inch IPS</li>
+<li>Resolution: 240x240px</li>
+<li>Display Type: IPS LCD</li>
+<li>Driver Chip: ST7789V</li>
+<li>Touch: Capacitive Touch Screen</li>
+<li>UI Framework: LVGL</li>
+</ul>
+<h3 id="Camera">Camera</h3>
+<ul>
+<li>Sensor: OV2640</li>
+<li>Pixels: 2 megapixels</li>
+<li>Features: Supports 180° rotation adjustment</li>
+</ul>
+<h3 id="Audio">Audio</h3>
+<ul>
+<li>Amplifier: MAX98357A I2S</li>
+<li>Microphone: MSM261S High Sensitivity Microphone Array</li>
+</ul>
+<h3 id="Sensors">Sensors</h3>
+<ul>
+<li>Motion Sensor: MPU6050 (Six-axis gyroscope + accelerometer)</li>
+<li>Power Management: AXP202 PMU</li>
+</ul>
+<h3 id="Motor-Driver">Motor Driver</h3>
+<ul>
+<li>Chip: DRV8833</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">AI Chip</td>
+  <td style="text-align:center">K210 RISC-V Dual Core</td>
+</tr>
+<tr>
+  <td style="text-align:center">Main MCU</td>
+  <td style="text-align:center">ESP32-D0WDQ6-V3</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">1.54-inch ST7789 IPS Touch (240×240)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Camera</td>
+  <td style="text-align:center">OV2640 (2 megapixels)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio</td>
+  <td style="text-align:center">MAX98357A + MSM261S Microphone Array</td>
+</tr>
+<tr>
+  <td style="text-align:center">Sensor</td>
+  <td style="text-align:center">MPU6050 Six-axis Sensor</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power Management</td>
+  <td style="text-align:center">AXP202 PMU</td>
+</tr>
+<tr>
+  <td style="text-align:center">Motor Driver</td>
+  <td style="text-align:center">DRV8833</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">Wi-Fi 802.11b/g/n + Bluetooth 4.2 BLE</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × TYPE-C Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">RST + BOOT + Knob + 4× Screen Buttons</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interface</td>
+  <td style="text-align:center">2 × QWIIC + 4 × Magnetic Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>164×46×42mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Applications">Example Applications</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Application Type</th>
+  <th style="text-align:center">K210 Firmware</th>
+  <th style="text-align:center">ESP32 Firmware</th>
+  <th style="text-align:left">Model File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Direction Recognition</td>
+  <td style="text-align:center">maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">Identify_Direction_model.kmodel</td>
+</tr>
+<tr>
+  <td style="text-align:left">Face Recognition</td>
+  <td style="text-align:center">maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">face_model_at_0x300000.kfpkg</td>
+</tr>
+<tr>
+  <td style="text-align:left">Speech Recognition</td>
+  <td style="text-align:center">maixpy_v0.6.2_83_gf0280db50_minimum_speech_with_ide_support.bin</td>
+  <td style="text-align:center">ESP32_AT_Firmware_UART1_SGPIO.bin</td>
+  <td style="text-align:left">maix_asr_2900k_0x500000.kmodel</td>
+</tr>
+</tbody>
+</table>
+<h3 id="K210-Firmware-Flashing">K210 Firmware Flashing</h3>
 <ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>Download the latest firmware: <a href="https://cn.dl.sipeed.com/MAIX/MaixPy/release/master"  target="_blank">MaixPy Firmware</a></li>
+<li>Download flashing tool: <a href="https://cn.dl.sipeed.com/shareURL/MAIX/tools"  target="_blank">kflash_gui</a></li>
+<li>Select corresponding firmware and model files for flashing</li>
 </ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<blockquote>
+<p><strong>Note</strong>: Speech recognition application requires writing the model file <code>maix_asr_2900k_0x500000.kmodel</code> to address 0x500000 first, then flashing the firmware.</p>
+</blockquote>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> - ESP32 Development</li>
+<li><a href="https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide"  target="_blank">MaixPy IDE</a> - K210 Development</li>
+<li><a href="https://www.espressif.com/en/products/sdks/esp-idf"  target="_blank">ESP-IDF</a> - ESP32 Advanced Development</li>
+<li><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython</a> - Script Development</li>
+</ol>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>Test data to be completed</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. How do K210 and ESP32 communicate?</strong><br />
+A. Communication is through UART serial port, with K210 as AI processor and ESP32 as main controller and communication module.</p>
+</li>
+<li><p><strong>Q. Camera not working properly?</strong><br />
+A. Check camera ribbon cable connection, ensure camera module is properly inserted, check power supply.</p>
+</li>
+<li><p><strong>Q. Speech recognition inaccurate?</strong><br />
+A. Ensure use in quiet environment, check if microphone is blocked, try retraining the model.</p>
+</li>
+<li><p><strong>Q. How to extend battery life?</strong><br />
+A. Use AXP202 power management functions, turn off camera and screen when not needed, enable low power mode.</p>
+</li>
+<li><p><strong>Q. SD card not recognized?</strong><br />
+A. Refer to SD card installation diagram in Important Notes, ensure card is properly inserted and formatted as FAT32.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">T-Bao Schematic</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script"  target="_blank">Example Code</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGo-K210-Script/blob/master/schematic/K210_Main.pdf"  target="_blank">Schematic</a></li>
+<li><a href="https://canaan.io/product/kendryteai"  target="_blank">K210 Datasheet</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://www.ovt.com/sensors/OV2640"  target="_blank">OV2640 Datasheet</a></li>
+<li><a href="https://www.newhavendisplay.com/app_notes/ST7789V.pdf"  target="_blank">ST7789 Datasheet</a></li>
+<li><a href="https://docs.micropython.org/en/latest/"  target="_blank">MicroPython Documentation</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/sipeed/MaixPy"  target="_blank">MaixPy</a> - K210 Development Framework</li>
+<li><a href="https://lvgl.io/"  target="_blank">LVGL</a> - Embedded Graphics Library</li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a> - Graphics Display Library</li>
+<li><a href="https://github.com/espressif/arduino-esp32"  target="_blank">ESP32 Arduino Core</a> - ESP32 Arduino Support</li>
+<li><a href="https://github.com/adafruit/Adafruit_Sensor"  target="_blank">Adafruit_Sensor</a> - Sensor Library</li>
+</ul>
 
                         
                     </div>

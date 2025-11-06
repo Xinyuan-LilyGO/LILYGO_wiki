@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Display K230 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["K230", "AIoT", "LoRa", "AMOLED", "RISC-V"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>K230</li>
+                            
+                                <li>AIoT</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>RISC-V</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -264,145 +274,406 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/K256outlook1.jpg" alt="T-Display K230" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="Introduction">Introduction</h2>
-<p>T-Display K230 is a new product developed by Canaan Technology following the K210, based on their latest chip K230. It inherits the powerful computing capability of the K230 with a clock speed up to 1.6GHz, integrates LILYGO's signature LoRa communication and display features, and comes equipped with HDMI and Ethernet interfaces, offering developers broader application possibilities.</p>
-<p>In terms of design, the T-Display K230 adopts a compact form factor suitable for handheld devices. It features a 4.1-inch high-quality AMOLED screen with capacitive touch support, delivering smooth visual and interactive experiences. We also provide a screen UI demo application to help developers get started quickly.</p>
-<p>As a high-performance AIoT chip, the K230 boasts robust computing power and versatile expansion interfaces:</p>
-<p>Dual-core RISC-V processor with clock speeds up to 1.6GHz for powerful performance</p>
-<p>Integrated NPU (Neural Processing Unit) delivering up to 1.6 TOPS for AI inference acceleration</p>
-<p>Built-in ISP (Image Signal Processor) optimized for camera image processing</p>
-<p>Support for H.264 encoding, ideal for video streaming and edge computing</p>
-<p>The combination of LoRa communication and ISP camera capabilities gives the T-Display K230 significant advantages in remote/wireless data transmission, AI recognition, IoT monitoring, and interactive applications. Join us in exploring the limitless possibilities of LoRa and AIoT!</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/K256outlook3.jpg" alt="summary" width=100%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Display-K230-cn.jpg" alt="summary" width=100%>
-<!-- | <p style="white-space:nowrap">Arduino IDE Setting  </p> | <p style="white-space:nowrap">Value</p> |
-|   :----------------------------------------------- | :------------------------------------------------ |
-| Board                                    | **ESP32S3 Dev Module**
-| Port                                     |Your port         
-| USB CDC On Boot                          |Enable 
-| CPU Frequency                            |240MHZ(WiFi)    
-| Core Debug Level                         |None       
-| USB DFU On Boot                          |disable            
-| Erase All Flash Before Sketch Upload     |disable   
-| Events Run On                            |Your port         
-| Flash Mode                               |Enable 
-| Flash Size                               |240MHZ(WiFi)    
-| Arduino Runs On                          |None 
-| USB Firmware MSC On Boot                 |disable            
-| Partition Scheme                         |disable   
-| PSRAM                                    |240MHZ(WiFi)    
-| Upload Mode                              |None 
-| Upload Speed                             |disable            
-| USB Mode                                 |CDC and JTAG    -->
-<h2 id="Prameter">Prameter</h2>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-display-k230">Official Store</a>
+</div>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>CPU Big Core</td>
-  <td>1.6GHz RISC-V 32KB I-cache, 32KB D-cache, 256KB L2 Cache，128bit RVV 1.0 extension</td>
-</tr>
-<tr>
-  <td>CPU small core</td>
-  <td>0.8GHz RISC-V 32KB I-cache, 32KB D-cache, 128KB L2 Cache</td>
-</tr>
-<tr>
-  <td>KPU</td>
-  <td>supports INT8 and INT16 Typical network performance: Resnet 50 ≥ 85fps @INT8; Mobilenet_v2 ≥ 670fp@int8; YoloV5S ≥ 38fps @INT8</td>
-</tr>
-<tr>
-  <td>Memory</td>
-  <td>8Gb LPDDR4</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF Card</td>
-</tr>
-<tr>
-  <td>Camera</td>
-  <td>3-channel MIPI CSI-2 input, supports 1/2/4-lane modes (1 channel configured by default, others optional)<br>Max config: 3×2-lane or 1×4-lane + 1×2-lane<br>Data rate up to 1.5Gbps<br></td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>30pin FPC interface: 4.1-inch 568×1232 AMOLED (2-lane MIPI DSI output)</td>
-</tr>
-<tr>
-  <td>Touch: 6pin capacitive touchscreen</td>
-  <td></td>
-</tr>
-<tr>
-  <td>HDMI</td>
-  <td>19pin HDMI port: Supports 1080P@30FPS</td>
-</tr>
-<tr>
-  <td>Audio Output</td>
-  <td>3.5mm audio jack</td>
-</tr>
-<tr>
-  <td>Audio Input</td>
-  <td>Microphone (mic)</td>
-</tr>
-<tr>
-  <td>Network</td>
-  <td>802.11b/g/n Wi-Fi ; IEEE 802.3u Ethernet</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>SX1262/SX1280, frequency bands: 433~923MHz (optional)</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × POWER + 1 × USB 2.0 OTG( (dual-row expansion interface))</td>
-</tr>
-<tr>
-  <td>IO Interface</td>
-  <td>2.54mm pitch × 2*20 (dual-row expansion interface)</td>
-</tr>
-<tr>
-  <td>Buttons</td>
-  <td>1 × RST button + 1 × BOOT button + 1 × INT0 button</td>
-</tr>
-<tr>
-  <td>LED</td>
-  <td>Power indicator + RGB LED</td>
-</tr>
-<tr>
-  <td>Codec</td>
-  <td>H.264/H.265 encoder/decoder, max resolution 4096×4096<br>Encoder performance: 3840×2160@20fps<br>Decoder performance: 3840×2160@40fps<br>JPEG codec: Supports up to 8K (8192×8192) resolution</td>
-</tr>
-<tr>
-  <td>Power</td>
-  <td>5V/500mA input</td>
-</tr>
-<tr>
-  <td>Mounting Holes</td>
-  <td>4 × 2mm positioning holes</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td>Main body (without case): 100×48×1.6mm</td>
+  <td style="text-align:center">T-Display-K230_V1.0</td>
+  <td style="text-align:center">2024-01-01</td>
+  <td style="text-align:left">Initial Version</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Related-Links">Related Links</h2>
-<h2 id="Software-Design">Software Design</h2>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
+<h2 id="Purchase-Link">Purchase Link</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">Memory</th>
+  <th style="text-align:center">Storage</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Display K230</td>
+  <td style="text-align:center">K230 + ESP32-S3</td>
+  <td style="text-align:center">8Gb LPDDR4</td>
+  <td style="text-align:center">16MB FLASH + TF Card</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-display-k230"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#k230-sdk-quick-development-guide"  >K230 SDK Quick Development Guide</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>T-Display K230 is a new product based on Canaan Technology's latest K230 chip, following the K210. It inherits the powerful computing capability of K230 with up to 1.6GHz frequency, integrates LILYGO's signature LoRa communication and display features, and includes HDMI and Ethernet interfaces, providing developers with broader application possibilities.</p>
+<p>In terms of design, T-Display K230 adopts a handheld device size design, equipped with a 4.1-inch high-quality AMOLED screen supporting capacitive touch, offering a smoother visual and interactive experience. As a high-performance chip in the AIoT field, K230 features rich computing capabilities and expansion interfaces, with dual-core RISC-V processors reaching up to 1.6GHz frequency, integrated NPU computing power close to 1.6TOPS, supporting AI inference acceleration. The combination of LoRa communication + ISP camera gives T-Display K230 strong advantages in remote wireless data transmission, AI recognition, IoT monitoring interaction, and other fields.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Images">Physical Images</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/K256outlook3.jpg" alt="T-Display-K230" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Display-K230-cn.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="1.-Main-Processor-%28K230%29">1. Main Processor (K230)</h3>
+<ul>
+<li>Chip: Canaan K230</li>
+<li>CPU Big Core: 1.6GHz RISC-V, 128bit RVV 1.0 extension</li>
+<li>CPU Small Core: 0.8GHz RISC-V</li>
+<li>NPU (KPU): Computing power close to 1.6TOPS, supports INT8/INT16</li>
+<li>Memory: 8Gb LPDDR4</li>
+<li>Codec: H.264/H.265 codec, JPEG codec</li>
+</ul>
+<h3 id="2.-Co-processor-%28ESP32-S3%29">2. Co-processor (ESP32-S3)</h3>
+<ul>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M</li>
+<li>FLASH: 16M</li>
+<li>Functions: Wi-Fi/Bluetooth connectivity, system auxiliary management</li>
+</ul>
+<h3 id="3.-Screen">3. Screen</h3>
+<ul>
+<li>Size: 4.1-inch AMOLED</li>
+<li>Resolution: 568×1232</li>
+<li>Interface: 2 lane MIPI DSI</li>
+<li>Touch: Capacitive touch screen (GT9895)</li>
+</ul>
+<h3 id="4.-Camera">4. Camera</h3>
+<ul>
+<li>Interface: 3 channels MIPI CSI-2</li>
+<li>Configuration: Default configured for one channel, supports up to 1x4lane + 1x2lane</li>
+<li>Speed: Up to 1.5Gbps</li>
+</ul>
+<h3 id="5.-Communication-Modules">5. Communication Modules</h3>
+<ul>
+<li>LoRa: SX1262, SX1280, supports 433~923MHz frequency bands</li>
+<li>Wi-Fi: 802.11b/g/n (ESP32-S3)</li>
+<li>Ethernet: IEEE 802.3u compatible</li>
+<li>Bluetooth: Bluetooth 5 (LE) (ESP32-S3)</li>
+</ul>
+<h3 id="6.-Audio">6. Audio</h3>
+<ul>
+<li>Output: 3.5mm audio interface</li>
+<li>Input: Microphone</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Main Processor</td>
+  <td style="text-align:center">K230 Dual-core RISC-V (1.6GHz + 0.8GHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Co-processor</td>
+  <td style="text-align:center">ESP32-S3-R8</td>
+</tr>
+<tr>
+  <td style="text-align:center">NPU</td>
+  <td style="text-align:center">1.6TOPS, supports AI inference acceleration</td>
+</tr>
+<tr>
+  <td style="text-align:center">Memory</td>
+  <td style="text-align:center">8Gb LPDDR4</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">16MB FLASH + TF card expansion</td>
+</tr>
+<tr>
+  <td style="text-align:center">Screen</td>
+  <td style="text-align:center">4.1-inch AMOLED (568×1232)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Camera</td>
+  <td style="text-align:center">3 channels MIPI CSI-2</td>
+</tr>
+<tr>
+  <td style="text-align:center">Video Output</td>
+  <td style="text-align:center">HDMI 1080P@30FPS</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262/SX1280 (433~923MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Network</td>
+  <td style="text-align:center">Wi-Fi + Ethernet</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × POWER + 1 × USB 2.0 OTG (TYPE-C)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2×20 dual-row expansion interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">RST + BOOT + INT0</td>
+</tr>
+<tr>
+  <td style="text-align:center">Indicators</td>
+  <td style="text-align:center">Power indicator + RGB light</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power</td>
+  <td style="text-align:center">5V/500mA</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>104×51×15.5mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="K230-SDK-Quick-Development-Guide">K230 SDK Quick Development Guide</h2>
+<p>-<a href="https://www.youtube.com/watch?v=lxcQWDoruOI"  target="_blank">K230 SDK Video Tutorial</a></p>
+<h3 id="K230-SDK-Structure-Introduction">K230 SDK Structure Introduction</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Level 1 Directory</th>
+  <th style="text-align:center">Level 2 Directory</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">configs</td>
+  <td style="text-align:center">NA</td>
+  <td style="text-align:left">Resource configuration (memory allocation planning)</td>
+</tr>
+<tr>
+  <td style="text-align:center">output</td>
+  <td style="text-align:center">NA</td>
+  <td style="text-align:left">SDK compilation products</td>
+</tr>
+<tr>
+  <td style="text-align:center">src</td>
+  <td style="text-align:center">big</td>
+  <td style="text-align:left">Big core RTSmart code</td>
+</tr>
+<tr>
+  <td style="text-align:center">src</td>
+  <td style="text-align:center">common</td>
+  <td style="text-align:left">Big and small core common code</td>
+</tr>
+<tr>
+  <td style="text-align:center">src</td>
+  <td style="text-align:center">little</td>
+  <td style="text-align:left">Small core Linux code</td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">docker</td>
+  <td style="text-align:left">dockerfile</td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">doxygen</td>
+  <td style="text-align:left">doxygen scripts and configuration files</td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">kconfig</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">gen_image.sh</td>
+  <td style="text-align:left">Script to generate flashable images</td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">gen_image_cfg</td>
+  <td style="text-align:left">Image partition configuration files</td>
+</tr>
+<tr>
+  <td style="text-align:center">tools</td>
+  <td style="text-align:center">tuning-tool-client</td>
+  <td style="text-align:left">PC-side image debugging tool</td>
+</tr>
+</tbody>
+</table>
+<p>K230 SDK is a software development kit for K230 development boards, containing source code, toolchains, and other related resources needed for development based on Linux &amp; RT-smart dual-core heterogeneous systems.</p>
+<h3 id="Setting-Up-Development-Environment">Setting Up Development Environment</h3>
+<p>K230 SDK needs to be compiled in a Linux environment, Ubuntu Linux 20.04 is recommended.</p>
+<blockquote>
+<p>If you need to compile in a Windows environment, it is recommended to use WSL2 + Docker environment.</p>
+</blockquote>
+<h4 id="Using-Docker-Compilation-Environment">Using Docker Compilation Environment</h4>
+<ul>
+<li><p>Get docker compilation image<br />
+It is recommended to compile K230 SDK in a docker environment, you can directly use the following docker image:</p>
+
+<pre class="language-shell"><code class="language-shell">docker pull ghcr.io/kendryte/k230_sdk
+</code></pre>
+<p>You can confirm the docker image is successfully pulled using the following command:</p>
+
+<pre class="language-shell"><code class="language-shell">  docker images | grep k230_sdk
+</code></pre>
+<blockquote>
+<p>Note: The docker image does not include toolchain by default. After downloading the source code, use the command 'make prepare_sourcecode' to automatically download the toolchain to the current compilation directory.</p>
+</blockquote>
+</li>
+</ul>
+<p>If you don't use the docker compilation environment but prefer to use native Linux for compilation, you can refer to <code>tools/docker/Dockerfile</code> to install the corresponding tools into your Linux system.</p>
+<p>If the download speed is slow or unsuccessful, you can use <code>tools/docker/Dockerfile</code> to compile the docker image yourself. For details, please refer to <a href="https://github.com/kendryte/k230_docs/blob/main/zh/01_software/board/K230_SDK_%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md#43-%E7%BC%96%E8%AF%91-sdk"  target="_blank">K230 SDK Usage Instructions</a></p>
+<h3 id="Compiling-K230-SDK">Compiling K230 SDK</h3>
+<h4 id="Download-K230-SDK-Source-Code">Download K230 SDK Source Code</h4>
+
+<pre class="language-shell"><code class="language-shell">git clone https://github.com/kendryte/k230_sdk
+cd k230_sdk
+make prepare_sourcecode
+</code></pre>
+<blockquote>
+<p><code>make prepare_sourcecode</code> will automatically download Linux and RT-Smart toolchain, buildroot package, AI package, etc. Please ensure this command executes successfully without any Errors. Download time and speed depend on actual network speed.</p>
+</blockquote>
+<h4 id="Start-Compiling-K230-SDK">Start Compiling K230 SDK</h4>
+<p>Taking docker image compilation as an example:</p>
+<ol>
+<li><p>Confirm the current directory is the <code>k230_sdk</code> source code root directory,</p>
+</li>
+<li><p>Use the following command to enter docker</p>
+</li>
+</ol>
+
+<pre class="language-shell"><code class="language-shell">  docker run -u root -it -v $(pwd):$(pwd) -v $(pwd)/toolchain:/opt/toolchain -w $(pwd) ghcr.io/kendryte/k230_sdk /bin/bash
+</code></pre>
+<blockquote>
+<p>Select different config configurations for compilation based on different development boards or software functions. Compilation command format: <code>make CONF=xxx</code>, for example:</p>
+</blockquote>
+<blockquote>
+<p>To compile K230-USIP-LP3-EVB board image, execute <code>make CONF=k230_evb_defconfig</code> command to start compilation</p>
+</blockquote>
+<blockquote>
+<p>To compile CanMV-K230 board image, execute <code>make CONF=k230_canmv_defconfig</code> command to start compilation</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>The automatically downloaded toolchain in the external directory will be mapped to the <code>/opt/toolchain/</code> directory in the docker image.</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>The default parameter <code>-u root</code> specifies docker to execute as root user, k230_sdk can be compiled without root permissions</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Please use the complete path <code>ghcr.io/kendryte/k230_sdk</code> for the docker image. If using a locally compiled docker image, please modify the name accordingly</li>
+</ul>
+</blockquote>
+<h4 id="Compilation-Products-Introduction">Compilation Products Introduction</h4>
+<p>Taking the products generated by make CONF=k230_evb_defconfig compilation as an example:</p>
+
+<pre class="language-shell"><code class="language-shell">k230_evb_defconfig/images
+├── big-core
+├── env.env
+├── jffs2.env
+├── little-core
+├── sysimage-sdcard.img    # SD and eMMC non-secure boot image
+├── sysimage-sdcard.img.gz # SD and eMMC non-secure boot image compressed package
+├── sysimage-spinor32m.img # norflash non-secure boot image
+├── sysimage-spinor32m.img.gz    # norflash non-secure boot image compressed package
+└── sysimage-spinor32m_jffs2.img # norflash jffs2 non-secure boot image 
+</code></pre>
+<p>Both TF card and eMMC can use the<code>sysimage-sdcard.img</code> image, or use <code>sysimage-sdcard.img.gz</code> decompressed to get this file.</p>
+<h3 id="Pre-compiled-Image-Download">Pre-compiled Image Download</h3>
+<p>If you don't want to compile the image yourself, you can download pre-compiled images and use them directly for flashing.</p>
+<ol>
+<li>**<a href="https://github.com/kendryte/k230_sdk/tree/main"  target="_blank">main branch</a></li>
+</ol>
+<p>** as a release branch, compiled release images are automatically published to the <a href="https://github.com/kendryte/k230_sdk/releases"  target="_blank">Release</a> page. (Supported from v1.4 version)</p>
+<p>2.Pre-compiled release images: Please visit <a href="https://developer.canaan-creative.com/resource"  target="_blank">Canaan Developer Community</a>, then in the <code>K230/Images</code> category, download the required image files. For <code>evb</code> devices download<code>k230_evb*.img.gz</code>, for <code>canmv</code> devices download <code>k230_canmv*.img.gz</code>.</p>
+<blockquote>
+<p>The downloaded images are in .gz compressed format by default, which needs to be decompressed first before flashing.<br />
+The K230 micropython image supports different functions compared to K230 SDK.</p>
+</blockquote>
+<h3 id="Flashing-Image-Files">Flashing Image Files</h3>
+<h4 id="Flashing-TF-Card">Flashing TF Card</h4>
+<p>If using Linux to flash TF card, you need to first confirm the TF card name in the system <code>/dev/sdx</code>, and replace <code>/dev/sdx</code> in the following command.</p>
+
+<pre class="language-shell"><code class="language-shell">sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
+</code></pre>
+<p>If using Windows for flashing, it is recommended to use the <a href="http://rufus.ie/downloads/"  target="_blank">rufus tool</a>.</p>
+<p>For other more detailed flashing methods, please refer to K230 SDK documentation.</p>
+<h3 id="Power-On-and-Boot">Power On and Boot</h3>
+<h4 id="K230-EVB-Development-Board-Power-On-and-Boot">K230 EVB Development Board Power On and Boot</h4>
+<p>K230 EVB supports multiple boot methods including SDCard, eMMC, norflash, etc. Users can switch between different boot modes by changing the boot <a href="https://github.com/kendryte/k230_docs/blob/main/zh/00_hardware/K230_DEMO_BOARD%E8%B5%84%E6%BA%90%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md#%E7%94%B5%E6%BA%90%E5%8C%BA%E5%BC%80%E6%9C%BA%E4%B8%8A%E7%94%B5%E6%96%B9%E5%BC%8F"  target="_blank">switch</a>settings on the board.<br />
+For development convenience, it is recommended to prepare a TF card and set the boot switch to SD card boot mode. Later, you can consider burning the image file to eMMC.</p>
+<ol>
+<li>Please first <strong>confirm that the startup switch SW1 is set to the SD card startup mode</strong> (for details, please refer to <a href="https://github.com/kendryte/k230_docs/blob/main/zh/00_hardware/K230_DEMO_BOARD%E8%B5%84%E6%BA%90%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md#%E7%94%B5%E6%BA%90%E5%8C%BA%E5%BC%80%E6%9C%BA%E4%B8%8A%E7%94%B5%E6%96%B9%E5%BC%8F"  target="_blank">Power-on Method</a></li>
+<li>Insert the TF card with the completed burning into the TF card slot of the development board</li>
+<li>Connect the power supply to the development board</li>
+<li><strong>Pull the power switch K1 to the ON position</strong>, and the system can be powered on and started</li>
+<li>If you have connected the serial port, you can see the startup log output in the serial port.</li>
+</ol>
+<h4 id="CanMV-K230-Development-Board-Power-On-and-Boot">CanMV-K230 Development Board Power On and Boot</h4>
+<p>K230 CanMV-K230 development board supports SDCard boot method and HDMI output display. Therefore, you need to prepare a TF card, and it is recommended to prepare an HDMI monitor.</p>
+<ol>
+<li>Insert the TF card that has been programmed into the TF card slot of the development board.</li>
+<li>Power on the development board. At this point, the system can be powered on and started.</li>
+</ol>
+<p>After the system is powered on, by default, there will be <strong>two serial port devices</strong>, which can be used respectively to access the small-core Linux and the large-core RTSmart.</p>
+<p>The default username for the small-core Linux is &quot;root&quot; and the password is empty. In the large-core RTSmart system, an application will automatically start at boot. You can press the <code>q</code> key to exit to the command prompt terminal.</p>
+<p>base platform:<br />
+<code>Ubuntu 20.04</code></p>
+<p>Refer to BUILD, you can use Docker or local environment for compilation, compilation speed is faster.Or refer to K230 CanMV Custom Firmware</p>
+<ul>
+<li>Flashing:</li>
+</ul>
+<p>Under Linux, directly use the dd command for flashing. Under Windows, use flashing tools. Refer to K230 CanMV How to Flash Firmware.</p>
+<ul>
+<li><p>Operator:</p>
+</li>
+<li><p>Compile firmware:</p>
+</li>
+</ul>
+
+<pre class="language-shell"><code class="language-shell">      cd canmv_k230
+      time make log
+</code></pre>
+<p><code>canmv_k230/output/k230_canmv_v3p0</code>  generates <code>CanMV-K230-V3P0_rtsmart_localnncase_v2.9.0.img</code>  which can be burned onto an SD card</p>
+<ul>
+<li>Compile app:</li>
+</ul>
+<p>Change to current directory canmv_k230</p>
+
+<pre class="language-shell"><code class="language-shell">      cd canmv_k230/src/rtsmart/mpp
+      source build_env.sh
+      cd userapps/sample/sample_display
+      make
+</code></pre>
+<p>In the sample/elf directory, generate sample_display.elf</p>
+<p>Default app: sample_display</p>
+<p>Rename sample_display.elf to <code>app.elf</code>, copy to the SD card's sdcard partition, reboot, and it will run by default.</p>
 
                         
                     </div>

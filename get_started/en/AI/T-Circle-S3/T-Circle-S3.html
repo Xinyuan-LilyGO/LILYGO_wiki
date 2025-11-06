@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Circle S3 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["T-Circle-S3", "LCD", "ESP32-S3", "Audio"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,14 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>T-Circle-S3</li>
+                            
+                                <li>LCD</li>
+                            
+                                <li>ESP32-S3</li>
+                            
+                                <li>Audio</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -264,195 +272,680 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Circle-S3-1.jpg" alt="T-Circle" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-circle-s3?variant=44912874062005">Go Buying</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a> -->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-circle-s3">Official Store</a>
 </div>
 <blockquote>
-<p>Note: T-Circle S3 is the ESP32-S3 version Version, click here to switch to ESP32 version<a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle/T-Circle.html"  target="_blank">T-Circle</a></p>
+<p><strong>Note</strong>: T-Circle S3 is the ESP32-S3 version. Click here to switch to the ESP32 version <a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle/T-Circle.html"  target="_blank">T-Circle</a>.</p>
 </blockquote>
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO T-Circle S3 is a multifunctional development board based on the ESP32-S3 wireless microcontroller, integrating a 0.75-inch round LCD touchscreen (160x160 pixels), MAX98357A digital audio amplifier, MSM261 audio input module (presumed to be a microphone), APA102 LED control interface, and QWIIC expansion connector.</p>
-<p>Its core configuration includes 16MB Flash and 8MB Octal SPI PSRAM, supporting Wi-Fi and Bluetooth communication. The board also features a CST816D capacitive touch controller for intuitive interaction.</p>
-<p>With precise pin mapping (e.g., LCD_MOSI, TP_SDA), it combines graphical display, audio I/O, touch interaction, and high-speed storage in a compact form factor. This makes it ideal for prototyping IoT terminals, wearable smart devices, or embedded audio-visual applications.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Circle-S3-2.jpg" alt="summary" width=80%>
-<img src="./assets/T-Circle-S3-3.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Circle-S3.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<p>T-Circle-S3 is a development board based on the ESP32-S3, featuring a compact 0.75-inch round display. It comes equipped with a speaker, microphone, and a tri-color LED. On the back, it provides six programmable I/O ports, allowing for the expansion of various peripherals.</p>
-<img src="./assets/T-Circle-S3-en.jpg" alt="summary" width=100%>
+<h2 id="Version-History%3A">Version History:</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3-R8</td>
-</tr>
-<tr>
-  <td>FLASH</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M (Octal SPI)</td>
-</tr>
-<tr>
-  <td>Touch</td>
-  <td>CST816D</td>
-</tr>
-<tr>
-  <td>Screen</td>
-  <td>SPI GC9D01N drives a 0.5-inch LCD circular screen (160x160px)</td>
-</tr>
-<tr>
-  <td>Speaker</td>
-  <td>IIS driver MAX98357A</td>
-</tr>
-<tr>
-  <td>Microphone</td>
-  <td>PDM driver MP34DT05-A</td>
-</tr>
-<tr>
-  <td>LED</td>
-  <td>APA102</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>2.4Ghz Wi-Fi + Bluetooth 5.0</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(TYPE-C interface)</td>
-</tr>
-<tr>
-  <td>IO interface</td>
-  <td>2 × 4-pin extended IO interface</td>
-</tr>
-<tr>
-  <td>Keys</td>
-  <td>1 x RESET key + 1 x BOOT key</td>
-</tr>
-<tr>
-  <td>Power Supply</td>
-  <td>5V/500mA</td>
-</tr>
-<tr>
-  <td>Hole position</td>
-  <td><strong>2 × M1.6* *2</strong></td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td><strong>32*17mm</strong></td>
+  <td style="text-align:center">T-Circle-S3_V1.0</td>
+  <td style="text-align:center">2024-01-01</td>
+  <td style="text-align:left">Initial Version</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/tree/arduino-esp32-libs_V2.0.14"  target="_blank">T-Circle-S3</a></p>
+<h2 id="Purchase-Link">Purchase Link</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Circle S3</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M (Octal SPI)</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-circle-s3"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>LILYGO T-Circle S3 is a versatile development board based on the ESP32-S3 wireless microcontroller, integrating a 0.75-inch circular LCD touch screen (160x160 pixels), MAX98357A digital audio amplifier, MSM261 audio acquisition module (presumably microphone), APA102 LED control interface, and QWIIC expansion interface. Its core configuration includes 16MB flash memory, 8MB Octal SPI PSRAM, supports Wi-Fi/Bluetooth communication, and features a capacitive touch screen controller CST816D for interactive operation. Through precise pin mapping, it integrates graphic display, audio input/output, touch interaction, and high-speed storage functions, suitable for IoT terminals, smart wearable devices, or prototype development of embedded audio visualization projects.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Images">Physical Images</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Circle-S3-2.jpg" alt="T-Circle-S3" /><br />
+<img src="./assets/T-Circle-S3-3.jpg" alt="T-Circle-S3" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Circle-S3-en.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="1.-MCU">1. MCU</h3>
+<ul>
+<li>Chip: ESP32-S3-R8</li>
+<li>PSRAM: 8M (Octal SPI)</li>
+<li>FLASH: 16M</li>
+<li>Related Information:<blockquote>
+<a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></blockquote>
+</li>
+</ul>
+<h3 id="2.-Screen">2. Screen</h3>
+<ul>
+<li>Size: 0.75-inch LCD circular screen</li>
+<li>Resolution: 160x160px</li>
+<li>Type: TFT, LCD</li>
+<li>Driver IC: GC9D01N</li>
+<li>Bus Protocol: Standard SPI</li>
+<li>Related Information:<blockquote>
+<a href="./information/GC9D01N.pdf"  >GC9D01N</a> <br /><br />
+<a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI-2.5.43</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></blockquote>
+</li>
+</ul>
+<h3 id="3.-Touch">3. Touch</h3>
+<ul>
+<li>Chip: CST816D</li>
+<li>Bus Protocol: I2C</li>
+<li>Related Information:<blockquote>
+<a href="./information/GC9D01N.pdf"  >GC9D01N</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+<h3 id="4.-Speaker">4. Speaker</h3>
+<ul>
+<li>Driver IC: MAX98357A</li>
+<li>Bus Protocol: I2S</li>
+<li>Related Information:<blockquote>
+<a href="./information/MAX98357AETE+T.pdf"  >MAX98357A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a> <br /><br />
+<a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S-3.0.6</a></blockquote>
+</li>
+</ul>
+<h3 id="5.-Microphone">5. Microphone</h3>
+<blockquote>
+<h4 id="T-Circle-S3_V1.0-Version">T-Circle-S3_V1.0 Version</h4>
+<ul>
+<li>Chip: MSM261S4030H0R</li>
+<li>Bus Protocol: I2S</li>
+<li>Related Information:<blockquote>
+<a href="./information/MSM261S4030H0R.pdf"  >MSM261S4030H0R</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a><br />
+<a href="https://github.com/DFRobot/DFrobot_MSM261"  target="_blank">DFRobot_MSM261</a></blockquote>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="T-Circle-S3_V1.1-Version">T-Circle-S3_V1.1 Version</h4>
+<ul>
+<li>Chip: MP34DT05-A</li>
+<li>Bus Protocol: PDM</li>
+<li>Related Information:<blockquote>
+<a href="./information/mp34dt05-a.pdf"  >MP34DT05-A</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href=""  >Arduino_DriveBus-1.1.16</a></blockquote>
+</li>
+</ul>
+</blockquote>
+<h3 id="6.-LED-Lights">6. LED Lights</h3>
+<ul>
+<li>Chip: APA102</li>
+<li>Related Information:<blockquote>
+<a href="./information/APA102_2020_LED.pdf"  >APA102_2020_LED</a></blockquote>
+</li>
+<li>Dependent Libraries:<blockquote>
+<a href="https://github.com/FastLED/FastLED"  target="_blank">FastLED-3.6.0</a></blockquote>
+</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-Circle-S3-en.jpg" alt="summary" width=100%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3-R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB (Octal SPI)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Screen</td>
+  <td style="text-align:center">0.75-inch GC9D01N LCD (160x160)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Touch</td>
+  <td style="text-align:center">CST816D Capacitive Touch Screen</td>
+</tr>
+<tr>
+  <td style="text-align:center">Speaker</td>
+  <td style="text-align:center">I2S driven MAX98357A</td>
+</tr>
+<tr>
+  <td style="text-align:center">Microphone</td>
+  <td style="text-align:center">PDM driven MP34DT05-A</td>
+</tr>
+<tr>
+  <td style="text-align:center">LED</td>
+  <td style="text-align:center">APA102</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port and OTG (TYPE-C Interface)</td>
+</tr>
+<tr>
+  <td style="text-align:center">IO Interface</td>
+  <td style="text-align:center">2 × 4 pin expansion IO interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET button + 1 x BOOT button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Power</td>
+  <td style="text-align:center">5V/500mA</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">2 × M1.6*2</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center"><strong>32*17mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Example</th>
+  <th style="text-align:center"><code>[Platformio IDE][espressif32-v6.5.0]</code><br /><code>[Arduino IDE][esp32_v2.0.14]</code></th>
+  <th style="text-align:center"><code>[ESP-IDF][esp-idf-V4.4.8]</code></th>
+  <th style="text-align:center"><code>[ESP-IDF][esp-idf-V5.3.2]</code></th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Animated_Eyes_1"  target="_blank">Animated_Eyes_1</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/APA102_Blink"  target="_blank">APA102_Blink</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/CST816D"  target="_blank">CST816D</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/DMIC_ReadData"  target="_blank">DMIC_ReadData</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX"  target="_blank">GFX</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_CST816D_Image"  target="_blank">GFX_CST816D_Image</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_Wifi_AP_Contract"  target="_blank">GFX_Wifi_AP_Contract</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/GFX_Wifi_STA_Contract"  target="_blank">GFX_Wifi_STA_Contract</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/IIC_Scan_2"  target="_blank">IIC_Scan_2</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Original_Test"  target="_blank">Original_Test</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Factory initial test file</td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/TFT"  target="_blank">TFT</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Voice_Speaker"  target="_blank">Voice_Speaker</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Voice_Speaker_APA102"  target="_blank">Voice_Speaker_APA102</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/Wifi_Music"  target="_blank">Wifi_Music</a></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/examples/lilygo_s3_apps"  target="_blank">lilygo_s3_apps</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">This example is a voice control example provided by Grovety. Original link: <br /> <a href="https://github.com/Grovety/lilygo_s3_apps"  target="_blank">Grovety lilygo_s3_apps</a></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/78/xiaozhi-esp32?tab=readme-ov-file"  target="_blank">XiaoZhi_AI_Chatbot</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td style="text-align:left">This example is XiaoZhi AI example provided by Xiaoxia</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Firmware</th>
+  <th style="text-align:center">Description</th>
+  <th style="text-align:center">Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BOriginal_Test%5D_firmware_V1.0.1.bin"  target="_blank">Original_Test(T-Circle-S3_V1.0)</a></td>
+  <td style="text-align:center">Factory Program</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%EF%BC%88V1.1%E7%89%88%E6%9C%AC%E4%BF%AE%E6%94%B9%E9%BA%A6%E5%85%8B%E9%A3%8E%E5%9E%8B%E5%8F%B7%EF%BC%89%5BT-Circle-S3_V1.1%5D%5BOriginal_Test%5D_firmware_202502141426.bin"  target="_blank">Original_Test(T-Circle-S3_V1.1)</a></td>
+  <td style="text-align:center">Factory Program</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BGFX_Wifi_AP_Contract%5D_firmware_V1.0.0.bin"  target="_blank">GFX_Wifi_AP_Contract</a></td>
+  <td style="text-align:center">Initial Version</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5BGFX_Wifi_STA_Contract%5D_firmware_V1.0.0.bin"  target="_blank">GFX_Wifi_STA_Contract</a></td>
+  <td style="text-align:center">Initial Version</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D_%5Blilygo_s3_apps%5D_firmware_V1.0.0.bin"  target="_blank">lilygo_s3_apps</a></td>
+  <td style="text-align:center">Initial Version</td>
+  <td style="text-align:center"></td>
+</tr>
+<tr>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/firmware/%5BT-Circle-S3_V1.0%5D%5Bxiaozhi-esp32_V1.0.1%5D_firmware_202501240943.bin"  target="_blank">xiaozhi_esp32</a></td>
+  <td style="text-align:center"></td>
+  <td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a> according to your system.</li>
+<li>Open the &quot;Extensions&quot; sidebar in Visual Studio Code (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, download the project from GitHub. You can click the green &quot;&lt;&gt; Code&quot; button to download the main branch, or download a &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the Explorer sidebar (or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO should automatically open it after adding the folder). Under the &quot;[platformio]&quot; section, uncomment the line selecting the example program you want to upload (starting with &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> according to your system.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu -&gt; &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to choose is determined by the &quot;board = xxx&quot; header in the &quot;[env]&quot; section of the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</li>
+<li>Open the &quot;[File]&quot; -&gt; &quot;[Preferences]&quot; menu, find the &quot;[Sketchbook location]&quot; field. Copy and paste all library files and folders from the &quot;libraries&quot; directory in the project folder into the &quot;libraries&quot; folder at this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the board to your computer and click the &quot;<kbd>→</kbd>&quot; to upload.</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LCD Screen Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MOSI</td>
+  <td style="text-align:center">IO17</td>
+</tr>
+<tr>
+  <td style="text-align:center">DC</td>
+  <td style="text-align:center">IO16</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCLK</td>
+  <td style="text-align:center">IO15</td>
+</tr>
+<tr>
+  <td style="text-align:center">CS</td>
+  <td style="text-align:center">IO13</td>
+</tr>
+<tr>
+  <td style="text-align:center">BL</td>
+  <td style="text-align:center">IO18</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Touch Chip Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">INT</td>
+  <td style="text-align:center">IO12</td>
+</tr>
+<tr>
+  <td style="text-align:center">SDA</td>
+  <td style="text-align:center">IO11</td>
+</tr>
+<tr>
+  <td style="text-align:center">SCL</td>
+  <td style="text-align:center">IO14</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Speaker Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO5</td>
+</tr>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO4</td>
+</tr>
+<tr>
+  <td style="text-align:center">SD_MODE</td>
+  <td style="text-align:center">IO45</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO6</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">LED Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">CLOCK</td>
+  <td style="text-align:center">IO39</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO38</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>T-Circle-S3_V1.0 Version</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Microphone Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">BCLK</td>
+  <td style="text-align:center">IO7</td>
+</tr>
+<tr>
+  <td style="text-align:center">WS</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>T-Circle-S3_V1.1 Version</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Microphone Pins</th>
+  <th style="text-align:center">ESP32S3 Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">LRCLK</td>
+  <td style="text-align:center">IO9</td>
+</tr>
+<tr>
+  <td style="text-align:center">DATA</td>
+  <td style="text-align:center">IO8</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<p><em>(Power consumption and other test data to be added)</em></p>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
+A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</li>
+</ul>
+<br />
+<ul>
+<li><strong>Q. Why does Arduino IDE prompt me to upgrade library files when I open it? Should I upgrade or not?</strong><br />
+A. Choose not to upgrade library files. Different versions of library files may not be compatible with each other, so upgrading is not recommended.</li>
+</ul>
+<br />
+<ul>
+<li><strong>Q. Why is there no serial data output from the &quot;Uart&quot; interface on my board? Is it broken?</strong><br />
+A. Because the project file is configured by default to use the USB interface as Uart0 serial output for debugging, and the &quot;Uart&quot; interface is connected to Uart0, it won't output any data without configuration.<br />PlatformIO users: Open the project file &quot;platformio.ini&quot;, change the option &quot;-DARDUINO_USB_CDC_ON_BOOT=true&quot; under &quot;build_flags = xxx&quot; to &quot;-DARDUINO_USB_CDC_ON_BOOT=false&quot; to use the external &quot;Uart&quot; interface normally.<br />Arduino users: Open the &quot;Tools&quot; menu, select USB CDC On Boot: &quot;Disabled&quot; to use the external &quot;Uart&quot; interface normally.</li>
+</ul>
+<br />
+<ul>
+<li><strong>Q. Why does my board keep failing to upload programs?</strong><br />
+A. Please hold down the &quot;BOOT-0&quot; button and try uploading again.</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/project/T-Circle-S3_V1.0.pdf"  target="_blank">T-Circle-S3_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
 <ul>
 <li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/GC9D01N.pdf"  target="_blank">GC9D01N</a></li>
-<li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI-2.5.43</a></li>
 <li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf"  target="_blank">MAX98357A</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MSM261S4030H0R.pdf"  target="_blank">MSM261S4030H0R</a>)</li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MSM261S4030H0R.pdf"  target="_blank">MSM261S4030H0R</a></li>
 <li><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf"  target="_blank">MP34DT05-A</a></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/project/T-Circle-S3_V1.0.pdf"  target="_blank">T-Circle-S3</a></p>
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
+<li><a href="https://github.com/Bodmer/TFT_eSPI"  target="_blank">TFT_eSPI-2.5.43</a></li>
 <li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Arduino_DriveBus-1.1.16</a></li>
 <li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX-1.3.7</a></li>
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S-3.0.6</a></li>
 <li><a href="https://github.com/DFRobot/DFrobot_MSM261"  target="_blank">DFRobot_MSM261</a></li>
 <li><a href="https://github.com/FastLED/FastLED"  target="_blank">FastLED-3.6.0</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>Hardware CDC and JTAG</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enabled</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disabled</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHz (WiFi)</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHz</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td>16MB (128Mb)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td>16M Flash (3MB APP/9.9MB FATFS)</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>OPI PSRAM</td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>
