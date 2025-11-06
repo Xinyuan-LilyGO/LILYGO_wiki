@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Watch S3 Plus - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": ["T-Watch", "ESP32-S3", "Smartwatch", "GPS", "LoRa"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["T-Watch", "ESP32-S3", "Smart Watch", "GPS", "LoRa"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -149,7 +149,7 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Embed-SI4732/T-Embed-SI4732.html"><span class="label">T-Embed SI4732</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Glass/T-Glass.html"><span class="label">T-Glass</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html"><span class="label">T-Mini E-paper-S3</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html&from=/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -244,7 +244,7 @@ var _hmt = _hmt || [];
                             
                                 <li>ESP32-S3</li>
                             
-                                <li>Smartwatch</li>
+                                <li>Smart Watch</li>
                             
                                 <li>GPS</li>
                             
@@ -329,13 +329,13 @@ var _hmt = _hmt || [];
 <li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
 <h2 id="Description">Description</h2>
-<p>The T-Watch S3 Plus is an enhanced version based on the T-Watch S3, adding GPS functionality. It is a versatile smart wearable device that integrates high-performance hardware and wireless communication technologies, suitable for sports health monitoring, remote interaction, and audio scenarios. Its core configuration includes a 1.54-inch 240x240 high-definition LCD display, paired with a BMA423 axis sensor and a capacitive touch module, enabling precise motion tracking and responsive touch operations. It features a built-in Max98357A audio amplifier and a PDM microphone, supporting high-quality audio output and voice command input. Currently, the T-Watch S3 Plus has two LoRa versions, SX1262 and SX1280. Combined with the GPS module, it achieves precise positioning and long-range, low-power wireless communication, making it suitable for IoT and smart wearable scenarios.</p>
+<p>The T-Watch S3 Plus is an enhanced version based on the T-Watch S3, adding GPS functionality to create a multifunctional smart wearable device. It integrates high-performance hardware with wireless communication technology, suitable for sports health monitoring, remote interaction, and audio scenarios. Its core configuration includes a 1.54-inch 240x240 high-definition LCD display, paired with a BMA423 3-axis sensor and capacitive touch module, enabling precise motion tracking and responsive touch operations. Built-in Max98357A audio amplifier and PDM microphone support high-quality audio output and voice command input. Currently, the T-Watch S3 Plus offers two LoRa versions: SX1262 and SX1280, combined with the GPS module to achieve precise positioning and long-range, low-power wireless communication, suitable for IoT and smart wearable scenarios.</p>
 <h2 id="Preview">Preview</h2>
 <h3 id="Physical-Image">Physical Image</h3>
 <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Watch-S3-PLUS2.jpg" alt="T-Watch-S3-Plus" /></p>
 </div>
-<h3 id="Pin-Diagram">Pin Diagram</h3>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
 <img src="./assets/T-Watch-S3-PLUS3.jpg" alt="summary" width=100%>
 <h2 id="Modules">Modules</h2>
 <h3 id="MCU">MCU</h3>
@@ -343,7 +343,7 @@ var _hmt = _hmt || [];
 <li>Chip: ESP32-S3</li>
 <li>PSRAM: 8M</li>
 <li>FLASH: 16M</li>
-<li>Other Notes: For more information, please visit the <a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
+<li>Other Notes: For more information, please visit <a href="https://www.espressif.com/en/products/socs/esp32-s3"  target="_blank">Espressif Official ESP32-S3 Datasheet</a></li>
 </ul>
 <h3 id="Display">Display</h3>
 <ul>
@@ -359,7 +359,7 @@ var _hmt = _hmt || [];
 </ul>
 <h3 id="Sensors">Sensors</h3>
 <ul>
-<li>Axis Sensor: BMA423 (I2C)</li>
+<li>3-Axis Sensor: BMA423 (I2C)</li>
 <li>Motor Driver: DRV2605 (I2C)</li>
 </ul>
 <h3 id="Audio">Audio</h3>
@@ -379,18 +379,18 @@ var _hmt = _hmt || [];
 <li>Chip: AXP2101 Highly Integrated Power Management Unit</li>
 </ul>
 <h3 id="Overview">Overview</h3>
-<h3 id="%E2%9C%A8-Hardware-Features">✨ Hardware-Features</h3>
+<h3 id="%E2%9C%A8-Hardware-Features">✨ Hardware Features</h3>
 <table>
 <thead>
 <tr>
-  <th>Features</th>
-  <th>Params</th>
+  <th>Feature</th>
+  <th>Parameter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td>SOC</td>
-  <td><a href="https://www.espressif.com.cn/en/products/socs/esp32-s3" title="ESP32-S3" target="_blank">Espressif ESP32-S3</a></td>
+  <td><a href="https://www.espressif.com/en/products/socs/esp32-s3" title="ESP32-S3" target="_blank">Espressif ESP32-S3</a></td>
 </tr>
 <tr>
   <td>Flash</td>
@@ -409,7 +409,7 @@ var _hmt = _hmt || [];
   <td><a href="https://www.semtech.com/products/wireless-rf/lora-connect/sx1262" title="Semtech SX1262" target="_blank">Semtech SX1262</a></td>
 </tr>
 <tr>
-  <td>Accelerometer sensor</td>
+  <td>Accelerometer</td>
   <td><a href="https://www.mouser.com/datasheet/2/783/BSCH_S_A0010021471_1-2525113.pdf" title="BMA423" target="_blank">Bosch BMA423</a></td>
 </tr>
 <tr>
@@ -417,12 +417,12 @@ var _hmt = _hmt || [];
   <td><a href="https://www.nxp.com/products/PCF8563" title="PCF8563" target="_blank">NXP PCF8563</a></td>
 </tr>
 <tr>
-  <td>Power Manage</td>
+  <td>Power Management</td>
   <td><a href="http://www.x-powers.com/en.php/Info/product_detail/article_id/95" title="AXP2101" target="_blank">X-Powers AXP2101</a></td>
 </tr>
 <tr>
-  <td>Haptic driver</td>
-  <td><a href="https://www.ti.com/product/DRV2605" title="DRV2605" target="_blank">Ti DRV2605</a></td>
+  <td>Haptic Driver</td>
+  <td><a href="https://www.ti.com/product/DRV2605" title="DRV2605" target="_blank">Texas Instruments DRV2605</a></td>
 </tr>
 <tr>
   <td>PDM Microphone</td>
@@ -430,24 +430,24 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>PCM Class D Amplifier</td>
-  <td><a href="https://www.analog.com/en/products/max98357a.html" title="MAX98357A" target="_blank">Analog MAX98357A (3.2W Class D)</a></td>
+  <td><a href="https://www.analog.com/en/products/max98357a.html" title="MAX98357A" target="_blank">Analog Devices MAX98357A (3.2W Class D)</a></td>
 </tr>
 <tr>
   <td>Capacitive Touch</td>
   <td><a href="https://buydisplay.com/download/ic/FT6236-FT6336-FT6436L-FT6436_Datasheet.pdf" title="FT6336U" target="_blank">FT6336U</a></td>
 </tr>
 <tr>
-  <td>Infrared transmitter</td>
-  <td><a href="https://www.everlight-led.cn/zh/datasheet-download/item/ir12-21c-tr8-datasheet" title="IR12-21C" target="_blank">IR12-21C</a></td>
+  <td>IR Emitter</td>
+  <td><a href="https://www.everlight-led.cn/en/datasheet-download/item/ir12-21c-tr8-datasheet" title="IR12-21C" target="_blank">IR12-21C</a></td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E2%9C%A8-Display-Features">✨ Display-Features</h3>
+<h3 id="%E2%9C%A8-Display-Features">✨ Display Features</h3>
 <table>
 <thead>
 <tr>
-  <th>Features</th>
-  <th>Params</th>
+  <th>Feature</th>
+  <th>Parameter</th>
 </tr>
 </thead>
 <tbody>
@@ -457,10 +457,10 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>Display Size</td>
-  <td>1.3 Inch</td>
+  <td>1.3 inch</td>
 </tr>
 <tr>
-  <td>Luminance on surface</td>
+  <td>Surface Brightness</td>
   <td>450 cd/m²</td>
 </tr>
 <tr>
@@ -468,7 +468,7 @@ var _hmt = _hmt || [];
   <td>ST7789V3 (SPI)</td>
 </tr>
 <tr>
-  <td>Contrast ratio</td>
+  <td>Contrast Ratio</td>
   <td>800:1</td>
 </tr>
 <tr>
@@ -476,8 +476,8 @@ var _hmt = _hmt || [];
   <td>262K</td>
 </tr>
 <tr>
-  <td>View Direction</td>
-  <td>All  (IPS)</td>
+  <td>Viewing Angle</td>
+  <td>Full View (IPS)</td>
 </tr>
 <tr>
   <td>Operating Temperature</td>
@@ -485,13 +485,13 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="%F0%9F%93%8D-%3Ca-href%3D%22https%3A//github.com/espressif/arduino-esp32/blob/master/variants/lilygo_twatch_s3/pins_arduino.h%22--target%3D%22_blank%22%3EPins-Map%3C/a%3E">📍 <a href="https://github.com/espressif/arduino-esp32/blob/master/variants/lilygo_twatch_s3/pins_arduino.h"  target="_blank">Pins Map</a></h3>
+<h3 id="%F0%9F%93%8D-%3Ca-href%3D%22https%3A//github.com/espressif/arduino-esp32/blob/master/variants/lilygo_twatch_s3/pins_arduino.h%22--target%3D%22_blank%22%3EPin-Mapping%3C/a%3E">📍 <a href="https://github.com/espressif/arduino-esp32/blob/master/variants/lilygo_twatch_s3/pins_arduino.h"  target="_blank">Pin Mapping</a></h3>
 <table>
 <thead>
 <tr>
   <th>Name</th>
-  <th>GPIO NUM</th>
-  <th>Free</th>
+  <th>GPIO Number</th>
+  <th>Idle</th>
 </tr>
 </thead>
 <tbody>
@@ -506,33 +506,33 @@ var _hmt = _hmt || [];
   <td>❌</td>
 </tr>
 <tr>
-  <td>Touchpad(<strong>FT6336U</strong>) SDA</td>
+  <td>Touch Panel(<strong>FT6336U</strong>) SDA</td>
   <td>39</td>
   <td>❌</td>
 </tr>
 <tr>
-  <td>Touchpad(<strong>FT6336U</strong>) SCL</td>
+  <td>Touch Panel(<strong>FT6336U</strong>) SCL</td>
   <td>40</td>
   <td>❌</td>
 </tr>
 <tr>
-  <td>Touchpad(<strong>FT6336U</strong>) Interrupt</td>
+  <td>Touch Panel(<strong>FT6336U</strong>) Interrupt</td>
   <td>16</td>
   <td>❌</td>
 </tr>
 <tr>
-  <td>Touchpad(<strong>FT6336U</strong>) RESET</td>
+  <td>Touch Panel(<strong>FT6336U</strong>) Reset</td>
   <td>Not Connected</td>
   <td>❌</td>
 </tr>
 <tr>
   <td>RTC(<strong>PCF8563</strong>) SDA</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
   <td>RTC(<strong>PCF8563</strong>) SCL</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
@@ -547,12 +547,12 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>Sensor(<strong>BMA423</strong>) SDA</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
   <td>Sensor(<strong>BMA423</strong>) SCL</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
@@ -601,7 +601,7 @@ var _hmt = _hmt || [];
   <td>❌</td>
 </tr>
 <tr>
-  <td>LoRa(<strong>SX1262 or SX1280</strong>) RESET</td>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) Reset</td>
   <td>8</td>
   <td>❌</td>
 </tr>
@@ -646,7 +646,7 @@ var _hmt = _hmt || [];
   <td>❌</td>
 </tr>
 <tr>
-  <td>Display RESET</td>
+  <td>Display Reset</td>
   <td>Not Connected</td>
   <td>❌</td>
 </tr>
@@ -657,12 +657,12 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>Charger(<strong>AXP2101</strong>) SDA</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
   <td>Charger(<strong>AXP2101</strong>) SCL</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
@@ -672,12 +672,12 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>Haptic Driver(<strong>DRV2605</strong>) SDA</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
   <td>Haptic Driver(<strong>DRV2605</strong>) SCL</td>
-  <td>Share with I2C bus</td>
+  <td>Shared I2C Bus</td>
   <td>❌</td>
 </tr>
 <tr>
@@ -691,34 +691,34 @@ var _hmt = _hmt || [];
   <td>❌</td>
 </tr>
 <tr>
-  <td>Infrared transmitter</td>
+  <td>IR Emitter</td>
   <td>2</td>
   <td>❌</td>
 </tr>
 </tbody>
 </table>
-<h3 id="%F0%9F%A7%91%F0%9F%8F%BC%E2%80%8D%F0%9F%94%A7-I2C-Devices-Address">🧑🏼‍🔧 I2C Devices Address</h3>
+<h3 id="%F0%9F%A7%91%F0%9F%8F%BC%E2%80%8D%F0%9F%94%A7-I2C-Device-Addresses">🧑🏼‍🔧 I2C Device Addresses</h3>
 <table>
 <thead>
 <tr>
-  <th>Devices</th>
-  <th>7-Bit Address</th>
-  <th>Share Bus</th>
+  <th>Device</th>
+  <th>7-bit Address</th>
+  <th>Shared Bus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td><a href="https://buydisplay.com/download/ic/FT6236-FT6336-FT6436L-FT6436_Datasheet.pdf" title="FT6336U" target="_blank">Touch Panel FT6336U</a></td>
   <td>0x38</td>
-  <td>❌ Use Wire1</td>
+  <td>❌ Uses Wire1</td>
 </tr>
 <tr>
-  <td><a href="https://www.mouser.com/datasheet/2/783/BSCH_S_A0010021471_1-2525113.pdf" title="BMA423" target="_blank">Accelerometer sensor BMA423</a></td>
+  <td><a href="https://www.mouser.com/datasheet/2/783/BSCH_S_A0010021471_1-2525113.pdf" title="BMA423" target="_blank">Accelerometer BMA423</a></td>
   <td>0x19</td>
   <td>✅️</td>
 </tr>
 <tr>
-  <td><a href="http://www.x-powers.com/en.php/Info/product_detail/article_id/95" title="AXP2101" target="_blank">Power Manager AXP2101</a></td>
+  <td><a href="http://www.x-powers.com/en.php/Info/product_detail/article_id/95" title="AXP2101" target="_blank">Power Management AXP2101</a></td>
   <td>0x34</td>
   <td>✅️</td>
 </tr>
@@ -728,18 +728,18 @@ var _hmt = _hmt || [];
   <td>✅️</td>
 </tr>
 <tr>
-  <td><a href="https://www.ti.com/product/DRV2605" title="DRV2605" target="_blank">Haptic driver DRV2605</a></td>
+  <td><a href="https://www.ti.com/product/DRV2605" title="DRV2605" target="_blank">Haptic Driver DRV2605</a></td>
   <td>0x5A</td>
   <td>✅️</td>
 </tr>
 </tbody>
 </table>
-<h3 id="%E2%9A%A1-PowerManage-Channel">⚡ PowerManage Channel</h3>
+<h3 id="%E2%9A%A1-Power-Management-Channels">⚡ Power Management Channels</h3>
 <table>
 <thead>
 <tr>
   <th>Channel</th>
-  <th>Peripherals</th>
+  <th>Peripheral</th>
 </tr>
 </thead>
 <tbody>
@@ -801,19 +801,19 @@ var _hmt = _hmt || [];
 </tr>
 <tr>
   <td>VBACKUP</td>
-  <td><strong>RTC Button Battery</strong></td>
+  <td><strong>RTC Coin Cell Battery</strong></td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>BLDO1 as GPS power supply (with BOOT and RST buttons in the back shell)</li>
-<li>DC3 was originally used as a GPS power source (there were no BOOT and RST buttons on the back cover)</li>
+<li>BLDO1 serves as GPS power (along with BOOT and RST buttons in the back case)</li>
+<li>DC3 was originally used as GPS power (without BOOT and RST buttons on the back cover)</li>
 </ul>
-<h3 id="%E2%9A%A1-Electrical-parameters">⚡ Electrical parameters</h3>
+<h3 id="%E2%9A%A1-Electrical-Parameters">⚡ Electrical Parameters</h3>
 <table>
 <thead>
 <tr>
-  <th>Features</th>
+  <th>Feature</th>
   <th>Details</th>
 </tr>
 </thead>
@@ -823,7 +823,7 @@ var _hmt = _hmt || [];
   <td>3.9V-6V</td>
 </tr>
 <tr>
-  <td>⚡Charge Current</td>
+  <td>⚡Charging Current</td>
   <td>0-1024mA ((Programmable))</td>
 </tr>
 <tr>
@@ -831,75 +831,74 @@ var _hmt = _hmt || [];
   <td>3.7V</td>
 </tr>
 <tr>
-  <td>🔋Battery capacity</td>
+  <td>🔋Battery Capacity</td>
   <td>1500mA ((5.55Wh))</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>[!IMPORTANT]<br />
-⚠️ It is recommended to use a charging current below 130mA. Excessive charging current can damage the battery.<br />
-If not in use for an extended period, turn the battery switch to OFF.</p>
+<p>⚠️ It is recommended to use a charging current below 130mA. Excessive charging current may damage the battery.<br />
+If not used for an extended period, please turn the battery switch to OFF.</p>
 </blockquote>
-<h3 id="%E2%9A%A1-Power-consumption-reference">⚡ Power consumption reference</h3>
+<h3 id="%E2%9A%A1-Power-Consumption-Reference">⚡ Power Consumption Reference</h3>
 <table>
 <thead>
 <tr>
   <th>Mode</th>
-  <th>Wake-Up Mode</th>
+  <th>Wake-up Sources</th>
   <th>Current</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Light-Sleep</td>
-  <td>PowerButton + BootButton + TouchPanel</td>
+  <td>Light Sleep</td>
+  <td>Power Button + Boot Button + Touch Panel</td>
   <td>2.38mA</td>
 </tr>
 <tr>
-  <td>Light-Sleep</td>
-  <td>PowerButton + BootButton</td>
-  <td>N.A</td>
+  <td>Light Sleep</td>
+  <td>Power Button + Boot Button</td>
+  <td>N/A</td>
 </tr>
 <tr>
-  <td>DeepSleep</td>
-  <td>PowerButton + BootButton (Backup power on)</td>
+  <td>Deep Sleep</td>
+  <td>Power Button + Boot Button (Backup Power ON)</td>
   <td>530uA</td>
 </tr>
 <tr>
-  <td>DeepSleep</td>
-  <td>PowerButton + BootButton (Backup power off)</td>
+  <td>Deep Sleep</td>
+  <td>Power Button + Boot Button (Backup Power OFF)</td>
   <td>460uA</td>
 </tr>
 <tr>
-  <td>DeepSleep</td>
-  <td>TouchPanel</td>
+  <td>Deep Sleep</td>
+  <td>Touch Panel</td>
   <td>1.08mA</td>
 </tr>
 <tr>
-  <td>DeepSleep</td>
-  <td>Timer (Backup power on)</td>
+  <td>Deep Sleep</td>
+  <td>Timer (Backup Power ON)</td>
   <td>510uA</td>
 </tr>
 <tr>
-  <td>DeepSleep</td>
-  <td>Timer (Backup power off)</td>
+  <td>Deep Sleep</td>
+  <td>Timer (Backup Power OFF)</td>
   <td>460uA</td>
 </tr>
 <tr>
-  <td>Power OFF</td>
-  <td>Only keep the backup power</td>
+  <td>Shutdown</td>
+  <td>Only Backup Power Maintained</td>
   <td>50uA</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>T-Watch-S3-Plus does not have a touch reset pin connected, so if you set the touch screen to sleep, the touch will not work.</li>
+<li>T-Watch-S3-Plus does not have the touch reset pin connected, so if the touch screen is set to sleep, touch will not work.</li>
 </ul>
-<h3 id="Resource">Resource</h3>
+<h3 id="Resources">Resources</h3>
 <ul>
-<li><a href="../../schematic/T_WATCH-S3%2025-03-24.pdf"  >Motherboard-schematic</a></li>
-<li><a href="../../schematic/T-Watch-S3-Plus-GPS%20V1.0%202025-04-29.pdf"  >GPS-schematic</a></li>
+<li><a href="../../schematic/T_WATCH-S3%2025-03-24.pdf"  >Main Board Schematic</a></li>
+<li><a href="../../schematic/T-Watch-S3-Plus-GPS%20V1.0%202025-04-29.pdf"  >GPS Schematic</a></li>
 </ul>
 <h2 id="Quick-Start">Quick Start</h2>
 <h3 id="Example-Support">Example Support</h3>
@@ -914,13 +913,13 @@ If not in use for an extended period, turn the battery switch to OFF.</p>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/examples/factory/factory.ino"  target="_blank">Factory</a></td>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/examples/factory/factory.ino"  target="_blank">Factory Program</a></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center"></td>
   <td style="text-align:left">Factory Example</td>
 </tr>
 <tr>
-  <td style="text-align:left"><em>(More examples please refer to the GitHub repository)</em></td>
+  <td style="text-align:left"><em>(More examples please refer to GitHub repository)</em></td>
   <td style="text-align:center"></td>
   <td style="text-align:center"></td>
   <td style="text-align:left"></td>
@@ -929,45 +928,41 @@ If not in use for an extended period, turn the battery switch to OFF.</p>
 </table>
 <h3 id="PlatformIO">PlatformIO</h3>
 <ol>
-<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>, choose the version for your system.</li>
-<li>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
-<li>While the extension is installing, you can go to GitHub to download the project code. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
-<li>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code folder you just downloaded (the entire folder), click &quot;Add&quot;. The project files will then be added to your workspace.</li>
-<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO should automatically open the &quot;platformio.ini&quot; for the added folder). Under the &quot;[platformio]&quot; section, uncomment the line to select the example program you want to upload (identified by &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; in the bottom left corner to compile. If the compilation is successful, connect the microcontroller to your computer and click the &quot;<kbd>→</kbd>&quot; in the bottom left corner to upload.</li>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">Visual Studio Code</a>, choose the installation according to your system type.</li>
+<li>Open the &quot;Extensions&quot; in the Visual Studio Code sidebar (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open extensions), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>During the extension installation, you can go to GitHub to download the project code. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension installation is complete, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to open it), click &quot;Open Folder&quot;, find the recently downloaded project code folder (the entire folder), and click &quot;Add&quot;. Now the project files are added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; for the corresponding folder), under the &quot;[platformio]&quot; section, uncomment to select the example program you want to flash (headed by &quot;default_envs = xxx&quot;), then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer, and click the &quot;<kbd>→</kbd>&quot; at the bottom left to flash.</li>
 </ol>
 <h3 id="Arduino">Arduino</h3>
 <ol>
 <li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html"  target="_blank">Arduino ESP32 <strong>V3.3.0-alpha1</strong> or later or latest</a></li>
-</ol>
-<ul>
-<li>Tips : Arduino manager URL: <a href="https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json"  target="_blank">https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json</a></li>
+<li>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html"  target="_blank">Arduino ESP32 <strong>V3.3.0-alpha1</strong> or higher or the latest version</a><ul>
+<li>Tip: Arduino Manager URL: <a href="https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json"  target="_blank">https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json</a></li>
 </ul>
-<ol start="3">
-<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip"  target="_blank">Download LilyGoLib Library</a></li>
-<li>Open <code>Arduino IDE</code> -&gt; <code>Sketch</code> -&gt; <code>Include Library</code> -&gt; <code>Add .ZIP Library</code> -&gt; <code>Select the library compressed package downloaded in step 3</code></li>
+</li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip"  target="_blank">Download LilyGoLib library</a></li>
+<li>Open <code>Arduino IDE</code> -&gt; <code>Sketch</code> -&gt; <code>Include Library</code> -&gt; <code>Add .ZIP Library</code> -&gt; <code>Select the library zip file downloaded in step 3</code></li>
 <li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">Install LilyGoLib-ThirdParty</a><ul>
-<li>Copy all directories in <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">LilyGoLib-ThirdParty</a> to ArduinoIDE libraries directory, if there is no <code>libraries</code> directory, please create it.</li>
-<li>Please note that instead of copying the <code>LilyGoLib-ThirdParty</code> directory, copy the folders in the <code>LilyGoLib-ThirdParty</code> directory to libraries</li>
-<li>How to find the location of your own libraries on your computer, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">please see here</a><ul>
-<li>Windows: <code>C:\Users\{username}\Documents\Arduino</code></li>
-<li>macOS: <code>/Users/{username}/Documents/Arduino</code></li>
-<li>Linux: <code>/home/{username}/Arduino</code></li>
+<li>Copy all directories from <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">LilyGoLib-ThirdParty</a> to the ArduinoIDE libraries directory. If there is no <code>libraries</code> directory, please create it.</li>
+<li>Please note: do not copy the <code>LilyGoLib-ThirdParty</code> directory itself, but copy the folders inside the <code>LilyGoLib-ThirdParty</code> directory to the libraries directory.</li>
+<li>How to find the library location on your computer, <a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">please see here</a><ul>
+<li>Windows: <code>C:\Users\{Username}\Documents\Arduino</code></li>
+<li>macOS: <code>/Users/{Username}/Documents/Arduino</code></li>
+<li>Linux: <code>/home/{Username}/Arduino</code></li>
 </ul>
 </li>
 </ul>
 </li>
 </ol>
 <blockquote>
-<p>Please note that the libraries in LilyGoLib-ThirdParty are not necessarily the latest versions. Please do not upgrade the versions of the dependent libraries before confirming that the hardware is running normally.</p>
-</blockquote>
-<p>ArduinoIDE will prompt that there is a new version of the library to upgrade every time it is opened.<br />
-Please confirm that it is running normally before trying to update to the latest version. If you encounter problems, please roll back to the version of the dependent library that runs normally. The current list of dependent library versions can be viewed <a href="./third_party.md#t-watch-s3-third-party"  >here</a></p>
-<blockquote>
+<p>Please note that the libraries in LilyGoLib-ThirdParty are not necessarily the latest versions. Before confirming the hardware is working properly, please do not upgrade the dependent library versions.<br />
+ArduinoIDE will prompt that new library versions are available for upgrade every time it opens.<br />
+Please confirm normal operation before attempting to update to the latest versions. If you encounter issues, please revert to the dependent library versions that worked properly. The current dependent library version list can be viewed <a href="./third_party.md#t-watch-s3-third-party"  >here</a></p>
 </blockquote>
 <ol start="6">
 <li><code>File</code> -&gt; <code>Examples</code> -&gt; <code>LilyGOLib</code> -&gt; <code>helloworld</code></li>
-<li><code>Tools</code> -&gt; <code>Board</code> -&gt; <code>esp32</code>,Please select from the table below</li>
+<li><code>Tools</code> -&gt; <code>Board</code> -&gt; <code>esp32</code>, please select from the table below</li>
 </ol>
 <table>
 <thead>
@@ -1048,7 +1043,7 @@ Please confirm that it is running normally before trying to update to the latest
 </tbody>
 </table>
 <ol start="8">
-<li><strong>Board Revision options</strong>, please select according to the actual RF type purchased. The current options are:<ul>
+<li><strong>Board Revision Option</strong>, please select according to the actual purchased RF type. Current options include:<ul>
 <li>Radio-SX1262(Sub 1G LoRa)</li>
 <li>Radio-SX1280(2.4G LoRa)</li>
 <li>Radio-CC1101(Sub 1G (G)MSK, 2(G)FSK, 4(G)FSK, ASK, OOK)</li>
@@ -1057,53 +1052,53 @@ Please confirm that it is running normally before trying to update to the latest
 </ul>
 </li>
 <li>Select <code>Port</code></li>
-<li>Click <code>upload</code> , Wait for compilation and writing to complete</li>
-<li>If you cannot upload sketch or the USB device keeps popping up on the computer, please manually put the device into download mode. How to enter download mode, please see the <a href="#t-watch-s3-plus-enter-download-mode"  >here</a></li>
+<li>Click <code>Upload</code>, wait for compilation and writing to complete</li>
+<li>If unable to upload the program or the USB device keeps popping up on the computer, please manually put the device into download mode. How to enter download mode, please see <a href="#t-watch-s3-plus-enter-download-mode"  >here</a></li>
 </ol>
 <blockquote>
 <ul>
-<li>If there is no message output from the serial port, please check whether USB CDC ON Boot is set to Enabled.</li>
-<li>Board Revision changes according to the actual RF module model. The current default version is SX1262</li>
-<li>This library depends on the latest <a href="https://github.com/espressif/arduino-esp32/releases/tag/3.3.0-alpha1"  target="_blank">arduino-esp32</a> version. If it is lower than <strong>V3.3.0-alpha1</strong>, an error will be reported.</li>
+<li>If there is no serial message output, please check if USB CDC ON Boot is set to Enabled.</li>
+<li>The board revision varies according to the actual RF module model. The current default version is SX1262.</li>
+<li>This library depends on the latest <a href="https://github.com/espressif/arduino-esp32/releases/tag/3.3.0-alpha1"  target="_blank">arduino-esp32</a> version. If it is lower than <strong>V3.3.0-alpha1</strong>, it will report an error.</li>
 </ul>
 </blockquote>
 <h3 id="T-Watch-S3-Plus-Enter-Download-Mode">T-Watch-S3-Plus Enter Download Mode</h3>
 <blockquote>
-<p>Download mode is only required when the program is not allowed to upload the sketch. This step is not required under normal circumstances.</p>
-<p>🤖 T-Watch-S3-Plus the BOOT button and RST button have been reserved on the edge of the shell. Please follow the steps below to put the device into download mode.</p>
+<p>Download mode is only needed when the program does not allow code upload. Normally this step is not required.</p>
+<p>🤖 The BOOT button and RST button for T-Watch-S3-Plus are reserved on the edge of the case. Please follow the steps below to put the device into download mode.</p>
 <ol>
-<li>Connect the board via the USB-C cable</li>
-<li>Press and hold the <strong>BOOT</strong> button , While still pressing the <strong>BOOT</strong> button</li>
+<li>Connect the development board via USB-C cable</li>
+<li>Press and hold the <strong>BOOT</strong> button, while still holding the <strong>BOOT</strong> button</li>
 <li>Release the <strong>RST</strong> button</li>
 <li>Release the <strong>BOOT</strong> button</li>
-<li>The USB port should be fixed and will not flash again. You can click Upload.</li>
+<li>The USB port should be fixed and not blink again. You can click upload.</li>
 <li>Press the <strong>RST</strong> button to exit download mode</li>
 </ol>
-<p>If the new code is successfully written, but the device does not light up or has other problems, please use our factory test code to test whether the peripherals can work properly. Please jump here to download the firmware and write it for testing.</p>
+<p>If the new code is successfully written but the device does not light up or has other issues, please use our factory test code to test whether the peripherals can work normally. Please jump here to download the firmware and write it for testing.</p>
 </blockquote>
 <h3 id="Development-Platforms">Development Platforms</h3>
 <ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
+<li><a href="https://www.espressif.com/en/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
 <li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 </ol>
 <h2 id="FAQ">FAQ</h2>
 <ul>
-<li><p><strong>Q. What is the main difference between the T-Watch S3 Plus and the T-Watch S3?</strong><br />
-A. The T-Watch S3 Plus adds GPS functionality to the T-Watch S3, while other hardware configurations remain largely the same.</p>
+<li><p><strong>Q: What is the main difference between T-Watch S3 Plus and T-Watch S3?</strong><br />
+A: T-Watch S3 Plus adds GPS functionality based on T-Watch S3, other hardware configurations are basically the same.</p>
 </li>
-<li><p><strong>Q. How to turn on and off?</strong><br />
-A. Press and hold the POWER button for 2 seconds to turn on. Press and hold for 6 seconds to turn off. The BOOT button is an internal button used to enter download mode.</p>
+<li><p><strong>Q: How to power on and off?</strong><br />
+A: Press and hold the POWER button for 2 seconds to power on, hold for 6 seconds to power off. The BOOT button is a built-in button used to enter download mode.</p>
 </li>
-<li><p><strong>Q. Which LoRa frequency bands are supported?</strong><br />
-A. Currently available in SX1262 and SX1280 versions, supporting 433MHz~923MHz frequency bands. Please choose the appropriate version according to the regulations in your region.</p>
+<li><p><strong>Q: Which LoRa frequency bands are supported?</strong><br />
+A: Currently there are two versions: SX1262 and SX1280, supporting 433MHz~923MHz frequency bands. Please choose the appropriate version according to the regulations in your region.</p>
 </li>
-<li><p><strong>Q. How to develop watch applications?</strong><br />
-A. It is recommended to use the TTGO_TWatch_Library, which provides rich watch UI components and sensor drivers for rapid application development.</p>
+<li><p><strong>Q: How to develop watch applications?</strong><br />
+A: It is recommended to use the TTGO_TWatch_Library, which provides rich watch UI components and sensor drivers for rapid watch application development.</p>
 </li>
-<li><p><strong>Q. What is the battery life like?</strong><br />
-A. Battery life depends on usage scenarios. Under normal usage, it can last for several days. Please refer to actual test data for specific duration.</p>
+<li><p><strong>Q: What is the battery life?</strong><br />
+A: Battery life depends on usage scenarios. Under normal usage conditions, it can last for several days. For specific times, please refer to actual test data.</p>
 </li>
 </ul>
 <h2 id="Projects">Projects</h2>
@@ -1112,10 +1107,10 @@ A. Battery life depends on usage scenarios. Under normal usage, it can last for 
 </ul>
 <h2 id="Resources">Resources</h2>
 <ul>
-<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
 <li><a href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma423-ds000.pdf"  target="_blank">BMA423 Datasheet</a></li>
 <li><a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library"  target="_blank">AXP2101 Datasheet</a></li>
-<li><em>(More resources please refer to the GitHub repository)</em></li>
+<li><em>(More resources please refer to GitHub repository)</em></li>
 </ul>
 <h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>

@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Watch Ultra - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+    <script type="text/javascript">metadata = {"tags": ["Smart Watch", "ESP32-S3", "LoRa", "GNSS", "AMOLED", "AI Sensor", "NFC"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -241,6 +241,20 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>Smart Watch</li>
+                            
+                                <li>ESP32-S3</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>GNSS</li>
+                            
+                                <li>AMOLED</li>
+                            
+                                <li>AI Sensor</li>
+                            
+                                <li>NFC</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -251,12 +265,6 @@ var _hmt = _hmt || [];
                             
                         </div>
                         <div id="article_info_right">
-                            
-                            <div id="source_link">
-                                <a href="https://github.com/Xinyuan-LilyGO/LILYGO_wiki/blob/main/docs/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.md" target="_blank">
-                                    编辑本页
-                                </a>
-                            </div>
                             
                         </div>
                         </div>
@@ -270,222 +278,743 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Watch-Ultra-1.jpg" alt="T-Watch-Ultra" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Watch-Ultra-1.jpg" alt="T-Watch Ultra" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-watch-ultra">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
 </div>
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S3 双核处理器，搭载 16MB闪存 与 8MB PSRAM，支持 Arduino/ESP-IDF/MicroPython 开发环境。核心功能高度集成：</p>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Watch-Ultra_V1.0</td>
+  <td style="text-align:center">最新版本</td>
+  <td style="text-align:left">高性能智能手表开发模组初始版本</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Screen</th>
+  <th style="text-align:center">LoRa</th>
+  <th style="text-align:center">GNSS</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Watch Ultra</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16M</td>
+  <td style="text-align:center">8M</td>
+  <td style="text-align:center">2.06&quot; AMOLED</td>
+  <td style="text-align:center">SX1262/SX1280</td>
+  <td style="text-align:center">MIA-M10Q</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-watch-ultra"  target="_blank">LILYGO Mall</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><p>显示交互：配备 2.06英寸AMOLED屏（410×502分辨率，1600万色），支持 电容触控 与 QSPI高速渲染。</p>
-</li>
-<li><p>四重无线通信：集成 Wi-Fi/BLE 5.0、LoRa（SX1262/SX1280，覆盖433/868/915MHz频段）、GNSS定位（MIA-M10Q模块）及 NFC（ST25R3916）。</p>
-</li>
-<li><p>智能感知与反馈：内置 BHI260AP AI动作传感器、DRV2605触觉震动马达 及 MAX98357A音频功放，实现运动识别与多模态交互。</p>
-</li>
-<li><p>扩展与续航：支持 MicroSD卡扩展（32GB FAT32），由 AXP2101电源管理芯片 动态优化能耗，搭配 1100mAh电池（4.07Wh），USB Type-C接口 同步支持 5V充电与程序烧录，物理按键控制开关机（短按启/长按6.5秒关）。</p>
-</li>
-<li><p>工业级设计：紧凑尺寸（49×63.5×22mm），宽温域运行（-40℃~85℃），适用于 户外运动设备、工业物联网网关等场景，以多协议融合与低功耗架构满足复杂应用需求。</p>
-</li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Watch-Ultra-2.jpg" alt="summary" width=80%>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S3 双核处理器，搭载 16MB 闪存与 8MB PSRAM，支持 Arduino/ESP-IDF/MicroPython 开发环境。核心功能高度集成：</p>
+<ul>
+<li><strong>显示交互</strong>：配备 2.06英寸 AMOLED 屏（410×502分辨率，1600万色），支持电容触控与 QSPI 高速渲染</li>
+<li><strong>四重无线通信</strong>：集成 Wi-Fi/BLE 5.0、LoRa（SX1262/SX1280，覆盖433/868/915MHz频段）、GNSS定位（MIA-M10Q模块）及 NFC（ST25R3916）</li>
+<li><strong>智能感知与反馈</strong>：内置 BHI260AP AI动作传感器、DRV2605触觉震动马达及 MAX98357A音频功放，实现运动识别与多模态交互</li>
+<li><strong>扩展与续航</strong>：支持 MicroSD卡扩展（32GB FAT32），由 AXP2101电源管理芯片动态优化能耗，搭配 1100mAh电池（4.07Wh）</li>
+<li><strong>工业级设计</strong>：紧凑尺寸（49×63.5×22mm），宽温域运行（-40℃~85℃），适用于户外运动设备、工业物联网网关等场景</li>
+</ul>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<img src="./assets/T-Watch-Ultra-2.jpg.jpg" alt="summary" width=100%>
+</div>
 <h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Watch-Ultra-3.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99">模块资料</h2>
-<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
-<p>T-Watch Ultra满足了想要在可穿戴设备中试验LoRa和ESP32 S3技术的开发人员的需求，高度可定制且可用于各种应用程序。</p>
-<table>
-<thead>
-<tr>
-  <th>组件</th>
-  <th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>MCU</td>
-  <td>ESP32-S3</td>
-</tr>
-<tr>
-  <td>FLASH</td>
-  <td>16MB</td>
-</tr>
-<tr>
-  <td>PS RAM</td>
-  <td>8MB</td>
-</tr>
-<tr>
-  <td>RTC</td>
-  <td>PCF85063A</td>
-</tr>
-<tr>
-  <td>NFC</td>
-  <td>ST25R3916</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>智能传感器</td>
-  <td>BHI260AP AI动作传感器</td>
-</tr>
-<tr>
-  <td>无线</td>
-  <td>Wi-Fi: 802.11 b/g/n; BLE V5.0</td>
-</tr>
-<tr>
-  <td>LoRa</td>
-  <td>SX1262，SX1280 支持频段：433~923HMZ(可选)</td>
-</tr>
-<tr>
-  <td>音频输出</td>
-  <td>Max98357A</td>
-</tr>
-<tr>
-  <td>电机</td>
-  <td>DRV2605 触觉震动马达</td>
-</tr>
-<tr>
-  <td>电源管理</td>
-  <td>AXP2101 高度集成的电源管理单元</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × USB Port and OTG(micro接口)</td>
-</tr>
-<tr>
-  <td>按键</td>
-  <td>1 x POWER 按键(按住两秒开机，按住六秒关机) + 1 x BOOT 按键(内置)</td>
-</tr>
-<tr>
-  <td>屏幕</td>
-  <td>2.01英寸AMOLED屏幕 410 * 502(SPI)</td>
-</tr>
-<tr>
-  <td>IO拓展</td>
-  <td>XL9555 16拓展IO接口</td>
-</tr>
-<tr>
-  <td>通话模块</td>
-  <td>T3902</td>
-</tr>
-<tr>
-  <td>触摸</td>
-  <td>CST9217 电容触摸屏</td>
-</tr>
-<tr>
-  <td>电池</td>
-  <td>1100mAh 锂电池</td>
-</tr>
-<tr>
-  <td>电源</td>
-  <td>5V/500mA 输入</td>
-</tr>
-<tr>
-  <td>尺寸</td>
-  <td><strong>不带表带 63.5x49x22mm</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99%E9%93%BE%E6%8E%A5">相关资料链接</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">T-Watch Ultra</a></p>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/docs/hardware/"  target="_blank">T-Watch Ultra</a></p>
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<img src="./assets/T-Watch-Ultra-pin.jpg" alt="summary" width=100%>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/tree/t-watch-s3"  target="_blank">TTGO_TWatch_Library</a></li>
+<li>芯片：ESP32-S3</li>
+<li>PSRAM：8MB (Octal SPI)</li>
+<li>FLASH：16MB</li>
+<li>架构：双核 Xtensa LX7</li>
+<li>无线：Wi-Fi 802.11 b/g/n + Bluetooth 5.0</li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
+<h3 id="%E5%B1%8F%E5%B9%95">屏幕</h3>
+<ul>
+<li>尺寸：2.06英寸 AMOLED</li>
+<li>分辨率：410x502px</li>
+<li>屏幕类型：AMOLED</li>
+<li>色彩：1600万色</li>
+<li>接口：QSPI</li>
+</ul>
+<h3 id="LoRa">LoRa</h3>
+<ul>
+<li>芯片：SX1262 / SX1280（可选）</li>
+<li>频率：433-923MHz (SX1262) / 2.4GHz (SX1280)</li>
+</ul>
+<h3 id="GNSS-%E5%AE%9A%E4%BD%8D">GNSS 定位</h3>
+<ul>
+<li>芯片：MIA-M10Q</li>
+<li>特性：多星座 GNSS 接收器</li>
+</ul>
+<h3 id="AI-%E4%BC%A0%E6%84%9F%E5%99%A8">AI 传感器</h3>
+<ul>
+<li>芯片：BHI260AP</li>
+<li>类型：AI 动作传感器</li>
+<li>特性：支持复杂运动识别</li>
+</ul>
+<h3 id="NFC">NFC</h3>
+<ul>
+<li>芯片：ST25R3916</li>
+<li>功能：近场通信</li>
+</ul>
+<h3 id="%E9%9F%B3%E9%A2%91">音频</h3>
+<ul>
+<li>功放：MAX98357A</li>
+<li>接口：I2S</li>
+</ul>
+<h3 id="%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86">电源管理</h3>
+<ul>
+<li>芯片：AXP2101</li>
+<li>电池：1100mAh 锂电池</li>
+<li>充电：USB Type-C 5V</li>
+</ul>
+<h3 id="%E6%89%A9%E5%B1%95%E6%8E%A5%E5%8F%A3">扩展接口</h3>
+<ul>
+<li>IO扩展：XL9555（16个扩展IO接口）</li>
+<li>存储：MicroSD卡（最大32GB）</li>
+</ul>
+<h3 id="%E9%80%9A%E8%AF%9D%E6%A8%A1%E5%9D%97">通话模块</h3>
+<ul>
+<li>芯片：T3902</li>
+<li>功能：语音通话支持</li>
+</ul>
+<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
 <table>
 <thead>
 <tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
+  <th style="text-align:center">组件</th>
+  <th style="text-align:center">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Board</td>
-  <td><strong>LilyGo T-Watch-Ultra</strong></td>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3 双核处理器</td>
 </tr>
 <tr>
-  <td>Port</td>
-  <td>Your port</td>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
 </tr>
 <tr>
-  <td>USB CDC On Boot</td>
-  <td>Enabled</td>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB (Octal SPI)</td>
 </tr>
 <tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
+  <td style="text-align:center">屏幕</td>
+  <td style="text-align:center">2.06英寸 AMOLED (410×502)</td>
 </tr>
 <tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
+  <td style="text-align:center">触摸</td>
+  <td style="text-align:center">CST9217 电容触摸屏</td>
 </tr>
 <tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (433-923MHz) / SX1280 (2.4GHz)</td>
 </tr>
 <tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
+  <td style="text-align:center">GNSS</td>
+  <td style="text-align:center">MIA-M10Q 多星座定位</td>
 </tr>
 <tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
+  <td style="text-align:center">NFC</td>
+  <td style="text-align:center">ST25R3916</td>
 </tr>
 <tr>
-  <td>JTAG Adapter</td>
-  <td>Disable</td>
+  <td style="text-align:center">AI传感器</td>
+  <td style="text-align:center">BHI260AP 动作传感器</td>
 </tr>
 <tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
+  <td style="text-align:center">音频</td>
+  <td style="text-align:center">MAX98357A 音频功放</td>
 </tr>
 <tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
+  <td style="text-align:center">振动马达</td>
+  <td style="text-align:center">DRV2605 触觉反馈</td>
 </tr>
 <tr>
-  <td>Partition Scheme</td>
-  <td><strong>16M Flash(3M APP/9.9MB FATFS)</strong></td>
+  <td style="text-align:center">电源管理</td>
+  <td style="text-align:center">AXP2101 PMU</td>
 </tr>
 <tr>
-  <td>Board Revision</td>
-  <td><strong>Radio-SX1262</strong></td>
+  <td style="text-align:center">RTC</td>
+  <td style="text-align:center">PCF85063A 实时时钟</td>
 </tr>
 <tr>
-  <td>Upload Mode</td>
-  <td><strong>UART0/Hardware CDC</strong></td>
+  <td style="text-align:center">IO扩展</td>
+  <td style="text-align:center">XL9555 (16个IO)</td>
 </tr>
 <tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
+  <td style="text-align:center">通话模块</td>
+  <td style="text-align:center">T3902</td>
 </tr>
 <tr>
-  <td>USB Mode</td>
-  <td><strong>CDC and JTAG</strong></td>
+  <td style="text-align:center">存储</td>
+  <td style="text-align:center">MicroSD卡扩展</td>
+</tr>
+<tr>
+  <td style="text-align:center">电池</td>
+  <td style="text-align:center">1100mAh 锂电池</td>
+</tr>
+<tr>
+  <td style="text-align:center">无线</td>
+  <td style="text-align:center">Wi-Fi 802.11b/g/n + Bluetooth 5.0</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB OTG (Type-C接口)</td>
+</tr>
+<tr>
+  <td style="text-align:center">按键</td>
+  <td style="text-align:center">POWER + BOOT (内置)</td>
+</tr>
+<tr>
+  <td style="text-align:center">尺寸</td>
+  <td style="text-align:center"><strong>63.5×49×22mm</strong> (不带表带)</td>
 </tr>
 </tbody>
 </table>
+<h2 id="%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B">快速开始</h2>
+<h3 id="%E7%A4%BA%E4%BE%8B%E6%94%AF%E6%8C%81">示例支持</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">Watch UI</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">手表界面示例</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">GNSS Tracking</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">卫星定位功能</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">LoRa Communication</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">LoRa 通信测试</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">AI Sensor</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">动作识别示例</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">NFC Reader</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">NFC 功能演示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>安装<a href="https://www.arduino.cc/en/software"  target="_blank">Arduino集成开发环境</a></li>
+<li>安装 <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html"  target="_blank">Arduino ESP32 版本 3.3.0-alpha1 或更高版本（最新版本）</a></li>
+</ol>
+<ul>
+<li>提示：Arduino 管理器网址：<a href="https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json"  target="_blank">https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json</a></li>
+</ul>
+<ol start="3">
+<li><p><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip"  target="_blank">下载LilyGoLib库</a></p>
+</li>
+<li><p>Open <code>Arduino IDE</code> -&gt; <code>Sketch</code> -&gt; <code>Include Library</code> -&gt; <code>Add .ZIP Library</code> -&gt; <code>Select the library compressed package downloaded in step 3</code></p>
+</li>
+<li><p><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">安装 LilyGoLib-ThirdParty</a></p>
+</li>
+</ol>
+<ul>
+<li>将 <a href="https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty"  target="_blank">LilyGoLib-ThirdParty</a> 中的所有目录复制到 ArduinoIDE 的库目录中，如果没有“libraries”目录，请创建它。</li>
+<li>请注意，不要直接复制“LilyGoLib-ThirdParty”目录，而是将“LilyGoLib-ThirdParty”目录中的文件夹复制到库中。</li>
+<li>如何在您的计算机上找到自己的库的位置，请<a href="https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer"  target="_blank">参考此处</a></li>
+<li>Windows： <code>C:\Users\{用户名}\Documents\Arduino</code></li>
+<li>macOS： <code>/Users/{用户名}/Documents/Arduino</code></li>
+<li>Linux： <code>/home/{用户名}/Arduino</code></li>
+</ul>
+<blockquote>
+<p>请注意，LilyGoLib-ThirdParty 中的库并非一定是最新版本。在确认硬件运行正常之前，请不要升级依赖库的版本。</p>
+</blockquote>
+<p>每次打开 ArduinoIDE 时，它都会提示有新的库版本可供升级。<br />
+在尝试更新到最新版本之前，请先确认其运行正常。如果遇到问题，请回滚到正常运行的依赖库版本。当前依赖库版本的列表可查看 <a href="./third_party.md#t-watch-ultra-third-party"  >此处</a></p>
+<ol start="6">
+<li><p>“ <code>File</code> -&gt; <code>Examples</code> -&gt; <code>LilyGOLib</code> -&gt; <code>helloworld</code></p>
+</li>
+<li><p><code>Tools</code> -&gt; <code>Board</code> -&gt; <code>esp32</code>,请从下面的表格中进行选择。<br />
+| Arduino IDE Setting                  | Value                             |<br />
+| ------------------------------------ | --------------------------------- |<br />
+| Board                                | <strong>LilyGo T-Watch-Ultra</strong>          |<br />
+| Port                                 | Your port                         |<br />
+| USB CDC On Boot                      | Enabled                           |<br />
+| CPU Frequency                        | 240MHZ(WiFi)                      |<br />
+| Core Debug Level                     | None                              |<br />
+| USB DFU On Boot                      | Disable                           |<br />
+| Erase All Flash Before Sketch Upload | Disable                           |<br />
+| Events Run On                        | Core 1                            |<br />
+| JTAG Adapter                         | Disable                           |<br />
+| Arduino Runs On                      | Core 1                            |<br />
+| USB Firmware MSC On Boot             | Disable                           |<br />
+| Partition Scheme                     | <strong>16M Flash(3M APP/9.9MB FATFS)</strong> |<br />
+| Board Revision                       | <strong>Radio-SX1262</strong>                  |<br />
+| Upload Mode                          | <strong>UART0/Hardware CDC</strong>            |<br />
+| Upload Speed                         | 921600                            |<br />
+| USB Mode                             | <strong>CDC and JTAG</strong>                  |</p>
+</li>
+<li><p><strong>板载版本选项</strong>，请根据所购买的实际射频类型进行选择。目前的选项有：</p>
+</li>
+</ol>
+<ul>
+<li>Radio-SX1262（1G 低频射频）</li>
+<li>Radio-SX1280（2.4G 低频射频）</li>
+<li>Radio-CC1101（1G（G）MSK、2（G）FSK、4（G）FSK、ASK、OOK）</li>
+<li>Radio-LR1121（1G + 2.4G 低频射频）</li>
+<li>Radio-SI4432（1G ISM）9. 选择“端口”10. 点击“上传”，等待编译和写入完成。11. 如果您无法上传草图或者 USB 设备一直出现在电脑上，请手动将该设备切换至下载模式。</li>
+</ul>
+<blockquote>
+<ul>
+<li>如果串口没有输出任何信息，请检查“USB CDC 在启动时启用”是否设置为“启用”。</li>
+<li>板本版本会根据实际的射频模块型号而变化。当前默认版本是 SX1262。</li>
+<li>该库依赖于最新的 <a href="https://github.com/espressif/arduino-esp32/releases/tag/3.3.0-alpha1"  target="_blank">arduino-esp32</a> 版本。如果低于 <strong>V3.3.0-alpha1</strong>，将会报错。</li>
+</ul>
+</blockquote>
+<h3 id="T-Watch-S3-Ultra-%E8%BF%9B%E5%85%A5%E4%B8%8B%E8%BD%BD%E6%A8%A1%E5%BC%8F">T-Watch-S3-Ultra 进入下载模式</h3>
+<blockquote>
+<p>🤖 USB 接口总是频繁地插拔吗？<br />
+如果您安装了第三方固件（例如 meshtastic），请务必按照以下步骤更新固件，无论它是 meshtastic 固件还是 lilygo 工厂固件。&gt;</p>
+</blockquote>
+<p>只有在程序不允许上传代码的情况下，才需要启用下载模式。在正常情况下，无需进行此步骤。&gt;<br />
+按照以下步骤操作，即可将您的设备切换至下载模式。</p>
+<blockquote>
+<ol>
+<li>通过 USB-C 数据线将板子连接起来</li>
+<li>按下并持续按住 <strong>BOOT</strong> 按钮，在此期间同时按住<strong>RST</strong>按钮</li>
+<li>放开<strong>RST</strong>按钮</li>
+<li>松开 <strong>BOOT</strong> 按钮</li>
+<li>USB 接口应已固定，不会再闪烁。您可以点击上传。</li>
+<li>按下<strong>RST</strong>按钮以退出下载模式&gt;</li>
+</ol>
+</blockquote>
+<p>如果新代码编写成功，但设备没有亮起或出现其他故障，请使用我们的工厂测试代码来测试外围设备是否能正常工作。请点击此处下载固件并进行测试编写。&gt;</p>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
 <li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
 <li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 </ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+<table>
+<thead>
+<tr>
+  <th>Name</th>
+  <th>GPIO NUM</th>
+  <th>Free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>SDA</td>
+  <td>3</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SCL</td>
+  <td>2</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI MOSI</td>
+  <td>34</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI MISO</td>
+  <td>33</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SPI SCK</td>
+  <td>35</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD CS</td>
+  <td>21</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>SD SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>RTC(<strong>PCF85063A</strong>) Interrupt</td>
+  <td>1</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) CS</td>
+  <td>4</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) Interrupt</td>
+  <td>5</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>NFC(<strong>ST25R3916</strong>) SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) Interrupt</td>
+  <td>8</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Sensor(<strong>BHI260</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>PCM Amplifier(<strong>MAX98357A</strong>) BCLK</td>
+  <td>9</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>PCM Amplifier(<strong>MAX98357A</strong>) WCLK</td>
+  <td>10</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>PCM Amplifier(<strong>MAX98357A</strong>) DOUT</td>
+  <td>11</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) TX</td>
+  <td>43</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) RX</td>
+  <td>44</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>GNSS(<strong>MIA-M10Q</strong>) PPS</td>
+  <td>13</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) SCK</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) MISO</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) MOSI</td>
+  <td>Share with SPI bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) RESET</td>
+  <td>47</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) BUSY</td>
+  <td>48</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) CS</td>
+  <td>36</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>LoRa(<strong>SX1262 or SX1280</strong>) Interrupt</td>
+  <td>14</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display CS</td>
+  <td>41</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display DATA0</td>
+  <td>38</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display DATA1</td>
+  <td>39</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display DATA2</td>
+  <td>42</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display DATA3</td>
+  <td>45</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display SCK</td>
+  <td>40</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display TE</td>
+  <td>6</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Display RESET</td>
+  <td>37</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Charger(<strong>AXP2101</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Charger(<strong>AXP2101</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Charger(<strong>AXP2101</strong>) Interrupt</td>
+  <td>7</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Haptic Driver(<strong>DRV2605</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Haptic Driver(<strong>DRV2605</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) SDA</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) SCL</td>
+  <td>Share with I2C bus</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO6</td>
+  <td>Haptic Driver Enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO7</td>
+  <td>Display Power supply enable</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO10</td>
+  <td>Touchpad Reset</td>
+  <td>❌</td>
+</tr>
+<tr>
+  <td>Expand(<strong>XL9555</strong>) GPIO12</td>
+  <td>SD Insert Detect</td>
+  <td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<table>
+<thead>
+<tr>
+  <th>Mode</th>
+  <th>Wake-Up Mode</th>
+  <th>Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Light-Sleep</td>
+  <td>PowerButton + BootButton + TouchPanel</td>
+  <td>4.6mA</td>
+</tr>
+<tr>
+  <td>Light-Sleep</td>
+  <td>PowerButton + BootButton</td>
+  <td>2.1mA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>PowerButton + BootButton (Backup power on)</td>
+  <td>1.1mA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>PowerButton + BootButton (Backup power off)</td>
+  <td>840uA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>TouchPanel</td>
+  <td>3.34mA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>Timer (Backup power on)</td>
+  <td>850uA</td>
+</tr>
+<tr>
+  <td>DeepSleep</td>
+  <td>Timer (Backup power off)</td>
+  <td>1.1mA</td>
+</tr>
+<tr>
+  <td>Power OFF</td>
+  <td>Only keep the backup power</td>
+  <td>77uA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li><p><strong>Q. T-Watch Ultra 相比其他版本有什么优势？</strong><br />
+A. Ultra 版本配备了更大的 AMOLED 屏幕、AI动作传感器、GNSS多星座定位、NFC功能，以及更大的电池容量，功能更加全面。</p>
+</li>
+<li><p><strong>Q. 如何开机和关机？</strong><br />
+A. 按住 POWER 按键两秒开机，按住六秒关机。BOOT 按键为内置按键，用于程序烧录。</p>
+</li>
+<li><p><strong>Q. 支持哪些 GNSS 星座？</strong><br />
+A. MIA-M10Q 模块支持 GPS、GLONASS、Galileo、北斗等多重卫星系统。</p>
+</li>
+<li><p><strong>Q. AI 传感器有什么特殊功能？</strong><br />
+A. BHI260AP 可以识别复杂的动作模式，如手势识别、活动分类等，适合运动监测应用。</p>
+</li>
+<li><p><strong>Q. 电池续航如何？</strong><br />
+A. 1100mAh 电池在正常使用下可提供数天续航，具体时间取决于功能使用情况。</p>
+</li>
+</ul>
+<h2 id="%E9%A1%B9%E7%9B%AE">项目</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/docs/hardware/"  target="_blank">T-Watch Ultra 原理图</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">示例代码</a></li>
+</ul>
+<h2 id="%E8%B5%84%E6%96%99">资料</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/docs/hardware/"  target="_blank">原理图</a></li>
+<li><a href="https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 数据手册</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262"  target="_blank">SX1262 数据手册</a></li>
+<li><a href="https://www.u-blox.com/en/product/mia-m10-series"  target="_blank">MIA-M10Q GNSS 数据手册</a></li>
+<li><a href="https://www.bosch-sensortec.com/products/motion-sensors/imu-with-integrated-ai/bhi260ap/"  target="_blank">BHI260AP 传感器数据手册</a></li>
+<li><a href="https://www.x-powers.com/en.php/Product/detail/id/145"  target="_blank">AXP2101 电源管理</a></li>
+</ul>
+<h2 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library/tree/t-watch-s3"  target="_blank">TTGO_TWatch_Library</a> - T-Watch系列开发库</li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGoLib"  target="_blank">LilyGoLib</a> - LILYGO设备通用库</li>
+<li><a href="https://github.com/moononournation/Arduino_GFX"  target="_blank">Arduino_GFX</a> - 图形显示库</li>
+<li><a href="https://lvgl.io/"  target="_blank">LVGL</a> - 嵌入式图形库</li>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a> - LoRa通信库</li>
+<li><a href="https://github.com/mikalhart/TinyGPSPlus"  target="_blank">TinyGPSPlus</a> - GPS解析库</li>
+</ul>
 
                         
                     </div>

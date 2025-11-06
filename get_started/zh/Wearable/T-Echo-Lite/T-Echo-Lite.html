@@ -62,10 +62,10 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO T-Echo-lite - LILYGO Wiki</title>
+    <title>LILYGO T-Echo Lite - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "对我们的产品感兴趣可以关注我们的官网商店以及淘宝店铺<br>Github有感兴趣的项目可以 ☆ star哦~🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["LoRa", "nRF52840", "E-Paper", "Low Power", "Meshtastic", "Keyboard"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -235,11 +235,23 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO T-Echo-lite</h1>
+                            <h1>LILYGO T-Echo Lite</h1>
                             
                         </div>
                         <div id="article_tags">
                             <ul>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>nRF52840</li>
+                            
+                                <li>E-Paper</li>
+                            
+                                <li>Low Power</li>
+                            
+                                <li>Meshtastic</li>
+                            
+                                <li>Keyboard</li>
                             
                             </ul>
                         </div>
@@ -264,166 +276,458 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Echo-Lite01.jpg" alt="T-Display K230" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<img src="assets\T-Echo-Lite01.jpg" alt="">
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="%E7%AE%80%E4%BB%8B">简介</h2>
-<p>T-Echo Lite是T-Echo的Lite版本，Lora+NRF52840+e-paper组合是目前验证过最低功耗的组合方案，可以作为Lora节点适配Meshtastic固件使用。<br />
- T-Echo Lite分为T-Echo Lite Core和T-Echo Lite Base三个版本，T-Echo Lite主机是集成了T-Echo Lite Base的基础上设计了对应的外壳和集成1.2寸e-paper屏幕为一体的版本，支持选配GPS功能扩展模块。<br />
- T-Echo lite core 是集成了NRF52840+LORA+太阳能+电池充放电电路的核心模块，采用小尺寸邮票孔设计，方便嵌入到不同应用的用户设备中。<br />
- T-Echo Lite Base是基于Core模块设计制作的扩展板，将core模块的功能引出到bese扩展板上比如电池接口座，太阳能接口座，QWIIC和USB接口，1.22寸e-paper屏幕接口，同时可以选配GPS扩展模块功能，方便用户开发验证使用。</p>
-<h2 id="%E5%A4%96%E8%A7%82%E5%8F%8A%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">外观及功能介绍</h2>
-<h3 id="%E5%A4%96%E8%A7%82">外观</h3>
-<img src="./assets/T-Echo-Lite02.jpg" alt="summary" width=80%>
-<h3 id="%E5%BC%95%E8%84%9A%E5%9B%BE">引脚图</h3>
-<img src="./assets/T-Echo-Lite03.jpg" alt="summary" width=100%>
-<h2 id="%E6%A8%A1%E5%9D%97%E8%B5%84%E6%96%99">模块资料</h2>
-<h3 id="%E6%A6%82%E8%BF%B0">概述</h3>
-<p>T-Echo-Lite是基于T-Echo的轻便版本，拥有比T-Echo更小的体积，更小的功耗设计，最低深度睡眠功耗可达2μA-10μA（不同板子由于板载元器件差异功耗的表现可能不同，这里最低功耗采用LILYGO实验室测定的工程板），板载丰富的功能，惯性传感器、LORA模块、太阳能充电功能（5V）、外置GPS等功能，及其优秀的功耗表现使得T-Echo-Lite能够拥有更为出色的续航。</p>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">主控</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>芯片</td>
-    <td>nRF52840</td>
-  </tr>
-  <tr>
-    <td>RAM</td>
-    <td>256kB</td>
-  </tr>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(103, 175, 8)" href="https://lilygo.cc/products/t-echo-lite?_pos=1&_sid=79b4c08e7&_ss=r&variant=45331277906101">官网购买</a>
+</div>
+<h2 id="%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3%3A">版本迭代:</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Echo-Lite_V1.0</td>
+  <td style="text-align:center">2024-12-06</td>
+  <td style="text-align:left">超低功耗LoRa节点设备初始版本</td>
+</tr>
+<tr>
+  <td style="text-align:center">T-Echo-Lite-KeyShield_V1.0</td>
+  <td style="text-align:center">2025-10-14</td>
+  <td style="text-align:left">键盘扩展板版本</td>
+</tr>
+</tbody>
 </table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">屏幕</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>名称</td>
-    <td>GDEM0122T61</td>
-  </tr>
-  <tr>
-    <td>尺寸</td>
-    <td>1.22 英寸</td>
-  </tr>
-    <tr>
-    <td>分辨率</td>
-    <td>176x192px</td>
-  </tr>
-    <tr>
-    <td>屏幕类型</td>
-    <td>E-PAPER</td>
-  </tr>
-    <tr>
-    <td>驱动芯片</td>
-    <td>SSD1681</td>
-  </tr>
-    <tr>
-    <td>总线通信协议</td>
-    <td>IIC</td>
-  </tr>
+<h2 id="%E8%B4%AD%E4%B9%B0%E9%93%BE%E6%8E%A5">购买链接</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">RAM</th>
+  <th style="text-align:center">Features</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Echo-Lite</td>
+  <td style="text-align:center">nRF52840</td>
+  <td style="text-align:center">1M</td>
+  <td style="text-align:center">256kB</td>
+  <td style="text-align:center">LoRa + E-Paper</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-echo-lite?_pos=1&amp;_sid=79b4c08e7&amp;_ss=r&amp;variant=45331277906101"  target="_blank">LILYGO Mall</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">T-Echo-Lite-KeyShield</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">键盘扩展板</td>
+  <td style="text-align:center">待发布</td>
+</tr>
+</tbody>
 </table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">LORA</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>芯片模组</td>
-    <td>S62F</td>
-  </tr>
-  <tr>
-    <td>芯片</td>
-    <td>SX1262</td>
-  </tr>
-    <tr>
-    <td>通信协议</td>
-    <td>SPI</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">GPS</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>芯片</td>
-    <td>L76K</td>
-  </tr>
-    <tr>
-    <td>通信协议</td>
-    <td>UART</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">惯性传感器</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>芯片</td>
-    <td>ICM20948</td>
-  </tr>
-    <tr>
-    <td>通信协议</td>
-    <td>IIC</td>
-  </tr>
-</table>
-<table role="table" class="center_table">
-  <thead>
-    <tr>
-      <th colspan = "2">Flash</th>
-    </tr>
-  </thead>
-  <tr>
-    <td>芯片</td>
-    <td>ZD25WQ32CEIGR</td>
-  </tr>
-    <tr>
-    <td>通信协议</td>
-    <td>SPI</td>
-  </tr>
-</table>
-<!-- | IMU | **板载六轴 IMU 传感器（三轴加速度+三轴角速度）** | -->
-<!-- | RTC | **板载 BM8653 RTC 芯片+纽扣电池，断电时间仍然正确** | -->
-<h3 id="%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99%E9%93%BE%E6%8E%A5">相关资料链接</h3>
-<p>Github:<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite"  target="_blank">T-Echo-Lite</a></p>
+<h2 id="%E7%9B%AE%E5%BD%95">目录</h2>
 <ul>
-<li><a href="https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html"  target="_blank">nRF52840_Datasheet</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/GDEM0122T61.pdf"  target="_blank">GDEM0122T61</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/SSD1681.pdf"  target="_blank">SSD1681</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/S62F.pdf"  target="_blank">S62F</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/L76KB-A58.pdf"  target="_blank">L76KB-A58</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/ICM20948.pdf"  target="_blank">ICM20948</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/ZD25WQ32CEIGR.pdf"  target="_blank">ZD25WQ32CEIGR</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0"  >描述</a></li>
+<li><a href="#%E9%A2%84%E8%A7%88"  >预览</a></li>
+<li><a href="#%E6%A8%A1%E5%9D%97"  >模块</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"  >快速开始</a></li>
+<li><a href="#%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88"  >引脚总览</a></li>
+<li><a href="#%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95"  >相关测试</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"  >常见问题</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE"  >项目</a></li>
+<li><a href="#%E8%B5%84%E6%96%99"  >资料</a></li>
+<li><a href="#%E4%BE%9D%E8%B5%96%E5%BA%93"  >依赖库</a></li>
 </ul>
-<h4 id="%E5%8E%9F%E7%90%86%E5%9B%BE">原理图</h4>
+<h2 id="%E6%8F%8F%E8%BF%B0">描述</h2>
+<p>T-Echo Lite 是基于 T-Echo 的轻便版本，拥有更小的体积和更低的功耗设计。最低深度睡眠功耗可达 2μA-10μA，板载丰富的功能包括惯性传感器、LoRa 模块、太阳能充电功能（5V）、外置 GPS 等，优秀的功耗表现使得 T-Echo Lite 能够拥有出色的续航。</p>
+<p>T-Echo-Lite-KeyShield 为 T-Echo-Lite 的底板扩展，主要扩展了键盘、扬声器、麦克风、振动等外设，提供更完整的人机交互功能。</p>
+<h2 id="%E9%A2%84%E8%A7%88">预览</h2>
+<h3 id="%E5%AE%9E%E7%89%A9%E5%9B%BE">实物图</h3>
+<p align="center" width="100%">
+    <img src="assets\T-Echo-Lite02.jpg" alt="">
+</p>
+<h2 id="%E6%A8%A1%E5%9D%97">模块</h2>
+<h3 id="T-Echo-Lite-%E9%83%A8%E5%88%86">T-Echo-Lite 部分</h3>
+<h3 id="1.-MCU">1. MCU</h3>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/project/T-Echo-Lite_V1.0/T-Echo-Lite-Eapper_V1.0.pdf"  target="_blank">T-Echo-Lite</a></li>
+<li>芯片：nRF52840</li>
+<li>RAM：256kB</li>
+<li>FLASH：1M</li>
+<li>相关资料：<blockquote>
+<a href="https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html"  target="_blank">nRF52840_Datasheet</a></blockquote>
+</li>
 </ul>
-<h4 id="%E4%BE%9D%E8%B5%96%E5%BA%93">依赖库</h4>
+<h3 id="2.-%E5%B1%8F%E5%B9%95">2. 屏幕</h3>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/Adafruit_EPD-4.5.5"  target="_blank">Adafruit_EPD-4.5.5</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/Adafruit_BusIO-1.16.1"  target="_blank">Adafruit_BusIO-1.16.1</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/Adafruit_SPIFlash-4.3.4"  target="_blank">Adafruit_SPIFlash-4.3.4</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/Adafruit-GFX-Library-1.11.10"  target="_blank">Adafruit-GFX-Library-1.11.10</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/RadioLib-6.6.0"  target="_blank">RadioLib-6.6.0</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/TinyGPSPlus-1.0.3a"  target="_blank">TinyGPSPlus-1.0.3a</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/ICM20948_WE-1.1.11"  target="_blank">ICM20948_WE-1.1.11</a></li>
+<li>名称：GDEM0122T61</li>
+<li>尺寸：1.22 英寸</li>
+<li>分辨率：176x192px</li>
+<li>屏幕类型：E-PAPER</li>
+<li>驱动芯片：SSD1681</li>
+<li>总线通信协议：IIC</li>
+<li>其他说明：不支持快刷（咨询屏厂后他们回复不支持），建议只使用全刷</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/adafruit/Adafruit_EPD"  target="_blank">Adafruit_EPD</a><br />
+<a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a><br />
+<a href="https://github.com/adafruit/Adafruit_SPIFlash"  target="_blank">Adafruit_SPIFlash</a><br />
+<a href="https://github.com/adafruit/Adafruit-GFX-Library"  target="_blank">Adafruit-GFX-Library</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/GDEM0122T61.pdf"  target="_blank">GDEM0122T61</a><br />
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/SSD1681.pdf"  target="_blank">SSD1681</a></blockquote>
+</li>
 </ul>
-<h2 id="%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91">软件开发</h2>
-<h3 id="Arduino-%E8%AE%BE%E7%BD%AE%E5%8F%82%E6%95%B0">Arduino 设置参数</h3>
+<h3 id="3.-LORA">3. LORA</h3>
+<ul>
+<li>芯片模组：S62F</li>
+<li>芯片：SX1262</li>
+<li>总线通信协议：SPI</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a><br />
+<a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a><br />
+<a href="https://github.com/adafruit/Adafruit_SPIFlash"  target="_blank">Adafruit_SPIFlash</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/S62F.pdf"  target="_blank">S62F</a></blockquote>
+</li>
+</ul>
+<h3 id="4.-GPS">4. GPS</h3>
+<ul>
+<li>芯片模组：L76K</li>
+<li>总线通信协议：UART</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/mikalhart/TinyGPSPlus"  target="_blank">TinyGPSPlus</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/L76KB-A58.pdf"  target="_blank">L76KB-A58</a></blockquote>
+</li>
+</ul>
+<h3 id="5.-%E6%83%AF%E6%80%A7%E4%BC%A0%E6%84%9F%E5%99%A8">5. 惯性传感器</h3>
+<ul>
+<li>芯片：ICM20948</li>
+<li>总线通信协议：IIC</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/wollewald/ICM20948_WE"  target="_blank">ICM20948_WE</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ICM20948.pdf"  target="_blank">ICM20948</a></blockquote>
+</li>
+</ul>
+<h3 id="6.-Flash">6. Flash</h3>
+<ul>
+<li>芯片：ZD25WQ32CEIGR</li>
+<li>总线通信协议：SPI</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/adafruit/Adafruit_BusIO"  target="_blank">Adafruit_BusIO</a><br />
+<a href="https://github.com/adafruit/Adafruit_SPIFlash"  target="_blank">Adafruit_SPIFlash</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ZD25WQ32CEIGR.pdf"  target="_blank">ZD25WQ32CEIGR</a></blockquote>
+</li>
+</ul>
+<h3 id="T-Echo-Lite-KeyShield-%E9%83%A8%E5%88%86">T-Echo-Lite-KeyShield 部分</h3>
+<h3 id="1.-%E9%94%AE%E7%9B%98%E8%83%8C%E5%85%89">1. 键盘背光</h3>
+<ul>
+<li>驱动芯片：AW21009QNR</li>
+<li>总线通信协议：IIC</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/Llgok/cpp_bus_driver"  target="_blank">cpp_bus_driver</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/AW21009QNR.pdf"  target="_blank">AW21009QNR</a></blockquote>
+</li>
+</ul>
+<h3 id="2.-%E6%8C%AF%E5%8A%A8">2. 振动</h3>
+<ul>
+<li>驱动芯片：AW86224</li>
+<li>总线通信协议：IIC</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/Llgok/cpp_bus_driver"  target="_blank">cpp_bus_driver</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/AW86224AFCR.pdf"  target="_blank">AW86224AFCR</a></blockquote>
+</li>
+</ul>
+<h3 id="3.-%E6%89%AC%E5%A3%B0%E5%99%A8%E9%BA%A6%E5%85%8B%E9%A3%8E">3. 扬声器麦克风</h3>
+<ul>
+<li>驱动芯片：ES8311</li>
+<li>总线通信协议：IIC、IIS</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/Llgok/cpp_bus_driver"  target="_blank">cpp_bus_driver</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ES8311.pdf"  target="_blank">ES8311</a></blockquote>
+</li>
+</ul>
+<h3 id="4.-%E9%94%AE%E7%9B%98">4. 键盘</h3>
+<ul>
+<li>驱动芯片：TCA8418</li>
+<li>总线通信协议：IIC</li>
+<li>依赖库：<blockquote>
+<a href="https://github.com/Llgok/cpp_bus_driver"  target="_blank">cpp_bus_driver</a></blockquote>
+</li>
+<li>相关资料：<blockquote>
+<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/tca8418.pdf"  target="_blank">tca8418</a></blockquote>
+</li>
+</ul>
+<h2 id="%E8%BD%AF%E4%BB%B6%E9%83%A8%E7%BD%B2">软件部署</h2>
+<p align="center" width="100%">
+    <img src="assets\T-Echo-Lite03.jpg" alt="">
+</p>
+<h3 id="Examples-Support">Examples Support</h3>
+<h3 id="T-Echo-Lite-Examples">T-Echo-Lite Examples</h3>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th><code>[Arduino IDE (Adafruit_nRF52_V1.6.1)]</code> <br /> <code>[PlatformIO (nordicnrf52_V10.6.0)]</code> <br /> Support</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Battery_Measurement"  target="_blank">Battery_Measurement</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/BLE_Uart"  target="_blank">BLE_Uart</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Button_Triggered"  target="_blank">Button_Triggered</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Display"  target="_blank">Display</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Display_BLE_Uart"  target="_blank">Display_BLE_Uart</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Display_SX1262"  target="_blank">Display_SX1262</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Flash"  target="_blank">Flash</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Flash_Erase"  target="_blank">Flash_Erase</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Flash_Speed_Test"  target="_blank">Flash_Speed_Test</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/GPS"  target="_blank">GPS</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/GPS_Full"  target="_blank">GPS_Full</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/ICM20948"  target="_blank">ICM20948</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/IIC_Scan_2"  target="_blank">IIC_Scan_2</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/nrf52840_module"  target="_blank">nrf52840_module</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Original_Test"  target="_blank">Original_Test</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td>Product factory original testing</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/Sleep_Wake_Up"  target="_blank">Sleep_Wake_Up</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/SX126x_PingPong"  target="_blank">SX126x_PingPong</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite/SX126x_PingPong_2"  target="_blank">SX126x_PingPong_2</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="./examples/T-Echo-Lite/sx126x_tx_continuous_wave"  >sx126x_tx_continuous_wave</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="T-Echo-Lite-KeyShield-Examples">T-Echo-Lite-KeyShield Examples</h3>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
+  <th><code>[Arduino IDE (Adafruit_nRF52_V1.6.1)]</code> <br /> <code>[PlatformIO (nordicnrf52_V10.6.0)]</code> <br /> Support</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009qnr"  target="_blank">aw21009qnr</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw86224"  target="_blank">aw86224</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/es8311"  target="_blank">es8311</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/original_test"  target="_blank">original_test</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td>Product factory original testing</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/tca8418"  target="_blank">tca8418</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/voice_speaker"  target="_blank">voice_speaker</a></td>
+  <td><p align="center"><img src="https://img.shields.io/badge/-supported-green" alt="alt text" title="example" /></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Bootloader</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/bootloader/"  target="_blank">bootloader</a></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Description</th>
+  <th>Picture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/firmware/%5BT-Echo-Lite_V1.0%5D%5BOriginal_Test(lora_868mhz_125khz)%5D_firmware/"  target="_blank">T-Echo-Lite_Original_Test(lora_868mhz_125khz)</a></td>
+  <td>Product factory original testing</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/firmware/%5BT-Echo-Lite_V1.0%5D%5BOriginal_Test(lora_915mhz_125khz)%5D_firmware/"  target="_blank">T-Echo-Lite_Original_Test(lora_915mhz_125khz)</a></td>
+  <td>Product factory original testing</td>
+  <td></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/firmware/%5BT-Echo-Lite-KeyShield_V1.0%5D%5Boriginal_test%5D_firmware/"  target="_blank">T-Echo-Lite-KeyShield_original_test</a></td>
+  <td>Product factory original testing</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>安装<a href="https://code.visualstudio.com/"  target="_blank">VisualStudioCode</a> 和 <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>在<code>VisualStudioCode</code>扩展中搜索<code>PlatformIO</code>插件并安装.</li>
+<li>安装完成后需要将<code>VisualStudioCode</code>重新启动</li>
+<li>重新开启<code>VisualStudioCode</code>后,选择 <code>VisualStudioCode</code> 左上角的 <code>文件</code> -&gt; <code>打开文件夹</code> -&gt;选择 <code>T-Deck</code> 目录</li>
+<li>点击 <code>platformio.ini</code> 文件,在<code>platformio</code> 栏目中取消需要使用的示例行,请确保仅仅一行有效</li>
+<li>点击左下角的（✔）符号编译</li>
+<li>将板子与电脑USB进行连接</li>
+<li>点击（→）上传固件</li>
+<li>点击 (插头符号) 监视串行输出</li>
+</ol>
+<h3 id="Arduino-IDE-%E5%BC%80%E5%8F%91">Arduino IDE 开发</h3>
+<ol>
+<li><p>安装 <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino</a>，根据你的系统类型选择安装。</p>
+</li>
+<li><p>打开项目文件夹的“example”目录，选择示例项目文件夹，打开以“.ino”结尾的文件即可打开Arduino IDE项目工作区。</p>
+</li>
+<li><p>打开右上角<code>工具</code>菜单栏-&gt;选择<code>开发板</code>-&gt;<code>开发板管理器</code>，找到或者搜索<code>Adafruit_nRF52</code>，下载作者名为<code>Adafruit</code>的开发板文件。接着返回<code>开发板</code>菜单栏，选择<code>Adafruit_nRF52</code>开发板下的开发板类型，选择的开发板类型由<code>platformio.ini</code>文件中以[env]目录下的<code>board = xxx</code>标头为准，如果没有对应的开发板，则需要自己手动添加项目文件夹下<code>board</code>目录下的开发板。(如果找不到<code>Adafruit_nRF52</code>，则需要打开首选项 -&gt; 添加 <code>https://www.adafruit.com/package_adafruit_index.json</code> 到<code>其他开发板管理地址</code>)</p>
+</li>
+<li><p>打开菜单栏<code>文件</code>-&gt;<code>首选项</code>，找到项目<code>文件夹位置</code>这一栏，将项目目录下的<code>libraries</code>文件夹里的所有库文件连带文件夹复制粘贴到这个目录下的<code>&lt;C:\Users\UserName\Documents\Arduino\libraries&gt;</code>里边。</p>
+</li>
+<li><p>在 &quot;工具 &quot;菜单中选择正确的设置，如下表所示。</p>
+</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -438,14 +742,95 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<p>使用说明可参考<a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/README_CN.md"  target="_blank">README</a></p>
+<ol start="6">
+<li><p>选择正确的端口。</p>
+</li>
+<li><p>开启引导下载模式：按一下RST芯片复位按键后松开等待LED1亮后（一定要等待LED1亮）再按一下RST按键后松开，观察到LED1灯逐渐熄灭逐渐点亮，即已进入引导下载模式。</p>
+</li>
+<li><p>点击右上角“<kbd>[√]</kbd>”进行编译，如果编译无误，将单片机连接电脑，点击右上角“<kbd>[→]</kbd>”即可进行烧录。</p>
+</li>
+</ol>
+<h4 id="JLINK%E7%83%A7%E5%BD%95firmware%E5%92%8Cbootloader">JLINK烧录firmware和bootloader</h4>
+<ol>
+<li><p>安装软件 <a href="https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop/Download#infotabs"  target="_blank">nRF-Connect-for-Desktop</a></p>
+</li>
+<li><p>安装软件 <a href="https://www.segger.com/downloads/jlink/"  target="_blank">JLINK</a></p>
+</li>
+<li><p>正确连接JLINK引脚如下图所示：</p>
+</li>
+</ol>
+<p align="center" width="100%">
+    <img src="assets/12.jpg" alt="">
+</p>
+<ol start="4">
+<li><p>打开软件nRF-Connect-for-Desktop 安装工具 <a href="./assets/10.png"  >Programmer</a> 并打开</p>
+</li>
+<li><p>添加文件，同时选择bootloader文件和firmware文件，点击 <a href="./assets/11.png"  >Erase&amp;write</a> ，即可完成烧录</p>
+</li>
+</ol>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">C语言</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-<li><a href="https://github.com/Xk-w/Arduino_DriveBus"  target="_blank">Platform IO</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> - Adafruit nRF52 支持</li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a> - nordicnrf52 平台</li>
+<li><a href="https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-SDK"  target="_blank">nRF Connect SDK</a> - 原生开发</li>
 </ol>
-<h2 id="%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">产品技术支持</h2>
+<h2 id="%E5%BC%95%E8%84%9A%E6%80%BB%E8%A7%88">引脚总览</h2>
+<p>引脚定义请参考配置文件：</p>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/private_library/t_echo_lite_config.h"  target="_blank">t_echo_lite_config.h</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/private_library/t_echo_lite_keyshield_config.h"  target="_blank">t_echo_lite_keyshield_config.h</a></li>
+</ul>
+<h2 id="%E7%9B%B8%E5%85%B3%E6%B5%8B%E8%AF%95">相关测试</h2>
+<h3 id="%E5%8A%9F%E8%80%97%E6%B5%8B%E8%AF%95">功耗测试</h3>
+<h3 id="Power-Dissipation">Power Dissipation</h3>
+<table>
+<thead>
+<tr>
+  <th>Firmware</th>
+  <th>Program</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/firmware/%5BT-Echo-Lite_V1.0%5D%5BSleep_Wake_Up%5D_firmware/%5BT-Echo-Lite_V1.0%5D%5BSleep_Wake_Up%5D_firmware_202412040900.hex"  target="_blank">Sleep_Wake_Up</a> <br /> <a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/firmware/%5BT-Echo-Lite_V1.0%5D%5BSleep_Wake_Up%5D_firmware/%5BT-Echo-Lite_V1.0%5D%5BSleep_Wake_Up%5D_firmware_202412040900.uf2"  target="_blank">Sleep_Wake_Up(uf2)</a></td>
+  <td><code>Sleep_Wake_Up</code></td>
+  <td>Minimum power consumption: 2.54uA <br /> More information can be found in the <a href="https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/relevant_test/PowerConsumptionTestLog_%5BT-Echo-Lite_V1.0%5D_20241210.pdf"  target="_blank">Power Consumption Test Log</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</h2>
+<ul>
+<li>Q. 看了以上教程我还是不会搭建编程环境怎么办？</li>
+<li>A. 如果看了以上教程还不懂如何搭建环境的可以参考<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a>文档说明来搭建。</li>
+</ul>
+<br />
+<ul>
+<li>Q. 为什么打开Arduino IDE时他会提醒我是否要升级库文件？我应该升级还是不升级？</li>
+<li>A. 选择不升级库文件，不同版本的库文件可能不会相互兼容所以不建议升级库文件。</li>
+</ul>
+<br />
+<ul>
+<li>Q. 为什么我的板子USB输出不任何调试信息</li>
+<li>A. 请打开串口助手软件中的“DTR”选项</li>
+</ul>
+<br />
+<ul>
+<li>Q. 为什么我直接使用USB烧录板子一直烧录失败呢？</li>
+<li>A. 请按一下RST芯片复位按键后松开等待LED1亮后（一定要等待LED1亮）再按一下RST按键后松开，观察到LED1灯逐渐熄灭逐渐点亮，即已进入引导下载模式，这时候就能烧录了。</li>
+</ul>
+<br />
+<ul>
+<li>Q. T-Echo-Lite模块的蓝牙天线和Lora天线应该如何区分呢？</li>
+<li>A. T-Echo-Lite模块的蓝牙天线和Lora天线如下图所示：</li>
+</ul>
+<p align="center" width="100%">
+    <img src="assets/14.png" alt="">
+</p>
+<br />
+## 项目
+* [T-Echo-Lite_V1.0](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/project/T-Echo-Lite_V1.0/T-Echo-Lite_V1.0.pdf)
+* [T-Echo-Lite-Eapper_V1.0](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/project/T-Echo-Lite_V1.0/T-Echo-Lite-Eapper_V1.0.pdf)
 
                         
                     </div>

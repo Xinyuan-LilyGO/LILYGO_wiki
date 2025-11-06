@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Embed SI4732 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "SI4732", "Radio", "TFT", "AM/FM"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -149,7 +149,7 @@ var _hmt = _hmt || [];
 <li class="active with_link"><a href="/get_started/en/Wearable/T-Embed-SI4732/T-Embed-SI4732.html"><span class="label">T-Embed SI4732</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Glass/T-Glass.html"><span class="label">T-Glass</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html"><span class="label">T-Mini E-paper-S3</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html&from=/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -240,6 +240,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>SI4732</li>
+                            
+                                <li>Radio</li>
+                            
+                                <li>TFT</li>
+                            
+                                <li>AM/FM</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,111 +273,363 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Embed-SI4732-1.jpg" alt="T-Embed SI4732" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Embed-SI4732-1.jpg" alt="T-Embed-SI4732" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO T-Embed SI4732 is an enhanced version of the base T-Embed, featuring an integrated SI4732 extension module. The SI4732 is a high-performance digital-tuning radio receiver chip, designed for AM/FM/SW/LW broadcast band reception. It incorporates Digital Signal Processing (DSP) technology, offering high sensitivity, low power consumption, and high integration, making it ideal for a variety of radio and audio applications.</p>
-<p>As for the T-Embed base board itself, it features a rounded rectangular design and integrates a rotary encoder with RGB LED ring and a 1.9-inch IPS TFT display. It also includes a MEMS microphone array, built-in speaker, internal TF card slot, and power management circuitry, supporting 3.7V lithium battery power. Expansion options include both a GROVE port and a 2.54mm-pitch GPIO header, offering flexible connectivity for development and prototyping.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Embed-SI4732-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Embed-SI4732.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
-<img src="./assets/T-Embed-SI4732-3.jpg" alt="summary" width=100%>
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">Taobao Store</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">AliExpress Store</a>
+</div>
+<blockquote>
+<p>Switch to <a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.html"  target="_blank">T-Embed-CC1101</a> version here</p>
+</blockquote>
+<h2 id="Version-History">Version History</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">T-Embed-SI4732_V1.0</td>
+  <td style="text-align:center">2024-07-29</td>
+  <td style="text-align:left">Initial hardware version</td>
 </tr>
 <tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>Wi-Fi 802.11b /g/n, BLE 5</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF Card</td>
-</tr>
-<tr>
-  <td>Screen</td>
-  <td>1.9-inch ST7789V IPS color TFT LCD</td>
-</tr>
-<tr>
-  <td>radio</td>
-  <td>Si4732-A10(CMOS AM/FM/SW/LW/RDS radio receiverIC)</td>
-</tr>
-<tr>
-  <td>Battery</td>
-  <td>702550, 900MAH</td>
-</tr>
-<tr>
-  <td>Encoder</td>
-  <td>Encoder knob</td>
-</tr>
-<tr>
-  <td>Keys</td>
-  <td>1 x RST key + 1 x BOOT key</td>
-</tr>
-<tr>
-  <td>Microphone</td>
-  <td>1 x ES7210 microphone</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C interface</td>
-</tr>
-<tr>
-  <td>RGB</td>
-  <td>APA102</td>
-</tr>
-<tr>
-  <td>Hole position</td>
-  <td>2×2mm positioning hole</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td><strong>98x39x39mm</strong></td>
+  <td style="text-align:center">T-Embed-SI4732_V1.1</td>
+  <td style="text-align:center">2025-01-09</td>
+  <td style="text-align:left">Software update</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Embed"  target="_blank">T-Embed-SI4732</a></p>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Embed SI4732</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16MB</td>
+  <td style="text-align:center">8MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-embed"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">bq25896</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">bq27220</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-SI4732</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Description">Description</h2>
+<p>LILYGO T-Embed SI4732 is a version based on the basic T-Embed with added SI4732 expansion module. The SI4732 is a high-performance digital tuning radio chip specifically designed for AM/FM/SW/LW and other broadcast band reception. It integrates digital signal processing (DSP) technology with high sensitivity, low power consumption, and high integration characteristics, suitable for various radio and audio devices. T-Embed features a rounded rectangular design, integrated ring encoder and 1.9-inch IPS TFT, along with Mesh MIC and speaker, internal TF card slot and power management circuit, supporting 3.7V lithium battery power supply, with expansion interfaces including GROVE and 2.54mm pitch GPIO expansion port.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Embed-SI4732-2.jpg" alt="T-Embed-SI4732" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Embed-SI4732.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
 <ul>
+<li>Chip: ESP32-S3 Dual-core LX7</li>
+<li>PSRAM: 8MB (Octal SPI)</li>
+<li>FLASH: 16MB</li>
+<li>Wireless: 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 1.9-inch IPS TFT screen</li>
+<li>Resolution: 320×170px</li>
+<li>Display Type: IPS</li>
+<li>Driver IC: ST7789V</li>
+<li>Compatible Libraries: TFT_eSPI, LVGL</li>
+<li>Bus Communication Protocol: SPI</li>
+</ul>
+<h3 id="Radio-Module">Radio Module</h3>
+<ul>
+<li>Chip: SI4732-A10</li>
+<li>Function: AM/FM/SW/LW/RDS broadcast reception</li>
+<li>Features: Digital Signal Processing (DSP) technology</li>
+</ul>
+<h3 id="Audio-System">Audio System</h3>
+<ul>
+<li>Audio Chip: ES7210</li>
+<li>Function: Microphone input and speaker output</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>Charging Chip: BQ25896</li>
+<li>Battery Monitoring: BQ27220</li>
+<li>Battery: 3.7V 900mAh lithium polymer battery</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-Embed-SI4732-3.jpg" alt="summary" width=80%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">1.9-inch ST7789V IPS TFT</td>
+</tr>
+<tr>
+  <td style="text-align:center">Radio</td>
+  <td style="text-align:center">SI4732-A10 AM/FM/SW/LW/RDS</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio</td>
+  <td style="text-align:center">ES7210 Microphone and Speaker</td>
+</tr>
+<tr>
+  <td style="text-align:center">Charging Chip</td>
+  <td style="text-align:center">BQ25896</td>
+</tr>
+<tr>
+  <td style="text-align:center">Battery Monitoring</td>
+  <td style="text-align:center">BQ27220</td>
+</tr>
+<tr>
+  <td style="text-align:center">RGB LED</td>
+  <td style="text-align:center">APA102 Programmable LEDs</td>
+</tr>
+<tr>
+  <td style="text-align:center">GPS</td>
+  <td style="text-align:center">MIA-M10Q (Optional)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Interface)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Control</td>
+  <td style="text-align:center">Rotary Encoder</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RST Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">98 × 39 × 39 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<p>It is extremely important to strictly follow all steps indicated on Lilygo GitHub:</p>
+<p><a href="https://github.com/Xinyuan-LilyGO/T-Display-S3#quick-start"  target="_blank">Lilygo T-Display S3</a></p>
+<p><a href="https://github.com/Xinyuan-LilyGO/T-Embed#quick-start"  target="_blank">Lilygo T-Embed</a></p>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Example</th>
+  <th style="text-align:center">PlatformIO/Arduino</th>
+  <th style="text-align:center">ESP-IDF</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/SI4732_Radio"  target="_blank">SI4732_Radio</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">SI4732 radio example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/TFT_Display"  target="_blank">TFT_Display</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">TFT display example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/Audio_Record_Playback"  target="_blank">Audio_Record_Playback</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Audio recording and playback example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/RGB_LED_Control"  target="_blank">RGB_LED_Control</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">RGB LED control example</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/Power_Management"  target="_blank">Power_Management</a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center"></td>
+  <td style="text-align:left">Power management example</td>
+</tr>
+</tbody>
+</table>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>, choose the version for your system.</li>
+<li>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, you can go to GitHub to download the program. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; of the corresponding folder after adding it). Under the &quot;[platformio]&quot; section, uncomment to select the example program you want to upload (marked by &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a>, choose the version for your system.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu in the top bar -&gt; Select &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to select is determined by the &quot;board = xxx&quot; header under the [env] section in the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</li>
+<li>Open the menu bar &quot;File&quot; -&gt; &quot;Preferences&quot;, find the &quot;Sketchbook location&quot; field, and copy all the library files along with their folders from the &quot;libraries&quot; folder in the project directory to the &quot;libraries&quot; folder in this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>→</kbd>&quot; in the top right corner to upload.</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<h2 id="Related-Tests">Related Tests</h2>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
+A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
+</li>
+<li><p><strong>Q. Why does Arduino IDE prompt me to upgrade library files when I open it? Should I upgrade or not?</strong><br />
+A. Choose not to upgrade library files, as different versions of library files may not be compatible with each other, so upgrading is not recommended.</p>
+</li>
+<li><p><strong>Q. Why does my board keep failing to program?</strong><br />
+A. Please hold the &quot;BOOT&quot; button while pressing the &quot;RST&quot; button, then release the &quot;RST&quot; button to enter download mode and try downloading the program again.</p>
+</li>
+<li><p><strong>Q. Which frequency bands does the SI4732 radio module support?</strong><br />
+A. SI4732 supports multiple broadcast frequency bands including AM/FM/SW/LW, and has RDS functionality.</p>
+</li>
+</ul>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-SI4732_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed/blob/main/hardware/SI4732.pdf"  target="_blank">SI4732</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">BQ25896</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">BQ27220</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/ST7789V.pdf"  target="_blank">ST7789V</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/pu2clr/SI4735"  target="_blank">PU2CLR SI4735</a></li>
 <li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
 <li><a href="https://github.com/Seeed-Studio/PN532.git"  target="_blank">PN532</a></li>
 <li><a href="https://github.com/lewisxhe/XPowersLib"  target="_blank">XPowersLib</a></li>
@@ -377,94 +639,7 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/crankyoldgit/IRremoteESP8266"  target="_blank">IRremoteESP8266</a></li>
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
 <li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
-<li><a href="https://github.com/pu2clr/SI4735"  target="_blank">PU2CLR SI4735</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td><strong>ESP32S3 Dev Module</strong></td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td><strong>16MB(128Mb)</strong></td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td><strong>16M Flash(3M APP/9.9MB FATFS)</strong></td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td><strong>OPI PSRAM</strong></td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td><strong>UART0/Hardware CDC</strong></td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td><strong>CDC and JTAG</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>

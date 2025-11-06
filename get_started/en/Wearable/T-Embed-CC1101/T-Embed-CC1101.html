@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Embed CC1101 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "CC1101", "LoRa", "NFC", "TFT", "Sub-GHz"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -149,7 +149,7 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Embed-SI4732/T-Embed-SI4732.html"><span class="label">T-Embed SI4732</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Glass/T-Glass.html"><span class="label">T-Glass</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html"><span class="label">T-Mini E-paper-S3</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html&from=/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -240,6 +240,18 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>CC1101</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>NFC</li>
+                            
+                                <li>TFT</li>
+                            
+                                <li>Sub-GHz</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,130 +275,436 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
+                            <div style="width:100%; display:flex;justify-content: center;">
 <p><img src="./assets/T-Embed-CC1101-1.jpg" alt="T-Embed-CC1101" /></p>
 </div>
-<!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
-</div> -->
+<div style="padding: 1em 0 0 0; display: flex; justify-content: center">
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">Taobao Store</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">AliExpress Store</a>
+</div>
 <blockquote>
-<p>Click here to switch to <a href="https://wiki.lilygo.cc/get_started/en/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html"  target="_blank">T-Embed-SI4732</a></p>
+<p>Switch to <a href="https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html"  target="_blank">T-Embed-SI4732</a> version here</p>
 </blockquote>
-<h2 id="Introduction">Introduction</h2>
-<p>LILYGO T-Embed is a highly integrated IoT development board based on the ESP32-S3, featuring a dual-core LX7 processor. It is specifically designed for multi-protocol communication and smart hardware development. The core advantages of this board lie in its integration of LoRa, Sub-GHz (CC1101 module), NFC (PN532), infrared remote control, and Wi-Fi 6/Bluetooth 5.0, making it ideal for complex wireless connection scenarios such as remote sensing (LoRa long-range transmission), smart home control (infrared/NFC access control), and industrial monitoring.</p>
-<p>The development board is equipped with a 1.9-inch TFT display (320x170 resolution), supporting dynamic data display and graphical interaction, and features a rotary encoder for precise parameter adjustment. Additionally, it includes 8 programmable RGB LEDs, a microphone and speaker module (supporting voice interaction), and TF card expansion storage, further enhancing human-machine interaction and data processing capabilities.</p>
-<p>With a compact design that optimizes pin multiplexing (e.g., shared SPI bus), it strikes a balance between functional density and development flexibility. This board is perfect for smart home control centers, environmental monitoring, and educational IoT prototype development, providing developers with a ready-to-use, multi-scenario adaptable, and efficient hardware platform.</p>
-<h2 id="Appearance-and-function-introduction">Appearance and function introduction</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Embed-CC1101-2.jpg" alt="summary" width=80%>
-<h3 id="Pinmap">Pinmap</h3>
-<img src="./assets/T-Embed-CC1101-en.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Description">Description</h3>
+<h2 id="Version-History">Version History</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
-  <th>Description</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update Date</th>
+  <th style="text-align:left">Update Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3 Dual-core LX7 microprocessor</td>
+  <td style="text-align:center">T-Embed-CC1101_V1.0</td>
+  <td style="text-align:center">2024-07-29</td>
+  <td style="text-align:left">Hardware</td>
 </tr>
 <tr>
-  <td>Flash</td>
-  <td>16M</td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td>8M</td>
-</tr>
-<tr>
-  <td>GPS</td>
-  <td>MIA-M10Q</td>
-</tr>
-<tr>
-  <td>Wireless</td>
-  <td>Wi-Fi 802.11 b/g/n，BLE 5</td>
-</tr>
-<tr>
-  <td>Storage</td>
-  <td>TF card</td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>1.9 inch ST7789V IPS color TFT LCD</td>
-</tr>
-<tr>
-  <td>Sub-G</td>
-  <td>CC1101</td>
-</tr>
-<tr>
-  <td>NFC</td>
-  <td>PN532</td>
-</tr>
-<tr>
-  <td>Battery Capacity</td>
-  <td>3.7V-1300mAh</td>
-</tr>
-<tr>
-  <td>Battery Chip</td>
-  <td>BQ25896, BQ27220</td>
-</tr>
-<tr>
-  <td>Power Switch</td>
-  <td>Supported</td>
-</tr>
-<tr>
-  <td>LED driver</td>
-  <td>WS2812</td>
-</tr>
-<tr>
-  <td>Buttons</td>
-  <td>1 x RST Button + 1 x BOOT Button</td>
-</tr>
-<tr>
-  <td>Encode</td>
-  <td>Support encode</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × type-C Interfaces</td>
-</tr>
-<tr>
-  <td>Infrared</td>
-  <td>Support Infrared</td>
-</tr>
-<tr>
-  <td>UI</td>
-  <td>LVGL</td>
-</tr>
-<tr>
-  <td>Expansion Interfaces</td>
-  <td>2 × QWIIC Interfaces</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td><strong>97.5x39x31mm</strong></td>
+  <td style="text-align:center">T-Embed-CC1101_V1.1</td>
+  <td style="text-align:center">2025-01-09</td>
+  <td style="text-align:left">Software</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Links">Related Links</h3>
-<p>Github：<a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101"  target="_blank">T-Embed-CC1101</a></p>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Embed CC1101</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">16MB</td>
+  <td style="text-align:center">8MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-embed"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
 <ul>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">bq25896</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">bq27220</a></li>
-<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf"  target="_blank">cc1101</a></li>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
 </ul>
-<h4 id="Schematic-Diagram">Schematic Diagram</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-CC1101</a></p>
-<!-- * [SY6970](./datasheet/AN_SY6970.pdf) -->
-<h4 id="Dependency-Libraries">Dependency Libraries</h4>
+<h2 id="Description">Description</h2>
+<p>LILYGO T-Embed CC1101 is a highly integrated IoT development board based on the ESP32-S3 dual-core LX7 processor, specifically designed for multi-protocol communication and smart hardware development. It features onboard CC1101 Sub-GHz module, LoRa, PN532 NFC, infrared remote control, Wi-Fi 6 and Bluetooth 5.0, supporting complex scenarios such as remote sensing, smart home control, and industrial monitoring. Equipped with a 1.9-inch TFT screen, rotary encoder, 8 programmable RGB LEDs, microphone and speaker module, and supporting TF card expansion storage, it provides developers with an out-of-the-box, multi-scenario adaptable efficient hardware platform.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Embed-CC1101-2.jpg" alt="T-Embed-CC1101" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Embed-CC1101-en.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3FN16R8</li>
+<li>PSRAM: 8MB (Octal SPI)</li>
+<li>FLASH: 16MB</li>
+<li>Wireless: 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 1.9-inch IPS TFT screen</li>
+<li>Resolution: 320×170px</li>
+<li>Display Type: IPS</li>
+<li>Driver IC: ST7789V</li>
+<li>Compatible Libraries: TFT_eSPI, LVGL</li>
+<li>Bus Communication Protocol: SPI</li>
+</ul>
+<h3 id="Communication-Modules">Communication Modules</h3>
+<ul>
+<li>Sub-GHz: CC1101</li>
+<li>NFC: PN532</li>
+<li>GPS: MIA-M10Q (optional)</li>
+</ul>
+<h3 id="Audio-System">Audio System</h3>
+<ul>
+<li>Audio Chip: ES7210</li>
+<li>Function: Microphone input and speaker output</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>Charging Chip: BQ25896</li>
+<li>Battery Monitoring: BQ27220</li>
+<li>Battery: 3.7V 1300mAh lithium polymer battery</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FN16R8 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">16MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">8MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">1.9-inch ST7789V IPS TFT</td>
+</tr>
+<tr>
+  <td style="text-align:center">Sub-GHz</td>
+  <td style="text-align:center">CC1101</td>
+</tr>
+<tr>
+  <td style="text-align:center">NFC</td>
+  <td style="text-align:center">PN532</td>
+</tr>
+<tr>
+  <td style="text-align:center">Audio</td>
+  <td style="text-align:center">ES7210 Microphone and Speaker</td>
+</tr>
+<tr>
+  <td style="text-align:center">Charging Chip</td>
+  <td style="text-align:center">BQ25896</td>
+</tr>
+<tr>
+  <td style="text-align:center">Battery Monitoring</td>
+  <td style="text-align:center">BQ27220</td>
+</tr>
+<tr>
+  <td style="text-align:center">RGB LED</td>
+  <td style="text-align:center">8 × WS2812 Programmable LEDs</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Interface)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Control</td>
+  <td style="text-align:center">Rotary Encoder</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">97.5 × 39 × 31 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+
+<pre class="language-none"><code class="language-none">- ✅ bq25896_test : Battery management test, prints battery status in serial.
+- ✅ cc1101_recv_irq : Wireless reception test, displays received messages in serial.
+- ✅ cc1101_send_irq : Wireless transmission test, displays sent messages in serial.
+- ✅ display_test : Screen display test;
+- ✅ encode_test : Encoder test.
+- ✅ infrared_recv_test: Infrared reception
+- ✅ infrared_send_test: Infrared transmission
+- ✅ lvgl_test : LVGL benchmark and stress test;
+- ✅ pn532_test : NFC test, displays IC card information in serial.
+- ✅ tf_card_test : SD card test, displays read file names in serial.
+- ✅ record_test : Record 15 seconds of audio and save to SD card.
+- ✅ voice_test : Speaker test, read audio from SD card.
+- ✅ ws2812_test : LED light test;
+</code></pre>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/Download"  target="_blank">VisualStudioCode</a>, choose the version for your system.</li>
+<li>Open the &quot;Extensions&quot; in the sidebar of Visual Studio Code (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>), search for the &quot;PlatformIO IDE&quot; extension and install it.</li>
+<li>While the extension is installing, you can go to GitHub to download the program. You can download the main branch code by clicking the green &quot;&lt;&gt; Code&quot; button, or download the &quot;Releases&quot; version from the sidebar.</li>
+<li>After the extension is installed, open the sidebar's Explorer (or use <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>), click &quot;Open Folder&quot;, find the project code you just downloaded (the entire folder), click &quot;Add&quot;, and the project files will be added to your workspace.</li>
+<li>Open the &quot;platformio.ini&quot; file in the project folder (PlatformIO will automatically open the &quot;platformio.ini&quot; of the corresponding folder after adding it). Under the &quot;[platformio]&quot; section, uncomment to select the example program you want to upload (marked by &quot;default_envs = xxx&quot;). Then click the &quot;<kbd>√</kbd>&quot; at the bottom left to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>→</kbd>&quot; at the bottom left to upload.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a>, choose the version for your system.</li>
+<li>Open the &quot;example&quot; directory in the project folder, select the example project folder, and open the file ending with &quot;.ino&quot; to open the Arduino IDE project workspace.</li>
+<li>Open the &quot;Tools&quot; menu in the top bar -&gt; Select &quot;Board&quot; -&gt; &quot;Boards Manager&quot;, find or search for &quot;esp32&quot;, and install the board files by &quot;Espressif Systems&quot;. Then return to the &quot;Board&quot; menu and select the board type under &quot;ESP32 Arduino&quot;. The board type to select is determined by the &quot;board = xxx&quot; header under the [env] section in the &quot;platformio.ini&quot; file. If the corresponding board is not available, you need to manually add the board from the &quot;board&quot; directory in the project folder.</li>
+<li>Open the menu bar &quot;File&quot; -&gt; &quot;Preferences&quot;, find the &quot;Sketchbook location&quot; field, and copy all the library files along with their folders from the &quot;libraries&quot; folder in the project directory to the &quot;libraries&quot; folder in this location.</li>
+<li>Select the correct settings in the &quot;Tools&quot; menu as shown in the table below.</li>
+</ol>
+<h4 id="ESP32-S3">ESP32-S3</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
+</tr>
+<tr>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
+</tr>
+<tr>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
+</tr>
+<tr>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">16MB (128Mb)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
+</tr>
+<tr>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">16M Flash (3MB APP/9.9MB FATFS)</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">OPI PSRAM</td>
+</tr>
+<tr>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+<tr>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>Select the correct port.</li>
+<li>Click the &quot;<kbd>√</kbd>&quot; in the top right corner to compile. If the compilation is successful, connect the microcontroller to your computer and click &quot;<kbd>→</kbd>&quot; in the top right corner to upload.</li>
+</ol>
+<h3 id="Development-Platforms">Development Platforms</h3>
+<ol>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
+</ol>
+<h2 id="Pin-Overview">Pin Overview</h2>
+
+<pre class="language-c"><code class="language-c">#define BOARD_USER_KEY 6
+#define BOARD_PWR_EN   15
+
+// WS2812
+#define WS2812_NUM_LEDS 8
+#define WS2812_DATA_PIN 14
+
+// IR
+#define BOARD_IR_EN 2
+#define BOARD_IR_RX 1
+
+// MIC
+#define BOARD_MIC_DATA 42
+#define BOARD_MIC_CLK  39
+
+// VOICE
+#define BOARD_VOICE_BCLK  46
+#define BOARD_VOICE_LRCLK 40
+#define BOARD_VOICE_DIN   7
+
+// --------- DISPLAY ---------
+// About LCD definition in the file: lib/TFT_eSPI/User_Setups/Setup214_LilyGo_T_Embed_PN532.h
+#define DISPLAY_WIDTH  170
+#define DISPLAY_HEIGHT 320
+
+#define DISPLAY_BL   21 
+#define DISPLAY_CS   41
+#define DISPLAY_MISO -1
+#define DISPLAY_MOSI  9
+#define DISPLAY_SCLK 11
+#define DISPLAY_DC   16
+#define DISPLAY_RST  40
+
+// --------- ENCODER ---------
+#define ENCODER_INA 4
+#define ENCODER_INB 5
+#define ENCODER_KEY 0
+
+// --------- IIC ---------
+#define BOARD_I2C_SDA  8
+#define BOARD_I2C_SCL  18
+
+// IIC addr
+#define BOARD_I2C_ADDR_1 0x24  // PN532
+#define BOARD_I2C_ADDR_2 0x55  // BQ27220
+#define BOARD_I2C_ADDR_3 0x6b  // BQ25896
+
+// NFC
+#define BOARD_PN532_SCL     BOARD_I2C_SCL
+#define BOARD_PN532_SDA     BOARD_I2C_SDA
+#define BOARD_PN532_RF_REST 45
+#define BOARD_PN532_IRQ     17
+
+// --------- SPI ---------
+#define BOARD_SPI_SCK  11
+#define BOARD_SPI_MOSI 9
+#define BOARD_SPI_MISO 10
+
+// TF card
+#define BOARD_SD_CS   13
+#define BOARD_SD_SCK  BOARD_SPI_SCK
+#define BOARD_SD_MOSI BOARD_SPI_MOSI
+#define BOARD_SD_MISO BOARD_SPI_MISO
+
+// LORA
+#define BOARD_LORA_CS   12
+#define BOARD_LORA_SCK  BOARD_SPI_SCK
+#define BOARD_LORA_MOSI BOARD_SPI_MOSI
+#define BOARD_LORA_MISO BOARD_SPI_MISO
+#define BOARD_LORA_IO2  38
+#define BOARD_LORA_IO0  3
+#define BOARD_LORA_SW1  47
+#define BOARD_LORA_SW0  48
+</code></pre>
+<h2 id="Related-Tests">Related Tests</h2>
+<h2 id="FAQ">FAQ</h2>
+<ul>
+<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
+A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
+</li>
+<li><p><strong>Q. Cannot detect SD card?</strong><br />
+A. We successfully tested SD cards up to 32GB with SanDisk; however, some other cards didn't work for unknown reasons. Therefore, if the SD card is not detected, it is recommended to replace it with a SanDisk card no larger than 32GB;<br />
+  <img src="./docs/image-sd.png" alt="alt text" /></p>
+</li>
+<li><p><strong>Q. Why does my board keep failing to program?</strong><br />
+A. Please hold the &quot;BOOT&quot; button while pressing the &quot;RST&quot; button, then release the &quot;RST&quot; button to enter download mode and try downloading the program again.</p>
+</li>
+<li><p><strong>Q. What is the communication range of the CC1101 module?</strong><br />
+A. The communication range of CC1101 is affected by many factors, including antenna design, environmental interference, data rate, etc. Under ideal conditions, it can reach several hundred meters.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Problem</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">How do I enter download mode?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/download_mode.md"  target="_blank">docs</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How to download the program?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md"  target="_blank">docs</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How do I turn on the device after I shut it down?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/5"  target="_blank">Issues #5</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">How do I configure Wifi with EspTouch?</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/4"  target="_blank">Issues #4</a></td>
+</tr>
+<tr>
+  <td style="text-align:center">Why won't the battery charge？</td>
+  <td style="text-align:center"><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/9"  target="_blank">Issues #9</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf"  target="_blank">T-Embed-CC1101_V1.0</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf"  target="_blank">CC1101</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf"  target="_blank">PN532</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf"  target="_blank">BQ25896</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf"  target="_blank">BQ27220</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/ST7789V.pdf"  target="_blank">ST7789V</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
 <ul>
 <li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
 <li><a href="https://github.com/Seeed-Studio/PN532.git"  target="_blank">PN532</a></li>
@@ -398,92 +716,6 @@ var _hmt = _hmt || [];
 <li><a href="https://github.com/schreibfaul1/ESP32-audioI2S"  target="_blank">ESP32-audioI2S</a></li>
 <li><a href="https://github.com/lvgl/lvgl/tree/v8.4.0"  target="_blank">LVGL</a></li>
 </ul>
-<h2 id="Software-Design">Software Design</h2>
-<h3 id="Arduino-Set-Parameters">Arduino Set Parameters</h3>
-<table>
-<thead>
-<tr>
-  <th>Arduino IDE setting</th>
-  <th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Board</td>
-  <td><strong>ESP32S3 Dev Module</strong></td>
-</tr>
-<tr>
-  <td>Port</td>
-  <td>Your port</td>
-</tr>
-<tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
-</tr>
-<tr>
-  <td>CPU Frequency</td>
-  <td>240MHZ(WiFi)</td>
-</tr>
-<tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
-</tr>
-<tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Events Run On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>Flash Mode</td>
-  <td>QIO 80MHZ</td>
-</tr>
-<tr>
-  <td>Flash Size</td>
-  <td><strong>16MB(128Mb)</strong></td>
-</tr>
-<tr>
-  <td>Arduino Runs On</td>
-  <td>Core1</td>
-</tr>
-<tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
-</tr>
-<tr>
-  <td>Partition Scheme</td>
-  <td><strong>16M Flash(3M APP/9.9MB FATFS)</strong></td>
-</tr>
-<tr>
-  <td>PSRAM</td>
-  <td><strong>OPI PSRAM</strong></td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td><strong>UART0/Hardware CDC</strong></td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td><strong>CDC and JTAG</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Development-Platform">Development Platform</h3>
-<ol>
-<li><a href="https://www.espressif.com/zh-hans/products/sdks/esp-idf"  target="_blank">ESP-IDF</a></li>
-<li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
-</ol>
-<h2 id="Product-Technical-Support">Product Technical Support</h2>
 
                         
                     </div>

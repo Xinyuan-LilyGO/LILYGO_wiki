@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>LILYGO T-Mini E paper S3 - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["ESP32-S3", "E-Paper", "LoRa", "Low Power", "IoT"], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
 </head>
 
 
@@ -149,7 +149,7 @@ var _hmt = _hmt || [];
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Embed-SI4732/T-Embed-SI4732.html"><span class="label">T-Embed SI4732</span><span class=""></span></a></li>
 <li class="not_active with_link"><a href="/get_started/en/Wearable/T-Glass/T-Glass.html"><span class="label">T-Glass</span><span class=""></span></a></li>
 <li class="active with_link"><a href="/get_started/en/Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.html"><span class="label">T-Mini E-paper-S3</span><span class=""></span></a></li>
-<li class="not_active with_link"><a href="/get_started/en/no_translate.html?ref=/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html&from=/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html"><span class="label">T-Watch Ultra</span><span class=""></span></a></li>
 </ul>
 </li>
 <li class="not_active no_link"><a><span class="label">Wireless Kit</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
@@ -240,6 +240,16 @@ var _hmt = _hmt || [];
                         <div id="article_tags">
                             <ul>
                             
+                                <li>ESP32-S3</li>
+                            
+                                <li>E-Paper</li>
+                            
+                                <li>LoRa</li>
+                            
+                                <li>Low Power</li>
+                            
+                                <li>IoT</li>
+                            
                             </ul>
                         </div>
                         <div id="article_info">
@@ -263,199 +273,602 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <!-- **[English](README.MD) | 中文** -->
-<div style="width:100%; display:flex;justify-content: center;">
-<p><img src="./assets/T-Mini-E-paper-S3-1.jpg" alt="T-Deck" /></p>
+                            <div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Mini-E-paper-S3-1.jpg" alt="T-Mini-E-paper-S3" /></p>
 </div>
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-mini-epaper-s3">官网购买</a>
-    <!-- <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>-->
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://lilygo.cc/products/t-mini-epaper-s3">Official Store</a>
 </div>
-<h2 id="Introduction">Introduction</h2>
-<p>The LILYGO T-MINI E-Paper S3 Kit is a compact (102x24.5x53 mm) multifunctional development board powered by the ESP32-S3FN4R2 dual-core processor with Wi-Fi and Bluetooth 5 support.<br />
-Its core highlight is the integration of a low-power 1.02-inch e-paper display (128x80 resolution), the SX1262 LoRa long-range communication module supporting 868/915/923 MHz frequency bands, and 3.7V 18350 lithium battery power supply.<br />
-Onboard features include TF card storage expansion, a PCF85063ATL RTC real-time clock, rich GPIO interfaces (SPI/I2C, etc.), and deep-sleep mode support.<br />
-It is ideal for building remote environmental monitoring nodes, low-power information display tags, portable data loggers, and other IoT application scenarios.</p>
-<h2 id="Appearance-and-Functions">Appearance and Functions</h2>
-<h3 id="Appearance">Appearance</h3>
-<img src="./assets/T-Mini-E-paper-S3-2.jpg" alt="summary" width=80%>
-<h3 id="Pin-Diagram">Pin Diagram</h3>
-<img src="./assets/T-Mini-E-paper-S3-pin.jpg" alt="summary" width=100%>
-<h2 id="Module-Information-and-Specifications">Module Information and Specifications</h2>
-<h3 id="Development-Board-Specifications">Development Board Specifications</h3>
-<img src="./assets/T-Mini-E-paper-S3-info.jpg" alt="summary" width=100%>
+<h2 id="Version-Iteration">Version Iteration</h2>
 <table>
 <thead>
 <tr>
-  <th>Component</th>
+  <th style="text-align:center">Version</th>
+  <th style="text-align:center">Update date</th>
+  <th style="text-align:left">Update description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Mini-E-paper-S3_V1.0</td>
+  <td style="text-align:center">2023-11-10</td>
+  <td style="text-align:left">Initial hardware version</td>
+</tr>
+<tr>
+  <td style="text-align:center">T-Mini-E-paper-S3_V1.2</td>
+  <td style="text-align:center">2024-01-15</td>
+  <td style="text-align:left">Hardware optimization update</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Purchase-Links">Purchase Links</h2>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Product</th>
+  <th style="text-align:center">SOC</th>
+  <th style="text-align:center">FLASH</th>
+  <th style="text-align:center">PSRAM</th>
+  <th style="text-align:center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">T-Mini E-paper S3</td>
+  <td style="text-align:center">ESP32-S3</td>
+  <td style="text-align:center">4MB</td>
+  <td style="text-align:center">2MB</td>
+  <td style="text-align:center"><a href="https://lilygo.cc/products/t-mini-epaper-s3"  target="_blank">LILYGO Store</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Table-of-Contents">Table of Contents</h2>
+<ul>
+<li><a href="#description"  >Description</a></li>
+<li><a href="#preview"  >Preview</a></li>
+<li><a href="#modules"  >Modules</a></li>
+<li><a href="#quick-start"  >Quick Start</a></li>
+<li><a href="#pin-overview"  >Pin Overview</a></li>
+<li><a href="#related-tests"  >Related Tests</a></li>
+<li><a href="#faq"  >FAQ</a></li>
+<li><a href="#projects"  >Projects</a></li>
+<li><a href="#resources"  >Resources</a></li>
+<li><a href="#dependent-libraries"  >Dependent Libraries</a></li>
+</ul>
+<h2 id="Description">Description</h2>
+<p>The LILYGO T-MINI E-Paper S3 Kit is a compact (102x24.5x53mm) multifunctional development board featuring the ESP32-S3FN4R2 dual-core processor (with Wi-Fi/Bluetooth 5 support). Its core highlights include an integrated low-power 1.02-inch E-Ink display (128x80 resolution), an SX1262 LoRa long-range communication module supporting 868/915/923MHz bands, and power supply via a 3.7V 18350 lithium battery. Onboard features also include TF card storage expansion, a PCF85063ATL RTC real-time clock, rich GPIO interfaces (SPI/I2C, etc.), and support for deep sleep. It is ideally suited for building IoT application scenarios such as remote environmental monitoring nodes, low-power information display tags, and portable data loggers.</p>
+<h2 id="Preview">Preview</h2>
+<h3 id="Physical-Image">Physical Image</h3>
+<div style="width:100%; display:flex;justify-content: center;">
+<p><img src="./assets/T-Mini-E-paper-S3-2.jpg" alt="T-Mini-E-paper-S3" /></p>
+</div>
+<h3 id="Pinout-Diagram">Pinout Diagram</h3>
+<img src="./assets/T-Mini-E-paper-S3-pin.jpg" alt="summary" width=100%>
+<h2 id="Modules">Modules</h2>
+<h3 id="MCU">MCU</h3>
+<ul>
+<li>Chip: ESP32-S3FN4R2</li>
+<li>PSRAM: 2MB (QSPI PSRAM)</li>
+<li>FLASH: 4MB</li>
+<li>Wireless: 2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</li>
+</ul>
+<h3 id="Display">Display</h3>
+<ul>
+<li>Size: 1.02-inch E-Ink display</li>
+<li>Resolution: 128×80px</li>
+<li>Display Type: E-Paper</li>
+<li>Compatible Library: GxEPD</li>
+<li>Bus Communication Protocol: SPI</li>
+</ul>
+<h3 id="Wireless-Communication">Wireless Communication</h3>
+<ul>
+<li>LoRa: SX1262</li>
+<li>Frequency Bands: 868MHz/915MHz/923MHz (selectable)</li>
+</ul>
+<h3 id="Power-Management">Power Management</h3>
+<ul>
+<li>RTC: PCF85063ATL Real-Time Clock</li>
+<li>Battery: 18350 3.7V Lithium Battery</li>
+</ul>
+<h3 id="Overview">Overview</h3>
+<img src="./assets/T-Mini-E-paper-S3-info.jpg" alt="summary" width=80%>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Component</th>
+  <th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">MCU</td>
+  <td style="text-align:center">ESP32-S3FN4R2 Dual-core LX7 microprocessor</td>
+</tr>
+<tr>
+  <td style="text-align:center">FLASH</td>
+  <td style="text-align:center">4MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">2MB</td>
+</tr>
+<tr>
+  <td style="text-align:center">Display</td>
+  <td style="text-align:center">1.02-inch E-Paper (128×80)</td>
+</tr>
+<tr>
+  <td style="text-align:center">LoRa</td>
+  <td style="text-align:center">SX1262 (868/915/923MHz)</td>
+</tr>
+<tr>
+  <td style="text-align:center">RTC</td>
+  <td style="text-align:center">PCF85063ATL Real-Time Clock</td>
+</tr>
+<tr>
+  <td style="text-align:center">Storage</td>
+  <td style="text-align:center">TF Card Expansion</td>
+</tr>
+<tr>
+  <td style="text-align:center">Wireless</td>
+  <td style="text-align:center">2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+</tr>
+<tr>
+  <td style="text-align:center">USB</td>
+  <td style="text-align:center">1 × USB Port (TYPE-C Connector)</td>
+</tr>
+<tr>
+  <td style="text-align:center">Expansion Interfaces</td>
+  <td style="text-align:center">1 x LoRa Antenna Interface + 1 x QWIIC Interface</td>
+</tr>
+<tr>
+  <td style="text-align:center">Buttons</td>
+  <td style="text-align:center">1 x RESET Button + 1 x BOOT Button</td>
+</tr>
+<tr>
+  <td style="text-align:center">Battery</td>
+  <td style="text-align:center">18350 3.7V Lithium Battery</td>
+</tr>
+<tr>
+  <td style="text-align:center">Mounting Holes</td>
+  <td style="text-align:center">M1 × 4</td>
+</tr>
+<tr>
+  <td style="text-align:center">Dimensions</td>
+  <td style="text-align:center">102 × 24.5 × 53 mm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Example-Support">Example Support</h3>
+<table>
+<thead>
+<tr>
+  <th>Example</th>
   <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>MCU</td>
-  <td>ESP32-S3FN4R2 Dual-core LX7 microprocessor</td>
+  <td>Extension</td>
+  <td>LORA Expansion Module Example, RTC Real-Time Clock Example</td>
 </tr>
 <tr>
-  <td>Flash</td>
-  <td>4MB</td>
+  <td>Meun_Lora_Shield</td>
+  <td>Menu Example with Meshtastic functional mode (Built using PlatformIO)</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>2MB</td>
+  <td>Meun</td>
+  <td>Menu Interface Mode Example</td>
 </tr>
 <tr>
-  <td>LoRa</td>
-  <td>SX1262 868MHz / 915MHz / 923MHz (optional)</td>
+  <td>GxEPD_TF_Card_Example</td>
+  <td>TF Card Function Example</td>
 </tr>
 <tr>
-  <td>RTC</td>
-  <td>PCF85063ATL</td>
+  <td>Hello_World_U8G2_Fonts</td>
+  <td>U8G2 Font Library Usage Example</td>
 </tr>
 <tr>
-  <td>Wireless</td>
-  <td>2.4 GHz Wi-Fi &amp; Bluetooth 5 (LE)</td>
+  <td>GxEPD_Example</td>
+  <td>E-Ink Display, SD Card, and WiFi Function Test Example</td>
 </tr>
 <tr>
-  <td>Storage</td>
-  <td>TF card</td>
-</tr>
-<tr>
-  <td>Display</td>
-  <td>1.02-inch e-paper, 128x80 resolution</td>
-</tr>
-<tr>
-  <td>Battery</td>
-  <td>18350 3.7V lithium battery</td>
-</tr>
-<tr>
-  <td>Buttons</td>
-  <td>1 × RST button + 1 × BOOT button</td>
-</tr>
-<tr>
-  <td>USB</td>
-  <td>1 × Type-C port</td>
-</tr>
-<tr>
-  <td>Expansion Ports</td>
-  <td>1 × LoRa antenna port + 1 × QWIIC port</td>
-</tr>
-<tr>
-  <td>Dimensions</td>
-  <td><strong>102 × 24.5 × 53 mm</strong></td>
-</tr>
-<tr>
-  <td>Mounting Holes</td>
-  <td><strong>M1 × 4</strong></td>
+  <td>Partial_UpdateTest</td>
+  <td>E-Ink Display Partial Refresh Function Test Example</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Related-Resources">Related Resources</h3>
-<p>GitHub: <a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3"  target="_blank">LilyGO-Mini-Epaper-S3</a></p>
-<h4 id="Schematics">Schematics</h4>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/schematic/Mini-Epaper-S3-V1.2.pdf"  target="_blank">LilyGO-Mini-Epaper-S3</a></p>
-<p><a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/schematic/Mini%20e-paper-LoRa%20Shield_Schematic.pdf"  target="_blank">LoRa Shield</a></p>
-<h4 id="Dependencies">Dependencies</h4>
+<h3 id="PlatformIO">PlatformIO</h3>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/"  target="_blank">Visual Studio Code</a> and <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>Search for and install the <code>PlatformIO</code> extension in the <code>Visual Studio Code</code> extensions marketplace.</li>
+<li>After installation, restart <code>Visual Studio Code</code>.</li>
+<li>After restarting, select <code>File</code> -&gt; <code>Open Folder</code> -&gt; Choose the <code>LilyGO-Mini-Epaper-S3</code> directory.</li>
+<li>Wait for the third-party dependency libraries to finish installing.</li>
+<li>Click to open the <code>platformio.ini</code> file, under the <code>platformio</code> section.</li>
+<li>Under <code>default_envs</code>, select the name of the board you want to use and uncomment it.</li>
+<li>Uncomment one line <code>src_dir = xxxx</code>, ensuring only one line is active.</li>
+<li>Click the (✔) symbol at the bottom left to compile.</li>
+<li>Connect the board to your computer's USB port.</li>
+<li>Click (→) to upload the firmware.</li>
+<li>Click (plug symbol) to monitor the serial output.</li>
+<li>If unable to upload or the USB device keeps blinking, please check the <strong>FAQ</strong> below.</li>
+</ol>
+<h3 id="Arduino">Arduino</h3>
 <ul>
-<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
-<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
-<li><a href="https://github.com/adafruit/Adafruit_NeoPixel"  target="_blank">adafruit_NeoPixel</a></li>
-<li><a href="https://github.com/bblanchon/ArduinoJson"  target="_blank">arduino_json</a></li>
-<li><a href="https://github.com/adafruit/Adafruit-GFX-Library"  target="_blank">Adafruit_GFX_Library</a></li>
-<li><a href="https://github.com/BoschSensortec/BMA423-Sensor-API"  target="_blank">BMA423</a></li>
-<li><a href="https://github.com/bot1131357/GxEPD"  target="_blank">GxEPD</a></li>
-<li><a href="https://github.com/bot1131357/Mecha_QMC5883L-master"  target="_blank">Mecha_QMC5883L-master</a></li>
-<li><a href="https://github.com/lewisxhe/PCF8563_Library"  target="_blank">PCF8563_library</a></li>
-<li><a href="https://github.com/mprograms/QMC5883LCompass"  target="_blank">QMC5883LCompass</a></li>
+<li>Using PlatformIO is recommended to avoid cumbersome steps.</li>
 </ul>
-<h2 id="Software-Development">Software Development</h2>
-<h3 id="Arduino-IDE-Settings">Arduino IDE Settings</h3>
+<ol>
+<li>Install <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>Install <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/"  target="_blank">Arduino ESP32 version 2.0.5 or higher</a></li>
+<li>Copy all directories from the <a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/edit/main/lib/"  target="_blank">lib folder</a> to your Arduino libraries folder (e.g., C:\Users\YourUserName\Documents\Arduino\libraries)</li>
+<li>Open Arduino IDE, click <code>Tools</code></li>
+</ol>
 <table>
 <thead>
 <tr>
-  <th>Arduino IDE Setting</th>
-  <th>Value</th>
+  <th style="text-align:center">Setting</th>
+  <th style="text-align:center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Board</td>
-  <td>ESP32S3 Dev Module</td>
+  <td style="text-align:center">Board</td>
+  <td style="text-align:center">ESP32S3 Dev Module</td>
 </tr>
 <tr>
-  <td>Port</td>
-  <td>Your port</td>
+  <td style="text-align:center">Upload Speed</td>
+  <td style="text-align:center">921600</td>
 </tr>
 <tr>
-  <td>USB CDC On Boot</td>
-  <td>Enable</td>
+  <td style="text-align:center">USB Mode</td>
+  <td style="text-align:center">Hardware CDC and JTAG</td>
 </tr>
 <tr>
-  <td>CPU Frequency</td>
-  <td>240 MHz (Wi-Fi)</td>
+  <td style="text-align:center">USB CDC On Boot</td>
+  <td style="text-align:center">Enabled</td>
 </tr>
 <tr>
-  <td>Core Debug Level</td>
-  <td>None</td>
+  <td style="text-align:center">USB Firmware MSC On Boot</td>
+  <td style="text-align:center">Disabled</td>
 </tr>
 <tr>
-  <td>USB DFU On Boot</td>
-  <td>Disable</td>
+  <td style="text-align:center">USB DFU On Boot</td>
+  <td style="text-align:center">Disabled</td>
 </tr>
 <tr>
-  <td>Erase All Flash Before Sketch Upload</td>
-  <td>Disable</td>
+  <td style="text-align:center">CPU Frequency</td>
+  <td style="text-align:center">240MHz (WiFi)</td>
 </tr>
 <tr>
-  <td>Events Run On</td>
-  <td>Core 1</td>
+  <td style="text-align:center">Flash Mode</td>
+  <td style="text-align:center">QIO 80MHz</td>
 </tr>
 <tr>
-  <td>Flash Mode</td>
-  <td>QIO 80 MHz</td>
+  <td style="text-align:center">Flash Size</td>
+  <td style="text-align:center">4MB (32Mb)</td>
 </tr>
 <tr>
-  <td>Flash Size</td>
-  <td>4MB (32Mb)</td>
+  <td style="text-align:center">Core Debug Level</td>
+  <td style="text-align:center">None</td>
 </tr>
 <tr>
-  <td>Arduino Runs On</td>
-  <td>Core 1</td>
+  <td style="text-align:center">Partition Scheme</td>
+  <td style="text-align:center">Default 4MB with spiffs (1.5MB APP/1.5MB SPIFFS)</td>
 </tr>
 <tr>
-  <td>USB Firmware MSC On Boot</td>
-  <td>Disable</td>
+  <td style="text-align:center">PSRAM</td>
+  <td style="text-align:center">QSPI PSRAM</td>
 </tr>
 <tr>
-  <td>Partition Scheme</td>
-  <td>Default 4MB with SPIFFS (1.5MB APP / 1.5MB SPIFFS)</td>
+  <td style="text-align:center">Arduino Runs On</td>
+  <td style="text-align:center">Core 1</td>
 </tr>
 <tr>
-  <td>PSRAM</td>
-  <td>QSPI PSRAM</td>
-</tr>
-<tr>
-  <td>Upload Mode</td>
-  <td>UART0 / Hardware CDC</td>
-</tr>
-<tr>
-  <td>Upload Speed</td>
-  <td>921600</td>
-</tr>
-<tr>
-  <td>USB Mode</td>
-  <td>CDC and JTAG</td>
+  <td style="text-align:center">Events Run On</td>
+  <td style="text-align:center">Core 1</td>
 </tr>
 </tbody>
 </table>
+<ol start="5">
+<li>Select <code>LilyGO-Mini-Epaper-S3</code> -&gt; Any example</li>
+<li>Select <code>Port</code> (Note: <code>ESP32S3-Dev-Module</code> requires an external U2T to recognize the port)</li>
+<li>Click <code>Upload</code>, wait for compilation and upload to complete.</li>
+<li>If unable to upload or the USB device keeps blinking, please check the <strong>FAQ</strong> below.</li>
+</ol>
 <h3 id="Development-Platforms">Development Platforms</h3>
 <ol>
-<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
+<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
 <li><a href="https://platformio.org/"  target="_blank">Platform IO</a></li>
-<li><a href="https://micropython.org/"  target="_blank">Micropython</a></li>
+<li><a href="https://code.visualstudio.com/"  target="_blank">VS Code</a></li>
 </ol>
-<h2 id="Technical-Support">Technical Support</h2>
+<h2 id="Pin-Overview">Pin Overview</h2>
+<table>
+<thead>
+<tr>
+  <th>GPIO</th>
+  <th>LORA</th>
+  <th>TF</th>
+  <th>EPD(SPI)</th>
+  <th>RTC</th>
+  <th>BUTTON</th>
+  <th>USB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>IO0</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Button_BOOT</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO3</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Button_RIGHT</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO4</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>Button_LEFT</td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO5</td>
+  <td>Lora_DIO1</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO6</td>
+  <td>Lora_MISO</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO8</td>
+  <td>Lora_SCK</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO9</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RTC_SCL</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO10</td>
+  <td></td>
+  <td></td>
+  <td>EPD_BUSY</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO11</td>
+  <td></td>
+  <td></td>
+  <td>EPD_RST</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO13</td>
+  <td></td>
+  <td></td>
+  <td>EPD_CS</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO14</td>
+  <td></td>
+  <td></td>
+  <td>EPD_SCLK</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO15</td>
+  <td></td>
+  <td></td>
+  <td>EPD_MOSI</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO16</td>
+  <td>Lora_BUSY</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO17</td>
+  <td>Lora_MOSI</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO18</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>RTC_SDA</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO19</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>USB_N</td>
+</tr>
+<tr>
+  <td>IO20</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td>USB_P</td>
+</tr>
+<tr>
+  <td>IO21</td>
+  <td>Lora_RST</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO38</td>
+  <td></td>
+  <td>TF_MISO</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO39</td>
+  <td></td>
+  <td>TF_MOSI</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO40</td>
+  <td></td>
+  <td>TF_CS</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO41</td>
+  <td></td>
+  <td>TF_SCK</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>IO42</td>
+  <td></td>
+  <td></td>
+  <td>EPD_EN</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Related-Tests">Related Tests</h2>
+<h3 id="Power-Consumption">Power Consumption</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Firmware</th>
+  <th style="text-align:center">Program</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center"><code>[T-Mini-E-paper-S3_V1.2][Normal_Display]_firmware_V1.0.0.bin</code></td>
+  <td style="text-align:center"><code>Normal Display</code></td>
+  <td style="text-align:left">Power Consumption: To be supplemented</td>
+</tr>
+<tr>
+  <td style="text-align:center"><code>[T-Mini-E-paper-S3_V1.2][Deep_Sleep]_firmware_V1.0.0.bin</code></td>
+  <td style="text-align:center"><code>Deep Sleep</code></td>
+  <td style="text-align:left">Power Consumption: To be supplemented</td>
+</tr>
+</tbody>
+</table>
+<h2 id="FAQ">FAQ</h2>
+<ol>
+<li><p><code>Mini-E-Paper-S3</code> uses USB as the JTAG upload port. To print serial information via USB, the USB_CDC_ON_BOOT configuration needs to be enabled.</p>
+</li>
+<li><p>If the port cannot be found when uploading the program, or if the USB is already used for other functions causing the port not to appear, please manually enter upload mode:</p>
+<ol>
+<li>Connect the board via USB cable</li>
+<li>Press and hold the BOOT button, then press the RST button</li>
+<li>Release the RST button</li>
+<li>Release the BOOT button</li>
+<li>Upload the program</li>
+</ol>
+</li>
+<li><p>If the above method doesn't work, please flash the <a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/firmware/README.MD"  target="_blank">firmware file</a> to check if the hardware is functioning properly</p>
+</li>
+</ol>
+<h2 id="Projects">Projects</h2>
+<ul>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/schematic/Mini-Epaper-S3-V1.2.pdf"  target="_blank">T-Mini-E-paper-S3_V1.2</a></li>
+<li><a href="https://github.com/Xinyuan-LilyGO/LilyGO-Mini-Epaper-S3/blob/main/schematic/Mini%20e-paper-LoRa%20Shield_Schematic.pdf"  target="_blank">LoRa Shield</a></li>
+</ul>
+<h2 id="Resources">Resources</h2>
+<ul>
+<li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf"  target="_blank">ESP32-S3 Datasheet</a></li>
+<li><a href="https://www.semtech.com/products/wireless-rf/lora-core/sx1262"  target="_blank">SX1262 Datasheet</a></li>
+<li><a href="https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A"  target="_blank">PCF85063ATL Datasheet</a></li>
+</ul>
+<h2 id="Dependent-Libraries">Dependent Libraries</h2>
+<ul>
+<li><a href="https://github.com/bot1131357/GxEPD"  target="_blank">GxEPD</a></li>
+<li><a href="https://github.com/jgromes/RadioLib"  target="_blank">RadioLib</a></li>
+<li><a href="https://github.com/adafruit/Adafruit-GFX-Library"  target="_blank">Adafruit_GFX_Library</a></li>
+<li><a href="https://github.com/lewisxhe/PCF8563_Library"  target="_blank">PCF8563_library</a></li>
+<li><a href="https://github.com/bxparks/AceButton"  target="_blank">AceButton</a></li>
+<li><a href="https://github.com/adafruit/Adafruit_NeoPixel"  target="_blank">adafruit_NeoPixel</a></li>
+<li><a href="https://github.com/bblanchon/ArduinoJson"  target="_blank">arduino_json</a></li>
+<li><a href="https://github.com/BoschSensortec/BMA423-Sensor-API"  target="_blank">BMA423</a></li>
+<li><a href="https://github.com/bot1131357/Mecha_QMC5883L-master"  target="_blank">Mecha_QMC5883L-master</a></li>
+<li><a href="https://github.com/mprograms/QMC5883LCompass"  target="_blank">QMC5883LCompass</a></li>
+</ul>
 
                         
                     </div>
@@ -471,7 +884,7 @@ It is ideal for building remote environmental monitoring nodes, low-power inform
                     </div>
                     <div id="next">
                         
-                        <a href="/get_started/en/no_translate.html?ref=/get_started/zh/Wearable/T-Watch-Ultra/T-Watch-Ultra.html&from=/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html">
+                        <a href="/get_started/en/Wearable/T-Watch-Ultra/T-Watch-Ultra.html">
                             <span class="label">T-Watch Ultra</span>
                             <span class="icon"></span>
                         </a>
