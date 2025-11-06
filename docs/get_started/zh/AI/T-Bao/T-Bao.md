@@ -164,17 +164,6 @@ T-Bao 是一款基于 ESP32-S3-WROOM-1 和 K210 RISC-V AI 芯片的开源 AIoT �
 3. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf) - ESP32高级开发
 4. [MicroPython](https://docs.micropython.org/en/latest/) - 脚本开发
 
-## 引脚总览
-
-| 功能模块 | 主要引脚 | 通信协议 |
-| :------: | :-------: | :------: |
-| 屏幕 | SPI接口 | SPI |
-| 触摸 | I2C接口 | I2C |
-| 摄像头 | DVP接口 | 并行数据 |
-| 音频 | I2S接口 | I2S |
-| 传感器 | I2C接口 | I2C |
-| 电机驱动 | PWM引脚 | PWM |
-| 扩展接口 | GPIO | 多种协议 |
 
 ## 相关测试
 
