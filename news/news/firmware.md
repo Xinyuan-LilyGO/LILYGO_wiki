@@ -76,13 +76,16 @@ V1.1
 
 <details>
 <summary>
-T3 V1.3 TXCO
+LoRa32 V1.3
 </summary>
 
 | Product                 | Firmware Name                             | 
 | ----------------------- | ----------------------------------------- |
-| [T-Display-S3-Pro](https://www.lilygo.cc/products/t-display-s3-pro)|[Factory](./bin/LoRa32/T3_V1_6_TXCO_Recv.bin) |
-| |[Release](./bin/LoRa32/T3_V1_6_TXCO_Sender.bin)|
+| [T3 LoRa32 V1.6.1](https://lilygo.cc/products/lora-v1-3)|
+| |[recv-868M](./bin/LoRa32/firmware-1_3-recv--868M.bin) |
+| |[send-868M](./bin/LoRa32/firmware-1_3-send--868M.bin)|
+| |[recv-915M](./bin/LoRa32/firmware-1_3-recv--915M.bin) |
+| |[send-915M](./bin/LoRa32/firmware-1_3-send--915M.bin)|
 </details>
 <!-- ------------------------------ -->
 
@@ -94,17 +97,36 @@ LoRa32 V1.6.1
 | Product                 | Firmware Name                             | 
 | ----------------------- | ----------------------------------------- |
 | [T3 LoRa32 V1.6.1](https://lilygo.cc/products/lora3)|
-| |[recv-433M](./bin/LoRa32/firmware-recv-433M.bin) |
-| |[send-433M](./bin/LoRa32/firmware-send-433M.bin)|
-| |[recv-868M](./bin/LoRa32/firmware-recv-868M.bin) |
-| |[send-868M](./bin/LoRa32/firmware-send-868M.bin)|
-| |[recv-915M](./bin/LoRa32/firmware-recv-915M.bin) |
-| |[send-915M](./bin/LoRa32/firmware-send-915M.bin)|
+| |[recv-433M](./bin/LoRa32/firmware-1_6_1-recv-433M.bin) |
+| |[send-433M](./bin/LoRa32/firmware-1_6_1-send-433M.bin)|
+| |[recv-868M](./bin/LoRa32/firmware-1_6_1-recv-868M.bin) |
+| |[send-868M](./bin/LoRa32/firmware-1_6_1-send-868M.bin)|
+| |[recv-915M](./bin/LoRa32/firmware-1_6_1-recv-915M.bin) |
+| |[send-915M](./bin/LoRa32/firmware-1_6_1-send-915M.bin)|
+
 </details>
 
+<!-- ------------------------------ -->
 
-# Device 2
+<details>
+<summary>
+LoRa32 V3
+</summary>
 
-| Device        | Firmware                |  Description |   
-|--------------------------------------|--------------------------------|---|
-| test                                | <a href="./bin/maixpy_speech.bin" download="maixpy_speech.bin">下载</a>            |   |   |
+| Product                 | Firmware Name                             | 
+| ----------------------- | ----------------------------------------- |
+| [T3 LoRa32 V3](https://lilygo.cc/products/t3-tcxo)|
+| |[T3_V_3_TXCO_Recv](./bin/LoRa32/T3_V_3_TXCO_Recv.bin) |
+| |[T3_V_3_TXCO_Sender](./bin/LoRa32/T3_V_3_TXCO_Sender.bin)|
+
+</details>
+
+# Portable
+## T-Deck
+
+| Firmware Name | description  |
+| -------------------- | -------------|
+| [T-Keyboard.bin](./bin/T-Deck/T-Keyboard_Keyboard_ESP32C3_250620.bin) | T-Deck Keyboard C3 firmware                  |
+| [T-Deck_UnitTest.bin](./bin/T-Deck/T-Deck_UnitTest_250620.bin)|T-Deck/T-Deck-Plus function test firmware      |                          |
+| [T-Deck-Plus-TouchFix.bin](./bin/T-Deck/T-Deck-Plus-TouchFix_241203.bin)  |T-Deck-Plus Touch Fix                         |
+| [Meshtastic Online](https://flasher.meshtastic.org)                              | Meshtastic Web flasher |

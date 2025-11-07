@@ -5,6 +5,7 @@ desc: Download
 tags: START, Test, LILYGO
 order: 2
 date: How to download the firmware 
+show_source: false
 ---
 
 
