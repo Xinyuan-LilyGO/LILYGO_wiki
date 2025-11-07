@@ -13,11 +13,11 @@ show_source: false
 ## T-Display-S3
 | Product                 | Firmware Name                             | Description
 | ----------------------- | ----------------------------------------- |------------|
-| [T-Display-S3][1]       | [ScreenDetection](./Display/ScreenDetection.bin)  |
-| [T-Display-S3][1]       | [Factory](./Display/firmware_no_touch.bin)        |
-| [T-Display-S3-Touch][2] | [Factory](./Display/firmware_touch.bin)           |
-| [T-Display-S3-MIDI][3]  | [firmware](./Display/T-Display-S3-MIDI_V1.0.0_firmware.bin) |Original
-||[firmware](./Display/T-Display-S3-MIDI_V1.0.1_firmware.bin) |Fixed T-Display S3 MIDI left and right channel error issue
+| [T-Display-S3][1]       | [ScreenDetection](./bin/T-Display-S3/ScreenDetection.bin)  |
+| [T-Display-S3][1]       | [Factory](./bin/T-Display-S3/firmware_no_touch.bin)        |
+| [T-Display-S3-Touch][2] | [Factory](./bin/T-Display-S3/firmware_touch.bin)           |
+| [T-Display-S3-MIDI][3]  | [firmware](./bin/T-Display-S3/T-Display-S3-MIDI_V1.0.0_firmware.bin) |Original
+||[firmware](./bin/T-Display-S3/T-Display-S3-MIDI_V1.0.1_firmware.bin) |Fixed T-Display S3 MIDI left and right channel error issue
 
 
 [1]: https://www.lilygo.cc/products/t-display-s3?variant=42589373268149
@@ -66,11 +66,42 @@ V1.1
 
 </details>
 
-# Device 2
 
-| Device        | Firmware                |  Description |   
-|--------------------------------------|--------------------------------|---|
-| test                                | [download](./bin/maixpy_speech.bin)               |   |   |
+## 
+
+
+
+# LoRa
+## LoRa32
+
+<details>
+<summary>
+T3 V1.3 TXCO
+</summary>
+
+| Product                 | Firmware Name                             | 
+| ----------------------- | ----------------------------------------- |
+| [T-Display-S3-Pro](https://www.lilygo.cc/products/t-display-s3-pro)|[Factory](./bin/LoRa32/T3_V1_6_TXCO_Recv.bin) |
+| |[Release](./bin/LoRa32/T3_V1_6_TXCO_Sender.bin)|
+</details>
+<!-- ------------------------------ -->
+
+<details>
+<summary>
+LoRa32 V1.6.1
+</summary>
+
+| Product                 | Firmware Name                             | 
+| ----------------------- | ----------------------------------------- |
+| [T3 LoRa32 V1.6.1](https://lilygo.cc/products/lora3)|
+| |[recv-433M](./bin/LoRa32/firmware-recv-433M.bin) |
+| |[send-433M](./bin/LoRa32/firmware-send-433M.bin)|
+| |[recv-868M](./bin/LoRa32/firmware-recv-868M.bin) |
+| |[send-868M](./bin/LoRa32/firmware-send-868M.bin)|
+| |[recv-915M](./bin/LoRa32/firmware-recv-915M.bin) |
+| |[send-915M](./bin/LoRa32/firmware-send-915M.bin)|
+</details>
+
 
 # Device 2
 
