@@ -153,12 +153,12 @@ LoRa32 V3
 
 ### T-Deck
 
-| Firmware Name | description  |
-| -------------------- | ------------- |
-| [T-Keyboard.bin](./bin/T-Deck/T-Keyboard_Keyboard_ESP32C3_250620.bin) | T-Deck Keyboard C3 firmware |
-| [T-Deck_UnitTest.bin](./bin/T-Deck/T-Deck_UnitTest_250620.bin)|T-Deck/T-Deck-Plus function test firmware  |                          |
-| [T-Deck-Plus-TouchFix.bin](./bin/T-Deck/T-Deck-Plus-TouchFix_241203.bin)  |T-Deck-Plus Touch Fix   |
-| [Meshtastic Online](https://flasher.meshtastic.org)   | Meshtastic Web flasher |
+| Firmware Name | description  |  
+|-------------------|-------------|
+| [T-Keyboard.bin](./bin/T-Deck/T-Keyboard_Keyboard_ESP32C3_250620.bin) | T-Deck Keyboard C3 firmware               |   
+| [T-Deck_UnitTest.bin](./bin/T-Deck/T-Deck_UnitTest_250620.bin) | T-Deck/T-Deck-Plus function test firmware |   
+| [T-Deck-Plus-TouchFix.bin](./bin/T-Deck/T-Deck-Plus-TouchFix_241203.bin) | T-Deck-Plus Touch Fix                     |   
+| [Meshtastic Online](https://flasher.meshtastic.org)  | Meshtastic Web flasher    |   
 
 
 ### T-Deck pro
@@ -166,6 +166,6 @@ LoRa32 V3
 |            Firmware                |         description            |
 | :--------------------------------: | :-------------------------: |
 |[factory_v1.2](./bin/T-Deck-Pro/H693_factory_v1.3_20251015.bin)   |      Factory firmware       |
-|[factory_v1.2_fix](./bin/T-Deck-Pro/H693_factory_v1.2_20250412_fix.bin) |        Fix firmware         |
+|[factory_v1.2_fix](./bin/T-Deck-Pro/H693_factory_v1.2_20250412_fix.bin)|        Fix firmware     |
 |[test_EPD](./bin/T-Deck-Pro/Test_EPD.bin)             |        Display test         |
 |[test_pcm5102a](./bin/T-Deck-Pro/Test_pcm5102a.bin)           | Sound test(non-4G version) |

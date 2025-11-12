@@ -18,7 +18,9 @@ show_source: false
 Locate the [firmware](https://wiki.lilygo.cc/news/news/firmware.html) used by the device in the firmware file.
 
 
-## open the download tool web
+## Open the download tool web
 
  Open the download tool web: [Tool](https://espressif.github.io/esp-launchpad/)
 
+## Download the firmware to the device.
+![alt text](assets/Web_tool_1.jpg)

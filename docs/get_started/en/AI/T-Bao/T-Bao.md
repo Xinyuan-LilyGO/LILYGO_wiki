@@ -157,12 +157,51 @@ Built-in MAX98357A I2S digital power amplifier, MSM261S high-sensitivity microph
 
 > **Note**: Speech recognition application requires writing the model file `maix_asr_2900k_0x500000.kmodel` to address 0x500000 first, then flashing the firmware.
 
+### Model Training
+
+Use [Maixhub](https://maixhub.com/) to train your own models.
+
+[Maixhub](https://maixhub.com/) provides model training and model sharing functions. You only need to prepare the dataset for training, without setting up training environment and code. Upload training data to quickly train models, making it convenient to quickly create your AI applications, or to learn the process and principles of AI training.
+
+Additionally, you can download your favorite models from the MaixHub model library, and even upload and share models you created yourself, whether they are trained on MaixHub or various interesting models trained with your own code!
+
+#### Access Maixhub
+
+1. After registering and logging into your account, go to the official website and click on Model Training
+![alt text](assets/Web1.jpg)
+
+2. Click Create New Model, and enter the name and select the model type
+![alt text](assets/Web2.jpg)
+![alt text](assets/Web4.jpg)
+
+3. Select dataset, click Upload Dataset
+
+![alt text](assets/Web5.jpg)
+
+Here you can choose your own dataset, or select a dataset already prepared by Maixhub, or upload your own dataset.
+![alt text](assets/Web6.jpg) 
+
+> **Note**: When uploading datasets, please ensure the dataset format is .zip file, and after decompression, the dataset contains a folder named `dataset`, which contains the training dataset.
+
+4. Select training parameters, click Start Training
+
+> **Note**: The selection of training parameters needs to be adjusted according to your own requirements, such as training epochs, learning rate, optimizer, etc.
+> !! The deployment platform currently supported by our examples for K210 platform is nncase, and the trained model file suffix is .kmodel.
+![alt text](assets/Web7.jpg) 
+
+5. Wait for training to complete, download model file
+
+![alt text](assets/image.png)
+
+6. After downloading, upload the model file to the T-Bao device, and upload the `main.py` and `.kmodel` files from the compressed package to the SD card
+
+> You can use [MaixPy IDE](https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide) for simulation running, or use MicroPython for running.
+
 ### Development Platforms
 1. [Arduino IDE](https://www.arduino.cc/en/software) - ESP32 Development
 2. [MaixPy IDE](https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide) - K210 Development
 3. [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf) - ESP32 Advanced Development
 4. [MicroPython](https://docs.micropython.org/en/latest/) - Script Development
-
 
 ## Related Tests
 
