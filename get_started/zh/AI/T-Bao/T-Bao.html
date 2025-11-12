@@ -518,6 +518,35 @@ var _hmt = _hmt || [];
 <blockquote>
 <p><strong>注意</strong>：语音识别应用需要先将模型文件 <code>maix_asr_2900k_0x500000.kmodel</code> 写入地址 0x500000，再烧录固件。</p>
 </blockquote>
+<h3 id="%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83">模型训练</h3>
+<p>使用<a href="https://maixhub.com/"  target="_blank">Maixhub</a>可以训练自己的模型。</p>
+<p><a href="https://maixhub.com/"  target="_blank">Maixhub</a> 提供模型训练功能和模型分享功能， 只需要准备好需要训练的数据集， 不需要搭建训练环境和代码， 上传训练数据即可快速训练出模型，方便快速制作你的 AI 应用，或者入门学习 AI 训练的流程和原理。</p>
+<p>另外你也可以在 MaixHub 模型库下载你喜欢的模型，甚至上传分享你自己制作的模型，不管是在 MaixHub 训练的，还是自己写代码训练的各种有意思的模型！</p>
+<h4 id="%E8%BF%9B%E5%85%A5Maixhub">进入Maixhub</h4>
+<p>1.注册登录好账号之后，进入官网点击模型训练<br />
+<img src="assets/Web1.jpg" alt="alt text" /></p>
+<p>2.点击新建模型，并且输入名称以及选择模型类型<br />
+<img src="assets/Web2.jpg" alt="alt text" /><br />
+<img src="assets/Web4.jpg" alt="alt text" /></p>
+<p>3.选择数据集，点击上传数据集</p>
+<p><img src="assets/Web5.jpg" alt="alt text" /></p>
+<p>在这里你可以选择自己的数据集，也可以选择 Maixhub 已经准备好的数据集，也可以自己上传数据集。<br />
+<img src="assets/Web6.jpg" alt="alt text" /></p>
+<blockquote>
+<p><strong>注意</strong>：上传数据集时，请确保数据集格式为.zip 文件，并且解压后数据集中包含一个名为 <code>dataset</code> 的文件夹，该文件夹中包含训练数据集。</p>
+</blockquote>
+<p>4.选择训练参数，点击开始训练</p>
+<blockquote>
+<p><strong>注意</strong>：训练参数的选择需要根据自己的需求进行调整，比如训练轮数、学习率、优化器等。<br />
+! ! 部署平台目前K210平台我们示例支持使用的是nncase，训练出的模型文件后缀为.kmodel。</p>
+</blockquote>
+<p><img src="assets/Web7.jpg" alt="alt text" /></p>
+<p>5.等待训练完成，下载模型文件</p>
+<p><img src="assets/image.png" alt="alt text" /></p>
+<p>6.下载完成后，将模型文件上传到 T-Bao 设备中，并将压缩包中的<code>main.py</code>以及<code>.kmodel</code>文件上传到 SD 卡中</p>
+<blockquote>
+<p>这里可以使用<a href="https://dl.sipeed.com/shareURL/MAIX/MaixPy/ide"  target="_blank">MaixPy IDE</a>进行模拟运行，也可以使用MicroPython进行运行。</p>
+</blockquote>
 <h3 id="%E5%BC%80%E5%8F%91%E5%B9%B3%E5%8F%B0">开发平台</h3>
 <ol>
 <li><a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a> - ESP32开发</li>
