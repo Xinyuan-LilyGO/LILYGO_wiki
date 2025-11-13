@@ -227,24 +227,24 @@ T-LoraPager 是一款 LILYGO 推出的手持式 AIOT 可编程开发设备，集
 6. `文件` -> `示例` -> `LilyGOLib` -> `helloworld`
 7. `工具` -> `开发板` -> `esp32`，请从下表中选择相应配置
 
-   | Arduino IDE Setting                  | Value                             |
-   | ------------------------------------ | --------------------------------- |
-   | Board                                | **LilyGo-T-LoRa-Pager**           |
-   | Port                                 | Your port                         |
-   | USB CDC On Boot                      | Enabled                           |
-   | CPU Frequency                        | 240MHZ(WiFi)                      |
-   | Core Debug Level                     | None                              |
-   | USB DFU On Boot                      | Disable                           |
-   | Erase All Flash Before Sketch Upload | Disable                           |
-   | Events Run On                        | Core 1                            |
-   | JTAG Adapter                         | Disable                           |
-   | Arduino Runs On                      | Core 1                            |
-   | USB Firmware MSC On Boot             | Disable                           |
-   | Partition Scheme                     | **16M Flash(3M APP/9.9MB FATFS)** |
-   | Board Revision                       | **Radio-SX1262**                  |
-   | Upload Mode                          | **UART0/Hardware CDC**            |
-   | Upload Speed                         | 921600                            |
-   | USB Mode                             | **CDC and JTAG**                  |
+| Arduino IDE Setting                  | Value                             |
+| ------------------------------------ | --------------------------------- |
+| Board                                | **LilyGo-T-LoRa-Pager**           |
+| Port                                 | Your port                         |
+| USB CDC On Boot                      | Enabled                           |
+| CPU Frequency                        | 240MHZ(WiFi)                      |
+| Core Debug Level                     | None                              |
+| USB DFU On Boot                      | Disable                           |
+| Erase All Flash Before Sketch Upload | Disable                           |
+| Events Run On                        | Core 1                            |
+| JTAG Adapter                         | Disable                           |
+| Arduino Runs On                      | Core 1                            |
+| USB Firmware MSC On Boot             | Disable                           |
+| Partition Scheme                     | **16M Flash(3M APP/9.9MB FATFS)** |
+| Board Revision                       | **Radio-SX1262**                  |
+| Upload Mode                          | **UART0/Hardware CDC**            |
+| Upload Speed                         | 921600                            |
+| USB Mode                             | **CDC and JTAG**                  |
 
 8. **开发板版本选项**，请根据实际购买的射频类型选择。当前选项有：
     * Radio-SX1262(Sub 1G LoRa)
@@ -350,6 +350,7 @@ T-LoraPager 是一款 LILYGO 推出的手持式 AIOT 可编程开发设备，集
 ## 相关测试
 
 ### 功耗测试
+
 | Mode       | Wake-Up Mode | Current |
 | ---------- | ------------ | ------- |
 | DeepSleep  | BootButton   | 530uA   |

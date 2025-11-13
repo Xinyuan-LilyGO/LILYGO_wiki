@@ -122,6 +122,15 @@ LoRa32 V3
 </details>
 
 
+### T-LoRa-Pager
+
+| Product                 | Firmware Name                             | 
+| ----------------------- | ---------- |
+| [T-LoRa-Pager](https://lilygo.cc/products/t-lora-pager)|
+| |[Factory.LR1121](./bin/T-LoRaPager/factory.tlora.pager.lr1121.20251031.bin)|
+| |[Factory.SX1262](./bin/T-LoRaPager/factory.tlora.pager.sx1262.20251031.bin)|
+
+
 ## Portable
 
 ### T-Echo
@@ -165,7 +174,18 @@ LoRa32 V3
 
 |            Firmware                |         description            |
 | :--------------------------------: | :-------------------------: |
-|[factory_v1.2](./bin/T-Deck-Pro/H693_factory_v1.3_20251015.bin)   |      Factory firmware       |
-|[factory_v1.2_fix](./bin/T-Deck-Pro/H693_factory_v1.2_20250412_fix.bin)|        Fix firmware     |
-|[test_EPD](./bin/T-Deck-Pro/Test_EPD.bin)             |        Display test         |
-|[test_pcm5102a](./bin/T-Deck-Pro/Test_pcm5102a.bin)           | Sound test(non-4G version) |
+|[Factory_v1.2](./bin/T-Deck-Pro/H693_factory_v1.3_20251015.bin)   |      Factory firmware       |
+|[Factory_v1.2_fix](./bin/T-Deck-Pro/H693_factory_v1.2_20250412_fix.bin)|        Fix firmware     |
+|[Test_EPD](./bin/T-Deck-Pro/Test_EPD.bin)             |        Display test         |
+|[Test_pcm5102a](./bin/T-Deck-Pro/Test_pcm5102a.bin)           | Sound test(non-4G version) |
+
+
+
+### T-Watch S3
+
+|            Firmware                |         description            |
+| :--------------------------------: | :-------------------------: |
+| [Watch_S3_Factory](./bin/T-Watch/factory.twatchs3.sx1262.20251031.bin)|SX1262 Factory firmware    |
+| [Watch_S3_Factory](./bin/T-Watch/factory.twatchs3.sx1280.20251031.bin)|SX1280 Factory firmware    |
+| [Watch_Ulrta_Factory](./bin/T-Watch/factory.watch.ultra.sx1262.20251106.bin)|Watch Ultra Factory firmware    |
+

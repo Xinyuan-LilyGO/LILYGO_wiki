@@ -227,24 +227,24 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 6. `File` -> `Examples` -> `LilyGOLib` -> `helloworld`
 7. `Tools` -> `Board` -> `esp32`, please select the corresponding configuration from the table below
 
-   | Arduino IDE Setting                  | Value                             |
-   | ------------------------------------ | --------------------------------- |
-   | Board                                | **LilyGo-T-LoRa-Pager**           |
-   | Port                                 | Your port                         |
-   | USB CDC On Boot                      | Enabled                           |
-   | CPU Frequency                        | 240MHZ(WiFi)                      |
-   | Core Debug Level                     | None                              |
-   | USB DFU On Boot                      | Disable                           |
-   | Erase All Flash Before Sketch Upload | Disable                           |
-   | Events Run On                        | Core 1                            |
-   | JTAG Adapter                         | Disable                           |
-   | Arduino Runs On                      | Core 1                            |
-   | USB Firmware MSC On Boot             | Disable                           |
-   | Partition Scheme                     | **16M Flash(3M APP/9.9MB FATFS)** |
-   | Board Revision                       | **Radio-SX1262**                  |
-   | Upload Mode                          | **UART0/Hardware CDC**            |
-   | Upload Speed                         | 921600                            |
-   | USB Mode                             | **CDC and JTAG**                  |
+| Arduino IDE Setting                  | Value                             |
+| :-----------------------------------: | :------------------------------: |
+| Board                                | **LilyGo-T-LoRa-Pager**           |
+| Port                                 | Your port                         |
+| USB CDC On Boot                      | Enabled                           |
+| CPU Frequency                        | 240MHZ(WiFi)                      |
+| Core Debug Level                     | None                              |
+| USB DFU On Boot                      | Disable                           |
+| Erase All Flash Before Sketch Upload | Disable                           |
+| Events Run On                        | Core 1                            |
+| JTAG Adapter                         | Disable                           |
+| Arduino Runs On                      | Core 1                            |
+| USB Firmware MSC On Boot             | Disable                           |
+| Partition Scheme                     | **16M Flash(3M APP/9.9MB FATFS)** |
+| Board Revision                       | **Radio-SX1262**                  |
+| Upload Mode                          | **UART0/Hardware CDC**            |
+| Upload Speed                         | 921600                            |
+| USB Mode                             | **CDC and JTAG**                  |
 
 8. **Board Revision Option**, please select according to the actual purchased RF type. Current options include:
     * Radio-SX1262(Sub 1G LoRa)
