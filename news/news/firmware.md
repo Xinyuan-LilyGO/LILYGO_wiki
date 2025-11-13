@@ -135,9 +135,9 @@ LoRa32 V3
 
 ### T-Echo
 
->firmware-xxx.uf2 firmware includes LoRa transceiver, BLE connection, all hardware function test items, about ble , please download nRF Connect on google play, and then you can scan Bluetooth devices through nRF Connect.
+>`firmware-xxx.uf2` firmware includes LoRa transceiver, BLE connection, all hardware function test items, about ble , please download nRF Connect on google play, and then you can scan Bluetooth devices through nRF Connect.
 
->gps_factory.uf2 Used to diagnose whether the hardware is normal and test when GPS fails.
+>`gps_factory.uf2` Used to diagnose whether the hardware is normal and test when GPS fails.
 
 | Product                 | Firmware Name                             | 
 | ----------------------- | ----------------------------------------- |
@@ -156,7 +156,7 @@ LoRa32 V3
 
 - Double-click the top left button on the device. Remember to double-click. If this doesn't work, try again.
 
-- Once the disk is visible on your computer, drag the *.uf2 firmware file to the disk and wait for the file to copy.
+- Once the disk is visible on your computer, drag the `*.uf2` firmware file to the disk and wait for the file to copy.
 
 - The device should boot normally
 
