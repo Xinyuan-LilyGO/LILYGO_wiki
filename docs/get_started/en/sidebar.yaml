@@ -149,4 +149,4 @@ items:
 -   label: Meshcore
     items:
     -   label: Meshcore use
-        file: Meshcore/Meshcore.md        
+        file: Meshcore/meshcore.md        
