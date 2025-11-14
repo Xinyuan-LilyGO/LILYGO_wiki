@@ -65,7 +65,7 @@ var _hmt = _hmt || [];
     <title>Download - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
-    <script type="text/javascript">metadata = {"tags": ["START", "Test", "LILYGO"], "date": "2025-11-13", "update": [], "ts": 1763020341, "author": "", "brief": "", "cover": "", "order": 2, "show_source": false}</script>
+    <script type="text/javascript">metadata = {"tags": ["START", "Test", "LILYGO"], "date": "2025-11-14", "update": [], "ts": 1763086024, "author": "", "brief": "", "cover": "", "order": 2, "show_source": false}</script>
 </head>
 
 
@@ -151,8 +151,8 @@ var _hmt = _hmt || [];
                                 
                             </span>
                             
-                                <span class="article_date" title="Last modify date: 2025-11-13">
-                                    2025-11-13
+                                <span class="article_date" title="Last modify date: 2025-11-14">
+                                    2025-11-14
                                 </span>
                             
                         </div>
@@ -170,7 +170,20 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <span id="blog_start"></span><h2 id="Webpage-download">Webpage download</h2>
+                            <span id="blog_start"></span><h2 id="Before-downloding">Before downloding</h2>
+<ol>
+<li>Please make sure that the device is connected to the computer via USB.</li>
+<li>Please make sure that the device is in the download mode.</li>
+</ol>
+<ul>
+<li><p><code>one</code> : BOOT key without releasing it</p>
+</li>
+<li><p><code>two</code> : Click the RST button</p>
+</li>
+<li><p><code>three</code> : Finally, release the BOOT key</p>
+</li>
+</ul>
+<h2 id="Webpage-download%28Recommended%29">Webpage download(Recommended)</h2>
 <p><img src="assets/download_tool.jpg" alt="alt text" /></p>
 <h3 id="Download-the-firmware">Download the firmware</h3>
 <p>Locate the <a href="https://wiki.lilygo.cc/news/news/firmware.html"  target="_blank">firmware</a> used by the device in the firmware file.</p>
@@ -193,13 +206,41 @@ var _hmt = _hmt || [];
 <h2 id="Flash-download-tool">Flash download tool</h2>
 <h3 id="Download-the-firmware">Download the firmware</h3>
 <ul>
-<li>Open the Flash Download Tools tool and select from the following figure</li>
+<li><p>Download the <code>Flash Download Tools</code> , <a href="https://www.espressif.com/en/support/download/other-tools"  target="_blank">Flash Download Tools</a>;</p>
+</li>
+<li><p>Open the Flash Download Tools tool and select from the following figure</p>
+</li>
 </ul>
 <p><img src="assets/flash_tool.jpg" alt="alt text" /></p>
 <ul>
 <li>Select the program you want to download and click Start key to download it as shown in the image below</li>
 </ul>
 <p><img src="assets/flash_tool2.jpg" alt="alt text" /></p>
+<h2 id="PlatformIO-download">PlatformIO download</h2>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/"  target="_blank">VisualStudioCode</a> and <a href="https://www.python.org/"  target="_blank">Python</a></li>
+<li>Search for the <code>PlatformIO</code> plugin in the <code>VisualStudio Code</code> extension and install it.</li>
+<li>After the installation is complete, you need to restart <code>VisualStudio Code</code></li>
+<li>After restarting <code>VisualStudio Code</code>, select <code>File</code> in the upper left corner of <code>VisualStudio Code</code> -&gt; <code>Open Folder</code> -&gt; select the <code>&quot;Your project&quot;</code> directory</li>
+<li>Click on the <code>platformio.ini</code> file, and in the <code>platformio</code> column, cancel the sample line that needs to be used, please make sure that only one line is valid</li>
+<li>Click the (☑️) symbol in the lower left corner to compile</li>
+<li>Connect the board to the computer USB</li>
+<li>Click (➡️) to upload firmware</li>
+<li>Click (🔌) to monitor serial output</li>
+</ol>
+<h2 id="Arduino-IDE-download">Arduino IDE download</h2>
+<ol>
+<li>Install the <a href="https://www.arduino.cc/en/software"  target="_blank">Arduino IDE</a></li>
+<li>Open the <code>Arduino IDE</code> and select <code>Tools</code> -&gt; <code>Board</code> -&gt; <code>Board Manager</code></li>
+<li>Search for <code>ESP32</code> and install the <code>ESP32</code> board</li>
+<li>Select the <code>ESP32</code> board in the <code>Tools</code> -&gt; <code>Board</code> -&gt; <code>ESP32</code></li>
+<li>Select the COM port of the board in the <code>Tools</code> -&gt; <code>Port</code></li>
+<li>Open the <code>Your project</code> example in the <code>File</code> -&gt; <code>Examples</code> -&gt; <code>Your project</code></li>
+<li>Compile and upload the code to the board</li>
+</ol>
+<blockquote>
+<p>You can refer to the <code>README.md</code> file in each repository.</p>
+</blockquote>
 
                         
                     </div>
