@@ -2,10 +2,11 @@
 title: Download
 keywords: Download
 desc: Download
-tags: START, Test, LILYGO
+tags: START, Download, LILYGO
 order: 2
 date: How to download the firmware 
 show_source: false
+
 ---
 
 ## Before downloding 

@@ -146,3 +146,7 @@ items:
         file: Meshtastic/Meshtastic_lilygo.md
     -   label: Meshtastic download
         file: Meshtastic/Meshtastic_use.md 
+-   label: Meshcore
+    items:
+    -   label: Meshcore use
+        file: Meshcore/Meshcore.md        

@@ -148,3 +148,7 @@ items:
         file: Meshtastic/Meshtastic_use.md 
     -   label: Meshtastic FAQ
         file: Meshtastic/Meshtastic_FAQ/Mesthtastic_FAQ.md
+-   label: Meshcore 设备
+    items:
+    -   label: Meshcore 使用
+        file: Meshcore/Meshcore.md
