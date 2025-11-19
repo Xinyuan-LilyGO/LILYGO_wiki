@@ -62,7 +62,7 @@ var _hmt = _hmt || [];
         
     
     
-    <title>LILYGO Meshtastic User Guide - LILYGO Wiki</title>
+    <title>LILYGO Meshtastic Download Guide - LILYGO Wiki</title>
     
     <script type="text/javascript">js_vars = {"teedoc-plugin-ad-hint": {"type": "hint", "label": "☆", "content": "If you are interested in our products, you can follow our official website store and Taobao shop.<br> If you find any projects on Github that interest you, please give them a ☆ star. 🦀🦀", "show_times": 2, "show_after_s": 432000, "date": "2021-11-16 14:40", "color": "#a0421d", "link_color": "#e53935", "link_bg_color": "#e6ae5c", "bg_color": "#ffcf89", "color_hover": "white", "bg_color_hover": "#f57c00", "close_color": "#eab971"}}</script>
     <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": "", "show_source": false}</script>
@@ -239,7 +239,7 @@ var _hmt = _hmt || [];
                     <div id="article_head">
                         <div id="article_title">
                             
-                            <h1>LILYGO Meshtastic User Guide</h1>
+                            <h1>LILYGO Meshtastic Download Guide</h1>
                             
                         </div>
                         <div id="article_tags">
@@ -272,29 +272,46 @@ var _hmt = _hmt || [];
 <div style="width:100%; display:flex;justify-content: center;">
 </div>
 <!-- <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
-    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">Taobao</a>
+    <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">AliExpress</a>
 </div> -->
 <blockquote class="spoiler warning">
-<p>For more information, visit<a href="https://meshtastic.org/docs/hardware/devices/lilygo/"  target="_blank">Meshtastic</a></p>
+<p> Learn more at <a href="https://meshtastic.org/docs/hardware/devices/lilygo/"  target="_blank">Meshtastic</a></p>
 </blockquote>
-<h2 id="Firmware-Update">Firmware Update</h2>
-<h3 id="Firmware-Acquisition">Firmware Acquisition</h3>
-<p>Click the Download button in the upper right corner.</p>
+<h2 id="Using-Web-Flasher">Using Web Flasher</h2>
+<p>Open <a href="https://meshtastic.org/"  target="_blank">meshtastic.org</a>, click the Download button</p>
+<p><img src="assets/web1.jpg" alt="alt text" /></p>
+<p>Find <code>Web Flasher</code> in the <code>Flasher</code> section</p>
+<p><img src="assets/web_flash.png" alt="alt text" /></p>
+<p><img src="assets/web2.png" alt="alt text" /></p>
+<blockquote>
+<p>Follow the steps to first select your device, then choose the firmware version, and click the Download button to download the firmware</p>
+</blockquote>
+<p><img src="assets/web3.png" alt="alt text" /></p>
+<blockquote>
+<p>You can erase the device before downloading the firmware</p>
+</blockquote>
+<p><img src="ssets/web4.png" alt="alt text" /></p>
+<blockquote>
+<p>Click <code>update</code> and wait for the download to complete</p>
+</blockquote>
+<h2 id="Using-flash_download_tool">Using flash_download_tool</h2>
+<h3 id="Obtaining-Firmware">Obtaining Firmware</h3>
+<p>Click the Download button in the upper right corner</p>
 <img src="./assets/Mesh_web.jpg" alt="summary" width=100%>
-<p>Locate the Firmware section, then click Download Stable to navigate to the GitHub release page and download the firmware.</p>
+<p>Find the Firmware section, click Download Stable to go to the GitHub releases page and download the firmware</p>
 <img src="./assets/Mesh_firmware.jpg" alt="summary" width=100%>
-<p>Click releases to view the latest firmware version.</p>
+<p>Click releases to view the latest firmware versions</p>
 <img src="./assets/Mesh_release.jpg" alt="summary" width=100%>
-<p>Confirm the firmware version, click to access the details page, and scroll down to find the Assets section to download the firmware.</p>
+<p>After confirming the firmware version, click to view details, scroll down to find Assets and download the firmware</p>
 <img src="./assets/Mesh_assets.jpg" alt="summary" width=100%>
-<p>Download the corresponding firmware based on your chip model.</p>
+<p>Download the corresponding firmware based on your chip model</p>
 <h3 id="Tool-Acquisition">Tool Acquisition</h3>
-<p>After downloading the firmware, you need to flash it to the development board. We recommend using the Flash_Download_Tool for this process.</p>
-<p>Click<a href="https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html"  target="_blank">Download Flash_Download_Tool</a></p>
+<p>After downloading the firmware, you need to flash it to the development board. We recommend using the Flash_Download_Tool for flashing</p>
+<p>Click <a href="https://docs.espressif.com/projects/esp-test-tools/en/latest/esp32/production_stage/tools/flash_download_tool.html"  target="_blank">Download Flash_Download_Tool</a></p>
 <img src="./assets/Flash_download.jpg" alt="summary" width=100%>
-<h3 id="Firmware-Flashing">Firmware Flashing</h3>
-<p>Select the corresponding chip model and firmware file, then click Start to begin flashing.</p>
+<h3 id="Flashing-Firmware">Flashing Firmware</h3>
+<p>Select the corresponding chip model and firmware file, then click Start to begin flashing</p>
 <img src="./assets/Flash_setting.jpg" alt="summary" width=100%>
 
                         
