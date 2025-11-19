@@ -1,5 +1,5 @@
 ---
-title: LILYGO Meshtastic 使用指南
+title: LILYGO Meshtastic 下载指南
 show_source: false
 ---
 <!-- **[English](README.MD) | 中文** -->
@@ -12,9 +12,33 @@ show_source: false
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://item.taobao.com/item.htm?id=846226367137">淘宝</a>
     <a target="_blank" style="margin: 1em;color: white; font-size: 0.9em; border-radius: 0.3em; padding: 0.5em 2em; background-color:rgb(63, 201, 28)" href="https://www.aliexpress.com/store/911876460">速卖通</a>
 </div> -->
+
 >!了解更多可进入[Meshtastic](https://meshtastic.org/docs/hardware/devices/lilygo/)
 
-## 更新固件
+## 使用网页端下载
+
+打开[meshtastic.org](https://meshtastic.org/)，点击Download按钮
+
+![alt text](./assets/web1.jpg)
+
+找到`FLasher`中的 `Web Flasher `
+
+![alt text](./assets/web_flash.png)
+
+
+![alt text](./assets/web2.png)
+
+>根据步骤先选择设备然后选择固件的版本，点击Download按钮下载固件
+
+![alt text](./assets/web3.png)
+
+>下载固件之前可以先对设备进行擦除
+
+![alt text](./assets/web4.png)
+
+>点击 `update` 等待下载完成 
+
+##  使用flash_download_tool 下载
 
 ### 固件获取
 
@@ -50,5 +74,8 @@ show_source: false
 选择好对应的芯片型号和对应的固件文件，点击Start进行烧录
 
 <img src="./assets/Flash_setting.jpg" alt="summary" width=100%>
+
+
+
 
 
