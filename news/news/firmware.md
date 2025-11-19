@@ -2,7 +2,7 @@
 title: Firmware
 keywords: Firmware
 desc: Firmware
-tags: Firmware, LILYGO
+tags: START, Firmware, LILYGO
 order: 1
 date: LILYGO Device Firmware
 show_source: false
