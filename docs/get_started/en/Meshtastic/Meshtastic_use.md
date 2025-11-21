@@ -23,17 +23,17 @@ Open [meshtastic.org](https://meshtastic.org/), click the Download button
 
 Find `Web Flasher` in the `Flasher` section
 
-![alt text](assets/web_flash.png)
+![alt text](./assets/web_flash.png)
 
-![alt text](assets/web2.png)
+![alt text](./assets/web2.png)
 
 > Follow the steps to first select your device, then choose the firmware version, and click the Download button to download the firmware
 
-![alt text](assets/web3.png)
+![alt text](./assets/web3.png)
 
 > You can erase the device before downloading the firmware
 
-![alt text]( ssets/web4.png)
+![alt text](./assets/web4.png)
 
 > Click `update` and wait for the download to complete
 
