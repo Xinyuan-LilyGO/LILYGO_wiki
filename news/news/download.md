@@ -19,7 +19,6 @@ show_source: false
 
 - `three` : Finally, release the BOOT key
 
-
 ## Webpage download(Recommended)
 
 ![alt text](assets/download_tool.jpg)
@@ -45,6 +44,10 @@ Locate the [firmware](https://wiki.lilygo.cc/news/news/firmware.html) used by th
 
 
 ## Flash download tool
+
+### Video Guide
+
+<iframe src="https://www.youtube.com/watch?v=f3BybP3L7ls" allowfullscreen width="100%" style="aspect-ratio:728/410;border:none " ></iframe>
 
 ### Download the firmware
 
