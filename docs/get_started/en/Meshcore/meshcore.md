@@ -4,6 +4,8 @@ show_source: false
 ---
 
 ## Introduction
+
+![alt text](assets/image.png)
 MeshCore is a lightweight, portable C++ library that implements multi-hop packet routing for embedded projects using LoRa and other packet radios. It's specifically designed for developers who want to create resilient, decentralized communication networks that work without internet connectivity.
 
 > Learn more at [MeshCore](https://github.com/meshcore-dev/MeshCore)
