@@ -25,7 +25,7 @@ This article will guide you through the steps to use MicroPython on LILYGO devic
 
 ### Download MicroPython Firmware
 
-Refer to the steps in the [[Download](./download.md)] document to download the MicroPython firmware.
+Refer to the steps in the [Download](./download.md) document to download the MicroPython firmware.
 
 ### Connect the device to the computer
 
