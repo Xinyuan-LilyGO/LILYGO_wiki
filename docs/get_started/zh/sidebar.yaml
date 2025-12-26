@@ -79,6 +79,8 @@ items:
             file : LoRa_GPS/T3-S3_MVSRBoard/T3-S3_MVSRBoard.md
         -   label: T-LoraPager
             file: LoRa_GPS/T-LoraPager/T-LoraPager.md
+        -   label: T-Beam 1W
+            file: LoRa_GPS/T-Beam-1W/T-Beam-1W.md
         -   label: T-Beam SUPREME
             file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md
         -   label: T3 S3

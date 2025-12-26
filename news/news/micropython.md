@@ -81,4 +81,4 @@ Refer to the steps in the [Download](./download.md) document to download the Mic
 
     ![thonny7](./assets/thonny7.png)
 
-9. After successful saving, reset the T-LoRa-Pager
+9. After successful saving, reset the LILYGO device
