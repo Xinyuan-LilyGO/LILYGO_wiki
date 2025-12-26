@@ -109,23 +109,23 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 5. 在 Arduino IDE 工具项目中选择对应的开发板，并点击下方列表中的相应选项进行选择。
 
-    | Name                                 | Value                               |
-    | :------------------------------------ | :----------------------------------- |
-    | Board                                | **ESP32S3 Dev Module**              |
-    | Port                                 | Your port                           |
-    | USB CDC On Boot                      | Enable                              |
-    | CPU Frequency                        | 240MHZ(WiFi)                        |
-    | Core Debug Level                     | None                                |
-    | USB DFU On Boot                      | Disable                             |
-    | Erase All Flash Before Sketch Upload | Disable                             |
-    | Flash Mode                           | QIO 80Mhz                           |
-    | Flash Size                           | **16MB(128Mb)**                     |
-    | Arduino Runs On                      | Core1                               |
-    | USB Firmware MSC On Boot             | Disable                             |
-    | Partition Scheme                     | **16M Flash (3MB APP/9.9MB FATFS)** |
-    | PSRAM                                | **OPI PSRAM**                       |
-    | Upload Speed                         | 921600                              |
-    | Programmer                           | **Esptool**                         |
+| Name                                 | Value                               |
+| :------------------------------------ | :----------------------------------- |
+| Board                                | **ESP32S3 Dev Module**              |
+| Port                                 | Your port                           |
+| USB CDC On Boot                      | Enable                              |
+| CPU Frequency                        | 240MHZ(WiFi)                        |
+| Core Debug Level                     | None                                |
+| USB DFU On Boot                      | Disable                             |
+| Erase All Flash Before Sketch Upload | Disable                             |
+| Flash Mode                           | QIO 80Mhz                           |
+| Flash Size                           | **16MB(128Mb)**                     |
+| Arduino Runs On                      | Core1                               |
+| USB Firmware MSC On Boot             | Disable                             |
+| Partition Scheme                     | **16M Flash (3MB APP/9.9MB FATFS)** |
+| PSRAM                                | **OPI PSRAM**                       |
+| Upload Speed                         | 921600                              |
+| Programmer                           | **Esptool**                         |
 
 6. 请根据您的板型号（例如 `T_BEAM_1W`）取消每个草图的 `utilities.h` 文件的注释，否则编译时会报错
 7. 上传示例

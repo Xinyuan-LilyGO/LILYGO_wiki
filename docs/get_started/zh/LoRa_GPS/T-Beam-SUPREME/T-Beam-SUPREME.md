@@ -265,26 +265,26 @@ T-BEAM-SUPREME V3.0 是一款高性能多功能的物联网开发板，基于 ES
     * 选择示例文件并打开后缀为 `ino` 的文件
 5.  在 Arduino IDE 工具菜单中选择对应开发板型号，点击下方列表中的对应选项进行选择
 
-    | Name                                 | Value                             |
-    | ------------------------------------ | --------------------------------- |
-    | Board                                | **ESP32S3 Dev Module**            |
-    | Port                                 | Your port                         |
-    | USB CDC On Boot                      | Enable                            |
-    | CPU Frequency                        | 240MHZ(WiFi)                      |
-    | Core Debug Level                     | None                              |
-    | USB DFU On Boot                      | Disable                           |
-    | Erase All Flash Before Sketch Upload | Disable                           |
-    | Events Run On                        | Core1                             |
-    | Flash Mode                           | QIO 80MHZ                         |
-    | Flash Size                           | **8MB(64Mb)**                     |
-    | Arduino Runs On                      | Core1                             |
-    | USB Firmware MSC On Boot             | Disable                           |
-    | Partition Scheme                     | **8M Flash(3M APP/1.5MB SPIFFS)** |
-    | PSRAM                                | **QSPI PSRAM**                    |
-    | Upload Mode                          | **UART0/Hardware CDC**            |
-    | Upload Speed                         | 921600                            |
-    | USB Mode                             | **CDC and JTAG**                  |
-    | Programmer                           | **Esptool**                       |
+| Name                                 | Value                             |
+| ------------------------------------ | --------------------------------- |
+| Board                                | **ESP32S3 Dev Module**            |
+| Port                                 | Your port                         |
+| USB CDC On Boot                      | Enable                            |
+| CPU Frequency                        | 240MHZ(WiFi)                      |
+| Core Debug Level                     | None                              |
+| USB DFU On Boot                      | Disable                           |
+| Erase All Flash Before Sketch Upload | Disable                           |
+| Events Run On                        | Core1                             |
+| Flash Mode                           | QIO 80MHZ                         |
+| Flash Size                           | **8MB(64Mb)**                     |
+| Arduino Runs On                      | Core1                             |
+| USB Firmware MSC On Boot             | Disable                           |
+| Partition Scheme                     | **8M Flash(3M APP/1.5MB SPIFFS)** |
+| PSRAM                                | **QSPI PSRAM**                    |
+| Upload Mode                          | **UART0/Hardware CDC**            |
+| Upload Speed                         | 921600                            |
+| USB Mode                             | **CDC and JTAG**                  |
+| Programmer                           | **Esptool**                       |
 
 6. 请根据您的开发板型号取消 `utilities.h` 文件中对应型号的注释，例如 `T_BEAM_S3_SUPREME_SX1262` 或者 `T_BEAM_S3_SUPREME_LR1121`，否则编译将报错
 7. 上传程序

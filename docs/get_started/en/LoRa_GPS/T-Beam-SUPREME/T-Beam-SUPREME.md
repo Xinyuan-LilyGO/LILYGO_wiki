@@ -265,26 +265,26 @@ It features a 1.3-inch SH1106 OLED screen (128x64 resolution, I2C interface), su
     * Select the example file and open the file with `ino` extension
 5.  Select the corresponding board model in the Arduino IDE Tools menu, click the corresponding option in the list below to select
 
-    | Name                                 | Value                             |
-    | ------------------------------------ | --------------------------------- |
-    | Board                                | **ESP32S3 Dev Module**            |
-    | Port                                 | Your port                         |
-    | USB CDC On Boot                      | Enable                            |
-    | CPU Frequency                        | 240MHZ(WiFi)                      |
-    | Core Debug Level                     | None                              |
-    | USB DFU On Boot                      | Disable                           |
-    | Erase All Flash Before Sketch Upload | Disable                           |
-    | Events Run On                        | Core1                             |
-    | Flash Mode                           | QIO 80MHZ                         |
-    | Flash Size                           | **8MB(64Mb)**                     |
-    | Arduino Runs On                      | Core1                             |
-    | USB Firmware MSC On Boot             | Disable                           |
-    | Partition Scheme                     | **8M Flash(3M APP/1.5MB SPIFFS)** |
-    | PSRAM                                | **QSPI PSRAM**                    |
-    | Upload Mode                          | **UART0/Hardware CDC**            |
-    | Upload Speed                         | 921600                            |
-    | USB Mode                             | **CDC and JTAG**                  |
-    | Programmer                           | **Esptool**                       |
+| Name                                 | Value                             |
+| ------------------------------------ | --------------------------------- |
+| Board                                | **ESP32S3 Dev Module**            |
+| Port                                 | Your port                         |
+| USB CDC On Boot                      | Enable                            |
+| CPU Frequency                        | 240MHZ(WiFi)                      |
+| Core Debug Level                     | None                              |
+| USB DFU On Boot                      | Disable                           |
+| Erase All Flash Before Sketch Upload | Disable                           |
+| Events Run On                        | Core1                             |
+| Flash Mode                           | QIO 80MHZ                         |
+| Flash Size                           | **8MB(64Mb)**                     |
+| Arduino Runs On                      | Core1                             |
+| USB Firmware MSC On Boot             | Disable                           |
+| Partition Scheme                     | **8M Flash(3M APP/1.5MB SPIFFS)** |
+| PSRAM                                | **QSPI PSRAM**                    |
+| Upload Mode                          | **UART0/Hardware CDC**            |
+| Upload Speed                         | 921600                            |
+| USB Mode                             | **CDC and JTAG**                  |
+| Programmer                           | **Esptool**                       |
 
 6. Please uncomment the corresponding model in the `utilities.h` file according to your board model, for example `T_BEAM_S3_SUPREME_SX1262` or `T_BEAM_S3_SUPREME_LR1121`, otherwise compilation will report an error
 7. Upload the program

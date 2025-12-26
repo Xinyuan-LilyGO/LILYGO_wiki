@@ -108,23 +108,23 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 
 5. Select the corresponding development board in the Arduino IDE Tools menu, and click the corresponding option in the list below to select.
 
-    | Name                                 | Value                               |
-    | :------------------------------------: | :-----------------------------------: |
-    | Board                                | **ESP32S3 Dev Module**              |
-    | Port                                 | Your port                           |
-    | USB CDC On Boot                      | Enable                              |
-    | CPU Frequency                        | 240MHZ(WiFi)                        |
-    | Core Debug Level                     | None                                |
-    | USB DFU On Boot                      | Disable                             |
-    | Erase All Flash Before Sketch Upload | Disable                             |
-    | Flash Mode                           | QIO 80Mhz                           |
-    | Flash Size                           | **16MB(128Mb)**                     |
-    | Arduino Runs On                      | Core1                               |
-    | USB Firmware MSC On Boot             | Disable                             |
-    | Partition Scheme                     | **16M Flash (3MB APP/9.9MB FATFS)** |
-    | PSRAM                                | **OPI PSRAM**                       |
-    | Upload Speed                         | 921600                              |
-    | Programmer                           | **Esptool**                         |
+| Name                                 | Value                               |
+| :------------------------------------: | :-----------------------------------: |
+| Board                                | **ESP32S3 Dev Module**              |
+| Port                                 | Your port                           |
+| USB CDC On Boot                      | Enable                              |
+| CPU Frequency                        | 240MHZ(WiFi)                        |
+| Core Debug Level                     | None                                |
+| USB DFU On Boot                      | Disable                             |
+| Erase All Flash Before Sketch Upload | Disable                             |
+| Flash Mode                           | QIO 80Mhz                           |
+| Flash Size                           | **16MB(128Mb)**                     |
+| Arduino Runs On                      | Core1                               |
+| USB Firmware MSC On Boot             | Disable                             |
+| Partition Scheme                     | **16M Flash (3MB APP/9.9MB FATFS)** |
+| PSRAM                                | **OPI PSRAM**                       |
+| Upload Speed                         | 921600                              |
+| Programmer                           | **Esptool**                         |
 
 6. Please uncomment the `utilities.h` file of each sketch according to your board model (e.g., `T_BEAM_1W`), otherwise compilation will report an error
 7. Upload the example
