@@ -454,29 +454,81 @@ var _hmt = _hmt || [];
 <li>选择示例文件并打开以 <code>ino</code> 结尾的文件</li>
 </ul>
 <ol start="5">
-<li><p>在 Arduino IDE 工具项目中选择对应的开发板，并点击下方列表中的相应选项进行选择。</p>
-<p>| Name                                 | Value                               |<br />
- | :------------------------------------ | :----------------------------------- |<br />
- | Board                                | <strong>ESP32S3 Dev Module</strong>              |<br />
- | Port                                 | Your port                           |<br />
- | USB CDC On Boot                      | Enable                              |<br />
- | CPU Frequency                        | 240MHZ(WiFi)                        |<br />
- | Core Debug Level                     | None                                |<br />
- | USB DFU On Boot                      | Disable                             |<br />
- | Erase All Flash Before Sketch Upload | Disable                             |<br />
- | Flash Mode                           | QIO 80Mhz                           |<br />
- | Flash Size                           | <strong>16MB(128Mb)</strong>                     |<br />
- | Arduino Runs On                      | Core1                               |<br />
- | USB Firmware MSC On Boot             | Disable                             |<br />
- | Partition Scheme                     | <strong>16M Flash (3MB APP/9.9MB FATFS)</strong> |<br />
- | PSRAM                                | <strong>OPI PSRAM</strong>                       |<br />
- | Upload Speed                         | 921600                              |<br />
- | Programmer                           | <strong>Esptool</strong>                         |</p>
-</li>
-<li><p>请根据您的板型号（例如 <code>T_BEAM_1W</code>）取消每个草图的 <code>utilities.h</code> 文件的注释，否则编译时会报错</p>
-</li>
-<li><p>上传示例</p>
-</li>
+<li>在 Arduino IDE 工具项目中选择对应的开发板，并点击下方列表中的相应选项进行选择。</li>
+</ol>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Board</td>
+  <td style="text-align:left"><strong>ESP32S3 Dev Module</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left">Port</td>
+  <td style="text-align:left">Your port</td>
+</tr>
+<tr>
+  <td style="text-align:left">USB CDC On Boot</td>
+  <td style="text-align:left">Enable</td>
+</tr>
+<tr>
+  <td style="text-align:left">CPU Frequency</td>
+  <td style="text-align:left">240MHZ(WiFi)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Core Debug Level</td>
+  <td style="text-align:left">None</td>
+</tr>
+<tr>
+  <td style="text-align:left">USB DFU On Boot</td>
+  <td style="text-align:left">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:left">Erase All Flash Before Sketch Upload</td>
+  <td style="text-align:left">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:left">Flash Mode</td>
+  <td style="text-align:left">QIO 80Mhz</td>
+</tr>
+<tr>
+  <td style="text-align:left">Flash Size</td>
+  <td style="text-align:left"><strong>16MB(128Mb)</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left">Arduino Runs On</td>
+  <td style="text-align:left">Core1</td>
+</tr>
+<tr>
+  <td style="text-align:left">USB Firmware MSC On Boot</td>
+  <td style="text-align:left">Disable</td>
+</tr>
+<tr>
+  <td style="text-align:left">Partition Scheme</td>
+  <td style="text-align:left"><strong>16M Flash (3MB APP/9.9MB FATFS)</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left">PSRAM</td>
+  <td style="text-align:left"><strong>OPI PSRAM</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left">Upload Speed</td>
+  <td style="text-align:left">921600</td>
+</tr>
+<tr>
+  <td style="text-align:left">Programmer</td>
+  <td style="text-align:left"><strong>Esptool</strong></td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li>请根据您的板型号（例如 <code>T_BEAM_1W</code>）取消每个草图的 <code>utilities.h</code> 文件的注释，否则编译时会报错</li>
+<li>上传示例</li>
 </ol>
 <h2 id="%E5%BC%95%E8%84%9A%E6%98%A0%E5%B0%84">引脚映射</h2>
 <p><img src="./assets/T-BEAM-1W-pin.jpg" alt="T-BEAM-1W" /></p>
