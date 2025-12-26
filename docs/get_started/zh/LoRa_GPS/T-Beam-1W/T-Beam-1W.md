@@ -6,7 +6,8 @@ tags: LoRa, GPS, ESP32-S3, OLED, AXP2101
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](./assets/T-Beam-1W-1.jpg)
+![T-Beam-1W](./assets/T-BEAM-1W-1.jpg)
+
 </div>
 
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
@@ -51,13 +52,13 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](./assets/T-Beam-1W-2.jpg)
+![T-Beam-1W](./assets/T-BEAM-1W-2.jpg)
 
 </div>
 
 ## 规格参数
 
-![T-Beam-1W](./assets/T-Beam-1W-info-zh.jpg)
+![T-BEAM-1W](./assets/T-BEAM-1W-info-zh.jpg)
 
 | 组件 | 规格 |
 | :-- | :-- |
@@ -130,7 +131,7 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 7. 上传示例
 
 ## 引脚映射
-![T-Beam-1W](./assets/T-Beam-1W-pin.jpg)
+![T-BEAM-1W](./assets/T-BEAM-1W-pin.jpg)
 
 
 | 引脚名称 | GPIO | 是否可用 |

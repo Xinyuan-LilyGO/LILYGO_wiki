@@ -6,7 +6,7 @@ tags: nRF52840, LoRa, E-Paper, GPS, NFC, Low Power
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](./assets/T-Echo1.jpg)
+![T-ECHO](./assets/T-ECHO1.jpg)
 
 </div>
 
@@ -49,7 +49,7 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](./assets/T-Echo2.jpg)
+![T-Echo](./assets/T-ECHO2.jpg)
 
 </div>
 
