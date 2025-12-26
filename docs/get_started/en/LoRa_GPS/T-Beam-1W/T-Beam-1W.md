@@ -109,7 +109,7 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 5. Select the corresponding development board in the Arduino IDE Tools menu, and click the corresponding option in the list below to select.
 
     | Name                                 | Value                               |
-    | ------------------------------------ | ----------------------------------- |
+    | :------------------------------------: | :-----------------------------------: |
     | Board                                | **ESP32S3 Dev Module**              |
     | Port                                 | Your port                           |
     | USB CDC On Boot                      | Enable                              |
@@ -177,14 +177,14 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 ## Buttons and LED Description
 
 | Button | Function |
-| :--- | :--- |
+| :---: | :--- |
 | IO17 | Custom Button |
 | BOOT | Download Mode/Custom |
 | RST | Reset |
 | PWR (Power Button) | Long press 6 seconds to shut down |
 
 | LED | Description |
-| :--- | :--- |
+| :---: | :---: |
 | IO18 LED | Controlled by GPIO18 |
 | PPS LED | Flashes with GPS pulse |
 | USB LED | Lights up when USB is connected |
@@ -192,7 +192,7 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 ## Related Tests
 
 | Band | Module Model | Frequency Range | Output Power | Modulation |
-| :--- | :--- | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: | :---: |
 | 868MHz | SX1262 (XY16P35) | 830~950MHz | Max 32dBm | LoRa/FSK/GMSK |
 | 433MHz | SX1262 (XY16P354) | 400~520MHz | Max 32dBm | LoRa/FSK/GMSK |
 
