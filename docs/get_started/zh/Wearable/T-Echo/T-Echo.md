@@ -6,7 +6,7 @@ tags: nRF52840, LoRa, E-Paper, GPS, NFC, Low Power
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](assets/T-Echo1.jpg)
+![T-Echo](./assets/T-Echo1.jpg)
 
 </div>
 
@@ -49,26 +49,26 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](assets/T-Echo2.jpg)
+![T-Echo](./assets/T-Echo2.jpg)
 
 </div>
 
 ### 应用示例
 
-![alt text](assets/T-ECHO-zh.jpg)
+![alt text](./assets/T-ECHO-zh.jpg)
 
 - [T-Echo SoftRF](https://github.com/lyusupov/SoftRF/wiki/Badge-Edition)
 
-![alt text](assets/T-ECHO-SoftRF-en.jpg)
+![alt text](./assets/T-ECHO-SoftRF-en.jpg)
 
 - [T-Echo Meshtastic](https://github.com/meshtastic/Meshtastic-device/tree/v1.2.42.2759c8d)
 
-![alt text](assets/T-ECHO_mesh.jpg)
+![alt text](./assets/T-ECHO_mesh.jpg)
 
 
 ## 模块
 
-![alt text](assets/T-ECHO-info-zh.jpg)
+![alt text](./assets/T-ECHO-info-zh.jpg)
 ### MCU
 
 * 芯片：nRF52840

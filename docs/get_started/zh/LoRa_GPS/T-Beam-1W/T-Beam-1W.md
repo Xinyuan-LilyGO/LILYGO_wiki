@@ -6,7 +6,7 @@ tags: LoRa, GPS, ESP32-S3, OLED, AXP2101
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](assets/T-Beam-1W-1.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-1.jpg)
 </div>
 
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
@@ -51,13 +51,13 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](assets/T-Beam-1W-2.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-2.jpg)
 
 </div>
 
 ## 规格参数
 
-![T-Beam-1W](assets/T-Beam-1W-info-zh.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-info-zh.jpg)
 
 | 组件 | 规格 |
 | :-- | :-- |
@@ -130,7 +130,7 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 7. 上传示例
 
 ## 引脚映射
-![T-Beam-1W](assets/T-Beam-1W-pin.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-pin.jpg)
 
 
 | 引脚名称 | GPIO | 是否可用 |
@@ -201,19 +201,19 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 2. 建议 PA 稳定时间 > 800us。
 3. 发射前需提前切换 RF Switch 至 TX 通道，否则可能损坏 PA。
 
-![RampTime](assets/RampTime.jpg)
+![RampTime](./assets/RampTime.jpg)
 
 ### RF Block Diagram
 
-![RF Block Diagram](assets/XY16P35.jpg)
+![RF Block Diagram](./assets/XY16P35.jpg)
 
 ### VCC=+5V, 400M~520MHz module output power dBm and current
 
-![currnetA](assets/currnetA.jpg)
+![currnetA](./assets/currnetA.jpg)
 
 ### VCC=+5V, 830M~950MHz module output power dBm and current
 
-![currnetB](assets/currnetB.jpg)
+![currnetB](./assets/currnetB.jpg)
 
 ## 常见问题
 

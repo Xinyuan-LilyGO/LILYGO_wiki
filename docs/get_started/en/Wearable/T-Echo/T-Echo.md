@@ -6,7 +6,7 @@ tags: nRF52840, LoRa, E-Paper, GPS, NFC, Low Power
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](assets/T-Echo1.jpg)
+![T-Echo](./assets/T-Echo1.jpg)
 
 </div>
 
@@ -49,7 +49,7 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Echo](assets/T-Echo2.jpg)
+![T-Echo](./assets/T-Echo2.jpg)
 
 </div>
 
@@ -58,16 +58,16 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 - [T-Echo SoftRF](https://github.com/lyusupov/SoftRF/wiki/Badge-Edition)
 
-![alt text](assets/T-ECHO-SoftRF-en.jpg)
+![alt text](./assets/T-ECHO-SoftRF-en.jpg)
 
 - [T-Echo Meshtastic](https://github.com/meshtastic/Meshtastic-device/tree/v1.2.42.2759c8d)
 
-![alt text](assets/T-ECHO-Mesh-en.jpg)
+![alt text](./assets/T-ECHO-Mesh-en.jpg)
 
 
 ## Modules
 
-![alt text](assets/T-ECHO-info-en.jpg)
+![alt text](./assets/T-ECHO-info-en.jpg)
 
 ### MCU
 

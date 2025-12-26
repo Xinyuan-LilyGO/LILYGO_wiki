@@ -6,7 +6,7 @@ tags: LoRa, GPS, ESP32-S3, OLED, AXP2101
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](assets/T-Beam-1W-1.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-1.jpg)
 </div>
 
 <div style="padding: 1em 0 0 0; display: flex; justify-content: center">
@@ -51,13 +51,13 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 
 <div style="width:100%; display:flex;justify-content: center;">
 
-![T-Beam-1W](assets/T-Beam-1W-2.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-2.jpg)
 
 </div>
 
 ## Specifications
 
-![T-Beam-1W](assets/T-Beam-1W-info-en.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-info-en.jpg)
 
 | Component | Specification |
 | :-- | :-- |
@@ -130,7 +130,7 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 7. Upload the example
 
 ## Pin Mapping
-![T-Beam-1W](assets/T-Beam-1W-pin.jpg)
+![T-Beam-1W](./assets/T-Beam-1W-pin.jpg)
 
 
 | Pin Name | GPIO | Available |
@@ -201,19 +201,19 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 2. Recommended PA stabilization time > 800us.
 3. Switch RF Switch to TX channel in advance before transmission, otherwise PA may be damaged.
 
-![RampTime](assets/RampTime.jpg)
+![RampTime](./assets/RampTime.jpg)
 
 ### RF Block Diagram
 
-![RF Block Diagram](assets/XY16P35.jpg)
+![RF Block Diagram](./assets/XY16P35.jpg)
 
 ### VCC=+5V, 400M~520MHz module output power dBm and current
 
-![currnetA](assets/currnetA.jpg)
+![currnetA](./assets/currnetA.jpg)
 
 ### VCC=+5V, 830M~950MHz module output power dBm and current
 
-![currnetB](assets/currnetB.jpg)
+![currnetB](./assets/currnetB.jpg)
 
 ## FAQ
 
