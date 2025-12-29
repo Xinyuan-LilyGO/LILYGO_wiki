@@ -4,7 +4,9 @@ items:
     -   label: T-Circle
         file: Display/T-Circle/T-Circle.md
     -   label: T-Circle S3
-        file: Display/T-Circle-S3/T-Circle-S3.md      
+        file: Display/T-Circle-S3/T-Circle-S3.md    
+    -   label: T-Display P4
+        file: Display/T-Display-P4/T-Display-P4.md  
     -   label: T-Display K230
         file: Display/T-Display-K230/T-Display-K230.md 
     -   label: T-Display S3 Long
