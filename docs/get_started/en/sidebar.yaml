@@ -65,10 +65,14 @@ items:
     items:   
     -   label: LoRa/GPS
         items:
+        -   label: T3 S3
+            file: LoRa_GPS/T3S3/T3S3.md
         -   label: T-LoRa32
             file: LoRa_GPS/LoRa32/LoRa32.md
         -   label: T-LoRa-C6
             file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
+        -   label: T-LoRa Dual
+            file: LoRa_GPS/T-LoRa-Dual/T-LoRa-Dual.md
         -   label: T3 STM32
             file: LoRa_GPS/T3-STM32/T3-STM32.md 
         -   label: T3 TXCO
@@ -84,9 +88,7 @@ items:
         -   label: T-Beam 1W
             file: LoRa_GPS/T-Beam-1W/T-Beam-1W.md
         -   label: T-Beam SUPREME
-            file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md
-        -   label: T3 S3
-            file: LoRa_GPS/T3S3/T3S3.md            
+            file: LoRa_GPS/T-Beam-SUPREME/T-Beam-SUPREME.md            
     -   label: HSC Tech
         items:
         -   label: T-TWR

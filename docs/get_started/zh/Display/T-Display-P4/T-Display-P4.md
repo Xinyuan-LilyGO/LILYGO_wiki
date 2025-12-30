@@ -58,12 +58,15 @@ T-Display-P4 是一款基于 **ESP32-P4** 高性能核心的多功能开发板�
 </div>
 
 ### 引脚图
-T-Display-P4有Amoled还有TFT两个版本，引脚图如下
+
+T-Display-P4有Amoled、TFT两个版本，引脚图如下
+
 #### Amoled版本
 
 ![alt text](assets/T-Display-P4-Amoled.jpg)
 
 #### TFT版本
+
 ![alt text](assets/T-Display-P4-tft.jpg)
 
 

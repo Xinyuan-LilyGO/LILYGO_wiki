@@ -130,22 +130,22 @@ LILYGO T-LoRaC6 is a compact IoT development board based on the ESP32-C6-MINI-1 
     * Select the example file and open the file with `ino` extension
 5.  Select the corresponding board model in the Arduino IDE Tools menu, click the corresponding option in the list below to select
 
-     | T3-C6                                | Value                                                   |
-     | ------------------------------------ | ------------------------------------------------------- |
-     | Board                                | **ESP32C6 Dev Module**                                  |
-     | Port                                 | Your port                                               |
-     | USB CDC On Boot                      | Enable                                                  |
-     | CPU Frequency                        | 160MHZ(WiFi)                                            |
-     | Core Debug Level                     | None                                                    |
-     | USB DFU On Boot                      | Disable                                                 |
-     | Erase All Flash Before Sketch Upload | Disable                                                 |
-     | Flash Mode                           | DIO                                                     |
-     | Flash Size                           | **4MB(32Mb)**                                           |
-     | Arduino Runs On                      | Core1                                                   |
-     | USB Firmware MSC On Boot             | Disable                                                 |
-     | Partition Scheme                     | **Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)** |
-     | Upload Speed                         | 921600                                                  |
-     | Programmer                           | **Esptool**                                             |
+| T3-C6                                | Value                                                   |
+| ------------------------------------ | ------------------------------------------------------- |
+| Board                                | **ESP32C6 Dev Module**                                  |
+| Port                                 | Your port                                               |
+| USB CDC On Boot                      | Enable                                                  |
+| CPU Frequency                        | 160MHZ(WiFi)                                            |
+| Core Debug Level                     | None                                                    |
+| USB DFU On Boot                      | Disable                                                 |
+| Erase All Flash Before Sketch Upload | Disable                                                 |
+| Flash Mode                           | DIO                                                     |
+| Flash Size                           | **4MB(32Mb)**                                           |
+| Arduino Runs On                      | Core1                                                   |
+| USB Firmware MSC On Boot             | Disable                                                 |
+| Partition Scheme                     | **Default 4M Flash with spiffs(1.2M APP/1.5MB SPIFFS)** |
+| Upload Speed                         | 921600                                                  |
+| Programmer                           | **Esptool**                                             |
 
 
 6. Please uncomment the corresponding model in the `utilities.h` file according to your board model, for example `T3_C6`, otherwise compilation will report an error
