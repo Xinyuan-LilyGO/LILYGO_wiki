@@ -72,7 +72,7 @@ items:
         -   label: T-LoRa-C6
             file: LoRa_GPS/T-LoRa-C6/T-LoRa-C6.md
         -   label: T-LoRa Dual
-            file: LoRa_GPS/T-LoRa-Dual/T-LoRa-Dual.md
+            file: LoRa_GPS/T-Lora-Dual/T-Lora-Dual.md
         -   label: T3 STM32
             file: LoRa_GPS/T3-STM32/T3-STM32.md 
         -   label: T3 TXCO
