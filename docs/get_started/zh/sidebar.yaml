@@ -61,8 +61,6 @@ items:
         file: Wearable/T-Mini-E-paper-S3/T-Mini-E-paper-S3.md
     -   label: T-Watch Ultra
         file: Wearable/T-Watch-Ultra/T-Watch-Ultra.md
-    -   label: FAQ
-        file: Wearable/FAQ/FAQ.md
 -   label: 无线通讯设备
     items:   
     -   label: LoRa/GPS
