@@ -252,17 +252,40 @@ LILYGO T-Embed CC1101 is a highly integrated IoT development board based on the 
 
 ## FAQ
 
-* **Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?**  
-  A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the [LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document) documentation for setup instructions.
+### What if I still can't set up the programming environment after reading the above tutorial?
 
-* **Q. Cannot detect SD card?**  
-  A. We successfully tested SD cards up to 32GB with SanDisk; however, some other cards didn't work for unknown reasons. Therefore, if the SD card is not detected, it is recommended to replace it with a SanDisk card no larger than 32GB;
+If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the [LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document) documentation for setup instructions.
+
+### How to troubleshoot when equipment malfunctions?
+
+If equipment malfunctions occur (cannot power on/black screen), please troubleshoot according to the following steps:
+- First check if the device's `power supply` is normal and if the battery is sufficient;
+- Then check if the device is connected to the computer and can be `recognized`;
+- Then check if the device has been properly flashed with the `firmware`;
+- Finally, check if the device powers on normally and if the screen displays normally.
+- For the steps to download the factory firmware, you can refer to the [Download Instructions](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md).
+- If the above steps cannot solve the problem, please record a video of the factory firmware download process and also provide us with the corresponding serial port print information.
+
+### Cannot detect SD card?
+
+We successfully tested SD cards up to 32GB using SanDisk; but some other cards did not work, the reason is unclear. Therefore, if an SD card is not detected, it is recommended to replace it with a SanDisk card not larger than 32GB.
 ![alt text](assets/image-sd.png)
-* **Q. Why does my board keep failing to program?**  
-  A. Please hold the "BOOT" button while pressing the "RST" button, then release the "RST" button to enter download mode and try downloading the program again.
 
-* **Q. What is the communication range of the CC1101 module?**  
-  A. The communication range of CC1101 is affected by many factors, including antenna design, environmental interference, data rate, etc. Under ideal conditions, it can reach several hundred meters.
+### Why does my board keep failing to upload programs?
+
+Please hold down the "BOOT" button and press the "RST" button simultaneously, then release the "RST" button to enter download mode, and try uploading the program again.
+
+### What is the communication distance of the CC1101 module?
+
+The communication distance of CC1101 is affected by various factors, including antenna design, environmental interference, data rate, etc., and can reach hundreds of meters under ideal conditions.
+
+### NFC not working
+
+After flashing the factory firmware, open the NFC interface and use the NFC tag we provided as a detection object. If it cannot be recognized, please check the following:
+- Is the tag properly attached;
+- Is the tag correctly connected to the device;
+- Has the device been properly flashed with the correct firmware;
+- Has the device correctly enabled NFC function;
 
 | Problem | Link |
 | :-------------------------------------------------: | :--------------------------------------------------------------------: |
