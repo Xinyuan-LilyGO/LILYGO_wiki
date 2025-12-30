@@ -257,7 +257,7 @@ LILYGO T-Embed CC1101 is a highly integrated IoT development board based on the 
 
 * **Q. Cannot detect SD card?**  
   A. We successfully tested SD cards up to 32GB with SanDisk; however, some other cards didn't work for unknown reasons. Therefore, if the SD card is not detected, it is recommended to replace it with a SanDisk card no larger than 32GB;
-    ![alt text](./docs/image-sd.png)
+![alt text](assets/image-sd.png)
 * **Q. Why does my board keep failing to program?**  
   A. Please hold the "BOOT" button while pressing the "RST" button, then release the "RST" button to enter download mode and try downloading the program again.
 

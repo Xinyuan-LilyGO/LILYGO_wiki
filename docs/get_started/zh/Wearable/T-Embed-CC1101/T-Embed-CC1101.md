@@ -256,21 +256,22 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 
 * **Q. 不能检测到SD卡？**  
   A. 我们用SanDisk成功测试了不超过32GB的SD；但其他一些卡片没有，原因尚不清楚，因此，在未检测到SD卡的情况下，建议更换不大于32G的 SanDisk 卡；
-    ![alt text](./docs/image-sd.png)
+![alt text](assets/image-sd.png)
+
 * **Q. 为什么我的板子一直烧录失败呢？**  
   A. 请按住"BOOT"按键同时按"RST"按键，然后释放"RST"按键，进入下载模式后重新下载程序。
 
 * **Q. CC1101模块的通信距离是多少？**  
   A. CC1101的通信距离受多种因素影响，包括天线设计、环境干扰、数据速率等，在理想条件下可达数百米。
 
-|                       Problem                       |                                  Link                                  |
-| :-------------------------------------------------: | :--------------------------------------------------------------------: |
-|            How do I enter download mode?            |                    [docs](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/download_mode.md)                     |
-|            How to download the program?             |                 [dosc](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md)                  |
-|  How do I turn on the device after I shut it down?  | [Issues #5](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/5) |
-|      How do I configure Wifi with EspTouch?         | [Issues #4](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/4) |
-|            Why won't the battery charge？            | [Issues #9](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/9) |
 
+| 问题  |                                  Link      |
+| :---------------------------------- | :-------------------------------------|
+|            如何进入下载模式？            |   [文档](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/download_mode.md)                     |
+|            如何下载程序？             |   [操作说明](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md)                  |
+|  关机后如何开启设备？  | [Issues #5](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/5) |
+|      如何使用 EspTouch 配置 Wi-Fi？         | [Issues #4](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/4) |
+|            电池为何无法充电？            | [Issues #9](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/issues/9) |
 
 ## 项目
 * [T-Embed-CC1101_V1.0](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf)

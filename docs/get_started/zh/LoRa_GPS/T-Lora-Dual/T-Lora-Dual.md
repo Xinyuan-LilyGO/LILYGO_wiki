@@ -142,13 +142,18 @@ T-Lora-Dual 是一款基于 **ESP32-PICO-D4** 微控制器的双频无线通信�
 1. 用vscode打开ExpressLRS目录下的src子目录
 2. 先选择设备型号
 ![](./assets/image.png)
+
 ![](./assets/image1.png)
+
 3. 再点击编译上传，第一次编译需下载文件，可能会有点慢
+
 ![](./assets/image2.png)
 
 ### T-ELRS编译
 #### Platfromio
-1. 用vscode打开T-ELRS目录,再打开platformio文件，取消注释要编译的例程![alt text](./assets/image3.png)
+1. 用vscode打开T-ELRS目录,再打开platformio文件，取消注释要编译的例程
+
+![alt text](./assets/image3.png)
 
 2. 再点击编译上传
 
@@ -156,6 +161,7 @@ T-Lora-Dual 是一款基于 **ESP32-PICO-D4** 微控制器的双频无线通信�
 
 #### Arduino IDE
 1. 把T-ELR目录下的lib目录移动到Arduino项目依赖库目录下
+
 ![alt text](./assets/image4.png)
 
 2. 用Arduino IDE打开examples目录下的例程
