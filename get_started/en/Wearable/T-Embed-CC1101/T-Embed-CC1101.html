@@ -657,22 +657,32 @@ var _hmt = _hmt || [];
 </code></pre>
 <h2 id="Related-Tests">Related Tests</h2>
 <h2 id="FAQ">FAQ</h2>
+<h3 id="What-if-I-still-can%27t-set-up-the-programming-environment-after-reading-the-above-tutorial%3F">What if I still can't set up the programming environment after reading the above tutorial?</h3>
+<p>If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
+<h3 id="How-to-troubleshoot-when-equipment-malfunctions%3F">How to troubleshoot when equipment malfunctions?</h3>
+<p>If equipment malfunctions occur (cannot power on/black screen), please troubleshoot according to the following steps:</p>
 <ul>
-<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
-A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
-</li>
-<li><p><strong>Q. Cannot detect SD card?</strong><br />
-A. We successfully tested SD cards up to 32GB with SanDisk; however, some other cards didn't work for unknown reasons. Therefore, if the SD card is not detected, it is recommended to replace it with a SanDisk card no larger than 32GB;</p>
-</li>
+<li>First check if the device's <code>power supply</code> is normal and if the battery is sufficient;</li>
+<li>Then check if the device is connected to the computer and can be <code>recognized</code>;</li>
+<li>Then check if the device has been properly flashed with the <code>firmware</code>;</li>
+<li>Finally, check if the device powers on normally and if the screen displays normally.</li>
+<li>For the steps to download the factory firmware, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md"  target="_blank">Download Instructions</a>.</li>
+<li>If the above steps cannot solve the problem, please record a video of the factory firmware download process and also provide us with the corresponding serial port print information.</li>
 </ul>
-<p><img src="assets/image-sd.png" alt="alt text" /></p>
+<h3 id="Cannot-detect-SD-card%3F">Cannot detect SD card?</h3>
+<p>We successfully tested SD cards up to 32GB using SanDisk; but some other cards did not work, the reason is unclear. Therefore, if an SD card is not detected, it is recommended to replace it with a SanDisk card not larger than 32GB.<br />
+<img src="assets/image-sd.png" alt="alt text" /></p>
+<h3 id="Why-does-my-board-keep-failing-to-upload-programs%3F">Why does my board keep failing to upload programs?</h3>
+<p>Please hold down the &quot;BOOT&quot; button and press the &quot;RST&quot; button simultaneously, then release the &quot;RST&quot; button to enter download mode, and try uploading the program again.</p>
+<h3 id="What-is-the-communication-distance-of-the-CC1101-module%3F">What is the communication distance of the CC1101 module?</h3>
+<p>The communication distance of CC1101 is affected by various factors, including antenna design, environmental interference, data rate, etc., and can reach hundreds of meters under ideal conditions.</p>
+<h3 id="NFC-not-working">NFC not working</h3>
+<p>After flashing the factory firmware, open the NFC interface and use the NFC tag we provided as a detection object. If it cannot be recognized, please check the following:</p>
 <ul>
-<li><p><strong>Q. Why does my board keep failing to program?</strong><br />
-A. Please hold the &quot;BOOT&quot; button while pressing the &quot;RST&quot; button, then release the &quot;RST&quot; button to enter download mode and try downloading the program again.</p>
-</li>
-<li><p><strong>Q. What is the communication range of the CC1101 module?</strong><br />
-A. The communication range of CC1101 is affected by many factors, including antenna design, environmental interference, data rate, etc. Under ideal conditions, it can reach several hundred meters.</p>
-</li>
+<li>Is the tag properly attached;</li>
+<li>Is the tag correctly connected to the device;</li>
+<li>Has the device been properly flashed with the correct firmware;</li>
+<li>Has the device correctly enabled NFC function;</li>
 </ul>
 <table>
 <thead>
