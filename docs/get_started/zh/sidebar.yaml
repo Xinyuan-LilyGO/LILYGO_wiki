@@ -157,7 +157,7 @@ items:
     -   label: Meshtastic 下载
         file: Meshtastic/Meshtastic_use.md 
     -   label: Meshtastic FAQ
-        file: Meshtastic/Meshtastic_FAQ/Mesthtastic_FAQ.md
+        file: Meshtastic/Meshtastic_FAQ/Meshtastic_FAQ.md
 -   label: Meshcore 设备
     items:
     -   label: Meshcore 使用
