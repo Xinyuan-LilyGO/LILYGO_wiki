@@ -96,8 +96,8 @@ var _hmt = _hmt || [];
 <li class=""><a target="_blank" href="https://lilygo.cc/"><img src='/static/image/shop.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
 <li class=""><a target="_blank" href="https://www.youtube.com/@LILYGO"><img src='/static/image/youtube.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
 <li class=""><a target="_blank" href="https://github.com/Xinyuan-LilyGO"><img src='/static/image/github.svg' style='height: 1.5em;vertical-align: middle;'></a></li>
-<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/Meshtastic/Mesthtastic_FAQ/Mesthtastic_FAQ.html">English</a></li>
-<li class="active"><a  href="/get_started/zh/Meshtastic/Mesthtastic_FAQ/Mesthtastic_FAQ.html">中文 简体</a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.svg' style='height: 1.5em;vertical-align: middle;'>&nbsp;中文 简体</a><ul><li class=""><a  href="/get_started/en/Meshtastic/Meshtastic_FAQ/Meshtastic_FAQ.html">English</a></li>
+<li class="active"><a  href="/get_started/zh/Meshtastic/Meshtastic_FAQ/Meshtastic_FAQ.html">中文 简体</a></li>
 </ul></li>
 </ul>
 
@@ -274,20 +274,29 @@ var _hmt = _hmt || [];
                     </div>
                     <div id="article_content">
                         
-                            <h2 id="Meshtastic-Bluetooth">Meshtastic Bluetooth</h2>
-<p>Meshtastic Bluetooth is disabled by default.<br />
-If you need to enable it for device download, you can control the device to turn it on via the web version:</p>
-<p>1.Open the download interface on the<a href="https://meshtastic.org/downloads/"  target="_blank">meshtastic official website</a></p>
-<p>2.Click <a href="https://client.meshtastic.org/"  target="_blank">client.meshtastic.org</a></p>
+                            <h2 id="Meshtastic-%E8%93%9D%E7%89%99">Meshtastic 蓝牙</h2>
+<p>Meshtastic 的蓝牙功能默认处于禁用状态。<br />
+如果您需要启用蓝牙以便设备下载，可以通过网页版控制设备将其打开：<br />
+1.在 <a href="https://meshtastic.org/downloads/"  target="_blank">meshtastic 官方网站</a> 打开下载界面。</p>
+<p>2.点击 <a href="https://client.meshtastic.org/"  target="_blank">client.meshtastic.org</a></p>
 <p><img src="assets/Web_client.jpg" alt="alt text" /></p>
-<p>3.Click &quot;Connect via serial&quot; and &quot;Add new device&quot;</p>
+<p>3.点击“通过串行连接”和“添加新设备”</p>
 <p><img src="assets/image.png" alt="alt text" /></p>
-<p>4.Select the serial port corresponding to the device and click &quot;Connect&quot;</p>
+<p>4.选择与设备对应的串行端口，然后点击“连接”</p>
 <p><img src="assets/image-1.png" alt="alt text" /></p>
-<p>5.Follow the steps to enable Bluetooth<br />
-<img src="assets/Client_setting.png" alt="alt text" /></p>
+<p>5.按照步骤启用蓝牙!在此处进行更改后</p>
+<p><img src="assets/Client_setting.png" alt="alt text" /></p>
 <blockquote>
-<p>After making changes here, click the save button in the upper right corner and wait for the device to restart. Once the restart is complete, the Bluetooth function will be enabled....</p>
+<p>在此处进行更改后，点击右上角的“保存”按钮，然后等待设备重启。重启完成后，蓝牙功能将被启用。</p>
+</blockquote>
+<h2 id="T3-S3-E-Paper-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98">T3-S3 E-Paper 无法使用问题</h2>
+<p><img src="assets/t3epaper.png" alt="alt text" /></p>
+<ul>
+<li>选择最新版本的固件，勾选 <code>Full Erase and Install</code>以及 <code>Install InkHUD</code>，然后再进行烧录固件。</li>
+<li>使用<code>meshtastic</code>APP连接到设备,根据提示进行设置。</li>
+</ul>
+<blockquote>
+<p>InkHUD 是为配备电子墨水显示器的 Meshtastic 设备设计的用户界面。它旨在快速“提前提示”，一目了然地显示重要信息，并配合连接的客户端应用 。它专门针对电子墨水显示屏，作为原始 OLED 用户界面的替代方案。</p>
 </blockquote>
 
                         
