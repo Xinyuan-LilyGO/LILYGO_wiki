@@ -156,6 +156,8 @@ items:
         file: Meshtastic/Meshtastic_lilygo.md
     -   label: Meshtastic download
         file: Meshtastic/Meshtastic_use.md 
+    -   label: Meshtastic FAQ
+        file: Meshtastic/Meshtastic_FAQ/Meshtastic_FAQ.md
 -   label: Meshcore
     items:
     -   label: Meshcore use
