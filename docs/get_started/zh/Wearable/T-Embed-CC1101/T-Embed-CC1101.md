@@ -111,6 +111,11 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 
 ## 快速开始
 
+### 使用指南
+
+在YouTube上有相关视频教程，请点击下面的链接观看：
+[T-Embed-CC1101 使用指南](https://www.youtube.com/watch?v=U06XI1wtp4U)
+
 ### 示例支持
 
 ~~~
@@ -128,6 +133,7 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 - ✅ voice_test : 扬声器测试，从SD卡读取音频。
 - ✅ ws2812_test ：LED 灯测试；
 ~~~
+
 ### PlatformIO
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
 2. 打开VisualStudioCode软件侧边栏的"扩展"（或者使用<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>打开扩展），搜索"PlatformIO IDE"扩展并下载。
@@ -143,6 +149,7 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 5. 在"工具"菜单中选择正确的设置，如下表所示。
 
 #### ESP32-S3
+
 | Setting | Value |
 | :-----: | :---: |
 | Board | ESP32S3 Dev Module |
@@ -263,7 +270,7 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 - 再检查设备是否正常烧录了`固件`；
 - 最后检查设备是否正常开机，屏幕是否正常显示。
 - 下载出厂固件操作步骤可以参考[下载说明](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md), 
-- 如以上步骤无法解决问题，请将下载出厂固件的过程录制为视频，并且将对应串口打印的信息也提供给我们。
+> 如以上步骤无法解决问题，请将下载出厂固件的过程录制为视频，并且将对应串口打印的信息也提供给我们。
 
 ### 不能检测到SD卡？ 
 
