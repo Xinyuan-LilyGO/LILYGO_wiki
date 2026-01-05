@@ -78,6 +78,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 > **注意：** A7670X/A7608X 需移除电阻才能使用 Sim Shield，详情见[此链接](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411)。
 
 **引脚映射：**
+
 | 信号 | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 23 |
@@ -109,6 +110,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 - [SIM7600X-ESP32](https://lilygo.cc/products/t-sim7600)
 
 **引脚映射（特殊说明）：**
+
 | 信号 | GPIO | 复用功能 |
 | :--- | :---: | :--- |
 | SIMSHIELD_SD_CS | 32 | SIM7600 DTR 引脚 |
@@ -133,6 +135,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 - [SIM7670G-ESP32S3](https://lilygo.cc/products/t-sim-7670g-s3)
 
 **引脚映射：**
+
 | 信号 | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 15 |
@@ -164,6 +167,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 - [A7608X-ESP32S3](https://lilygo.cc/products/t-a7608e-h)
 
 **引脚映射：**
+
 | 信号 | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |
@@ -202,6 +206,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 - [SIM7080G-ESP32S3](https://lilygo.cc/products/t-sim7080-s3)
 
 **引脚映射：**
+
 | 信号 | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |
@@ -229,6 +234,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 | SW2/SW3/SW4 | OFF | 必须关闭 |
 
 **引脚映射（通用）：**
+
 | 信号 | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |

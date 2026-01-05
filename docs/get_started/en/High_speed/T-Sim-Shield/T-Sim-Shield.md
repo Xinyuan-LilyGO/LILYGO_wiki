@@ -78,6 +78,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 > **Note:** For A7670X/A7608X, a resistor needs to be removed to use the Sim Shield. See [this link](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411) for details.
 
 **Pin Mapping:**
+
 | Signal | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 23 |
@@ -107,6 +108,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 - [SIM7600X-ESP32](https://lilygo.cc/products/t-sim7600)
 
 **Pin Mapping (Special Notes):**
+
 | Signal | GPIO | Multiplexed Function |
 | :--- | :---: | :--- |
 | SIMSHIELD_SD_CS | 32 | SIM7600 DTR pin |
@@ -129,6 +131,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 - [SIM7670G-ESP32S3](https://lilygo.cc/products/t-sim-7670g-s3)
 
 **Pin Mapping:**
+
 | Signal | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 15 |
@@ -158,6 +161,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 - [A7608X-ESP32S3](https://lilygo.cc/products/t-a7608e-h)
 
 **Pin Mapping:**
+
 | Signal | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |
@@ -195,6 +199,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 - [SIM7080G-ESP32S3](https://lilygo.cc/products/t-sim7080-s3)
 
 **Pin Mapping:**
+
 | Signal | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |
@@ -221,6 +226,7 @@ The Sim Shield is a multifunction expansion board specifically designed for the 
 | SW2/SW3/SW4 | OFF | Must be OFF |
 
 **Pin Mapping (General):**
+
 | Signal | GPIO |
 | :--- | :---: |
 | SIMSHIELD_MOSI | 11 |
