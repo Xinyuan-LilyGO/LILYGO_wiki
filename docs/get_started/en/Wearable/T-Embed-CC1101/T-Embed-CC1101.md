@@ -264,6 +264,9 @@ If equipment malfunctions occur (cannot power on/black screen), please troublesh
 - Then check if the device has been properly flashed with the `firmware`;
 - Finally, check if the device powers on normally and if the screen displays normally.
 - For the steps to download the factory firmware, you can refer to the [Download Instructions](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md).
+
+![alt text](assets/Download.gif)
+
 > If the above steps cannot solve the problem, please record a video of the factory firmware download process and also provide us with the corresponding serial port print information.
 
 ### Cannot detect SD card?

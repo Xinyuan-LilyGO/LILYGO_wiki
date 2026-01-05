@@ -269,7 +269,10 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 - 然后检查设备是否连接至电脑，是否可被`识别`；
 - 再检查设备是否正常烧录了`固件`；
 - 最后检查设备是否正常开机，屏幕是否正常显示。
-- 下载出厂固件操作步骤可以参考[下载说明](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md), 
+- 下载出厂固件操作步骤可以参考[下载说明](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/docs/flash_download_tool.md)
+
+![alt text](assets/Download.gif)
+
 > 如以上步骤无法解决问题，请将下载出厂固件的过程录制为视频，并且将对应串口打印的信息也提供给我们。
 
 ### 不能检测到SD卡？ 
