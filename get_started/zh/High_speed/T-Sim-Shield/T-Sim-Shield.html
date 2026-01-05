@@ -430,21 +430,65 @@ var _hmt = _hmt || [];
 <blockquote>
 <p><strong>注意：</strong> A7670X/A7608X 需移除电阻才能使用 Sim Shield，详情见<a href="https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411"  target="_blank">此链接</a>。</p>
 </blockquote>
-<p><strong>引脚映射：</strong><br />
-| 信号 | GPIO |<br />
-| :--- | :---: |<br />
-| SIMSHIELD_MOSI | 23 |<br />
-| SIMSHIELD_MISO | 19 |<br />
-| SIMSHIELD_SCK | 18 |<br />
-| SIMSHIELD_SD_CS | 32 |<br />
-| SIMSHIELD_RADIO_BUSY | 39 |<br />
-| SIMSHIELD_RADIO_CS | 5 |<br />
-| SIMSHIELD_RADIO_IRQ | 34 |<br />
-| SIMSHIELD_RADIO_RST | 15 |<br />
-| SIMSHIELD_RS_RX | 13 |<br />
-| SIMSHIELD_RS_TX | 14 |<br />
-| SIMSHIELD_SDA | 21 |<br />
-| SIMSHIELD_SCL | 22 |</p>
+<p><strong>引脚映射：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MOSI</td>
+  <td style="text-align:center">23</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MISO</td>
+  <td style="text-align:center">19</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCK</td>
+  <td style="text-align:center">18</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">32</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_BUSY</td>
+  <td style="text-align:center">39</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_CS</td>
+  <td style="text-align:center">5</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">34</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_RST</td>
+  <td style="text-align:center">15</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">13</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_TX</td>
+  <td style="text-align:center">14</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SDA</td>
+  <td style="text-align:center">21</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCL</td>
+  <td style="text-align:center">22</td>
+</tr>
+</tbody>
+</table>
 <h3 id="2.-SIM7600X-%28ESP32-%E7%89%88%29">2. SIM7600X (ESP32 版)</h3>
 <p><img src="./assets/SIM7600_ESP32.png" alt="配置图" /></p>
 <table>
@@ -482,12 +526,33 @@ var _hmt = _hmt || [];
 <ul>
 <li><a href="https://lilygo.cc/products/t-sim7600"  target="_blank">SIM7600X-ESP32</a></li>
 </ul>
-<p><strong>引脚映射（特殊说明）：</strong><br />
-| 信号 | GPIO | 复用功能 |<br />
-| :--- | :---: | :--- |<br />
-| SIMSHIELD_SD_CS | 32 | SIM7600 DTR 引脚 |<br />
-| SIMSHIELD_RADIO_IRQ | 34 | SIM7600 STATUS 引脚 |<br />
-| SIMSHIELD_RS_RX | 12 | SIM7600 LED 引脚 |</p>
+<p><strong>引脚映射（特殊说明）：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+  <th style="text-align:left">复用功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">32</td>
+  <td style="text-align:left">SIM7600 DTR 引脚</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">34</td>
+  <td style="text-align:left">SIM7600 STATUS 引脚</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">12</td>
+  <td style="text-align:left">SIM7600 LED 引脚</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p><strong>注意：</strong> 这三个 GPIO 已被 Sim Shield 占用，请勿用于其他用途。</p>
 </blockquote>
@@ -528,21 +593,65 @@ var _hmt = _hmt || [];
 <ul>
 <li><a href="https://lilygo.cc/products/t-sim-7670g-s3"  target="_blank">SIM7670G-ESP32S3</a></li>
 </ul>
-<p><strong>引脚映射：</strong><br />
-| 信号 | GPIO |<br />
-| :--- | :---: |<br />
-| SIMSHIELD_MOSI | 15 |<br />
-| SIMSHIELD_MISO | 7 |<br />
-| SIMSHIELD_SCK | 16 |<br />
-| SIMSHIELD_SD_CS | 46 |<br />
-| SIMSHIELD_RADIO_BUSY | 38 |<br />
-| SIMSHIELD_RADIO_CS | 39 |<br />
-| SIMSHIELD_RADIO_IRQ | 6 |<br />
-| SIMSHIELD_RADIO_RST | 40 |<br />
-| SIMSHIELD_RS_RX | 41 |<br />
-| SIMSHIELD_RS_TX | 42 |<br />
-| SIMSHIELD_SDA | 2 |<br />
-| SIMSHIELD_SCL | 1 |</p>
+<p><strong>引脚映射：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MOSI</td>
+  <td style="text-align:center">15</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MISO</td>
+  <td style="text-align:center">7</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCK</td>
+  <td style="text-align:center">16</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">46</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_BUSY</td>
+  <td style="text-align:center">38</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_CS</td>
+  <td style="text-align:center">39</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">6</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_RST</td>
+  <td style="text-align:center">40</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">41</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_TX</td>
+  <td style="text-align:center">42</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SDA</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCL</td>
+  <td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
 <h3 id="4.-A7608X-%28ESP32-S3-%E7%89%88%29">4. A7608X (ESP32-S3 版)</h3>
 <p><img src="./assets/A7608_ESP32S3.png" alt="配置图" /></p>
 <table>
@@ -580,21 +689,65 @@ var _hmt = _hmt || [];
 <ul>
 <li><a href="https://lilygo.cc/products/t-a7608e-h"  target="_blank">A7608X-ESP32S3</a></li>
 </ul>
-<p><strong>引脚映射：</strong><br />
-| 信号 | GPIO |<br />
-| :--- | :---: |<br />
-| SIMSHIELD_MOSI | 11 |<br />
-| SIMSHIELD_MISO | 10 |<br />
-| SIMSHIELD_SCK | 12 |<br />
-| SIMSHIELD_SD_CS | 45 |<br />
-| SIMSHIELD_RADIO_BUSY | 38 |<br />
-| SIMSHIELD_RADIO_CS | 39 |<br />
-| SIMSHIELD_RADIO_IRQ | 9 |<br />
-| SIMSHIELD_RADIO_RST | 40 |<br />
-| SIMSHIELD_RS_RX | 41 |<br />
-| SIMSHIELD_RS_TX | 42 |<br />
-| SIMSHIELD_SDA | 2 |<br />
-| SIMSHIELD_SCL | 1 |</p>
+<p><strong>引脚映射：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MOSI</td>
+  <td style="text-align:center">11</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MISO</td>
+  <td style="text-align:center">10</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCK</td>
+  <td style="text-align:center">12</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">45</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_BUSY</td>
+  <td style="text-align:center">38</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_CS</td>
+  <td style="text-align:center">39</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">9</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_RST</td>
+  <td style="text-align:center">40</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">41</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_TX</td>
+  <td style="text-align:center">42</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SDA</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCL</td>
+  <td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
 <h3 id="5.-SIM7080G-%28ESP32-S3-PMU-%E7%89%88%29">5. SIM7080G (ESP32-S3 PMU 版)</h3>
 <p><img src="./assets/SIM7080G_ESP32S3.png" alt="配置图" /></p>
 <table>
@@ -640,21 +793,65 @@ var _hmt = _hmt || [];
 <ul>
 <li><a href="https://lilygo.cc/products/t-sim7080-s3"  target="_blank">SIM7080G-ESP32S3</a></li>
 </ul>
-<p><strong>引脚映射：</strong><br />
-| 信号 | GPIO |<br />
-| :--- | :---: |<br />
-| SIMSHIELD_MOSI | 11 |<br />
-| SIMSHIELD_MISO | 13 |<br />
-| SIMSHIELD_SCK | 12 |<br />
-| SIMSHIELD_SD_CS | 21 |<br />
-| SIMSHIELD_RADIO_BUSY | 48 |<br />
-| SIMSHIELD_RADIO_CS | 45 |<br />
-| SIMSHIELD_RADIO_IRQ | 8 |<br />
-| SIMSHIELD_RADIO_RST | 47 |<br />
-| SIMSHIELD_RS_RX | 2 |<br />
-| SIMSHIELD_RS_TX | 1 |<br />
-| SIMSHIELD_SDA | 44 |<br />
-| SIMSHIELD_SCL | 43 |</p>
+<p><strong>引脚映射：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MOSI</td>
+  <td style="text-align:center">11</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MISO</td>
+  <td style="text-align:center">13</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCK</td>
+  <td style="text-align:center">12</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">21</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_BUSY</td>
+  <td style="text-align:center">48</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_CS</td>
+  <td style="text-align:center">45</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">8</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_RST</td>
+  <td style="text-align:center">47</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_TX</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SDA</td>
+  <td style="text-align:center">44</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCL</td>
+  <td style="text-align:center">43</td>
+</tr>
+</tbody>
+</table>
 <h3 id="6.-%E6%A0%87%E5%87%86%E7%B3%BB%E5%88%97-%28SIM7000G/A7670X/SIM7670G/SIM7080G%29">6. 标准系列 (SIM7000G/A7670X/SIM7670G/SIM7080G)</h3>
 <p><img src="./assets/Standard%20Series.png" alt="配置图" /></p>
 <table>
@@ -688,21 +885,65 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<p><strong>引脚映射（通用）：</strong><br />
-| 信号 | GPIO |<br />
-| :--- | :---: |<br />
-| SIMSHIELD_MOSI | 11 |<br />
-| SIMSHIELD_MISO | 13 |<br />
-| SIMSHIELD_SCK | 12 |<br />
-| SIMSHIELD_SD_CS | 37 |<br />
-| SIMSHIELD_RADIO_BUSY | 15 |<br />
-| SIMSHIELD_RADIO_CS | 38 |<br />
-| SIMSHIELD_RADIO_IRQ | 14 |<br />
-| SIMSHIELD_RADIO_RST | 39 |<br />
-| SIMSHIELD_RS_RX | 40 |<br />
-| SIMSHIELD_RS_TX | 41 |<br />
-| SIMSHIELD_SDA | 3 |<br />
-| SIMSHIELD_SCL | 2 |</p>
+<p><strong>引脚映射（通用）：</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">信号</th>
+  <th style="text-align:center">GPIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MOSI</td>
+  <td style="text-align:center">11</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_MISO</td>
+  <td style="text-align:center">13</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCK</td>
+  <td style="text-align:center">12</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SD_CS</td>
+  <td style="text-align:center">37</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_BUSY</td>
+  <td style="text-align:center">15</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_CS</td>
+  <td style="text-align:center">38</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_IRQ</td>
+  <td style="text-align:center">14</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RADIO_RST</td>
+  <td style="text-align:center">39</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_RX</td>
+  <td style="text-align:center">40</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_RS_TX</td>
+  <td style="text-align:center">41</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SDA</td>
+  <td style="text-align:center">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">SIMSHIELD_SCL</td>
+  <td style="text-align:center">2</td>
+</tr>
+</tbody>
+</table>
 <h2 id="%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">接口说明</h2>
 <h3 id="1.-%E7%94%B5%E6%B1%A0%E8%BF%9E%E6%8E%A5">1. 电池连接</h3>
 <p><img src="./assets/BATTERY_SOKECT.png" alt="电池连接" /></p>
