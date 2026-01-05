@@ -97,6 +97,8 @@ items:
             file: High_speed/T-Connect/T-Connect.md            
         -   label: T-Connect Pro
             file: High_speed/T-Connect-Pro/T-Connect-Pro.md
+        -   label: T-Sim Shield
+            file: High_speed/T-Sim-Shield/T-Sim-Shield.md            
         -   label: T-ETH
             items:
             -   label: T-ETH-Elite
