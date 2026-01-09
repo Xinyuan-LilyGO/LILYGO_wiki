@@ -943,20 +943,24 @@ var _hmt = _hmt || [];
 </table>
 <h2 id="Related-Tests">Related Tests</h2>
 <h2 id="FAQ">FAQ</h2>
-<ul>
-<li><p><strong>Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?</strong><br />
-A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> documentation for setup instructions.</p>
-</li>
-<li><p><strong>Q. Why does Arduino IDE prompt me to update library files when I open it? Should I update or not?</strong><br />
-A. Choose not to update library files. Different versions of library files may not be compatible with each other, so it is not recommended to update library files.</p>
-</li>
-<li><p><strong>Q. Which frequency bands does the LoRa module support?</strong><br />
-A. The LoRa module supports 433~920MHz frequency bands, specific frequency band versions can be selected according to requirements.</p>
-</li>
-<li><p><strong>Q. Why does my board keep failing to upload programs?</strong><br />
-A. Please hold down the &quot;BOOT&quot; button and try uploading the program again.</p>
-</li>
-</ul>
+<h3 id="What-should-I-do-if-I-still-don%27t-know-how-to-set-up-the-programming-environment-after-reading-the-above-tutorial%3F">What should I do if I still don't know how to set up the programming environment after reading the above tutorial?</h3>
+<p>If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the <a href="https://github.com/Xinyuan-LilyGO/LilyGo-Document"  target="_blank">LilyGo-Document</a> for setup instructions.</p>
+<h3 id="Why-does-Arduino-IDE-prompt-me-to-update-library-files-when-I-open-it%3F-Should-I-update-or-not%3F">Why does Arduino IDE prompt me to update library files when I open it? Should I update or not?</h3>
+<p>Do <strong>not</strong> update the library files. Different versions of library files may not be compatible with each other, so updating is not recommended.</p>
+<h3 id="What-frequency-bands-does-the-LoRa-module-support%3F">What frequency bands does the LoRa module support?</h3>
+<p>The LoRa module supports the 433~920MHz frequency bands. Specific frequency band versions can be selected based on requirements.</p>
+<h3 id="Why-does-my-board-keep-failing-to-upload-the-program%3F">Why does my board keep failing to upload the program?</h3>
+<p>Please hold the &quot;BOOT&quot; button and try uploading the program again.</p>
+<h3 id="Are-there-any-GPIO-ports-on-the-T-Connect-Pro-that-are-internally-reserved-or-should-not-be-used-for-external-I/O-modules%3F">Are there any GPIO ports on the T-Connect Pro that are internally reserved or should not be used for external I/O modules?</h3>
+<p>All GPIO ports on the T-Connect Pro are already used. There are other ports available for external use.</p>
+<h3 id="What-is-the-recommended-method-for-expanding-external-input/output%3F">What is the recommended method for expanding external input/output?</h3>
+<p>Use an I²C I/O expander.</p>
+<h3 id="Are-there-any-known-limitations-or-pin-conflict-issues-when-using-LoRa-%28SX1262%29-together-with-Wi-Fi-or-Bluetooth%3F">Are there any known limitations or pin conflict issues when using LoRa (SX1262) together with Wi-Fi or Bluetooth?</h3>
+<p>No, Wi-Fi is a built-in function of the chip.</p>
+<h3 id="Is-it-safe-to-power-external-low-power-I/O-modules-from-the-main-board%2C-or-is-it-recommended-to-use-an-external-power-supply%3F">Is it safe to power external low-power I/O modules from the main board, or is it recommended to use an external power supply?</h3>
+<p>It is safe, and the main board can directly power sensors or low-current expansion devices. However, using an external power supply is recommended.</p>
+<h3 id="Are-there-any-reference-designs-or-examples-for-connecting-external-I/O-or-control-modules-to-this-board%3F">Are there any reference designs or examples for connecting external I/O or control modules to this board?</h3>
+<p>No, only the <a href="https://github.com/Xinyuan-LilyGO/T-Connect-Pro?tab=readme-ov-file#examples-support"  target="_blank">examples</a> provided are supported.</p>
 <h2 id="Projects">Projects</h2>
 <ul>
 <li><a href="https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf"  target="_blank">T-Connect-Pro_V1.0</a></li>

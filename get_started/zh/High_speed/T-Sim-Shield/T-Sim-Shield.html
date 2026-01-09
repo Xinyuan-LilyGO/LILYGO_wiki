@@ -388,7 +388,7 @@ var _hmt = _hmt || [];
 </tbody>
 </table>
 <h2 id="%E4%B8%BB%E6%9D%BF%E5%85%BC%E5%AE%B9%E9%85%8D%E7%BD%AE">主板兼容配置</h2>
-<h3 id="1.-SIM7000G-/-A7670X-/-A7608X-%28ESP32-%E7%89%88%29">1. SIM7000G / A7670X / A7608X (ESP32 版)</h3>
+<h3 id="SIM7000G-/-A7670X-/-A7608X-%28ESP32-%E7%89%88%29">SIM7000G / A7670X / A7608X (ESP32 版)</h3>
 <p><img src="./assets/SIM7000_A7608_A7670_ESP32.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -489,7 +489,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="2.-SIM7600X-%28ESP32-%E7%89%88%29">2. SIM7600X (ESP32 版)</h3>
+<h3 id="SIM7600X-%28ESP32-%E7%89%88%29">SIM7600X (ESP32 版)</h3>
 <p><img src="./assets/SIM7600_ESP32.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -556,7 +556,7 @@ var _hmt = _hmt || [];
 <blockquote>
 <p><strong>注意：</strong> 这三个 GPIO 已被 Sim Shield 占用，请勿用于其他用途。</p>
 </blockquote>
-<h3 id="3.-SIM7670G-%28ESP32-S3-%E7%89%88%29">3. SIM7670G (ESP32-S3 版)</h3>
+<h3 id="SIM7670G-%28ESP32-S3-%E7%89%88%29">SIM7670G (ESP32-S3 版)</h3>
 <p><img src="./assets/SIM7670G_ESP32S3.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -652,7 +652,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="4.-A7608X-%28ESP32-S3-%E7%89%88%29">4. A7608X (ESP32-S3 版)</h3>
+<h3 id="A7608X-%28ESP32-S3-%E7%89%88%29">A7608X (ESP32-S3 版)</h3>
 <p><img src="./assets/A7608_ESP32S3.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -748,7 +748,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="5.-SIM7080G-%28ESP32-S3-PMU-%E7%89%88%29">5. SIM7080G (ESP32-S3 PMU 版)</h3>
+<h3 id="SIM7080G-%28ESP32-S3-PMU-%E7%89%88%29">SIM7080G (ESP32-S3 PMU 版)</h3>
 <p><img src="./assets/SIM7080G_ESP32S3.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -852,7 +852,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h3 id="6.-%E6%A0%87%E5%87%86%E7%B3%BB%E5%88%97-%28SIM7000G/A7670X/SIM7670G/SIM7080G%29">6. 标准系列 (SIM7000G/A7670X/SIM7670G/SIM7080G)</h3>
+<h3 id="%E6%A0%87%E5%87%86%E7%B3%BB%E5%88%97-%28SIM7000G/A7670X/SIM7670G/SIM7080G%29">标准系列 (SIM7000G/A7670X/SIM7670G/SIM7080G)</h3>
 <p><img src="./assets/Standard%20Series.png" alt="配置图" /></p>
 <table>
 <thead>
@@ -945,45 +945,45 @@ var _hmt = _hmt || [];
 </tbody>
 </table>
 <h2 id="%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">接口说明</h2>
-<h3 id="1.-%E7%94%B5%E6%B1%A0%E8%BF%9E%E6%8E%A5">1. 电池连接</h3>
+<h3 id="%E7%94%B5%E6%B1%A0%E8%BF%9E%E6%8E%A5">电池连接</h3>
 <p><img src="./assets/BATTERY_SOKECT.png" alt="电池连接" /></p>
 <ul>
 <li>通过跳线帽将外部电池接口连接到主板电池接口</li>
 <li><strong>注意：</strong> 如果外接电池，请勿在主板的 18650 插座上安装电池</li>
 </ul>
-<h3 id="2.-%E7%94%B5%E6%B5%81%E7%9B%91%E6%B5%8B%E8%AE%BE%E7%BD%AE">2. 电流监测设置</h3>
+<h3 id="%E7%94%B5%E6%B5%81%E7%9B%91%E6%B5%8B%E8%AE%BE%E7%BD%AE">电流监测设置</h3>
 <p><img src="./assets/battery_current_detection_mode.png" alt="电流监测" /></p>
 <ul>
 <li><strong>垂直跳线帽：</strong> 将电池电流路由至 INA3221 通道2，可监测充放电电流</li>
 <li><strong>无跳线帽：</strong> 监测压线端子接口电流</li>
 <li><strong>注意：</strong> 使用电池监测时，请勿连接压线端子</li>
 </ul>
-<h3 id="3.-5V-%E7%94%B5%E6%BA%90%E6%8E%A5%E5%8F%A3">3. 5V 电源接口</h3>
+<h3 id="5V-%E7%94%B5%E6%BA%90%E6%8E%A5%E5%8F%A3">5V 电源接口</h3>
 <ul>
 <li>2.00mm 2Pin JST 接口，用于外部供电</li>
 <li>也可直接连接主板太阳能端口充电（需断开 J21 跳线）</li>
 <li>建议优先使用此接口供电，电压降更低</li>
 </ul>
-<h3 id="4.-SD-%E5%8D%A1%E6%8E%A5%E5%8F%A3">4. SD 卡接口</h3>
+<h3 id="SD-%E5%8D%A1%E6%8E%A5%E5%8F%A3">SD 卡接口</h3>
 <ul>
 <li>Sim Shield 重新映射了 SPI 接口</li>
 <li><strong>使用 Sim Shield 后，SD 卡必须插入扩展板，而非主板</strong></li>
 </ul>
-<h3 id="5.-RS485-%E6%8E%A5%E5%8F%A3">5. RS485 接口</h3>
+<h3 id="RS485-%E6%8E%A5%E5%8F%A3">RS485 接口</h3>
 <ul>
 <li>硬件自动收发控制</li>
 <li>建议通信波特率 ≤115200</li>
 </ul>
-<h3 id="6.-I2C-%E6%8E%A5%E5%8F%A3">6. I2C 接口</h3>
+<h3 id="I2C-%E6%8E%A5%E5%8F%A3">I2C 接口</h3>
 <ul>
 <li>支持标准 0.96 英寸 OLED 显示屏</li>
 <li><strong>注意线序：</strong> 请确认 OLED 接口线序正确</li>
 </ul>
-<h3 id="7.-SPI-%E6%8E%A5%E5%8F%A3">7. SPI 接口</h3>
+<h3 id="SPI-%E6%8E%A5%E5%8F%A3">SPI 接口</h3>
 <ul>
 <li>暴露 SD 卡和 LoRa 模块的 SPI 总线</li>
 </ul>
-<h3 id="8.-%E7%94%B5%E6%B5%81%E6%A3%80%E6%B5%8B%E9%80%9A%E9%81%93">8. 电流检测通道</h3>
+<h3 id="%E7%94%B5%E6%B5%81%E6%A3%80%E6%B5%8B%E9%80%9A%E9%81%93">电流检测通道</h3>
 <p><img src="./assets/intervface.png" alt="电流检测接口" /></p>
 <table>
 <thead>
