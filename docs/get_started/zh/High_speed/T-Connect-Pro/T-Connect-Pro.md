@@ -282,17 +282,33 @@ T-Connect-Pro基于主控芯片ESP32S3，由3层板子堆叠组合而成的产�
 
 ## 常见问题
 
-* **Q. 看了以上教程我还是不会搭建编程环境怎么办？**  
-  A. 如果看了以上教程还不懂如何搭建环境的可以参考[LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document)文档说明来搭建。
+### 看了以上教程我还是不会搭建编程环境怎么办？
+如果看了以上教程还不懂如何搭建环境的可以参考[LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document)文档说明来搭建。
 
-* **Q. 为什么打开Arduino IDE时他会提醒我是否要升级库文件？我应该升级还是不升级？**  
-  A. 选择不升级库文件，不同版本的库文件可能不会相互兼容所以不建议升级库文件。
+### 为什么打开Arduino IDE时他会提醒我是否要升级库文件？我应该升级还是不升级？
+选择不升级库文件，不同版本的库文件可能不会相互兼容所以不建议升级库文件。
 
-* **Q. LoRa模块支持哪些频段？**  
-  A. LoRa模块支持433~920MHz频段，具体频段版本可根据需求选择。
+### LoRa模块支持哪些频段？
+LoRa模块支持433~920MHz频段，具体频段版本可根据需求选择。
 
-* **Q. 为什么我的板子一直烧录失败呢？**  
-  A. 请按住"BOOT"按键重新下载程序。
+### 为什么我的板子一直烧录失败呢？
+请按住"BOOT"按键重新下载程序。
+
+### T-Connect Pro 上是否有任何 GPIO 端口是内部保留的，或不应用于外部 I/O 模块？
+T-Connect-Pro的GPIO端口都使用了，有其他端口可作用于外部
+
+### 扩展外部输入/输出的推荐方法是什么？
+I²C I/O 扩展器
+
+### 在将 LoRa (SX1262) 与 Wi-Fi 或蓝牙一起使用时，是否存在已知的限制或引脚冲突问题？
+不存在，WiFi是芯片内置功能
+
+### 从主板为外部低功耗I/O模块供电是否安全，还是建议使用外部电源？
+“安全，主板可为传感器或小电流拓展设备直接供电。但是推荐使用外部供电
+
+### 是否有将外部I/O或控制模块连接到该电路板的参考设计或示例？
+没有 仅支持已有[示例](https://github.com/Xinyuan-LilyGO/T-Connect-Pro?tab=readme-ov-file#examples-support)
+
 
 ## 项目
 * [T-Connect-Pro_V1.0](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)

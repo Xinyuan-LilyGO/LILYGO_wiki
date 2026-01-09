@@ -282,17 +282,32 @@ T-Connect-Pro is based on the main control chip ESP32S3, consisting of 3-layer b
 
 ## FAQ
 
-* **Q. I still don't know how to set up the programming environment after reading the above tutorial. What should I do?**  
-  A. If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the [LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document) documentation for setup instructions.
+### What should I do if I still don't know how to set up the programming environment after reading the above tutorial?
+If you still don't understand how to set up the environment after reading the above tutorial, you can refer to the [LilyGo-Document](https://github.com/Xinyuan-LilyGO/LilyGo-Document) for setup instructions.
 
-* **Q. Why does Arduino IDE prompt me to update library files when I open it? Should I update or not?**  
-  A. Choose not to update library files. Different versions of library files may not be compatible with each other, so it is not recommended to update library files.
+### Why does Arduino IDE prompt me to update library files when I open it? Should I update or not?
+Do **not** update the library files. Different versions of library files may not be compatible with each other, so updating is not recommended.
 
-* **Q. Which frequency bands does the LoRa module support?**  
-  A. The LoRa module supports 433~920MHz frequency bands, specific frequency band versions can be selected according to requirements.
+### What frequency bands does the LoRa module support?
+The LoRa module supports the 433~920MHz frequency bands. Specific frequency band versions can be selected based on requirements.
 
-* **Q. Why does my board keep failing to upload programs?**  
-  A. Please hold down the "BOOT" button and try uploading the program again.
+### Why does my board keep failing to upload the program?
+Please hold the "BOOT" button and try uploading the program again.
+
+### Are there any GPIO ports on the T-Connect Pro that are internally reserved or should not be used for external I/O modules?
+All GPIO ports on the T-Connect Pro are already used. There are other ports available for external use.
+
+### What is the recommended method for expanding external input/output?
+Use an I²C I/O expander.
+
+### Are there any known limitations or pin conflict issues when using LoRa (SX1262) together with Wi-Fi or Bluetooth?
+No, Wi-Fi is a built-in function of the chip.
+
+### Is it safe to power external low-power I/O modules from the main board, or is it recommended to use an external power supply?
+It is safe, and the main board can directly power sensors or low-current expansion devices. However, using an external power supply is recommended.
+
+### Are there any reference designs or examples for connecting external I/O or control modules to this board?
+No, only the [examples](https://github.com/Xinyuan-LilyGO/T-Connect-Pro?tab=readme-ov-file#examples-support) provided are supported.
 
 ## Projects
 * [T-Connect-Pro_V1.0](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)

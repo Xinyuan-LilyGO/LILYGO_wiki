@@ -59,7 +59,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 ## 主板兼容配置
 
-### 1. SIM7000G / A7670X / A7608X (ESP32 版)
+### SIM7000G / A7670X / A7608X (ESP32 版)
 
 ![配置图](./assets/SIM7000_A7608_A7670_ESP32.png)
 
@@ -96,7 +96,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 
 
-### 2. SIM7600X (ESP32 版)
+###  SIM7600X (ESP32 版)
 ![配置图](./assets/SIM7600_ESP32.png)
 
 | 跳线/开关 | 设置 | 说明 |
@@ -121,7 +121,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 
 
-### 3. SIM7670G (ESP32-S3 版)
+###  SIM7670G (ESP32-S3 版)
 ![配置图](./assets/SIM7670G_ESP32S3.png)
 
 | 跳线/开关 | 设置 | 说明 |
@@ -153,7 +153,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 
 
-### 4. A7608X (ESP32-S3 版)
+###  A7608X (ESP32-S3 版)
 ![配置图](./assets/A7608_ESP32S3.png)
 
 | 跳线/开关 | 设置 | 说明 |
@@ -184,7 +184,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 | SIMSHIELD_SCL | 1 |
 
 
-### 5. SIM7080G (ESP32-S3 PMU 版)
+###  SIM7080G (ESP32-S3 PMU 版)
 ![配置图](./assets/SIM7080G_ESP32S3.png)
 
 | 跳线/开关 | 设置 | 说明 |
@@ -223,7 +223,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 | SIMSHIELD_SCL | 43 |
 
 
-### 6. 标准系列 (SIM7000G/A7670X/SIM7670G/SIM7080G)
+### 标准系列 (SIM7000G/A7670X/SIM7670G/SIM7080G)
 ![配置图](./assets/Standard%20Series.png)
 
 | 跳线/开关 | 设置 | 说明 |
@@ -252,40 +252,40 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 ## 接口说明
 
-### 1. 电池连接
+### 电池连接
 ![电池连接](./assets/BATTERY_SOKECT.png)
 
 - 通过跳线帽将外部电池接口连接到主板电池接口
 - **注意：** 如果外接电池，请勿在主板的 18650 插座上安装电池
 
-### 2. 电流监测设置
+### 电流监测设置
 ![电流监测](./assets/battery_current_detection_mode.png)
 
 - **垂直跳线帽：** 将电池电流路由至 INA3221 通道2，可监测充放电电流
 - **无跳线帽：** 监测压线端子接口电流
 - **注意：** 使用电池监测时，请勿连接压线端子
 
-### 3. 5V 电源接口
+### 5V 电源接口
 - 2.00mm 2Pin JST 接口，用于外部供电
 - 也可直接连接主板太阳能端口充电（需断开 J21 跳线）
 - 建议优先使用此接口供电，电压降更低
 
-### 4. SD 卡接口
+### SD 卡接口
 - Sim Shield 重新映射了 SPI 接口
 - **使用 Sim Shield 后，SD 卡必须插入扩展板，而非主板**
 
-### 5. RS485 接口
+### RS485 接口
 - 硬件自动收发控制
 - 建议通信波特率 ≤115200
 
-### 6. I2C 接口
+### I2C 接口
 - 支持标准 0.96 英寸 OLED 显示屏
 - **注意线序：** 请确认 OLED 接口线序正确
 
-### 7. SPI 接口
+### SPI 接口
 - 暴露 SD 卡和 LoRa 模块的 SPI 总线
 
-### 8. 电流检测通道
+### 电流检测通道
 ![电流检测接口](./assets/intervface.png)
 
 | 通道 | 可用性 | 说明 |
