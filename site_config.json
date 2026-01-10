@@ -107,7 +107,8 @@
             "config": {
                 "dark": true,
                 "env":{
-                    "main_color": "#4caf7d"
+                    "main_color": "#4caf7d",
+                    "link_color": "#4caf7d"
                 }
             }
         },
